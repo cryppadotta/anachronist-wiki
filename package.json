@@ -10,6 +10,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "check": "astro check",
+    "generate:page": "node --experimental-strip-types scripts/generate-page.ts",
     "validate:content": "node --experimental-strip-types scripts/validate-content.ts",
     "build:graph": "node --experimental-strip-types scripts/build-graph.ts",
     "preview": "astro preview",

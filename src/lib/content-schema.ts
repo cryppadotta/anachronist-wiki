@@ -33,6 +33,10 @@ export const edgeKindValues = [
   "tooling"
 ] as const;
 
+export const pageTreatmentValues = ["practical", "practical_with_cautions", "non_operational_context", "placeholder_only"] as const;
+
+export const socialScaleValues = ["individual", "household", "workshop", "village", "city", "state", "trade_network"] as const;
+
 export const graphEdgeSchema = z
   .object({
     slug: slugSchema,
@@ -65,25 +69,42 @@ export const techFrontmatterSchema = z
     title: z.string().min(1),
     aliases: z.array(z.string().min(1)).default([]),
     node_type: z.enum(nodeTypeValues),
+    secondary_node_types: z.array(z.enum(nodeTypeValues)).default([]),
     status: z.enum(["stub", "draft", "generated", "reviewed", "curated", "restricted"]),
+    page_treatment: z.enum(pageTreatmentValues).optional(),
     summary: z.string().min(1),
     safety_class: z.enum(safetyClassValues),
     era_floor: z.string().min(1),
     difficulty: z.enum(["trivial", "basic", "intermediate", "advanced", "expert"]),
     precision_required: z.enum(["none", "low", "medium", "high", "extreme"]),
+    minimum_social_scale: z.enum(socialScaleValues).optional(),
     time_to_first_working_version: z.string().min(1),
     prerequisites: z.array(graphEdgeSchema).default([]),
     unlocks: z.array(graphEdgeSchema).default([]),
     missing_prerequisites: z.array(missingNodeSchema).default([]),
+    material_dependencies: z
+      .array(
+        z.object({
+          slug: slugSchema,
+          title: z.string().min(1),
+          importance: z.enum(["hard", "soft", "optional", "substitute"]),
+          availability_note: z.string().min(1)
+        })
+      )
+      .default([]),
     tags: z.array(z.string().min(1)).default([]),
     generation: z.object({
       created_by: z.enum(["human", "llm"]),
       model: z.string().min(1).optional(),
       provider: z.string().min(1).optional(),
       prompt_version: z.string().min(1).optional(),
+      prompt_hash: z.string().min(1).optional(),
+      prompt_hashes: z.record(z.string(), z.string().min(1)).optional(),
       generated_at: z.string().min(1).optional(),
+      request_issue: z.string().min(1).optional(),
       reviewed_by: z.array(z.string().min(1)).default([]),
-      source_commit: z.string().min(1).optional()
+      source_commit: z.string().min(1).optional(),
+      source_review_notes: z.array(z.string().min(1)).default([])
     }),
     confidence: z.object({
       practicality: z.number().min(0).max(1),

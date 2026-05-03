@@ -51,7 +51,8 @@
       },
       "generation": {
         "created_by": "human",
-        "reviewed_by": []
+        "reviewed_by": [],
+        "source_review_notes": []
       }
     }
   ],
