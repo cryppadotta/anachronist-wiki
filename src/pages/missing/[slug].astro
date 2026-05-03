@@ -1,0 +1,47 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { techPath } from "@lib/wiki";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("tech");
+  const missing = new Map<string, { title: string; reason: string; requestedBy: { title: string; slug: string }[] }>();
+
+  for (const page of pages) {
+    for (const node of page.data.missing_prerequisites) {
+      const current = missing.get(node.slug) ?? { title: node.title, reason: node.reason, requestedBy: [] };
+      current.requestedBy.push({ title: page.data.title, slug: page.data.slug });
+      missing.set(node.slug, current);
+    }
+  }
+
+  return [...missing.entries()].map(([slug, node]) => ({
+    params: { slug },
+    props: { slug, node }
+  }));
+}
+
+const { slug, node } = Astro.props;
+---
+
+<BaseLayout title={`${node.title} Missing Page`}>
+  <section class="utility-page missing-detail">
+    <p class="eyebrow">Missing page</p>
+    <h1>{node.title}</h1>
+    <p>{node.reason}</p>
+    <div class="callout">
+      <p>
+        Deterministic behavior: declared missing prerequisites render at
+        <code>/missing/{slug}/</code>. Body wikilinks still render to the
+        canonical future page path <code>/tech/{slug}/</code>.
+      </p>
+    </div>
+    <h2>Referenced by</h2>
+    <ul>
+      {node.requestedBy.map((page) => (
+        <li><a href={techPath(page.slug)}>{page.title}</a></li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
+

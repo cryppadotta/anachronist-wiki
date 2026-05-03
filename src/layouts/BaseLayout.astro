@@ -1,0 +1,40 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "A static field manual for rebuilding useful technologies from earlier prerequisites." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title} | Anachronist Wiki</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Anachronist Wiki home">
+        <span class="brand-mark">AW</span>
+        <span>Anachronist Wiki</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/graph/">Graph</a>
+        <a href="/search/">Search</a>
+        <a href="/missing/">Missing</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>Static GitHub-backed wiki. Page requests use GitHub Issues; edits use GitHub PRs.</p>
+    </footer>
+  </body>
+</html>
+

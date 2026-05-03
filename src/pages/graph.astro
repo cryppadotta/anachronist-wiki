@@ -1,0 +1,49 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { techPath } from "@lib/wiki";
+
+const pages = await getCollection("tech");
+const edges = pages.flatMap((page) =>
+  page.data.prerequisites.map((edge) => ({
+    from: edge.slug,
+    fromTitle: edge.title,
+    to: page.data.slug,
+    toTitle: page.data.title,
+    kind: edge.kind
+  }))
+);
+---
+
+<BaseLayout title="Graph">
+  <section class="utility-page">
+    <p class="eyebrow">Graph placeholder</p>
+    <h1>Technology graph</h1>
+    <p>
+      This static scaffold reads explicit frontmatter edges. Later validator and
+      frontend work can replace this list with generated `tech-graph.json` and
+      an interactive explorer.
+    </p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Prerequisite</th>
+            <th>Kind</th>
+            <th>Target</th>
+          </tr>
+        </thead>
+        <tbody>
+          {edges.map((edge) => (
+            <tr>
+              <td><a href={techPath(edge.from)}>{edge.fromTitle}</a></td>
+              <td>{edge.kind}</td>
+              <td><a href={techPath(edge.to)}>{edge.toTitle}</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</BaseLayout>
+

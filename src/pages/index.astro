@@ -1,0 +1,40 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { techPath } from "@lib/wiki";
+
+const pages = await getCollection("tech");
+---
+
+<BaseLayout title="Home">
+  <section class="home-hero">
+    <p class="eyebrow">Static field manual</p>
+    <h1>Rebuild the useful world from earlier pieces.</h1>
+    <p>
+      Anachronist Wiki is a Git-backed technology tree. Pages are Markdown,
+      internal links are Obsidian wikilinks, and generation stays in maintainer
+      workflows instead of the public app.
+    </p>
+    <div class="hero-actions">
+      <a class="button" href={pages[0] ? techPath(pages[0].data.slug) : "/missing/"}>Read a sample page</a>
+      <a class="button secondary" href="/graph/">Inspect the graph</a>
+    </div>
+  </section>
+
+  <section class="page-band">
+    <div>
+      <p class="eyebrow">Seed cabinet</p>
+      <h2>Hand-written pages</h2>
+    </div>
+    <div class="card-grid">
+      {pages.map((page) => (
+        <article class="node-card">
+          <p>{page.data.node_type}</p>
+          <h3><a href={techPath(page.data.slug)}>{page.data.title}</a></h3>
+          <span>{page.data.summary}</span>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+

@@ -1,0 +1,44 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { missingPath, techPath } from "@lib/wiki";
+
+const pages = await getCollection("tech");
+const missing = new Map<string, { title: string; reason: string; requestedBy: string[] }>();
+
+for (const page of pages) {
+  for (const node of page.data.missing_prerequisites) {
+    const current = missing.get(node.slug) ?? { title: node.title, reason: node.reason, requestedBy: [] };
+    current.requestedBy.push(page.data.title);
+    missing.set(node.slug, current);
+  }
+}
+---
+
+<BaseLayout title="Missing Pages">
+  <section class="utility-page">
+    <p class="eyebrow">Red-link ledger</p>
+    <h1>Missing pages</h1>
+    <p>
+      Missing prerequisites are explicit frontmatter declarations. Each one gets
+      a deterministic static placeholder so later GitHub Issue links and graph
+      validation have a stable target.
+    </p>
+    <div class="card-grid">
+      {[...missing.entries()].map(([slug, node]) => (
+        <article class="node-card missing-card">
+          <p>missing</p>
+          <h2><a href={missingPath(slug)}>{node.title}</a></h2>
+          <span>{node.reason}</span>
+          <small>Referenced by {node.requestedBy.join(", ")}</small>
+        </article>
+      ))}
+    </div>
+    {missing.size === 0 && <p class="muted">No missing pages have been declared yet.</p>}
+    <p class="request-note">
+      Page requests belong in GitHub Issues. Existing pages are listed from the
+      current collection, starting with <a href={pages[0] ? techPath(pages[0].data.slug) : "/"}>{pages[0]?.data.title ?? "the first seed page"}</a>.
+    </p>
+  </section>
+</BaseLayout>
+

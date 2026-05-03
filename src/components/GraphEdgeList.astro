@@ -1,0 +1,40 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { missingPath, techPath } from "@lib/wiki";
+
+type Edge = CollectionEntry<"tech">["data"]["prerequisites"][number];
+type Missing = CollectionEntry<"tech">["data"]["missing_prerequisites"][number];
+
+interface Props {
+  title: string;
+  edges?: Edge[];
+  missing?: Missing[];
+}
+
+const { title, edges = [], missing = [] } = Astro.props;
+---
+
+<section class="edge-panel" aria-labelledby={`${title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-heading`}>
+  <h2 id={`${title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-heading`}>{title}</h2>
+  {edges.length === 0 && missing.length === 0 ? (
+    <p class="muted">No graph edges declared yet.</p>
+  ) : (
+    <ul class="edge-list">
+      {edges.map((edge) => (
+        <li>
+          <a href={techPath(edge.slug)}>{edge.title}</a>
+          <span>{edge.kind}</span>
+          <p>{edge.role}</p>
+        </li>
+      ))}
+      {missing.map((node) => (
+        <li class="missing-edge">
+          <a href={missingPath(node.slug)}>{node.title}</a>
+          <span>missing</span>
+          <p>{node.reason}</p>
+        </li>
+      ))}
+    </ul>
+  )}
+</section>
+

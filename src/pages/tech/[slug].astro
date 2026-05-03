@@ -1,0 +1,51 @@
+---
+import { getCollection, render } from "astro:content";
+import GraphEdgeList from "@components/GraphEdgeList.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("tech");
+  return pages.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry }
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={entry.data.title} description={entry.data.summary}>
+  <article class="tech-page">
+    <header class="tech-header">
+      <p class="eyebrow">{entry.data.node_type} / {entry.data.safety_class}</p>
+      <h1>{entry.data.title}</h1>
+      <p>{entry.data.summary}</p>
+      <dl class="fact-strip">
+        <div>
+          <dt>Difficulty</dt>
+          <dd>{entry.data.difficulty}</dd>
+        </div>
+        <div>
+          <dt>Precision</dt>
+          <dd>{entry.data.precision_required}</dd>
+        </div>
+        <div>
+          <dt>First version</dt>
+          <dd>{entry.data.time_to_first_working_version}</dd>
+        </div>
+      </dl>
+    </header>
+
+    <div class="article-grid">
+      <aside class="article-rail" aria-label="Technology graph">
+        <GraphEdgeList title="Prerequisites" edges={entry.data.prerequisites} missing={entry.data.missing_prerequisites} />
+        <GraphEdgeList title="Unlocks" edges={entry.data.unlocks} />
+      </aside>
+      <div class="article-body">
+        <Content />
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+

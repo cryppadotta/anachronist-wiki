@@ -1,0 +1,22 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Search">
+  <section class="utility-page">
+    <p class="eyebrow">Search placeholder</p>
+    <h1>Static search</h1>
+    <p>
+      Pagefind can be wired after the content graph is expanded. This view keeps
+      the route stable for Cloudflare Pages and frontend follow-up work.
+    </p>
+    <form class="search-shell" action="/search/" method="get">
+      <label for="q">Query</label>
+      <div>
+        <input id="q" name="q" type="search" placeholder="wheel, paper, kiln..." />
+        <button type="submit">Search</button>
+      </div>
+    </form>
+  </section>
+</BaseLayout>
+

@@ -1,0 +1,10 @@
+node_types:
+  - artifact
+  - process
+  - material
+  - tool
+  - measurement
+  - knowledge
+  - institution
+  - test
+

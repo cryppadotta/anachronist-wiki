@@ -1,0 +1,20 @@
+{
+  "name": "anachronist-wiki",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "check": "astro check",
+    "preview": "astro preview",
+    "pages:build": "astro build"
+  },
+  "dependencies": {
+    "astro": "6.2.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.9",
+    "typescript": "5.9.3"
+  }
+}
