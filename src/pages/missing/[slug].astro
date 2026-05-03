@@ -101,7 +101,7 @@ const issueUrl = pageRequestUrl(node.title);
 ---
 
 <BaseLayout title={`${node.title} — missing page`} description={`Anachronist Wiki has no source for ${node.title} yet — request it on GitHub.`}>
-  <section class="utility-page missing-detail" data-pagefind-body>
+  <section class="utility-page missing-detail" data-pagefind-ignore="all">
     <p class="eyebrow">
       <span class="badge badge-safety safety-restricted">missing</span>
       <span class="badge">red link</span>
