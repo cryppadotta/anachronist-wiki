@@ -1,0 +1,86 @@
+name: Page request
+description: Request a new Anachronist Wiki page.
+title: "Request page: "
+labels:
+  - page-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request a technology-tree node. Requests do not trigger public generation; maintainers review requests and draft pages through local or maintainer-only workflows.
+  - type: input
+    id: requested_title
+    attributes:
+      label: Requested page title
+      description: What technology, material, tool, process, measurement, test, knowledge system, or social institution should this page cover?
+      placeholder: "Bicycle"
+    validations:
+      required: true
+  - type: dropdown
+    id: node_type
+    attributes:
+      label: Node type
+      description: Pick the closest graph node type.
+      options:
+        - artifact
+        - process
+        - material
+        - tool
+        - measurement
+        - knowledge
+        - institution
+        - test
+        - unknown
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should this page exist?
+      description: Explain what it unlocks or why it is an important prerequisite.
+      placeholder: "This is a major transport technology and connects to wheels, bearings, tires, chains, frames, and road infrastructure."
+    validations:
+      required: true
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Possible prerequisites
+      description: List any prerequisite pages or missing nodes that should link to this page.
+      placeholder: |
+        - wheel and axle
+        - frame construction
+        - bearings
+        - chain drive
+        - rubber tire
+  - type: textarea
+    id: material_questions
+    attributes:
+      label: Material sourcing questions
+      description: Note materials whose sources, recognition, harvesting, refining, tests, substitutes, or geography need special attention.
+      placeholder: |
+        For copper, where would someone in early medieval Britain get it?
+        For rubber, what substitutes exist before access to natural rubber?
+  - type: textarea
+    id: social_context
+    attributes:
+      label: Social or institutional context
+      description: Note any literacy, training, standards, workshop organization, trade, records, or other social technologies this page may require.
+  - type: textarea
+    id: safety_notes
+    attributes:
+      label: Safety notes
+      description: Mention hazards or reasons this should be restricted to graph/context treatment.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources or starting points
+      description: Optional links, books, examples, or historical notes maintainers should inspect.
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I understand requests are reviewed by maintainers and do not trigger live LLM generation.
+          required: true
+        - label: I understand dangerous topics may be included only as restricted or non-operational graph nodes.
+          required: true

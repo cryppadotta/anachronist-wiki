@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import { missingPath, techPath } from "@lib/wiki";
+import { missingPath, pageRequestUrl, techPath } from "@lib/wiki";
 
 const pages = await getCollection("tech");
 const missing = new Map<string, { title: string; reason: string; requestedBy: string[] }>();
@@ -31,6 +31,7 @@ for (const page of pages) {
           <h2><a href={missingPath(slug)}>{node.title}</a></h2>
           <span>{node.reason}</span>
           <small>Referenced by {node.requestedBy.join(", ")}</small>
+          <a class="inline-action" href={pageRequestUrl(node.title)}>Request on GitHub</a>
         </article>
       ))}
     </div>
@@ -38,7 +39,7 @@ for (const page of pages) {
     <p class="request-note">
       Page requests belong in GitHub Issues. Existing pages are listed from the
       current collection, starting with <a href={pages[0] ? techPath(pages[0].data.slug) : "/"}>{pages[0]?.data.title ?? "the first seed page"}</a>.
+      <a href={pageRequestUrl()}>Open the page request form.</a>
     </p>
   </section>
 </BaseLayout>
-

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import { techPath } from "@lib/wiki";
+import { pageRequestUrl, techPath } from "@lib/wiki";
 
 export async function getStaticPaths() {
   const pages = await getCollection("tech");
@@ -29,6 +29,9 @@ const { slug, node } = Astro.props;
     <p class="eyebrow">Missing page</p>
     <h1>{node.title}</h1>
     <p>{node.reason}</p>
+    <p>
+      <a class="button" href={pageRequestUrl(node.title)}>Request this page on GitHub</a>
+    </p>
     <div class="callout">
       <p>
         Deterministic behavior: declared missing prerequisites render at
@@ -44,4 +47,3 @@ const { slug, node } = Astro.props;
     </ul>
   </section>
 </BaseLayout>
-

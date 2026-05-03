@@ -1,0 +1,36 @@
+name: Validate content
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate-content:
+    name: Validate content and graph
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate content
+        run: npm run validate:content
+
+      - name: Build graph
+        run: npm run build:graph
+
+      - name: Check generated graph is committed
+        run: git diff --exit-code -- generated/tech-graph.json

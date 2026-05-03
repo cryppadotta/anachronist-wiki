@@ -1,0 +1,38 @@
+# Anachronist Wiki
+
+Anachronist Wiki is a static, GitHub-backed field-manual wiki for reconstructing useful technologies from earlier prerequisites. It is built with Astro and TypeScript. Markdown content is stored in `content/tech`, prompt contracts are stored in `content/prompts`, and graph data is generated into `generated/tech-graph.json`.
+
+Public contribution model:
+
+- Page requests: GitHub Issues using `.github/ISSUE_TEMPLATE/page-request.yml`
+- Edits: GitHub pull requests using `.github/pull_request_template.md`
+- Public site: static pages only
+- Generation: local CLI or maintainer-triggered automation only
+- No app auth, backend submissions, dynamic admin dashboard, public live LLM generation, or crawler-triggered LLM calls
+
+Project rules:
+
+- Internal links use Obsidian wikilinks: `[[slug|Title]]` or `[[slug]]`.
+- Graph edges are explicit frontmatter metadata, not inferred from prose.
+- Node types: `artifact`, `process`, `material`, `tool`, `measurement`, `knowledge`, `institution`, `test`.
+- Edge kinds: `hard`, `soft`, `optional`, `alternative`, `enables`, `knowledge`, `measurement`, `safety`, `institutional`, `material_source`, `refining`, `test`, `tooling`.
+- Safety classes: `allowed`, `caution`, `restricted`, `blocked`.
+- Materials are treated as supply chains: where found, how recognized, how acquired, how prepared/refined, quality tests, substitutes, and geographic constraints.
+- Social technologies are first-class prerequisites when they affect feasibility.
+- Restricted and blocked topics remain non-operational graph/context nodes.
+
+Useful files:
+
+- `README.md`: developer commands and project overview.
+- `AGENTS.md`: agent-native contribution instructions.
+- `src/lib/content-schema.ts`: frontmatter schema, node types, edge kinds, and safety classes.
+- `scripts/validate-content.ts`: content validation entry point.
+- `scripts/build-graph.ts`: deterministic graph builder.
+- `content/prompts/README.md`: maintainer-only generation prompt contract.
+
+Validation commands:
+
+- `npm run validate:content`
+- `npm run build:graph`
+- `npm run check`
+- `npm run build`
