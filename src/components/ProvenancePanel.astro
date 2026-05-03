@@ -41,10 +41,10 @@ function bucket(value: number): number {
   return Math.max(5, Math.round(clamp01(value) * 20) * 5);
 }
 
-const confidenceRows: Array<{ key: string; label: string; value: number }> = [
-  { key: "practicality", label: "Practicality", value: clamp01(confidence.practicality) },
-  { key: "historical_plausibility", label: "Historical plausibility", value: clamp01(confidence.historical_plausibility) },
-  { key: "completeness", label: "Completeness", value: clamp01(confidence.completeness) }
+const confidenceRows: Array<{ label: string; value: number }> = [
+  { label: "Practicality", value: clamp01(confidence.practicality) },
+  { label: "Historical plausibility", value: clamp01(confidence.historical_plausibility) },
+  { label: "Completeness", value: clamp01(confidence.completeness) }
 ];
 ---
 
@@ -106,7 +106,7 @@ const confidenceRows: Array<{ key: string; label: string; value: number }> = [
               <span>{row.label}</span>
               <span>{pct(row.value)}</span>
             </div>
-            <div class={`cb-track cb-${row.key}`} role="presentation" data-confidence={row.value.toFixed(2)}>
+            <div class="cb-track" role="presentation" data-confidence={row.value.toFixed(2)}>
               <div class={`cb-fill cb-fill-${bucket(row.value)}`} />
             </div>
           </li>

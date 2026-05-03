@@ -24,7 +24,7 @@ const pages = await getCollection("tech");
 
   <section class="page-band">
     <div>
-      <p class="eyebrow">Seed cabinet</p>
+      {pages.length >= 3 && <p class="eyebrow">Seed cabinet</p>}
       <h2>Hand-written pages</h2>
     </div>
     <div class="card-grid">
