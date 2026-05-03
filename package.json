@@ -12,6 +12,7 @@
     "check": "astro check",
     "generate:page": "node --experimental-strip-types scripts/generate-page.ts",
     "validate:content": "node --experimental-strip-types scripts/validate-content.ts",
+    "test:restricted-content": "node --experimental-strip-types scripts/restricted-content-regression.ts",
     "build:graph": "node --experimental-strip-types scripts/build-graph.ts",
     "preview": "astro preview",
     "pages:build": "astro build"

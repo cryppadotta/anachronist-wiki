@@ -52,6 +52,12 @@ export type ContentAnalysis = {
   diagnostics: Diagnostic[];
 };
 
+type PageSafetyInput = {
+  body: string;
+  data: TechFrontmatter;
+  file?: string;
+};
+
 const techDir = path.join(process.cwd(), "content", "tech");
 const frontmatterPattern = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?/;
 const wikiLinkPattern = /\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|([^\]]+))?\]\]/g;
@@ -63,6 +69,16 @@ const operationalHeadings = new Set([
   "failure modes",
   "maintenance, repair, and iteration"
 ]);
+const restrictedOperationalIndicators = [
+  /\b(?:recipe|formula|ratio|proportion|dosage|yield)\b/i,
+  /\b\d+(?:\.\d+)?\s*(?:mg|g|kg|ml|l|mol|molar|percent|%|parts?)\b/i,
+  /\b\d+(?:\.\d+)?\s*(?:deg(?:ree)?s?|celsius|fahrenheit|kelvin|psi|bar|atm|minutes?|hours?|seconds?)\b/i,
+  /\b(?:step\s*\d+|step-by-step|instructions?|method\s+for|how\s+to)\b/i,
+  /\b(?:precursor acquisition|acquisition path|purification step|refining step|synthesis route|extraction method)\b/i,
+  /\b(?:equipment configuration|apparatus setup|device configuration|calibration settings|assembly sequence)\b/i,
+  /\b(?:troubleshooting|optimi[sz](?:e|ation)|increase yield|improve potency|deployment)\b/i,
+  /\b(?:forbidden|unsafe|redacted)\b.{0,80}\b(?:operational|recipe|ratio|procedure|precursor|configuration|troubleshooting)\b/i
+];
 
 export async function analyzeContent(): Promise<ContentAnalysis> {
   const { pages, diagnostics } = await loadTechPages();
@@ -203,59 +219,91 @@ function validateDuplicateSlugsAndAliases(pages: LoadedPage[]): Diagnostic[] {
 }
 
 function validateSafetyMetadata(pages: LoadedPage[]): Diagnostic[] {
+  return pages.flatMap((page) => validatePageSafety(page));
+}
+
+export function validatePageSafety(page: PageSafetyInput): Diagnostic[] {
   const diagnostics: Diagnostic[] = [];
+  const headings = extractHeadings(page.body);
+  const headingSet = new Set(headings.map((heading) => normalizeHeading(heading)));
+  const { data } = page;
 
-  for (const page of pages) {
-    const headings = extractHeadings(page.body);
-    const headingSet = new Set(headings.map((heading) => normalizeHeading(heading)));
-    const { data } = page;
+  if (data.safety_class === "caution" && !headingSet.has("hazards and controls")) {
+    diagnostics.push({
+      severity: "error",
+      file: page.file,
+      slug: data.slug,
+      message: "Caution pages must include a Hazards and controls section."
+    });
+  }
 
-    if (data.safety_class === "caution" && !headingSet.has("hazards and controls")) {
+  if ((data.safety_class === "allowed" || data.safety_class === "caution") && practicalPhysicalTypes.has(data.node_type)) {
+    for (const required of ["field briefing", "prerequisite tree", "materials and sourcing", "verification and quality control"]) {
+      if (!headingSet.has(required)) {
+        diagnostics.push({
+          severity: "error",
+          file: page.file,
+          slug: data.slug,
+          message: `Practical ${data.node_type} pages must include a "${titleCase(required)}" section.`
+        });
+      }
+    }
+  }
+
+  if (data.safety_class === "restricted" || data.safety_class === "blocked") {
+    const requiredTreatment = requiredPageTreatment(data.safety_class);
+    if (data.page_treatment !== requiredTreatment) {
       diagnostics.push({
         severity: "error",
         file: page.file,
         slug: data.slug,
-        message: "Caution pages must include a Hazards and controls section."
+        message: `${titleCase(data.safety_class)} pages must use page_treatment: ${requiredTreatment}.`
       });
     }
 
-    if ((data.safety_class === "allowed" || data.safety_class === "caution") && practicalPhysicalTypes.has(data.node_type)) {
-      for (const required of ["field briefing", "prerequisite tree", "materials and sourcing", "verification and quality control"]) {
-        if (!headingSet.has(required)) {
-          diagnostics.push({
-            severity: "error",
-            file: page.file,
-            slug: data.slug,
-            message: `Practical ${data.node_type} pages must include a "${titleCase(required)}" section.`
-          });
-        }
-      }
-    }
-
-    if (data.safety_class === "restricted" || data.safety_class === "blocked") {
-      for (const heading of headingSet) {
-        if (operationalHeadings.has(heading)) {
-          diagnostics.push({
-            severity: "error",
-            file: page.file,
-            slug: data.slug,
-            message: `${titleCase(data.safety_class)} pages must not include operational "${titleCase(heading)}" sections.`
-          });
-        }
-      }
-    }
-
-    if (data.safety_class === "blocked" && data.status !== "stub" && data.status !== "restricted") {
+    if (hasOperationalRestrictedHeading(headingSet) || hasRestrictedOperationalIndicator(page.body)) {
       diagnostics.push({
         severity: "error",
         file: page.file,
         slug: data.slug,
-        message: "Blocked pages must use stub or restricted status."
+        message: `${titleCase(data.safety_class)} pages must not include operational reproduction indicators.`
       });
     }
   }
 
+  if (data.safety_class === "blocked" && data.status !== "stub" && data.status !== "restricted") {
+    diagnostics.push({
+      severity: "error",
+      file: page.file,
+      slug: data.slug,
+      message: "Blocked pages must use stub or restricted status."
+    });
+  }
+
   return diagnostics;
+}
+
+export function requiredPageTreatment(safetyClass: string): TechFrontmatter["page_treatment"] | undefined {
+  if (safetyClass === "restricted") {
+    return "non_operational_context";
+  }
+  if (safetyClass === "blocked") {
+    return "placeholder_only";
+  }
+  return undefined;
+}
+
+function hasOperationalRestrictedHeading(headings: Set<string>): boolean {
+  for (const heading of headings) {
+    if (operationalHeadings.has(heading)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function hasRestrictedOperationalIndicator(body: string): boolean {
+  return restrictedOperationalIndicators.some((indicator) => indicator.test(body));
 }
 
 function buildEdges(pages: LoadedPage[]): GraphEdgeRecord[] {

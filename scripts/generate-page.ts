@@ -4,7 +4,7 @@ import { access, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { promisify } from "node:util";
 import { parseDocument, stringify } from "yaml";
-import { analyzeContent } from "./content-utils.ts";
+import { analyzeContent, requiredPageTreatment, validatePageSafety } from "./content-utils.ts";
 import {
   edgeKindValues,
   formatZodIssue,
@@ -328,7 +328,9 @@ function sanitizeGeneratedMarkdown(markdown: string, context: JsonMap): string {
   const slug = normalizeSlug(canonical.slug ?? safety.slug ?? frontmatter.slug ?? context.slug);
   const title = String(canonical.title ?? safety.title ?? frontmatter.title ?? titleize(context.topic));
   const status = safetyClass === "blocked" ? "stub" : safetyClass === "restricted" ? "restricted" : "generated";
-  const pageTreatment = enumValue(safety.page_treatment ?? graph.safety?.page_treatment ?? frontmatter.page_treatment, validPageTreatments, undefined);
+  const pageTreatment =
+    requiredPageTreatment(safetyClass) ??
+    enumValue(safety.page_treatment ?? graph.safety?.page_treatment ?? frontmatter.page_treatment, validPageTreatments, undefined);
   const confidence = reviewer.confidence_updates ?? frontmatter.confidence ?? {};
 
   const sanitized = {
@@ -485,32 +487,10 @@ function validateCandidate(markdown: string): { errors: string[]; warnings: stri
     return { errors, warnings };
   }
 
-  const headings = new Set(Array.from(body.matchAll(/^##\s+(.+)$/gm), (match) => normalizeHeading(match[1] ?? "")));
   const data = parsed.data;
-
-  if (data.safety_class === "caution" && !headings.has("hazards and controls")) {
-    errors.push("Caution pages must include a Hazards and controls section.");
-  }
-
-  if (["allowed", "caution"].includes(data.safety_class) && ["artifact", "process", "material", "tool", "test"].includes(data.node_type)) {
-    for (const required of ["field briefing", "prerequisite tree", "materials and sourcing", "verification and quality control"]) {
-      if (!headings.has(required)) {
-        errors.push(`Practical ${data.node_type} pages must include a "${titleize(required)}" section.`);
-      }
-    }
-  }
-
-  if (["restricted", "blocked"].includes(data.safety_class)) {
-    for (const restrictedHeading of ["procedure", "tools and workshop requirements", "failure modes", "maintenance, repair, and iteration"]) {
-      if (headings.has(restrictedHeading)) {
-        errors.push(`${titleize(data.safety_class)} pages must not include operational "${titleize(restrictedHeading)}" sections.`);
-      }
-    }
-  }
-
-  if (data.safety_class === "blocked" && data.status !== "stub" && data.status !== "restricted") {
-    errors.push("Blocked pages must use stub or restricted status.");
-  }
+  const diagnostics = validatePageSafety({ data, body });
+  errors.push(...diagnostics.filter((diagnostic) => diagnostic.severity === "error").map((diagnostic) => diagnostic.message));
+  warnings.push(...diagnostics.filter((diagnostic) => diagnostic.severity === "warning").map((diagnostic) => diagnostic.message));
 
   return { errors, warnings };
 }
@@ -551,10 +531,6 @@ function arrayOfStrings(value: unknown): string[] {
 
 function score(value: unknown, fallback: number): number {
   return typeof value === "number" && Number.isFinite(value) ? Math.min(1, Math.max(0, value)) : fallback;
-}
-
-function normalizeHeading(value: string): string {
-  return value.trim().toLowerCase().replace(/\s+/g, " ");
 }
 
 function titleize(value: string): string {
