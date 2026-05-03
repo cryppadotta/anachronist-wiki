@@ -3,5 +3,6 @@ dist/
 .astro/
 .wrangler/
 generated/drafts/
+screenshots/
 .DS_Store
 *.log

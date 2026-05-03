@@ -1,49 +1,154 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { pageRequestUrl, techPath } from "@lib/wiki";
+
+interface MissingProps {
+  slug: string;
+  title: string;
+  reason: string;
+  requestedBy: { title: string; slug: string }[];
+  referenceTypes: string[];
+}
+
+interface GraphMissingNode {
+  slug: string;
+  title: string;
+  referenced_by: string[];
+  reference_types: string[];
+}
+
+interface GraphFile {
+  nodes: Array<{ slug: string; title: string }>;
+  missing_nodes: GraphMissingNode[];
+}
+
+function titleCase(slug: string): string {
+  return slug
+    .split("-")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
 
 export async function getStaticPaths() {
   const pages = await getCollection("tech");
-  const missing = new Map<string, { title: string; reason: string; requestedBy: { title: string; slug: string }[] }>();
+  const missing = new Map<string, MissingProps>();
+
+  function ensure(slug: string, title: string): MissingProps {
+    const current = missing.get(slug);
+    if (current) return current;
+    const created: MissingProps = {
+      slug,
+      title,
+      reason: "",
+      requestedBy: [],
+      referenceTypes: []
+    };
+    missing.set(slug, created);
+    return created;
+  }
 
   for (const page of pages) {
-    for (const node of page.data.missing_prerequisites) {
-      const current = missing.get(node.slug) ?? { title: node.title, reason: node.reason, requestedBy: [] };
-      current.requestedBy.push({ title: page.data.title, slug: page.data.slug });
-      missing.set(node.slug, current);
+    for (const node of page.data.missing_prerequisites ?? []) {
+      const entry = ensure(node.slug, node.title);
+      if (!entry.reason) entry.reason = node.reason;
+      entry.requestedBy.push({ title: page.data.title, slug: page.data.slug });
+      if (!entry.referenceTypes.includes("declared_missing_prerequisite")) {
+        entry.referenceTypes.push("declared_missing_prerequisite");
+      }
+    }
+  }
+
+  let graph: GraphFile = { nodes: [], missing_nodes: [] };
+  try {
+    const raw = await readFile(path.join(process.cwd(), "generated", "tech-graph.json"), "utf8");
+    graph = JSON.parse(raw) as GraphFile;
+  } catch {
+    // graph file optional during early dev
+  }
+
+  const realSlugs = new Set([
+    ...pages.map((p) => p.data.slug),
+    ...graph.nodes.map((n) => n.slug)
+  ]);
+
+  for (const node of graph.missing_nodes) {
+    if (realSlugs.has(node.slug)) continue;
+    const entry = ensure(node.slug, node.title || titleCase(node.slug));
+    if (!entry.reason) {
+      entry.reason = `Referenced by ${node.referenced_by.join(", ")} but no source page exists yet.`;
+    }
+    for (const refSlug of node.referenced_by) {
+      if (!entry.requestedBy.some((r) => r.slug === refSlug)) {
+        entry.requestedBy.push({ slug: refSlug, title: refSlug });
+      }
+    }
+    for (const refType of node.reference_types ?? []) {
+      if (!entry.referenceTypes.includes(refType)) entry.referenceTypes.push(refType);
     }
   }
 
   return [...missing.entries()].map(([slug, node]) => ({
     params: { slug },
-    props: { slug, node }
+    props: { node }
   }));
 }
 
-const { slug, node } = Astro.props;
+const { node } = Astro.props as { node: MissingProps };
+const issueUrl = pageRequestUrl(node.title);
 ---
 
-<BaseLayout title={`${node.title} Missing Page`}>
-  <section class="utility-page missing-detail">
-    <p class="eyebrow">Missing page</p>
-    <h1>{node.title}</h1>
-    <p>{node.reason}</p>
-    <p>
-      <a class="button" href={pageRequestUrl(node.title)}>Request this page on GitHub</a>
+<BaseLayout title={`${node.title} — missing page`} description={`Anachronist Wiki has no source for ${node.title} yet — request it on GitHub.`}>
+  <section class="utility-page missing-detail" data-pagefind-body>
+    <p class="eyebrow">
+      <span class="badge badge-safety safety-restricted">missing</span>
+      <span class="badge">red link</span>
     </p>
+    <h1>{node.title}</h1>
+    <p class="lede">{node.reason || "This page does not exist yet."}</p>
+
+    <div class="missing-actions">
+      <a class="button" href={issueUrl}>Request this page on GitHub</a>
+      <a class="button secondary" href="/graph/">Browse the graph</a>
+    </div>
+
     <div class="callout">
       <p>
-        Deterministic behavior: declared missing prerequisites render at
-        <code>/missing/{slug}/</code>. Body wikilinks still render to the
-        canonical future page path <code>/tech/{slug}/</code>.
+        Why a static red-link page? Every missing slug needs a stable URL so
+        prose wikilinks, frontmatter edges, and the validator agree. Page
+        requests live in GitHub Issues; once the page lands as <code>content/tech/{node.slug}.md</code>, this stub disappears automatically.
       </p>
     </div>
-    <h2>Referenced by</h2>
-    <ul>
-      {node.requestedBy.map((page) => (
-        <li><a href={techPath(page.slug)}>{page.title}</a></li>
-      ))}
-    </ul>
+
+    <div class="missing-grid-detail">
+      <section>
+        <h2>Referenced by</h2>
+        {node.requestedBy.length === 0 ? (
+          <p class="muted">Nothing references this slug yet.</p>
+        ) : (
+          <ul>
+            {node.requestedBy.map((page) => (
+              <li><a href={techPath(page.slug)}>{page.title || page.slug}</a></li>
+            ))}
+          </ul>
+        )}
+      </section>
+      <section>
+        <h2>Reference kind</h2>
+        {node.referenceTypes.length === 0 ? (
+          <p class="muted">No reference metadata available.</p>
+        ) : (
+          <ul class="tag-list">
+            {node.referenceTypes.map((kind) => (<li>{kind}</li>))}
+          </ul>
+        )}
+      </section>
+    </div>
+
+    <p class="request-note">
+      All page requests use the <a href="https://github.com/cryppadotta/anachronist-wiki/issues/new?template=page-request.yml">page-request issue template</a>. Generation is maintainer-only — the public site never triggers an LLM call.
+    </p>
   </section>
 </BaseLayout>

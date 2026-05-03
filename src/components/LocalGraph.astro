@@ -1,0 +1,131 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { missingPath, techPath } from "@lib/wiki";
+
+interface Props {
+  entry: CollectionEntry<"tech">;
+}
+
+const { entry } = Astro.props;
+const data = entry.data;
+
+const prereqs = (data.prerequisites ?? []).map((edge) => ({
+  slug: edge.slug,
+  title: edge.title,
+  kind: edge.kind,
+  href: techPath(edge.slug)
+}));
+
+const missing = (data.missing_prerequisites ?? []).map((node) => ({
+  slug: node.slug,
+  title: node.title,
+  kind: "missing",
+  href: missingPath(node.slug)
+}));
+
+const inputs = [...prereqs, ...missing];
+
+const outputs = (data.unlocks ?? []).map((edge) => ({
+  slug: edge.slug,
+  title: edge.title,
+  kind: edge.kind,
+  href: techPath(edge.slug)
+}));
+
+const widthPx = 360;
+const rowHeightPx = 44;
+const padding = 14;
+const inputRows = Math.max(inputs.length, 1);
+const outputRows = Math.max(outputs.length, 1);
+const heightPx = padding * 2 + Math.max(inputRows, outputRows) * rowHeightPx + 40;
+
+const leftX = padding;
+const centerX = widthPx / 2;
+const rightX = widthPx - padding;
+const topY = padding + 20;
+const centerY = heightPx / 2;
+
+const inputPositions = inputs.map((node, index) => {
+  const total = inputs.length || 1;
+  const span = total === 1 ? heightPx / 2 : padding + 20 + (index * (heightPx - padding * 2 - 40)) / Math.max(total - 1, 1);
+  return { ...node, y: total === 1 ? centerY : span };
+});
+
+const outputPositions = outputs.map((node, index) => {
+  const total = outputs.length || 1;
+  const span = total === 1 ? heightPx / 2 : padding + 20 + (index * (heightPx - padding * 2 - 40)) / Math.max(total - 1, 1);
+  return { ...node, y: total === 1 ? centerY : span };
+});
+---
+
+<figure class="local-graph">
+  <figcaption>Local map</figcaption>
+  <svg
+    role="img"
+    aria-label={`Local graph for ${data.title}`}
+    viewBox={`0 0 ${widthPx} ${heightPx}`}
+    width="100%"
+    preserveAspectRatio="xMidYMid meet"
+  >
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+      </marker>
+    </defs>
+    <g class="lg-edges">
+      {inputPositions.map((node) => (
+        <line
+          x1={leftX + 8}
+          y1={node.y}
+          x2={centerX - 60}
+          y2={centerY}
+          marker-end="url(#arrow)"
+          class={`lg-edge lg-edge-${node.kind}`}
+        />
+      ))}
+      {outputPositions.map((node) => (
+        <line
+          x1={centerX + 60}
+          y1={centerY}
+          x2={rightX - 8}
+          y2={node.y}
+          marker-end="url(#arrow)"
+          class={`lg-edge lg-edge-${node.kind}`}
+        />
+      ))}
+    </g>
+    <g class="lg-nodes">
+      {inputPositions.map((node) => (
+        <g class={`lg-node ${node.kind === "missing" ? "lg-missing" : ""}`}>
+          <a href={node.href}>
+            <rect x={leftX} y={node.y - 16} width="120" height="32" rx="2" />
+            <text x={leftX + 60} y={node.y + 4} text-anchor="middle">{node.title}</text>
+          </a>
+        </g>
+      ))}
+      <g class="lg-node lg-current">
+        <rect x={centerX - 60} y={centerY - 22} width="120" height="44" rx="2" />
+        <text x={centerX} y={centerY - 2} text-anchor="middle" class="lg-current-title">{data.title}</text>
+        <text x={centerX} y={centerY + 14} text-anchor="middle" class="lg-current-meta">{data.node_type}</text>
+      </g>
+      {outputPositions.map((node) => (
+        <g class="lg-node lg-unlock">
+          <a href={node.href}>
+            <rect x={rightX - 120} y={node.y - 16} width="120" height="32" rx="2" />
+            <text x={rightX - 60} y={node.y + 4} text-anchor="middle">{node.title}</text>
+          </a>
+        </g>
+      ))}
+    </g>
+    <g class="lg-labels">
+      <text x={leftX + 60} y={topY - 6} text-anchor="middle" class="lg-axis">Prereqs</text>
+      <text x={rightX - 60} y={topY - 6} text-anchor="middle" class="lg-axis">Unlocks</text>
+    </g>
+  </svg>
+  <p class="local-graph-legend">
+    <span><i class="lg-swatch lg-swatch-hard"></i>hard</span>
+    <span><i class="lg-swatch lg-swatch-soft"></i>soft / knowledge</span>
+    <span><i class="lg-swatch lg-swatch-enables"></i>enables</span>
+    <span><i class="lg-swatch lg-swatch-missing"></i>missing</span>
+  </p>
+</figure>

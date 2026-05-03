@@ -2,21 +2,48 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Search">
-  <section class="utility-page">
-    <p class="eyebrow">Search placeholder</p>
-    <h1>Static search</h1>
+<BaseLayout title="Search" description="Static full-text search across the Anachronist Wiki, powered by Pagefind.">
+  <section class="utility-page search-page">
+    <p class="eyebrow">Static search</p>
+    <h1>Search the wiki</h1>
     <p>
-      Pagefind can be wired after the content graph is expanded. This view keeps
-      the route stable for Cloudflare Pages and frontend follow-up work.
+      Pagefind indexes the static <code>dist/</code> output after each build. The
+      search runs entirely in your browser against a precomputed index — no
+      backend, no analytics, no live LLM lookups.
     </p>
-    <form class="search-shell" action="/search/" method="get">
-      <label for="q">Query</label>
-      <div>
-        <input id="q" name="q" type="search" placeholder="wheel, paper, kiln..." />
-        <button type="submit">Search</button>
+    <noscript>
+      <div class="callout">
+        <p>JavaScript is disabled. The static index can still be browsed via the <a href="/graph/">graph view</a> and the <a href="/missing/">missing-pages ledger</a>.</p>
       </div>
-    </form>
+    </noscript>
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+    <div id="search" class="pagefind-shell" data-search-mount></div>
+    <p class="muted small search-hint">Try terms like <em>wheel</em>, <em>woodworking</em>, <em>missing</em>, or any technology name.</p>
   </section>
 </BaseLayout>
 
+<script src="/pagefind/pagefind-ui.js" is:inline></script>
+<script>
+  type PagefindUICtor = new (config: { element: string; showSubResults?: boolean; showImages?: boolean; resetStyles?: boolean }) => unknown;
+  type WindowWithPagefind = Window & { PagefindUI?: PagefindUICtor };
+
+  function init() {
+    const w = window as WindowWithPagefind;
+    if (typeof w.PagefindUI === "function") {
+      try {
+        new w.PagefindUI({
+          element: "#search",
+          showSubResults: true,
+          showImages: false,
+          resetStyles: false
+        });
+      } catch (error) {
+        console.error("PagefindUI failed to mount", error);
+      }
+      return;
+    }
+    setTimeout(init, 60);
+  }
+
+  document.addEventListener("DOMContentLoaded", init);
+</script>

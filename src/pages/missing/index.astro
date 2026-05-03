@@ -1,45 +1,98 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { missingPath, pageRequestUrl, techPath } from "@lib/wiki";
 
+interface AggregatedMissing {
+  slug: string;
+  title: string;
+  reason: string;
+  requestedBy: string[];
+  declared: boolean;
+}
+
 const pages = await getCollection("tech");
-const missing = new Map<string, { title: string; reason: string; requestedBy: string[] }>();
+const missing = new Map<string, AggregatedMissing>();
+
+function ensure(slug: string, title: string): AggregatedMissing {
+  const current = missing.get(slug);
+  if (current) return current;
+  const created: AggregatedMissing = { slug, title, reason: "", requestedBy: [], declared: false };
+  missing.set(slug, created);
+  return created;
+}
 
 for (const page of pages) {
-  for (const node of page.data.missing_prerequisites) {
-    const current = missing.get(node.slug) ?? { title: node.title, reason: node.reason, requestedBy: [] };
-    current.requestedBy.push(page.data.title);
-    missing.set(node.slug, current);
+  for (const node of page.data.missing_prerequisites ?? []) {
+    const entry = ensure(node.slug, node.title);
+    if (!entry.reason) entry.reason = node.reason;
+    entry.declared = true;
+    if (!entry.requestedBy.includes(page.data.title)) entry.requestedBy.push(page.data.title);
   }
 }
+
+interface GraphFile {
+  nodes: Array<{ slug: string; title: string }>;
+  missing_nodes: Array<{ slug: string; title: string; referenced_by: string[] }>;
+}
+
+let graph: GraphFile = { nodes: [], missing_nodes: [] };
+try {
+  const raw = await readFile(path.join(process.cwd(), "generated", "tech-graph.json"), "utf8");
+  graph = JSON.parse(raw) as GraphFile;
+} catch {
+  // optional
+}
+
+const realSlugs = new Set([
+  ...pages.map((p) => p.data.slug),
+  ...graph.nodes.map((n) => n.slug)
+]);
+
+for (const node of graph.missing_nodes) {
+  if (realSlugs.has(node.slug)) continue;
+  const entry = ensure(node.slug, node.title);
+  if (!entry.reason) {
+    entry.reason = `Referenced by ${node.referenced_by.join(", ")} but has no source page yet.`;
+  }
+  for (const ref of node.referenced_by) {
+    if (!entry.requestedBy.includes(ref)) entry.requestedBy.push(ref);
+  }
+}
+
+const sortedMissing = [...missing.values()].sort((a, b) => a.title.localeCompare(b.title));
 ---
 
-<BaseLayout title="Missing Pages">
+<BaseLayout title="Missing Pages" description="The red-link ledger: every slug referenced by the wiki that has no source page yet, with one-click GitHub page-request links.">
   <section class="utility-page">
     <p class="eyebrow">Red-link ledger</p>
     <h1>Missing pages</h1>
     <p>
-      Missing prerequisites are explicit frontmatter declarations. Each one gets
-      a deterministic static placeholder so later GitHub Issue links and graph
-      validation have a stable target.
+      Missing slugs come from explicit frontmatter <code>missing_prerequisites</code>
+      and from prose wikilinks that have no source page yet. Each one gets a
+      stable static URL so the graph, validator, and contributors agree.
     </p>
+    <p class="muted small"><strong>{sortedMissing.length}</strong> missing pages aggregated. Click any title for the static stub plus a GitHub page-request link.</p>
+
     <div class="card-grid">
-      {[...missing.entries()].map(([slug, node]) => (
-        <article class="node-card missing-card">
-          <p>missing</p>
-          <h2><a href={missingPath(slug)}>{node.title}</a></h2>
+      {sortedMissing.map((node) => (
+        <article class={`node-card missing-card ${node.declared ? "declared" : "implicit"}`}>
+          <p>{node.declared ? "declared missing" : "implicit"}</p>
+          <h2><a href={missingPath(node.slug)}>{node.title}</a></h2>
           <span>{node.reason}</span>
-          <small>Referenced by {node.requestedBy.join(", ")}</small>
+          <small>Referenced by: {node.requestedBy.join(", ") || "—"}</small>
           <a class="inline-action" href={pageRequestUrl(node.title)}>Request on GitHub</a>
         </article>
       ))}
     </div>
+
     {missing.size === 0 && <p class="muted">No missing pages have been declared yet.</p>}
+
     <p class="request-note">
-      Page requests belong in GitHub Issues. Existing pages are listed from the
-      current collection, starting with <a href={pages[0] ? techPath(pages[0].data.slug) : "/"}>{pages[0]?.data.title ?? "the first seed page"}</a>.
-      <a href={pageRequestUrl()}>Open the page request form.</a>
+      Existing pages start at <a href={pages[0] ? techPath(pages[0].data.slug) : "/"}>{pages[0]?.data.title ?? "the first seed page"}</a>. Submit new pages through the
+      <a href={pageRequestUrl()}>GitHub page request form</a>; submit edits through pull requests.
     </p>
   </section>
 </BaseLayout>

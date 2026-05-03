@@ -1,7 +1,10 @@
 ---
 import { getCollection, render } from "astro:content";
 import GraphEdgeList from "@components/GraphEdgeList.astro";
+import LocalGraph from "@components/LocalGraph.astro";
+import ProvenancePanel from "@components/ProvenancePanel.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
+import { pageRequestUrl } from "@lib/wiki";
 
 export async function getStaticPaths() {
   const pages = await getCollection("tech");
@@ -12,40 +15,109 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
+const data = entry.data;
 const { Content } = await render(entry);
+
+const aliases = data.aliases ?? [];
+const tags = data.tags ?? [];
+const materialDeps = data.material_dependencies ?? [];
+const prerequisites = data.prerequisites ?? [];
+const unlocks = data.unlocks ?? [];
+const missingPrereqs = data.missing_prerequisites ?? [];
+
+const isOperational = data.safety_class === "allowed" || data.safety_class === "caution";
+const treatmentLabel = data.page_treatment ? data.page_treatment.replace(/_/g, " ") : null;
 ---
 
-<BaseLayout title={entry.data.title} description={entry.data.summary}>
-  <article class="tech-page">
+<BaseLayout title={data.title} description={data.summary}>
+  <article class={`tech-page tech-page-${data.safety_class}`} data-pagefind-body>
     <header class="tech-header">
-      <p class="eyebrow">{entry.data.node_type} / {entry.data.safety_class}</p>
-      <h1>{entry.data.title}</h1>
-      <p>{entry.data.summary}</p>
+      <p class="eyebrow">
+        <span class={`badge badge-type type-${data.node_type}`}>{data.node_type}</span>
+        <span class={`badge badge-safety safety-${data.safety_class}`}>{data.safety_class}</span>
+        <span class={`badge badge-status status-${data.status}`}>{data.status}</span>
+        {treatmentLabel && <span class="badge badge-treatment">{treatmentLabel}</span>}
+      </p>
+      <h1>{data.title}</h1>
+      <p class="lede">{data.summary}</p>
+      {aliases.length > 0 && (
+        <p class="aliases muted small">
+          <span>Also known as: </span>
+          <em>{aliases.join(", ")}</em>
+        </p>
+      )}
       <dl class="fact-strip">
         <div>
           <dt>Difficulty</dt>
-          <dd>{entry.data.difficulty}</dd>
+          <dd>{data.difficulty}</dd>
         </div>
         <div>
           <dt>Precision</dt>
-          <dd>{entry.data.precision_required}</dd>
+          <dd>{data.precision_required}</dd>
+        </div>
+        <div>
+          <dt>Era floor</dt>
+          <dd>{data.era_floor}</dd>
         </div>
         <div>
           <dt>First version</dt>
-          <dd>{entry.data.time_to_first_working_version}</dd>
+          <dd>{data.time_to_first_working_version.replace(/_/g, " ")}</dd>
         </div>
+        {data.minimum_social_scale && (
+          <div>
+            <dt>Min social scale</dt>
+            <dd>{data.minimum_social_scale.replace(/_/g, " ")}</dd>
+          </div>
+        )}
       </dl>
+      {!isOperational && (
+        <div class="safety-banner" role="note">
+          <strong>Restricted topic.</strong>
+          <span>This page is non-operational graph context only. It must not include reproduction recipes, ratios, or operational steps.</span>
+        </div>
+      )}
     </header>
 
     <div class="article-grid">
       <aside class="article-rail" aria-label="Technology graph">
-        <GraphEdgeList title="Prerequisites" edges={entry.data.prerequisites} missing={entry.data.missing_prerequisites} />
-        <GraphEdgeList title="Unlocks" edges={entry.data.unlocks} />
+        <LocalGraph entry={entry} />
+        <GraphEdgeList title="Prerequisites" edges={prerequisites} missing={missingPrereqs} />
+        <GraphEdgeList title="Unlocks" edges={unlocks} />
+        {materialDeps.length > 0 && (
+          <section class="edge-panel" aria-label="Material dependencies">
+            <h2>Materials</h2>
+            <ul class="edge-list">
+              {materialDeps.map((dep) => (
+                <li class={`material-${dep.importance}`}>
+                  <a href={`/tech/${dep.slug}/`}>{dep.title}</a>
+                  <span>{dep.importance}</span>
+                  <p>{dep.availability_note}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+        {tags.length > 0 && (
+          <section class="edge-panel tag-panel" aria-label="Tags">
+            <h2>Tags</h2>
+            <ul class="tag-list">
+              {tags.map((tag) => (<li>#{tag}</li>))}
+            </ul>
+          </section>
+        )}
+        <section class="edge-panel request-panel">
+          <h2>Improve this page</h2>
+          <p class="muted small">Edits ship through reviewed pull requests; new pages start as GitHub issues.</p>
+          <p class="provenance-actions">
+            <a class="button secondary small" href={pageRequestUrl(data.title)}>Request an edit</a>
+          </p>
+        </section>
       </aside>
-      <div class="article-body">
+      <div class="article-body field-card">
         <Content />
       </div>
     </div>
+
+    <ProvenancePanel entry={entry} />
   </article>
 </BaseLayout>
-

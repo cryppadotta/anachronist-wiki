@@ -8,7 +8,9 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && pagefind --site dist --output-subdir pagefind",
+    "build:site": "astro build",
+    "build:search": "pagefind --site dist --output-subdir pagefind",
     "check": "astro check",
     "generate:page": "node --experimental-strip-types scripts/generate-page.ts",
     "validate:content": "node --experimental-strip-types scripts/validate-content.ts",
@@ -24,6 +26,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.9",
+    "pagefind": "^1.5.2",
     "typescript": "5.9.3"
   }
 }

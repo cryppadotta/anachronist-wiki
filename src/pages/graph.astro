@@ -1,49 +1,172 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
-import { getCollection } from "astro:content";
-import { techPath } from "@lib/wiki";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
+import { missingPath, pageRequestUrl, techPath } from "@lib/wiki";
 
-const pages = await getCollection("tech");
-const edges = pages.flatMap((page) =>
-  page.data.prerequisites.map((edge) => ({
-    from: edge.slug,
-    fromTitle: edge.title,
-    to: page.data.slug,
-    toTitle: page.data.title,
-    kind: edge.kind
-  }))
-);
+interface GraphNode {
+  slug: string;
+  title: string;
+  node_type: string;
+  safety_class: string;
+  status: string;
+  summary: string;
+  path: string;
+  era_floor: string;
+}
+
+interface GraphEdge {
+  from: string;
+  to: string;
+  kind: string;
+  role: string;
+  title?: string;
+  source: string;
+  declared_in: string;
+}
+
+interface MissingNode {
+  slug: string;
+  title: string;
+  referenced_by: string[];
+  reference_types: string[];
+}
+
+interface GraphFile {
+  schema_version: number;
+  nodes: GraphNode[];
+  edges: GraphEdge[];
+  missing_nodes: MissingNode[];
+  diagnostics: Array<{ severity: string; message: string; slug?: string; file?: string }>;
+}
+
+const graphPath = path.join(process.cwd(), "generated", "tech-graph.json");
+let graph: GraphFile = { schema_version: 1, nodes: [], edges: [], missing_nodes: [], diagnostics: [] };
+
+try {
+  const raw = await readFile(graphPath, "utf8");
+  graph = JSON.parse(raw) as GraphFile;
+} catch (error) {
+  console.warn("graph.astro: failed to read tech-graph.json", error);
+}
+
+const nodesBySlug = new Map(graph.nodes.map((node) => [node.slug, node]));
+const missingBySlug = new Map(graph.missing_nodes.map((node) => [node.slug, node]));
+
+const nodesByType = new Map<string, GraphNode[]>();
+for (const node of graph.nodes) {
+  const list = nodesByType.get(node.node_type) ?? [];
+  list.push(node);
+  nodesByType.set(node.node_type, list);
+}
+
+const errorCount = graph.diagnostics.filter((d) => d.severity === "error").length;
+const warningCount = graph.diagnostics.filter((d) => d.severity === "warning").length;
+
+const NODE_TYPE_ORDER = ["material", "tool", "process", "artifact", "knowledge", "measurement", "institution", "test"];
+const sortedTypes = NODE_TYPE_ORDER.filter((t) => nodesByType.has(t));
+for (const t of nodesByType.keys()) if (!sortedTypes.includes(t)) sortedTypes.push(t);
 ---
 
-<BaseLayout title="Graph">
-  <section class="utility-page">
-    <p class="eyebrow">Graph placeholder</p>
-    <h1>Technology graph</h1>
-    <p>
-      This static scaffold reads explicit frontmatter edges. Later validator and
-      frontend work can replace this list with generated `tech-graph.json` and
-      an interactive explorer.
-    </p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Prerequisite</th>
-            <th>Kind</th>
-            <th>Target</th>
-          </tr>
-        </thead>
-        <tbody>
-          {edges.map((edge) => (
-            <tr>
-              <td><a href={techPath(edge.from)}>{edge.fromTitle}</a></td>
-              <td>{edge.kind}</td>
-              <td><a href={techPath(edge.to)}>{edge.toTitle}</a></td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+<BaseLayout title="Graph" description="Browse the Anachronist Wiki technology tree by node type, safety class, and prerequisite edges.">
+  <section class="graph-page">
+    <header class="graph-hero">
+      <p class="eyebrow">Technology graph</p>
+      <h1>Tree of useful things</h1>
+      <p>Built from <code>generated/tech-graph.json</code>. Pages are nodes; explicit frontmatter relations are edges. Red rings are declared-missing prerequisites that need a page request.</p>
+      <ul class="graph-stats">
+        <li><strong>{graph.nodes.length}</strong> pages</li>
+        <li><strong>{graph.edges.length}</strong> edges</li>
+        <li><strong>{graph.missing_nodes.length}</strong> missing prereqs</li>
+        <li class={errorCount > 0 ? "graph-stat-bad" : "graph-stat-ok"}><strong>{errorCount}</strong> errors</li>
+        <li class={warningCount > 0 ? "graph-stat-warn" : "graph-stat-ok"}><strong>{warningCount}</strong> warnings</li>
+      </ul>
+    </header>
+
+    {graph.nodes.length === 0 ? (
+      <div class="callout">
+        <p>No graph data yet. Run <code>npm run build:graph</code> after adding content under <code>content/tech/</code>.</p>
+      </div>
+    ) : (
+      <>
+        <section class="graph-section" aria-label="Graph by node type">
+          <h2>By node type</h2>
+          <div class="graph-clusters">
+            {sortedTypes.map((nodeType) => (
+              <article class={`graph-cluster cluster-${nodeType}`}>
+                <h3>{nodeType}<span>{(nodesByType.get(nodeType) ?? []).length}</span></h3>
+                <ul>
+                  {(nodesByType.get(nodeType) ?? []).map((node) => (
+                    <li class={`graph-node-row safety-${node.safety_class}`}>
+                      <a href={node.path}>{node.title}</a>
+                      <span class="node-meta">{node.era_floor} · {node.status}</span>
+                      <p class="muted small">{node.summary}</p>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section class="graph-section" aria-label="Graph edges">
+          <h2>Edges ({graph.edges.length})</h2>
+          <div class="table-wrap">
+            <table class="graph-table">
+              <thead>
+                <tr><th>From</th><th>Kind</th><th>To</th><th>Role</th></tr>
+              </thead>
+              <tbody>
+                {graph.edges.map((edge) => {
+                  const fromNode = nodesBySlug.get(edge.from);
+                  const toNode = nodesBySlug.get(edge.to);
+                  const fromHref = fromNode ? techPath(edge.from) : missingBySlug.has(edge.from) ? missingPath(edge.from) : `/missing/${edge.from}/`;
+                  const toHref = toNode ? techPath(edge.to) : missingBySlug.has(edge.to) ? missingPath(edge.to) : `/missing/${edge.to}/`;
+                  const fromTitle = fromNode?.title ?? missingBySlug.get(edge.from)?.title ?? edge.from;
+                  const toTitle = toNode?.title ?? missingBySlug.get(edge.to)?.title ?? edge.title ?? edge.to;
+                  return (
+                    <tr class={`edge-row edge-${edge.kind}`}>
+                      <td class={fromNode ? "" : "missing-link"}><a href={fromHref}>{fromTitle}</a></td>
+                      <td><span class={`edge-chip edge-chip-${edge.kind}`}>{edge.kind}</span></td>
+                      <td class={toNode ? "" : "missing-link"}><a href={toHref}>{toTitle}</a></td>
+                      <td>{edge.role}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="graph-section" aria-label="Missing prerequisites">
+          <h2>Missing prerequisites ({graph.missing_nodes.length})</h2>
+          <p>These slugs are referenced by existing pages but have no source file yet. Each one renders at <code>/missing/&lt;slug&gt;/</code> and links to a GitHub page request.</p>
+          <ul class="missing-grid">
+            {graph.missing_nodes.map((node) => (
+              <li class="missing-pill">
+                <a class="missing-pill-link" href={missingPath(node.slug)}>{node.title}</a>
+                <span class="muted small">referenced by {node.referenced_by.join(", ")}</span>
+                <a class="inline-action" href={pageRequestUrl(node.title)}>Request page</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {graph.diagnostics.length > 0 && (
+          <details class="graph-diagnostics">
+            <summary>Validator diagnostics ({graph.diagnostics.length})</summary>
+            <ul>
+              {graph.diagnostics.map((d) => (
+                <li class={`diag diag-${d.severity}`}>
+                  <strong>{d.severity}</strong>
+                  {d.slug && <code>{d.slug}</code>}
+                  <span>{d.message}</span>
+                </li>
+              ))}
+            </ul>
+          </details>
+        )}
+      </>
+    )}
   </section>
 </BaseLayout>
-

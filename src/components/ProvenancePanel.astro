@@ -1,0 +1,137 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { githubRepositoryUrl } from "@lib/wiki";
+
+interface Props {
+  entry: CollectionEntry<"tech">;
+}
+
+const { entry } = Astro.props;
+const data = entry.data;
+const generation = {
+  created_by: data.generation?.created_by ?? "human",
+  provider: data.generation?.provider,
+  model: data.generation?.model,
+  prompt_version: data.generation?.prompt_version,
+  generated_at: data.generation?.generated_at,
+  source_commit: data.generation?.source_commit,
+  request_issue: data.generation?.request_issue,
+  reviewed_by: data.generation?.reviewed_by ?? [],
+  source_review_notes: data.generation?.source_review_notes ?? []
+};
+const confidence = {
+  practicality: data.confidence?.practicality ?? 0,
+  historical_plausibility: data.confidence?.historical_plausibility ?? 0,
+  completeness: data.confidence?.completeness ?? 0
+};
+
+const sourcePath = `content/tech/${data.slug}.md`;
+const editUrl = `${githubRepositoryUrl}/edit/main/${sourcePath}`;
+const historyUrl = `${githubRepositoryUrl}/commits/main/${sourcePath}`;
+
+function pct(value: number): string {
+  return `${Math.round(value * 100)}%`;
+}
+
+function clamp01(value: number): number {
+  return Math.min(1, Math.max(0, value));
+}
+
+function bucket(value: number): number {
+  return Math.max(5, Math.round(clamp01(value) * 20) * 5);
+}
+
+const confidenceRows: Array<{ key: string; label: string; value: number }> = [
+  { key: "practicality", label: "Practicality", value: clamp01(confidence.practicality) },
+  { key: "historical_plausibility", label: "Historical plausibility", value: clamp01(confidence.historical_plausibility) },
+  { key: "completeness", label: "Completeness", value: clamp01(confidence.completeness) }
+];
+---
+
+<aside class="provenance" aria-labelledby="provenance-heading">
+  <h2 id="provenance-heading">Provenance &amp; review</h2>
+  <div class="provenance-grid">
+    <section class="provenance-block">
+      <h3>Source</h3>
+      <dl>
+        <div>
+          <dt>Created by</dt>
+          <dd>{generation.created_by === "human" ? "Human author" : "LLM-assisted draft"}</dd>
+        </div>
+        {generation.provider && (
+          <div>
+            <dt>Provider</dt>
+            <dd>{generation.provider}</dd>
+          </div>
+        )}
+        {generation.model && (
+          <div>
+            <dt>Model</dt>
+            <dd>{generation.model}</dd>
+          </div>
+        )}
+        {generation.prompt_version && (
+          <div>
+            <dt>Prompt version</dt>
+            <dd><code>{generation.prompt_version}</code></dd>
+          </div>
+        )}
+        {generation.generated_at && (
+          <div>
+            <dt>Generated</dt>
+            <dd>{generation.generated_at}</dd>
+          </div>
+        )}
+        {generation.source_commit && (
+          <div>
+            <dt>Source commit</dt>
+            <dd><code>{generation.source_commit.slice(0, 12)}</code></dd>
+          </div>
+        )}
+        {generation.request_issue && (
+          <div>
+            <dt>Request</dt>
+            <dd><a href={generation.request_issue}>GitHub issue</a></dd>
+          </div>
+        )}
+      </dl>
+    </section>
+
+    <section class="provenance-block">
+      <h3>Confidence</h3>
+      <ul class="confidence-bars">
+        {confidenceRows.map((row) => (
+          <li>
+            <div class="cb-label">
+              <span>{row.label}</span>
+              <span>{pct(row.value)}</span>
+            </div>
+            <div class={`cb-track cb-${row.key}`} role="presentation" data-confidence={row.value.toFixed(2)}>
+              <div class={`cb-fill cb-fill-${bucket(row.value)}`} />
+            </div>
+          </li>
+        ))}
+      </ul>
+      {generation.reviewed_by.length > 0 ? (
+        <p class="provenance-reviewers"><strong>Reviewed by:</strong> {generation.reviewed_by.join(", ")}</p>
+      ) : (
+        <p class="provenance-reviewers muted">Not yet reviewed by a maintainer.</p>
+      )}
+      {generation.source_review_notes.length > 0 && (
+        <ul class="source-review-notes">
+          {generation.source_review_notes.map((note) => <li>{note}</li>)}
+        </ul>
+      )}
+    </section>
+
+    <section class="provenance-block">
+      <h3>Edit on GitHub</h3>
+      <p class="muted">Generation is maintainer-only. Edits land through pull requests.</p>
+      <p class="provenance-actions">
+        <a class="button secondary small" href={editUrl}>Edit page on GitHub</a>
+        <a class="button secondary small" href={historyUrl}>View history</a>
+      </p>
+      <p class="muted small"><code>{sourcePath}</code></p>
+    </section>
+  </div>
+</aside>
