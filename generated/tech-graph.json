@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "cycle_policy": {
+    "summary": "Cycles are allowed only when they describe co-evolutionary relationships, not circular build instructions.",
+    "nonBlockingEdgeKinds": [
+      "soft",
+      "optional",
+      "alternative",
+      "enables",
+      "knowledge",
+      "measurement",
+      "institutional",
+      "test"
+    ],
+    "strictEdgeKinds": [
+      "hard",
+      "material_source",
+      "refining",
+      "tooling",
+      "safety"
+    ],
+    "strictCycleRule": "A cycle containing strict edges is invalid unless every strict edge in that cycle has cycle_ok: true and a cycle_reason explaining the historically plausible co-evolution."
+  },
+  "nodes": [
+    {
+      "slug": "wheel-and-axle",
+      "title": "Wheel and axle",
+      "aliases": [
+        "axle",
+        "wheel"
+      ],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A rotating round member fixed to a central shaft, useful for carts, pulleys, windlasses, potter's wheels, and later transport systems.",
+      "era_floor": "ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "mechanics",
+        "transport",
+        "workshop"
+      ],
+      "path": "/tech/wheel-and-axle/",
+      "source_file": "content/tech/wheel-and-axle.md",
+      "confidence": {
+        "practicality": 0.72,
+        "historical_plausibility": 0.86,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "human",
+        "reviewed_by": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "lever",
+      "to": "wheel-and-axle",
+      "kind": "knowledge",
+      "role": "Understand how a longer radius trades force for distance.",
+      "source": "prerequisite",
+      "declared_in": "wheel-and-axle",
+      "title": "Lever"
+    },
+    {
+      "from": "rope",
+      "to": "wheel-and-axle",
+      "kind": "optional",
+      "role": "Useful for windlasses, carts, and load handling around the axle.",
+      "source": "prerequisite",
+      "declared_in": "wheel-and-axle",
+      "title": "Rope"
+    },
+    {
+      "from": "wheel-and-axle",
+      "to": "bicycle",
+      "kind": "enables",
+      "role": "Later human-powered transport depends on reliable wheels and axles.",
+      "source": "unlock",
+      "declared_in": "wheel-and-axle",
+      "title": "Bicycle"
+    },
+    {
+      "from": "wheel-and-axle",
+      "to": "cart",
+      "kind": "enables",
+      "role": "The wheel and axle become a load-carrying transport system.",
+      "source": "unlock",
+      "declared_in": "wheel-and-axle",
+      "title": "Cart"
+    },
+    {
+      "from": "wheel-and-axle",
+      "to": "pulley",
+      "kind": "enables",
+      "role": "A grooved wheel changes the direction of a rope force.",
+      "source": "unlock",
+      "declared_in": "wheel-and-axle",
+      "title": "Pulley"
+    },
+    {
+      "from": "woodworking",
+      "to": "wheel-and-axle",
+      "kind": "hard",
+      "role": "Shape the wheel, axle, hub, and supporting frame.",
+      "source": "prerequisite",
+      "declared_in": "wheel-and-axle",
+      "title": "Woodworking"
+    }
+  ],
+  "missing_nodes": [
+    {
+      "slug": "bicycle",
+      "title": "Bicycle",
+      "referenced_by": [
+        "wheel-and-axle"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "edge:unlock:enables"
+      ]
+    },
+    {
+      "slug": "cart",
+      "title": "Cart",
+      "referenced_by": [
+        "wheel-and-axle"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "edge:unlock:enables"
+      ]
+    },
+    {
+      "slug": "lever",
+      "title": "Lever",
+      "referenced_by": [
+        "wheel-and-axle"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "edge:prerequisite:knowledge"
+      ]
+    },
+    {
+      "slug": "potters-wheel",
+      "title": "Potter's wheel",
+      "referenced_by": [
+        "wheel-and-axle"
+      ],
+      "reference_types": [
+        "body_wikilink"
+      ]
+    },
+    {
+      "slug": "pulley",
+      "title": "Pulley",
+      "referenced_by": [
+        "wheel-and-axle"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "edge:unlock:enables"
+      ]
+    },
+    {
+      "slug": "rope",
+      "title": "Rope",
+      "referenced_by": [
+        "wheel-and-axle"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "edge:prerequisite:optional"
+      ]
+    },
+    {
+      "slug": "standard-weights",
+      "title": "Standard weights",
+      "referenced_by": [
+        "wheel-and-axle"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite"
+      ]
+    },
+    {
+      "slug": "woodworking",
+      "title": "Woodworking",
+      "referenced_by": [
+        "wheel-and-axle"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:hard"
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Graph reference \"bicycle\" has no page and is not listed in missing_prerequisites."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Graph reference \"cart\" has no page and is not listed in missing_prerequisites."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Graph reference \"lever\" has no page and is not listed in missing_prerequisites."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Graph reference \"pulley\" has no page and is not listed in missing_prerequisites."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Graph reference \"rope\" has no page and is not listed in missing_prerequisites."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Graph reference \"woodworking\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Wikilink \"bicycle\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Wikilink \"cart\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Wikilink \"lever\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Wikilink \"potters-wheel\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Wikilink \"pulley\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Wikilink \"rope\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Wikilink \"standard-weights\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/wheel-and-axle.md",
+      "slug": "wheel-and-axle",
+      "message": "Wikilink \"woodworking\" has no matching page."
+    }
+  ]
+}

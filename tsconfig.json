@@ -1,6 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
@@ -9,4 +10,3 @@
     }
   }
 }
-

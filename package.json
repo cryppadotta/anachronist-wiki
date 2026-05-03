@@ -7,11 +7,15 @@
     "dev": "astro dev",
     "build": "astro build",
     "check": "astro check",
+    "validate:content": "node --experimental-strip-types scripts/validate-content.ts",
+    "build:graph": "node --experimental-strip-types scripts/build-graph.ts",
     "preview": "astro preview",
     "pages:build": "astro build"
   },
   "dependencies": {
-    "astro": "6.2.1"
+    "astro": "6.2.1",
+    "yaml": "2.8.4",
+    "zod": "4.4.2"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.9",
