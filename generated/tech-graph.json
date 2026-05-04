@@ -23,6 +23,782 @@
   },
   "nodes": [
     {
+      "slug": "alignment-checking",
+      "title": "Alignment checking",
+      "aliases": [
+        "straightness checking",
+        "truing"
+      ],
+      "node_type": "test",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A workshop test practice for checking whether wheels, shafts, frames, holes, and guide surfaces point where they should.",
+      "era_floor": "ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "measurement",
+        "testing",
+        "workshop"
+      ],
+      "path": "/tech/alignment-checking/",
+      "source_file": "content/tech/alignment-checking.md",
+      "confidence": {
+        "practicality": 0.82,
+        "historical_plausibility": 0.7,
+        "completeness": 0.56
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-34 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-34",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; historical workshop testing practices need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "bicycle",
+      "title": "Bicycle",
+      "aliases": [
+        "bike"
+      ],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A narrow human-powered vehicle that turns balancing, light wheels, low-friction bearings, steering, and workshop alignment into efficient personal transport.",
+      "era_floor": "early_modern_to_industrial",
+      "difficulty": "advanced",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "mechanics",
+        "transport",
+        "workshop"
+      ],
+      "path": "/tech/bicycle/",
+      "source_file": "content/tech/bicycle.md",
+      "confidence": {
+        "practicality": 0.58,
+        "historical_plausibility": 0.5,
+        "completeness": 0.54
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-34 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-34",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; bicycle history, material choices, and regional feasibility need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "cart",
+      "title": "Cart",
+      "aliases": [
+        "handcart"
+      ],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A wheeled load carrier that combines wheels, axle support, frame, load bed, pulling method, and maintenance habits.",
+      "era_floor": "ancient",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "logistics",
+        "transport",
+        "workshop"
+      ],
+      "path": "/tech/cart/",
+      "source_file": "content/tech/cart.md",
+      "confidence": {
+        "practicality": 0.76,
+        "historical_plausibility": 0.82,
+        "completeness": 0.56
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-34 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-34",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; vehicle history and regional road assumptions need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "charcoal",
+      "title": "Charcoal",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Carbon-rich fuel made by heating wood with limited air, useful where cleaner, hotter, lighter, or more predictable fuel is needed.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "intermediate",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "carbon",
+        "fuel",
+        "workshop"
+      ],
+      "path": "/tech/charcoal/",
+      "source_file": "content/tech/charcoal.md",
+      "confidence": {
+        "practicality": 0.66,
+        "historical_plausibility": 0.82,
+        "completeness": 0.54
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; species and historical production claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "clay",
+      "title": "Clay",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Fine mineral sediment that can be shaped wet and hardened by drying or firing for vessels, bricks, molds, tablets, and kiln structures.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "ceramics",
+        "earth",
+        "material"
+      ],
+      "path": "/tech/clay/",
+      "source_file": "content/tech/clay.md",
+      "confidence": {
+        "practicality": 0.8,
+        "historical_plausibility": 0.85,
+        "completeness": 0.62
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; geology and ceramic claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "counting",
+      "title": "Counting",
+      "aliases": [
+        "arithmetic basics"
+      ],
+      "node_type": "knowledge",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A shared method for keeping track of number, order, quantity, and repeated work.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "minutes_to_days",
+      "tags": [
+        "knowledge",
+        "measurement",
+        "records"
+      ],
+      "path": "/tech/counting/",
+      "source_file": "content/tech/counting.md",
+      "confidence": {
+        "practicality": 0.86,
+        "historical_plausibility": 0.84,
+        "completeness": 0.6
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; anthropology and history claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "ink",
+      "title": "Ink",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A mark-making fluid or paste that carries pigment or dye onto paper, parchment, wood, clay labels, or other record surfaces.",
+      "era_floor": "ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "materials",
+        "records",
+        "writing"
+      ],
+      "path": "/tech/ink/",
+      "source_file": "content/tech/ink.md",
+      "confidence": {
+        "practicality": 0.72,
+        "historical_plausibility": 0.78,
+        "completeness": 0.56
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; pigment and binder claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "kiln",
+      "title": "Kiln",
+      "aliases": [
+        "firing kiln"
+      ],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A heat-retaining enclosure for firing clay, drying materials, making lime, and later supporting higher-temperature workshop processes.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ceramics",
+        "heat",
+        "workshop"
+      ],
+      "path": "/tech/kiln/",
+      "source_file": "content/tech/kiln.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.82,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; firing ranges and kiln history need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "lever",
+      "title": "Lever",
+      "aliases": [
+        "pry bar"
+      ],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A rigid bar used around a fulcrum to trade distance for force in lifting, prying, pressing, and control mechanisms.",
+      "era_floor": "prehistoric",
+      "difficulty": "trivial",
+      "precision_required": "low",
+      "time_to_first_working_version": "minutes",
+      "tags": [
+        "mechanics",
+        "simple-machines",
+        "workshop"
+      ],
+      "path": "/tech/lever/",
+      "source_file": "content/tech/lever.md",
+      "confidence": {
+        "practicality": 0.9,
+        "historical_plausibility": 0.92,
+        "completeness": 0.68
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; historical and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "paper",
+      "title": "Paper",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A thin sheet made from interlocked fibers, useful for records, drawings, labels, patterns, teaching, and administrative memory.",
+      "era_floor": "ancient",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "fibers",
+        "material",
+        "records"
+      ],
+      "path": "/tech/paper/",
+      "source_file": "content/tech/paper.md",
+      "confidence": {
+        "practicality": 0.6,
+        "historical_plausibility": 0.62,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; historical papermaking claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "plain-bearing",
+      "title": "Plain bearing",
+      "aliases": [
+        "bearing surface",
+        "bushing"
+      ],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A low-friction rubbing surface or sleeve that lets a shaft turn or pivot with controlled wear.",
+      "era_floor": "ancient",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "friction",
+        "mechanics",
+        "workshop"
+      ],
+      "path": "/tech/plain-bearing/",
+      "source_file": "content/tech/plain-bearing.md",
+      "confidence": {
+        "practicality": 0.7,
+        "historical_plausibility": 0.74,
+        "completeness": 0.56
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-34 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-34",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; historical bearing materials and chronology need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "potters-wheel",
+      "title": "Potter's wheel",
+      "aliases": [
+        "pottery wheel"
+      ],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A rotating work platform that lets a potter shape clay symmetrically with steady hand pressure.",
+      "era_floor": "ancient",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ceramics",
+        "rotation",
+        "workshop"
+      ],
+      "path": "/tech/potters-wheel/",
+      "source_file": "content/tech/potters-wheel.md",
+      "confidence": {
+        "practicality": 0.74,
+        "historical_plausibility": 0.78,
+        "completeness": 0.55
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-34 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-34",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; ceramic chronology and wheel forms need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "pulley",
+      "title": "Pulley",
+      "aliases": [
+        "sheave"
+      ],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A grooved wheel or roller that guides rope, changes force direction, and can combine with other pulleys for lifting advantage.",
+      "era_floor": "ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "lifting",
+        "mechanics",
+        "simple-machines"
+      ],
+      "path": "/tech/pulley/",
+      "source_file": "content/tech/pulley.md",
+      "confidence": {
+        "practicality": 0.7,
+        "historical_plausibility": 0.78,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; load claims and historical details need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "rope",
+      "title": "Rope",
+      "aliases": [
+        "cord",
+        "cordage"
+      ],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Twisted or braided fibers that carry tension for hauling, lifting, tying, measuring, and transmitting force.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "hours",
+      "tags": [
+        "cordage",
+        "lifting",
+        "materials"
+      ],
+      "path": "/tech/rope/",
+      "source_file": "content/tech/rope.md",
+      "confidence": {
+        "practicality": 0.78,
+        "historical_plausibility": 0.86,
+        "completeness": 0.64
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; fiber availability and preparation claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "rope-making",
+      "title": "Rope making",
+      "aliases": [
+        "cordage making"
+      ],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "The process of preparing fibers and laying them into cord, line, or rope with enough consistency for tying, hauling, and lifting tests.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "cordage",
+        "process",
+        "quality-control"
+      ],
+      "path": "/tech/rope-making/",
+      "source_file": "content/tech/rope-making.md",
+      "confidence": {
+        "practicality": 0.76,
+        "historical_plausibility": 0.84,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; fiber preparation and regional availability need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "sanitation-norms",
+      "title": "Sanitation norms",
+      "aliases": [
+        "hygiene norms"
+      ],
+      "node_type": "institution",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Shared rules for separating waste, drinking water, food handling, washing, burial, drainage, and sickness response.",
+      "era_floor": "ancient",
+      "difficulty": "intermediate",
+      "precision_required": "low",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "institution",
+        "public-health",
+        "records"
+      ],
+      "path": "/tech/sanitation-norms/",
+      "source_file": "content/tech/sanitation-norms.md",
+      "confidence": {
+        "practicality": 0.74,
+        "historical_plausibility": 0.7,
+        "completeness": 0.52
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; historical public-health claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "spoked-wheel",
+      "title": "Spoked wheel",
+      "aliases": [
+        "light wheel"
+      ],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A wheel built from hub, spokes, and rim so it can stay large while using less material than a solid disk.",
+      "era_floor": "ancient",
+      "difficulty": "intermediate",
+      "precision_required": "high",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "mechanics",
+        "transport",
+        "woodworking"
+      ],
+      "path": "/tech/spoked-wheel/",
+      "source_file": "content/tech/spoked-wheel.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.55
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-34 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-34",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; wheel-building chronology and joinery details need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "standard-weights",
+      "title": "Standard weights",
+      "aliases": [
+        "weight standards",
+        "weights"
+      ],
+      "node_type": "measurement",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Agreed reference masses used to compare materials, loads, trade quantities, tests, and batch records.",
+      "era_floor": "ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "measurement",
+        "standards",
+        "trade"
+      ],
+      "path": "/tech/standard-weights/",
+      "source_file": "content/tech/standard-weights.md",
+      "confidence": {
+        "practicality": 0.74,
+        "historical_plausibility": 0.8,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; metrology history needs human source review."
+        ]
+      }
+    },
+    {
+      "slug": "technical-drawing",
+      "title": "Technical drawing",
+      "aliases": [
+        "workshop drawing"
+      ],
+      "node_type": "knowledge",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A shared drawing practice for communicating shape, size, parts, assembly, and revisions before or during construction.",
+      "era_floor": "ancient_to_medieval",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "design",
+        "measurement",
+        "records"
+      ],
+      "path": "/tech/technical-drawing/",
+      "source_file": "content/tech/technical-drawing.md",
+      "confidence": {
+        "practicality": 0.76,
+        "historical_plausibility": 0.68,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; history of drawing conventions needs human source review."
+        ]
+      }
+    },
+    {
+      "slug": "tensile-test",
+      "title": "Tensile test",
+      "aliases": [
+        "pull test"
+      ],
+      "node_type": "test",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A controlled pull test for comparing rope, fiber, thread, straps, joints, and other materials that fail in tension.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "hours",
+      "tags": [
+        "materials",
+        "quality-control",
+        "testing"
+      ],
+      "path": "/tech/tensile-test/",
+      "source_file": "content/tech/tensile-test.md",
+      "confidence": {
+        "practicality": 0.76,
+        "historical_plausibility": 0.75,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; test method history and safety limits need human source review."
+        ]
+      }
+    },
+    {
       "slug": "wheel-and-axle",
       "title": "Wheel and axle",
       "aliases": [
@@ -54,9 +830,403 @@
         "reviewed_by": [],
         "source_review_notes": []
       }
+    },
+    {
+      "slug": "woodworking",
+      "title": "Woodworking",
+      "aliases": [
+        "carpentry",
+        "joinery"
+      ],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "The practical craft of selecting, shaping, joining, boring, smoothing, and repairing wood for tools, frames, wheels, fixtures, and buildings.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "material-processing",
+        "tools",
+        "workshop"
+      ],
+      "path": "/tech/woodworking/",
+      "source_file": "content/tech/woodworking.md",
+      "confidence": {
+        "practicality": 0.78,
+        "historical_plausibility": 0.82,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-34 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-34",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; regional timber and tool-history claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "writing",
+      "title": "Writing",
+      "aliases": [
+        "record writing"
+      ],
+      "node_type": "knowledge",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A durable symbol system and teaching practice for records, labels, instructions, measurements, and plans.",
+      "era_floor": "ancient",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "institutions",
+        "knowledge",
+        "records"
+      ],
+      "path": "/tech/writing/",
+      "source_file": "content/tech/writing.md",
+      "confidence": {
+        "practicality": 0.7,
+        "historical_plausibility": 0.76,
+        "completeness": 0.56
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5 Codex",
+        "provider": "OpenAI",
+        "prompt_version": "ANA-13 seed-content manual draft",
+        "generated_at": "2026-05-03",
+        "request_issue": "ANA-13",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; literacy and historical claims need human source review."
+        ]
+      }
     }
   ],
   "edges": [
+    {
+      "from": "alignment-checking",
+      "to": "bicycle",
+      "kind": "test",
+      "role": "Keeps wheels, frame, and steering from fighting each other.",
+      "source": "prerequisite",
+      "declared_in": "bicycle",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "alignment-checking",
+      "to": "bicycle",
+      "kind": "test",
+      "role": "Single-track vehicles are intolerant of frame and wheel misalignment.",
+      "source": "unlock",
+      "declared_in": "alignment-checking",
+      "title": "Bicycle"
+    },
+    {
+      "from": "alignment-checking",
+      "to": "cart",
+      "kind": "test",
+      "role": "Keeps wheels parallel enough to roll without dragging.",
+      "source": "prerequisite",
+      "declared_in": "cart",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "alignment-checking",
+      "to": "plain-bearing",
+      "kind": "test",
+      "role": "Misalignment turns a bearing into a brake.",
+      "source": "prerequisite",
+      "declared_in": "plain-bearing",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "alignment-checking",
+      "to": "plain-bearing",
+      "kind": "test",
+      "role": "Bearings fail quickly when shafts are crooked.",
+      "source": "unlock",
+      "declared_in": "alignment-checking",
+      "title": "Plain bearing"
+    },
+    {
+      "from": "alignment-checking",
+      "to": "spoked-wheel",
+      "kind": "test",
+      "role": "A light wheel must be checked for wobble and roundness.",
+      "source": "prerequisite",
+      "declared_in": "spoked-wheel",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "cart",
+      "to": "bicycle",
+      "kind": "soft",
+      "role": "Cart work teaches wheel maintenance, load paths, and transport repair culture.",
+      "source": "unlock",
+      "declared_in": "cart",
+      "title": "Bicycle"
+    },
+    {
+      "from": "charcoal",
+      "to": "ink",
+      "kind": "material_source",
+      "role": "Soot or carbon black is a practical black pigment source.",
+      "source": "prerequisite",
+      "declared_in": "ink",
+      "title": "Charcoal"
+    },
+    {
+      "from": "charcoal",
+      "to": "ink",
+      "kind": "material_source",
+      "role": "Soot and carbon black can supply black pigment.",
+      "source": "unlock",
+      "declared_in": "charcoal",
+      "title": "Ink"
+    },
+    {
+      "from": "charcoal",
+      "to": "kiln",
+      "kind": "optional",
+      "role": "Offers cleaner concentrated fuel for some firing work.",
+      "source": "prerequisite",
+      "declared_in": "kiln",
+      "title": "Charcoal"
+    },
+    {
+      "from": "charcoal",
+      "to": "kiln",
+      "kind": "optional",
+      "role": "Charcoal can improve repeatability in some kiln and furnace work.",
+      "source": "unlock",
+      "declared_in": "charcoal",
+      "title": "Kiln"
+    },
+    {
+      "from": "clay",
+      "to": "charcoal",
+      "kind": "optional",
+      "role": "Clay-rich earth can help seal a mound or pit.",
+      "source": "prerequisite",
+      "declared_in": "charcoal",
+      "title": "Clay"
+    },
+    {
+      "from": "clay",
+      "to": "kiln",
+      "kind": "material_source",
+      "role": "Supplies lining, sealing, bricks, shelves, and test pieces.",
+      "source": "prerequisite",
+      "declared_in": "kiln",
+      "title": "Clay"
+    },
+    {
+      "from": "clay",
+      "to": "kiln",
+      "kind": "material_source",
+      "role": "Clay forms refractory walls, shelves, sealants, and test pieces.",
+      "source": "unlock",
+      "declared_in": "clay",
+      "title": "Kiln"
+    },
+    {
+      "from": "clay",
+      "to": "potters-wheel",
+      "kind": "material_source",
+      "role": "Supplies the plastic material being shaped.",
+      "source": "prerequisite",
+      "declared_in": "potters-wheel",
+      "title": "Clay"
+    },
+    {
+      "from": "clay",
+      "to": "writing",
+      "kind": "optional",
+      "role": "Clay tablets are an early record medium where paper is absent.",
+      "source": "unlock",
+      "declared_in": "clay",
+      "title": "Writing"
+    },
+    {
+      "from": "counting",
+      "to": "alignment-checking",
+      "kind": "knowledge",
+      "role": "Repeated marks, comparisons, and records benefit from number.",
+      "source": "prerequisite",
+      "declared_in": "alignment-checking",
+      "title": "Counting"
+    },
+    {
+      "from": "counting",
+      "to": "rope-making",
+      "kind": "knowledge",
+      "role": "Strand count, sample labels, and batch comparisons need number.",
+      "source": "prerequisite",
+      "declared_in": "rope-making",
+      "title": "Counting"
+    },
+    {
+      "from": "counting",
+      "to": "sanitation-norms",
+      "kind": "optional",
+      "role": "Counting illness events and inspections helps identify patterns.",
+      "source": "prerequisite",
+      "declared_in": "sanitation-norms",
+      "title": "Counting"
+    },
+    {
+      "from": "counting",
+      "to": "standard-weights",
+      "kind": "knowledge",
+      "role": "Weight sets need repeated units and multiples.",
+      "source": "prerequisite",
+      "declared_in": "standard-weights",
+      "title": "Counting"
+    },
+    {
+      "from": "counting",
+      "to": "standard-weights",
+      "kind": "measurement",
+      "role": "Repeated units and comparisons require stable counting.",
+      "source": "unlock",
+      "declared_in": "counting",
+      "title": "Standard weights"
+    },
+    {
+      "from": "counting",
+      "to": "technical-drawing",
+      "kind": "knowledge",
+      "role": "Parts lists and dimensions require number.",
+      "source": "prerequisite",
+      "declared_in": "technical-drawing",
+      "title": "Counting"
+    },
+    {
+      "from": "counting",
+      "to": "technical-drawing",
+      "kind": "knowledge",
+      "role": "Dimensions, repetitions, and parts lists need number.",
+      "source": "unlock",
+      "declared_in": "counting",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "counting",
+      "to": "writing",
+      "kind": "knowledge",
+      "role": "Numbers and tallies are the easiest bridge into records.",
+      "source": "prerequisite",
+      "declared_in": "writing",
+      "title": "Counting"
+    },
+    {
+      "from": "counting",
+      "to": "writing",
+      "kind": "knowledge",
+      "role": "Tallies and numerals bridge spoken counting to records.",
+      "source": "unlock",
+      "declared_in": "counting",
+      "title": "Writing"
+    },
+    {
+      "from": "firekeeping",
+      "to": "charcoal",
+      "kind": "hard",
+      "role": "Maintaining and observing controlled fires is required.",
+      "source": "prerequisite",
+      "declared_in": "charcoal",
+      "title": "Firekeeping"
+    },
+    {
+      "from": "ink",
+      "to": "paper",
+      "kind": "optional",
+      "role": "Ink and paper need compatibility tests.",
+      "source": "unlock",
+      "declared_in": "ink",
+      "title": "Paper"
+    },
+    {
+      "from": "ink",
+      "to": "technical-drawing",
+      "kind": "material_source",
+      "role": "Stable marks make reusable drawings and labels.",
+      "source": "unlock",
+      "declared_in": "ink",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "kiln",
+      "to": "ink",
+      "kind": "optional",
+      "role": "Controlled soot collection can feed some black pigment supply chains.",
+      "source": "unlock",
+      "declared_in": "kiln",
+      "title": "Ink"
+    },
+    {
+      "from": "kiln",
+      "to": "paper",
+      "kind": "optional",
+      "role": "Kiln-dried ash or lime processing may support later workshop chemistry, though paper does not require a kiln.",
+      "source": "unlock",
+      "declared_in": "kiln",
+      "title": "Paper"
+    },
+    {
+      "from": "lever",
+      "to": "pulley",
+      "kind": "knowledge",
+      "role": "Helps reason about load and support forces.",
+      "source": "prerequisite",
+      "declared_in": "pulley",
+      "title": "Lever"
+    },
+    {
+      "from": "lever",
+      "to": "pulley",
+      "kind": "knowledge",
+      "role": "Lever reasoning helps explain torque, load, and support forces.",
+      "source": "unlock",
+      "declared_in": "lever",
+      "title": "Pulley"
+    },
+    {
+      "from": "lever",
+      "to": "standard-weights",
+      "kind": "enables",
+      "role": "A balance beam uses lever arms to compare masses.",
+      "source": "unlock",
+      "declared_in": "lever",
+      "title": "Standard weights"
+    },
+    {
+      "from": "lever",
+      "to": "standard-weights",
+      "kind": "tooling",
+      "role": "A balance beam is a lever used for comparison.",
+      "source": "prerequisite",
+      "declared_in": "standard-weights",
+      "title": "Lever"
+    },
+    {
+      "from": "lever",
+      "to": "tensile-test",
+      "kind": "optional",
+      "role": "Levers can apply or multiply test force.",
+      "source": "prerequisite",
+      "declared_in": "tensile-test",
+      "title": "Lever"
+    },
     {
       "from": "lever",
       "to": "wheel-and-axle",
@@ -67,6 +1237,141 @@
       "title": "Lever"
     },
     {
+      "from": "lever",
+      "to": "wheel-and-axle",
+      "kind": "knowledge",
+      "role": "The radius of a wheel acts like a continuous lever around an axle.",
+      "source": "unlock",
+      "declared_in": "lever",
+      "title": "Wheel and axle"
+    },
+    {
+      "from": "paper",
+      "to": "ink",
+      "kind": "optional",
+      "role": "Ink and paper co-evolve as record media.",
+      "source": "unlock",
+      "declared_in": "paper",
+      "title": "Ink"
+    },
+    {
+      "from": "paper",
+      "to": "technical-drawing",
+      "kind": "material_source",
+      "role": "Paper gives a portable drawing and template surface.",
+      "source": "unlock",
+      "declared_in": "paper",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "plain-bearing",
+      "to": "bicycle",
+      "kind": "enables",
+      "role": "Hubs, steering pivots, and early cranks need controlled friction.",
+      "source": "unlock",
+      "declared_in": "plain-bearing",
+      "title": "Bicycle"
+    },
+    {
+      "from": "plain-bearing",
+      "to": "bicycle",
+      "kind": "hard",
+      "role": "Reduces hub and steering friction enough for repeatable riding.",
+      "source": "prerequisite",
+      "declared_in": "bicycle",
+      "title": "Plain bearing"
+    },
+    {
+      "from": "plain-bearing",
+      "to": "cart",
+      "kind": "soft",
+      "role": "Reduces axle wear for repeated use.",
+      "source": "prerequisite",
+      "declared_in": "cart",
+      "title": "Plain bearing"
+    },
+    {
+      "from": "plain-bearing",
+      "to": "potters-wheel",
+      "kind": "enables",
+      "role": "Smooth rotation improves wheel control and durability.",
+      "source": "unlock",
+      "declared_in": "plain-bearing",
+      "title": "Potter's wheel"
+    },
+    {
+      "from": "plain-bearing",
+      "to": "potters-wheel",
+      "kind": "soft",
+      "role": "Improves smoothness and reduces wear.",
+      "source": "prerequisite",
+      "declared_in": "potters-wheel",
+      "title": "Plain bearing"
+    },
+    {
+      "from": "pulley",
+      "to": "simple-pump",
+      "kind": "optional",
+      "role": "Lifting and tension systems support pump construction and maintenance.",
+      "source": "unlock",
+      "declared_in": "pulley",
+      "title": "Simple pump"
+    },
+    {
+      "from": "rope-making",
+      "to": "pulley",
+      "kind": "material_source",
+      "role": "Supplies the flexible tension member.",
+      "source": "unlock",
+      "declared_in": "rope-making",
+      "title": "Pulley"
+    },
+    {
+      "from": "rope-making",
+      "to": "rope",
+      "kind": "refining",
+      "role": "Turns prepared fibers into usable cordage.",
+      "source": "prerequisite",
+      "declared_in": "rope",
+      "title": "Rope making"
+    },
+    {
+      "from": "rope-making",
+      "to": "rope",
+      "kind": "refining",
+      "role": "Turns loose fiber into usable rope.",
+      "source": "unlock",
+      "declared_in": "rope-making",
+      "title": "Rope"
+    },
+    {
+      "from": "rope",
+      "to": "paper",
+      "kind": "material_source",
+      "role": "Cordage and rag fibers teach fiber preparation and can become feedstock.",
+      "source": "prerequisite",
+      "declared_in": "paper",
+      "title": "Rope"
+    },
+    {
+      "from": "rope",
+      "to": "pulley",
+      "kind": "hard",
+      "role": "Carries the tension through the pulley.",
+      "source": "prerequisite",
+      "declared_in": "pulley",
+      "title": "Rope"
+    },
+    {
+      "from": "rope",
+      "to": "pulley",
+      "kind": "hard",
+      "role": "A pulley needs a flexible tension member.",
+      "source": "unlock",
+      "declared_in": "rope",
+      "title": "Pulley"
+    },
+    {
       "from": "rope",
       "to": "wheel-and-axle",
       "kind": "optional",
@@ -74,6 +1379,213 @@
       "source": "prerequisite",
       "declared_in": "wheel-and-axle",
       "title": "Rope"
+    },
+    {
+      "from": "rope",
+      "to": "wheel-and-axle",
+      "kind": "optional",
+      "role": "Rope enables windlass and cart hauling applications.",
+      "source": "unlock",
+      "declared_in": "rope",
+      "title": "Wheel and axle"
+    },
+    {
+      "from": "sanitation-norms",
+      "to": "paper",
+      "kind": "institutional",
+      "role": "Administrative records and notices increase demand for cheap writing surfaces.",
+      "source": "unlock",
+      "declared_in": "sanitation-norms",
+      "title": "Paper"
+    },
+    {
+      "from": "spoked-wheel",
+      "to": "bicycle",
+      "kind": "enables",
+      "role": "Light wheels make rider-powered transport much more plausible.",
+      "source": "unlock",
+      "declared_in": "spoked-wheel",
+      "title": "Bicycle"
+    },
+    {
+      "from": "spoked-wheel",
+      "to": "bicycle",
+      "kind": "hard",
+      "role": "Makes wheels light enough for human-powered transport.",
+      "source": "prerequisite",
+      "declared_in": "bicycle",
+      "title": "Spoked wheel"
+    },
+    {
+      "from": "spoked-wheel",
+      "to": "cart",
+      "kind": "enables",
+      "role": "Lighter wheels reduce draft effort and improve speed.",
+      "source": "unlock",
+      "declared_in": "spoked-wheel",
+      "title": "Cart"
+    },
+    {
+      "from": "standard-weights",
+      "to": "kiln",
+      "kind": "measurement",
+      "role": "Helps compare shrinkage, fuel use, and test piece batches.",
+      "source": "prerequisite",
+      "declared_in": "kiln",
+      "title": "Standard weights"
+    },
+    {
+      "from": "standard-weights",
+      "to": "technical-drawing",
+      "kind": "measurement",
+      "role": "Weights support scale, material callouts, and quality records.",
+      "source": "unlock",
+      "declared_in": "standard-weights",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "standard-weights",
+      "to": "technical-drawing",
+      "kind": "optional",
+      "role": "Measurement culture supports drawing discipline, though length standards are the direct need.",
+      "source": "prerequisite",
+      "declared_in": "technical-drawing",
+      "title": "Standard weights"
+    },
+    {
+      "from": "standard-weights",
+      "to": "tensile-test",
+      "kind": "measurement",
+      "role": "Known loads make tests repeatable.",
+      "source": "prerequisite",
+      "declared_in": "tensile-test",
+      "title": "Standard weights"
+    },
+    {
+      "from": "standard-weights",
+      "to": "tensile-test",
+      "kind": "measurement",
+      "role": "Repeatable loads improve material tests.",
+      "source": "unlock",
+      "declared_in": "standard-weights",
+      "title": "Tensile test"
+    },
+    {
+      "from": "technical-drawing",
+      "to": "alignment-checking",
+      "kind": "optional",
+      "role": "Drawings define the intended line before the test checks it.",
+      "source": "prerequisite",
+      "declared_in": "alignment-checking",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "technical-drawing",
+      "to": "bicycle",
+      "kind": "soft",
+      "role": "Helps a workshop copy frame geometry and improve revisions.",
+      "source": "prerequisite",
+      "declared_in": "bicycle",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "technical-drawing",
+      "to": "pulley",
+      "kind": "optional",
+      "role": "Drawings help groove shape and frame alignment.",
+      "source": "unlock",
+      "declared_in": "technical-drawing",
+      "title": "Pulley"
+    },
+    {
+      "from": "technical-drawing",
+      "to": "wheel-and-axle",
+      "kind": "optional",
+      "role": "Drawings improve hub, axle, and frame repeatability.",
+      "source": "unlock",
+      "declared_in": "technical-drawing",
+      "title": "Wheel and axle"
+    },
+    {
+      "from": "technical-drawing",
+      "to": "woodworking",
+      "kind": "optional",
+      "role": "Drawings help repeat parts and teach joinery once the workshop grows.",
+      "source": "prerequisite",
+      "declared_in": "woodworking",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "tensile-test",
+      "to": "pulley",
+      "kind": "safety",
+      "role": "Lifting systems need proof-tested rope and fittings.",
+      "source": "unlock",
+      "declared_in": "tensile-test",
+      "title": "Pulley"
+    },
+    {
+      "from": "tensile-test",
+      "to": "rope-making",
+      "kind": "test",
+      "role": "Pull testing reveals whether the process makes useful cordage.",
+      "source": "prerequisite",
+      "declared_in": "rope-making",
+      "title": "Tensile test"
+    },
+    {
+      "from": "tensile-test",
+      "to": "rope",
+      "kind": "test",
+      "role": "Even crude pull tests separate useful cordage from decorative string.",
+      "source": "prerequisite",
+      "declared_in": "rope",
+      "title": "Tensile test"
+    },
+    {
+      "from": "tensile-test",
+      "to": "rope",
+      "kind": "test",
+      "role": "Cordage needs proof and comparison.",
+      "source": "unlock",
+      "declared_in": "tensile-test",
+      "title": "Rope"
+    },
+    {
+      "from": "tensile-test",
+      "to": "spoked-wheel",
+      "kind": "optional",
+      "role": "Useful for checking lashings, ties, or later wire spokes.",
+      "source": "prerequisite",
+      "declared_in": "spoked-wheel",
+      "title": "Tensile test"
+    },
+    {
+      "from": "tensile-test",
+      "to": "woodworking",
+      "kind": "optional",
+      "role": "Pull tests help compare lashings, pegs, and joints.",
+      "source": "prerequisite",
+      "declared_in": "woodworking",
+      "title": "Tensile test"
+    },
+    {
+      "from": "water-settling-test",
+      "to": "clay",
+      "kind": "test",
+      "role": "Separates clay-rich fines from sand, silt, and organic debris.",
+      "source": "prerequisite",
+      "declared_in": "clay",
+      "title": "Water settling test"
+    },
+    {
+      "from": "water-settling-test",
+      "to": "paper",
+      "kind": "test",
+      "role": "Helps separate pulp quality and grit.",
+      "source": "prerequisite",
+      "declared_in": "paper",
+      "title": "Water settling test"
     },
     {
       "from": "wheel-and-axle",
@@ -86,12 +1598,48 @@
     },
     {
       "from": "wheel-and-axle",
+      "to": "bicycle",
+      "kind": "hard",
+      "role": "Supplies the rotating transport foundation.",
+      "source": "prerequisite",
+      "declared_in": "bicycle",
+      "title": "Wheel and axle"
+    },
+    {
+      "from": "wheel-and-axle",
       "to": "cart",
       "kind": "enables",
       "role": "The wheel and axle become a load-carrying transport system.",
       "source": "unlock",
       "declared_in": "wheel-and-axle",
       "title": "Cart"
+    },
+    {
+      "from": "wheel-and-axle",
+      "to": "cart",
+      "kind": "hard",
+      "role": "Provides the rolling support.",
+      "source": "prerequisite",
+      "declared_in": "cart",
+      "title": "Wheel and axle"
+    },
+    {
+      "from": "wheel-and-axle",
+      "to": "plain-bearing",
+      "kind": "hard",
+      "role": "Provides the rotating shaft problem that bearings solve.",
+      "source": "prerequisite",
+      "declared_in": "plain-bearing",
+      "title": "Wheel and axle"
+    },
+    {
+      "from": "wheel-and-axle",
+      "to": "potters-wheel",
+      "kind": "hard",
+      "role": "Provides the rotating platform and shaft idea.",
+      "source": "prerequisite",
+      "declared_in": "potters-wheel",
+      "title": "Wheel and axle"
     },
     {
       "from": "wheel-and-axle",
@@ -103,6 +1651,87 @@
       "title": "Pulley"
     },
     {
+      "from": "wheel-and-axle",
+      "to": "pulley",
+      "kind": "hard",
+      "role": "Provides the rotating sheave and bearing idea.",
+      "source": "prerequisite",
+      "declared_in": "pulley",
+      "title": "Wheel and axle"
+    },
+    {
+      "from": "wheel-and-axle",
+      "to": "spoked-wheel",
+      "kind": "hard",
+      "role": "Supplies the hub, rim, and rolling-load problem.",
+      "source": "prerequisite",
+      "declared_in": "spoked-wheel",
+      "title": "Wheel and axle"
+    },
+    {
+      "from": "woodworking",
+      "to": "bicycle",
+      "kind": "tooling",
+      "role": "Enables early wooden frames, wheel parts, jigs, and repair fixtures.",
+      "source": "prerequisite",
+      "declared_in": "bicycle",
+      "title": "Woodworking"
+    },
+    {
+      "from": "woodworking",
+      "to": "bicycle",
+      "kind": "tooling",
+      "role": "Supports early frames, rims, jigs, and handles.",
+      "source": "unlock",
+      "declared_in": "woodworking",
+      "title": "Bicycle"
+    },
+    {
+      "from": "woodworking",
+      "to": "cart",
+      "kind": "tooling",
+      "role": "Builds the frame, bed, axle supports, and handles.",
+      "source": "prerequisite",
+      "declared_in": "cart",
+      "title": "Woodworking"
+    },
+    {
+      "from": "woodworking",
+      "to": "cart",
+      "kind": "tooling",
+      "role": "Supplies the frame, bed, axle supports, and repairs.",
+      "source": "unlock",
+      "declared_in": "woodworking",
+      "title": "Cart"
+    },
+    {
+      "from": "woodworking",
+      "to": "plain-bearing",
+      "kind": "tooling",
+      "role": "Makes early wooden housings, shafts, and replaceable sleeves.",
+      "source": "prerequisite",
+      "declared_in": "plain-bearing",
+      "title": "Woodworking"
+    },
+    {
+      "from": "woodworking",
+      "to": "potters-wheel",
+      "kind": "tooling",
+      "role": "Builds the turntable, support frame, and shaft parts.",
+      "source": "prerequisite",
+      "declared_in": "potters-wheel",
+      "title": "Woodworking"
+    },
+    {
+      "from": "woodworking",
+      "to": "spoked-wheel",
+      "kind": "tooling",
+      "role": "Shapes hub, spokes, rim segments, joints, and repair wedges.",
+      "source": "prerequisite",
+      "declared_in": "spoked-wheel",
+      "title": "Woodworking"
+    },
+    {
       "from": "woodworking",
       "to": "wheel-and-axle",
       "kind": "hard",
@@ -110,182 +1739,144 @@
       "source": "prerequisite",
       "declared_in": "wheel-and-axle",
       "title": "Woodworking"
+    },
+    {
+      "from": "woodworking",
+      "to": "wheel-and-axle",
+      "kind": "tooling",
+      "role": "Shapes wheels, hubs, axles, and frames.",
+      "source": "unlock",
+      "declared_in": "woodworking",
+      "title": "Wheel and axle"
+    },
+    {
+      "from": "writing",
+      "to": "ink",
+      "kind": "institutional",
+      "role": "Ink is useful when marks need to be repeated and taught.",
+      "source": "prerequisite",
+      "declared_in": "ink",
+      "title": "Writing"
+    },
+    {
+      "from": "writing",
+      "to": "paper",
+      "kind": "institutional",
+      "role": "Durable demand for records justifies the labor.",
+      "source": "prerequisite",
+      "declared_in": "paper",
+      "title": "Writing"
+    },
+    {
+      "from": "writing",
+      "to": "paper",
+      "kind": "institutional",
+      "role": "Writing creates demand for cheap record media.",
+      "source": "unlock",
+      "declared_in": "writing",
+      "title": "Paper"
+    },
+    {
+      "from": "writing",
+      "to": "sanitation-norms",
+      "kind": "institutional",
+      "role": "Written rules and logs help public-health practices persist.",
+      "source": "unlock",
+      "declared_in": "writing",
+      "title": "Sanitation norms"
+    },
+    {
+      "from": "writing",
+      "to": "sanitation-norms",
+      "kind": "optional",
+      "role": "Written rules and logs help norms persist across households.",
+      "source": "prerequisite",
+      "declared_in": "sanitation-norms",
+      "title": "Writing"
+    },
+    {
+      "from": "writing",
+      "to": "technical-drawing",
+      "kind": "institutional",
+      "role": "Drawings need labels, dimensions, and revision notes.",
+      "source": "unlock",
+      "declared_in": "writing",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "writing",
+      "to": "technical-drawing",
+      "kind": "knowledge",
+      "role": "Labels, dimensions, and revision notes make drawings durable.",
+      "source": "prerequisite",
+      "declared_in": "technical-drawing",
+      "title": "Writing"
     }
   ],
   "missing_nodes": [
     {
-      "slug": "bicycle",
-      "title": "Bicycle",
+      "slug": "firekeeping",
+      "title": "Firekeeping",
       "referenced_by": [
-        "wheel-and-axle"
+        "charcoal"
       ],
       "reference_types": [
-        "body_wikilink",
-        "edge:unlock:enables"
-      ]
-    },
-    {
-      "slug": "cart",
-      "title": "Cart",
-      "referenced_by": [
-        "wheel-and-axle"
-      ],
-      "reference_types": [
-        "body_wikilink",
-        "edge:unlock:enables"
-      ]
-    },
-    {
-      "slug": "lever",
-      "title": "Lever",
-      "referenced_by": [
-        "wheel-and-axle"
-      ],
-      "reference_types": [
-        "body_wikilink",
-        "edge:prerequisite:knowledge"
-      ]
-    },
-    {
-      "slug": "potters-wheel",
-      "title": "Potter's wheel",
-      "referenced_by": [
-        "wheel-and-axle"
-      ],
-      "reference_types": [
-        "body_wikilink"
-      ]
-    },
-    {
-      "slug": "pulley",
-      "title": "Pulley",
-      "referenced_by": [
-        "wheel-and-axle"
-      ],
-      "reference_types": [
-        "body_wikilink",
-        "edge:unlock:enables"
-      ]
-    },
-    {
-      "slug": "rope",
-      "title": "Rope",
-      "referenced_by": [
-        "wheel-and-axle"
-      ],
-      "reference_types": [
-        "body_wikilink",
-        "edge:prerequisite:optional"
-      ]
-    },
-    {
-      "slug": "standard-weights",
-      "title": "Standard weights",
-      "referenced_by": [
-        "wheel-and-axle"
-      ],
-      "reference_types": [
-        "body_wikilink",
-        "declared_missing_prerequisite"
-      ]
-    },
-    {
-      "slug": "woodworking",
-      "title": "Woodworking",
-      "referenced_by": [
-        "wheel-and-axle"
-      ],
-      "reference_types": [
-        "body_wikilink",
         "declared_missing_prerequisite",
         "edge:prerequisite:hard"
+      ]
+    },
+    {
+      "slug": "simple-pump",
+      "title": "Simple pump",
+      "referenced_by": [
+        "pulley"
+      ],
+      "reference_types": [
+        "declared_missing_prerequisite",
+        "edge:unlock:optional"
+      ]
+    },
+    {
+      "slug": "water-settling-test",
+      "title": "Water settling test",
+      "referenced_by": [
+        "clay",
+        "paper"
+      ],
+      "reference_types": [
+        "declared_missing_prerequisite",
+        "edge:prerequisite:test"
       ]
     }
   ],
   "diagnostics": [
     {
       "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Graph reference \"bicycle\" has no page and is not listed in missing_prerequisites."
+      "message": "Accepted co-evolutionary graph cycle: ink -> paper -> ink."
     },
     {
       "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Graph reference \"cart\" has no page and is not listed in missing_prerequisites."
+      "file": "content/tech/charcoal.md",
+      "slug": "charcoal",
+      "message": "Graph reference \"firekeeping\" has no page."
     },
     {
       "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Graph reference \"lever\" has no page and is not listed in missing_prerequisites."
+      "file": "content/tech/clay.md",
+      "slug": "clay",
+      "message": "Graph reference \"water-settling-test\" has no page."
     },
     {
       "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Graph reference \"pulley\" has no page and is not listed in missing_prerequisites."
+      "file": "content/tech/paper.md",
+      "slug": "paper",
+      "message": "Graph reference \"water-settling-test\" has no page."
     },
     {
       "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Graph reference \"rope\" has no page and is not listed in missing_prerequisites."
-    },
-    {
-      "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Graph reference \"woodworking\" has no page."
-    },
-    {
-      "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Wikilink \"bicycle\" has no matching page."
-    },
-    {
-      "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Wikilink \"cart\" has no matching page."
-    },
-    {
-      "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Wikilink \"lever\" has no matching page."
-    },
-    {
-      "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Wikilink \"potters-wheel\" has no matching page."
-    },
-    {
-      "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Wikilink \"pulley\" has no matching page."
-    },
-    {
-      "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Wikilink \"rope\" has no matching page."
-    },
-    {
-      "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Wikilink \"standard-weights\" has no matching page."
-    },
-    {
-      "severity": "warning",
-      "file": "content/tech/wheel-and-axle.md",
-      "slug": "wheel-and-axle",
-      "message": "Wikilink \"woodworking\" has no matching page."
+      "file": "content/tech/pulley.md",
+      "slug": "pulley",
+      "message": "Graph reference \"simple-pump\" has no page."
     }
   ]
 }

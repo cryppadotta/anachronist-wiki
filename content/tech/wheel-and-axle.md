@@ -39,13 +39,7 @@ unlocks:
     title: Bicycle
     kind: enables
     role: Later human-powered transport depends on reliable wheels and axles.
-missing_prerequisites:
-  - slug: woodworking
-    title: Woodworking
-    reason: Needed as a hard prerequisite for shaping the first useful wheel and axle.
-  - slug: standard-weights
-    title: Standard weights
-    reason: Useful for repeatable load testing, but not required for the first crude version.
+missing_prerequisites: []
 tags:
   - mechanics
   - transport

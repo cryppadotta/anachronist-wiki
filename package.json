@@ -13,6 +13,7 @@
     "build:search": "pagefind --site dist --output-subdir pagefind",
     "check": "astro check",
     "generate:page": "node --experimental-strip-types scripts/generate-page.ts",
+    "new:page": "node --experimental-strip-types scripts/new-page.ts",
     "validate:content": "node --experimental-strip-types scripts/validate-content.ts",
     "test:restricted-content": "node --experimental-strip-types scripts/restricted-content-regression.ts",
     "build:graph": "node --experimental-strip-types scripts/build-graph.ts",

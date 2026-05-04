@@ -11,6 +11,7 @@ Static-first, Git-backed technology tree wiki scaffolded from the approved [Anac
 - `npm run validate:content` validates frontmatter, graph edges, missing nodes, and safety metadata.
 - `npm run build:graph` validates content and writes `generated/tech-graph.json`.
 - `npm run generate:page -- --topic "Rope"` runs the maintainer-only local generation pipeline.
+- `npm run new:page -- --topic "Rope"` generates a page, validates content, and rebuilds `generated/tech-graph.json`.
 
 ## Deployment
 
@@ -43,10 +44,10 @@ The renderer maps wikilinks to `/tech/{slug}/` and annotates them with `data-wik
 
 Generation is local maintainer tooling only. The public site has no live generation path, no app auth, and no backend submission flow. Page requests should come through GitHub Issues; generated edits should land through reviewed GitHub PRs.
 
-Set a provider key, then run the pipeline:
+Set a provider key, then run the full page command:
 
 ```sh
-OPENAI_API_KEY=... npm run generate:page -- --topic "Rope" --provider openai --model gpt-5.5
+OPENAI_API_KEY=... npm run new:page -- --topic "Rope" --provider openai --model gpt-5.5
 ```
 
 The prompt order is fixed:
@@ -59,7 +60,7 @@ The prompt order is fixed:
 6. `link-repair.v1.md`
 7. `reviewer.v1.md`
 
-By default, the command writes intermediate prompts and model outputs under `generated/drafts/`, validates the candidate page, asks the final reviewer prompt whether the draft is PR-ready, and only then writes `content/tech/{slug}.md`. Use `--draft-only` to validate and inspect artifacts without writing content, `--source-pack-file path/to/sources.md` when supplying sources, and `--request-issue URL` to preserve page-request provenance.
+By default, the command writes intermediate prompts and model outputs under `generated/drafts/`, validates the candidate page, asks the final reviewer prompt whether the draft is PR-ready, writes `content/tech/{slug}.md`, validates the content tree, and rebuilds `generated/tech-graph.json`. Use `--draft-only` to validate and inspect artifacts without writing content, `--source-pack-file path/to/sources.md` when supplying sources, and `--request-issue URL` to preserve page-request provenance. Use `npm run generate:page` only when you intentionally want to run generation without the post-write validation and graph rebuild wrapper.
 
 Provider options:
 
