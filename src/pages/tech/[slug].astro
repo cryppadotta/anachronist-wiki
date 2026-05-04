@@ -50,7 +50,7 @@ function normalizeCaption(value: string) {
 }
 ---
 
-<BaseLayout title={data.title} description={data.summary}>
+<BaseLayout title={data.title} description={data.summary} image={headerImage?.src ?? schematicImage?.src} type="article">
   <article class={`tech-page tech-page-${data.safety_class}`} data-pagefind-body>
     <header class="tech-header">
       <p class="eyebrow">

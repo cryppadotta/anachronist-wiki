@@ -55,12 +55,22 @@ confidence:
 images:
   header:
     src: /images/tech/wheel-and-axle-header.webp
-    alt: Field sketch of wheel and axle, highlighting timber, plain bearing, and hub alignment details.
+    alt: Field sketch of wheel and axle, highlighting timber, plain bearing, and hub
+      alignment details.
     provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: d81b374a2eff71d76fcf12bd107c889cd865f651a21c70ee1deae4052f561f47
     generated_at: 2026-05-04T20:29:13.544Z
+  schematic:
+    src: /images/tech/wheel-and-axle-schematic.webp
+    alt: Schematic diagram of Wheel and axle, highlighting woodworking, lever,
+      artifact and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: eed5751fd70d0bc2d67cd7eb98160933c1305204dfba46cf0bc49db4f88d4393
+    generated_at: 2026-05-04T21:16:21.513Z
 ---
 
 ## Field briefing
