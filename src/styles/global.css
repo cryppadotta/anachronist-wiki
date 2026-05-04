@@ -291,6 +291,7 @@ button {
   grid-template-columns: minmax(230px, 300px) minmax(0, 1fr);
   gap: 28px;
   align-items: start;
+  min-width: 0;
 }
 
 .article-rail {
@@ -298,12 +299,15 @@ button {
   top: 16px;
   display: grid;
   gap: 16px;
+  min-width: 0;
 }
 
 .edge-panel {
   padding: 16px;
   background: var(--paper-deep);
   border: 1px solid var(--rule);
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .edge-panel h2 {
@@ -348,6 +352,7 @@ button {
   background: rgb(247 243 232 / 84%);
   border: 1px solid var(--rule);
   box-shadow: var(--shadow);
+  min-width: 0;
 }
 
 .article-body :where(h2, h3) {
@@ -365,6 +370,10 @@ table {
   border-collapse: collapse;
 }
 
+.article-body table {
+  table-layout: fixed;
+}
+
 .article-body th,
 .article-body td,
 th,
@@ -373,6 +382,7 @@ td {
   padding: 10px;
   text-align: left;
   vertical-align: top;
+  overflow-wrap: anywhere;
 }
 
 .wikilink {
@@ -564,6 +574,8 @@ a.missing-link::after {
   padding: 10px 10px 6px;
   background: var(--paper);
   border: 1px solid var(--rule);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .local-graph figcaption {
