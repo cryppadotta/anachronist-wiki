@@ -650,12 +650,12 @@ a.missing-link::after {
   stroke-width: 2.5;
 }
 
-.local-graph .lg-current-title {
+.local-graph .lg-current .lg-current-title {
   fill: var(--paper);
   font-size: 12px;
 }
 
-.local-graph .lg-current-meta {
+.local-graph .lg-current .lg-current-meta {
   fill: var(--gold);
   font: 700 10px "Courier New", monospace;
   letter-spacing: 0.08em;
