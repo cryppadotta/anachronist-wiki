@@ -751,13 +751,18 @@ a.missing-link::after {
   border-top-width: 8px;
 }
 
-.provenance > h2 {
-  margin: 0 0 18px;
+.provenance > summary {
+  margin: 0;
   font-size: 1.1rem;
   color: var(--ink);
   font-family: "Courier New", monospace;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.provenance[open] > summary {
+  margin-bottom: 18px;
 }
 
 .provenance-grid {
