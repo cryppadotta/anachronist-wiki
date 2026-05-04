@@ -37,6 +37,13 @@ export const pageTreatmentValues = ["practical", "practical_with_cautions", "non
 
 export const socialScaleValues = ["individual", "household", "workshop", "village", "city", "state", "trade_network"] as const;
 
+const stringOrDateSchema = z.preprocess((value) => {
+  if (value instanceof Date) {
+    return value.toISOString();
+  }
+  return value;
+}, z.string().min(1));
+
 export const graphEdgeSchema = z
   .object({
     slug: slugSchema,
@@ -55,6 +62,17 @@ export const graphEdgeSchema = z
       });
     }
   });
+
+export const techImageAssetSchema = z.object({
+  src: z.string().min(1),
+  alt: z.string().min(1),
+  caption: z.string().min(1).optional(),
+  provider: z.string().min(1).optional(),
+  model: z.string().min(1).optional(),
+  prompt_version: z.string().min(1).optional(),
+  prompt_hash: z.string().min(1).optional(),
+  generated_at: stringOrDateSchema.optional()
+});
 
 export const missingNodeSchema = z.object({
   slug: slugSchema,
@@ -92,6 +110,12 @@ export const techFrontmatterSchema = z
         })
       )
       .default([]),
+    images: z
+      .object({
+        header: techImageAssetSchema.optional(),
+        schematic: techImageAssetSchema.optional()
+      })
+      .optional(),
     tags: z.array(z.string().min(1)).default([]),
     generation: z.object({
       created_by: z.enum(["human", "llm"]),
@@ -100,7 +124,7 @@ export const techFrontmatterSchema = z
       prompt_version: z.string().min(1).optional(),
       prompt_hash: z.string().min(1).optional(),
       prompt_hashes: z.record(z.string(), z.string().min(1)).optional(),
-      generated_at: z.string().min(1).optional(),
+      generated_at: stringOrDateSchema.optional(),
       request_issue: z.string().min(1).optional(),
       reviewed_by: z.array(z.string().min(1)).default([]),
       source_commit: z.string().min(1).optional(),

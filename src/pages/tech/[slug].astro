@@ -24,6 +24,8 @@ const materialDeps = data.material_dependencies ?? [];
 const prerequisites = data.prerequisites ?? [];
 const unlocks = data.unlocks ?? [];
 const missingPrereqs = data.missing_prerequisites ?? [];
+const headerImage = data.images?.header;
+const schematicImage = data.images?.schematic;
 
 const isOperational = data.safety_class === "allowed" || data.safety_class === "caution";
 const treatmentLabel = data.page_treatment ? data.page_treatment.replace(/_/g, " ") : null;
@@ -45,6 +47,12 @@ const treatmentLabel = data.page_treatment ? data.page_treatment.replace(/_/g, "
           <span>Also known as: </span>
           <em>{aliases.join(", ")}</em>
         </p>
+      )}
+      {headerImage && (
+        <figure class="tech-hero-image">
+          <img src={headerImage.src} alt={headerImage.alt} loading="eager" decoding="async" />
+          {headerImage.caption && <figcaption>{headerImage.caption}</figcaption>}
+        </figure>
       )}
       <dl class="fact-strip">
         <div>
@@ -114,6 +122,12 @@ const treatmentLabel = data.page_treatment ? data.page_treatment.replace(/_/g, "
         </section>
       </aside>
       <div class="article-body field-card">
+        {schematicImage && (
+          <figure class="tech-schematic">
+            <img src={schematicImage.src} alt={schematicImage.alt} loading="lazy" decoding="async" />
+            {schematicImage.caption && <figcaption>{schematicImage.caption}</figcaption>}
+          </figure>
+        )}
         <Content />
       </div>
     </div>

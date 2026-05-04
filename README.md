@@ -11,6 +11,8 @@ Static-first, Git-backed technology tree wiki scaffolded from the approved [Anac
 - `npm run validate:content` validates frontmatter, graph edges, missing nodes, and safety metadata.
 - `npm run build:graph` validates content and writes `generated/tech-graph.json`.
 - `npm run generate:page -- --topic "Rope"` runs the maintainer-only local generation pipeline.
+- `npm run generate:images -- --slug rope` generates the header and schematic images for one page.
+- `npm run backfill:images` generates missing header and schematic images for existing pages.
 - `npm run new:page -- --topic "Rope"` generates a page, validates content, and rebuilds `generated/tech-graph.json`.
 
 ## Deployment
@@ -61,6 +63,13 @@ The prompt order is fixed:
 7. `reviewer.v1.md`
 
 By default, the command writes intermediate prompts and model outputs under `generated/drafts/`, validates the candidate page, asks the final reviewer prompt whether the draft is PR-ready, writes `content/tech/{slug}.md`, validates the content tree, and rebuilds `generated/tech-graph.json`. Use `--draft-only` to validate and inspect artifacts without writing content, `--source-pack-file path/to/sources.md` when supplying sources, and `--request-issue URL` to preserve page-request provenance. Use `npm run generate:page` only when you intentionally want to run generation without the post-write validation and graph rebuild wrapper.
+
+After a new page is written, `npm run new:page` also generates two static page images unless `--skip-images` is passed:
+
+- a header field-sketch illustration from `content/prompts/header-image.v1.md`
+- a technical schematic from `content/prompts/schematic-image.v1.md`
+
+Image generation uses the OpenAI Image API with `gpt-image-2` by default and writes assets under `public/images/tech/`. The generated page frontmatter records each asset path, alt text, provider, model, prompt version, prompt hash, and generation timestamp. Use `npm run generate:images -- --slug rope` for one page, or `npm run backfill:images` to fill in missing images for existing pages. Add `--force` to replace existing image metadata, or `--provider fixture` for deterministic local verification without API calls.
 
 Provider options:
 

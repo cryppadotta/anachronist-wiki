@@ -7,7 +7,8 @@ aliases:
   - axle
 node_type: artifact
 status: draft
-summary: A rotating round member fixed to a central shaft, useful for carts, pulleys, windlasses, potter's wheels, and later transport systems.
+summary: A rotating round member fixed to a central shaft, useful for carts,
+  pulleys, windlasses, potter's wheels, and later transport systems.
 safety_class: allowed
 era_floor: ancient
 difficulty: basic
@@ -51,6 +52,16 @@ confidence:
   practicality: 0.72
   historical_plausibility: 0.86
   completeness: 0.58
+images:
+  header:
+    src: /images/tech/wheel-and-axle-header.png
+    alt: Survival manual field sketch of Wheel and axle.
+    caption: Wheel and axle field sketch.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: d81b374a2eff71d76fcf12bd107c889cd865f651a21c70ee1deae4052f561f47
+    generated_at: 2026-05-04T20:29:13.544Z
 ---
 
 ## Field briefing

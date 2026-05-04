@@ -9,7 +9,8 @@ node_type: tool
 secondary_node_types:
   - material
 status: draft
-summary: Twisted or braided fibers that carry tension for hauling, lifting, tying, measuring, and transmitting force.
+summary: Twisted or braided fibers that carry tension for hauling, lifting,
+  tying, measuring, and transmitting force.
 safety_class: allowed
 era_floor: prehistoric
 difficulty: basic
@@ -39,7 +40,8 @@ material_dependencies:
   - slug: plant-fiber
     title: Plant fiber
     importance: hard
-    availability_note: Flax, hemp, nettle, lime bast, grasses, and bark fibers are possible depending on region and season.
+    availability_note: Flax, hemp, nettle, lime bast, grasses, and bark fibers are
+      possible depending on region and season.
 tags:
   - cordage
   - materials
@@ -49,15 +51,35 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; fiber availability and preparation claims need human source review.
+    - No source pack was used; fiber availability and preparation claims need
+      human source review.
 confidence:
   practicality: 0.78
   historical_plausibility: 0.86
   completeness: 0.64
+images:
+  header:
+    src: /images/tech/rope-header.png
+    alt: Survival manual field sketch of Rope.
+    caption: Rope field sketch.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: ff408c2c2a2d8f68a922fa90eab605d85b5793f4805a4398b3c598128456b095
+    generated_at: 2026-05-04T20:27:28.737Z
+  schematic:
+    src: /images/tech/rope-schematic.png
+    alt: Technical schematic diagram of Rope.
+    caption: Rope schematic diagram.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 106e794ab321de40ec2d27344f2ab6c0dd5160b2e5f6f61a20c44807863050a2
+    generated_at: 2026-05-04T20:28:18.933Z
 ---
 
 ## Field briefing

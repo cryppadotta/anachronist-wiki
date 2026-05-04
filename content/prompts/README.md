@@ -56,3 +56,14 @@ The generation CLI should persist each intermediate output as structured provena
 - final reviewer output: JSON
 
 Generated pages must include provenance frontmatter for provider, model, prompt version, prompt hash when available, generation date, source commit when available, request issue when available, reviewed-by list, and confidence fields.
+
+## Image Prompt Contract
+
+Page images are generated after the text page passes validation:
+
+- `header-image.v1.md` produces the page header field sketch.
+- `schematic-image.v1.md` produces the technical schematic.
+
+Image generation remains maintainer-only local tooling. It must not be exposed through public routes, visitor traffic, issue comments, or scheduled web crawlers. Image assets are static files committed under `public/images/tech/`, and each page records image provenance in frontmatter under `images.header` and `images.schematic`.
+
+Image prompts must preserve the same safety rules as text prompts. For restricted or blocked topics, images may provide high-level historical or graph context, but must not include operational reproduction details, exact recipes, ratios, actionable quantities, temperatures, pressures, timings, precursor acquisition, purification, equipment configuration, optimization, deployment, or troubleshooting.
