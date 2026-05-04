@@ -203,6 +203,22 @@ button {
   margin: 0 0 10px;
 }
 
+.node-card-image {
+  display: block;
+  margin: -6px -6px 14px;
+  color: inherit;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  text-decoration: none;
+}
+
+.node-card-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
 .node-card span,
 .node-card small,
 .muted {

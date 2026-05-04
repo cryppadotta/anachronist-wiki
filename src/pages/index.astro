@@ -3,7 +3,14 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import { pageRequestUrl, techPath } from "@lib/wiki";
 
-const pages = await getCollection("tech");
+const pages = (await getCollection("tech")).sort((a, b) => imageRank(b) - imageRank(a) || a.data.title.localeCompare(b.data.title));
+const samplePage = pages.find((page) => page.data.images?.header || page.data.images?.schematic) ?? pages[0];
+
+function imageRank(page: (typeof pages)[number]) {
+  if (page.data.images?.header && page.data.images?.schematic) return 2;
+  if (page.data.images?.header || page.data.images?.schematic) return 1;
+  return 0;
+}
 ---
 
 <BaseLayout title="Home">
@@ -16,7 +23,7 @@ const pages = await getCollection("tech");
       workflows instead of the public app.
     </p>
     <div class="hero-actions">
-      <a class="button" href={pages[0] ? techPath(pages[0].data.slug) : "/missing/"}>Read a sample page</a>
+      <a class="button" href={samplePage ? techPath(samplePage.data.slug) : "/missing/"}>Read a sample page</a>
       <a class="button secondary" href="/graph/">Inspect the graph</a>
       <a class="button secondary" href={pageRequestUrl()}>Request a page</a>
     </div>
@@ -30,6 +37,16 @@ const pages = await getCollection("tech");
     <div class="card-grid">
       {pages.map((page) => (
         <article class="node-card">
+          {(page.data.images?.header || page.data.images?.schematic) && (
+            <a class="node-card-image" href={techPath(page.data.slug)} aria-label={`Open ${page.data.title}`}>
+              <img
+                src={(page.data.images?.header ?? page.data.images?.schematic)?.src}
+                alt={(page.data.images?.header ?? page.data.images?.schematic)?.alt}
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          )}
           <p>{page.data.node_type}</p>
           <h3><a href={techPath(page.data.slug)}>{page.data.title}</a></h3>
           <span>{page.data.summary}</span>
