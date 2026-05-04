@@ -6,7 +6,8 @@ aliases:
   - pottery wheel
 node_type: tool
 status: draft
-summary: A rotating work platform that lets a potter shape clay symmetrically with steady hand pressure.
+summary: A rotating work platform that lets a potter shape clay symmetrically
+  with steady hand pressure.
 safety_class: allowed
 era_floor: ancient
 difficulty: intermediate
@@ -50,15 +51,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-34 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-34
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; ceramic chronology and wheel forms need human source review.
+    - No source pack was used; ceramic chronology and wheel forms need human
+      source review.
 confidence:
   practicality: 0.74
   historical_plausibility: 0.78
   completeness: 0.55
+images:
+  header:
+    src: /images/tech/potters-wheel-header.webp
+    alt: Field sketch of Potter's wheel, highlighting clay, timber, wheel and axle,
+      tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: d69e188fc2616b4a40c51c50482b692e1a7e697a868a12b94f9820d9f29f59fb
+    generated_at: 2026-05-04T23:20:45.978Z
+  schematic:
+    src: /images/tech/potters-wheel-schematic.webp
+    alt: Schematic diagram of Potter's wheel, highlighting clay, timber, wheel and
+      axle, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: e27e3ad1cf196b12cef2d038d41101979f0a702812f25418652fea72287432f5
+    generated_at: 2026-05-04T23:21:36.254Z
 ---
 
 ## Field briefing

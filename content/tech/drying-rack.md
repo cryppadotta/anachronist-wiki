@@ -5,7 +5,8 @@ title: Drying rack
 aliases: []
 node_type: tool
 status: draft
-summary: A raised ventilated support for drying timber, clay pieces, fibers, paper sheets, hides, and test samples.
+summary: A raised ventilated support for drying timber, clay pieces, fibers,
+  paper sheets, hides, and test samples.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: wood-reed-cord-or-basket-frame
     title: Wood, reed, cord, or basket frame
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - tool
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/drying-rack-header.webp
+    alt: Field sketch of Drying rack, highlighting wood, reed, cord, or basket
+      frame, woodworking, basketry, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 1d37fb8da00982f0c9a9575f04ea85f9b4b1f89ffa65dde3e5bab18ffd79f05d
+    generated_at: 2026-05-04T23:06:26.345Z
+  schematic:
+    src: /images/tech/drying-rack-schematic.webp
+    alt: Schematic diagram of Drying rack, highlighting wood, reed, cord, or basket
+      frame, woodworking, basketry, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 76ccace4904084f5b2b2b9e51f618e3dc7d9586fa7065e39e663335b7080a386
+    generated_at: 2026-05-04T23:07:28.307Z
 ---
 
 ## Field briefing

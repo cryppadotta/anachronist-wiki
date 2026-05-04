@@ -6,7 +6,8 @@ aliases:
   - hammerstone
 node_type: tool
 status: draft
-summary: A selected stone used to strike, break, peen, wedge, crush, rough-shape, and test materials before specialized metal hammers exist.
+summary: A selected stone used to strike, break, peen, wedge, crush,
+  rough-shape, and test materials before specialized metal hammers exist.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric
@@ -33,7 +34,8 @@ material_dependencies:
   - slug: hard-stone
     title: Hard stone
     importance: hard
-    availability_note: Dense rounded cobbles, quartzite, basalt, and similar hard stones are useful where available.
+    availability_note: Dense rounded cobbles, quartzite, basalt, and similar hard
+      stones are useful where available.
 tags:
   - tool
   - stone
@@ -43,15 +45,34 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; lithic and regional claims need human source review.
+    - No source pack was used; lithic and regional claims need human source
+      review.
 confidence:
   practicality: 0.88
   historical_plausibility: 0.9
   completeness: 0.55
+images:
+  header:
+    src: /images/tech/stone-hammer-header.webp
+    alt: Field sketch of Stone hammer, highlighting hard stone, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 77b5f29234aee36322cdc2ec47b702e808f6036b89a9200ddc0cd0ee45341e3c
+    generated_at: 2026-05-04T23:28:53.382Z
+  schematic:
+    src: /images/tech/stone-hammer-schematic.webp
+    alt: Schematic diagram of Stone hammer, highlighting hard stone, tool and major
+      working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: c1401b60a756a3098dee3fc040e0cdf6267a276d506bda75fdb29cd81bb5312e
+    generated_at: 2026-05-04T23:29:41.874Z
 ---
 
 ## Field briefing

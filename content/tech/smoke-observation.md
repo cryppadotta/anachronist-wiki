@@ -5,7 +5,9 @@ title: Smoke observation
 aliases: []
 node_type: test
 status: draft
-summary: A disciplined visual and smell-based observation practice for judging fuel, draft, dampness, and incomplete burning without over-specifying fire settings.
+summary: A disciplined visual and smell-based observation practice for judging
+  fuel, draft, dampness, and incomplete burning without over-specifying fire
+  settings.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +30,8 @@ material_dependencies:
   - slug: watched-hearth-or-kiln
     title: Watched hearth or kiln
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - test
   - ANA-37
@@ -37,15 +40,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/smoke-observation-header.webp
+    alt: Field sketch of Smoke observation, highlighting watched hearth or kiln,
+      firekeeping, charcoal, test.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: bcf7a834014da80845d04831359329638486bffda93980e0186c4e09ef70eab1
+    generated_at: 2026-05-04T23:27:21.685Z
+  schematic:
+    src: /images/tech/smoke-observation-schematic.webp
+    alt: Schematic diagram of Smoke observation, highlighting watched hearth or
+      kiln, firekeeping, charcoal, test and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 4849d525fc33d38e04c275ec52324db87be10e8a1261f5b1c02dd482fd5d59fb
+    generated_at: 2026-05-04T23:28:22.551Z
 ---
 
 ## Field briefing

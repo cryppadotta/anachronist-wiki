@@ -6,7 +6,8 @@ aliases:
   - settling jar test
 node_type: test
 status: draft
-summary: A simple separation and recognition test that uses water and time to compare clay, silt, sand, grit, fiber, and other suspended solids.
+summary: A simple separation and recognition test that uses water and time to
+  compare clay, silt, sand, grit, fiber, and other suspended solids.
 safety_class: allowed
 era_floor: prehistoric
 difficulty: trivial
@@ -36,7 +37,8 @@ material_dependencies:
   - slug: clear-container
     title: Clear or open container
     importance: hard
-    availability_note: Glass is convenient but not required; an open vessel can still reveal layers after decanting.
+    availability_note: Glass is convenient but not required; an open vessel can
+      still reveal layers after decanting.
 tags:
   - test
   - materials
@@ -46,15 +48,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; sediment classification claims need human source review.
+    - No source pack was used; sediment classification claims need human source
+      review.
 confidence:
   practicality: 0.84
   historical_plausibility: 0.84
   completeness: 0.6
+images:
+  header:
+    src: /images/tech/water-settling-test-header.webp
+    alt: Field sketch of Water settling test, highlighting clear or open container,
+      water, test.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: dc337c157b1511cd544557a616ded3b482a87a5b9f91bcc84f4ec9425f473f29
+    generated_at: 2026-05-04T23:32:05.157Z
+  schematic:
+    src: /images/tech/water-settling-test-schematic.webp
+    alt: Schematic diagram of Water settling test, highlighting clear or open
+      container, water, test and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 727e6bc533d30253e82cc976ec9aedceb4a17dd4934d01d74764ac86e7604630
+    generated_at: 2026-05-04T23:32:52.115Z
 ---
 
 ## Field briefing

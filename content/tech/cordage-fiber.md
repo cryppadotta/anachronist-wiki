@@ -7,7 +7,8 @@ aliases:
   - plant fiber
 node_type: material
 status: draft
-summary: Plant or animal fiber selected, extracted, cleaned, and bundled for rope, thread, lashings, nets, basketry, and weaving.
+summary: Plant or animal fiber selected, extracted, cleaned, and bundled for
+  rope, thread, lashings, nets, basketry, and weaving.
 safety_class: allowed
 era_floor: prehistoric
 difficulty: basic
@@ -37,7 +38,8 @@ material_dependencies:
   - slug: fibrous-plants
     title: Fibrous plants
     importance: hard
-    availability_note: Nettles, flax, hemp, bark, rushes, grasses, and roots vary by region and season.
+    availability_note: Nettles, flax, hemp, bark, rushes, grasses, and roots vary by
+      region and season.
 tags:
   - material
   - fiber
@@ -47,15 +49,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; species and processing claims need human source review.
+    - No source pack was used; species and processing claims need human source
+      review.
 confidence:
   practicality: 0.78
   historical_plausibility: 0.84
   completeness: 0.57
+images:
+  header:
+    src: /images/tech/cordage-fiber-header.webp
+    alt: Field sketch of Cordage fiber, highlighting fibrous plants, cutting edge,
+      material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: ffafb833d916da178e183a77298d73b1fb3b49dc79979cb72176b8b9dc71147e
+    generated_at: 2026-05-04T23:04:50.827Z
+  schematic:
+    src: /images/tech/cordage-fiber-schematic.webp
+    alt: Schematic diagram of Cordage fiber, highlighting fibrous plants, cutting
+      edge, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 3072e02e3126e4ca44d95ae8b46d960045b184f5984a16979106d69acf7bb0d1
+    generated_at: 2026-05-04T23:05:39.261Z
 ---
 
 ## Field briefing

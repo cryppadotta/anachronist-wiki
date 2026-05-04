@@ -5,7 +5,8 @@ title: Saw
 aliases: []
 node_type: tool
 status: draft
-summary: A toothed cutting tool that removes repeated small bites to divide wood, bone, horn, or other workable materials.
+summary: A toothed cutting tool that removes repeated small bites to divide
+  wood, bone, horn, or other workable materials.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: toothed-edge-material
     title: Toothed edge material
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - tool
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/saw-header.webp
+    alt: Field sketch of Saw, highlighting toothed edge material, cutting edge,
+      timber, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 5c2e007562f694eb0322082c01b4cf1db3071792961e272aa7a35e1aa3830468
+    generated_at: 2026-05-04T23:24:05.714Z
+  schematic:
+    src: /images/tech/saw-schematic.webp
+    alt: Schematic diagram of Saw, highlighting toothed edge material, cutting edge,
+      timber, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 01c659732b10954d587a8bcc68c8286d95b645d223babe6b46473f5abc710531
+    generated_at: 2026-05-04T23:24:57.694Z
 ---
 
 ## Field briefing

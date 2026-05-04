@@ -5,7 +5,8 @@ title: Shrinkage test
 aliases: []
 node_type: test
 status: draft
-summary: A marked-sample test for observing how clay, hide, fiber, and wood change size during drying or processing.
+summary: A marked-sample test for observing how clay, hide, fiber, and wood
+  change size during drying or processing.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: marked-test-piece
     title: Marked test piece
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - test
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/shrinkage-test-header.webp
+    alt: Field sketch of Shrinkage test, highlighting marked test piece, clay,
+      measuring rod, test.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 87f5429a848868ccddf7cae1658dea8036c04bbe417704b2aa04e433ce3e31ba
+    generated_at: 2026-05-04T23:25:40.727Z
+  schematic:
+    src: /images/tech/shrinkage-test-schematic.webp
+    alt: Schematic diagram of Shrinkage test, highlighting marked test piece, clay,
+      measuring rod, test and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 0fa6577a93c2e11523197e8bf4206355434029b5d9fe4adf35c4301a326bae22
+    generated_at: 2026-05-04T23:26:32.622Z
 ---
 
 ## Field briefing

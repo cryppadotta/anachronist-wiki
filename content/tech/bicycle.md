@@ -6,7 +6,9 @@ aliases:
   - bike
 node_type: artifact
 status: draft
-summary: A narrow human-powered vehicle that turns balancing, light wheels, low-friction bearings, steering, and workshop alignment into efficient personal transport.
+summary: A narrow human-powered vehicle that turns balancing, light wheels,
+  low-friction bearings, steering, and workshop alignment into efficient
+  personal transport.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: early_modern_to_industrial
@@ -45,15 +47,18 @@ material_dependencies:
   - slug: timber
     title: Timber
     importance: hard
-    availability_note: Early frames, jigs, rims, and handles can be made from straight, tough, seasoned wood.
+    availability_note: Early frames, jigs, rims, and handles can be made from
+      straight, tough, seasoned wood.
   - slug: metal-strip
     title: Metal strip
     importance: soft
-    availability_note: Tires, hub sleeves, fasteners, or tension hardware become much easier with wrought iron or similar metal stock.
+    availability_note: Tires, hub sleeves, fasteners, or tension hardware become
+      much easier with wrought iron or similar metal stock.
   - slug: leather
     title: Leather
     importance: optional
-    availability_note: Useful for saddle, grips, straps, and bearing dust covers, but substitutes exist.
+    availability_note: Useful for saddle, grips, straps, and bearing dust covers,
+      but substitutes exist.
 tags:
   - transport
   - mechanics
@@ -63,15 +68,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-34 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-34
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; bicycle history, material choices, and regional feasibility need human source review.
+    - No source pack was used; bicycle history, material choices, and regional
+      feasibility need human source review.
 confidence:
   practicality: 0.58
   historical_plausibility: 0.5
   completeness: 0.54
+images:
+  header:
+    src: /images/tech/bicycle-header.webp
+    alt: Field sketch of Bicycle, highlighting timber, metal strip, wheel and axle,
+      spoked wheel.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 376d2bb4001d54dcfb7e15c103ec0fe64a61fa7a1f71c7f964a9a87558ad2d48
+    generated_at: 2026-05-04T23:01:27.753Z
+  schematic:
+    src: /images/tech/bicycle-schematic.webp
+    alt: Schematic diagram of Bicycle, highlighting timber, metal strip, wheel and
+      axle, spoked wheel and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 749f31599e46c7ff90c5cb3e66a6e30955132efcef83ed8f608a58b57a8e0f15
+    generated_at: 2026-05-04T23:02:21.856Z
 ---
 
 ## Field briefing

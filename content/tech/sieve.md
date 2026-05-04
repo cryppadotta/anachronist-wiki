@@ -5,7 +5,8 @@ title: Sieve
 aliases: []
 node_type: tool
 status: draft
-summary: A perforated or woven separator used to grade grain, sand, grit, grog, fiber, clay inclusions, and other particles.
+summary: A perforated or woven separator used to grade grain, sand, grit, grog,
+  fiber, clay inclusions, and other particles.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: woven-screen-or-perforated-sheet
     title: Woven screen or perforated sheet
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - tool
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/sieve-header.webp
+    alt: Field sketch of Sieve, highlighting woven screen or perforated sheet,
+      basketry, cordage fiber, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 4415d157a8a36e076a03ff387c5f237c568ec98994530387defa6ce80abe17b6
+    generated_at: 2026-05-04T23:26:24.019Z
+  schematic:
+    src: /images/tech/sieve-schematic.webp
+    alt: Schematic diagram of Sieve, highlighting woven screen or perforated sheet,
+      basketry, cordage fiber, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 2551d3b92ec237d6cc5a985b40a65a97c03fb2267478752a6e82c47cc85f68ed
+    generated_at: 2026-05-04T23:27:17.336Z
 ---
 
 ## Field briefing

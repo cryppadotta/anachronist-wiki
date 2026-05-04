@@ -5,7 +5,8 @@ title: Stone
 aliases: []
 node_type: material
 status: draft
-summary: Hard natural rock selected by fracture, grain, shape, and durability for tools, weights, hearths, grinding, building, and test pieces.
+summary: Hard natural rock selected by fracture, grain, shape, and durability
+  for tools, weights, hearths, grinding, building, and test pieces.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: hard-stone
     title: Hard stone
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - stone
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/stone-header.webp
+    alt: Field sketch of Stone, highlighting hard stone, water settling test, stone
+      hammer, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 2525bf6965a7e6d1a0cd1caeda563100343a02fd6e88b996dcf929c4643e2f4f
+    generated_at: 2026-05-04T23:29:07.033Z
+  schematic:
+    src: /images/tech/stone-schematic.webp
+    alt: Schematic diagram of Stone, highlighting hard stone, water settling test,
+      stone hammer, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 7bd8010009ad8120aef4f67c79e64daadb111b717ee364da6a27bfd27ed186ed
+    generated_at: 2026-05-04T23:29:57.263Z
 ---
 
 ## Field briefing

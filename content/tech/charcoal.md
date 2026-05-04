@@ -7,7 +7,8 @@ node_type: material
 secondary_node_types:
   - process
 status: draft
-summary: Carbon-rich fuel made by heating wood with limited air, useful where cleaner, hotter, lighter, or more predictable fuel is needed.
+summary: Carbon-rich fuel made by heating wood with limited air, useful where
+  cleaner, hotter, lighter, or more predictable fuel is needed.
 safety_class: caution
 era_floor: prehistoric_to_ancient
 difficulty: intermediate
@@ -47,15 +48,34 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; species and historical production claims need human source review.
+    - No source pack was used; species and historical production claims need
+      human source review.
 confidence:
   practicality: 0.66
   historical_plausibility: 0.82
   completeness: 0.54
+images:
+  header:
+    src: /images/tech/charcoal-header.webp
+    alt: Field sketch of Charcoal, highlighting wood, firekeeping, clay, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 700a0388906944c39af275a1acbeafe04e45b8c2f9a74925998624bbcfd127b7
+    generated_at: 2026-05-04T23:03:20.287Z
+  schematic:
+    src: /images/tech/charcoal-schematic.webp
+    alt: Schematic diagram of Charcoal, highlighting wood, firekeeping, clay,
+      material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 52abc4c39fb9a59bf71d6acfa31574f5a7a1edb94fa564f721b42351867c0df1
+    generated_at: 2026-05-04T23:04:04.984Z
 ---
 
 ## Field briefing

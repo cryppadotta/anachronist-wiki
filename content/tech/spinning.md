@@ -5,7 +5,8 @@ title: Spinning
 aliases: []
 node_type: process
 status: draft
-summary: The process of drawing and twisting fibers into continuous thread or yarn for weaving, sewing, tying, and records.
+summary: The process of drawing and twisting fibers into continuous thread or
+  yarn for weaving, sewing, tying, and records.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: prepared-fiber
     title: Prepared fiber
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - fiber
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/spinning-header.webp
+    alt: Field sketch of Spinning, highlighting prepared fiber, spindle, cordage
+      fiber, process.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: ada526b88a2ab6578ffca6893b010db72f6287a7eb8609efba157632f6927a22
+    generated_at: 2026-05-04T23:27:39.111Z
+  schematic:
+    src: /images/tech/spinning-schematic.webp
+    alt: Schematic diagram of Spinning, highlighting prepared fiber, spindle,
+      cordage fiber, process and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 7c99096c83c0afe0aeaf421d0279912d303338dedb2a44a03369b77817a312dd
+    generated_at: 2026-05-04T23:28:41.498Z
 ---
 
 ## Field briefing

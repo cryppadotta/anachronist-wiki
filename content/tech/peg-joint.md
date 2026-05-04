@@ -5,7 +5,8 @@ title: Peg joint
 aliases: []
 node_type: process
 status: draft
-summary: A joint held by shaped pegs through aligned holes, useful for knockdown frames, wheels, handles, and repairs.
+summary: A joint held by shaped pegs through aligned holes, useful for knockdown
+  frames, wheels, handles, and repairs.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: peg-stock-and-bored-parts
     title: Peg stock and bored parts
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - joinery
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/peg-joint-header.webp
+    alt: Field sketch of Peg joint, highlighting peg stock and bored parts, hand
+      drill, woodworking, process.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 20ea53a30ec2ea747b411dd56e37fde5d74619f03ecca231b92593b6e5f67d44
+    generated_at: 2026-05-04T23:19:12.728Z
+  schematic:
+    src: /images/tech/peg-joint-schematic.webp
+    alt: Schematic diagram of Peg joint, highlighting peg stock and bored parts,
+      hand drill, woodworking, process and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 816c80c62d1156a5b1db86beb3c29e60f0a049b29586b86af7761231d6980a14
+    generated_at: 2026-05-04T23:20:06.987Z
 ---
 
 ## Field briefing

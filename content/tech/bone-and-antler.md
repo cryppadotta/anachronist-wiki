@@ -7,7 +7,8 @@ aliases:
   - antler
 node_type: material
 status: draft
-summary: Hard animal materials shaped into points, wedges, handles, needles, bearings, toggles, scrapers, and small tool parts.
+summary: Hard animal materials shaped into points, wedges, handles, needles,
+  bearings, toggles, scrapers, and small tool parts.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric
@@ -44,15 +45,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; archaeological and material claims need human source review.
+    - No source pack was used; archaeological and material claims need human
+      source review.
 confidence:
   practicality: 0.76
   historical_plausibility: 0.86
   completeness: 0.55
+images:
+  header:
+    src: /images/tech/bone-and-antler-header.webp
+    alt: Field sketch of Bone and antler, highlighting animal remains, abrasive
+      grit, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: ab01bc902a13d88033a58b20d3bf29f49919fed844a154b61e7933e7322e1ee5
+    generated_at: 2026-05-04T23:01:23.555Z
+  schematic:
+    src: /images/tech/bone-and-antler-schematic.webp
+    alt: Schematic diagram of Bone and antler, highlighting animal remains, abrasive
+      grit, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 39ac0a061d09f70843c658a90f056272f489d77ba8eda366ab230042a6f32381
+    generated_at: 2026-05-04T23:02:16.826Z
 ---
 
 ## Field briefing

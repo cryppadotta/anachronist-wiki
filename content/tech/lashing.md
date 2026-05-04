@@ -5,7 +5,8 @@ title: Lashing
 aliases: []
 node_type: process
 status: draft
-summary: The binding of parts with cord, fiber, leather, or sinew so frames and tools can be assembled without rigid fasteners.
+summary: The binding of parts with cord, fiber, leather, or sinew so frames and
+  tools can be assembled without rigid fasteners.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: cordage-and-bearing-pads
     title: Cordage and bearing pads
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - joinery
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/lashing-header.webp
+    alt: Field sketch of Lashing, highlighting cordage and bearing pads, rope, knot
+      tying, process.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 4c379935cf16a9f439a00df76a7c536f9142ce746c4bd579ce5b6566d4357657
+    generated_at: 2026-05-04T23:14:15.336Z
+  schematic:
+    src: /images/tech/lashing-schematic.webp
+    alt: Schematic diagram of Lashing, highlighting cordage and bearing pads, rope,
+      knot tying, process and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 5ef7b7fa653c6905a7e5a03092837481f8279c0f444c95159438833792c944ee
+    generated_at: 2026-05-04T23:15:04.279Z
 ---
 
 ## Field briefing

@@ -7,7 +7,8 @@ aliases:
   - truing
 node_type: test
 status: draft
-summary: A workshop test practice for checking whether wheels, shafts, frames, holes, and guide surfaces point where they should.
+summary: A workshop test practice for checking whether wheels, shafts, frames,
+  holes, and guide surfaces point where they should.
 safety_class: allowed
 era_floor: ancient
 difficulty: basic
@@ -51,15 +52,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-34 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-34
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; historical workshop testing practices need human source review.
+    - No source pack was used; historical workshop testing practices need human
+      source review.
 confidence:
   practicality: 0.82
   historical_plausibility: 0.7
   completeness: 0.56
+images:
+  header:
+    src: /images/tech/alignment-checking-header.webp
+    alt: Field sketch of Alignment checking, highlighting cord, straightedge,
+      counting, technical drawing.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 304cb8af2fe85ec6f3ba9098bd6980208a072c67437860690583ce25bca07deb
+    generated_at: 2026-05-04T22:59:43.605Z
+  schematic:
+    src: /images/tech/alignment-checking-schematic.webp
+    alt: Schematic diagram of Alignment checking, highlighting cord, straightedge,
+      counting, technical drawing and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 05aec0fe01b0ce15bfd0d7eea5fd28d4e6a147c2339e5e1713a1e22f6959ddbf
+    generated_at: 2026-05-04T23:00:41.491Z
 ---
 
 ## Field briefing

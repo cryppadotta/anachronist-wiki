@@ -6,7 +6,8 @@ aliases:
   - hand-powered drill
 node_type: tool
 status: draft
-summary: A hand-powered boring tool for making holes in wood, bone, leather, clay, shell, and soft stone.
+summary: A hand-powered boring tool for making holes in wood, bone, leather,
+  clay, shell, and soft stone.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric
@@ -41,7 +42,8 @@ material_dependencies:
   - slug: straight-shaft
     title: Straight shaft
     importance: hard
-    availability_note: Wood, reed, bone, or metal shafts must be straight enough for useful rotation.
+    availability_note: Wood, reed, bone, or metal shafts must be straight enough for
+      useful rotation.
 tags:
   - tool
   - boring
@@ -51,15 +53,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; drill-type chronology and material claims need human source review.
+    - No source pack was used; drill-type chronology and material claims need
+      human source review.
 confidence:
   practicality: 0.72
   historical_plausibility: 0.84
   completeness: 0.55
+images:
+  header:
+    src: /images/tech/hand-drill-header.webp
+    alt: Field sketch of Hand drill, highlighting straight shaft, cutting edge,
+      stone hammer, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: d50de0f4a822175a64083a353b0a7e7bc2560a33693a27dc4940b03da243c6b8
+    generated_at: 2026-05-04T23:12:09.169Z
+  schematic:
+    src: /images/tech/hand-drill-schematic.webp
+    alt: Schematic diagram of Hand drill, highlighting straight shaft, cutting edge,
+      stone hammer, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 21971a1990466f0d1bb5d7b42d111f4d567003980deff182ff337d222a548524
+    generated_at: 2026-05-04T23:13:05.308Z
 ---
 
 ## Field briefing

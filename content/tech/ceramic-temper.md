@@ -6,7 +6,8 @@ aliases:
   - temper
 node_type: material
 status: draft
-summary: Non-plastic additions such as sand, grog, shell, grit, or fiber blended with clay to control shrinkage, cracking, workability, and fired behavior.
+summary: Non-plastic additions such as sand, grog, shell, grit, or fiber blended
+  with clay to control shrinkage, cracking, workability, and fired behavior.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric
@@ -33,7 +34,8 @@ material_dependencies:
   - slug: sand-or-grog
     title: Sand or grog
     importance: hard
-    availability_note: Local sand, crushed fired clay, shell, and grit vary in particle size, chemistry, and firing behavior.
+    availability_note: Local sand, crushed fired clay, shell, and grit vary in
+      particle size, chemistry, and firing behavior.
 tags:
   - ceramics
   - material
@@ -43,7 +45,7 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
@@ -52,6 +54,25 @@ confidence:
   practicality: 0.72
   historical_plausibility: 0.82
   completeness: 0.55
+images:
+  header:
+    src: /images/tech/ceramic-temper-header.webp
+    alt: Field sketch of Ceramic temper, highlighting sand or grog, clay, water
+      settling test, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 14a2136d486635aa5b4220ce3343b98726026c3c7ad97e02a7742a75f6bea4c9
+    generated_at: 2026-05-04T23:03:04.221Z
+  schematic:
+    src: /images/tech/ceramic-temper-schematic.webp
+    alt: Schematic diagram of Ceramic temper, highlighting sand or grog, clay, water
+      settling test, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 70a9e8eb7eeaef16700a8de2ce8655d2e6a286d262bbe053e9a9fc09b22b1171
+    generated_at: 2026-05-04T23:03:58.776Z
 ---
 
 ## Field briefing

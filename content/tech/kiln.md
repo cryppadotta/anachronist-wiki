@@ -8,7 +8,8 @@ node_type: tool
 secondary_node_types:
   - artifact
 status: draft
-summary: A heat-retaining enclosure for firing clay, drying materials, making lime, and later supporting higher-temperature workshop processes.
+summary: A heat-retaining enclosure for firing clay, drying materials, making
+  lime, and later supporting higher-temperature workshop processes.
 safety_class: caution
 era_floor: prehistoric_to_ancient
 difficulty: intermediate
@@ -32,7 +33,8 @@ unlocks:
   - slug: paper
     title: Paper
     kind: optional
-    role: Kiln-dried ash or lime processing may support later workshop chemistry, though paper does not require a kiln.
+    role: Kiln-dried ash or lime processing may support later workshop chemistry,
+      though paper does not require a kiln.
   - slug: ink
     title: Ink
     kind: optional
@@ -42,11 +44,13 @@ material_dependencies:
   - slug: clay
     title: Clay
     importance: hard
-    availability_note: Local clay or clay-rich earth is needed for the earliest enclosed firing structures.
+    availability_note: Local clay or clay-rich earth is needed for the earliest
+      enclosed firing structures.
   - slug: fuel
     title: Fuel
     importance: hard
-    availability_note: Wood, brush, dung, peat, or charcoal availability determines achievable firing and repeatability.
+    availability_note: Wood, brush, dung, peat, or charcoal availability determines
+      achievable firing and repeatability.
 tags:
   - ceramics
   - heat
@@ -56,15 +60,34 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; firing ranges and kiln history need human source review.
+    - No source pack was used; firing ranges and kiln history need human source
+      review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.82
   completeness: 0.58
+images:
+  header:
+    src: /images/tech/kiln-header.webp
+    alt: Field sketch of Kiln, highlighting clay, fuel, charcoal, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 1467eefbf7d7dd9716921930a3a74858a1d6e0e71c408290fc17d371492addf0
+    generated_at: 2026-05-04T23:14:16.658Z
+  schematic:
+    src: /images/tech/kiln-schematic.webp
+    alt: Schematic diagram of Kiln, highlighting clay, fuel, charcoal, tool and
+      major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: ea1f16675055583737cd2eb883e5703da60c910915b4cf729380fbbbdbbc4975
+    generated_at: 2026-05-04T23:15:07.047Z
 ---
 
 ## Field briefing

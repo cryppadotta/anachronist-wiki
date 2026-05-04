@@ -5,7 +5,8 @@ title: Water
 aliases: []
 node_type: material
 status: draft
-summary: The workshop supply chain for finding, carrying, settling, storing, and judging usable water for clay, ink, paper, glue, washing, and tests.
+summary: The workshop supply chain for finding, carrying, settling, storing, and
+  judging usable water for clay, ink, paper, glue, washing, and tests.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric
@@ -36,7 +37,8 @@ material_dependencies:
   - slug: containers
     title: Containers
     importance: hard
-    availability_note: Baskets lined with clay, pots, skins, troughs, or wooden vessels determine how far water can be moved and stored.
+    availability_note: Baskets lined with clay, pots, skins, troughs, or wooden
+      vessels determine how far water can be moved and stored.
 tags:
   - material
   - supply-chain
@@ -46,15 +48,34 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; hydrology, health, and regional availability claims need human source review.
+    - No source pack was used; hydrology, health, and regional availability
+      claims need human source review.
 confidence:
   practicality: 0.82
   historical_plausibility: 0.86
   completeness: 0.58
+images:
+  header:
+    src: /images/tech/water-header.webp
+    alt: Field sketch of Water, highlighting containers, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: b90aae05a4bd588b1425b22564159626cb3f4da5e965a064c5b73858fa83ae55
+    generated_at: 2026-05-04T23:32:10.602Z
+  schematic:
+    src: /images/tech/water-schematic.webp
+    alt: Schematic diagram of Water, highlighting containers, material and major
+      working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 49a3b3315d59528d3fc8711ba017e4335f88848b5f214d81daf4d4e49d4b43c8
+    generated_at: 2026-05-04T23:33:09.944Z
 ---
 
 ## Field briefing

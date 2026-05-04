@@ -6,7 +6,8 @@ aliases:
   - wood seasoning
 node_type: process
 status: draft
-summary: The controlled drying and sorting of timber so wooden parts shrink less, warp less, and hold joints more predictably.
+summary: The controlled drying and sorting of timber so wooden parts shrink
+  less, warp less, and hold joints more predictably.
 safety_class: allowed
 era_floor: prehistoric
 difficulty: basic
@@ -46,15 +47,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; timber behavior and regional species claims need human source review.
+    - No source pack was used; timber behavior and regional species claims need
+      human source review.
 confidence:
   practicality: 0.78
   historical_plausibility: 0.82
   completeness: 0.57
+images:
+  header:
+    src: /images/tech/timber-seasoning-header.webp
+    alt: Field sketch of Timber seasoning, highlighting dry storage, timber,
+      counting, process.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: a248e72470b2b849049e7ebe54acc457805694b486e276654da0d96270a1a8f6
+    generated_at: 2026-05-04T23:30:48.422Z
+  schematic:
+    src: /images/tech/timber-seasoning-schematic.webp
+    alt: Schematic diagram of Timber seasoning, highlighting dry storage, timber,
+      counting, process and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 3d113001472971077afb76b855e80620c4e384d1c35a0983b87ed71600a348ef
+    generated_at: 2026-05-04T23:31:40.218Z
 ---
 
 ## Field briefing

@@ -5,7 +5,8 @@ title: Chisel
 aliases: []
 node_type: tool
 status: draft
-summary: A driven or pushed edge tool for cutting recesses, trimming joints, cleaning holes, and shaping hard materials.
+summary: A driven or pushed edge tool for cutting recesses, trimming joints,
+  cleaning holes, and shaping hard materials.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: edge-blank-and-striking-handle
     title: Edge blank and striking handle
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - tool
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/chisel-header.webp
+    alt: Field sketch of Chisel, highlighting edge blank and striking handle,
+      cutting edge, stone hammer, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: d8cc5ce4c96c66bd37eceaaa54e9f387335fc4aefc83245dd31c19e2e2a2a089
+    generated_at: 2026-05-04T23:03:13.486Z
+  schematic:
+    src: /images/tech/chisel-schematic.webp
+    alt: Schematic diagram of Chisel, highlighting edge blank and striking handle,
+      cutting edge, stone hammer, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: f594c9aa64115794759bfe70bddd1cd33b3a125838831d065115edbee10b0f18
+    generated_at: 2026-05-04T23:04:03.807Z
 ---
 
 ## Field briefing

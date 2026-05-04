@@ -8,7 +8,8 @@ node_type: tool
 secondary_node_types:
   - measurement
 status: draft
-summary: A cord and weight used to find vertical, align posts, check walls, mark centers, and teach gravity-based reference lines.
+summary: A cord and weight used to find vertical, align posts, check walls, mark
+  centers, and teach gravity-based reference lines.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: trivial
@@ -23,7 +24,8 @@ prerequisites:
   - slug: standard-weights
     title: Standard weights
     kind: optional
-    role: Standardized weights improve repeatability, though any compact weight can work.
+    role: Standardized weights improve repeatability, though any compact weight can
+      work.
 unlocks:
   - slug: technical-drawing
     title: Technical drawing
@@ -48,7 +50,7 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
@@ -57,6 +59,25 @@ confidence:
   practicality: 0.9
   historical_plausibility: 0.88
   completeness: 0.56
+images:
+  header:
+    src: /images/tech/plumb-line-header.webp
+    alt: Field sketch of Plumb line, highlighting cord and weight, rope, standard
+      weights, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 0339a4cd15a06b6a59a27ff6241844a596e4e2439edcfa708fd6b73b188641dd
+    generated_at: 2026-05-04T23:20:33.241Z
+  schematic:
+    src: /images/tech/plumb-line-schematic.webp
+    alt: Schematic diagram of Plumb line, highlighting cord and weight, rope,
+      standard weights, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 688ec23f727cadeed2096e42610e4888addd9304354d54eed8aa7e5aba537b1b
+    generated_at: 2026-05-04T23:21:22.771Z
 ---
 
 ## Field briefing

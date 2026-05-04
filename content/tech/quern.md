@@ -5,7 +5,8 @@ title: Quern
 aliases: []
 node_type: tool
 status: draft
-summary: A hand grinding stone system for grain, pigments, grog, minerals, and other repeatable small-batch grinding.
+summary: A hand grinding stone system for grain, pigments, grog, minerals, and
+  other repeatable small-batch grinding.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: paired-grinding-stones
     title: Paired grinding stones
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - tool
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/quern-header.webp
+    alt: Field sketch of Quern, highlighting paired grinding stones, stone, mortar
+      and pestle, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: aa43fdf410c87bec25c76717c67fc01004f1f7f0eb772c86a1a28679d0a35299
+    generated_at: 2026-05-04T23:22:08.724Z
+  schematic:
+    src: /images/tech/quern-schematic.webp
+    alt: Schematic diagram of Quern, highlighting paired grinding stones, stone,
+      mortar and pestle, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: a45c1064deb30f3b44dc7972a66bdede2e6ea457c06b0cf5fd417b0a98ac1dc7
+    generated_at: 2026-05-04T23:23:01.298Z
 ---
 
 ## Field briefing

@@ -5,7 +5,8 @@ title: Awl
 aliases: []
 node_type: tool
 status: draft
-summary: A pointed hand tool for piercing leather, fiber, bark, thin wood, and layout marks before stitching or pegging.
+summary: A pointed hand tool for piercing leather, fiber, bark, thin wood, and
+  layout marks before stitching or pegging.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: point-material-and-handle
     title: Point material and handle
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - tool
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/awl-header.webp
+    alt: Field sketch of Awl, highlighting point material and handle, cutting edge,
+      bone and antler, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: dc05471078799896c30e7a92fcd05aea9cd4220fcba95ef86341cfe34ed454da
+    generated_at: 2026-05-04T22:59:43.959Z
+  schematic:
+    src: /images/tech/awl-schematic.webp
+    alt: Schematic diagram of Awl, highlighting point material and handle, cutting
+      edge, bone and antler, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: bae8ff4e731480d2ee377b0b7c5fa39a5e7b38201e7c67237f5298171282958a
+    generated_at: 2026-05-04T23:00:24.177Z
 ---
 
 ## Field briefing

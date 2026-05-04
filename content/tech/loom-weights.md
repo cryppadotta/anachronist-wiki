@@ -5,7 +5,8 @@ title: Loom weights
 aliases: []
 node_type: tool
 status: draft
-summary: Weights that tension warp threads on simple looms, usually made from fired clay, stone, or reused dense objects.
+summary: Weights that tension warp threads on simple looms, usually made from
+  fired clay, stone, or reused dense objects.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: clay-stone-or-dense-scrap
     title: Clay, stone, or dense scrap
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - textile
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/loom-weights-header.webp
+    alt: Field sketch of Loom weights, highlighting clay, stone, or dense scrap,
+      clay, kiln firing test, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 4044e10ff0a4c9a3c36c0b3ffb12ebfd432f4a071a807b3b748569c0bfeb15b8
+    generated_at: 2026-05-04T23:15:58.888Z
+  schematic:
+    src: /images/tech/loom-weights-schematic.webp
+    alt: Schematic diagram of Loom weights, highlighting clay, stone, or dense
+      scrap, clay, kiln firing test, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 116c0618bab41a2333f19537ddb70e9de45146b24d1d987051f812b059990b2a
+    generated_at: 2026-05-04T23:16:59.728Z
 ---
 
 ## Field briefing

@@ -5,7 +5,8 @@ title: Mortar and pestle
 aliases: []
 node_type: tool
 status: draft
-summary: A paired crushing and grinding tool for pigments, grog, grain, resin, herbs, and small mineral batches.
+summary: A paired crushing and grinding tool for pigments, grog, grain, resin,
+  herbs, and small mineral batches.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: hard-bowl-and-pounder
     title: Hard bowl and pounder
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - tool
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/mortar-and-pestle-header.webp
+    alt: Field sketch of Mortar and pestle, highlighting hard bowl and pounder,
+      stone, stone hammer, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 35f8ad01f5624f5aa3f881416e27444711d52a406fcdc68e63a2862a218ac9f2
+    generated_at: 2026-05-04T23:17:29.659Z
+  schematic:
+    src: /images/tech/mortar-and-pestle-schematic.webp
+    alt: Schematic diagram of Mortar and pestle, highlighting hard bowl and pounder,
+      stone, stone hammer, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: b19ea2dfc76e0d3fb50a13c7bc61ab529f551e8ce9f3b97622b29747c106e2b1
+    generated_at: 2026-05-04T23:18:24.542Z
 ---
 
 ## Field briefing

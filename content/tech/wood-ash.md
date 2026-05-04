@@ -5,7 +5,8 @@ title: Wood ash
 aliases: []
 node_type: material
 status: draft
-summary: Alkaline mineral residue from clean wood fires used cautiously for cleaning, flux-like experiments, pigment adjustment, and soil or clay trials.
+summary: Alkaline mineral residue from clean wood fires used cautiously for
+  cleaning, flux-like experiments, pigment adjustment, and soil or clay trials.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: clean-hardwood-ash
     title: Clean hardwood ash
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - fire
   - ANA-37
@@ -37,15 +39,36 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/wood-ash-header.webp
+    alt: Field sketch of Wood ash, highlighting clean hardwood ash, firekeeping,
+      water settling test, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 210293efe35267ca848522a6d27ed45090e5aa6955f6e27345eb908331f63204
+    generated_at: 2026-05-04T23:32:43.983Z
+  schematic:
+    src: /images/tech/wood-ash-schematic.webp
+    alt: Schematic diagram of Wood ash, highlighting clean hardwood ash,
+      firekeeping, water settling test, material and major working
+      relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: c37b56643cd955d04aaac6a30924cd043c6c88555674a27450039d5c6c2df8d3
+    generated_at: 2026-05-04T23:33:38.536Z
 ---
 
 ## Field briefing

@@ -5,7 +5,8 @@ title: Resin
 aliases: []
 node_type: material
 status: draft
-summary: Sticky tree exudate gathered, cleaned, and used for sealants, adhesives, waterproofing, torch fuel, and compound repairs.
+summary: Sticky tree exudate gathered, cleaned, and used for sealants,
+  adhesives, waterproofing, torch fuel, and compound repairs.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: tree-resin
     title: Tree resin
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - forest
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/resin-header.webp
+    alt: Field sketch of Resin, highlighting tree resin, cutting edge, firekeeping,
+      material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: cb55c466757d9e3c91c12b804f40cf16e3537c223d88199e85f24eb9b433a4d8
+    generated_at: 2026-05-04T23:22:29.818Z
+  schematic:
+    src: /images/tech/resin-schematic.webp
+    alt: Schematic diagram of Resin, highlighting tree resin, cutting edge,
+      firekeeping, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 9de24d3881cc280f5637941fd9b15b0fe7fc59257c6a3b458cfc6ed6f46fa474
+    generated_at: 2026-05-04T23:23:29.299Z
 ---
 
 ## Field briefing

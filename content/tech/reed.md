@@ -5,7 +5,8 @@ title: Reed
 aliases: []
 node_type: material
 status: draft
-summary: Straight hollow or pithy wetland stems used for mats, thatch, pens, tubes, floats, baskets, and light frames.
+summary: Straight hollow or pithy wetland stems used for mats, thatch, pens,
+  tubes, floats, baskets, and light frames.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: reed-beds
     title: Reed beds
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - plant
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/reed-header.webp
+    alt: Field sketch of Reed, highlighting reed beds, water, cutting edge,
+      material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 74a910ba98af7a8c5d93a3af71d3b6d96afcf63c3e0bc125e64d8804b7a00d94
+    generated_at: 2026-05-04T23:22:14.014Z
+  schematic:
+    src: /images/tech/reed-schematic.webp
+    alt: Schematic diagram of Reed, highlighting reed beds, water, cutting edge,
+      material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 033d0c74e141284c7a7244248e5779b8195a9f057f70d0d2ce985a066680aba0
+    generated_at: 2026-05-04T23:23:03.258Z
 ---
 
 ## Field briefing

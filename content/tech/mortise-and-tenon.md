@@ -5,7 +5,8 @@ title: Mortise and tenon
 aliases: []
 node_type: process
 status: draft
-summary: An interlocking wood joint where a projecting tenon fits a matching cavity for stronger frames and repeatable structures.
+summary: An interlocking wood joint where a projecting tenon fits a matching
+  cavity for stronger frames and repeatable structures.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: stable-wood-stock
     title: Stable wood stock
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - joinery
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/mortise-and-tenon-header.webp
+    alt: Field sketch of Mortise and tenon, highlighting stable wood stock, chisel,
+      try-square, process.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 44e790cb76810072e112699f65a5918eb4845a761efb1611c230fee481dec14e
+    generated_at: 2026-05-04T23:17:33.986Z
+  schematic:
+    src: /images/tech/mortise-and-tenon-schematic.webp
+    alt: Schematic diagram of Mortise and tenon, highlighting stable wood stock,
+      chisel, try-square, process and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 053f27f60f8bef8786efd1e605b4baee5e2289cf6653fd5f30be2ed01d5c44da
+    generated_at: 2026-05-04T23:18:30.078Z
 ---
 
 ## Field briefing

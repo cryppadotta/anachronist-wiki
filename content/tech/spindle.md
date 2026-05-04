@@ -6,7 +6,8 @@ aliases:
   - drop spindle
 node_type: tool
 status: draft
-summary: A rotating shaft and optional whorl used to twist fiber into thread or yarn for cordage, weaving, stitching, and bindings.
+summary: A rotating shaft and optional whorl used to twist fiber into thread or
+  yarn for cordage, weaving, stitching, and bindings.
 safety_class: allowed
 era_floor: neolithic_to_ancient
 difficulty: basic
@@ -36,7 +37,8 @@ material_dependencies:
   - slug: straight-shaft-and-whorl
     title: Straight shaft and whorl
     importance: hard
-    availability_note: Wood, bone, reed, clay, stone, or reused parts can make the shaft and weight.
+    availability_note: Wood, bone, reed, clay, stone, or reused parts can make the
+      shaft and weight.
 tags:
   - textile
   - tool
@@ -46,15 +48,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; textile-tool chronology and material claims need human source review.
+    - No source pack was used; textile-tool chronology and material claims need
+      human source review.
 confidence:
   practicality: 0.74
   historical_plausibility: 0.84
   completeness: 0.55
+images:
+  header:
+    src: /images/tech/spindle-header.webp
+    alt: Field sketch of Spindle, highlighting straight shaft and whorl, cordage
+      fiber, hand drill, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 9365d59745a46e5253dfeec6dfa726b9e62ca028f6719b7a538954c3328a6346
+    generated_at: 2026-05-04T23:27:19.207Z
+  schematic:
+    src: /images/tech/spindle-schematic.webp
+    alt: Schematic diagram of Spindle, highlighting straight shaft and whorl,
+      cordage fiber, hand drill, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 1a91fcf7efd86e2f8c589e102043bad9876241669a311b06b04625e8cceaad6f
+    generated_at: 2026-05-04T23:28:08.845Z
 ---
 
 ## Field briefing

@@ -7,7 +7,8 @@ aliases:
   - bushing
 node_type: artifact
 status: draft
-summary: A low-friction rubbing surface or sleeve that lets a shaft turn or pivot with controlled wear.
+summary: A low-friction rubbing surface or sleeve that lets a shaft turn or
+  pivot with controlled wear.
 safety_class: allowed
 era_floor: ancient
 difficulty: intermediate
@@ -59,15 +60,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-34 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-34
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; historical bearing materials and chronology need human source review.
+    - No source pack was used; historical bearing materials and chronology need
+      human source review.
 confidence:
   practicality: 0.7
   historical_plausibility: 0.74
   completeness: 0.56
+images:
+  header:
+    src: /images/tech/plain-bearing-header.webp
+    alt: Field sketch of Plain bearing, highlighting hardwood, animal fat, wheel and
+      axle, woodworking.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 3ea540ca9ee64cd4f86e519a4c5a00fd118586026a6ad89a5dd682fa3dd015e5
+    generated_at: 2026-05-04T23:20:33.359Z
+  schematic:
+    src: /images/tech/plain-bearing-schematic.webp
+    alt: Schematic diagram of Plain bearing, highlighting hardwood, animal fat,
+      wheel and axle, woodworking and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 01e380a769c649580ba8232ebeaf31fb5fec4dc98b7e0c2bd50b395430e9a109
+    generated_at: 2026-05-04T23:21:27.268Z
 ---
 
 ## Field briefing

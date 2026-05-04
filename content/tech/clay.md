@@ -5,7 +5,8 @@ title: Clay
 aliases: []
 node_type: material
 status: draft
-summary: Fine mineral sediment that can be shaped wet and hardened by drying or firing for vessels, bricks, molds, tablets, and kiln structures.
+summary: Fine mineral sediment that can be shaped wet and hardened by drying or
+  firing for vessels, bricks, molds, tablets, and kiln structures.
 safety_class: allowed
 era_floor: prehistoric
 difficulty: basic
@@ -41,15 +42,34 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; geology and ceramic claims need human source review.
+    - No source pack was used; geology and ceramic claims need human source
+      review.
 confidence:
   practicality: 0.8
   historical_plausibility: 0.85
   completeness: 0.62
+images:
+  header:
+    src: /images/tech/clay-header.webp
+    alt: Field sketch of Clay, highlighting water, water settling test, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: d860340a9657104565fda8b5be97d7319ace3aa200c4b13d831b49d838836510
+    generated_at: 2026-05-04T23:04:47.366Z
+  schematic:
+    src: /images/tech/clay-schematic.webp
+    alt: Schematic diagram of Clay, highlighting water, water settling test,
+      material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 0ce436440d2ff6b628b7c3b4c554b136cd20804d03875c5e5e43164007e0f6fa
+    generated_at: 2026-05-04T23:05:36.747Z
 ---
 
 ## Field briefing

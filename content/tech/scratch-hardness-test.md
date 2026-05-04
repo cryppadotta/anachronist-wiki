@@ -5,7 +5,8 @@ title: Scratch hardness test
 aliases: []
 node_type: test
 status: draft
-summary: A comparative test that ranks minerals, edges, and surfaces by which material can scratch another.
+summary: A comparative test that ranks minerals, edges, and surfaces by which
+  material can scratch another.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: reference-scraps
     title: Reference scraps
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - test
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/scratch-hardness-test-header.webp
+    alt: Field sketch of Scratch hardness test, highlighting reference scraps,
+      stone, abrasive grit, test.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 559e083858eb2ddc40523edf711739e24f50213cc3309f65e0cf85bfdf899f95
+    generated_at: 2026-05-04T23:24:28.268Z
+  schematic:
+    src: /images/tech/scratch-hardness-test-schematic.webp
+    alt: Schematic diagram of Scratch hardness test, highlighting reference scraps,
+      stone, abrasive grit, test and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 3d650021750953e4449d6324ba3be66a9933e0c1247c019e91adf00902fc1e41
+    generated_at: 2026-05-04T23:25:35.382Z
 ---
 
 ## Field briefing

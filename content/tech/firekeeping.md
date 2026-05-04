@@ -8,7 +8,8 @@ node_type: process
 secondary_node_types:
   - knowledge
 status: draft
-summary: The practical discipline of starting, feeding, observing, containing, banking, extinguishing, and teaching controlled fire for workshop use.
+summary: The practical discipline of starting, feeding, observing, containing,
+  banking, extinguishing, and teaching controlled fire for workshop use.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric
@@ -39,7 +40,8 @@ material_dependencies:
   - slug: fuel
     title: Fuel
     importance: hard
-    availability_note: Wood, charcoal, dried dung, peat, brush, or other fuels define the practical fire regime.
+    availability_note: Wood, charcoal, dried dung, peat, brush, or other fuels
+      define the practical fire regime.
 tags:
   - fire
   - safety
@@ -49,15 +51,34 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; fire-history and safety claims need human source review.
+    - No source pack was used; fire-history and safety claims need human source
+      review.
 confidence:
   practicality: 0.74
   historical_plausibility: 0.88
   completeness: 0.54
+images:
+  header:
+    src: /images/tech/firekeeping-header.webp
+    alt: Field sketch of Firekeeping, highlighting fuel, water, process.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 00b61662c75c38ed60f08a67a154e892cd6ce31baf961ff515df7897ccdca42f
+    generated_at: 2026-05-04T23:06:29.551Z
+  schematic:
+    src: /images/tech/firekeeping-schematic.webp
+    alt: Schematic diagram of Firekeeping, highlighting fuel, water, process and
+      major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: e674795f2159bd8bf7e44d8f7948b9b4f97369c76dba0926fcc7216019c38e6a
+    generated_at: 2026-05-04T23:07:37.475Z
 ---
 
 ## Field briefing

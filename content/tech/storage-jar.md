@@ -5,7 +5,8 @@ title: Storage jar
 aliases: []
 node_type: artifact
 status: draft
-summary: A container for keeping water, grain, pigment, fiber, ash, glue, oil, and labeled workshop samples controlled.
+summary: A container for keeping water, grain, pigment, fiber, ash, glue, oil,
+  and labeled workshop samples controlled.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: clay-body-and-closure
     title: Clay body and closure
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - container
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/storage-jar-header.webp
+    alt: Field sketch of Storage jar, highlighting clay body and closure, clay, kiln
+      firing test, artifact.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 99d34b9a2ba210607ccc826dd2ddda170949361ed57c7de6655ddbda8d572bd1
+    generated_at: 2026-05-04T23:29:26.870Z
+  schematic:
+    src: /images/tech/storage-jar-schematic.webp
+    alt: Schematic diagram of Storage jar, highlighting clay body and closure, clay,
+      kiln firing test, artifact and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: ad1b6f249986c6d4a18176f5f178cfa963d01f7628bcc831bf0ea15e72ff698e
+    generated_at: 2026-05-04T23:30:17.597Z
 ---
 
 ## Field briefing

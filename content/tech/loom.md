@@ -5,7 +5,8 @@ title: Loom
 aliases: []
 node_type: tool
 status: draft
-summary: A frame or weighted setup that holds threads in order and under tension while cloth or bands are woven.
+summary: A frame or weighted setup that holds threads in order and under tension
+  while cloth or bands are woven.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -31,7 +32,8 @@ material_dependencies:
   - slug: frame-stock-and-thread
     title: Frame stock and thread
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - textile
   - ANA-37
@@ -40,15 +42,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/loom-header.webp
+    alt: Field sketch of Loom, highlighting frame stock and thread, weaving, timber,
+      tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 2a22e7b3b4f4153f178df581cef6aff1cf0b3707aedcd0516952539f728ef238
+    generated_at: 2026-05-04T23:17:23.198Z
+  schematic:
+    src: /images/tech/loom-schematic.webp
+    alt: Schematic diagram of Loom, highlighting frame stock and thread, weaving,
+      timber, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: ebee0af8bb34c0117888ce35af54459791a4c273e73919cfce575eefb9cb851d
+    generated_at: 2026-05-04T23:18:12.742Z
 ---
 
 ## Field briefing

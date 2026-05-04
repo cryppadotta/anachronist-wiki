@@ -7,7 +7,8 @@ node_type: material
 secondary_node_types:
   - artifact
 status: draft
-summary: A thin sheet made from interlocked fibers, useful for records, drawings, labels, patterns, teaching, and administrative memory.
+summary: A thin sheet made from interlocked fibers, useful for records,
+  drawings, labels, patterns, teaching, and administrative memory.
 safety_class: allowed
 era_floor: ancient
 difficulty: intermediate
@@ -41,11 +42,13 @@ material_dependencies:
   - slug: plant-fiber
     title: Plant fiber
     importance: hard
-    availability_note: Linen rags, bast, hemp, flax, or other fibers may work depending on local availability.
+    availability_note: Linen rags, bast, hemp, flax, or other fibers may work
+      depending on local availability.
   - slug: clean-water
     title: Clean water
     importance: hard
-    availability_note: Pulp preparation needs abundant water with manageable grit and organic contamination.
+    availability_note: Pulp preparation needs abundant water with manageable grit
+      and organic contamination.
 tags:
   - records
   - material
@@ -55,15 +58,35 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; historical papermaking claims need human source review.
+    - No source pack was used; historical papermaking claims need human source
+      review.
 confidence:
   practicality: 0.6
   historical_plausibility: 0.62
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/paper-header.webp
+    alt: Field sketch of Paper, highlighting plant fiber, clean water, rope, water
+      settling test.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 05af7e9b5c3cdf71f0ad2db157ac11a88fdd20be47708c0a9e15ced40a013d62
+    generated_at: 2026-05-04T23:19:09.254Z
+  schematic:
+    src: /images/tech/paper-schematic.webp
+    alt: Schematic diagram of Paper, highlighting plant fiber, clean water, rope,
+      water settling test and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 01680edc6fa59f83fd2ee8e0ac9f1a946604aac02da7e2fb5996fcf6f521e525
+    generated_at: 2026-05-04T23:20:00.953Z
 ---
 
 ## Field briefing

@@ -7,7 +7,8 @@ aliases:
   - lumber
 node_type: material
 status: draft
-summary: Felled and selected wood prepared as a structural material for frames, handles, axles, wheels, benches, jigs, and buildings.
+summary: Felled and selected wood prepared as a structural material for frames,
+  handles, axles, wheels, benches, jigs, and buildings.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric
@@ -34,7 +35,8 @@ material_dependencies:
   - slug: trees
     title: Trees
     importance: hard
-    availability_note: Species, growth form, knots, and local access decide the strength and durability of the stock.
+    availability_note: Species, growth form, knots, and local access decide the
+      strength and durability of the stock.
 tags:
   - material
   - woodworking
@@ -44,15 +46,34 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; local species and historical forestry claims need human source review.
+    - No source pack was used; local species and historical forestry claims need
+      human source review.
 confidence:
   practicality: 0.8
   historical_plausibility: 0.86
   completeness: 0.58
+images:
+  header:
+    src: /images/tech/timber-header.webp
+    alt: Field sketch of Timber, highlighting trees, cutting edge, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 196379506fb77771a8332dbd9a7115df23247fb0f112b33f858dee067a30e78f
+    generated_at: 2026-05-04T23:31:03.964Z
+  schematic:
+    src: /images/tech/timber-schematic.webp
+    alt: Schematic diagram of Timber, highlighting trees, cutting edge, material and
+      major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: b04ad8d523145488618d1a2669dd8ba9874658ec58dc764c8978ce0e416a7111
+    generated_at: 2026-05-04T23:31:53.414Z
 ---
 
 ## Field briefing

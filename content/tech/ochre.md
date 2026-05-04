@@ -5,7 +5,8 @@ title: Ochre
 aliases: []
 node_type: material
 status: draft
-summary: Iron-rich earth pigment selected, washed, and ground for marking, paint, ink color, surface coding, and teaching samples.
+summary: Iron-rich earth pigment selected, washed, and ground for marking,
+  paint, ink color, surface coding, and teaching samples.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: iron-rich-earth
     title: Iron-rich earth
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - pigment
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/ochre-header.webp
+    alt: Field sketch of Ochre, highlighting iron-rich earth, water settling test,
+      abrasive grit, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 52cde703c92a0e988d84388acc18d1ff90eb489cea5c0768495140662b90f547
+    generated_at: 2026-05-04T23:19:00.859Z
+  schematic:
+    src: /images/tech/ochre-schematic.webp
+    alt: Schematic diagram of Ochre, highlighting iron-rich earth, water settling
+      test, abrasive grit, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 6bd42f4c3eb6a305dae4866a1f0035879c2832639768d4c9bd1102b87dec8574
+    generated_at: 2026-05-04T23:19:47.190Z
 ---
 
 ## Field briefing

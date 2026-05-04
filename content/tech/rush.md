@@ -5,7 +5,8 @@ title: Rush
 aliases: []
 node_type: material
 status: draft
-summary: Flexible wetland stems used for cord, mats, basketry, wicks, packing, seating, and light tying work.
+summary: Flexible wetland stems used for cord, mats, basketry, wicks, packing,
+  seating, and light tying work.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: rushes-from-wet-ground
     title: Rushes from wet ground
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - plant
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/rush-header.webp
+    alt: Field sketch of Rush, highlighting rushes from wet ground, water, cutting
+      edge, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 1e4ee36c9edc84749fba9452cc1e94076ade0936a72df644a4cccc33615d34d5
+    generated_at: 2026-05-04T23:22:48.859Z
+  schematic:
+    src: /images/tech/rush-schematic.webp
+    alt: Schematic diagram of Rush, highlighting rushes from wet ground, water,
+      cutting edge, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 8c44cd41e296287f050e6c6d061f6c9cb15b1031ddd9ebdac491fcb84cff8445
+    generated_at: 2026-05-04T23:23:38.798Z
 ---
 
 ## Field briefing

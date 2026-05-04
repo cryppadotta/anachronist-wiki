@@ -8,7 +8,8 @@ node_type: knowledge
 secondary_node_types:
   - measurement
 status: draft
-summary: A shared drawing practice for communicating shape, size, parts, assembly, and revisions before or during construction.
+summary: A shared drawing practice for communicating shape, size, parts,
+  assembly, and revisions before or during construction.
 safety_class: allowed
 era_floor: ancient_to_medieval
 difficulty: intermediate
@@ -27,7 +28,8 @@ prerequisites:
   - slug: standard-weights
     title: Standard weights
     kind: optional
-    role: Measurement culture supports drawing discipline, though length standards are the direct need.
+    role: Measurement culture supports drawing discipline, though length standards
+      are the direct need.
 unlocks:
   - slug: wheel-and-axle
     title: Wheel and axle
@@ -42,11 +44,13 @@ material_dependencies:
   - slug: paper
     title: Paper
     importance: optional
-    availability_note: Paper is convenient but clay, wax, wood, parchment, or scratched boards can carry drawings.
+    availability_note: Paper is convenient but clay, wax, wood, parchment, or
+      scratched boards can carry drawings.
   - slug: ink
     title: Ink
     importance: optional
-    availability_note: Ink improves permanence; charcoal or incised marks can work for early drawings.
+    availability_note: Ink improves permanence; charcoal or incised marks can work
+      for early drawings.
 tags:
   - design
   - records
@@ -56,15 +60,35 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; history of drawing conventions needs human source review.
+    - No source pack was used; history of drawing conventions needs human source
+      review.
 confidence:
   practicality: 0.76
   historical_plausibility: 0.68
   completeness: 0.58
+images:
+  header:
+    src: /images/tech/technical-drawing-header.webp
+    alt: Field sketch of Technical drawing, highlighting paper, ink, writing,
+      counting.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 630ec79e0513e85a29ea3900083066912aa0204c5672c570abb0f2b1153b5be0
+    generated_at: 2026-05-04T23:30:30.883Z
+  schematic:
+    src: /images/tech/technical-drawing-schematic.webp
+    alt: Schematic diagram of Technical drawing, highlighting paper, ink, writing,
+      counting and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: e3c824283c1289d6dfca1627b48661311746fd83a881ca15bb04cc1ba436a31f
+    generated_at: 2026-05-04T23:31:21.551Z
 ---
 
 ## Field briefing

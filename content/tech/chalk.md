@@ -5,7 +5,8 @@ title: Chalk
 aliases: []
 node_type: material
 status: draft
-summary: Soft white limestone material used for marking, whitening, fillers, mild abrasive work, and lime-related supply chains.
+summary: Soft white limestone material used for marking, whitening, fillers,
+  mild abrasive work, and lime-related supply chains.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: chalk-or-soft-limestone
     title: Chalk or soft limestone
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - mineral
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/chalk-header.webp
+    alt: Field sketch of Chalk, highlighting chalk or soft limestone, stone, water
+      settling test, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: fc299ce2e81649d236acd4fe046c04447f1bf0a4cb350509cb283903f3c6fbc3
+    generated_at: 2026-05-04T23:03:00.910Z
+  schematic:
+    src: /images/tech/chalk-schematic.webp
+    alt: Schematic diagram of Chalk, highlighting chalk or soft limestone, stone,
+      water settling test, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: d3b03c9beb074e4a930a5739e49c3f439af0945edbdc1dd5089a003d67b11593
+    generated_at: 2026-05-04T23:04:01.314Z
 ---
 
 ## Field briefing

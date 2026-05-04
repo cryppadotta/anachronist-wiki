@@ -5,7 +5,8 @@ title: Net making
 aliases: []
 node_type: process
 status: draft
-summary: The construction of repeated open mesh from cordage for carrying, fishing, drying, trapping, sorting, and storage.
+summary: The construction of repeated open mesh from cordage for carrying,
+  fishing, drying, trapping, sorting, and storage.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: cordage-and-gauge
     title: Cordage and gauge
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - fiber
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/net-making-header.webp
+    alt: Field sketch of Net making, highlighting cordage and gauge, knot tying,
+      cordage fiber, process.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: ca81db2a560e86f3b264d71f514c9ac48f104a201a84fc802895ab81978fa55c
+    generated_at: 2026-05-04T23:18:57.550Z
+  schematic:
+    src: /images/tech/net-making-schematic.webp
+    alt: Schematic diagram of Net making, highlighting cordage and gauge, knot
+      tying, cordage fiber, process and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 631079a3e753182ef5d377640e55f051d5d47bad4b284beda322af81e0d8b634
+    generated_at: 2026-05-04T23:19:48.227Z
 ---
 
 ## Field briefing

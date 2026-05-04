@@ -8,7 +8,8 @@ node_type: tool
 secondary_node_types:
   - knowledge
 status: draft
-summary: A rigid bar used around a fulcrum to trade distance for force in lifting, prying, pressing, and control mechanisms.
+summary: A rigid bar used around a fulcrum to trade distance for force in
+  lifting, prying, pressing, and control mechanisms.
 safety_class: allowed
 era_floor: prehistoric
 difficulty: trivial
@@ -34,7 +35,8 @@ material_dependencies:
   - slug: hardwood
     title: Hardwood
     importance: soft
-    availability_note: Straight, tough branches or poles are common in woodland regions; metal improves wear but is not required.
+    availability_note: Straight, tough branches or poles are common in woodland
+      regions; metal improves wear but is not required.
 tags:
   - mechanics
   - simple-machines
@@ -44,15 +46,34 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; historical and technical claims need human source review.
+    - No source pack was used; historical and technical claims need human source
+      review.
 confidence:
   practicality: 0.9
   historical_plausibility: 0.92
   completeness: 0.68
+images:
+  header:
+    src: /images/tech/lever-header.webp
+    alt: Field sketch of Lever, highlighting hardwood, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: ba3336ad3b48bbb0f95d90d61d30b6c0100be244d84b283f84a9e3a99af5105f
+    generated_at: 2026-05-04T23:15:44.429Z
+  schematic:
+    src: /images/tech/lever-schematic.webp
+    alt: Schematic diagram of Lever, highlighting hardwood, tool and major working
+      relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 0deb932d88e3a6e300f5fe705f6e6242e30918aa61325452f7856a249161f4a3
+    generated_at: 2026-05-04T23:16:37.253Z
 ---
 
 ## Field briefing

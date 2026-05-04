@@ -8,7 +8,9 @@ node_type: process
 secondary_node_types:
   - artifact
 status: draft
-summary: The craft of weaving flexible plant, bark, root, reed, or fiber materials into containers, frames, strainers, traps, and lightweight structures.
+summary: The craft of weaving flexible plant, bark, root, reed, or fiber
+  materials into containers, frames, strainers, traps, and lightweight
+  structures.
 safety_class: allowed
 era_floor: prehistoric
 difficulty: basic
@@ -34,7 +36,8 @@ material_dependencies:
   - slug: flexible-stems
     title: Flexible stems or splints
     importance: hard
-    availability_note: Willow, hazel, rush, reed, root, bark, and split wood vary by season and wetland access.
+    availability_note: Willow, hazel, rush, reed, root, bark, and split wood vary by
+      season and wetland access.
 tags:
   - containers
   - fiber
@@ -44,15 +47,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; regional plant and basketry history claims need human source review.
+    - No source pack was used; regional plant and basketry history claims need
+      human source review.
 confidence:
   practicality: 0.82
   historical_plausibility: 0.88
   completeness: 0.57
+images:
+  header:
+    src: /images/tech/basketry-header.webp
+    alt: Field sketch of Basketry, highlighting flexible stems or splints, cordage
+      fiber, process.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 557d5d365ec0534e72fedde1068a0748c624803f81a187334c20c435318c46d7
+    generated_at: 2026-05-04T23:01:11.038Z
+  schematic:
+    src: /images/tech/basketry-schematic.webp
+    alt: Schematic diagram of Basketry, highlighting flexible stems or splints,
+      cordage fiber, process and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 236561fc36b06545d4e34d8cce199533c47c72136dd407d9ad5960f45af8d2fd
+    generated_at: 2026-05-04T23:02:05.445Z
 ---
 
 ## Field briefing

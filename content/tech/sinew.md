@@ -5,7 +5,8 @@ title: Sinew
 aliases: []
 node_type: material
 status: draft
-summary: Tough animal tendon fiber prepared for binding, sewing, bowing, lashings, and composite repairs.
+summary: Tough animal tendon fiber prepared for binding, sewing, bowing,
+  lashings, and composite repairs.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: animal-tendon
     title: Animal tendon
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - animal-product
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/sinew-header.webp
+    alt: Field sketch of Sinew, highlighting animal tendon, cutting edge, tensile
+      test, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 242a7cf36736ae589f2318497e4ab66d792752dc4f294b9d5acad96061aa5d27
+    generated_at: 2026-05-04T23:27:14.504Z
+  schematic:
+    src: /images/tech/sinew-schematic.webp
+    alt: Schematic diagram of Sinew, highlighting animal tendon, cutting edge,
+      tensile test, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: b858fb9660de7cb4edc58ed7c0fbd087c42e6c2b402df828d0c744d87e13a8ae
+    generated_at: 2026-05-04T23:28:04.384Z
 ---
 
 ## Field briefing

@@ -5,7 +5,8 @@ title: Batch labeling
 aliases: []
 node_type: institution
 status: draft
-summary: A simple recordkeeping practice that attaches names, marks, or symbols to material lots, tests, failures, and trusted samples.
+summary: A simple recordkeeping practice that attaches names, marks, or symbols
+  to material lots, tests, failures, and trusted samples.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: intermediate
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: labels-and-records
     title: Labels and records
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - records
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/batch-labeling-header.webp
+    alt: Field sketch of Batch labeling, highlighting labels and records, workshop
+      records, writing, institution.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 2dd0a4d43bdacb8af14cfe8c5909f392fcf96db6f11416a754528e9648abb337
+    generated_at: 2026-05-04T23:01:34.652Z
+  schematic:
+    src: /images/tech/batch-labeling-schematic.webp
+    alt: Schematic diagram of Batch labeling, highlighting labels and records,
+      workshop records, writing, institution and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: e0b1c01a349d4543210f5069ec43adf7bab10637e506efe7850efadb74ea6a14
+    generated_at: 2026-05-04T23:02:25.270Z
 ---
 
 ## Field briefing

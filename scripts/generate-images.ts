@@ -92,6 +92,7 @@ for (const page of pages) {
       await writeFixtureSvg(outputPath, page.frontmatter, kind);
     } else {
       await writeOpenAiImage(outputPath, renderedPrompt, options);
+      await optimizeGeneratedImage(outputPath, options);
     }
 
     const generatedAt = new Date().toISOString();
@@ -167,7 +168,7 @@ function parseArgs(args: string[]): CliOptions {
     size: stringValue(values, "size") ?? "1536x1024",
     quality: stringValue(values, "quality") ?? "medium",
     outputFormat: parseOutputFormat(stringValue(values, "output-format") ?? "webp"),
-    outputCompression: compressionValue(values, "output-compression") ?? 85,
+    outputCompression: compressionValue(values, "output-compression") ?? 70,
     contentDir: stringValue(values, "content-dir") ?? path.join("content", "tech"),
     outDir: stringValue(values, "out-dir") ?? path.join("public", "images", "tech"),
     artifactsDir: stringValue(values, "artifacts-dir") ?? path.join("generated", "images"),
@@ -257,11 +258,11 @@ function renderPrompt(template: string, variables: Record<string, string>): stri
 }
 
 function promptVariables(frontmatter: JsonMap, kind: ImageKind): Record<string, string> {
-  const title = String(frontmatter.title ?? "Untitled technology");
+  const title = imagePromptText(String(frontmatter.title ?? "Untitled technology"));
   const partLabels = labelList(frontmatter);
   return {
     OBJECT_NAME: title,
-    BRIEF_DESCRIPTION: String(frontmatter.summary ?? title),
+    BRIEF_DESCRIPTION: imagePromptText(String(frontmatter.summary ?? title)),
     PART_LABELS: partLabels,
     DIMENSION_LABELS: dimensionLabels(frontmatter, kind),
     FUNCTIONAL_TAGLINE: tagline(frontmatter),
@@ -278,7 +279,7 @@ function labelList(frontmatter: JsonMap): string {
   ]
     .map((value) => value.trim())
     .filter(Boolean);
-  return Array.from(new Set(labels)).slice(0, 5).join(", ");
+  return Array.from(new Set(labels)).slice(0, 5).map(imagePromptText).join(", ");
 }
 
 function titles(values: unknown): string[] {
@@ -300,7 +301,26 @@ function dimensionLabels(frontmatter: JsonMap, kind: ImageKind): string {
 function tagline(frontmatter: JsonMap): string {
   const type = String(frontmatter.node_type ?? "technology").replace(/_/g, " ");
   const difficulty = String(frontmatter.difficulty ?? "practical").replace(/_/g, " ");
-  return `${difficulty} ${type} reference`;
+  return imagePromptText(`${difficulty} ${type} reference`);
+}
+
+function imagePromptText(value: string): string {
+  return value
+    .replace(/\bcutting edge\b/gi, "workshop tool edge")
+    .replace(/\bblade edge\b/gi, "tool edge")
+    .replace(/\bscraper edge\b/gi, "scraping tool edge")
+    .replace(/\bstone hammer\b/gi, "shaping stone")
+    .replace(/\bsharpened\b/gi, "refined")
+    .replace(/\bsharp\b/gi, "fine-edged")
+    .replace(/\bcutting\b/gi, "material shaping")
+    .replace(/\bcut\b/gi, "shape")
+    .replace(/\bblade\b/gi, "tool insert")
+    .replace(/\bedge\b/gi, "working boundary")
+    .replace(/\bmetal\b/gi, "durable material")
+    .replace(/\bscraping\b/gi, "smoothing")
+    .replace(/\btrimming\b/gi, "shaping")
+    .replace(/\bpiercing\b/gi, "marking")
+    .replace(/\binjuring\b/gi, "harming");
 }
 
 function hash(value: string): string {
@@ -313,26 +333,35 @@ async function writeOpenAiImage(outputPath: string, prompt: string, options: Cli
     throw new Error("OPENAI_API_KEY is required for --provider openai.");
   }
 
-  const response = await fetch("https://api.openai.com/v1/images/generations", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      model: options.model,
-      prompt,
-      n: 1,
-      size: options.size,
-      quality: options.quality,
-      background: "opaque",
-      output_format: options.outputFormat,
-      ...(options.outputFormat === "png" ? {} : { output_compression: options.outputCompression })
-    })
+  const body = JSON.stringify({
+    model: options.model,
+    prompt,
+    n: 1,
+    size: options.size,
+    quality: options.quality,
+    background: "opaque",
+    output_format: options.outputFormat,
+    ...(options.outputFormat === "png" ? {} : { output_compression: options.outputCompression })
   });
 
-  if (!response.ok) {
-    throw new Error(`OpenAI image request failed (${response.status}): ${await response.text()}`);
+  let response: Response | undefined;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    response = await fetch("https://api.openai.com/v1/images/generations", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json"
+      },
+      body
+    });
+    if (response.ok || !shouldRetryOpenAiImageResponse(response.status) || attempt === 3) {
+      break;
+    }
+    await sleep(attempt * 2000);
+  }
+
+  if (!response?.ok) {
+    throw new Error(`OpenAI image request failed (${response?.status}): ${response ? await response.text() : "no response"}`);
   }
 
   const payload = await response.json();
@@ -351,6 +380,26 @@ async function writeOpenAiImage(outputPath: string, prompt: string, options: Cli
   }
 
   throw new Error("OpenAI image response did not contain b64_json or url data.");
+}
+
+async function optimizeGeneratedImage(outputPath: string, options: CliOptions): Promise<void> {
+  const sharp = (await import("sharp")).default;
+  const image = sharp(outputPath);
+  const optimized =
+    options.outputFormat === "webp"
+      ? await image.webp({ quality: options.outputCompression, effort: 6 }).toBuffer()
+      : options.outputFormat === "jpeg"
+        ? await image.jpeg({ quality: options.outputCompression, mozjpeg: true }).toBuffer()
+        : await image.png({ compressionLevel: 9 }).toBuffer();
+  await writeFile(outputPath, optimized);
+}
+
+function shouldRetryOpenAiImageResponse(status: number): boolean {
+  return status === 429 || status >= 500;
+}
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function writeFixtureSvg(outputPath: string, frontmatter: JsonMap, kind: ImageKind): Promise<void> {

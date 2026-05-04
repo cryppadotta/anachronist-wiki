@@ -8,7 +8,8 @@ node_type: institution
 secondary_node_types:
   - knowledge
 status: draft
-summary: Shared rules for separating waste, drinking water, food handling, washing, burial, drainage, and sickness response.
+summary: Shared rules for separating waste, drinking water, food handling,
+  washing, burial, drainage, and sickness response.
 safety_class: allowed
 era_floor: ancient
 difficulty: intermediate
@@ -28,7 +29,8 @@ unlocks:
   - slug: paper
     title: Paper
     kind: institutional
-    role: Administrative records and notices increase demand for cheap writing surfaces.
+    role: Administrative records and notices increase demand for cheap writing
+      surfaces.
 missing_prerequisites: []
 material_dependencies:
   - slug: clean-water
@@ -44,15 +46,35 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; historical public-health claims need human source review.
+    - No source pack was used; historical public-health claims need human source
+      review.
 confidence:
   practicality: 0.74
   historical_plausibility: 0.7
   completeness: 0.52
+images:
+  header:
+    src: /images/tech/sanitation-norms-header.webp
+    alt: Field sketch of Sanitation norms, highlighting clean water, writing,
+      counting, institution.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: d554b3bb0723a8898a58af05365d074716495d74730857c36b04de9845dfa4c0
+    generated_at: 2026-05-04T23:23:51.490Z
+  schematic:
+    src: /images/tech/sanitation-norms-schematic.webp
+    alt: Schematic diagram of Sanitation norms, highlighting clean water, writing,
+      counting, institution and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 7cf1f8ebfc405ec1913f3d1ac33721b8d5f3430daa4bc88c833cb210d9bf3b8a
+    generated_at: 2026-05-04T23:24:53.828Z
 ---
 
 ## Field briefing

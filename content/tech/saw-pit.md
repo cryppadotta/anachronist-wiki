@@ -5,7 +5,8 @@ title: Saw pit
 aliases: []
 node_type: tool
 status: draft
-summary: A team cutting arrangement that lets long timber be sawn into boards or blanks using gravity, staging, and coordinated labor.
+summary: A team cutting arrangement that lets long timber be sawn into boards or
+  blanks using gravity, staging, and coordinated labor.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: pit-staging-saw-and-timber
     title: Pit, staging, saw, and timber
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - workshop
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/saw-pit-header.webp
+    alt: Field sketch of Saw pit, highlighting pit, staging, saw, and timber, saw,
+      workshop organization, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 755248893500445db8534c47c612fbc1edc4e290de3700b1eea626191a4c6b59
+    generated_at: 2026-05-04T23:23:52.722Z
+  schematic:
+    src: /images/tech/saw-pit-schematic.webp
+    alt: Schematic diagram of Saw pit, highlighting pit, staging, saw, and timber,
+      saw, workshop organization, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: c55dc7b4b58a67265f072ac9cb28f1ab5f410c45463b76f059b6ba7d56ddd26e
+    generated_at: 2026-05-04T23:24:49.444Z
 ---
 
 ## Field briefing

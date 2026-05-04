@@ -5,7 +5,8 @@ title: Willow
 aliases: []
 node_type: material
 status: draft
-summary: Fast-growing flexible wood and rods used for basketry, hurdles, ties, charcoal feedstock, and light frames.
+summary: Fast-growing flexible wood and rods used for basketry, hurdles, ties,
+  charcoal feedstock, and light frames.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: willow-rods
     title: Willow rods
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - plant
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/willow-header.webp
+    alt: Field sketch of Willow, highlighting willow rods, water, cutting edge,
+      material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 7640cbcd08af1d0842d5e2153893babf9e87a8cb1a950d8dad4472fe611f9c81
+    generated_at: 2026-05-04T23:32:41.828Z
+  schematic:
+    src: /images/tech/willow-schematic.webp
+    alt: Schematic diagram of Willow, highlighting willow rods, water, cutting edge,
+      material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: d279b8d0051fbb0c0b8f268dcbe5cfe66c2a30928d8c0a796ebfaa075d225d0b
+    generated_at: 2026-05-04T23:33:33.208Z
 ---
 
 ## Field briefing

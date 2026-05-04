@@ -5,7 +5,8 @@ title: Axe
 aliases: []
 node_type: tool
 status: draft
-summary: A hafted chopping edge used for felling, rough timber conversion, splitting, shaping, and emergency demolition.
+summary: A hafted chopping edge used for felling, rough timber conversion,
+  splitting, shaping, and emergency demolition.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: edge-head-and-haft
     title: Edge head and haft
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - tool
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/axe-header.webp
+    alt: Field sketch of Axe, highlighting edge head and haft, cutting edge, timber,
+      tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 33ec5d84cfc5ffd6ec9d066e7b160ddc99761966556e2c8f1c3d57a225d1bdeb
+    generated_at: 2026-05-04T22:59:46.028Z
+  schematic:
+    src: /images/tech/axe-schematic.webp
+    alt: Schematic diagram of Axe, highlighting edge head and haft, cutting edge,
+      timber, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: ac4e1e8407dae63fa4ab0853fd8031409ae997d1320f706fefc9bca7452458fe
+    generated_at: 2026-05-04T23:00:38.110Z
 ---
 
 ## Field briefing

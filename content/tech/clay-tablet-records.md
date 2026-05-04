@@ -5,7 +5,8 @@ title: Clay tablet records
 aliases: []
 node_type: artifact
 status: draft
-summary: Durable written records impressed into clay for batches, tallies, drawings, ownership, and teaching notes.
+summary: Durable written records impressed into clay for batches, tallies,
+  drawings, ownership, and teaching notes.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: workable-clay-and-stylus
     title: Workable clay and stylus
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - records
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/clay-tablet-records-header.webp
+    alt: Field sketch of Clay tablet records, highlighting workable clay and stylus,
+      clay, writing, artifact.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: ec81f08ac049393abe9c775589a725abceeb1f97c05bda1375b1148be0e58946
+    generated_at: 2026-05-04T23:04:43.152Z
+  schematic:
+    src: /images/tech/clay-tablet-records-schematic.webp
+    alt: Schematic diagram of Clay tablet records, highlighting workable clay and
+      stylus, clay, writing, artifact and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 8adaf61b89a58b4d880d94f0262669efd10908c27e33bba903d4e043eb9b04c4
+    generated_at: 2026-05-04T23:05:35.505Z
 ---
 
 ## Field briefing

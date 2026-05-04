@@ -6,7 +6,8 @@ aliases:
   - handcart
 node_type: artifact
 status: draft
-summary: A wheeled load carrier that combines wheels, axle support, frame, load bed, pulling method, and maintenance habits.
+summary: A wheeled load carrier that combines wheels, axle support, frame, load
+  bed, pulling method, and maintenance habits.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: ancient
@@ -35,7 +36,8 @@ unlocks:
   - slug: bicycle
     title: Bicycle
     kind: soft
-    role: Cart work teaches wheel maintenance, load paths, and transport repair culture.
+    role: Cart work teaches wheel maintenance, load paths, and transport repair
+      culture.
 missing_prerequisites: []
 material_dependencies:
   - slug: timber
@@ -55,15 +57,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-34 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-34
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; vehicle history and regional road assumptions need human source review.
+    - No source pack was used; vehicle history and regional road assumptions
+      need human source review.
 confidence:
   practicality: 0.76
   historical_plausibility: 0.82
   completeness: 0.56
+images:
+  header:
+    src: /images/tech/cart-header.webp
+    alt: Field sketch of Cart, highlighting timber, rope, wheel and axle,
+      woodworking.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 837b449541dcb776ee869ea2eacc23f4e60e286224d6fe1b18cf1383ae4e032c
+    generated_at: 2026-05-04T23:02:54.751Z
+  schematic:
+    src: /images/tech/cart-schematic.webp
+    alt: Schematic diagram of Cart, highlighting timber, rope, wheel and axle,
+      woodworking and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 26aacb7c04cbe355ba945108c2534b447dc41b5c1c0bddc974b3dddc44f0ea92
+    generated_at: 2026-05-04T23:03:46.158Z
 ---
 
 ## Field briefing

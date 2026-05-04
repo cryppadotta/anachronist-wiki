@@ -6,7 +6,8 @@ aliases:
   - linen fiber
 node_type: material
 status: draft
-summary: Long bast fiber from flax stems, prepared for thread, cordage, woven cloth, fine lashings, and composite workshop uses.
+summary: Long bast fiber from flax stems, prepared for thread, cordage, woven
+  cloth, fine lashings, and composite workshop uses.
 safety_class: allowed
 era_floor: neolithic_to_ancient
 difficulty: intermediate
@@ -32,7 +33,8 @@ material_dependencies:
   - slug: flax-plants
     title: Flax plants
     importance: hard
-    availability_note: Reliable flax fiber usually needs access to cultivated or locally abundant plants.
+    availability_note: Reliable flax fiber usually needs access to cultivated or
+      locally abundant plants.
 tags:
   - material
   - fiber
@@ -42,15 +44,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; cultivation and processing claims need human source review.
+    - No source pack was used; cultivation and processing claims need human
+      source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.78
   completeness: 0.54
+images:
+  header:
+    src: /images/tech/flax-fiber-header.webp
+    alt: Field sketch of Flax fiber, highlighting flax plants, cordage fiber,
+      material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: e2183b3e8cb970f1475823727749475e20d6dd654f126bc0f8e9e09ca9814481
+    generated_at: 2026-05-04T23:06:23.314Z
+  schematic:
+    src: /images/tech/flax-fiber-schematic.webp
+    alt: Schematic diagram of Flax fiber, highlighting flax plants, cordage fiber,
+      material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 7a14cba6da09f351d0b65b459d6c1c97315aaa28587706b3b1c1a8eff57dc529
+    generated_at: 2026-05-04T23:07:25.576Z
 ---
 
 ## Field briefing

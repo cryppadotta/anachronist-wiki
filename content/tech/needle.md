@@ -5,7 +5,8 @@ title: Needle
 aliases: []
 node_type: tool
 status: draft
-summary: A slender piercing and carrying tool for sewing leather, cloth, bark, skins, and bindings.
+summary: A slender piercing and carrying tool for sewing leather, cloth, bark,
+  skins, and bindings.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: bone-thorn-metal-or-hardwood-blank
     title: Bone, thorn, metal, or hardwood blank
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - tool
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/needle-header.webp
+    alt: Field sketch of Needle, highlighting bone, thorn, metal, or hardwood blank,
+      awl, bone and antler, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: f324349c947d0bbc8712e7cdbb3239218b3ff757517d0bd6c7355281802b36ee
+    generated_at: 2026-05-04T23:17:46.270Z
+  schematic:
+    src: /images/tech/needle-schematic.webp
+    alt: Schematic diagram of Needle, highlighting bone, thorn, metal, or hardwood
+      blank, awl, bone and antler, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 6f03f4d5fac781026194669161b766b9cf6392cca65c5af9b8dd7ac3ed49380d
+    generated_at: 2026-05-04T23:18:33.761Z
 ---
 
 ## Field briefing

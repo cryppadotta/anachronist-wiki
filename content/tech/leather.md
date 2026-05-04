@@ -6,7 +6,8 @@ aliases:
   - hide leather
 node_type: material
 status: draft
-summary: Preserved animal hide prepared as flexible sheet, strap, hinge, gasket, bearing cover, bucket, bellows part, and protective material.
+summary: Preserved animal hide prepared as flexible sheet, strap, hinge, gasket,
+  bearing cover, bucket, bellows part, and protective material.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric
@@ -31,13 +32,15 @@ unlocks:
   - slug: bicycle
     title: Bicycle
     kind: material_source
-    role: Leather can supply seats, straps, pads, and flexible joints in early builds.
+    role: Leather can supply seats, straps, pads, and flexible joints in early
+      builds.
 missing_prerequisites: []
 material_dependencies:
   - slug: animal-hide
     title: Animal hide
     importance: hard
-    availability_note: The supply depends on livestock, hunting, butchery, preservation, and seasonal spoilage control.
+    availability_note: The supply depends on livestock, hunting, butchery,
+      preservation, and seasonal spoilage control.
 tags:
   - material
   - animal-products
@@ -47,15 +50,34 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; tanning history and regional claims need human source review.
+    - No source pack was used; tanning history and regional claims need human
+      source review.
 confidence:
   practicality: 0.64
   historical_plausibility: 0.8
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/leather-header.webp
+    alt: Field sketch of Leather, highlighting animal hide, cutting edge, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 09a372d8477ac72de14b3322c44ab3f93d93d5bcd703d87ec518c184d5e19475
+    generated_at: 2026-05-04T23:15:48.643Z
+  schematic:
+    src: /images/tech/leather-schematic.webp
+    alt: Schematic diagram of Leather, highlighting animal hide, cutting edge,
+      material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: f4c3bbb789535c4117a95abe4d1f819a41137ca59e57f7be5476c6d693511a87
+    generated_at: 2026-05-04T23:16:44.190Z
 ---
 
 ## Field briefing

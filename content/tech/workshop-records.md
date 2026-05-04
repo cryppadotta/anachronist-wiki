@@ -9,7 +9,8 @@ node_type: institution
 secondary_node_types:
   - knowledge
 status: draft
-summary: A recordkeeping practice for batches, sources, tests, tools, dimensions, failures, and trusted procedures.
+summary: A recordkeeping practice for batches, sources, tests, tools,
+  dimensions, failures, and trusted procedures.
 safety_class: allowed
 era_floor: ancient
 difficulty: basic
@@ -43,7 +44,8 @@ material_dependencies:
   - slug: record-medium
     title: Record medium
     importance: hard
-    availability_note: Clay tablets, wax boards, paper, parchment, wood tallies, or marked samples define how records survive.
+    availability_note: Clay tablets, wax boards, paper, parchment, wood tallies, or
+      marked samples define how records survive.
 tags:
   - records
   - social-technology
@@ -53,15 +55,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; administrative and historical claims need human source review.
+    - No source pack was used; administrative and historical claims need human
+      source review.
 confidence:
   practicality: 0.74
   historical_plausibility: 0.8
   completeness: 0.56
+images:
+  header:
+    src: /images/tech/workshop-records-header.webp
+    alt: Field sketch of Workshop records, highlighting record medium, writing,
+      counting, institution.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 16e201e077e192330a228ad85e308ebb3c4f3dea96ba34d3ac6efb6a8cfd6e3c
+    generated_at: 2026-05-04T23:34:41.855Z
+  schematic:
+    src: /images/tech/workshop-records-schematic.webp
+    alt: Schematic diagram of Workshop records, highlighting record medium, writing,
+      counting, institution and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 94e352f7518dc93d8fd1d4b6499d6968b200422da77868edd52082da30d9ebad
+    generated_at: 2026-05-04T23:35:35.750Z
 ---
 
 ## Field briefing

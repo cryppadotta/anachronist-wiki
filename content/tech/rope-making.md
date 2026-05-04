@@ -6,7 +6,8 @@ aliases:
   - cordage making
 node_type: process
 status: draft
-summary: The process of preparing fibers and laying them into cord, line, or rope with enough consistency for tying, hauling, and lifting tests.
+summary: The process of preparing fibers and laying them into cord, line, or
+  rope with enough consistency for tying, hauling, and lifting tests.
 safety_class: allowed
 era_floor: prehistoric
 difficulty: basic
@@ -36,7 +37,8 @@ material_dependencies:
   - slug: plant-fiber
     title: Plant fiber
     importance: hard
-    availability_note: Long, tough fibers from flax, hemp, nettle, bast, grasses, or similar local plants are the main input.
+    availability_note: Long, tough fibers from flax, hemp, nettle, bast, grasses, or
+      similar local plants are the main input.
 tags:
   - process
   - cordage
@@ -46,15 +48,35 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; fiber preparation and regional availability need human source review.
+    - No source pack was used; fiber preparation and regional availability need
+      human source review.
 confidence:
   practicality: 0.76
   historical_plausibility: 0.84
   completeness: 0.58
+images:
+  header:
+    src: /images/tech/rope-making-header.webp
+    alt: Field sketch of Rope making, highlighting plant fiber, tensile test,
+      counting, process.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 820d27237755da6bce9750a6703ff4c3438e879f8f5528c1f48e8e69822890bd
+    generated_at: 2026-05-04T23:22:25.766Z
+  schematic:
+    src: /images/tech/rope-making-schematic.webp
+    alt: Schematic diagram of Rope making, highlighting plant fiber, tensile test,
+      counting, process and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 1fea2d3a7e85232dda6e2c2ca4ef9d24a1097faafe41c4806d96b1d5a741f3cb
+    generated_at: 2026-05-04T23:23:22.787Z
 ---
 
 ## Field briefing

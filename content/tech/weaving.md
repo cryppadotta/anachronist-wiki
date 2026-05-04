@@ -8,7 +8,8 @@ node_type: process
 secondary_node_types:
   - artifact
 status: draft
-summary: The organized interlacing of thread, yarn, fiber, or strips into cloth, straps, screens, bags, belts, and technical fabrics.
+summary: The organized interlacing of thread, yarn, fiber, or strips into cloth,
+  straps, screens, bags, belts, and technical fabrics.
 safety_class: allowed
 era_floor: neolithic_to_ancient
 difficulty: intermediate
@@ -38,7 +39,8 @@ material_dependencies:
   - slug: thread-or-yarn
     title: Thread or yarn
     importance: hard
-    availability_note: Fiber quality, spinning, and storage determine whether weaving is practical.
+    availability_note: Fiber quality, spinning, and storage determine whether
+      weaving is practical.
 tags:
   - textile
   - fiber
@@ -48,15 +50,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; textile history and regional claims need human source review.
+    - No source pack was used; textile history and regional claims need human
+      source review.
 confidence:
   practicality: 0.66
   historical_plausibility: 0.82
   completeness: 0.52
+images:
+  header:
+    src: /images/tech/weaving-header.webp
+    alt: Field sketch of Weaving, highlighting thread or yarn, flax fiber, spindle,
+      process.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 41b5fa77ad4077f8e1fc472c542b827948b7ee017a03fd38f3e50c0a8fd337a6
+    generated_at: 2026-05-04T23:32:32.650Z
+  schematic:
+    src: /images/tech/weaving-schematic.webp
+    alt: Schematic diagram of Weaving, highlighting thread or yarn, flax fiber,
+      spindle, process and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 4b011d0a0627ca5648679d72a5a5ca8ffae1a5bcb1833a08d25fe353d9997778
+    generated_at: 2026-05-04T23:33:24.923Z
 ---
 
 ## Field briefing

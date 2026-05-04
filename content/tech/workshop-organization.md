@@ -5,7 +5,8 @@ title: Workshop organization
 aliases: []
 node_type: institution
 status: draft
-summary: A social technology that assigns roles, space, storage, tool care, safety rules, and quality checks inside a productive workshop.
+summary: A social technology that assigns roles, space, storage, tool care,
+  safety rules, and quality checks inside a productive workshop.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: intermediate
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: people-space-and-rules
     title: People, space, and rules
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - institution
   - ANA-37
@@ -36,15 +38,36 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/workshop-organization-header.webp
+    alt: Field sketch of Workshop organization, highlighting people, space, and
+      rules, apprenticeship, workshop records, institution.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 8c7bf14dfe89813cd37e78b078f577317cdc8856b2437b0a66fd5ec01d2ef94c
+    generated_at: 2026-05-04T23:34:28.125Z
+  schematic:
+    src: /images/tech/workshop-organization-schematic.webp
+    alt: Schematic diagram of Workshop organization, highlighting people, space, and
+      rules, apprenticeship, workshop records, institution and major working
+      relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 3239fb518d08613945d2de2f121c784b4279b57cfebd3a306f5419a392707379
+    generated_at: 2026-05-04T23:35:31.810Z
 ---
 
 ## Field briefing

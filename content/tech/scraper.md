@@ -5,7 +5,8 @@ title: Scraper
 aliases: []
 node_type: tool
 status: draft
-summary: A controlled edge used to remove thin material from hide, wood, bone, clay, and surfaces needing cleanup.
+summary: A controlled edge used to remove thin material from hide, wood, bone,
+  clay, and surfaces needing cleanup.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: scraper-edge
     title: Scraper edge
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - tool
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/scraper-header.webp
+    alt: Field sketch of Scraper, highlighting scraper edge, cutting edge, bone and
+      antler, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: cbad81edd7b5458b37eba138b776857fe5d03a2bc70173af00d9f5bac7fab479
+    generated_at: 2026-05-04T23:24:14.911Z
+  schematic:
+    src: /images/tech/scraper-schematic.webp
+    alt: Schematic diagram of Scraper, highlighting scraper edge, cutting edge, bone
+      and antler, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: c1027a3e35730a02177b8e8b7ec47f2ed0b7a28beb61a9840ea624cdc523f956
+    generated_at: 2026-05-04T23:25:07.619Z
 ---
 
 ## Field briefing

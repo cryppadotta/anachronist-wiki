@@ -6,7 +6,8 @@ aliases:
   - pull test
 node_type: test
 status: draft
-summary: A controlled pull test for comparing rope, fiber, thread, straps, joints, and other materials that fail in tension.
+summary: A controlled pull test for comparing rope, fiber, thread, straps,
+  joints, and other materials that fail in tension.
 safety_class: caution
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -36,7 +37,8 @@ material_dependencies:
   - slug: standard-weights
     title: Standard weights
     importance: soft
-    availability_note: Known weights improve repeatability, but comparative tests can start with repeated baskets of stones.
+    availability_note: Known weights improve repeatability, but comparative tests
+      can start with repeated baskets of stones.
 tags:
   - testing
   - materials
@@ -46,15 +48,34 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; test method history and safety limits need human source review.
+    - No source pack was used; test method history and safety limits need human
+      source review.
 confidence:
   practicality: 0.76
   historical_plausibility: 0.75
   completeness: 0.58
+images:
+  header:
+    src: /images/tech/tensile-test-header.webp
+    alt: Field sketch of Tensile test, highlighting standard weights, lever, test.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 0e20e32ae877ec0a5dc353859f3c8c8383bf45aac52d39f876eb5d98442704e8
+    generated_at: 2026-05-04T23:30:26.149Z
+  schematic:
+    src: /images/tech/tensile-test-schematic.webp
+    alt: Schematic diagram of Tensile test, highlighting standard weights, lever,
+      test and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 4fd364612c45ba64531de48ebd15b5eee1055d022b2bf664df30bf0fd63a900b
+    generated_at: 2026-05-04T23:31:18.511Z
 ---
 
 ## Field briefing

@@ -9,7 +9,8 @@ node_type: measurement
 secondary_node_types:
   - tool
 status: draft
-summary: A stable marked length standard used to transfer dimensions, compare parts, lay out work, and teach repeatable construction.
+summary: A stable marked length standard used to transfer dimensions, compare
+  parts, lay out work, and teach repeatable construction.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -39,7 +40,8 @@ material_dependencies:
   - slug: stable-stock
     title: Stable stock
     importance: hard
-    availability_note: Straight seasoned wood, bone, metal, or stone determines how well the rod keeps its length.
+    availability_note: Straight seasoned wood, bone, metal, or stone determines how
+      well the rod keeps its length.
 tags:
   - measurement
   - standards
@@ -49,15 +51,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; metrology history and unit claims need human source review.
+    - No source pack was used; metrology history and unit claims need human
+      source review.
 confidence:
   practicality: 0.82
   historical_plausibility: 0.84
   completeness: 0.58
+images:
+  header:
+    src: /images/tech/measuring-rod-header.webp
+    alt: Field sketch of Measuring rod, highlighting stable stock, counting,
+      measurement.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: af58221ddf04f1e798a36948b5efb8085c7a4cb778f3e714380775f9fe8eff37
+    generated_at: 2026-05-04T23:17:21.712Z
+  schematic:
+    src: /images/tech/measuring-rod-schematic.webp
+    alt: Schematic diagram of Measuring rod, highlighting stable stock, counting,
+      measurement and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: eb97f00a8f2fcbce75f2bf4eab1893683b57394fb8ccfee2fc6ecb8863c732ef
+    generated_at: 2026-05-04T23:18:16.690Z
 ---
 
 ## Field briefing

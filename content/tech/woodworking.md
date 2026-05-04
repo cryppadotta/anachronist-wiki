@@ -9,7 +9,8 @@ node_type: process
 secondary_node_types:
   - tool
 status: draft
-summary: The practical craft of selecting, shaping, joining, boring, smoothing, and repairing wood for tools, frames, wheels, fixtures, and buildings.
+summary: The practical craft of selecting, shaping, joining, boring, smoothing,
+  and repairing wood for tools, frames, wheels, fixtures, and buildings.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric
@@ -44,7 +45,8 @@ material_dependencies:
   - slug: timber
     title: Timber
     importance: hard
-    availability_note: Straight, sound, seasonable wood is the core input; species choice changes strength, wear, and workability.
+    availability_note: Straight, sound, seasonable wood is the core input; species
+      choice changes strength, wear, and workability.
   - slug: abrasive-grit
     title: Abrasive grit
     importance: optional
@@ -58,15 +60,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-34 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-34
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; regional timber and tool-history claims need human source review.
+    - No source pack was used; regional timber and tool-history claims need
+      human source review.
 confidence:
   practicality: 0.78
   historical_plausibility: 0.82
   completeness: 0.58
+images:
+  header:
+    src: /images/tech/woodworking-header.webp
+    alt: Field sketch of Woodworking, highlighting timber, abrasive grit, technical
+      drawing, tensile test.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 37aa563e21b97cc7934147c51ae7fb7ffe28f9ff32e93073d7489ed3da0754cf
+    generated_at: 2026-05-04T23:33:42.487Z
+  schematic:
+    src: /images/tech/woodworking-schematic.webp
+    alt: Schematic diagram of Woodworking, highlighting timber, abrasive grit,
+      technical drawing, tensile test and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 605f1e529b7b805bc23fd67445478ed83c1f619ca4123735ad7d35fa20707ad4
+    generated_at: 2026-05-04T23:34:38.797Z
 ---
 
 ## Field briefing

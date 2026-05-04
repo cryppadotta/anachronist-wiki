@@ -5,7 +5,8 @@ title: Shell
 aliases: []
 node_type: material
 status: draft
-summary: Hard marine or freshwater shell used for scraping, inlay, lime feedstock, containers, beads, and small tools.
+summary: Hard marine or freshwater shell used for scraping, inlay, lime
+  feedstock, containers, beads, and small tools.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: sound-shell
     title: Sound shell
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - coastal
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/shell-header.webp
+    alt: Field sketch of Shell, highlighting sound shell, abrasive grit, cutting
+      edge, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: a9a6ed0d2d95c7c89a97fede3f443a248dd075425e0d9e5f7cc55fc8974cae46
+    generated_at: 2026-05-04T23:25:37.748Z
+  schematic:
+    src: /images/tech/shell-schematic.webp
+    alt: Schematic diagram of Shell, highlighting sound shell, abrasive grit,
+      cutting edge, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: df2f0953fc1153c7f9b3cb64734acf6519e2b311241aaa46f30a20fe99e72d3a
+    generated_at: 2026-05-04T23:26:33.170Z
 ---
 
 ## Field briefing

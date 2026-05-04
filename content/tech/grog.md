@@ -6,7 +6,8 @@ aliases:
   - crushed fired clay
 node_type: material
 status: draft
-summary: Crushed fired clay or sherd material reused as ceramic temper for controlling shrinkage, cracking, and texture.
+summary: Crushed fired clay or sherd material reused as ceramic temper for
+  controlling shrinkage, cracking, and texture.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -33,7 +34,8 @@ material_dependencies:
   - slug: fired-clay-scrap
     title: Fired clay scrap
     importance: hard
-    availability_note: Broken pots, failed tiles, fired test pieces, and kiln debris are the normal supply.
+    availability_note: Broken pots, failed tiles, fired test pieces, and kiln debris
+      are the normal supply.
 tags:
   - ceramics
   - material
@@ -43,15 +45,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; ceramic recycling and material claims need human source review.
+    - No source pack was used; ceramic recycling and material claims need human
+      source review.
 confidence:
   practicality: 0.76
   historical_plausibility: 0.8
   completeness: 0.55
+images:
+  header:
+    src: /images/tech/grog-header.webp
+    alt: Field sketch of Grog, highlighting fired clay scrap, clay, kiln firing
+      test, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: fce189db3a9d4e1bdf5d8adf4149bf33afd17ac41b6be00ffcf1098e1931eac4
+    generated_at: 2026-05-04T23:12:10.786Z
+  schematic:
+    src: /images/tech/grog-schematic.webp
+    alt: Schematic diagram of Grog, highlighting fired clay scrap, clay, kiln firing
+      test, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: db1c81f405cd46100683b2ea35f510f84799360cdcfd9d33d1486f850e129515
+    generated_at: 2026-05-04T23:13:01.244Z
 ---
 
 ## Field briefing

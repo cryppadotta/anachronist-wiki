@@ -5,7 +5,8 @@ title: Shuttle
 aliases: []
 node_type: tool
 status: draft
-summary: A hand tool that carries weft thread through a shed, improving speed, order, and thread protection.
+summary: A hand tool that carries weft thread through a shed, improving speed,
+  order, and thread protection.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: smooth-wood-bone-or-reed
     title: Smooth wood, bone, or reed
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - textile
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/shuttle-header.webp
+    alt: Field sketch of Shuttle, highlighting smooth wood, bone, or reed, weaving,
+      woodworking, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 015ae7168ea11354a33f2252e8d2dbb17c738c88f57d6b13d1df827ad4bed129
+    generated_at: 2026-05-04T23:25:41.947Z
+  schematic:
+    src: /images/tech/shuttle-schematic.webp
+    alt: Schematic diagram of Shuttle, highlighting smooth wood, bone, or reed,
+      weaving, woodworking, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 230a125a16fdd2b1e039382a412da661d0e10d2dcae9db9d7a9bd087d6d03a45
+    generated_at: 2026-05-04T23:26:29.010Z
 ---
 
 ## Field briefing

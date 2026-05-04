@@ -9,7 +9,8 @@ node_type: measurement
 secondary_node_types:
   - institution
 status: draft
-summary: Agreed reference masses used to compare materials, loads, trade quantities, tests, and batch records.
+summary: Agreed reference masses used to compare materials, loads, trade
+  quantities, tests, and batch records.
 safety_class: allowed
 era_floor: ancient
 difficulty: basic
@@ -39,11 +40,13 @@ material_dependencies:
   - slug: stone
     title: Stone
     importance: hard
-    availability_note: Dense durable stones can be selected and marked where metal standards are unavailable.
+    availability_note: Dense durable stones can be selected and marked where metal
+      standards are unavailable.
   - slug: clay
     title: Clay
     importance: optional
-    availability_note: Fired clay weights can work if the clay body is stable and protected from damage.
+    availability_note: Fired clay weights can work if the clay body is stable and
+      protected from damage.
 tags:
   - measurement
   - standards
@@ -53,7 +56,7 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
@@ -62,6 +65,25 @@ confidence:
   practicality: 0.74
   historical_plausibility: 0.8
   completeness: 0.58
+images:
+  header:
+    src: /images/tech/standard-weights-header.webp
+    alt: Field sketch of Standard weights, highlighting stone, clay, lever,
+      counting.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 2380c811ebf909102ff65afa922d27bda00083a393a0c14d37e1e851d3b21ba5
+    generated_at: 2026-05-04T23:28:50.889Z
+  schematic:
+    src: /images/tech/standard-weights-schematic.webp
+    alt: Schematic diagram of Standard weights, highlighting stone, clay, lever,
+      counting and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 094b59f196cf8050689c3db2fef9250238ef87e012e3a9f09a102e180ec19b6a
+    generated_at: 2026-05-04T23:29:42.280Z
 ---
 
 ## Field briefing

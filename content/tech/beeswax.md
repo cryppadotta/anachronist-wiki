@@ -5,7 +5,8 @@ title: Beeswax
 aliases: []
 node_type: material
 status: draft
-summary: Moldable wax from beekeeping or honey harvest used for seals, patterns, lubrication, waterproofing, and tablets.
+summary: Moldable wax from beekeeping or honey harvest used for seals, patterns,
+  lubrication, waterproofing, and tablets.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: wax-comb
     title: Wax comb
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - animal-product
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/beeswax-header.webp
+    alt: Field sketch of Beeswax, highlighting wax comb, firekeeping, workshop
+      records, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 2285f7eca21775241b8625e05be36198fc3c5c519ca35aab726993a9962af685
+    generated_at: 2026-05-04T23:01:25.459Z
+  schematic:
+    src: /images/tech/beeswax-schematic.webp
+    alt: Schematic diagram of Beeswax, highlighting wax comb, firekeeping, workshop
+      records, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 2ceaf77afcc4a73b43a40c2e1ce4c394c1aaae7d3adaf2ee86650614d1c8075f
+    generated_at: 2026-05-04T23:02:16.179Z
 ---
 
 ## Field briefing

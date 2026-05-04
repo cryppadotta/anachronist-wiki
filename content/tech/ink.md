@@ -5,7 +5,8 @@ title: Ink
 aliases: []
 node_type: material
 status: draft
-summary: A mark-making fluid or paste that carries pigment or dye onto paper, parchment, wood, clay labels, or other record surfaces.
+summary: A mark-making fluid or paste that carries pigment or dye onto paper,
+  parchment, wood, clay labels, or other record surfaces.
 safety_class: allowed
 era_floor: ancient
 difficulty: basic
@@ -35,7 +36,8 @@ material_dependencies:
   - slug: carbon-black
     title: Carbon black
     importance: hard
-    availability_note: Can come from soot or finely prepared charcoal, but cleanliness and particle size matter.
+    availability_note: Can come from soot or finely prepared charcoal, but
+      cleanliness and particle size matter.
   - slug: binder
     title: Binder
     importance: hard
@@ -49,15 +51,34 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; pigment and binder claims need human source review.
+    - No source pack was used; pigment and binder claims need human source
+      review.
 confidence:
   practicality: 0.72
   historical_plausibility: 0.78
   completeness: 0.56
+images:
+  header:
+    src: /images/tech/ink-header.webp
+    alt: Field sketch of Ink, highlighting carbon black, binder, charcoal, writing.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 064ab19060866665d2717f6c2acc4487a5599eff9c5252933ebd21cb0dd519d3
+    generated_at: 2026-05-04T23:14:11.907Z
+  schematic:
+    src: /images/tech/ink-schematic.webp
+    alt: Schematic diagram of Ink, highlighting carbon black, binder, charcoal,
+      writing and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: cd27b3478f01bf754f170fe5a314dbd9da27b793658d3d4e449c7e801a4a4a10
+    generated_at: 2026-05-04T23:15:04.904Z
 ---
 
 ## Field briefing

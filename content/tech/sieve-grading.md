@@ -5,7 +5,8 @@ title: Sieve grading
 aliases: []
 node_type: test
 status: draft
-summary: A particle sorting test that separates grit, grog, grain, sand, and fibers into more repeatable working grades.
+summary: A particle sorting test that separates grit, grog, grain, sand, and
+  fibers into more repeatable working grades.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: screen-set-and-labeled-samples
     title: Screen set and labeled samples
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - test
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/sieve-grading-header.webp
+    alt: Field sketch of Sieve grading, highlighting screen set and labeled samples,
+      sieve, water settling test, test.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 85da405919e76d6c13c230aab157e819874f60d90a5442ea891437d912b28320
+    generated_at: 2026-05-04T23:25:52.353Z
+  schematic:
+    src: /images/tech/sieve-grading-schematic.webp
+    alt: Schematic diagram of Sieve grading, highlighting screen set and labeled
+      samples, sieve, water settling test, test and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: c921b208f7286d29669171acc15c5def99f8800bbc564769fa504930b21f1308
+    generated_at: 2026-05-04T23:26:51.671Z
 ---
 
 ## Field briefing

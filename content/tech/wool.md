@@ -5,7 +5,8 @@ title: Wool
 aliases: []
 node_type: material
 status: draft
-summary: Crimped animal fiber prepared for spinning, felting, padding, insulation, straps, cloth, and thread.
+summary: Crimped animal fiber prepared for spinning, felting, padding,
+  insulation, straps, cloth, and thread.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: sheep-fleece-or-similar-fiber
     title: Sheep fleece or similar fiber
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - fiber
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/wool-header.webp
+    alt: Field sketch of Wool, highlighting sheep fleece or similar fiber, cordage
+      fiber, cutting edge, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 5149d995a0656757100903c6359830316941c490a01e3b4dc2116835c86fea0b
+    generated_at: 2026-05-04T23:33:55.700Z
+  schematic:
+    src: /images/tech/wool-schematic.webp
+    alt: Schematic diagram of Wool, highlighting sheep fleece or similar fiber,
+      cordage fiber, cutting edge, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 984ba074dac4178c97050dc2fdb60c8f23d6e8f9c6e9a431e5c28fc3530780fa
+    generated_at: 2026-05-04T23:34:44.792Z
 ---
 
 ## Field briefing

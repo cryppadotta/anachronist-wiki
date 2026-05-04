@@ -5,7 +5,8 @@ title: Pitch
 aliases: []
 node_type: material
 status: draft
-summary: A sticky waterproofing and adhesive material made from resinous sources and used to seal, bind, and protect workshop objects.
+summary: A sticky waterproofing and adhesive material made from resinous sources
+  and used to seal, bind, and protect workshop objects.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: resinous-material
     title: Resinous material
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - adhesive
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/pitch-header.webp
+    alt: Field sketch of Pitch, highlighting resinous material, resin, firekeeping,
+      material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 1345edb2575574b714b32e6fc4542d3472ff42f0a6fd16d27322adfcf53283ec
+    generated_at: 2026-05-04T23:19:17.746Z
+  schematic:
+    src: /images/tech/pitch-schematic.webp
+    alt: Schematic diagram of Pitch, highlighting resinous material, resin,
+      firekeeping, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 9a4cdb12c81f130457c0a9f1d4cbbbad91400ebfc3a5279fa4519e8b8b3e782f
+    generated_at: 2026-05-04T23:20:04.072Z
 ---
 
 ## Field briefing

@@ -5,7 +5,8 @@ title: Clamp
 aliases: []
 node_type: tool
 status: draft
-summary: A holding device or tied arrangement that keeps work still while cutting, drilling, gluing, drying, or assembly happens.
+summary: A holding device or tied arrangement that keeps work still while
+  cutting, drilling, gluing, drying, or assembly happens.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: cord-wedge-frame-or-screw-like-pressure-part
     title: Cord, wedge, frame, or screw-like pressure part
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - tool
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/clamp-header.webp
+    alt: Field sketch of Clamp, highlighting cord, wedge, frame, or screw-like
+      pressure part, rope, woodworking, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 023397891de85d38bd7e56d453c904cbb9926c32074479a50f8849d90ab199b5
+    generated_at: 2026-05-04T23:04:37.624Z
+  schematic:
+    src: /images/tech/clamp-schematic.webp
+    alt: Schematic diagram of Clamp, highlighting cord, wedge, frame, or screw-like
+      pressure part, rope, woodworking, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 50e921e222b943eccb262a172dbaa7949c0d409983a87edafe7aec6affb6ac82
+    generated_at: 2026-05-04T23:05:37.650Z
 ---
 
 ## Field briefing

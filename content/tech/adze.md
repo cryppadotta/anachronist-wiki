@@ -5,7 +5,8 @@ title: Adze
 aliases: []
 node_type: tool
 status: draft
-summary: A transverse cutting tool used for hewing, hollowing, flattening, and shaping wood surfaces.
+summary: A transverse cutting tool used for hewing, hollowing, flattening, and
+  shaping wood surfaces.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: adze-head-and-handle
     title: Adze head and handle
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - tool
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/adze-header.webp
+    alt: Field sketch of Adze, highlighting adze head and handle, axe, woodworking,
+      tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 1f2cde5797c68e6a2f51e671c9b40fd1a135884d6bfcc29c44de8e0f5a13db4a
+    generated_at: 2026-05-04T22:59:48.868Z
+  schematic:
+    src: /images/tech/adze-schematic.webp
+    alt: Schematic diagram of Adze, highlighting adze head and handle, axe,
+      woodworking, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 58cd79331793171a5627a5923b66e75e584e25daeb84384859bea316a236475a
+    generated_at: 2026-05-04T23:00:37.169Z
 ---
 
 ## Field briefing

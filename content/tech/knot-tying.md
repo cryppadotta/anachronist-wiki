@@ -5,7 +5,8 @@ title: Knot tying
 aliases: []
 node_type: knowledge
 status: draft
-summary: A practical body of tying patterns for fastening, joining, adjusting, lifting, nets, lashings, and temporary fixtures.
+summary: A practical body of tying patterns for fastening, joining, adjusting,
+  lifting, nets, lashings, and temporary fixtures.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: rope-or-cord
     title: Rope or cord
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - knowledge
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/knot-tying-header.webp
+    alt: Field sketch of Knot tying, highlighting rope or cord, rope, tensile test,
+      knowledge.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: a1132316a6058bcfa341806ebe0f9ffdf6a5f6e66b6c37a6d884e7c6e71d9b3e
+    generated_at: 2026-05-04T23:14:15.575Z
+  schematic:
+    src: /images/tech/knot-tying-schematic.webp
+    alt: Schematic diagram of Knot tying, highlighting rope or cord, rope, tensile
+      test, knowledge and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: a335095add308dd421e64c99fc6cd7c1d4ab28bd96e81d8c4002ab4c5b6bd070
+    generated_at: 2026-05-04T23:15:03.628Z
 ---
 
 ## Field briefing

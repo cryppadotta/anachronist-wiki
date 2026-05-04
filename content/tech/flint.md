@@ -5,7 +5,8 @@ title: Flint
 aliases: []
 node_type: material
 status: draft
-summary: A fine-grained knappable stone prized for sharp flakes, scrapers, points, strike tools, and early precision edges.
+summary: A fine-grained knappable stone prized for sharp flakes, scrapers,
+  points, strike tools, and early precision edges.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: knappable-flint-or-chert
     title: Knappable flint or chert
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - stone
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/flint-header.webp
+    alt: Field sketch of Flint, highlighting knappable flint or chert, stone, stone
+      hammer, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: ed29deea5bea9bdb3ba4f0c3d950190e9dbcf71b83282fa349c338e231e27a6a
+    generated_at: 2026-05-04T23:06:19.749Z
+  schematic:
+    src: /images/tech/flint-schematic.webp
+    alt: Schematic diagram of Flint, highlighting knappable flint or chert, stone,
+      stone hammer, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 1c7677792cf4b140c88ce8d7f5e027db88d94e03c58d93ce554fb27ffb20e0dc
+    generated_at: 2026-05-04T23:07:26.834Z
 ---
 
 ## Field briefing

@@ -5,7 +5,8 @@ title: Lime material
 aliases: []
 node_type: material
 status: draft
-summary: Calcium-rich stone, shell, or chalk recognized as a precursor for plasters, mortars, washes, and alkaline workshop materials.
+summary: Calcium-rich stone, shell, or chalk recognized as a precursor for
+  plasters, mortars, washes, and alkaline workshop materials.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: limestone-chalk-or-shell
     title: Limestone, chalk, or shell
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - mineral
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/lime-material-header.webp
+    alt: Field sketch of Lime material, highlighting limestone, chalk, or shell,
+      chalk, firekeeping, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 44bdcc5187723e11e05aa3700c1e168ff989e2d2223c604390bbdb32a3e00f5b
+    generated_at: 2026-05-04T23:15:50.128Z
+  schematic:
+    src: /images/tech/lime-material-schematic.webp
+    alt: Schematic diagram of Lime material, highlighting limestone, chalk, or
+      shell, chalk, firekeeping, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 2d65fb5b610408ef28cfad60e1ec7149577d5b6c6212eac178f287187c9de435
+    generated_at: 2026-05-04T23:16:47.553Z
 ---
 
 ## Field briefing

@@ -6,7 +6,8 @@ aliases:
   - light wheel
 node_type: artifact
 status: draft
-summary: A wheel built from hub, spokes, and rim so it can stay large while using less material than a solid disk.
+summary: A wheel built from hub, spokes, and rim so it can stay large while
+  using less material than a solid disk.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: ancient
@@ -49,7 +50,8 @@ material_dependencies:
   - slug: hide-glue
     title: Hide glue
     importance: optional
-    availability_note: Adhesives help some rim and spoke assemblies but wedges and compression joints can substitute.
+    availability_note: Adhesives help some rim and spoke assemblies but wedges and
+      compression joints can substitute.
 tags:
   - transport
   - mechanics
@@ -59,15 +61,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-34 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-34
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; wheel-building chronology and joinery details need human source review.
+    - No source pack was used; wheel-building chronology and joinery details
+      need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.55
+images:
+  header:
+    src: /images/tech/spoked-wheel-header.webp
+    alt: Field sketch of Spoked wheel, highlighting timber, hide glue, wheel and
+      axle, woodworking.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 7daf70a8504899d5eb86c32d33793288b8a047fac5c06b6f934da014e1d18a33
+    generated_at: 2026-05-04T23:28:06.049Z
+  schematic:
+    src: /images/tech/spoked-wheel-schematic.webp
+    alt: Schematic diagram of Spoked wheel, highlighting timber, hide glue, wheel
+      and axle, woodworking and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 627593f850aa4b13330f2c5e3bbfeaf366a3e1f13485b21189041e15df4a044f
+    generated_at: 2026-05-04T23:28:57.831Z
 ---
 
 ## Field briefing

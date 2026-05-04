@@ -5,7 +5,8 @@ title: Heddle
 aliases: []
 node_type: tool
 status: draft
-summary: Loops, rods, or eyes that separate selected warp threads so weaving sheds can be repeated quickly.
+summary: Loops, rods, or eyes that separate selected warp threads so weaving
+  sheds can be repeated quickly.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: cord-reed-bone-or-wood
     title: Cord, reed, bone, or wood
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - textile
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/heddle-header.webp
+    alt: Field sketch of Heddle, highlighting cord, reed, bone, or wood, loom,
+      cordage fiber, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: fd5384cd62c2eb8d4553d1e34c6f318e0f10fbc6d4343c382adadf58f8548f11
+    generated_at: 2026-05-04T23:12:12.384Z
+  schematic:
+    src: /images/tech/heddle-schematic.webp
+    alt: Schematic diagram of Heddle, highlighting cord, reed, bone, or wood, loom,
+      cordage fiber, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: c0026d203889d93af2ea6a2076fb4edcab5bbcbe4bb6e88469a05dc13dd2df03
+    generated_at: 2026-05-04T23:13:02.048Z
 ---
 
 ## Field briefing

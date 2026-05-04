@@ -7,7 +7,8 @@ aliases:
   - polishing grit
 node_type: material
 status: draft
-summary: Hard granular material selected, sorted, and used to scrape, smooth, sharpen, polish, and test surfaces.
+summary: Hard granular material selected, sorted, and used to scrape, smooth,
+  sharpen, polish, and test surfaces.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric
@@ -34,7 +35,8 @@ material_dependencies:
   - slug: hard-mineral-sand
     title: Hard mineral sand
     importance: hard
-    availability_note: River, beach, sandstone, quartz, or volcanic sources vary sharply in hardness and grain shape.
+    availability_note: River, beach, sandstone, quartz, or volcanic sources vary
+      sharply in hardness and grain shape.
 tags:
   - material
   - surface-finish
@@ -44,15 +46,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; mineral availability and historical abrasive use need human source review.
+    - No source pack was used; mineral availability and historical abrasive use
+      need human source review.
 confidence:
   practicality: 0.76
   historical_plausibility: 0.82
   completeness: 0.56
+images:
+  header:
+    src: /images/tech/abrasive-grit-header.webp
+    alt: Field sketch of Abrasive grit, highlighting hard mineral sand, water
+      settling test, material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: bf59f2b68889b956e2851353d4b34cf05b2937029decc8db7c014993941b1bf9
+    generated_at: 2026-05-04T22:57:26.711Z
+  schematic:
+    src: /images/tech/abrasive-grit-schematic.webp
+    alt: Schematic diagram of Abrasive grit, highlighting hard mineral sand, water
+      settling test, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 3153f71a425e05e46dc196c53fff385e8fe7da652fd60a056bdb72751f32244d
+    generated_at: 2026-05-04T22:58:21.551Z
 ---
 
 ## Field briefing

@@ -5,7 +5,8 @@ title: Straightedge
 aliases: []
 node_type: measurement
 status: draft
-summary: A stable reference edge used to detect bends, guide marks, compare surfaces, and teach straightness.
+summary: A stable reference edge used to detect bends, guide marks, compare
+  surfaces, and teach straightness.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: stable-straight-stock
     title: Stable straight stock
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - measurement
   - ANA-37
@@ -36,15 +38,36 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/straightedge-header.webp
+    alt: Field sketch of Straightedge, highlighting stable straight stock, measuring
+      rod, timber seasoning, measurement.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: ad87a82ec206bafc9ff464ea979b220a8c9ac2fe514ca785fbddf6952d0c1047
+    generated_at: 2026-05-04T23:29:40.424Z
+  schematic:
+    src: /images/tech/straightedge-schematic.webp
+    alt: Schematic diagram of Straightedge, highlighting stable straight stock,
+      measuring rod, timber seasoning, measurement and major working
+      relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 2b499b9b6e5d4fc39112d6f4f7560ed345dfb3422bc25efc8c113bb8774eb3bd
+    generated_at: 2026-05-04T23:30:32.705Z
 ---
 
 ## Field briefing

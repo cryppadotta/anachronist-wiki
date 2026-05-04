@@ -5,7 +5,8 @@ title: Public safety
 aliases: []
 node_type: institution
 status: draft
-summary: Shared norms for keeping dangerous, dirty, or confusing work away from bystanders, food, water, children, and public paths.
+summary: Shared norms for keeping dangerous, dirty, or confusing work away from
+  bystanders, food, water, children, and public paths.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: intermediate
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: shared-rules-and-enforcement
     title: Shared rules and enforcement
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - institution
   - ANA-37
@@ -36,15 +38,36 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/public-safety-header.webp
+    alt: Field sketch of Public safety, highlighting shared rules and enforcement,
+      sanitation norms, workshop records, institution.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: dbdc1e866dc76f93eb4ce86ac300d4b1cda7086038b8b3a6712c34145395550d
+    generated_at: 2026-05-04T23:21:00.835Z
+  schematic:
+    src: /images/tech/public-safety-schematic.webp
+    alt: Schematic diagram of Public safety, highlighting shared rules and
+      enforcement, sanitation norms, workshop records, institution and major
+      working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: fa3dbb62b4dbc1f0f131de1050497d47c3a71c47dadd4559a4966b9aa42e44a9
+    generated_at: 2026-05-04T23:22:02.215Z
 ---
 
 ## Field briefing

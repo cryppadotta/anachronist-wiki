@@ -6,7 +6,9 @@ aliases:
   - firing test
 node_type: test
 status: draft
-summary: A comparative test practice for judging clay bodies, temper, kiln placement, fuel behavior, and finished ceramic quality without relying on guesswork.
+summary: A comparative test practice for judging clay bodies, temper, kiln
+  placement, fuel behavior, and finished ceramic quality without relying on
+  guesswork.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: neolithic_to_ancient
@@ -37,7 +39,8 @@ material_dependencies:
   - slug: labeled-test-tiles
     title: Labeled test tiles
     importance: hard
-    availability_note: Comparable small pieces are safer and more informative than gambling a full vessel.
+    availability_note: Comparable small pieces are safer and more informative than
+      gambling a full vessel.
 tags:
   - test
   - ceramics
@@ -47,15 +50,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; ceramic history and firing behavior claims need human source review.
+    - No source pack was used; ceramic history and firing behavior claims need
+      human source review.
 confidence:
   practicality: 0.62
   historical_plausibility: 0.78
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/kiln-firing-test-header.webp
+    alt: Field sketch of Kiln firing test, highlighting labeled test tiles, kiln,
+      clay, test.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: ab8131360077d76f0cf6b588095f8f330827d1cddd926ace5e51f7163f18d43c
+    generated_at: 2026-05-04T23:14:13.012Z
+  schematic:
+    src: /images/tech/kiln-firing-test-schematic.webp
+    alt: Schematic diagram of Kiln firing test, highlighting labeled test tiles,
+      kiln, clay, test and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 29cad94a16a032705b2b408dc6f374af3c9762a2c6255ee9e0ba9b00c9ed2eab
+    generated_at: 2026-05-04T23:15:04.434Z
 ---
 
 ## Field briefing

@@ -6,7 +6,8 @@ aliases:
   - arithmetic basics
 node_type: knowledge
 status: draft
-summary: A shared method for keeping track of number, order, quantity, and repeated work.
+summary: A shared method for keeping track of number, order, quantity, and
+  repeated work.
 safety_class: allowed
 era_floor: prehistoric
 difficulty: basic
@@ -38,15 +39,34 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; anthropology and history claims need human source review.
+    - No source pack was used; anthropology and history claims need human source
+      review.
 confidence:
   practicality: 0.86
   historical_plausibility: 0.84
   completeness: 0.6
+images:
+  header:
+    src: /images/tech/counting-header.webp
+    alt: Field sketch of Counting, highlighting knowledge.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 34f52c46261b44b78c3b4444a5b1e80814a5921294abbb84e8bc6a1c25db3415
+    generated_at: 2026-05-04T23:04:52.396Z
+  schematic:
+    src: /images/tech/counting-schematic.webp
+    alt: Schematic diagram of Counting, highlighting knowledge and major working
+      relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 2dfeee6cecd66ba2f1d6af11623dd6b294319d89589bb9909aa1ba0ccae4e9a2
+    generated_at: 2026-05-04T23:05:43.075Z
 ---
 
 ## Field briefing

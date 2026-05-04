@@ -8,7 +8,9 @@ node_type: institution
 secondary_node_types:
   - knowledge
 status: draft
-summary: A social technology for transmitting workshop habits, safety norms, quality standards, tool care, and tacit craft knowledge across workers and generations.
+summary: A social technology for transmitting workshop habits, safety norms,
+  quality standards, tool care, and tacit craft knowledge across workers and
+  generations.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: intermediate
@@ -44,15 +46,34 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; institutional and historical claims need human source review.
+    - No source pack was used; institutional and historical claims need human
+      source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.82
   completeness: 0.52
+images:
+  header:
+    src: /images/tech/apprenticeship-header.webp
+    alt: Field sketch of Apprenticeship, highlighting workshop records, institution.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: d89adde114855415248a24f3a8d8199fc6c8a017e797b10c8abaeb41e186f4a6
+    generated_at: 2026-05-04T22:59:46.866Z
+  schematic:
+    src: /images/tech/apprenticeship-schematic.webp
+    alt: Schematic diagram of Apprenticeship, highlighting workshop records,
+      institution and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 75b427b5b2abf9c60bb5300ee8d6db142dcb9e7d84d3023a1f4e9a5da6990102
+    generated_at: 2026-05-04T23:00:39.392Z
 ---
 
 ## Field briefing

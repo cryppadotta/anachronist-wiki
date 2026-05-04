@@ -5,7 +5,8 @@ title: Level trough
 aliases: []
 node_type: measurement
 status: draft
-summary: A water-based level reference used to compare heights, set posts, transfer grades, and teach horizontal reference.
+summary: A water-based level reference used to compare heights, set posts,
+  transfer grades, and teach horizontal reference.
 safety_class: allowed
 era_floor: prehistoric_to_ancient
 difficulty: basic
@@ -27,7 +28,8 @@ material_dependencies:
   - slug: trough-or-tube-and-water
     title: Trough or tube and water
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - measurement
   - ANA-37
@@ -36,15 +38,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/level-trough-header.webp
+    alt: Field sketch of Level trough, highlighting trough or tube and water, water,
+      woodworking, measurement.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: e9c6436ba8c323daed4e9c3e4d26901351999887bec6b41109931e65c0799e92
+    generated_at: 2026-05-04T23:15:53.728Z
+  schematic:
+    src: /images/tech/level-trough-schematic.webp
+    alt: Schematic diagram of Level trough, highlighting trough or tube and water,
+      water, woodworking, measurement and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: ca19fc893f67086e455912af17022b59494d30261ef2aec1ac1514129ba9783d
+    generated_at: 2026-05-04T23:16:39.080Z
 ---
 
 ## Field briefing

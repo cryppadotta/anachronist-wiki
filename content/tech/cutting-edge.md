@@ -7,7 +7,8 @@ aliases:
   - scraper edge
 node_type: tool
 status: draft
-summary: A sharpened stone, bone, shell, wood, or metal edge used for cutting, scraping, trimming, marking, and shaping workshop materials.
+summary: A sharpened stone, bone, shell, wood, or metal edge used for cutting,
+  scraping, trimming, marking, and shaping workshop materials.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric
@@ -42,7 +43,8 @@ material_dependencies:
   - slug: edge-material
     title: Edge material
     importance: hard
-    availability_note: Flint, chert, obsidian, shell, bone, antler, hardwood, and metal all imply different availability and maintenance.
+    availability_note: Flint, chert, obsidian, shell, bone, antler, hardwood, and
+      metal all imply different availability and maintenance.
 tags:
   - tool
   - workshop
@@ -52,15 +54,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; material-specific edge claims need human source review.
+    - No source pack was used; material-specific edge claims need human source
+      review.
 confidence:
   practicality: 0.78
   historical_plausibility: 0.88
   completeness: 0.58
+images:
+  header:
+    src: /images/tech/cutting-edge-header.webp
+    alt: Field sketch of Cutting edge, highlighting edge material, stone hammer,
+      abrasive grit, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 3497889c52f269293b19bf7f10fd83fe5a9fc80120be4738cb57a9d1b762e104
+    generated_at: 2026-05-04T23:10:23.983Z
+  schematic:
+    src: /images/tech/cutting-edge-schematic.webp
+    alt: Schematic diagram of Cutting edge, highlighting edge material, stone
+      hammer, abrasive grit, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: eb67b8a7f27a61110bf2f9404e27326aaa13222515aa6a546dc4d93a688e9948
+    generated_at: 2026-05-04T23:11:13.412Z
 ---
 
 ## Field briefing

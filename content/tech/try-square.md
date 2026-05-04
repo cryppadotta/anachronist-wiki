@@ -9,7 +9,8 @@ node_type: tool
 secondary_node_types:
   - measurement
 status: draft
-summary: A right-angle checking and marking tool used to make frames, boxes, wheels, benches, and drawings more repeatable.
+summary: A right-angle checking and marking tool used to make frames, boxes,
+  wheels, benches, and drawings more repeatable.
 safety_class: allowed
 era_floor: ancient
 difficulty: basic
@@ -39,7 +40,8 @@ material_dependencies:
   - slug: stable-stock
     title: Stable stock
     importance: hard
-    availability_note: Seasoned wood, bone, or metal must hold a reference edge without warping quickly.
+    availability_note: Seasoned wood, bone, or metal must hold a reference edge
+      without warping quickly.
 tags:
   - measurement
   - woodworking
@@ -49,7 +51,7 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
@@ -58,6 +60,25 @@ confidence:
   practicality: 0.76
   historical_plausibility: 0.78
   completeness: 0.55
+images:
+  header:
+    src: /images/tech/try-square-header.webp
+    alt: Field sketch of Try-square, highlighting stable stock, measuring rod,
+      cutting edge, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 89a5733f06f78bfa89ae7e83a35f60443fe9709f5d8bff22f735d15bea2180ef
+    generated_at: 2026-05-04T23:31:18.704Z
+  schematic:
+    src: /images/tech/try-square-schematic.webp
+    alt: Schematic diagram of Try-square, highlighting stable stock, measuring rod,
+      cutting edge, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 310625be2ec91722fa77c93b4ee56668919c65d87770de10a2135ae483748c0c
+    generated_at: 2026-05-04T23:32:07.187Z
 ---
 
 ## Field briefing

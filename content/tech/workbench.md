@@ -5,7 +5,8 @@ title: Workbench
 aliases: []
 node_type: tool
 status: draft
-summary: A stable raised work surface with stops, holes, pegs, or tiedowns for safer repeatable craft work.
+summary: A stable raised work surface with stops, holes, pegs, or tiedowns for
+  safer repeatable craft work.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
@@ -28,7 +29,8 @@ material_dependencies:
   - slug: stable-timber-and-fasteners
     title: Stable timber and fasteners
     importance: hard
-    availability_note: The practical supply depends on local access, recognition, preparation, substitutes, storage, and transport.
+    availability_note: The practical supply depends on local access, recognition,
+      preparation, substitutes, storage, and transport.
 tags:
   - workshop
   - ANA-37
@@ -37,15 +39,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; specific historical, regional, and technical claims need human source review.
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
 confidence:
   practicality: 0.68
   historical_plausibility: 0.76
   completeness: 0.5
+images:
+  header:
+    src: /images/tech/workbench-header.webp
+    alt: Field sketch of Workbench, highlighting stable timber and fasteners,
+      woodworking, timber seasoning, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 893c6685b5d5b489ec349f5650707f90c991d4cd09ed03235f32e0f5177744c0
+    generated_at: 2026-05-04T23:34:11.471Z
+  schematic:
+    src: /images/tech/workbench-schematic.webp
+    alt: Schematic diagram of Workbench, highlighting stable timber and fasteners,
+      woodworking, timber seasoning, tool and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 65a203b86853f630c73f5130b0c16869f0bb2677f07c23588f83ba5dc0f2eea6
+    generated_at: 2026-05-04T23:34:56.834Z
 ---
 
 ## Field briefing

@@ -8,7 +8,8 @@ node_type: material
 secondary_node_types:
   - process
 status: draft
-summary: Reversible collagen glue made from animal scrap, useful for woodworking, bindings, repairs, sizing, and temporary fixtures.
+summary: Reversible collagen glue made from animal scrap, useful for
+  woodworking, bindings, repairs, sizing, and temporary fixtures.
 safety_class: caution
 page_treatment: practical_with_cautions
 era_floor: ancient
@@ -39,7 +40,8 @@ material_dependencies:
   - slug: collagen-scrap
     title: Collagen scrap
     importance: hard
-    availability_note: Hide, sinew, skin, and bone-adjacent scraps depend on butchery and preservation.
+    availability_note: Hide, sinew, skin, and bone-adjacent scraps depend on
+      butchery and preservation.
 tags:
   - adhesive
   - animal-products
@@ -49,15 +51,35 @@ generation:
   provider: OpenAI Codex
   model: GPT-5
   prompt_version: ANA-37 manual content expansion
-  generated_at: "2026-05-04"
+  generated_at: 2026-05-04
   request_issue: ANA-37
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; adhesive history and process details need human source review.
+    - No source pack was used; adhesive history and process details need human
+      source review.
 confidence:
   practicality: 0.58
   historical_plausibility: 0.74
   completeness: 0.46
+images:
+  header:
+    src: /images/tech/hide-glue-header.webp
+    alt: Field sketch of Hide glue, highlighting collagen scrap, water, firekeeping,
+      material.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 9f633cc9070c17ff85d5efa3cc3c00d09d6e5208bb64197ba14665a017b46257
+    generated_at: 2026-05-04T23:12:12.391Z
+  schematic:
+    src: /images/tech/hide-glue-schematic.webp
+    alt: Schematic diagram of Hide glue, highlighting collagen scrap, water,
+      firekeeping, material and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: f8cb6c64dbe06d48f0ac1769d448dd2ff52df7bb971088747e272b03a0b2f5a9
+    generated_at: 2026-05-04T23:13:00.690Z
 ---
 
 ## Field briefing

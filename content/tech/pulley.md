@@ -8,7 +8,8 @@ node_type: tool
 secondary_node_types:
   - artifact
 status: draft
-summary: A grooved wheel or roller that guides rope, changes force direction, and can combine with other pulleys for lifting advantage.
+summary: A grooved wheel or roller that guides rope, changes force direction,
+  and can combine with other pulleys for lifting advantage.
 safety_class: caution
 era_floor: ancient
 difficulty: basic
@@ -55,15 +56,34 @@ generation:
   provider: OpenAI
   model: GPT-5 Codex
   prompt_version: ANA-13 seed-content manual draft
-  generated_at: "2026-05-03"
+  generated_at: 2026-05-03
   request_issue: ANA-13
   reviewed_by: []
   source_review_notes:
-    - No source pack was used; load claims and historical details need human source review.
+    - No source pack was used; load claims and historical details need human
+      source review.
 confidence:
   practicality: 0.7
   historical_plausibility: 0.78
   completeness: 0.58
+images:
+  header:
+    src: /images/tech/pulley-header.webp
+    alt: Field sketch of Pulley, highlighting rope, wood, wheel and axle, tool.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: 1a0b8afa2e078cc5bc87a429bbe121d5b229a264380ce9063d1e8eb063d2c9ec
+    generated_at: 2026-05-04T23:20:44.932Z
+  schematic:
+    src: /images/tech/pulley-schematic.webp
+    alt: Schematic diagram of Pulley, highlighting rope, wood, wheel and axle, tool
+      and major working relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 88360f808791cc426da4fe67f93d3c3e6746a7d4a4ca7b94b68c73824178f6c0
+    generated_at: 2026-05-04T23:21:37.006Z
 ---
 
 ## Field briefing
