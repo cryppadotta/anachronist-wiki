@@ -17,7 +17,7 @@
     "test:restricted-content": "node --experimental-strip-types scripts/restricted-content-regression.ts",
     "build:graph": "node --experimental-strip-types scripts/build-graph.ts",
     "preview": "astro preview",
-    "pages:build": "astro build"
+    "pages:build": "npm run build"
   },
   "dependencies": {
     "astro": "6.2.1",

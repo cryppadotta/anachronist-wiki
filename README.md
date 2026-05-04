@@ -6,10 +6,28 @@ Static-first, Git-backed technology tree wiki scaffolded from the approved [Anac
 
 - `npm run dev` starts the local Astro dev server.
 - `npm run build` emits the static Cloudflare Pages artifact in `dist/`.
+- `npm run pages:build` runs the Cloudflare Pages build command.
 - `npm run check` runs Astro and TypeScript checks.
 - `npm run validate:content` validates frontmatter, graph edges, missing nodes, and safety metadata.
 - `npm run build:graph` validates content and writes `generated/tech-graph.json`.
 - `npm run generate:page -- --topic "Rope"` runs the maintainer-only local generation pipeline.
+
+## Deployment
+
+The site is configured for Cloudflare Pages as a static Direct Upload deployment:
+
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Pages project name: `anachronist-wiki`
+- Wrangler config: `wrangler.toml`
+- GitHub Actions workflow: `.github/workflows/deploy-cloudflare-pages.yml`
+
+The deploy workflow runs on pushes to `main` and can also be started manually with `workflow_dispatch`. It requires these GitHub repository secrets:
+
+- `CLOUDFLARE_API_TOKEN`: Cloudflare API token with permission to edit the Pages project.
+- `CLOUDFLARE_ACCOUNT_ID`: Cloudflare account ID for the Pages project.
+
+To confirm deployments from CI, inspect the `Deploy Cloudflare Pages` workflow run and the GitHub deployment URL emitted by Wrangler.
 
 ## Content
 
