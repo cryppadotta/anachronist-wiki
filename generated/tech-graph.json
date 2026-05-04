@@ -63,6 +63,42 @@
       }
     },
     {
+      "slug": "adze",
+      "title": "Adze",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A transverse cutting tool used for hewing, hollowing, flattening, and shaping wood surfaces.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "tool"
+      ],
+      "path": "/tech/adze/",
+      "source_file": "content/tech/adze.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "alignment-checking",
       "title": "Alignment checking",
       "aliases": [
@@ -142,6 +178,78 @@
       }
     },
     {
+      "slug": "awl",
+      "title": "Awl",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A pointed hand tool for piercing leather, fiber, bark, thin wood, and layout marks before stitching or pegging.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "tool"
+      ],
+      "path": "/tech/awl/",
+      "source_file": "content/tech/awl.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "axe",
+      "title": "Axe",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A hafted chopping edge used for felling, rough timber conversion, splitting, shaping, and emergency demolition.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "tool"
+      ],
+      "path": "/tech/axe/",
+      "source_file": "content/tech/axe.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "basketry",
       "title": "Basketry",
       "aliases": [
@@ -177,6 +285,78 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; regional plant and basketry history claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "batch-labeling",
+      "title": "Batch labeling",
+      "aliases": [],
+      "node_type": "institution",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A simple recordkeeping practice that attaches names, marks, or symbols to material lots, tests, failures, and trusted samples.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "intermediate",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "records"
+      ],
+      "path": "/tech/batch-labeling/",
+      "source_file": "content/tech/batch-labeling.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "beeswax",
+      "title": "Beeswax",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Moldable wax from beekeeping or honey harvest used for seals, patterns, lubrication, waterproofing, and tablets.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "animal-product"
+      ],
+      "path": "/tech/beeswax/",
+      "source_file": "content/tech/beeswax.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -338,6 +518,42 @@
       }
     },
     {
+      "slug": "chalk",
+      "title": "Chalk",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Soft white limestone material used for marking, whitening, fillers, mild abrasive work, and lime-related supply chains.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "mineral"
+      ],
+      "path": "/tech/chalk/",
+      "source_file": "content/tech/chalk.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "charcoal",
       "title": "Charcoal",
       "aliases": [],
@@ -375,6 +591,78 @@
       }
     },
     {
+      "slug": "chisel",
+      "title": "Chisel",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A driven or pushed edge tool for cutting recesses, trimming joints, cleaning holes, and shaping hard materials.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "tool"
+      ],
+      "path": "/tech/chisel/",
+      "source_file": "content/tech/chisel.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "clamp",
+      "title": "Clamp",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A holding device or tied arrangement that keeps work still while cutting, drilling, gluing, drying, or assembly happens.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "tool"
+      ],
+      "path": "/tech/clamp/",
+      "source_file": "content/tech/clamp.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "clay",
       "title": "Clay",
       "aliases": [],
@@ -408,6 +696,42 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; geology and ceramic claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "clay-tablet-records",
+      "title": "Clay tablet records",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Durable written records impressed into clay for batches, tallies, drawings, ownership, and teaching notes.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "records"
+      ],
+      "path": "/tech/clay-tablet-records/",
+      "source_file": "content/tech/clay-tablet-records.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -531,6 +855,42 @@
       }
     },
     {
+      "slug": "drying-rack",
+      "title": "Drying rack",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A raised ventilated support for drying timber, clay pieces, fibers, paper sheets, hides, and test samples.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "tool"
+      ],
+      "path": "/tech/drying-rack/",
+      "source_file": "content/tech/drying-rack.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "firekeeping",
       "title": "Firekeeping",
       "aliases": [
@@ -609,6 +969,42 @@
       }
     },
     {
+      "slug": "flint",
+      "title": "Flint",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A fine-grained knappable stone prized for sharp flakes, scrapers, points, strike tools, and early precision edges.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "stone"
+      ],
+      "path": "/tech/flint/",
+      "source_file": "content/tech/flint.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "grog",
       "title": "Grog",
       "aliases": [
@@ -683,6 +1079,42 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; drill-type chronology and material claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "heddle",
+      "title": "Heddle",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Loops, rods, or eyes that separate selected warp threads so weaving sheds can be repeated quickly.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "textile"
+      ],
+      "path": "/tech/heddle/",
+      "source_file": "content/tech/heddle.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -841,6 +1273,78 @@
       }
     },
     {
+      "slug": "knot-tying",
+      "title": "Knot tying",
+      "aliases": [],
+      "node_type": "knowledge",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A practical body of tying patterns for fastening, joining, adjusting, lifting, nets, lashings, and temporary fixtures.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "knowledge"
+      ],
+      "path": "/tech/knot-tying/",
+      "source_file": "content/tech/knot-tying.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "lashing",
+      "title": "Lashing",
+      "aliases": [],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "The binding of parts with cord, fiber, leather, or sinew so frames and tools can be assembled without rigid fasteners.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "joinery"
+      ],
+      "path": "/tech/lashing/",
+      "source_file": "content/tech/lashing.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "leather",
       "title": "Leather",
       "aliases": [
@@ -880,6 +1384,42 @@
       }
     },
     {
+      "slug": "level-trough",
+      "title": "Level trough",
+      "aliases": [],
+      "node_type": "measurement",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A water-based level reference used to compare heights, set posts, transfer grades, and teach horizontal reference.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "measurement"
+      ],
+      "path": "/tech/level-trough/",
+      "source_file": "content/tech/level-trough.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "lever",
       "title": "Lever",
       "aliases": [
@@ -915,6 +1455,114 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; historical and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "lime-material",
+      "title": "Lime material",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Calcium-rich stone, shell, or chalk recognized as a precursor for plasters, mortars, washes, and alkaline workshop materials.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "mineral"
+      ],
+      "path": "/tech/lime-material/",
+      "source_file": "content/tech/lime-material.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "loom",
+      "title": "Loom",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A frame or weighted setup that holds threads in order and under tension while cloth or bands are woven.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "textile"
+      ],
+      "path": "/tech/loom/",
+      "source_file": "content/tech/loom.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "loom-weights",
+      "title": "Loom weights",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Weights that tension warp threads on simple looms, usually made from fired clay, stone, or reused dense objects.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "textile"
+      ],
+      "path": "/tech/loom-weights/",
+      "source_file": "content/tech/loom-weights.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -959,6 +1607,186 @@
       }
     },
     {
+      "slug": "mortar-and-pestle",
+      "title": "Mortar and pestle",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A paired crushing and grinding tool for pigments, grog, grain, resin, herbs, and small mineral batches.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "tool"
+      ],
+      "path": "/tech/mortar-and-pestle/",
+      "source_file": "content/tech/mortar-and-pestle.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "mortise-and-tenon",
+      "title": "Mortise and tenon",
+      "aliases": [],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "An interlocking wood joint where a projecting tenon fits a matching cavity for stronger frames and repeatable structures.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "joinery"
+      ],
+      "path": "/tech/mortise-and-tenon/",
+      "source_file": "content/tech/mortise-and-tenon.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "needle",
+      "title": "Needle",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A slender piercing and carrying tool for sewing leather, cloth, bark, skins, and bindings.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "tool"
+      ],
+      "path": "/tech/needle/",
+      "source_file": "content/tech/needle.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "net-making",
+      "title": "Net making",
+      "aliases": [],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "The construction of repeated open mesh from cordage for carrying, fishing, drying, trapping, sorting, and storage.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "fiber"
+      ],
+      "path": "/tech/net-making/",
+      "source_file": "content/tech/net-making.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "ochre",
+      "title": "Ochre",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Iron-rich earth pigment selected, washed, and ground for marking, paint, ink color, surface coding, and teaching samples.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "pigment"
+      ],
+      "path": "/tech/ochre/",
+      "source_file": "content/tech/ochre.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "paper",
       "title": "Paper",
       "aliases": [],
@@ -992,6 +1820,78 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; historical papermaking claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "peg-joint",
+      "title": "Peg joint",
+      "aliases": [],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A joint held by shaped pegs through aligned holes, useful for knockdown frames, wheels, handles, and repairs.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "joinery"
+      ],
+      "path": "/tech/peg-joint/",
+      "source_file": "content/tech/peg-joint.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "pitch",
+      "title": "Pitch",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A sticky waterproofing and adhesive material made from resinous sources and used to seal, bind, and protect workshop objects.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "adhesive"
+      ],
+      "path": "/tech/pitch/",
+      "source_file": "content/tech/pitch.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -1114,6 +2014,42 @@
       }
     },
     {
+      "slug": "public-safety",
+      "title": "Public safety",
+      "aliases": [],
+      "node_type": "institution",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Shared norms for keeping dangerous, dirty, or confusing work away from bystanders, food, water, children, and public paths.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "intermediate",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "institution"
+      ],
+      "path": "/tech/public-safety/",
+      "source_file": "content/tech/public-safety.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "pulley",
       "title": "Pulley",
       "aliases": [
@@ -1149,6 +2085,114 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; load claims and historical details need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "quern",
+      "title": "Quern",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A hand grinding stone system for grain, pigments, grog, minerals, and other repeatable small-batch grinding.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "tool"
+      ],
+      "path": "/tech/quern/",
+      "source_file": "content/tech/quern.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "reed",
+      "title": "Reed",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Straight hollow or pithy wetland stems used for mats, thatch, pens, tubes, floats, baskets, and light frames.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "plant"
+      ],
+      "path": "/tech/reed/",
+      "source_file": "content/tech/reed.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "resin",
+      "title": "Resin",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Sticky tree exudate gathered, cleaned, and used for sealants, adhesives, waterproofing, torch fuel, and compound repairs.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "forest"
+      ],
+      "path": "/tech/resin/",
+      "source_file": "content/tech/resin.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -1232,6 +2276,42 @@
       }
     },
     {
+      "slug": "rush",
+      "title": "Rush",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Flexible wetland stems used for cord, mats, basketry, wicks, packing, seating, and light tying work.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "plant"
+      ],
+      "path": "/tech/rush/",
+      "source_file": "content/tech/rush.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "sanitation-norms",
       "title": "Sanitation norms",
       "aliases": [
@@ -1271,6 +2351,402 @@
       }
     },
     {
+      "slug": "saw",
+      "title": "Saw",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A toothed cutting tool that removes repeated small bites to divide wood, bone, horn, or other workable materials.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "tool"
+      ],
+      "path": "/tech/saw/",
+      "source_file": "content/tech/saw.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "saw-pit",
+      "title": "Saw pit",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A team cutting arrangement that lets long timber be sawn into boards or blanks using gravity, staging, and coordinated labor.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "workshop"
+      ],
+      "path": "/tech/saw-pit/",
+      "source_file": "content/tech/saw-pit.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "scraper",
+      "title": "Scraper",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A controlled edge used to remove thin material from hide, wood, bone, clay, and surfaces needing cleanup.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "tool"
+      ],
+      "path": "/tech/scraper/",
+      "source_file": "content/tech/scraper.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "scratch-hardness-test",
+      "title": "Scratch hardness test",
+      "aliases": [],
+      "node_type": "test",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A comparative test that ranks minerals, edges, and surfaces by which material can scratch another.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "test"
+      ],
+      "path": "/tech/scratch-hardness-test/",
+      "source_file": "content/tech/scratch-hardness-test.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "shell",
+      "title": "Shell",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Hard marine or freshwater shell used for scraping, inlay, lime feedstock, containers, beads, and small tools.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "coastal"
+      ],
+      "path": "/tech/shell/",
+      "source_file": "content/tech/shell.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "shrinkage-test",
+      "title": "Shrinkage test",
+      "aliases": [],
+      "node_type": "test",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A marked-sample test for observing how clay, hide, fiber, and wood change size during drying or processing.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "test"
+      ],
+      "path": "/tech/shrinkage-test/",
+      "source_file": "content/tech/shrinkage-test.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "shuttle",
+      "title": "Shuttle",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A hand tool that carries weft thread through a shed, improving speed, order, and thread protection.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "textile"
+      ],
+      "path": "/tech/shuttle/",
+      "source_file": "content/tech/shuttle.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "sieve",
+      "title": "Sieve",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A perforated or woven separator used to grade grain, sand, grit, grog, fiber, clay inclusions, and other particles.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "tool"
+      ],
+      "path": "/tech/sieve/",
+      "source_file": "content/tech/sieve.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "sieve-grading",
+      "title": "Sieve grading",
+      "aliases": [],
+      "node_type": "test",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A particle sorting test that separates grit, grog, grain, sand, and fibers into more repeatable working grades.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "test"
+      ],
+      "path": "/tech/sieve-grading/",
+      "source_file": "content/tech/sieve-grading.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "sinew",
+      "title": "Sinew",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Tough animal tendon fiber prepared for binding, sewing, bowing, lashings, and composite repairs.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "animal-product"
+      ],
+      "path": "/tech/sinew/",
+      "source_file": "content/tech/sinew.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "smoke-observation",
+      "title": "Smoke observation",
+      "aliases": [],
+      "node_type": "test",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A disciplined visual and smell-based observation practice for judging fuel, draft, dampness, and incomplete burning without over-specifying fire settings.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "test"
+      ],
+      "path": "/tech/smoke-observation/",
+      "source_file": "content/tech/smoke-observation.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "spindle",
       "title": "Spindle",
       "aliases": [
@@ -1306,6 +2782,42 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; textile-tool chronology and material claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "spinning",
+      "title": "Spinning",
+      "aliases": [],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "The process of drawing and twisting fibers into continuous thread or yarn for weaving, sewing, tying, and records.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "fiber"
+      ],
+      "path": "/tech/spinning/",
+      "source_file": "content/tech/spinning.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -1389,6 +2901,42 @@
       }
     },
     {
+      "slug": "stone",
+      "title": "Stone",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Hard natural rock selected by fracture, grain, shape, and durability for tools, weights, hearths, grinding, building, and test pieces.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "stone"
+      ],
+      "path": "/tech/stone/",
+      "source_file": "content/tech/stone.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "stone-hammer",
       "title": "Stone hammer",
       "aliases": [
@@ -1424,6 +2972,78 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; lithic and regional claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "storage-jar",
+      "title": "Storage jar",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A container for keeping water, grain, pigment, fiber, ash, glue, oil, and labeled workshop samples controlled.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "container"
+      ],
+      "path": "/tech/storage-jar/",
+      "source_file": "content/tech/storage-jar.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "straightedge",
+      "title": "Straightedge",
+      "aliases": [],
+      "node_type": "measurement",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A stable reference edge used to detect bends, guide marks, compare surfaces, and teach straightness.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "measurement"
+      ],
+      "path": "/tech/straightedge/",
+      "source_file": "content/tech/straightedge.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -1773,6 +3393,78 @@
       }
     },
     {
+      "slug": "willow",
+      "title": "Willow",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Fast-growing flexible wood and rods used for basketry, hurdles, ties, charcoal feedstock, and light frames.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "plant"
+      ],
+      "path": "/tech/willow/",
+      "source_file": "content/tech/willow.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "wood-ash",
+      "title": "Wood ash",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Alkaline mineral residue from clean wood fires used cautiously for cleaning, flux-like experiments, pigment adjustment, and soil or clay trials.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "fire"
+      ],
+      "path": "/tech/wood-ash/",
+      "source_file": "content/tech/wood-ash.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "woodworking",
       "title": "Woodworking",
       "aliases": [
@@ -1809,6 +3501,114 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; regional timber and tool-history claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "wool",
+      "title": "Wool",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Crimped animal fiber prepared for spinning, felting, padding, insulation, straps, cloth, and thread.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "fiber"
+      ],
+      "path": "/tech/wool/",
+      "source_file": "content/tech/wool.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "workbench",
+      "title": "Workbench",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A stable raised work surface with stops, holes, pegs, or tiedowns for safer repeatable craft work.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "workshop"
+      ],
+      "path": "/tech/workbench/",
+      "source_file": "content/tech/workbench.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "workshop-organization",
+      "title": "Workshop organization",
+      "aliases": [],
+      "node_type": "institution",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A social technology that assigns roles, space, storage, tool care, safety rules, and quality checks inside a productive workshop.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "intermediate",
+      "precision_required": "low",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ANA-37",
+        "institution"
+      ],
+      "path": "/tech/workshop-organization/",
+      "source_file": "content/tech/workshop-organization.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion follow-up",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -1922,6 +3722,33 @@
     },
     {
       "from": "abrasive-grit",
+      "to": "ochre",
+      "kind": "soft",
+      "role": "Abrasive grit provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "ochre",
+      "title": "Abrasive grit"
+    },
+    {
+      "from": "abrasive-grit",
+      "to": "scratch-hardness-test",
+      "kind": "soft",
+      "role": "Abrasive grit provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "scratch-hardness-test",
+      "title": "Abrasive grit"
+    },
+    {
+      "from": "abrasive-grit",
+      "to": "shell",
+      "kind": "hard",
+      "role": "Abrasive grit provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "shell",
+      "title": "Abrasive grit"
+    },
+    {
+      "from": "abrasive-grit",
       "to": "woodworking",
       "kind": "material_source",
       "role": "Abrasives smooth tool handles, joints, and bearing surfaces.",
@@ -2011,6 +3838,33 @@
       "title": "Woodworking"
     },
     {
+      "from": "apprenticeship",
+      "to": "workshop-organization",
+      "kind": "hard",
+      "role": "Apprenticeship provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "workshop-organization",
+      "title": "Apprenticeship"
+    },
+    {
+      "from": "awl",
+      "to": "needle",
+      "kind": "hard",
+      "role": "Awl provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "needle",
+      "title": "Awl"
+    },
+    {
+      "from": "axe",
+      "to": "adze",
+      "kind": "hard",
+      "role": "Axe provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "adze",
+      "title": "Axe"
+    },
+    {
       "from": "basketry",
       "to": "clay",
       "kind": "tooling",
@@ -2021,12 +3875,39 @@
     },
     {
       "from": "basketry",
+      "to": "drying-rack",
+      "kind": "soft",
+      "role": "Basketry provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "drying-rack",
+      "title": "Basketry"
+    },
+    {
+      "from": "basketry",
       "to": "paper",
       "kind": "tooling",
       "role": "Baskets and screens support fiber handling and drainage.",
       "source": "unlock",
       "declared_in": "basketry",
       "title": "Paper"
+    },
+    {
+      "from": "basketry",
+      "to": "sieve",
+      "kind": "hard",
+      "role": "Basketry provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "sieve",
+      "title": "Basketry"
+    },
+    {
+      "from": "bone-and-antler",
+      "to": "awl",
+      "kind": "soft",
+      "role": "Bone and antler provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "awl",
+      "title": "Bone and antler"
     },
     {
       "from": "bone-and-antler",
@@ -2047,6 +3928,24 @@
       "title": "Hand drill"
     },
     {
+      "from": "bone-and-antler",
+      "to": "needle",
+      "kind": "soft",
+      "role": "Bone and antler provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "needle",
+      "title": "Bone and antler"
+    },
+    {
+      "from": "bone-and-antler",
+      "to": "scraper",
+      "kind": "soft",
+      "role": "Bone and antler provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "scraper",
+      "title": "Bone and antler"
+    },
+    {
       "from": "cart",
       "to": "bicycle",
       "kind": "soft",
@@ -2063,6 +3962,15 @@
       "source": "unlock",
       "declared_in": "ceramic-temper",
       "title": "Potter's wheel"
+    },
+    {
+      "from": "chalk",
+      "to": "lime-material",
+      "kind": "hard",
+      "role": "Chalk provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "lime-material",
+      "title": "Chalk"
     },
     {
       "from": "charcoal",
@@ -2101,6 +4009,24 @@
       "title": "Kiln"
     },
     {
+      "from": "charcoal",
+      "to": "smoke-observation",
+      "kind": "soft",
+      "role": "Charcoal provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "smoke-observation",
+      "title": "Charcoal"
+    },
+    {
+      "from": "chisel",
+      "to": "mortise-and-tenon",
+      "kind": "hard",
+      "role": "Chisel provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "mortise-and-tenon",
+      "title": "Chisel"
+    },
+    {
       "from": "clay",
       "to": "ceramic-temper",
       "kind": "material_source",
@@ -2116,6 +4042,15 @@
       "role": "Clay-rich earth can help seal a mound or pit.",
       "source": "prerequisite",
       "declared_in": "charcoal",
+      "title": "Clay"
+    },
+    {
+      "from": "clay",
+      "to": "clay-tablet-records",
+      "kind": "hard",
+      "role": "Clay provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "clay-tablet-records",
       "title": "Clay"
     },
     {
@@ -2156,11 +4091,38 @@
     },
     {
       "from": "clay",
+      "to": "loom-weights",
+      "kind": "hard",
+      "role": "Clay provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "loom-weights",
+      "title": "Clay"
+    },
+    {
+      "from": "clay",
       "to": "potters-wheel",
       "kind": "material_source",
       "role": "Supplies the plastic material being shaped.",
       "source": "prerequisite",
       "declared_in": "potters-wheel",
+      "title": "Clay"
+    },
+    {
+      "from": "clay",
+      "to": "shrinkage-test",
+      "kind": "hard",
+      "role": "Clay provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "shrinkage-test",
+      "title": "Clay"
+    },
+    {
+      "from": "clay",
+      "to": "storage-jar",
+      "kind": "hard",
+      "role": "Clay provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "storage-jar",
       "title": "Clay"
     },
     {
@@ -2201,6 +4163,24 @@
     },
     {
       "from": "cordage-fiber",
+      "to": "heddle",
+      "kind": "soft",
+      "role": "Cordage fiber provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "heddle",
+      "title": "Cordage fiber"
+    },
+    {
+      "from": "cordage-fiber",
+      "to": "net-making",
+      "kind": "soft",
+      "role": "Cordage fiber provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "net-making",
+      "title": "Cordage fiber"
+    },
+    {
+      "from": "cordage-fiber",
       "to": "rope-making",
       "kind": "material_source",
       "role": "Rope making begins with sorted fiber.",
@@ -2219,11 +4199,38 @@
     },
     {
       "from": "cordage-fiber",
+      "to": "sieve",
+      "kind": "soft",
+      "role": "Cordage fiber provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "sieve",
+      "title": "Cordage fiber"
+    },
+    {
+      "from": "cordage-fiber",
       "to": "spindle",
       "kind": "material_source",
       "role": "Spindles need prepared fiber to be useful.",
       "source": "prerequisite",
       "declared_in": "spindle",
+      "title": "Cordage fiber"
+    },
+    {
+      "from": "cordage-fiber",
+      "to": "spinning",
+      "kind": "soft",
+      "role": "Cordage fiber provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "spinning",
+      "title": "Cordage fiber"
+    },
+    {
+      "from": "cordage-fiber",
+      "to": "wool",
+      "kind": "hard",
+      "role": "Cordage fiber provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "wool",
       "title": "Cordage fiber"
     },
     {
@@ -2336,6 +4343,33 @@
     },
     {
       "from": "cutting-edge",
+      "to": "awl",
+      "kind": "hard",
+      "role": "Cutting edge provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "awl",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "axe",
+      "kind": "hard",
+      "role": "Cutting edge provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "axe",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "chisel",
+      "kind": "hard",
+      "role": "Cutting edge provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "chisel",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
       "to": "cordage-fiber",
       "kind": "tooling",
       "role": "Cutting tools help harvest and clean fibrous plants or hides.",
@@ -2372,12 +4406,75 @@
     },
     {
       "from": "cutting-edge",
+      "to": "reed",
+      "kind": "soft",
+      "role": "Cutting edge provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "reed",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "resin",
+      "kind": "hard",
+      "role": "Cutting edge provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "resin",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
       "to": "rope-making",
       "kind": "tooling",
       "role": "Fiber harvest and preparation often require cutting and scraping.",
       "source": "unlock",
       "declared_in": "cutting-edge",
       "title": "Rope making"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "rush",
+      "kind": "soft",
+      "role": "Cutting edge provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "rush",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "saw",
+      "kind": "hard",
+      "role": "Cutting edge provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "saw",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "scraper",
+      "kind": "hard",
+      "role": "Cutting edge provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "scraper",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "shell",
+      "kind": "soft",
+      "role": "Cutting edge provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "shell",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "sinew",
+      "kind": "hard",
+      "role": "Cutting edge provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "sinew",
+      "title": "Cutting edge"
     },
     {
       "from": "cutting-edge",
@@ -2399,12 +4496,39 @@
     },
     {
       "from": "cutting-edge",
+      "to": "willow",
+      "kind": "soft",
+      "role": "Cutting edge provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "willow",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
       "to": "woodworking",
       "kind": "tooling",
       "role": "Woodworking requires cutting, scraping, boring, or marking edges.",
       "source": "unlock",
       "declared_in": "cutting-edge",
       "title": "Woodworking"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "wool",
+      "kind": "soft",
+      "role": "Cutting edge provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "wool",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "firekeeping",
+      "to": "beeswax",
+      "kind": "hard",
+      "role": "Firekeeping provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "beeswax",
+      "title": "Firekeeping"
     },
     {
       "from": "firekeeping",
@@ -2452,6 +4576,51 @@
       "title": "Kiln"
     },
     {
+      "from": "firekeeping",
+      "to": "lime-material",
+      "kind": "soft",
+      "role": "Firekeeping provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "lime-material",
+      "title": "Firekeeping"
+    },
+    {
+      "from": "firekeeping",
+      "to": "pitch",
+      "kind": "soft",
+      "role": "Firekeeping provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "pitch",
+      "title": "Firekeeping"
+    },
+    {
+      "from": "firekeeping",
+      "to": "resin",
+      "kind": "soft",
+      "role": "Firekeeping provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "resin",
+      "title": "Firekeeping"
+    },
+    {
+      "from": "firekeeping",
+      "to": "smoke-observation",
+      "kind": "hard",
+      "role": "Firekeeping provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "smoke-observation",
+      "title": "Firekeeping"
+    },
+    {
+      "from": "firekeeping",
+      "to": "wood-ash",
+      "kind": "hard",
+      "role": "Firekeeping provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "wood-ash",
+      "title": "Firekeeping"
+    },
+    {
       "from": "flax-fiber",
       "to": "spindle",
       "kind": "material_source",
@@ -2486,6 +4655,15 @@
       "source": "unlock",
       "declared_in": "grog",
       "title": "Ceramic temper"
+    },
+    {
+      "from": "hand-drill",
+      "to": "peg-joint",
+      "kind": "hard",
+      "role": "Hand drill provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "peg-joint",
+      "title": "Hand drill"
     },
     {
       "from": "hand-drill",
@@ -2587,6 +4765,24 @@
       "title": "Grog"
     },
     {
+      "from": "kiln-firing-test",
+      "to": "loom-weights",
+      "kind": "soft",
+      "role": "Kiln firing test provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "loom-weights",
+      "title": "Kiln firing test"
+    },
+    {
+      "from": "kiln-firing-test",
+      "to": "storage-jar",
+      "kind": "soft",
+      "role": "Kiln firing test provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "storage-jar",
+      "title": "Kiln firing test"
+    },
+    {
       "from": "kiln",
       "to": "ink",
       "kind": "optional",
@@ -2612,6 +4808,24 @@
       "source": "unlock",
       "declared_in": "kiln",
       "title": "Paper"
+    },
+    {
+      "from": "knot-tying",
+      "to": "lashing",
+      "kind": "soft",
+      "role": "Knot tying provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "lashing",
+      "title": "Knot tying"
+    },
+    {
+      "from": "knot-tying",
+      "to": "net-making",
+      "kind": "hard",
+      "role": "Knot tying provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "net-making",
+      "title": "Knot tying"
     },
     {
       "from": "leather",
@@ -2704,6 +4918,33 @@
       "title": "Wheel and axle"
     },
     {
+      "from": "loom",
+      "to": "heddle",
+      "kind": "hard",
+      "role": "Loom provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "heddle",
+      "title": "Loom"
+    },
+    {
+      "from": "measuring-rod",
+      "to": "loom",
+      "kind": "soft",
+      "role": "Measuring rod provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "loom",
+      "title": "Measuring rod"
+    },
+    {
+      "from": "measuring-rod",
+      "to": "shrinkage-test",
+      "kind": "soft",
+      "role": "Measuring rod provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "shrinkage-test",
+      "title": "Measuring rod"
+    },
+    {
       "from": "measuring-rod",
       "to": "standard-weights",
       "kind": "measurement",
@@ -2711,6 +4952,15 @@
       "source": "unlock",
       "declared_in": "measuring-rod",
       "title": "Standard weights"
+    },
+    {
+      "from": "measuring-rod",
+      "to": "straightedge",
+      "kind": "hard",
+      "role": "Measuring rod provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "straightedge",
+      "title": "Measuring rod"
     },
     {
       "from": "measuring-rod",
@@ -2738,6 +4988,15 @@
       "source": "unlock",
       "declared_in": "measuring-rod",
       "title": "Try-square"
+    },
+    {
+      "from": "mortar-and-pestle",
+      "to": "quern",
+      "kind": "soft",
+      "role": "Mortar and pestle provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "quern",
+      "title": "Mortar and pestle"
     },
     {
       "from": "paper",
@@ -2830,6 +5089,15 @@
       "title": "Simple pump"
     },
     {
+      "from": "resin",
+      "to": "pitch",
+      "kind": "hard",
+      "role": "Resin provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "pitch",
+      "title": "Resin"
+    },
+    {
       "from": "rope-making",
       "to": "pulley",
       "kind": "material_source",
@@ -2854,6 +5122,33 @@
       "role": "Turns loose fiber into usable rope.",
       "source": "unlock",
       "declared_in": "rope-making",
+      "title": "Rope"
+    },
+    {
+      "from": "rope",
+      "to": "clamp",
+      "kind": "hard",
+      "role": "Rope provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "clamp",
+      "title": "Rope"
+    },
+    {
+      "from": "rope",
+      "to": "knot-tying",
+      "kind": "hard",
+      "role": "Rope provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "knot-tying",
+      "title": "Rope"
+    },
+    {
+      "from": "rope",
+      "to": "lashing",
+      "kind": "hard",
+      "role": "Rope provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "lashing",
       "title": "Rope"
     },
     {
@@ -2920,6 +5215,33 @@
       "title": "Paper"
     },
     {
+      "from": "sanitation-norms",
+      "to": "public-safety",
+      "kind": "hard",
+      "role": "Sanitation norms provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "public-safety",
+      "title": "Sanitation norms"
+    },
+    {
+      "from": "saw",
+      "to": "saw-pit",
+      "kind": "hard",
+      "role": "Saw provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "saw-pit",
+      "title": "Saw"
+    },
+    {
+      "from": "sieve",
+      "to": "sieve-grading",
+      "kind": "hard",
+      "role": "Sieve provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "sieve-grading",
+      "title": "Sieve"
+    },
+    {
       "from": "spindle",
       "to": "rope-making",
       "kind": "tooling",
@@ -2927,6 +5249,15 @@
       "source": "unlock",
       "declared_in": "spindle",
       "title": "Rope making"
+    },
+    {
+      "from": "spindle",
+      "to": "spinning",
+      "kind": "hard",
+      "role": "Spindle provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "spinning",
+      "title": "Spindle"
     },
     {
       "from": "spindle",
@@ -3029,6 +5360,15 @@
     },
     {
       "from": "stone-hammer",
+      "to": "chisel",
+      "kind": "soft",
+      "role": "Stone hammer provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "chisel",
+      "title": "Stone hammer"
+    },
+    {
+      "from": "stone-hammer",
       "to": "clay",
       "kind": "tooling",
       "role": "Crushing and mixing temper or dried clay benefits from striking tools.",
@@ -3056,6 +5396,15 @@
     },
     {
       "from": "stone-hammer",
+      "to": "flint",
+      "kind": "soft",
+      "role": "Stone hammer provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "flint",
+      "title": "Stone hammer"
+    },
+    {
+      "from": "stone-hammer",
       "to": "hand-drill",
       "kind": "tooling",
       "role": "Rough parts and sockets can be shaped by striking and abrasion.",
@@ -3071,6 +5420,69 @@
       "source": "unlock",
       "declared_in": "stone-hammer",
       "title": "Hand drill"
+    },
+    {
+      "from": "stone-hammer",
+      "to": "mortar-and-pestle",
+      "kind": "soft",
+      "role": "Stone hammer provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "mortar-and-pestle",
+      "title": "Stone hammer"
+    },
+    {
+      "from": "stone-hammer",
+      "to": "stone",
+      "kind": "soft",
+      "role": "Stone hammer provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "stone",
+      "title": "Stone hammer"
+    },
+    {
+      "from": "stone",
+      "to": "chalk",
+      "kind": "hard",
+      "role": "Stone provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "chalk",
+      "title": "Stone"
+    },
+    {
+      "from": "stone",
+      "to": "flint",
+      "kind": "hard",
+      "role": "Stone provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "flint",
+      "title": "Stone"
+    },
+    {
+      "from": "stone",
+      "to": "mortar-and-pestle",
+      "kind": "hard",
+      "role": "Stone provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "mortar-and-pestle",
+      "title": "Stone"
+    },
+    {
+      "from": "stone",
+      "to": "quern",
+      "kind": "hard",
+      "role": "Stone provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "quern",
+      "title": "Stone"
+    },
+    {
+      "from": "stone",
+      "to": "scratch-hardness-test",
+      "kind": "hard",
+      "role": "Stone provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "scratch-hardness-test",
+      "title": "Stone"
     },
     {
       "from": "technical-drawing",
@@ -3119,6 +5531,15 @@
     },
     {
       "from": "tensile-test",
+      "to": "knot-tying",
+      "kind": "soft",
+      "role": "Tensile test provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "knot-tying",
+      "title": "Tensile test"
+    },
+    {
+      "from": "tensile-test",
       "to": "pulley",
       "kind": "safety",
       "role": "Lifting systems need proof-tested rope and fittings.",
@@ -3155,6 +5576,15 @@
     },
     {
       "from": "tensile-test",
+      "to": "sinew",
+      "kind": "soft",
+      "role": "Tensile test provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "sinew",
+      "title": "Tensile test"
+    },
+    {
+      "from": "tensile-test",
       "to": "spoked-wheel",
       "kind": "optional",
       "role": "Useful for checking lashings, ties, or later wire spokes.",
@@ -3182,12 +5612,57 @@
     },
     {
       "from": "timber-seasoning",
+      "to": "straightedge",
+      "kind": "soft",
+      "role": "Timber seasoning provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "straightedge",
+      "title": "Timber seasoning"
+    },
+    {
+      "from": "timber-seasoning",
       "to": "woodworking",
       "kind": "material_source",
       "role": "Seasoned stock improves joinery, wheels, handles, and frames.",
       "source": "unlock",
       "declared_in": "timber-seasoning",
       "title": "Woodworking"
+    },
+    {
+      "from": "timber-seasoning",
+      "to": "workbench",
+      "kind": "soft",
+      "role": "Timber seasoning provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "workbench",
+      "title": "Timber seasoning"
+    },
+    {
+      "from": "timber",
+      "to": "axe",
+      "kind": "soft",
+      "role": "Timber provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "axe",
+      "title": "Timber"
+    },
+    {
+      "from": "timber",
+      "to": "loom",
+      "kind": "soft",
+      "role": "Timber provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "loom",
+      "title": "Timber"
+    },
+    {
+      "from": "timber",
+      "to": "saw",
+      "kind": "soft",
+      "role": "Timber provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "saw",
+      "title": "Timber"
     },
     {
       "from": "timber",
@@ -3224,6 +5699,15 @@
       "source": "unlock",
       "declared_in": "try-square",
       "title": "Alignment checking"
+    },
+    {
+      "from": "try-square",
+      "to": "mortise-and-tenon",
+      "kind": "soft",
+      "role": "Try-square provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "mortise-and-tenon",
+      "title": "Try-square"
     },
     {
       "from": "try-square",
@@ -3272,6 +5756,15 @@
     },
     {
       "from": "water-settling-test",
+      "to": "chalk",
+      "kind": "soft",
+      "role": "Water settling test provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "chalk",
+      "title": "Water settling test"
+    },
+    {
+      "from": "water-settling-test",
       "to": "clay",
       "kind": "test",
       "role": "Separates clay-rich fines from sand, silt, and organic debris.",
@@ -3290,11 +5783,47 @@
     },
     {
       "from": "water-settling-test",
+      "to": "ochre",
+      "kind": "hard",
+      "role": "Water settling test provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "ochre",
+      "title": "Water settling test"
+    },
+    {
+      "from": "water-settling-test",
       "to": "paper",
       "kind": "test",
       "role": "Helps separate pulp quality and grit.",
       "source": "prerequisite",
       "declared_in": "paper",
+      "title": "Water settling test"
+    },
+    {
+      "from": "water-settling-test",
+      "to": "sieve-grading",
+      "kind": "soft",
+      "role": "Water settling test provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "sieve-grading",
+      "title": "Water settling test"
+    },
+    {
+      "from": "water-settling-test",
+      "to": "stone",
+      "kind": "hard",
+      "role": "Water settling test provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "stone",
+      "title": "Water settling test"
+    },
+    {
+      "from": "water-settling-test",
+      "to": "wood-ash",
+      "kind": "soft",
+      "role": "Water settling test provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "wood-ash",
       "title": "Water settling test"
     },
     {
@@ -3335,12 +5864,39 @@
     },
     {
       "from": "water",
+      "to": "level-trough",
+      "kind": "hard",
+      "role": "Water provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "level-trough",
+      "title": "Water"
+    },
+    {
+      "from": "water",
       "to": "paper",
       "kind": "material_source",
       "role": "Paper making depends on soaking, washing, pulping, and sheet forming.",
       "source": "unlock",
       "declared_in": "water",
       "title": "Paper"
+    },
+    {
+      "from": "water",
+      "to": "reed",
+      "kind": "hard",
+      "role": "Water provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "reed",
+      "title": "Water"
+    },
+    {
+      "from": "water",
+      "to": "rush",
+      "kind": "hard",
+      "role": "Water provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "rush",
+      "title": "Water"
     },
     {
       "from": "water",
@@ -3361,6 +5917,15 @@
       "title": "Water settling test"
     },
     {
+      "from": "water",
+      "to": "willow",
+      "kind": "hard",
+      "role": "Water provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "willow",
+      "title": "Water"
+    },
+    {
       "from": "weaving",
       "to": "bicycle",
       "kind": "material_source",
@@ -3377,6 +5942,24 @@
       "source": "unlock",
       "declared_in": "weaving",
       "title": "Leather"
+    },
+    {
+      "from": "weaving",
+      "to": "loom",
+      "kind": "hard",
+      "role": "Weaving provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "loom",
+      "title": "Weaving"
+    },
+    {
+      "from": "weaving",
+      "to": "shuttle",
+      "kind": "hard",
+      "role": "Weaving provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "shuttle",
+      "title": "Weaving"
     },
     {
       "from": "wheel-and-axle",
@@ -3461,6 +6044,15 @@
     },
     {
       "from": "woodworking",
+      "to": "adze",
+      "kind": "soft",
+      "role": "Woodworking provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "adze",
+      "title": "Woodworking"
+    },
+    {
+      "from": "woodworking",
       "to": "bicycle",
       "kind": "tooling",
       "role": "Enables early wooden frames, wheel parts, jigs, and repair fixtures.",
@@ -3497,6 +6089,42 @@
     },
     {
       "from": "woodworking",
+      "to": "clamp",
+      "kind": "soft",
+      "role": "Woodworking provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "clamp",
+      "title": "Woodworking"
+    },
+    {
+      "from": "woodworking",
+      "to": "drying-rack",
+      "kind": "hard",
+      "role": "Woodworking provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "drying-rack",
+      "title": "Woodworking"
+    },
+    {
+      "from": "woodworking",
+      "to": "level-trough",
+      "kind": "soft",
+      "role": "Woodworking provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "level-trough",
+      "title": "Woodworking"
+    },
+    {
+      "from": "woodworking",
+      "to": "peg-joint",
+      "kind": "soft",
+      "role": "Woodworking provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "peg-joint",
+      "title": "Woodworking"
+    },
+    {
+      "from": "woodworking",
       "to": "plain-bearing",
       "kind": "tooling",
       "role": "Makes early wooden housings, shafts, and replaceable sleeves.",
@@ -3511,6 +6139,15 @@
       "role": "Builds the turntable, support frame, and shaft parts.",
       "source": "prerequisite",
       "declared_in": "potters-wheel",
+      "title": "Woodworking"
+    },
+    {
+      "from": "woodworking",
+      "to": "shuttle",
+      "kind": "soft",
+      "role": "Woodworking provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "shuttle",
       "title": "Woodworking"
     },
     {
@@ -3541,6 +6178,24 @@
       "title": "Wheel and axle"
     },
     {
+      "from": "woodworking",
+      "to": "workbench",
+      "kind": "hard",
+      "role": "Woodworking provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "workbench",
+      "title": "Woodworking"
+    },
+    {
+      "from": "workshop-organization",
+      "to": "saw-pit",
+      "kind": "soft",
+      "role": "Workshop organization provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "saw-pit",
+      "title": "Workshop organization"
+    },
+    {
       "from": "workshop-records",
       "to": "apprenticeship",
       "kind": "knowledge",
@@ -3560,6 +6215,33 @@
     },
     {
       "from": "workshop-records",
+      "to": "batch-labeling",
+      "kind": "hard",
+      "role": "Workshop records provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "batch-labeling",
+      "title": "Workshop records"
+    },
+    {
+      "from": "workshop-records",
+      "to": "beeswax",
+      "kind": "soft",
+      "role": "Workshop records provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "beeswax",
+      "title": "Workshop records"
+    },
+    {
+      "from": "workshop-records",
+      "to": "public-safety",
+      "kind": "soft",
+      "role": "Workshop records provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "public-safety",
+      "title": "Workshop records"
+    },
+    {
+      "from": "workshop-records",
       "to": "standard-weights",
       "kind": "institutional",
       "role": "Standards need records of masters, copies, and checks.",
@@ -3575,6 +6257,33 @@
       "source": "unlock",
       "declared_in": "workshop-records",
       "title": "Technical drawing"
+    },
+    {
+      "from": "workshop-records",
+      "to": "workshop-organization",
+      "kind": "soft",
+      "role": "Workshop records provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "workshop-organization",
+      "title": "Workshop records"
+    },
+    {
+      "from": "writing",
+      "to": "batch-labeling",
+      "kind": "soft",
+      "role": "Writing provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "batch-labeling",
+      "title": "Writing"
+    },
+    {
+      "from": "writing",
+      "to": "clay-tablet-records",
+      "kind": "soft",
+      "role": "Writing provides a necessary starting point for this page.",
+      "source": "prerequisite",
+      "declared_in": "clay-tablet-records",
+      "title": "Writing"
     },
     {
       "from": "writing",

@@ -36,10 +36,7 @@ unlocks:
     title: Ink
     kind: optional
     role: Ink and paper co-evolve as record media.
-missing_prerequisites:
-  - slug: water-settling-test
-    title: Water settling test
-    reason: Needed for fiber and grit separation diagnostics.
+missing_prerequisites: []
 material_dependencies:
   - slug: plant-fiber
     title: Plant fiber

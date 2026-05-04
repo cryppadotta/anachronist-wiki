@@ -32,10 +32,7 @@ unlocks:
     title: Ink
     kind: material_source
     role: Soot and carbon black can supply black pigment.
-missing_prerequisites:
-  - slug: firekeeping
-    title: Firekeeping
-    reason: Controlled fire practice needs its own safer prerequisite page.
+missing_prerequisites: []
 material_dependencies:
   - slug: wood
     title: Wood

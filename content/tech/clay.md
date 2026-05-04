@@ -26,10 +26,7 @@ unlocks:
     title: Writing
     kind: optional
     role: Clay tablets are an early record medium where paper is absent.
-missing_prerequisites:
-  - slug: water-settling-test
-    title: Water settling test
-    reason: Needed to identify and refine clay-rich sediment.
+missing_prerequisites: []
 material_dependencies:
   - slug: water
     title: Water
