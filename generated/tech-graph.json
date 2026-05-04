@@ -23,6 +23,46 @@
   },
   "nodes": [
     {
+      "slug": "abrasive-grit",
+      "title": "Abrasive grit",
+      "aliases": [
+        "polishing grit",
+        "sand abrasive"
+      ],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Hard granular material selected, sorted, and used to scrape, smooth, sharpen, polish, and test surfaces.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "hours",
+      "tags": [
+        "material",
+        "surface-finish",
+        "tools"
+      ],
+      "path": "/tech/abrasive-grit/",
+      "source_file": "content/tech/abrasive-grit.md",
+      "confidence": {
+        "practicality": 0.76,
+        "historical_plausibility": 0.82,
+        "completeness": 0.56
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; mineral availability and historical abrasive use need human source review."
+        ]
+      }
+    },
+    {
       "slug": "alignment-checking",
       "title": "Alignment checking",
       "aliases": [
@@ -59,6 +99,84 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; historical workshop testing practices need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "apprenticeship",
+      "title": "Apprenticeship",
+      "aliases": [
+        "craft training"
+      ],
+      "node_type": "institution",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A social technology for transmitting workshop habits, safety norms, quality standards, tool care, and tacit craft knowledge across workers and generations.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "intermediate",
+      "precision_required": "low",
+      "time_to_first_working_version": "months_to_years",
+      "tags": [
+        "institution",
+        "social-technology",
+        "training"
+      ],
+      "path": "/tech/apprenticeship/",
+      "source_file": "content/tech/apprenticeship.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.82,
+        "completeness": 0.52
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; institutional and historical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "basketry",
+      "title": "Basketry",
+      "aliases": [
+        "woven baskets"
+      ],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "The craft of weaving flexible plant, bark, root, reed, or fiber materials into containers, frames, strainers, traps, and lightweight structures.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "containers",
+        "fiber",
+        "workshop"
+      ],
+      "path": "/tech/basketry/",
+      "source_file": "content/tech/basketry.md",
+      "confidence": {
+        "practicality": 0.82,
+        "historical_plausibility": 0.88,
+        "completeness": 0.57
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; regional plant and basketry history claims need human source review."
         ]
       }
     },
@@ -102,6 +220,46 @@
       }
     },
     {
+      "slug": "bone-and-antler",
+      "title": "Bone and antler",
+      "aliases": [
+        "antler",
+        "bone"
+      ],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Hard animal materials shaped into points, wedges, handles, needles, bearings, toggles, scrapers, and small tool parts.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "animal-products",
+        "material",
+        "tools"
+      ],
+      "path": "/tech/bone-and-antler/",
+      "source_file": "content/tech/bone-and-antler.md",
+      "confidence": {
+        "practicality": 0.76,
+        "historical_plausibility": 0.86,
+        "completeness": 0.55
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; archaeological and material claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "cart",
       "title": "Cart",
       "aliases": [
@@ -137,6 +295,45 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; vehicle history and regional road assumptions need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "ceramic-temper",
+      "title": "Ceramic temper",
+      "aliases": [
+        "temper"
+      ],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Non-plastic additions such as sand, grog, shell, grit, or fiber blended with clay to control shrinkage, cracking, workability, and fired behavior.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "ceramics",
+        "material",
+        "quality-control"
+      ],
+      "path": "/tech/ceramic-temper/",
+      "source_file": "content/tech/ceramic-temper.md",
+      "confidence": {
+        "practicality": 0.72,
+        "historical_plausibility": 0.82,
+        "completeness": 0.55
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; ceramic material claims need human source review."
         ]
       }
     },
@@ -215,6 +412,46 @@
       }
     },
     {
+      "slug": "cordage-fiber",
+      "title": "Cordage fiber",
+      "aliases": [
+        "bast fiber",
+        "plant fiber"
+      ],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Plant or animal fiber selected, extracted, cleaned, and bundled for rope, thread, lashings, nets, basketry, and weaving.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "fiber",
+        "material",
+        "supply-chain"
+      ],
+      "path": "/tech/cordage-fiber/",
+      "source_file": "content/tech/cordage-fiber.md",
+      "confidence": {
+        "practicality": 0.78,
+        "historical_plausibility": 0.84,
+        "completeness": 0.57
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; species and processing claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "counting",
       "title": "Counting",
       "aliases": [
@@ -250,6 +487,241 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; anthropology and history claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "cutting-edge",
+      "title": "Cutting edge",
+      "aliases": [
+        "blade edge",
+        "scraper edge"
+      ],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A sharpened stone, bone, shell, wood, or metal edge used for cutting, scraping, trimming, marking, and shaping workshop materials.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "hours",
+      "tags": [
+        "shaping",
+        "tool",
+        "workshop"
+      ],
+      "path": "/tech/cutting-edge/",
+      "source_file": "content/tech/cutting-edge.md",
+      "confidence": {
+        "practicality": 0.78,
+        "historical_plausibility": 0.88,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; material-specific edge claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "firekeeping",
+      "title": "Firekeeping",
+      "aliases": [
+        "controlled fire"
+      ],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "The practical discipline of starting, feeding, observing, containing, banking, extinguishing, and teaching controlled fire for workshop use.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "fire",
+        "safety",
+        "workshop"
+      ],
+      "path": "/tech/firekeeping/",
+      "source_file": "content/tech/firekeeping.md",
+      "confidence": {
+        "practicality": 0.74,
+        "historical_plausibility": 0.88,
+        "completeness": 0.54
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; fire-history and safety claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "flax-fiber",
+      "title": "Flax fiber",
+      "aliases": [
+        "linen fiber"
+      ],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Long bast fiber from flax stems, prepared for thread, cordage, woven cloth, fine lashings, and composite workshop uses.",
+      "era_floor": "neolithic_to_ancient",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "fiber",
+        "material",
+        "textile"
+      ],
+      "path": "/tech/flax-fiber/",
+      "source_file": "content/tech/flax-fiber.md",
+      "confidence": {
+        "practicality": 0.68,
+        "historical_plausibility": 0.78,
+        "completeness": 0.54
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; cultivation and processing claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "grog",
+      "title": "Grog",
+      "aliases": [
+        "crushed fired clay"
+      ],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Crushed fired clay or sherd material reused as ceramic temper for controlling shrinkage, cracking, and texture.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "hours",
+      "tags": [
+        "ceramics",
+        "material",
+        "reuse"
+      ],
+      "path": "/tech/grog/",
+      "source_file": "content/tech/grog.md",
+      "confidence": {
+        "practicality": 0.76,
+        "historical_plausibility": 0.8,
+        "completeness": 0.55
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; ceramic recycling and material claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "hand-drill",
+      "title": "Hand drill",
+      "aliases": [
+        "hand-powered drill"
+      ],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A hand-powered boring tool for making holes in wood, bone, leather, clay, shell, and soft stone.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "boring",
+        "tool",
+        "workshop"
+      ],
+      "path": "/tech/hand-drill/",
+      "source_file": "content/tech/hand-drill.md",
+      "confidence": {
+        "practicality": 0.72,
+        "historical_plausibility": 0.84,
+        "completeness": 0.55
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; drill-type chronology and material claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "hide-glue",
+      "title": "Hide glue",
+      "aliases": [
+        "animal glue"
+      ],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Reversible collagen glue made from animal scrap, useful for woodworking, bindings, repairs, sizing, and temporary fixtures.",
+      "era_floor": "ancient",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "adhesive",
+        "animal-products",
+        "woodworking"
+      ],
+      "path": "/tech/hide-glue/",
+      "source_file": "content/tech/hide-glue.md",
+      "confidence": {
+        "practicality": 0.58,
+        "historical_plausibility": 0.74,
+        "completeness": 0.46
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; adhesive history and process details need human source review."
         ]
       }
     },
@@ -330,6 +802,84 @@
       }
     },
     {
+      "slug": "kiln-firing-test",
+      "title": "Kiln firing test",
+      "aliases": [
+        "firing test"
+      ],
+      "node_type": "test",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A comparative test practice for judging clay bodies, temper, kiln placement, fuel behavior, and finished ceramic quality without relying on guesswork.",
+      "era_floor": "neolithic_to_ancient",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days",
+      "tags": [
+        "ceramics",
+        "quality-control",
+        "test"
+      ],
+      "path": "/tech/kiln-firing-test/",
+      "source_file": "content/tech/kiln-firing-test.md",
+      "confidence": {
+        "practicality": 0.62,
+        "historical_plausibility": 0.78,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; ceramic history and firing behavior claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "leather",
+      "title": "Leather",
+      "aliases": [
+        "hide leather"
+      ],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Preserved animal hide prepared as flexible sheet, strap, hinge, gasket, bearing cover, bucket, bellows part, and protective material.",
+      "era_floor": "prehistoric",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "animal-products",
+        "material",
+        "workshop"
+      ],
+      "path": "/tech/leather/",
+      "source_file": "content/tech/leather.md",
+      "confidence": {
+        "practicality": 0.64,
+        "historical_plausibility": 0.8,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; tanning history and regional claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "lever",
       "title": "Lever",
       "aliases": [
@@ -365,6 +915,46 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; historical and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "measuring-rod",
+      "title": "Measuring rod",
+      "aliases": [
+        "marked rod",
+        "rule"
+      ],
+      "node_type": "measurement",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A stable marked length standard used to transfer dimensions, compare parts, lay out work, and teach repeatable construction.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "hours",
+      "tags": [
+        "measurement",
+        "standards",
+        "workshop"
+      ],
+      "path": "/tech/measuring-rod/",
+      "source_file": "content/tech/measuring-rod.md",
+      "confidence": {
+        "practicality": 0.82,
+        "historical_plausibility": 0.84,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; metrology history and unit claims need human source review."
         ]
       }
     },
@@ -442,6 +1032,45 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; historical bearing materials and chronology need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "plumb-line",
+      "title": "Plumb line",
+      "aliases": [
+        "plummet"
+      ],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A cord and weight used to find vertical, align posts, check walls, mark centers, and teach gravity-based reference lines.",
+      "era_floor": "prehistoric_to_ancient",
+      "difficulty": "trivial",
+      "precision_required": "medium",
+      "time_to_first_working_version": "minutes",
+      "tags": [
+        "construction",
+        "measurement",
+        "tool"
+      ],
+      "path": "/tech/plumb-line/",
+      "source_file": "content/tech/plumb-line.md",
+      "confidence": {
+        "practicality": 0.9,
+        "historical_plausibility": 0.88,
+        "completeness": 0.56
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; historical use claims need human source review."
         ]
       }
     },
@@ -642,6 +1271,45 @@
       }
     },
     {
+      "slug": "spindle",
+      "title": "Spindle",
+      "aliases": [
+        "drop spindle"
+      ],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A rotating shaft and optional whorl used to twist fiber into thread or yarn for cordage, weaving, stitching, and bindings.",
+      "era_floor": "neolithic_to_ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "fiber",
+        "textile",
+        "tool"
+      ],
+      "path": "/tech/spindle/",
+      "source_file": "content/tech/spindle.md",
+      "confidence": {
+        "practicality": 0.74,
+        "historical_plausibility": 0.84,
+        "completeness": 0.55
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; textile-tool chronology and material claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "spoked-wheel",
       "title": "Spoked wheel",
       "aliases": [
@@ -717,6 +1385,45 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; metrology history needs human source review."
+        ]
+      }
+    },
+    {
+      "slug": "stone-hammer",
+      "title": "Stone hammer",
+      "aliases": [
+        "hammerstone"
+      ],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A selected stone used to strike, break, peen, wedge, crush, rough-shape, and test materials before specialized metal hammers exist.",
+      "era_floor": "prehistoric",
+      "difficulty": "trivial",
+      "precision_required": "low",
+      "time_to_first_working_version": "minutes",
+      "tags": [
+        "stone",
+        "tool",
+        "workshop"
+      ],
+      "path": "/tech/stone-hammer/",
+      "source_file": "content/tech/stone-hammer.md",
+      "confidence": {
+        "practicality": 0.88,
+        "historical_plausibility": 0.9,
+        "completeness": 0.55
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; lithic and regional claims need human source review."
         ]
       }
     },
@@ -799,6 +1506,240 @@
       }
     },
     {
+      "slug": "timber",
+      "title": "Timber",
+      "aliases": [
+        "lumber",
+        "wood"
+      ],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Felled and selected wood prepared as a structural material for frames, handles, axles, wheels, benches, jigs, and buildings.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "material",
+        "supply-chain",
+        "woodworking"
+      ],
+      "path": "/tech/timber/",
+      "source_file": "content/tech/timber.md",
+      "confidence": {
+        "practicality": 0.8,
+        "historical_plausibility": 0.86,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; local species and historical forestry claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "timber-seasoning",
+      "title": "Timber seasoning",
+      "aliases": [
+        "wood seasoning"
+      ],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "The controlled drying and sorting of timber so wooden parts shrink less, warp less, and hold joints more predictably.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "material-processing",
+        "quality-control",
+        "woodworking"
+      ],
+      "path": "/tech/timber-seasoning/",
+      "source_file": "content/tech/timber-seasoning.md",
+      "confidence": {
+        "practicality": 0.78,
+        "historical_plausibility": 0.82,
+        "completeness": 0.57
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; timber behavior and regional species claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "try-square",
+      "title": "Try-square",
+      "aliases": [
+        "carpenter square",
+        "square"
+      ],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A right-angle checking and marking tool used to make frames, boxes, wheels, benches, and drawings more repeatable.",
+      "era_floor": "ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "measurement",
+        "tool",
+        "woodworking"
+      ],
+      "path": "/tech/try-square/",
+      "source_file": "content/tech/try-square.md",
+      "confidence": {
+        "practicality": 0.76,
+        "historical_plausibility": 0.78,
+        "completeness": 0.55
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; tool history claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "water",
+      "title": "Water",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "The workshop supply chain for finding, carrying, settling, storing, and judging usable water for clay, ink, paper, glue, washing, and tests.",
+      "era_floor": "prehistoric",
+      "difficulty": "basic",
+      "precision_required": "low",
+      "time_to_first_working_version": "hours",
+      "tags": [
+        "material",
+        "supply-chain",
+        "workshop"
+      ],
+      "path": "/tech/water/",
+      "source_file": "content/tech/water.md",
+      "confidence": {
+        "practicality": 0.82,
+        "historical_plausibility": 0.86,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; hydrology, health, and regional availability claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "water-settling-test",
+      "title": "Water settling test",
+      "aliases": [
+        "settling jar test"
+      ],
+      "node_type": "test",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A simple separation and recognition test that uses water and time to compare clay, silt, sand, grit, fiber, and other suspended solids.",
+      "era_floor": "prehistoric",
+      "difficulty": "trivial",
+      "precision_required": "low",
+      "time_to_first_working_version": "hours",
+      "tags": [
+        "materials",
+        "quality-control",
+        "test"
+      ],
+      "path": "/tech/water-settling-test/",
+      "source_file": "content/tech/water-settling-test.md",
+      "confidence": {
+        "practicality": 0.84,
+        "historical_plausibility": 0.84,
+        "completeness": 0.6
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; sediment classification claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "weaving",
+      "title": "Weaving",
+      "aliases": [
+        "textile weaving"
+      ],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "The organized interlacing of thread, yarn, fiber, or strips into cloth, straps, screens, bags, belts, and technical fabrics.",
+      "era_floor": "neolithic_to_ancient",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "fiber",
+        "process",
+        "textile"
+      ],
+      "path": "/tech/weaving/",
+      "source_file": "content/tech/weaving.md",
+      "confidence": {
+        "practicality": 0.66,
+        "historical_plausibility": 0.82,
+        "completeness": 0.52
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; textile history and regional claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "wheel-and-axle",
       "title": "Wheel and axle",
       "aliases": [
@@ -872,6 +1813,46 @@
       }
     },
     {
+      "slug": "workshop-records",
+      "title": "Workshop records",
+      "aliases": [
+        "batch records",
+        "shop records"
+      ],
+      "node_type": "institution",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A recordkeeping practice for batches, sources, tests, tools, dimensions, failures, and trusted procedures.",
+      "era_floor": "ancient",
+      "difficulty": "basic",
+      "precision_required": "medium",
+      "time_to_first_working_version": "hours_to_days",
+      "tags": [
+        "quality-control",
+        "records",
+        "social-technology"
+      ],
+      "path": "/tech/workshop-records/",
+      "source_file": "content/tech/workshop-records.md",
+      "confidence": {
+        "practicality": 0.74,
+        "historical_plausibility": 0.8,
+        "completeness": 0.56
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 manual content expansion",
+        "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; administrative and historical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "writing",
       "title": "Writing",
       "aliases": [
@@ -912,6 +1893,42 @@
     }
   ],
   "edges": [
+    {
+      "from": "abrasive-grit",
+      "to": "bone-and-antler",
+      "kind": "tooling",
+      "role": "Abrasion shapes and smooths hard animal materials.",
+      "source": "prerequisite",
+      "declared_in": "bone-and-antler",
+      "title": "Abrasive grit"
+    },
+    {
+      "from": "abrasive-grit",
+      "to": "cutting-edge",
+      "kind": "material_source",
+      "role": "Abrasives grind, smooth, and refresh edges.",
+      "source": "prerequisite",
+      "declared_in": "cutting-edge",
+      "title": "Abrasive grit"
+    },
+    {
+      "from": "abrasive-grit",
+      "to": "cutting-edge",
+      "kind": "material_source",
+      "role": "Grit helps grind and refresh simple cutting edges.",
+      "source": "unlock",
+      "declared_in": "abrasive-grit",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "abrasive-grit",
+      "to": "woodworking",
+      "kind": "material_source",
+      "role": "Abrasives smooth tool handles, joints, and bearing surfaces.",
+      "source": "unlock",
+      "declared_in": "abrasive-grit",
+      "title": "Woodworking"
+    },
     {
       "from": "alignment-checking",
       "to": "bicycle",
@@ -967,6 +1984,69 @@
       "title": "Alignment checking"
     },
     {
+      "from": "apprenticeship",
+      "to": "kiln",
+      "kind": "institutional",
+      "role": "Firing discipline and hazard control depend on trained practice.",
+      "source": "unlock",
+      "declared_in": "apprenticeship",
+      "title": "Kiln"
+    },
+    {
+      "from": "apprenticeship",
+      "to": "standard-weights",
+      "kind": "institutional",
+      "role": "Shared standards require trained habits and enforcement.",
+      "source": "unlock",
+      "declared_in": "apprenticeship",
+      "title": "Standard weights"
+    },
+    {
+      "from": "apprenticeship",
+      "to": "woodworking",
+      "kind": "institutional",
+      "role": "Repeated craft work improves when skills are taught systematically.",
+      "source": "unlock",
+      "declared_in": "apprenticeship",
+      "title": "Woodworking"
+    },
+    {
+      "from": "basketry",
+      "to": "clay",
+      "kind": "tooling",
+      "role": "Baskets carry clay, temper, and fired scrap.",
+      "source": "unlock",
+      "declared_in": "basketry",
+      "title": "Clay"
+    },
+    {
+      "from": "basketry",
+      "to": "paper",
+      "kind": "tooling",
+      "role": "Baskets and screens support fiber handling and drainage.",
+      "source": "unlock",
+      "declared_in": "basketry",
+      "title": "Paper"
+    },
+    {
+      "from": "bone-and-antler",
+      "to": "cutting-edge",
+      "kind": "material_source",
+      "role": "Bone and antler can make scrapers, points, wedges, and handles.",
+      "source": "unlock",
+      "declared_in": "bone-and-antler",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "bone-and-antler",
+      "to": "hand-drill",
+      "kind": "material_source",
+      "role": "Bone and antler can make small bits, sockets, or bearing pieces.",
+      "source": "unlock",
+      "declared_in": "bone-and-antler",
+      "title": "Hand drill"
+    },
+    {
       "from": "cart",
       "to": "bicycle",
       "kind": "soft",
@@ -974,6 +2054,15 @@
       "source": "unlock",
       "declared_in": "cart",
       "title": "Bicycle"
+    },
+    {
+      "from": "ceramic-temper",
+      "to": "potters-wheel",
+      "kind": "material_source",
+      "role": "Better clay bodies support repeatable wheel-thrown or turned forms.",
+      "source": "unlock",
+      "declared_in": "ceramic-temper",
+      "title": "Potter's wheel"
     },
     {
       "from": "charcoal",
@@ -1013,11 +2102,38 @@
     },
     {
       "from": "clay",
+      "to": "ceramic-temper",
+      "kind": "material_source",
+      "role": "Temper is selected relative to a clay body.",
+      "source": "prerequisite",
+      "declared_in": "ceramic-temper",
+      "title": "Clay"
+    },
+    {
+      "from": "clay",
       "to": "charcoal",
       "kind": "optional",
       "role": "Clay-rich earth can help seal a mound or pit.",
       "source": "prerequisite",
       "declared_in": "charcoal",
+      "title": "Clay"
+    },
+    {
+      "from": "clay",
+      "to": "grog",
+      "kind": "material_source",
+      "role": "Grog comes from fired clay or ceramic waste.",
+      "source": "prerequisite",
+      "declared_in": "grog",
+      "title": "Clay"
+    },
+    {
+      "from": "clay",
+      "to": "kiln-firing-test",
+      "kind": "material_source",
+      "role": "Clay samples are the tested material.",
+      "source": "prerequisite",
+      "declared_in": "kiln-firing-test",
       "title": "Clay"
     },
     {
@@ -1057,12 +2173,75 @@
       "title": "Writing"
     },
     {
+      "from": "cordage-fiber",
+      "to": "basketry",
+      "kind": "material_source",
+      "role": "Basketry needs flexible fibers, splints, stems, or roots.",
+      "source": "prerequisite",
+      "declared_in": "basketry",
+      "title": "Cordage fiber"
+    },
+    {
+      "from": "cordage-fiber",
+      "to": "basketry",
+      "kind": "material_source",
+      "role": "Basketry can use long fibers, splints, and flexible stems.",
+      "source": "unlock",
+      "declared_in": "cordage-fiber",
+      "title": "Basketry"
+    },
+    {
+      "from": "cordage-fiber",
+      "to": "flax-fiber",
+      "kind": "knowledge",
+      "role": "General fiber recognition and testing come before specializing in flax.",
+      "source": "prerequisite",
+      "declared_in": "flax-fiber",
+      "title": "Cordage fiber"
+    },
+    {
+      "from": "cordage-fiber",
+      "to": "rope-making",
+      "kind": "material_source",
+      "role": "Rope making begins with sorted fiber.",
+      "source": "unlock",
+      "declared_in": "cordage-fiber",
+      "title": "Rope making"
+    },
+    {
+      "from": "cordage-fiber",
+      "to": "rope",
+      "kind": "material_source",
+      "role": "Rope requires twistable fibers.",
+      "source": "unlock",
+      "declared_in": "cordage-fiber",
+      "title": "Rope"
+    },
+    {
+      "from": "cordage-fiber",
+      "to": "spindle",
+      "kind": "material_source",
+      "role": "Spindles need prepared fiber to be useful.",
+      "source": "prerequisite",
+      "declared_in": "spindle",
+      "title": "Cordage fiber"
+    },
+    {
       "from": "counting",
       "to": "alignment-checking",
       "kind": "knowledge",
       "role": "Repeated marks, comparisons, and records benefit from number.",
       "source": "prerequisite",
       "declared_in": "alignment-checking",
+      "title": "Counting"
+    },
+    {
+      "from": "counting",
+      "to": "measuring-rod",
+      "kind": "knowledge",
+      "role": "Marks become more useful when counts and named divisions are shared.",
+      "source": "prerequisite",
+      "declared_in": "measuring-rod",
       "title": "Counting"
     },
     {
@@ -1121,6 +2300,24 @@
     },
     {
       "from": "counting",
+      "to": "timber-seasoning",
+      "kind": "knowledge",
+      "role": "Batches and waiting periods must be tracked.",
+      "source": "prerequisite",
+      "declared_in": "timber-seasoning",
+      "title": "Counting"
+    },
+    {
+      "from": "counting",
+      "to": "workshop-records",
+      "kind": "knowledge",
+      "role": "Batches, measures, and comparisons need counting.",
+      "source": "prerequisite",
+      "declared_in": "workshop-records",
+      "title": "Counting"
+    },
+    {
+      "from": "counting",
       "to": "writing",
       "kind": "knowledge",
       "role": "Numbers and tallies are the easiest bridge into records.",
@@ -1138,6 +2335,78 @@
       "title": "Writing"
     },
     {
+      "from": "cutting-edge",
+      "to": "cordage-fiber",
+      "kind": "tooling",
+      "role": "Cutting tools help harvest and clean fibrous plants or hides.",
+      "source": "prerequisite",
+      "declared_in": "cordage-fiber",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "hand-drill",
+      "kind": "tooling",
+      "role": "Drill points and scrapers require controlled edges.",
+      "source": "prerequisite",
+      "declared_in": "hand-drill",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "leather",
+      "kind": "tooling",
+      "role": "Scraping and trimming hides require effective edges.",
+      "source": "prerequisite",
+      "declared_in": "leather",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "leather",
+      "kind": "tooling",
+      "role": "Hide work needs scraping, trimming, and piercing.",
+      "source": "unlock",
+      "declared_in": "cutting-edge",
+      "title": "Leather"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "rope-making",
+      "kind": "tooling",
+      "role": "Fiber harvest and preparation often require cutting and scraping.",
+      "source": "unlock",
+      "declared_in": "cutting-edge",
+      "title": "Rope making"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "timber",
+      "kind": "tooling",
+      "role": "Edged tools make timber conversion faster, cleaner, and safer.",
+      "source": "prerequisite",
+      "declared_in": "timber",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "try-square",
+      "kind": "tooling",
+      "role": "Cutting and scraping tools shape the reference arms.",
+      "source": "prerequisite",
+      "declared_in": "try-square",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "woodworking",
+      "kind": "tooling",
+      "role": "Woodworking requires cutting, scraping, boring, or marking edges.",
+      "source": "unlock",
+      "declared_in": "cutting-edge",
+      "title": "Woodworking"
+    },
+    {
       "from": "firekeeping",
       "to": "charcoal",
       "kind": "hard",
@@ -1145,6 +2414,132 @@
       "source": "prerequisite",
       "declared_in": "charcoal",
       "title": "Firekeeping"
+    },
+    {
+      "from": "firekeeping",
+      "to": "charcoal",
+      "kind": "hard",
+      "role": "Charcoal production requires watched, controlled fire.",
+      "source": "unlock",
+      "declared_in": "firekeeping",
+      "title": "Charcoal"
+    },
+    {
+      "from": "firekeeping",
+      "to": "hide-glue",
+      "kind": "hard",
+      "role": "Gentle controlled heat is needed without burning the batch.",
+      "source": "prerequisite",
+      "declared_in": "hide-glue",
+      "title": "Firekeeping"
+    },
+    {
+      "from": "firekeeping",
+      "to": "hide-glue",
+      "kind": "tooling",
+      "role": "Glue extraction and use need gentle heat control.",
+      "source": "unlock",
+      "declared_in": "firekeeping",
+      "title": "Hide glue"
+    },
+    {
+      "from": "firekeeping",
+      "to": "kiln",
+      "kind": "hard",
+      "role": "Kilns depend on fire tending and hazard control.",
+      "source": "unlock",
+      "declared_in": "firekeeping",
+      "title": "Kiln"
+    },
+    {
+      "from": "flax-fiber",
+      "to": "spindle",
+      "kind": "material_source",
+      "role": "Flax can be spun into finer continuous thread.",
+      "source": "unlock",
+      "declared_in": "flax-fiber",
+      "title": "Spindle"
+    },
+    {
+      "from": "flax-fiber",
+      "to": "weaving",
+      "kind": "material_source",
+      "role": "Prepared fiber can be spun or twisted into weaveable thread.",
+      "source": "prerequisite",
+      "declared_in": "weaving",
+      "title": "Flax fiber"
+    },
+    {
+      "from": "flax-fiber",
+      "to": "weaving",
+      "kind": "material_source",
+      "role": "Prepared flax supports linen thread and woven cloth.",
+      "source": "unlock",
+      "declared_in": "flax-fiber",
+      "title": "Weaving"
+    },
+    {
+      "from": "grog",
+      "to": "ceramic-temper",
+      "kind": "material_source",
+      "role": "Grog is a common temper candidate.",
+      "source": "unlock",
+      "declared_in": "grog",
+      "title": "Ceramic temper"
+    },
+    {
+      "from": "hand-drill",
+      "to": "plain-bearing",
+      "kind": "tooling",
+      "role": "Bearing housings and pins need controllable holes.",
+      "source": "unlock",
+      "declared_in": "hand-drill",
+      "title": "Plain bearing"
+    },
+    {
+      "from": "hand-drill",
+      "to": "spindle",
+      "kind": "tooling",
+      "role": "Drilling helps make balanced whorls and sockets.",
+      "source": "prerequisite",
+      "declared_in": "spindle",
+      "title": "Hand drill"
+    },
+    {
+      "from": "hand-drill",
+      "to": "spindle",
+      "kind": "tooling",
+      "role": "Spindle whorls, sockets, and shafts benefit from bored holes.",
+      "source": "unlock",
+      "declared_in": "hand-drill",
+      "title": "Spindle"
+    },
+    {
+      "from": "hand-drill",
+      "to": "woodworking",
+      "kind": "tooling",
+      "role": "Holes improve pegs, lashings, axles, fixtures, and joinery.",
+      "source": "unlock",
+      "declared_in": "hand-drill",
+      "title": "Woodworking"
+    },
+    {
+      "from": "hide-glue",
+      "to": "paper",
+      "kind": "material_source",
+      "role": "Glue can size sheets or support bindings where appropriate.",
+      "source": "unlock",
+      "declared_in": "hide-glue",
+      "title": "Paper"
+    },
+    {
+      "from": "hide-glue",
+      "to": "woodworking",
+      "kind": "material_source",
+      "role": "Glue expands joinery, veneer, repair, and jig options.",
+      "source": "unlock",
+      "declared_in": "hide-glue",
+      "title": "Woodworking"
     },
     {
       "from": "ink",
@@ -1165,6 +2560,33 @@
       "title": "Technical drawing"
     },
     {
+      "from": "kiln-firing-test",
+      "to": "ceramic-temper",
+      "kind": "test",
+      "role": "Temper choices need firing comparison.",
+      "source": "unlock",
+      "declared_in": "kiln-firing-test",
+      "title": "Ceramic temper"
+    },
+    {
+      "from": "kiln-firing-test",
+      "to": "grog",
+      "kind": "test",
+      "role": "Fired samples reveal whether crushed material behaves well in a new body.",
+      "source": "prerequisite",
+      "declared_in": "grog",
+      "title": "Kiln firing test"
+    },
+    {
+      "from": "kiln-firing-test",
+      "to": "grog",
+      "kind": "test",
+      "role": "Crushed fired clay is judged by how it behaves in new clay.",
+      "source": "unlock",
+      "declared_in": "kiln-firing-test",
+      "title": "Grog"
+    },
+    {
       "from": "kiln",
       "to": "ink",
       "kind": "optional",
@@ -1175,12 +2597,48 @@
     },
     {
       "from": "kiln",
+      "to": "kiln-firing-test",
+      "kind": "tooling",
+      "role": "A kiln or controlled firing structure is the test environment.",
+      "source": "prerequisite",
+      "declared_in": "kiln-firing-test",
+      "title": "Kiln"
+    },
+    {
+      "from": "kiln",
       "to": "paper",
       "kind": "optional",
       "role": "Kiln-dried ash or lime processing may support later workshop chemistry, though paper does not require a kiln.",
       "source": "unlock",
       "declared_in": "kiln",
       "title": "Paper"
+    },
+    {
+      "from": "leather",
+      "to": "bicycle",
+      "kind": "material_source",
+      "role": "Leather can supply seats, straps, pads, and flexible joints in early builds.",
+      "source": "unlock",
+      "declared_in": "leather",
+      "title": "Bicycle"
+    },
+    {
+      "from": "leather",
+      "to": "plain-bearing",
+      "kind": "material_source",
+      "role": "Leather can serve as a liner, seal, washer, or low-speed bearing surface.",
+      "source": "unlock",
+      "declared_in": "leather",
+      "title": "Plain bearing"
+    },
+    {
+      "from": "leather",
+      "to": "pulley",
+      "kind": "material_source",
+      "role": "Leather straps and pads help with belts, slings, and wear surfaces.",
+      "source": "unlock",
+      "declared_in": "leather",
+      "title": "Pulley"
     },
     {
       "from": "lever",
@@ -1246,6 +2704,42 @@
       "title": "Wheel and axle"
     },
     {
+      "from": "measuring-rod",
+      "to": "standard-weights",
+      "kind": "measurement",
+      "role": "Shared measures support wider standardization habits.",
+      "source": "unlock",
+      "declared_in": "measuring-rod",
+      "title": "Standard weights"
+    },
+    {
+      "from": "measuring-rod",
+      "to": "technical-drawing",
+      "kind": "measurement",
+      "role": "Drawings need transferred dimensions.",
+      "source": "unlock",
+      "declared_in": "measuring-rod",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "measuring-rod",
+      "to": "try-square",
+      "kind": "measurement",
+      "role": "Reliable lengths and marks support square layout.",
+      "source": "prerequisite",
+      "declared_in": "try-square",
+      "title": "Measuring rod"
+    },
+    {
+      "from": "measuring-rod",
+      "to": "try-square",
+      "kind": "measurement",
+      "role": "A square needs stable reference lengths and layout marks.",
+      "source": "unlock",
+      "declared_in": "measuring-rod",
+      "title": "Try-square"
+    },
+    {
       "from": "paper",
       "to": "ink",
       "kind": "optional",
@@ -1309,6 +2803,24 @@
       "title": "Plain bearing"
     },
     {
+      "from": "plumb-line",
+      "to": "alignment-checking",
+      "kind": "measurement",
+      "role": "Plumb lines are direct alignment tools.",
+      "source": "unlock",
+      "declared_in": "plumb-line",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "plumb-line",
+      "to": "technical-drawing",
+      "kind": "measurement",
+      "role": "Vertical reference lines support layout and teaching.",
+      "source": "unlock",
+      "declared_in": "plumb-line",
+      "title": "Technical drawing"
+    },
+    {
       "from": "pulley",
       "to": "simple-pump",
       "kind": "optional",
@@ -1351,6 +2863,15 @@
       "role": "Cordage and rag fibers teach fiber preparation and can become feedstock.",
       "source": "prerequisite",
       "declared_in": "paper",
+      "title": "Rope"
+    },
+    {
+      "from": "rope",
+      "to": "plumb-line",
+      "kind": "material_source",
+      "role": "A flexible line is the main component.",
+      "source": "prerequisite",
+      "declared_in": "plumb-line",
       "title": "Rope"
     },
     {
@@ -1399,6 +2920,33 @@
       "title": "Paper"
     },
     {
+      "from": "spindle",
+      "to": "rope-making",
+      "kind": "tooling",
+      "role": "Spinning habits improve twist control for small cordage.",
+      "source": "unlock",
+      "declared_in": "spindle",
+      "title": "Rope making"
+    },
+    {
+      "from": "spindle",
+      "to": "weaving",
+      "kind": "tooling",
+      "role": "Spindles help make longer, more even thread.",
+      "source": "prerequisite",
+      "declared_in": "weaving",
+      "title": "Spindle"
+    },
+    {
+      "from": "spindle",
+      "to": "weaving",
+      "kind": "tooling",
+      "role": "Spindles produce longer thread for woven textiles.",
+      "source": "unlock",
+      "declared_in": "spindle",
+      "title": "Weaving"
+    },
+    {
       "from": "spoked-wheel",
       "to": "bicycle",
       "kind": "enables",
@@ -1436,6 +2984,15 @@
     },
     {
       "from": "standard-weights",
+      "to": "plumb-line",
+      "kind": "optional",
+      "role": "Standardized weights improve repeatability, though any compact weight can work.",
+      "source": "prerequisite",
+      "declared_in": "plumb-line",
+      "title": "Standard weights"
+    },
+    {
+      "from": "standard-weights",
       "to": "technical-drawing",
       "kind": "measurement",
       "role": "Weights support scale, material callouts, and quality records.",
@@ -1469,6 +3026,51 @@
       "source": "unlock",
       "declared_in": "standard-weights",
       "title": "Tensile test"
+    },
+    {
+      "from": "stone-hammer",
+      "to": "clay",
+      "kind": "tooling",
+      "role": "Crushing and mixing temper or dried clay benefits from striking tools.",
+      "source": "unlock",
+      "declared_in": "stone-hammer",
+      "title": "Clay"
+    },
+    {
+      "from": "stone-hammer",
+      "to": "cutting-edge",
+      "kind": "tooling",
+      "role": "Striking tools help make and renew simple edges.",
+      "source": "prerequisite",
+      "declared_in": "cutting-edge",
+      "title": "Stone hammer"
+    },
+    {
+      "from": "stone-hammer",
+      "to": "cutting-edge",
+      "kind": "tooling",
+      "role": "Hammerstones help shape and refresh simple stone or bone edges.",
+      "source": "unlock",
+      "declared_in": "stone-hammer",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "stone-hammer",
+      "to": "hand-drill",
+      "kind": "tooling",
+      "role": "Rough parts and sockets can be shaped by striking and abrasion.",
+      "source": "prerequisite",
+      "declared_in": "hand-drill",
+      "title": "Stone hammer"
+    },
+    {
+      "from": "stone-hammer",
+      "to": "hand-drill",
+      "kind": "tooling",
+      "role": "Hammerstones help make rough drill parts and sockets.",
+      "source": "unlock",
+      "declared_in": "stone-hammer",
+      "title": "Hand drill"
     },
     {
       "from": "technical-drawing",
@@ -1570,6 +3172,105 @@
       "title": "Tensile test"
     },
     {
+      "from": "timber-seasoning",
+      "to": "cart",
+      "kind": "material_source",
+      "role": "Stable timber reduces twisting in vehicle frames and axle supports.",
+      "source": "unlock",
+      "declared_in": "timber-seasoning",
+      "title": "Cart"
+    },
+    {
+      "from": "timber-seasoning",
+      "to": "woodworking",
+      "kind": "material_source",
+      "role": "Seasoned stock improves joinery, wheels, handles, and frames.",
+      "source": "unlock",
+      "declared_in": "timber-seasoning",
+      "title": "Woodworking"
+    },
+    {
+      "from": "timber",
+      "to": "timber-seasoning",
+      "kind": "material_source",
+      "role": "Seasoning begins with suitable wood stock.",
+      "source": "prerequisite",
+      "declared_in": "timber-seasoning",
+      "title": "Timber"
+    },
+    {
+      "from": "timber",
+      "to": "timber-seasoning",
+      "kind": "material_source",
+      "role": "Seasoning starts with timber selected for grain, size, and defects.",
+      "source": "unlock",
+      "declared_in": "timber",
+      "title": "Timber seasoning"
+    },
+    {
+      "from": "timber",
+      "to": "woodworking",
+      "kind": "material_source",
+      "role": "Woodworking depends on selected, sound, workable wood.",
+      "source": "unlock",
+      "declared_in": "timber",
+      "title": "Woodworking"
+    },
+    {
+      "from": "try-square",
+      "to": "alignment-checking",
+      "kind": "measurement",
+      "role": "Squares check whether assemblies remain true.",
+      "source": "unlock",
+      "declared_in": "try-square",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "try-square",
+      "to": "technical-drawing",
+      "kind": "measurement",
+      "role": "Right-angle tools make drawings and templates more dependable.",
+      "source": "unlock",
+      "declared_in": "try-square",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "water-settling-test",
+      "to": "abrasive-grit",
+      "kind": "test",
+      "role": "Settling and washing help sort grit by size and remove clay or silt.",
+      "source": "prerequisite",
+      "declared_in": "abrasive-grit",
+      "title": "Water settling test"
+    },
+    {
+      "from": "water-settling-test",
+      "to": "abrasive-grit",
+      "kind": "test",
+      "role": "Settling helps remove mud and sort grit by size.",
+      "source": "unlock",
+      "declared_in": "water-settling-test",
+      "title": "Abrasive grit"
+    },
+    {
+      "from": "water-settling-test",
+      "to": "ceramic-temper",
+      "kind": "test",
+      "role": "Settling helps sort and compare fine additions.",
+      "source": "prerequisite",
+      "declared_in": "ceramic-temper",
+      "title": "Water settling test"
+    },
+    {
+      "from": "water-settling-test",
+      "to": "ceramic-temper",
+      "kind": "test",
+      "role": "Settling helps compare sand, grog, and other additions.",
+      "source": "unlock",
+      "declared_in": "water-settling-test",
+      "title": "Ceramic temper"
+    },
+    {
       "from": "water-settling-test",
       "to": "clay",
       "kind": "test",
@@ -1580,12 +3281,102 @@
     },
     {
       "from": "water-settling-test",
+      "to": "clay",
+      "kind": "test",
+      "role": "Settling helps identify and refine clay-rich sediment.",
+      "source": "unlock",
+      "declared_in": "water-settling-test",
+      "title": "Clay"
+    },
+    {
+      "from": "water-settling-test",
       "to": "paper",
       "kind": "test",
       "role": "Helps separate pulp quality and grit.",
       "source": "prerequisite",
       "declared_in": "paper",
       "title": "Water settling test"
+    },
+    {
+      "from": "water",
+      "to": "clay",
+      "kind": "material_source",
+      "role": "Clay processing needs water for slaking, settling, forming, and tests.",
+      "source": "unlock",
+      "declared_in": "water",
+      "title": "Clay"
+    },
+    {
+      "from": "water",
+      "to": "firekeeping",
+      "kind": "safety",
+      "role": "Water or wet material helps control accidental spread where available.",
+      "source": "prerequisite",
+      "declared_in": "firekeeping",
+      "title": "Water"
+    },
+    {
+      "from": "water",
+      "to": "hide-glue",
+      "kind": "material_source",
+      "role": "Glue extraction, cleaning, and use all depend on water.",
+      "source": "prerequisite",
+      "declared_in": "hide-glue",
+      "title": "Water"
+    },
+    {
+      "from": "water",
+      "to": "ink",
+      "kind": "material_source",
+      "role": "Many inks need water for extraction, dispersion, or tool cleaning.",
+      "source": "unlock",
+      "declared_in": "water",
+      "title": "Ink"
+    },
+    {
+      "from": "water",
+      "to": "paper",
+      "kind": "material_source",
+      "role": "Paper making depends on soaking, washing, pulping, and sheet forming.",
+      "source": "unlock",
+      "declared_in": "water",
+      "title": "Paper"
+    },
+    {
+      "from": "water",
+      "to": "water-settling-test",
+      "kind": "material_source",
+      "role": "Water is the separating medium.",
+      "source": "prerequisite",
+      "declared_in": "water-settling-test",
+      "title": "Water"
+    },
+    {
+      "from": "water",
+      "to": "water-settling-test",
+      "kind": "material_source",
+      "role": "Settling tests need clear vessels and water as the separating medium.",
+      "source": "unlock",
+      "declared_in": "water",
+      "title": "Water settling test"
+    },
+    {
+      "from": "weaving",
+      "to": "bicycle",
+      "kind": "material_source",
+      "role": "Woven straps, pads, and tension members can support early prototypes.",
+      "source": "unlock",
+      "declared_in": "weaving",
+      "title": "Bicycle"
+    },
+    {
+      "from": "weaving",
+      "to": "leather",
+      "kind": "alternative",
+      "role": "Woven straps and cloth can replace leather in some low-wear uses.",
+      "source": "unlock",
+      "declared_in": "weaving",
+      "title": "Leather"
     },
     {
       "from": "wheel-and-axle",
@@ -1750,6 +3541,42 @@
       "title": "Wheel and axle"
     },
     {
+      "from": "workshop-records",
+      "to": "apprenticeship",
+      "kind": "knowledge",
+      "role": "Records help turn teaching into repeatable curriculum.",
+      "source": "unlock",
+      "declared_in": "workshop-records",
+      "title": "Apprenticeship"
+    },
+    {
+      "from": "workshop-records",
+      "to": "apprenticeship",
+      "kind": "optional",
+      "role": "Written or mnemonic records strengthen training but are not mandatory.",
+      "source": "prerequisite",
+      "declared_in": "apprenticeship",
+      "title": "Workshop records"
+    },
+    {
+      "from": "workshop-records",
+      "to": "standard-weights",
+      "kind": "institutional",
+      "role": "Standards need records of masters, copies, and checks.",
+      "source": "unlock",
+      "declared_in": "workshop-records",
+      "title": "Standard weights"
+    },
+    {
+      "from": "workshop-records",
+      "to": "technical-drawing",
+      "kind": "institutional",
+      "role": "Drawing archives depend on storage and retrieval habits.",
+      "source": "unlock",
+      "declared_in": "workshop-records",
+      "title": "Technical drawing"
+    },
+    {
       "from": "writing",
       "to": "ink",
       "kind": "institutional",
@@ -1811,20 +3638,18 @@
       "source": "prerequisite",
       "declared_in": "technical-drawing",
       "title": "Writing"
+    },
+    {
+      "from": "writing",
+      "to": "workshop-records",
+      "kind": "knowledge",
+      "role": "Durable records require a writing system or equivalent marks.",
+      "source": "prerequisite",
+      "declared_in": "workshop-records",
+      "title": "Writing"
     }
   ],
   "missing_nodes": [
-    {
-      "slug": "firekeeping",
-      "title": "Firekeeping",
-      "referenced_by": [
-        "charcoal"
-      ],
-      "reference_types": [
-        "declared_missing_prerequisite",
-        "edge:prerequisite:hard"
-      ]
-    },
     {
       "slug": "simple-pump",
       "title": "Simple pump",
@@ -1835,42 +3660,12 @@
         "declared_missing_prerequisite",
         "edge:unlock:optional"
       ]
-    },
-    {
-      "slug": "water-settling-test",
-      "title": "Water settling test",
-      "referenced_by": [
-        "clay",
-        "paper"
-      ],
-      "reference_types": [
-        "declared_missing_prerequisite",
-        "edge:prerequisite:test"
-      ]
     }
   ],
   "diagnostics": [
     {
       "severity": "warning",
       "message": "Accepted co-evolutionary graph cycle: ink -> paper -> ink."
-    },
-    {
-      "severity": "warning",
-      "file": "content/tech/charcoal.md",
-      "slug": "charcoal",
-      "message": "Graph reference \"firekeeping\" has no page."
-    },
-    {
-      "severity": "warning",
-      "file": "content/tech/clay.md",
-      "slug": "clay",
-      "message": "Graph reference \"water-settling-test\" has no page."
-    },
-    {
-      "severity": "warning",
-      "file": "content/tech/paper.md",
-      "slug": "paper",
-      "message": "Graph reference \"water-settling-test\" has no page."
     },
     {
       "severity": "warning",
