@@ -86,9 +86,68 @@ main {
 
 .site-footer {
   margin-top: 72px;
-  padding: 26px 0 36px;
+  padding: 32px 0 40px;
   border-top: 1px solid var(--rule);
   color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.site-footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) repeat(2, minmax(0, 1fr));
+  gap: 28px 40px;
+}
+
+.site-footer-about p {
+  margin: 12px 0 0;
+  max-width: 44ch;
+}
+
+.site-footer .brand {
+  font-size: 1.05rem;
+}
+
+.site-footer-nav h2 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.site-footer-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.site-footer-meta {
+  margin: 28px 0 0;
+  padding-top: 18px;
+  border-top: 1px dashed var(--rule);
+  max-width: 70ch;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 720px) {
+  .site-footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .site-footer-about {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-footer-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .home-hero,

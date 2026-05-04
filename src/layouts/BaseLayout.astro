@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { githubRepositoryUrl, pageRequestUrl } from "@lib/wiki";
 
 interface Props {
   title: string;
@@ -55,7 +56,43 @@ const absoluteImageUrl = image ? new URL(image, Astro.site ?? Astro.url).toStrin
       <slot />
     </main>
     <footer class="site-footer">
-      <p>Static GitHub-backed wiki. Page requests use GitHub Issues; edits use GitHub PRs.</p>
+      <div class="site-footer-grid">
+        <div class="site-footer-about">
+          <a class="brand" href="/" aria-label="Anachronist Wiki home">
+            <span class="brand-mark">AW</span>
+            <span>Anachronist Wiki</span>
+          </a>
+          <p>
+            A static field manual for rebuilding useful technologies from earlier
+            prerequisites. Each page covers one technology — what it does, what
+            feeds into it, and what it makes possible — so you can trace a modern
+            tool back to sticks and stone, or follow the graph forward to see
+            what the next rung needs.
+          </p>
+        </div>
+        <nav class="site-footer-nav" aria-label="Browse">
+          <h2>Browse</h2>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/graph/">Tech graph</a></li>
+            <li><a href="/search/">Search</a></li>
+            <li><a href="/missing/">Missing pages</a></li>
+          </ul>
+        </nav>
+        <nav class="site-footer-nav" aria-label="Contribute">
+          <h2>Contribute</h2>
+          <ul>
+            <li><a href={pageRequestUrl()}>Request a page</a></li>
+            <li><a href={`${githubRepositoryUrl}/pulls`}>Open pull requests</a></li>
+            <li><a href={githubRepositoryUrl}>Source on GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="site-footer-meta">
+        Static, GitHub-backed wiki. Page requests live in GitHub Issues; edits ship
+        as GitHub pull requests. No accounts, no backend, no live generation —
+        just markdown, a prerequisite graph, and a small build pipeline.
+      </p>
     </footer>
   </body>
 </html>
