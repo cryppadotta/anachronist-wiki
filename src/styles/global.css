@@ -262,17 +262,9 @@ button {
   max-width: 880px;
 }
 
-.tech-hero-image img {
-  aspect-ratio: 3 / 2;
-}
-
 .tech-schematic {
   margin-top: 0;
   margin-bottom: 28px;
-}
-
-.tech-schematic img {
-  aspect-ratio: 3 / 2;
 }
 
 .tech-hero-image figcaption,

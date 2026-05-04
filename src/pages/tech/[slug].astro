@@ -26,9 +26,28 @@ const unlocks = data.unlocks ?? [];
 const missingPrereqs = data.missing_prerequisites ?? [];
 const headerImage = data.images?.header;
 const schematicImage = data.images?.schematic;
+const headerCaption = visibleImageCaption(headerImage, "header", data.title);
+const schematicCaption = visibleImageCaption(schematicImage, "schematic", data.title);
 
 const isOperational = data.safety_class === "allowed" || data.safety_class === "caution";
 const treatmentLabel = data.page_treatment ? data.page_treatment.replace(/_/g, " ") : null;
+
+function visibleImageCaption(image: { caption?: string } | undefined, kind: "header" | "schematic", title: string) {
+  const caption = image?.caption?.trim();
+  if (!caption) return null;
+
+  const normalized = normalizeCaption(caption);
+  const defaultCaption = kind === "header" ? `${title} field sketch` : `${title} schematic diagram`;
+  return normalized === normalizeCaption(defaultCaption) ? null : caption;
+}
+
+function normalizeCaption(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/[.!?:;]+$/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
 ---
 
 <BaseLayout title={data.title} description={data.summary}>
@@ -51,7 +70,7 @@ const treatmentLabel = data.page_treatment ? data.page_treatment.replace(/_/g, "
       {headerImage && (
         <figure class="tech-hero-image">
           <img src={headerImage.src} alt={headerImage.alt} loading="eager" decoding="async" />
-          {headerImage.caption && <figcaption>{headerImage.caption}</figcaption>}
+          {headerCaption && <figcaption>{headerCaption}</figcaption>}
         </figure>
       )}
       <dl class="fact-strip">
@@ -125,7 +144,7 @@ const treatmentLabel = data.page_treatment ? data.page_treatment.replace(/_/g, "
         {schematicImage && (
           <figure class="tech-schematic">
             <img src={schematicImage.src} alt={schematicImage.alt} loading="lazy" decoding="async" />
-            {schematicImage.caption && <figcaption>{schematicImage.caption}</figcaption>}
+            {schematicCaption && <figcaption>{schematicCaption}</figcaption>}
           </figure>
         )}
         <Content />

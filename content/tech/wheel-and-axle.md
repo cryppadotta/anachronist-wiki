@@ -54,9 +54,8 @@ confidence:
   completeness: 0.58
 images:
   header:
-    src: /images/tech/wheel-and-axle-header.png
-    alt: Survival manual field sketch of Wheel and axle.
-    caption: Wheel and axle field sketch.
+    src: /images/tech/wheel-and-axle-header.webp
+    alt: Field sketch of wheel and axle, highlighting timber, plain bearing, and hub alignment details.
     provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md

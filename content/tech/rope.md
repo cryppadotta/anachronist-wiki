@@ -63,18 +63,16 @@ confidence:
   completeness: 0.64
 images:
   header:
-    src: /images/tech/rope-header.png
-    alt: Survival manual field sketch of Rope.
-    caption: Rope field sketch.
+    src: /images/tech/rope-header.webp
+    alt: Field sketch of rope, highlighting cordage fiber, knot tying, and process handling details.
     provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: ff408c2c2a2d8f68a922fa90eab605d85b5793f4805a4398b3c598128456b095
     generated_at: 2026-05-04T20:27:28.737Z
   schematic:
-    src: /images/tech/rope-schematic.png
-    alt: Technical schematic diagram of Rope.
-    caption: Rope schematic diagram.
+    src: /images/tech/rope-schematic.webp
+    alt: Schematic diagram of rope, highlighting cordage fiber, knot tying, and strand relationships.
     provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md

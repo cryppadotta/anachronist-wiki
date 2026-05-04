@@ -5,6 +5,7 @@ import { parseDocument, stringify } from "yaml";
 import { normalizeSlug } from "../src/lib/content-schema.ts";
 
 type ImageKind = "header" | "schematic";
+type ImageFormat = "png" | "jpeg" | "webp";
 type Provider = "openai" | "fixture";
 type JsonMap = Record<string, any>;
 
@@ -17,6 +18,8 @@ type CliOptions = {
   model: string;
   size: string;
   quality: string;
+  outputFormat: ImageFormat;
+  outputCompression: number;
   contentDir: string;
   outDir: string;
   artifactsDir: string;
@@ -67,7 +70,7 @@ for (const page of pages) {
     const renderedPrompt = renderPrompt(template, promptVariables(page.frontmatter, kind));
     const promptHash = hash(renderedPrompt);
     const promptVersion = promptFile;
-    const extension = options.provider === "fixture" ? "svg" : "png";
+    const extension = options.provider === "fixture" ? "svg" : options.outputFormat;
     const outputPath = path.resolve(process.cwd(), options.outDir, `${slug}-${kind}.${extension}`);
     const artifactDir = path.join(artifactRoot, slug);
     await mkdir(artifactDir, { recursive: true });
@@ -97,6 +100,8 @@ for (const page of pages) {
       kind,
       provider: options.provider,
       model: options.model,
+      output_format: options.provider === "fixture" ? "svg" : options.outputFormat,
+      output_compression: options.provider === "fixture" ? undefined : options.outputCompression,
       prompt_version: promptVersion,
       prompt_hash: promptHash,
       generated_at: generatedAt,
@@ -107,7 +112,6 @@ for (const page of pages) {
     generatedForPage[kind] = {
       src: publicSrc(outputPath),
       alt: altText(page.frontmatter, kind),
-      caption: captionText(page.frontmatter, kind),
       provider: options.provider,
       model: options.model,
       prompt_version: promptVersion,
@@ -162,6 +166,8 @@ function parseArgs(args: string[]): CliOptions {
     model: stringValue(values, "model") ?? "gpt-image-2",
     size: stringValue(values, "size") ?? "1536x1024",
     quality: stringValue(values, "quality") ?? "medium",
+    outputFormat: parseOutputFormat(stringValue(values, "output-format") ?? "webp"),
+    outputCompression: compressionValue(values, "output-compression") ?? 85,
     contentDir: stringValue(values, "content-dir") ?? path.join("content", "tech"),
     outDir: stringValue(values, "out-dir") ?? path.join("public", "images", "tech"),
     artifactsDir: stringValue(values, "artifacts-dir") ?? path.join("generated", "images"),
@@ -188,6 +194,21 @@ function numberValue(values: Map<string, string | boolean>, key: string): number
 function parseProvider(value: string): Provider {
   if (value === "openai" || value === "fixture") return value;
   throw new Error('Unknown image provider. Use "openai" or "fixture".');
+}
+
+function parseOutputFormat(value: string): ImageFormat {
+  if (value === "png" || value === "jpeg" || value === "webp") return value;
+  throw new Error('Unknown image output format. Use "png", "jpeg", or "webp".');
+}
+
+function compressionValue(values: Map<string, string | boolean>, key: string): number | undefined {
+  const value = stringValue(values, key);
+  if (!value) return undefined;
+  const parsed = Number(value);
+  if (!Number.isInteger(parsed) || parsed < 0 || parsed > 100) {
+    throw new Error(`--${key} must be an integer from 0 to 100.`);
+  }
+  return parsed;
 }
 
 function parseKinds(value: string): ImageKind[] {
@@ -305,7 +326,8 @@ async function writeOpenAiImage(outputPath: string, prompt: string, options: Cli
       size: options.size,
       quality: options.quality,
       background: "opaque",
-      output_format: "png"
+      output_format: options.outputFormat,
+      ...(options.outputFormat === "png" ? {} : { output_compression: options.outputCompression })
     })
   });
 
@@ -366,18 +388,23 @@ function publicSrc(outputPath: string): string {
 
 function altText(frontmatter: JsonMap, kind: ImageKind): string {
   const title = String(frontmatter.title ?? "technology");
+  const labels = imageLabels(frontmatter);
+  const detail = labels.length > 0 ? `, highlighting ${labels.join(", ")}` : "";
   if (kind === "header") {
-    return `Survival manual field sketch of ${title}.`;
+    return `Field sketch of ${title}${detail}.`;
   }
-  return `Technical schematic diagram of ${title}.`;
+  return `Schematic diagram of ${title}${detail} and major working relationships.`;
 }
 
-function captionText(frontmatter: JsonMap, kind: ImageKind): string {
-  const title = String(frontmatter.title ?? "Technology");
-  if (kind === "header") {
-    return `${title} field sketch.`;
-  }
-  return `${title} schematic diagram.`;
+function imageLabels(frontmatter: JsonMap): string[] {
+  const values = [
+    ...titles(frontmatter.material_dependencies).slice(0, 2),
+    ...titles(frontmatter.prerequisites).slice(0, 2),
+    String(frontmatter.node_type ?? "")
+  ]
+    .map((value) => value.trim().toLowerCase().replace(/_/g, " "))
+    .filter(Boolean);
+  return Array.from(new Set(values)).slice(0, 4);
 }
 
 function escapeXml(value: string): string {
