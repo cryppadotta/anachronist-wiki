@@ -6,11 +6,12 @@ aliases:
   - sand abrasive
   - polishing grit
 node_type: material
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Hard granular material selected, sorted, and used to scrape, smooth,
   sharpen, polish, and test surfaces.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric
 difficulty: basic
 precision_required: low
@@ -22,14 +23,34 @@ prerequisites:
     kind: test
     role: Settling and washing help sort grit by size and remove clay or silt.
 unlocks:
-  - slug: woodworking
-    title: Woodworking
-    kind: material_source
-    role: Abrasives smooth tool handles, joints, and bearing surfaces.
+  - slug: bone-and-antler
+    title: Bone and antler
+    kind: tooling
+    role: "Enables Bone and antler: Abrasion shapes and smooths hard animal
+      materials."
   - slug: cutting-edge
     title: Cutting edge
     kind: material_source
     role: Grit helps grind and refresh simple cutting edges.
+  - slug: ochre
+    title: Ochre
+    kind: soft
+    role: "Enables Ochre: Abrasive grit provides a necessary starting point for this
+      page."
+  - slug: scratch-hardness-test
+    title: Scratch hardness test
+    kind: soft
+    role: "Enables Scratch hardness test: Abrasive grit provides a necessary
+      starting point for this page."
+  - slug: shell
+    title: Shell
+    kind: hard
+    role: "Enables Shell: Abrasive grit provides a necessary starting point for this
+      page."
+  - slug: woodworking
+    title: Woodworking
+    kind: material_source
+    role: Abrasives smooth tool handles, joints, and bearing surfaces.
 missing_prerequisites: []
 material_dependencies:
   - slug: hard-mineral-sand
@@ -37,25 +58,6 @@ material_dependencies:
     importance: hard
     availability_note: River, beach, sandstone, quartz, or volcanic sources vary
       sharply in hardness and grain shape.
-tags:
-  - material
-  - surface-finish
-  - tools
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; mineral availability and historical abrasive use
-      need human source review.
-confidence:
-  practicality: 0.76
-  historical_plausibility: 0.82
-  completeness: 0.56
 images:
   header:
     src: /images/tech/abrasive-grit-header.webp
@@ -75,8 +77,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 3153f71a425e05e46dc196c53fff385e8fe7da652fd60a056bdb72751f32244d
     generated_at: 2026-05-04T22:58:21.551Z
+tags:
+  - material
+  - surface-finish
+  - tools
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; mineral availability and historical abrasive use
+      need human source review.
+confidence:
+  practicality: 0.76
+  historical_plausibility: 0.82
+  completeness: 0.56
 ---
-
 ## Field briefing
 
 Abrasive grit turns hard minerals into a cutting tool made of many tiny points. It supports [[cutting-edge|cutting edges]], smoothing, drilling, polishing, and fitting.

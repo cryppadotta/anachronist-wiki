@@ -4,11 +4,12 @@ slug: magneto
 title: Magneto
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A rotating magnet and coil generator that can supply ignition pulses
   without depending on a charged storage battery.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: expert
 precision_required: high
@@ -31,7 +32,12 @@ prerequisites:
     title: Go/no-go gauge
     kind: test
     role: Checks shaft, bearing, and contact fits.
-unlocks: []
+unlocks:
+  - slug: gasoline-engine
+    title: Gasoline engine
+    kind: soft
+    role: "Enables Gasoline engine: Can produce ignition current without a large
+      battery."
 missing_prerequisites:
   - slug: permanent-magnet
     title: Permanent magnet
@@ -45,25 +51,6 @@ material_dependencies:
     title: Mild steel
     importance: soft
     availability_note: Shafts, brackets, and magnetic parts need steel or iron.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.34
-  historical_plausibility: 0.74
-  completeness: 0.48
 images:
   header:
     src: /images/tech/magneto-header.webp
@@ -83,8 +70,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: b0cab2115d8155c70328d7d65a0896e570f03b72f004297a176b99b6190b096f
     generated_at: 2026-05-05T20:01:30.565Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.34
+  historical_plausibility: 0.74
+  completeness: 0.48
 ---
-
 ## Field briefing
 
 A rotating magnet and coil generator that can supply ignition pulses without depending on a charged storage battery.

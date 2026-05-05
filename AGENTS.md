@@ -55,6 +55,12 @@ Generate static assets with `npm run generate:images -- --slug <slug> --provider
 
 Use the fixture image provider only for local script tests. Do not publish fixture SVGs or `provider: fixture` image metadata.
 
+## Graph Repair Rules
+
+After adding or changing prerequisite clusters, run the graph repair skill instruction in `content/prompts/graph-repair.v1.md`. The key invariant is that existing prerequisite pages should expose forward "moving forward" links through `unlocks`.
+
+Use `npm run repair:unlocks -- --write` to add missing forward unlocks for existing pages. The repair should not create full pages for missing upstream nodes; keep those as explicit `missing_prerequisites` or missing-page links when they are out of scope.
+
 ## Validation
 
 Run the smallest checks that cover your change:

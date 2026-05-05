@@ -23,10 +23,6 @@ prerequisites:
     kind: optional
     role: Written or mnemonic records strengthen training but are not mandatory.
 unlocks:
-  - slug: woodworking
-    title: Woodworking
-    kind: institutional
-    role: Repeated craft work improves when skills are taught systematically.
   - slug: kiln
     title: Kiln
     kind: institutional
@@ -35,27 +31,17 @@ unlocks:
     title: Standard weights
     kind: institutional
     role: Shared standards require trained habits and enforcement.
+  - slug: woodworking
+    title: Woodworking
+    kind: institutional
+    role: Repeated craft work improves when skills are taught systematically.
+  - slug: workshop-organization
+    title: Workshop organization
+    kind: hard
+    role: "Enables Workshop organization: Apprenticeship provides a necessary
+      starting point for this page."
 missing_prerequisites: []
 material_dependencies: []
-tags:
-  - institution
-  - social-technology
-  - training
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; institutional and historical claims need human
-      source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.82
-  completeness: 0.52
 images:
   header:
     src: /images/tech/apprenticeship-header.webp
@@ -74,8 +60,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 75b427b5b2abf9c60bb5300ee8d6db142dcb9e7d84d3023a1f4e9a5da6990102
     generated_at: 2026-05-04T23:00:39.392Z
+tags:
+  - institution
+  - social-technology
+  - training
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; institutional and historical claims need human
+      source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.82
+  completeness: 0.52
 ---
-
 ## Field briefing
 
 Apprenticeship is a social technology. It carries the things that pages struggle to express: hand pressure, safe posture, material feel, tool care, standards, and when a part is good enough.

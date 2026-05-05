@@ -27,14 +27,39 @@ prerequisites:
     kind: knowledge
     role: Weight sets need repeated units and multiples.
 unlocks:
-  - slug: tensile-test
-    title: Tensile test
+  - slug: factory-assembly-line
+    title: Factory assembly line
     kind: measurement
-    role: Repeatable loads improve material tests.
+    role: "Enables Factory assembly line: Supports material and batch consistency."
+  - slug: go-no-go-gauge
+    title: Go/no-go gauge
+    kind: measurement
+    role: "Enables Go/no-go gauge: Supports standardization culture."
+  - slug: kiln
+    title: Kiln
+    kind: measurement
+    role: "Enables Kiln: Helps compare shrinkage, fuel use, and test piece batches."
+  - slug: mild-steel
+    title: Mild steel
+    kind: measurement
+    role: "Enables Mild steel: Supports batch and charge consistency."
+  - slug: plumb-line
+    title: Plumb line
+    kind: optional
+    role: "Enables Plumb line: Standardized weights improve repeatability, though
+      any compact weight can work."
   - slug: technical-drawing
     title: Technical drawing
     kind: measurement
     role: Weights support scale, material callouts, and quality records.
+  - slug: tensile-test
+    title: Tensile test
+    kind: measurement
+    role: Repeatable loads improve material tests.
+  - slug: threaded-fastener
+    title: Threaded fastener
+    kind: measurement
+    role: "Enables Threaded fastener: Supports metal batch consistency."
 missing_prerequisites: []
 material_dependencies:
   - slug: stone
@@ -47,24 +72,6 @@ material_dependencies:
     importance: optional
     availability_note: Fired clay weights can work if the clay body is stable and
       protected from damage.
-tags:
-  - measurement
-  - standards
-  - trade
-generation:
-  created_by: llm
-  provider: OpenAI
-  model: GPT-5 Codex
-  prompt_version: ANA-13 seed-content manual draft
-  generated_at: 2026-05-03
-  request_issue: ANA-13
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; metrology history needs human source review.
-confidence:
-  practicality: 0.74
-  historical_plausibility: 0.8
-  completeness: 0.58
 images:
   header:
     src: /images/tech/standard-weights-header.webp
@@ -84,8 +91,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 094b59f196cf8050689c3db2fef9250238ef87e012e3a9f09a102e180ec19b6a
     generated_at: 2026-05-04T23:29:42.280Z
+tags:
+  - measurement
+  - standards
+  - trade
+generation:
+  created_by: llm
+  model: GPT-5 Codex
+  provider: OpenAI
+  prompt_version: ANA-13 seed-content manual draft
+  generated_at: 2026-05-03
+  request_issue: ANA-13
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; metrology history needs human source review.
+confidence:
+  practicality: 0.74
+  historical_plausibility: 0.8
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 Standard weights let people compare materials and tests without arguing over handfuls, baskets, or guesses. They are a measurement tool and an institution.

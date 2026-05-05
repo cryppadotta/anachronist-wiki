@@ -5,11 +5,12 @@ title: Hand drill
 aliases:
   - hand-powered drill
 node_type: tool
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A hand-powered boring tool for making holes in wood, bone, leather,
   clay, shell, and soft stone.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric
 difficulty: basic
 precision_required: medium
@@ -25,10 +26,15 @@ prerequisites:
     kind: tooling
     role: Rough parts and sockets can be shaped by striking and abrasion.
 unlocks:
-  - slug: woodworking
-    title: Woodworking
-    kind: tooling
-    role: Holes improve pegs, lashings, axles, fixtures, and joinery.
+  - slug: drill-press
+    title: Drill press
+    kind: hard
+    role: "Enables Drill press: Provides basic rotary drilling practice."
+  - slug: peg-joint
+    title: Peg joint
+    kind: hard
+    role: "Enables Peg joint: Hand drill provides a necessary starting point for
+      this page."
   - slug: plain-bearing
     title: Plain bearing
     kind: tooling
@@ -37,6 +43,10 @@ unlocks:
     title: Spindle
     kind: tooling
     role: Spindle whorls, sockets, and shafts benefit from bored holes.
+  - slug: woodworking
+    title: Woodworking
+    kind: tooling
+    role: Holes improve pegs, lashings, axles, fixtures, and joinery.
 missing_prerequisites: []
 material_dependencies:
   - slug: straight-shaft
@@ -44,25 +54,6 @@ material_dependencies:
     importance: hard
     availability_note: Wood, reed, bone, or metal shafts must be straight enough for
       useful rotation.
-tags:
-  - tool
-  - boring
-  - workshop
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; drill-type chronology and material claims need
-      human source review.
-confidence:
-  practicality: 0.72
-  historical_plausibility: 0.84
-  completeness: 0.55
 images:
   header:
     src: /images/tech/hand-drill-header.webp
@@ -82,8 +73,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 21971a1990466f0d1bb5d7b42d111f4d567003980deff182ff337d222a548524
     generated_at: 2026-05-04T23:13:05.308Z
+tags:
+  - tool
+  - boring
+  - workshop
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; drill-type chronology and material claims need
+      human source review.
+confidence:
+  practicality: 0.72
+  historical_plausibility: 0.84
+  completeness: 0.55
 ---
-
 ## Field briefing
 
 A hand drill is a rotating cutting tool. It unlocks pegged [[woodworking|woodworking]], stitched [[leather|leather]], beads, sockets, fixtures, and more accurate assemblies.

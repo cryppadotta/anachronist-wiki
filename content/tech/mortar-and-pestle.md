@@ -4,11 +4,12 @@ slug: mortar-and-pestle
 title: Mortar and pestle
 aliases: []
 node_type: tool
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A paired crushing and grinding tool for pigments, grog, grain, resin,
   herbs, and small mineral batches.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: low
@@ -23,7 +24,12 @@ prerequisites:
     title: Stone hammer
     kind: soft
     role: Stone hammer provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: quern
+    title: Quern
+    kind: soft
+    role: "Enables Quern: Mortar and pestle provides a necessary starting point for
+      this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: hard-bowl-and-pounder
@@ -31,24 +37,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - tool
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/mortar-and-pestle-header.webp
@@ -68,8 +56,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: b19ea2dfc76e0d3fb50a13c7bc61ab529f551e8ce9f3b97622b29747c106e2b1
     generated_at: 2026-05-04T23:18:24.542Z
+tags:
+  - tool
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Mortar and pestle belongs in the technology tree because it turns local materials and habits into a more repeatable working version. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

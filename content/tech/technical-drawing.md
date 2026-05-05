@@ -31,14 +31,62 @@ prerequisites:
     role: Measurement culture supports drawing discipline, though length standards
       are the direct need.
 unlocks:
-  - slug: wheel-and-axle
-    title: Wheel and axle
+  - slug: alignment-checking
+    title: Alignment checking
     kind: optional
-    role: Drawings improve hub, axle, and frame repeatability.
+    role: "Enables Alignment checking: Drawings define the intended line before the
+      test checks it."
+  - slug: automobile
+    title: Automobile
+    kind: soft
+    role: "Enables Automobile: Keeps geometry and revisions reproducible."
+  - slug: bicycle
+    title: Bicycle
+    kind: soft
+    role: "Enables Bicycle: Helps a workshop copy frame geometry and improve
+      revisions."
+  - slug: camshaft
+    title: Camshaft
+    kind: soft
+    role: "Enables Camshaft: Records lobe order and timing relationships."
+  - slug: chassis-frame
+    title: Chassis frame
+    kind: soft
+    role: "Enables Chassis frame: Preserves hole patterns and dimensions between
+      builds."
+  - slug: gear-cutting
+    title: Gear cutting
+    kind: soft
+    role: "Enables Gear cutting: Records tooth counts and centers."
+  - slug: go-no-go-gauge
+    title: Go/no-go gauge
+    kind: knowledge
+    role: "Enables Go/no-go gauge: Defines the accepted limits."
+  - slug: interchangeable-parts
+    title: Interchangeable parts
+    kind: knowledge
+    role: "Enables Interchangeable parts: Defines shapes and tolerances."
   - slug: pulley
     title: Pulley
     kind: optional
     role: Drawings help groove shape and frame alignment.
+  - slug: service-manual
+    title: Service manual
+    kind: knowledge
+    role: "Enables Service manual: Explains assemblies and part locations."
+  - slug: spark-ignition
+    title: Spark ignition
+    kind: soft
+    role: "Enables Spark ignition: Records wiring and timing relationships."
+  - slug: wheel-and-axle
+    title: Wheel and axle
+    kind: optional
+    role: Drawings improve hub, axle, and frame repeatability.
+  - slug: woodworking
+    title: Woodworking
+    kind: optional
+    role: "Enables Woodworking: Drawings help repeat parts and teach joinery once
+      the workshop grows."
 missing_prerequisites: []
 material_dependencies:
   - slug: paper
@@ -51,25 +99,6 @@ material_dependencies:
     importance: optional
     availability_note: Ink improves permanence; charcoal or incised marks can work
       for early drawings.
-tags:
-  - design
-  - records
-  - measurement
-generation:
-  created_by: llm
-  provider: OpenAI
-  model: GPT-5 Codex
-  prompt_version: ANA-13 seed-content manual draft
-  generated_at: 2026-05-03
-  request_issue: ANA-13
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; history of drawing conventions needs human source
-      review.
-confidence:
-  practicality: 0.76
-  historical_plausibility: 0.68
-  completeness: 0.58
 images:
   header:
     src: /images/tech/technical-drawing-header.webp
@@ -89,8 +118,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: e3c824283c1289d6dfca1627b48661311746fd83a881ca15bb04cc1ba436a31f
     generated_at: 2026-05-04T23:31:21.551Z
+tags:
+  - design
+  - records
+  - measurement
+generation:
+  created_by: llm
+  model: GPT-5 Codex
+  provider: OpenAI
+  prompt_version: ANA-13 seed-content manual draft
+  generated_at: 2026-05-03
+  request_issue: ANA-13
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; history of drawing conventions needs human source
+      review.
+confidence:
+  practicality: 0.76
+  historical_plausibility: 0.68
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 Technical drawing lets a workshop build from a shared picture instead of a single maker's memory. It is most useful when parts must be copied, repaired, or taught.

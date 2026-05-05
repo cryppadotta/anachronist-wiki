@@ -4,11 +4,12 @@ slug: ignition-coil
 title: Ignition coil
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: An electromagnetic winding assembly that turns low-voltage pulses into
   higher-voltage ignition pulses.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: high
@@ -31,7 +32,15 @@ prerequisites:
     title: Battery
     kind: soft
     role: A source of electrical pulses is needed for battery ignition.
-unlocks: []
+unlocks:
+  - slug: magneto
+    title: Magneto
+    kind: hard
+    role: "Enables Magneto: Provides winding and insulation practice."
+  - slug: spark-ignition
+    title: Spark ignition
+    kind: hard
+    role: "Enables Spark ignition: Raises voltage for spark production."
 missing_prerequisites:
   - slug: iron-core
     title: Iron core
@@ -55,25 +64,6 @@ material_dependencies:
     title: Resin
     importance: soft
     availability_note: Early insulation and potting may use resinous materials.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.4
-  historical_plausibility: 0.78
-  completeness: 0.48
 images:
   header:
     src: /images/tech/ignition-coil-header.webp
@@ -93,8 +83,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: b9dc228aaeb96d9b6a4c7b10ac98549342db0ebfb14eecf15ba2f99c3e240cd3
     generated_at: 2026-05-05T20:00:57.112Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.4
+  historical_plausibility: 0.78
+  completeness: 0.48
 ---
-
 ## Field briefing
 
 An electromagnetic winding assembly that turns low-voltage pulses into higher-voltage ignition pulses.

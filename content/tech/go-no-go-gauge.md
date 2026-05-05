@@ -4,6 +4,7 @@ slug: go-no-go-gauge
 title: Go/no-go gauge
 aliases: []
 node_type: test
+secondary_node_types: []
 status: draft
 summary: A fixed inspection tool with accepting and rejecting sides that quickly
   sorts parts by whether they fall within useful limits.
@@ -30,7 +31,60 @@ prerequisites:
     title: Scratch hardness test
     kind: test
     role: Screens gauge material durability.
-unlocks: []
+unlocks:
+  - slug: ball-bearing
+    title: Ball bearing
+    kind: test
+    role: "Enables Ball bearing: Sorts balls and races by fit."
+  - slug: camshaft
+    title: Camshaft
+    kind: test
+    role: "Enables Camshaft: Checks journals and follower fits."
+  - slug: carburetor
+    title: Carburetor
+    kind: test
+    role: "Enables Carburetor: Checks fittings and orifices within accepted limits."
+  - slug: cylinder-boring
+    title: Cylinder boring
+    kind: test
+    role: "Enables Cylinder boring: Checks whether a bore falls inside accepted
+      limits."
+  - slug: gear-cutting
+    title: Gear cutting
+    kind: test
+    role: "Enables Gear cutting: Checks tooth form and fit against a mate."
+  - slug: interchangeable-parts
+    title: Interchangeable parts
+    kind: test
+    role: "Enables Interchangeable parts: Enforces accepted fit limits."
+  - slug: machining
+    title: Machining
+    kind: test
+    role: "Enables Machining: Separates acceptable from unacceptable fits."
+  - slug: magneto
+    title: Magneto
+    kind: test
+    role: "Enables Magneto: Checks shaft, bearing, and contact fits."
+  - slug: planetary-transmission
+    title: Planetary transmission
+    kind: test
+    role: "Enables Planetary transmission: Checks gear and shaft fits."
+  - slug: rolling-mill
+    title: Rolling mill
+    kind: test
+    role: "Enables Rolling mill: Checks output thickness and section."
+  - slug: sheet-steel
+    title: Sheet steel
+    kind: test
+    role: "Enables Sheet steel: Checks thickness and fit."
+  - slug: spark-plug
+    title: Spark plug
+    kind: test
+    role: "Enables Spark plug: Checks thread and gap acceptability."
+  - slug: threaded-fastener
+    title: Threaded fastener
+    kind: test
+    role: "Enables Threaded fastener: Checks whether threads fit accepted limits."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -41,25 +95,6 @@ material_dependencies:
     title: Stone
     importance: substitute
     availability_note: Simple gauge blocks and templates can start from stable hard materials.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.72
-  historical_plausibility: 0.82
-  completeness: 0.58
 images:
   header:
     src: /images/tech/go-no-go-gauge-header.webp
@@ -79,8 +114,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: e87820fd3af038a925869b02a0ec1c1412b330b003b013af29941d4b86e1b994
     generated_at: 2026-05-05T20:08:26.059Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.72
+  historical_plausibility: 0.82
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 A fixed inspection tool with accepting and rejecting sides that quickly sorts parts by whether they fall within useful limits.

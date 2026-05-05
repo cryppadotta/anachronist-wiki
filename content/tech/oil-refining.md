@@ -4,11 +4,12 @@ slug: oil-refining
 title: Oil refining
 aliases: []
 node_type: process
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A controlled petroleum separation and purification practice, included
   as a high-level graph node for fuel and lubricant supply chains.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: expert
 precision_required: high
@@ -31,7 +32,11 @@ prerequisites:
     title: Public safety
     kind: safety
     role: Keeps fire, vapor, and waste risks governed.
-unlocks: []
+unlocks:
+  - slug: gasoline
+    title: Gasoline
+    kind: refining
+    role: "Enables Gasoline: Separates useful petroleum fractions."
 missing_prerequisites:
   - slug: distillation
     title: Distillation
@@ -48,25 +53,6 @@ material_dependencies:
     title: Clay
     importance: soft
     availability_note: Some purification and sealing practices use clay materials.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.2
-  historical_plausibility: 0.78
-  completeness: 0.38
 images:
   header:
     src: /images/tech/oil-refining-header.webp
@@ -86,8 +72,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: ba366336b1c671ac5dfcdfee6ec6192a2a80e9a5fabdd63b910296b9f71b5101
     generated_at: 2026-05-05T20:02:54.239Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.2
+  historical_plausibility: 0.78
+  completeness: 0.38
 ---
-
 ## Field briefing
 
 A controlled petroleum separation and purification practice, included as a high-level graph node for fuel and lubricant supply chains.

@@ -4,11 +4,12 @@ slug: piston-cylinder
 title: Piston and cylinder
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A close-fitting sliding chamber that converts expanding gas or fluid
   pressure into controlled reciprocating motion.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: expert
 precision_required: high
@@ -31,7 +32,12 @@ prerequisites:
     title: Lubricating oil
     kind: hard
     role: Prevents immediate scoring and seizure.
-unlocks: []
+unlocks:
+  - slug: internal-combustion-engine
+    title: Internal combustion engine
+    kind: hard
+    role: "Enables Internal combustion engine: Converts pressure pulses into
+      reciprocating motion."
 missing_prerequisites:
   - slug: piston-ring
     title: Piston ring
@@ -45,25 +51,6 @@ material_dependencies:
     title: Mild steel
     importance: soft
     availability_note: Pins, rods, and hardware use tougher steel stock.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.38
-  historical_plausibility: 0.75
-  completeness: 0.5
 images:
   header:
     src: /images/tech/piston-cylinder-header.webp
@@ -83,8 +70,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: a917de2f0fea4974223fc8d69fadeed4c4a64955b58a773335b305872a58f935
     generated_at: 2026-05-05T19:59:09.861Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.38
+  historical_plausibility: 0.75
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 A close-fitting sliding chamber that converts expanding gas or fluid pressure into controlled reciprocating motion.

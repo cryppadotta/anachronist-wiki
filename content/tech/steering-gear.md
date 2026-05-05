@@ -4,11 +4,12 @@ slug: steering-gear
 title: Steering gear
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A control linkage and gear set that turns driver input into predictable
   wheel angle without binding or dangerous looseness.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: high
@@ -31,7 +32,11 @@ prerequisites:
     title: Alignment checking
     kind: test
     role: Confirms steering geometry and free movement.
-unlocks: []
+unlocks:
+  - slug: automobile
+    title: Automobile
+    kind: hard
+    role: "Enables Automobile: Turns front wheels predictably."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -42,25 +47,6 @@ material_dependencies:
     title: Lubricating oil
     importance: soft
     availability_note: Pivots and gears need lubrication.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.52
-  historical_plausibility: 0.78
-  completeness: 0.5
 images:
   header:
     src: /images/tech/steering-gear-header.webp
@@ -80,8 +66,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: fa1ef60988fe0a2ca24ec6394cb38dcbde7fcdd096108e2428467cf0f8bc0b33
     generated_at: 2026-05-05T20:09:29.954Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.52
+  historical_plausibility: 0.78
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 A control linkage and gear set that turns driver input into predictable wheel angle without binding or dangerous looseness.

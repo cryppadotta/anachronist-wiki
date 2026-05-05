@@ -4,11 +4,12 @@ slug: water-jacket-cooling
 title: Water-jacket cooling
 aliases: []
 node_type: process
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A circulating water system that carries heat away from engine walls and
   into a radiator or tank.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: medium
@@ -27,7 +28,15 @@ prerequisites:
     title: Leak test
     kind: test
     role: Checks jackets, hoses, and fittings.
-unlocks: []
+unlocks:
+  - slug: internal-combustion-engine
+    title: Internal combustion engine
+    kind: safety
+    role: "Enables Internal combustion engine: Removes heat to protect moving parts."
+  - slug: radiator
+    title: Radiator
+    kind: hard
+    role: "Enables Radiator: Defines the engine cooling loop."
 missing_prerequisites:
   - slug: rubber-hose
     title: Rubber hose
@@ -44,25 +53,6 @@ material_dependencies:
     title: Rubber hose
     importance: soft
     availability_note: Flexible coolant joints benefit from rubber goods.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.48
-  historical_plausibility: 0.78
-  completeness: 0.5
 images:
   header:
     src: /images/tech/water-jacket-cooling-header.webp
@@ -82,8 +72,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: f8ef1ab1b5292faef3c3cdaade7a94a97f732319668f3f7d9b74059d14ad0e06
     generated_at: 2026-05-05T20:03:05.082Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.48
+  historical_plausibility: 0.78
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 A circulating water system that carries heat away from engine walls and into a radiator or tank.

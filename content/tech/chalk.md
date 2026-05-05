@@ -4,6 +4,7 @@ slug: chalk
 title: Chalk
 aliases: []
 node_type: material
+secondary_node_types: []
 status: draft
 summary: Soft white limestone material used for marking, whitening, fillers,
   mild abrasive work, and lime-related supply chains.
@@ -22,7 +23,12 @@ prerequisites:
     title: Water settling test
     kind: soft
     role: Water settling test provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: lime-material
+    title: Lime material
+    kind: hard
+    role: "Enables Lime material: Chalk provides a necessary starting point for this
+      page."
 missing_prerequisites: []
 material_dependencies:
   - slug: chalk-or-soft-limestone
@@ -30,24 +36,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - mineral
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/chalk-header.webp
@@ -67,8 +55,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: d3b03c9beb074e4a930a5739e49c3f439af0945edbdc1dd5089a003d67b11593
     generated_at: 2026-05-04T23:04:01.314Z
+tags:
+  - mineral
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Chalk belongs in the technology tree because it turns local materials and habits into a more repeatable supply. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

@@ -4,11 +4,12 @@ slug: gasoline-engine
 title: Gasoline engine
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A spark-ignition internal combustion engine optimized around volatile
   petroleum fuel, carburetion, cooling, and regular maintenance.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: expert
 precision_required: high
@@ -39,7 +40,11 @@ prerequisites:
     title: Radiator
     kind: safety
     role: Rejects engine heat to air.
-unlocks: []
+unlocks:
+  - slug: ford-model-t
+    title: Ford Model T
+    kind: hard
+    role: "Enables Ford Model T: Supplies compact mobile power."
 missing_prerequisites: []
 material_dependencies:
   - slug: lubricating-oil
@@ -50,25 +55,6 @@ material_dependencies:
     title: Mild steel
     importance: hard
     availability_note: Shafts, fasteners, valve parts, and brackets require steel.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.34
-  historical_plausibility: 0.82
-  completeness: 0.58
 images:
   header:
     src: /images/tech/gasoline-engine-header.webp
@@ -89,8 +75,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: df0f1df08aec8d9a0eb6f7d0c97d9f9ea51c3b67973ec6eade55c399699fb228
     generated_at: 2026-05-05T19:59:13.764Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.34
+  historical_plausibility: 0.82
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 A spark-ignition internal combustion engine optimized around volatile petroleum fuel, carburetion, cooling, and regular maintenance.

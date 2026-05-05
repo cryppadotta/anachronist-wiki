@@ -4,6 +4,7 @@ slug: mild-steel
 title: Mild steel
 aliases: []
 node_type: material
+secondary_node_types: []
 status: draft
 summary: Low-carbon steel that is tough, workable, weldable or rivetable, and
   central to industrial machine and vehicle production.
@@ -30,7 +31,19 @@ prerequisites:
     title: Quality-control records
     kind: test
     role: Tracks heats, suppliers, and defects.
-unlocks: []
+unlocks:
+  - slug: chassis-frame
+    title: Chassis frame
+    kind: hard
+    role: "Enables Chassis frame: Provides a tough frame material."
+  - slug: rolling-mill
+    title: Rolling mill
+    kind: hard
+    role: "Enables Rolling mill: Provides roll and frame material."
+  - slug: sheet-steel
+    title: Sheet steel
+    kind: hard
+    role: "Enables Sheet steel: Provides workable steel stock."
 missing_prerequisites:
   - slug: steelmaking
     title: Steelmaking
@@ -44,25 +57,6 @@ material_dependencies:
     title: Charcoal
     importance: substitute
     availability_note: Early iron processes can use charcoal before coke-based industry.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.46
-  historical_plausibility: 0.8
-  completeness: 0.52
 images:
   header:
     src: /images/tech/mild-steel-header.webp
@@ -82,8 +76,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 4a7ab0326b5c4e182017552801b1bfb2a46497a2610dbcd8459006c1d00f08ed
     generated_at: 2026-05-05T20:06:32.964Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.46
+  historical_plausibility: 0.8
+  completeness: 0.52
 ---
-
 ## Field briefing
 
 Low-carbon steel that is tough, workable, weldable or rivetable, and central to industrial machine and vehicle production.

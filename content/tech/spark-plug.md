@@ -4,11 +4,12 @@ slug: spark-plug
 title: Spark plug
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A heat-resistant insulated electrode assembly that delivers a spark
   inside a gasoline engine cylinder.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: high
@@ -27,7 +28,15 @@ prerequisites:
     title: Go/no-go gauge
     kind: test
     role: Checks thread and gap acceptability.
-unlocks: []
+unlocks:
+  - slug: gasoline-engine
+    title: Gasoline engine
+    kind: hard
+    role: "Enables Gasoline engine: Delivers ignition inside the cylinder."
+  - slug: spark-ignition
+    title: Spark ignition
+    kind: hard
+    role: "Enables Spark ignition: Delivers the spark across an insulated gap."
 missing_prerequisites:
   - slug: ceramic-insulator
     title: Ceramic insulator
@@ -44,25 +53,6 @@ material_dependencies:
     title: Copper wire
     importance: soft
     availability_note: Conductors and leads need reliable metal.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.42
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/spark-plug-header.webp
@@ -82,8 +72,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 48bae6ce2a7a794790386e984e60d8ccee0a3f6066741191c24ec9d9783a3cc6
     generated_at: 2026-05-05T20:00:58.971Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.42
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 A heat-resistant insulated electrode assembly that delivers a spark inside a gasoline engine cylinder.

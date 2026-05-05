@@ -430,7 +430,7 @@ function missingNodeDiagnostics(pages: LoadedPage[], missingNodes: MissingNodeRe
 
 function validateCycles(edges: GraphEdgeRecord[], pages: LoadedPage[]): Diagnostic[] {
   const existingSlugs = new Set(pages.map((page) => page.data.slug));
-  const existingEdges = edges.filter((edge) => existingSlugs.has(edge.from) && existingSlugs.has(edge.to));
+  const existingEdges = dedupeCycleEdges(edges.filter((edge) => existingSlugs.has(edge.from) && existingSlugs.has(edge.to)));
   const cycles = findCycles(existingEdges);
   const diagnostics: Diagnostic[] = [];
 
@@ -448,6 +448,27 @@ function validateCycles(edges: GraphEdgeRecord[], pages: LoadedPage[]): Diagnost
   }
 
   return diagnostics;
+}
+
+function dedupeCycleEdges(edges: GraphEdgeRecord[]): GraphEdgeRecord[] {
+  const unique = new Map<string, GraphEdgeRecord>();
+
+  for (const edge of edges) {
+    const key = `${edge.from}|${edge.to}|${edge.kind}`;
+    const current = unique.get(key);
+    if (!current) {
+      unique.set(key, edge);
+      continue;
+    }
+
+    unique.set(key, {
+      ...current,
+      cycle_ok: current.cycle_ok || edge.cycle_ok,
+      cycle_reason: current.cycle_reason ?? edge.cycle_reason
+    });
+  }
+
+  return Array.from(unique.values());
 }
 
 function findCycles(edges: GraphEdgeRecord[]): GraphEdgeRecord[][] {

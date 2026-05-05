@@ -4,11 +4,12 @@ slug: barrel
 title: Barrel
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Barrel is a practical artifact for expanding the static technology tree
   with local sourcing, repeatable preparation, and visible quality checks.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: low
@@ -23,7 +24,11 @@ prerequisites:
     title: Water
     kind: soft
     role: Water provides a necessary starting point for repeatable work.
-unlocks: []
+unlocks:
+  - slug: petroleum
+    title: Petroleum
+    kind: hard
+    role: "Enables Petroleum: Provides transport and storage culture."
 missing_prerequisites: []
 material_dependencies:
   - slug: barrel-supply
@@ -31,24 +36,6 @@ material_dependencies:
     importance: hard
     availability_note: The supply depends on source recognition, access rights,
       preparation, substitutes, storage, and local geography.
-tags:
-  - artifact
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion 100-page follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.62
-  historical_plausibility: 0.7
-  completeness: 0.46
 images:
   header:
     src: /images/tech/barrel-header.webp
@@ -68,8 +55,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 71b7bb2c69ba4124ded92d725c991cee64b930aa4083f5145f0a5229eca4d7f8
     generated_at: 2026-05-05T13:11:36.381Z
+tags:
+  - artifact
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion 100-page follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.62
+  historical_plausibility: 0.7
+  completeness: 0.46
 ---
-
 ## Field briefing
 
 Barrel adds another practical node to the static technology tree. The page treats it as an early, inspectable capability that can be sourced, tested, taught, and improved without modern infrastructure.

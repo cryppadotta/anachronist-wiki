@@ -18,10 +18,14 @@ minimum_social_scale: individual
 time_to_first_working_version: minutes
 prerequisites: []
 unlocks:
-  - slug: wheel-and-axle
-    title: Wheel and axle
-    kind: knowledge
-    role: The radius of a wheel acts like a continuous lever around an axle.
+  - slug: band-brake
+    title: Band brake
+    kind: hard
+    role: "Enables Band brake: Lets a person apply force."
+  - slug: clutch
+    title: Clutch
+    kind: hard
+    role: "Enables Clutch: Provides controllable human actuation."
   - slug: pulley
     title: Pulley
     kind: knowledge
@@ -30,6 +34,14 @@ unlocks:
     title: Standard weights
     kind: enables
     role: A balance beam uses lever arms to compare masses.
+  - slug: tensile-test
+    title: Tensile test
+    kind: optional
+    role: "Enables Tensile test: Levers can apply or multiply test force."
+  - slug: wheel-and-axle
+    title: Wheel and axle
+    kind: knowledge
+    role: The radius of a wheel acts like a continuous lever around an axle.
 missing_prerequisites: []
 material_dependencies:
   - slug: hardwood
@@ -37,25 +49,6 @@ material_dependencies:
     importance: soft
     availability_note: Straight, tough branches or poles are common in woodland
       regions; metal improves wear but is not required.
-tags:
-  - mechanics
-  - simple-machines
-  - workshop
-generation:
-  created_by: llm
-  provider: OpenAI
-  model: GPT-5 Codex
-  prompt_version: ANA-13 seed-content manual draft
-  generated_at: 2026-05-03
-  request_issue: ANA-13
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; historical and technical claims need human source
-      review.
-confidence:
-  practicality: 0.9
-  historical_plausibility: 0.92
-  completeness: 0.68
 images:
   header:
     src: /images/tech/lever-header.webp
@@ -74,8 +67,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 0deb932d88e3a6e300f5fe705f6e6242e30918aa61325452f7856a249161f4a3
     generated_at: 2026-05-04T23:16:37.253Z
+tags:
+  - mechanics
+  - simple-machines
+  - workshop
+generation:
+  created_by: llm
+  model: GPT-5 Codex
+  provider: OpenAI
+  prompt_version: ANA-13 seed-content manual draft
+  generated_at: 2026-05-03
+  request_issue: ANA-13
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; historical and technical claims need human source
+      review.
+confidence:
+  practicality: 0.9
+  historical_plausibility: 0.92
+  completeness: 0.68
 ---
-
 ## Field briefing
 
 A lever is the quickest useful machine: a stiff bar, a support point, and a load. It matters because it teaches the trade between force and movement before a workshop has formal mathematics.

@@ -6,6 +6,7 @@ aliases:
   - straightness checking
   - truing
 node_type: test
+secondary_node_types: []
 status: draft
 summary: A workshop test practice for checking whether wheels, shafts, frames,
   holes, and guide surfaces point where they should.
@@ -25,14 +26,52 @@ prerequisites:
     kind: optional
     role: Drawings define the intended line before the test checks it.
 unlocks:
-  - slug: plain-bearing
-    title: Plain bearing
-    kind: test
-    role: Bearings fail quickly when shafts are crooked.
   - slug: bicycle
     title: Bicycle
     kind: test
     role: Single-track vehicles are intolerant of frame and wheel misalignment.
+  - slug: cart
+    title: Cart
+    kind: test
+    role: "Enables Cart: Keeps wheels parallel enough to roll without dragging."
+  - slug: chassis-frame
+    title: Chassis frame
+    kind: test
+    role: "Enables Chassis frame: Confirms straightness, squareness, and axle
+      location."
+  - slug: clutch
+    title: Clutch
+    kind: test
+    role: "Enables Clutch: Keeps discs, drums, or cones from grabbing unevenly."
+  - slug: crankshaft
+    title: Crankshaft
+    kind: test
+    role: "Enables Crankshaft: Finds runout and straightness faults."
+  - slug: differential-gear
+    title: Differential gear
+    kind: test
+    role: "Enables Differential gear: Controls gear mesh and bearing alignment."
+  - slug: drive-shaft
+    title: Drive shaft
+    kind: test
+    role: "Enables Drive shaft: Finds runout and coupling errors."
+  - slug: plain-bearing
+    title: Plain bearing
+    kind: test
+    role: Bearings fail quickly when shafts are crooked.
+  - slug: spoked-wheel
+    title: Spoked wheel
+    kind: test
+    role: "Enables Spoked wheel: A light wheel must be checked for wobble and
+      roundness."
+  - slug: steering-gear
+    title: Steering gear
+    kind: test
+    role: "Enables Steering gear: Confirms steering geometry and free movement."
+  - slug: transmission
+    title: Transmission
+    kind: test
+    role: "Enables Transmission: Keeps shafts and gears from binding."
 missing_prerequisites: []
 material_dependencies:
   - slug: cord
@@ -43,25 +82,6 @@ material_dependencies:
     title: Straightedge
     importance: soft
     availability_note: A prepared board, rod, or rule improves repeatability.
-tags:
-  - testing
-  - measurement
-  - workshop
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-34 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-34
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; historical workshop testing practices need human
-      source review.
-confidence:
-  practicality: 0.82
-  historical_plausibility: 0.7
-  completeness: 0.56
 images:
   header:
     src: /images/tech/alignment-checking-header.webp
@@ -81,8 +101,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 05aec0fe01b0ce15bfd0d7eea5fd28d4e6a147c2339e5e1713a1e22f6959ddbf
     generated_at: 2026-05-04T23:00:41.491Z
+tags:
+  - testing
+  - measurement
+  - workshop
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-34 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-34
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; historical workshop testing practices need human
+      source review.
+confidence:
+  practicality: 0.82
+  historical_plausibility: 0.7
+  completeness: 0.56
 ---
-
 ## Field briefing
 
 Alignment checking is a small workshop habit with large effects. A crooked axle, fork, frame, or bearing wastes effort and breaks parts even when every individual part looks sound.

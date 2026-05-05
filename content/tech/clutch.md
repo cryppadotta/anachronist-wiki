@@ -4,11 +4,12 @@ slug: clutch
 title: Clutch
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A controllable coupling that lets a rotating power source connect to or
   disconnect from a driven load.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: medium
@@ -31,7 +32,11 @@ prerequisites:
     title: Lever
     kind: hard
     role: Provides controllable human actuation.
-unlocks: []
+unlocks:
+  - slug: transmission
+    title: Transmission
+    kind: hard
+    role: "Enables Transmission: Lets power be engaged and disengaged."
 missing_prerequisites:
   - slug: friction-material
     title: Friction material
@@ -46,25 +51,6 @@ material_dependencies:
     title: Mild steel
     importance: hard
     availability_note: Hubs, drums, and springs need metal stock.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.52
-  historical_plausibility: 0.78
-  completeness: 0.5
 images:
   header:
     src: /images/tech/clutch-header.webp
@@ -84,8 +70,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 3e684edc5b5e80b849d4778ee33bd4dcf14d818591b3ff0561d7c644912eddf4
     generated_at: 2026-05-05T20:04:44.564Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.52
+  historical_plausibility: 0.78
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 A controllable coupling that lets a rotating power source connect to or disconnect from a driven load.

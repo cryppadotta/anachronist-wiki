@@ -4,6 +4,7 @@ slug: clay
 title: Clay
 aliases: []
 node_type: material
+secondary_node_types: []
 status: draft
 summary: Fine mineral sediment that can be shaped wet and hardened by drying or
   firing for vessels, bricks, molds, tablets, and kiln structures.
@@ -19,10 +20,110 @@ prerequisites:
     kind: test
     role: Separates clay-rich fines from sand, silt, and organic debris.
 unlocks:
+  - slug: brick-clay
+    title: Brick Clay
+    kind: hard
+    role: "Enables Brick Clay: Clay provides a necessary starting point for first
+      trials."
+  - slug: brickmaking
+    title: Brickmaking
+    kind: hard
+    role: "Enables Brickmaking: Clay provides a necessary starting point for first
+      trials."
+  - slug: ceramic-temper
+    title: Ceramic temper
+    kind: material_source
+    role: "Enables Ceramic temper: Temper is selected relative to a clay body."
+  - slug: charcoal
+    title: Charcoal
+    kind: optional
+    role: "Enables Charcoal: Clay-rich earth can help seal a mound or pit."
+  - slug: clay-slip
+    title: Clay Slip
+    kind: hard
+    role: "Enables Clay Slip: Clay provides a necessary starting point for first
+      trials."
+  - slug: clay-tablet-records
+    title: Clay tablet records
+    kind: hard
+    role: "Enables Clay tablet records: Clay provides a necessary starting point for
+      this page."
+  - slug: fired-brick
+    title: Fired Brick
+    kind: hard
+    role: "Enables Fired Brick: Clay provides a necessary starting point for first
+      trials."
+  - slug: grog
+    title: Grog
+    kind: material_source
+    role: "Enables Grog: Grog comes from fired clay or ceramic waste."
+  - slug: hurdle
+    title: Hurdle
+    kind: hard
+    role: "Enables Hurdle: Clay provides a necessary starting point for first
+      trials."
+  - slug: kiln-firing-test
+    title: Kiln firing test
+    kind: material_source
+    role: "Enables Kiln firing test: Clay samples are the tested material."
   - slug: kiln
     title: Kiln
     kind: material_source
     role: Clay forms refractory walls, shelves, sealants, and test pieces.
+  - slug: loom-weights
+    title: Loom weights
+    kind: hard
+    role: "Enables Loom weights: Clay provides a necessary starting point for this
+      page."
+  - slug: mortar
+    title: Mortar
+    kind: hard
+    role: "Enables Mortar: Clay provides a necessary starting point for first
+      trials."
+  - slug: plaster
+    title: Plaster
+    kind: hard
+    role: "Enables Plaster: Clay provides a necessary starting point for first
+      trials."
+  - slug: plastering
+    title: Plastering
+    kind: hard
+    role: "Enables Plastering: Clay provides a necessary starting point for first
+      trials."
+  - slug: potters-wheel
+    title: Potter's wheel
+    kind: material_source
+    role: "Enables Potter's wheel: Supplies the plastic material being shaped."
+  - slug: roof-tile
+    title: Roof Tile
+    kind: hard
+    role: "Enables Roof Tile: Clay provides a necessary starting point for first
+      trials."
+  - slug: shrinkage-test
+    title: Shrinkage test
+    kind: hard
+    role: "Enables Shrinkage test: Clay provides a necessary starting point for this
+      page."
+  - slug: storage-jar
+    title: Storage jar
+    kind: hard
+    role: "Enables Storage jar: Clay provides a necessary starting point for this
+      page."
+  - slug: thatching
+    title: Thatching
+    kind: hard
+    role: "Enables Thatching: Clay provides a necessary starting point for first
+      trials."
+  - slug: tile-making
+    title: Tile Making
+    kind: hard
+    role: "Enables Tile Making: Clay provides a necessary starting point for first
+      trials."
+  - slug: wattle-and-daub
+    title: Wattle and Daub
+    kind: hard
+    role: "Enables Wattle and Daub: Clay provides a necessary starting point for
+      first trials."
   - slug: writing
     title: Writing
     kind: optional
@@ -33,25 +134,6 @@ material_dependencies:
     title: Water
     importance: hard
     availability_note: Needed for slaking, levigation, forming, and shrinkage tests.
-tags:
-  - material
-  - ceramics
-  - earth
-generation:
-  created_by: llm
-  provider: OpenAI
-  model: GPT-5 Codex
-  prompt_version: ANA-13 seed-content manual draft
-  generated_at: 2026-05-03
-  request_issue: ANA-13
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; geology and ceramic claims need human source
-      review.
-confidence:
-  practicality: 0.8
-  historical_plausibility: 0.85
-  completeness: 0.62
 images:
   header:
     src: /images/tech/clay-header.webp
@@ -70,8 +152,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 0ce436440d2ff6b628b7c3b4c554b136cd20804d03875c5e5e43164007e0f6fa
     generated_at: 2026-05-04T23:05:36.747Z
+tags:
+  - material
+  - ceramics
+  - earth
+generation:
+  created_by: llm
+  model: GPT-5 Codex
+  provider: OpenAI
+  prompt_version: ANA-13 seed-content manual draft
+  generated_at: 2026-05-03
+  request_issue: ANA-13
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; geology and ceramic claims need human source
+      review.
+confidence:
+  practicality: 0.8
+  historical_plausibility: 0.85
+  completeness: 0.62
 ---
-
 ## Field briefing
 
 Clay is not just dirt. It is a workable mineral supply chain for containers, bricks, molds, tablets, and [[kiln|kiln]] parts.

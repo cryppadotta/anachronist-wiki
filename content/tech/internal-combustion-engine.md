@@ -4,11 +4,12 @@ slug: internal-combustion-engine
 title: Internal combustion engine
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A heat engine that burns fuel inside a cylinder to push a piston,
   requiring precise containment, ignition, cooling, and lubrication.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: expert
 precision_required: high
@@ -39,7 +40,15 @@ prerequisites:
     title: Lubricating oil
     kind: hard
     role: Reduces destructive friction and wear.
-unlocks: []
+unlocks:
+  - slug: automobile
+    title: Automobile
+    kind: hard
+    role: "Enables Automobile: Provides compact motive power."
+  - slug: gasoline-engine
+    title: Gasoline engine
+    kind: hard
+    role: "Enables Gasoline engine: Provides the engine architecture."
 missing_prerequisites:
   - slug: cast-iron
     title: Cast iron
@@ -57,25 +66,6 @@ material_dependencies:
     title: Gasoline
     importance: soft
     availability_note: One common fuel path, handled here only at a high level.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.36
-  historical_plausibility: 0.78
-  completeness: 0.56
 images:
   header:
     src: /images/tech/internal-combustion-engine-header.webp
@@ -96,8 +86,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 31985985eb4230fed8b0bf9743e3d44eaa04bd7f8193d18e46a5d781053080be
     generated_at: 2026-05-05T19:59:11.744Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.36
+  historical_plausibility: 0.78
+  completeness: 0.56
 ---
-
 ## Field briefing
 
 A heat engine that burns fuel inside a cylinder to push a piston, requiring precise containment, ignition, cooling, and lubrication.

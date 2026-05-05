@@ -27,10 +27,35 @@ unlocks:
     title: Clay
     kind: tooling
     role: Baskets carry clay, temper, and fired scrap.
+  - slug: drying-rack
+    title: Drying rack
+    kind: soft
+    role: "Enables Drying rack: Basketry provides a necessary starting point for
+      this page."
+  - slug: granary
+    title: Granary
+    kind: hard
+    role: "Enables Granary: Basketry provides a necessary starting point for first
+      trials."
   - slug: paper
     title: Paper
     kind: tooling
     role: Baskets and screens support fiber handling and drainage.
+  - slug: sieve
+    title: Sieve
+    kind: hard
+    role: "Enables Sieve: Basketry provides a necessary starting point for this
+      page."
+  - slug: threshing
+    title: Threshing
+    kind: hard
+    role: "Enables Threshing: Basketry provides a necessary starting point for first
+      trials."
+  - slug: winnowing
+    title: Winnowing
+    kind: hard
+    role: "Enables Winnowing: Basketry provides a necessary starting point for first
+      trials."
 missing_prerequisites: []
 material_dependencies:
   - slug: flexible-stems
@@ -38,25 +63,6 @@ material_dependencies:
     importance: hard
     availability_note: Willow, hazel, rush, reed, root, bark, and split wood vary by
       season and wetland access.
-tags:
-  - containers
-  - fiber
-  - workshop
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; regional plant and basketry history claims need
-      human source review.
-confidence:
-  practicality: 0.82
-  historical_plausibility: 0.88
-  completeness: 0.57
 images:
   header:
     src: /images/tech/basketry-header.webp
@@ -76,8 +82,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 236561fc36b06545d4e34d8cce199533c47c72136dd407d9ad5960f45af8d2fd
     generated_at: 2026-05-04T23:02:05.445Z
+tags:
+  - containers
+  - fiber
+  - workshop
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; regional plant and basketry history claims need
+      human source review.
+confidence:
+  practicality: 0.82
+  historical_plausibility: 0.88
+  completeness: 0.57
 ---
-
 ## Field briefing
 
 Basketry is lightweight infrastructure. Baskets move [[clay|clay]], fiber, fuel, food, tools, and waste; fine woven forms can strain, sort, dry, and protect materials.

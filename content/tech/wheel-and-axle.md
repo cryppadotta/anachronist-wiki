@@ -6,6 +6,7 @@ aliases:
   - wheel
   - axle
 node_type: artifact
+secondary_node_types: []
 status: draft
 summary: A rotating round member fixed to a central shaft, useful for carts,
   pulleys, windlasses, potter's wheels, and later transport systems.
@@ -28,30 +29,37 @@ prerequisites:
     kind: optional
     role: Useful for windlasses, carts, and load handling around the axle.
 unlocks:
-  - slug: cart
-    title: Cart
-    kind: enables
-    role: The wheel and axle become a load-carrying transport system.
-  - slug: pulley
-    title: Pulley
-    kind: enables
-    role: A grooved wheel changes the direction of a rope force.
   - slug: bicycle
     title: Bicycle
     kind: enables
     role: Later human-powered transport depends on reliable wheels and axles.
+  - slug: cart
+    title: Cart
+    kind: enables
+    role: The wheel and axle become a load-carrying transport system.
+  - slug: plain-bearing
+    title: Plain bearing
+    kind: hard
+    role: "Enables Plain bearing: Provides the rotating shaft problem that bearings
+      solve."
+  - slug: potters-wheel
+    title: Potter's wheel
+    kind: hard
+    role: "Enables Potter's wheel: Provides the rotating platform and shaft idea."
+  - slug: pulley
+    title: Pulley
+    kind: enables
+    role: A grooved wheel changes the direction of a rope force.
+  - slug: spoked-wheel
+    title: Spoked wheel
+    kind: hard
+    role: "Enables Spoked wheel: Supplies the hub, rim, and rolling-load problem."
+  - slug: steering-gear
+    title: Steering gear
+    kind: hard
+    role: "Enables Steering gear: Provides vehicle wheel geometry."
 missing_prerequisites: []
-tags:
-  - mechanics
-  - transport
-  - workshop
-generation:
-  created_by: human
-  reviewed_by: []
-confidence:
-  practicality: 0.72
-  historical_plausibility: 0.86
-  completeness: 0.58
+material_dependencies: []
 images:
   header:
     src: /images/tech/wheel-and-axle-header.webp
@@ -71,8 +79,19 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: eed5751fd70d0bc2d67cd7eb98160933c1305204dfba46cf0bc49db4f88d4393
     generated_at: 2026-05-04T21:16:21.513Z
+tags:
+  - mechanics
+  - transport
+  - workshop
+generation:
+  created_by: human
+  reviewed_by: []
+  source_review_notes: []
+confidence:
+  practicality: 0.72
+  historical_plausibility: 0.86
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 A wheel and axle turns sliding friction into rolling contact. The first useful version does not need metal bearings or mathematical theory. It needs a round-enough wheel, a straight-enough axle, a hub that does not split, and a frame that keeps the parts aligned.

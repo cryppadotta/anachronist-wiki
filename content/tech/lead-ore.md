@@ -4,12 +4,13 @@ slug: lead-ore
 title: Lead Ore
 aliases: []
 node_type: material
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Lead Ore is a practical supply chain for expanding the static
   technology tree with local sourcing, repeatable preparation, and visible
   quality checks.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: low
@@ -25,7 +26,11 @@ prerequisites:
     kind: soft
     role: Scratch hardness test provides a necessary starting point for repeatable
       work.
-unlocks: []
+unlocks:
+  - slug: lead-acid-battery
+    title: Lead-acid battery
+    kind: material_source
+    role: "Enables Lead-acid battery: Provides the lead supply chain."
 missing_prerequisites: []
 material_dependencies:
   - slug: lead-ore-supply
@@ -33,24 +38,6 @@ material_dependencies:
     importance: hard
     availability_note: The supply depends on source recognition, access rights,
       preparation, substitutes, storage, and local geography.
-tags:
-  - material
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion 100-page follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.62
-  historical_plausibility: 0.7
-  completeness: 0.46
 images:
   header:
     src: /images/tech/lead-ore-header.webp
@@ -70,8 +57,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 5b192f4e3c7fb63f446982db89b2b25298c15a9fe194e1bc3ed236e3d14bfdad
     generated_at: 2026-05-05T13:20:46.458Z
+tags:
+  - material
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion 100-page follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.62
+  historical_plausibility: 0.7
+  completeness: 0.46
 ---
-
 ## Field briefing
 
 Lead Ore adds another practical node to the static technology tree. The page treats it as an early, inspectable capability that can be sourced, tested, taught, and improved without modern infrastructure.

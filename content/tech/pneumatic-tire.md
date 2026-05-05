@@ -4,11 +4,12 @@ slug: pneumatic-tire
 title: Pneumatic tire
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: An air-filled tire that cushions a wheel, improves traction, and
   protects a vehicle from road shock.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: medium
@@ -31,7 +32,11 @@ prerequisites:
     title: Leak test
     kind: test
     role: Finds punctures and bad seams.
-unlocks: []
+unlocks:
+  - slug: ford-model-t
+    title: Ford Model T
+    kind: hard
+    role: "Enables Ford Model T: Carries road shock and gives usable traction."
 missing_prerequisites:
   - slug: pressure-measurement
     title: Pressure measurement
@@ -51,25 +56,6 @@ material_dependencies:
     title: Textile cord
     importance: hard
     availability_note: Carcass reinforcement needs strong cord or fabric.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.36
-  historical_plausibility: 0.78
-  completeness: 0.5
 images:
   header:
     src: /images/tech/pneumatic-tire-header.webp
@@ -89,8 +75,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 4c54b21e4e0655a38e5eccd509fc591ff578a2c66f3c3d879ebbb0d4819d8efd
     generated_at: 2026-05-05T20:05:12.774Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.36
+  historical_plausibility: 0.78
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 An air-filled tire that cushions a wheel, improves traction, and protects a vehicle from road shock.

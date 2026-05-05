@@ -4,11 +4,12 @@ slug: band-brake
 title: Band brake
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A flexible friction band that tightens around a drum to slow a shaft,
   wheel, or transmission member.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: intermediate
 precision_required: medium
@@ -31,7 +32,16 @@ prerequisites:
     title: Quality-control records
     kind: soft
     role: Tracks adjustment and wear.
-unlocks: []
+unlocks:
+  - slug: automobile
+    title: Automobile
+    kind: safety
+    role: "Enables Automobile: Supplies controlled stopping."
+  - slug: planetary-transmission
+    title: Planetary transmission
+    kind: hard
+    role: "Enables Planetary transmission: Controls gear members in early vehicle
+      designs."
 missing_prerequisites:
   - slug: friction-material
     title: Friction material
@@ -45,25 +55,6 @@ material_dependencies:
     title: Mild steel
     importance: hard
     availability_note: Bands, pins, and anchors require metal stock.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.58
-  historical_plausibility: 0.82
-  completeness: 0.5
 images:
   header:
     src: /images/tech/band-brake-header.webp
@@ -83,8 +74,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: d49ffa7fa5de3f2f475bc2706cbee6d464d0b7a43e0ccbdaf2b3dddc76fe1432
     generated_at: 2026-05-05T20:04:45.887Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.58
+  historical_plausibility: 0.82
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 A flexible friction band that tightens around a drum to slow a shaft, wheel, or transmission member.

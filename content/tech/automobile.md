@@ -4,11 +4,12 @@ slug: automobile
 title: Automobile
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A self-propelled road vehicle that combines power, steering, braking,
   load-bearing wheels, fuel handling, and road testing.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: expert
 precision_required: high
@@ -35,7 +36,12 @@ prerequisites:
     title: Technical drawing
     kind: soft
     role: Keeps geometry and revisions reproducible.
-unlocks: []
+unlocks:
+  - slug: ford-model-t
+    title: Ford Model T
+    kind: hard
+    role: "Enables Ford Model T: Provides the general self-propelled road vehicle
+      pattern."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -50,25 +56,6 @@ material_dependencies:
     title: Lubricating oil
     importance: hard
     availability_note: Moving parts require lubrication and contamination control.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.48
-  historical_plausibility: 0.78
-  completeness: 0.58
 images:
   header:
     src: /images/tech/automobile-header.webp
@@ -88,8 +75,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 2c128478a528ca2d0a18061e2ffe8e11c0c55dfa98c5515bb618f0970bc1d0a1
     generated_at: 2026-05-05T19:59:08.452Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.48
+  historical_plausibility: 0.78
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 A self-propelled road vehicle that combines power, steering, braking, load-bearing wheels, fuel handling, and road testing.

@@ -27,14 +27,19 @@ prerequisites:
     kind: tooling
     role: Cutting and scraping tools shape the reference arms.
 unlocks:
-  - slug: technical-drawing
-    title: Technical drawing
-    kind: measurement
-    role: Right-angle tools make drawings and templates more dependable.
   - slug: alignment-checking
     title: Alignment checking
     kind: measurement
     role: Squares check whether assemblies remain true.
+  - slug: mortise-and-tenon
+    title: Mortise and tenon
+    kind: soft
+    role: "Enables Mortise and tenon: Try-square provides a necessary starting point
+      for this page."
+  - slug: technical-drawing
+    title: Technical drawing
+    kind: measurement
+    role: Right-angle tools make drawings and templates more dependable.
 missing_prerequisites: []
 material_dependencies:
   - slug: stable-stock
@@ -42,24 +47,6 @@ material_dependencies:
     importance: hard
     availability_note: Seasoned wood, bone, or metal must hold a reference edge
       without warping quickly.
-tags:
-  - measurement
-  - woodworking
-  - tool
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; tool history claims need human source review.
-confidence:
-  practicality: 0.76
-  historical_plausibility: 0.78
-  completeness: 0.55
 images:
   header:
     src: /images/tech/try-square-header.webp
@@ -79,8 +66,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 310625be2ec91722fa77c93b4ee56668919c65d87770de10a2135ae483748c0c
     generated_at: 2026-05-04T23:32:07.187Z
+tags:
+  - measurement
+  - woodworking
+  - tool
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; tool history claims need human source review.
+confidence:
+  practicality: 0.76
+  historical_plausibility: 0.78
+  completeness: 0.55
 ---
-
 ## Field briefing
 
 A try-square is a right-angle reference. It lets [[woodworking|woodworking]] move from "looks straight" to repeatable frames, boxes, benches, axles, and templates.

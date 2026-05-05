@@ -5,6 +5,7 @@ title: Tensile test
 aliases:
   - pull test
 node_type: test
+secondary_node_types: []
 status: draft
 summary: A controlled pull test for comparing rope, fiber, thread, straps,
   joints, and other materials that fail in tension.
@@ -24,14 +25,38 @@ prerequisites:
     kind: measurement
     role: Known loads make tests repeatable.
 unlocks:
-  - slug: rope
-    title: Rope
-    kind: test
-    role: Cordage needs proof and comparison.
+  - slug: knot-tying
+    title: Knot tying
+    kind: soft
+    role: "Enables Knot tying: Tensile test provides a necessary starting point for
+      this page."
   - slug: pulley
     title: Pulley
     kind: safety
     role: Lifting systems need proof-tested rope and fittings.
+  - slug: rope-making
+    title: Rope making
+    kind: test
+    role: "Enables Rope making: Pull testing reveals whether the process makes
+      useful cordage."
+  - slug: rope
+    title: Rope
+    kind: test
+    role: Cordage needs proof and comparison.
+  - slug: sinew
+    title: Sinew
+    kind: soft
+    role: "Enables Sinew: Tensile test provides a necessary starting point for this
+      page."
+  - slug: spoked-wheel
+    title: Spoked wheel
+    kind: optional
+    role: "Enables Spoked wheel: Useful for checking lashings, ties, or later wire
+      spokes."
+  - slug: woodworking
+    title: Woodworking
+    kind: optional
+    role: "Enables Woodworking: Pull tests help compare lashings, pegs, and joints."
 missing_prerequisites: []
 material_dependencies:
   - slug: standard-weights
@@ -39,25 +64,6 @@ material_dependencies:
     importance: soft
     availability_note: Known weights improve repeatability, but comparative tests
       can start with repeated baskets of stones.
-tags:
-  - testing
-  - materials
-  - quality-control
-generation:
-  created_by: llm
-  provider: OpenAI
-  model: GPT-5 Codex
-  prompt_version: ANA-13 seed-content manual draft
-  generated_at: 2026-05-03
-  request_issue: ANA-13
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; test method history and safety limits need human
-      source review.
-confidence:
-  practicality: 0.76
-  historical_plausibility: 0.75
-  completeness: 0.58
 images:
   header:
     src: /images/tech/tensile-test-header.webp
@@ -76,8 +82,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 4fd364612c45ba64531de48ebd15b5eee1055d022b2bf664df30bf0fd63a900b
     generated_at: 2026-05-04T23:31:18.511Z
+tags:
+  - testing
+  - materials
+  - quality-control
+generation:
+  created_by: llm
+  model: GPT-5 Codex
+  provider: OpenAI
+  prompt_version: ANA-13 seed-content manual draft
+  generated_at: 2026-05-03
+  request_issue: ANA-13
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; test method history and safety limits need human
+      source review.
+confidence:
+  practicality: 0.76
+  historical_plausibility: 0.75
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 A tensile test answers a simple question: how does this fail when pulled? It supports [[rope|rope]], bindings, straps, fibers, and lifting gear.

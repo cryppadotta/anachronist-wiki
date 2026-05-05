@@ -4,6 +4,7 @@ slug: straightedge
 title: Straightedge
 aliases: []
 node_type: measurement
+secondary_node_types: []
 status: draft
 summary: A stable reference edge used to detect bends, guide marks, compare
   surfaces, and teach straightness.
@@ -22,7 +23,15 @@ prerequisites:
     title: Timber seasoning
     kind: soft
     role: Timber seasoning provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: drill-press
+    title: Drill press
+    kind: test
+    role: "Enables Drill press: Checks table and guide alignment."
+  - slug: lathe
+    title: Lathe
+    kind: test
+    role: "Enables Lathe: Checks ways and alignment."
 missing_prerequisites: []
 material_dependencies:
   - slug: stable-straight-stock
@@ -30,24 +39,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - measurement
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/straightedge-header.webp
@@ -68,8 +59,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 2b499b9b6e5d4fc39112d6f4f7560ed345dfb3422bc25efc8c113bb8774eb3bd
     generated_at: 2026-05-04T23:30:32.705Z
+tags:
+  - measurement
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Straightedge belongs in the technology tree because it turns local materials and habits into a more repeatable reference. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

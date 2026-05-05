@@ -4,6 +4,7 @@ slug: water-pump
 title: Water pump
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
 summary: A mechanical device that moves water through a cooling loop, well,
   trough, or workshop process.
@@ -30,7 +31,12 @@ prerequisites:
     title: Machining
     kind: soft
     role: Improves impellers, shafts, and housings.
-unlocks: []
+unlocks:
+  - slug: water-jacket-cooling
+    title: Water-jacket cooling
+    kind: soft
+    role: "Enables Water-jacket cooling: Can force circulation where thermosiphon is
+      insufficient."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -41,25 +47,6 @@ material_dependencies:
     title: Leather
     importance: soft
     availability_note: Early seals and valves can use leather.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.58
-  historical_plausibility: 0.74
-  completeness: 0.5
 images:
   header:
     src: /images/tech/water-pump-header.webp
@@ -79,8 +66,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: b638042c3265e4fea92bec4b78e83dda076d12c2d3844d4f4258aaba8a41b1b2
     generated_at: 2026-05-05T20:03:16.057Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.58
+  historical_plausibility: 0.74
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 A mechanical device that moves water through a cooling loop, well, trough, or workshop process.

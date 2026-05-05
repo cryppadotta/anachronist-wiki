@@ -4,6 +4,7 @@ slug: storage-jar
 title: Storage jar
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
 summary: A container for keeping water, grain, pigment, fiber, ash, glue, oil,
   and labeled workshop samples controlled.
@@ -22,7 +23,32 @@ prerequisites:
     title: Kiln firing test
     kind: soft
     role: Kiln firing test provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: brine
+    title: Brine
+    kind: soft
+    role: "Enables Brine: Storage Jar provides a necessary starting point for
+      repeatable work."
+  - slug: granary
+    title: Granary
+    kind: soft
+    role: "Enables Granary: Storage Jar provides a necessary starting point for
+      repeatable work."
+  - slug: salt
+    title: Salt
+    kind: soft
+    role: "Enables Salt: Storage Jar provides a necessary starting point for
+      repeatable work."
+  - slug: threshing
+    title: Threshing
+    kind: soft
+    role: "Enables Threshing: Storage Jar provides a necessary starting point for
+      repeatable work."
+  - slug: winnowing
+    title: Winnowing
+    kind: soft
+    role: "Enables Winnowing: Storage Jar provides a necessary starting point for
+      repeatable work."
 missing_prerequisites: []
 material_dependencies:
   - slug: clay-body-and-closure
@@ -30,24 +56,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - container
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/storage-jar-header.webp
@@ -67,8 +75,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: ad1b6f249986c6d4a18176f5f178cfa963d01f7628bcc831bf0ea15e72ff698e
     generated_at: 2026-05-04T23:30:17.597Z
+tags:
+  - container
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Storage jar belongs in the technology tree because it turns local materials and habits into a more repeatable working version. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

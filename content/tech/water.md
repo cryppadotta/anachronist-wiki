@@ -4,11 +4,12 @@ slug: water
 title: Water
 aliases: []
 node_type: material
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: The workshop supply chain for finding, carrying, settling, storing, and
   judging usable water for clay, ink, paper, glue, washing, and tests.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric
 difficulty: basic
 precision_required: low
@@ -16,22 +17,126 @@ minimum_social_scale: household
 time_to_first_working_version: hours
 prerequisites: []
 unlocks:
+  - slug: barrel
+    title: Barrel
+    kind: soft
+    role: "Enables Barrel: Water provides a necessary starting point for repeatable
+      work."
+  - slug: brine
+    title: Brine
+    kind: hard
+    role: "Enables Brine: Water provides a necessary starting point for first
+      trials."
+  - slug: bucket
+    title: Bucket
+    kind: soft
+    role: "Enables Bucket: Water provides a necessary starting point for repeatable
+      work."
   - slug: clay
     title: Clay
     kind: material_source
     role: Clay processing needs water for slaking, settling, forming, and tests.
+  - slug: coopering
+    title: Coopering
+    kind: soft
+    role: "Enables Coopering: Water provides a necessary starting point for
+      repeatable work."
+  - slug: dyeing
+    title: Dyeing
+    kind: hard
+    role: "Enables Dyeing: Water provides a necessary starting point for first
+      trials."
+  - slug: firekeeping
+    title: Firekeeping
+    kind: safety
+    role: "Enables Firekeeping: Water or wet material helps control accidental
+      spread where available."
+  - slug: flaxseed-oil
+    title: Flaxseed Oil
+    kind: hard
+    role: "Enables Flaxseed Oil: Water provides a necessary starting point for first
+      trials."
+  - slug: hide-glue
+    title: Hide glue
+    kind: material_source
+    role: "Enables Hide glue: Glue extraction, cleaning, and use all depend on
+      water."
   - slug: ink
     title: Ink
     kind: material_source
     role: Many inks need water for extraction, dispersion, or tool cleaning.
+  - slug: level-trough
+    title: Level trough
+    kind: hard
+    role: "Enables Level trough: Water provides a necessary starting point for this
+      page."
+  - slug: milk-casein
+    title: Milk Casein
+    kind: hard
+    role: "Enables Milk Casein: Water provides a necessary starting point for first
+      trials."
+  - slug: oak-gall
+    title: Oak Gall
+    kind: hard
+    role: "Enables Oak Gall: Water provides a necessary starting point for first
+      trials."
   - slug: paper
     title: Paper
     kind: material_source
     role: Paper making depends on soaking, washing, pulping, and sheet forming.
+  - slug: plant-dye
+    title: Plant Dye
+    kind: hard
+    role: "Enables Plant Dye: Water provides a necessary starting point for first
+      trials."
+  - slug: reed
+    title: Reed
+    kind: hard
+    role: "Enables Reed: Water provides a necessary starting point for this page."
+  - slug: rush
+    title: Rush
+    kind: hard
+    role: "Enables Rush: Water provides a necessary starting point for this page."
+  - slug: salt
+    title: Salt
+    kind: hard
+    role: "Enables Salt: Water provides a necessary starting point for first trials."
+  - slug: soap
+    title: Soap
+    kind: hard
+    role: "Enables Soap: Water provides a necessary starting point for first trials."
+  - slug: starch-paste
+    title: Starch Paste
+    kind: hard
+    role: "Enables Starch Paste: Water provides a necessary starting point for first
+      trials."
+  - slug: tannin-bark
+    title: Tannin Bark
+    kind: hard
+    role: "Enables Tannin Bark: Water provides a necessary starting point for first
+      trials."
+  - slug: tanning
+    title: Tanning
+    kind: hard
+    role: "Enables Tanning: Water provides a necessary starting point for first
+      trials."
+  - slug: vinegar
+    title: Vinegar
+    kind: hard
+    role: "Enables Vinegar: Water provides a necessary starting point for first
+      trials."
+  - slug: water-jacket-cooling
+    title: Water-jacket cooling
+    kind: material_source
+    role: "Enables Water-jacket cooling: Provides coolant."
   - slug: water-settling-test
     title: Water settling test
     kind: material_source
     role: Settling tests need clear vessels and water as the separating medium.
+  - slug: willow
+    title: Willow
+    kind: hard
+    role: "Enables Willow: Water provides a necessary starting point for this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: containers
@@ -39,25 +144,6 @@ material_dependencies:
     importance: hard
     availability_note: Baskets lined with clay, pots, skins, troughs, or wooden
       vessels determine how far water can be moved and stored.
-tags:
-  - material
-  - supply-chain
-  - workshop
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; hydrology, health, and regional availability
-      claims need human source review.
-confidence:
-  practicality: 0.82
-  historical_plausibility: 0.86
-  completeness: 0.58
 images:
   header:
     src: /images/tech/water-header.webp
@@ -76,8 +162,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 49a3b3315d59528d3fc8711ba017e4335f88848b5f214d81daf4d4e49d4b43c8
     generated_at: 2026-05-04T23:33:09.944Z
+tags:
+  - material
+  - supply-chain
+  - workshop
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; hydrology, health, and regional availability
+      claims need human source review.
+confidence:
+  practicality: 0.82
+  historical_plausibility: 0.86
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 Water is a material supply chain. Workshops need it for washing fibers, levigating [[clay|clay]], making [[ink|ink]], soaking [[paper|paper]] pulp, softening hides, and running comparative tests.

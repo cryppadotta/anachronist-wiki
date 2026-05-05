@@ -4,6 +4,7 @@ slug: tally-stick
 title: Tally Stick
 aliases: []
 node_type: measurement
+secondary_node_types: []
 status: draft
 summary: Tally Stick is a practical measurement practice for expanding the
   static technology tree with local sourcing, repeatable preparation, and
@@ -23,7 +24,12 @@ prerequisites:
     title: Measuring rod
     kind: soft
     role: Measuring rod provides a necessary starting point for repeatable work.
-unlocks: []
+unlocks:
+  - slug: quality-control-records
+    title: Quality-control records
+    kind: alternative
+    role: "Enables Quality-control records: Provides a low-literacy counting
+      fallback."
 missing_prerequisites: []
 material_dependencies:
   - slug: tally-stick-reference-materials
@@ -31,24 +37,6 @@ material_dependencies:
     importance: hard
     availability_note: The supply depends on source recognition, access rights,
       preparation, substitutes, storage, and local geography.
-tags:
-  - measurement
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion 100-page follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.62
-  historical_plausibility: 0.7
-  completeness: 0.46
 images:
   header:
     src: /images/tech/tally-stick-header.webp
@@ -69,8 +57,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: e1ef1b2009501b3525efdec0f6d1b040155f2b7cfd3aee9af177e1cc276bfe5e
     generated_at: 2026-05-05T13:30:31.701Z
+tags:
+  - measurement
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion 100-page follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.62
+  historical_plausibility: 0.7
+  completeness: 0.46
 ---
-
 ## Field briefing
 
 Tally Stick adds another practical node to the static technology tree. The page treats it as an early, inspectable capability that can be sourced, tested, taught, and improved without modern infrastructure.

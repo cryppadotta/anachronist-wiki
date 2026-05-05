@@ -5,12 +5,13 @@ title: Kiln firing test
 aliases:
   - firing test
 node_type: test
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A comparative test practice for judging clay bodies, temper, kiln
   placement, fuel behavior, and finished ceramic quality without relying on
   guesswork.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: neolithic_to_ancient
 difficulty: intermediate
 precision_required: medium
@@ -26,14 +27,54 @@ prerequisites:
     kind: material_source
     role: Clay samples are the tested material.
 unlocks:
+  - slug: brick-clay
+    title: Brick Clay
+    kind: soft
+    role: "Enables Brick Clay: Kiln firing test provides a necessary starting point
+      for repeatable work."
   - slug: ceramic-temper
     title: Ceramic temper
     kind: test
     role: Temper choices need firing comparison.
+  - slug: clay-slip
+    title: Clay Slip
+    kind: soft
+    role: "Enables Clay Slip: Kiln firing test provides a necessary starting point
+      for repeatable work."
+  - slug: fired-brick
+    title: Fired Brick
+    kind: soft
+    role: "Enables Fired Brick: Kiln firing test provides a necessary starting point
+      for repeatable work."
   - slug: grog
     title: Grog
     kind: test
     role: Crushed fired clay is judged by how it behaves in new clay.
+  - slug: loom-weights
+    title: Loom weights
+    kind: soft
+    role: "Enables Loom weights: Kiln firing test provides a necessary starting
+      point for this page."
+  - slug: mortar
+    title: Mortar
+    kind: soft
+    role: "Enables Mortar: Kiln firing test provides a necessary starting point for
+      repeatable work."
+  - slug: plaster
+    title: Plaster
+    kind: soft
+    role: "Enables Plaster: Kiln firing test provides a necessary starting point for
+      repeatable work."
+  - slug: roof-tile
+    title: Roof Tile
+    kind: soft
+    role: "Enables Roof Tile: Kiln firing test provides a necessary starting point
+      for repeatable work."
+  - slug: storage-jar
+    title: Storage jar
+    kind: soft
+    role: "Enables Storage jar: Kiln firing test provides a necessary starting point
+      for this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: labeled-test-tiles
@@ -41,25 +82,6 @@ material_dependencies:
     importance: hard
     availability_note: Comparable small pieces are safer and more informative than
       gambling a full vessel.
-tags:
-  - test
-  - ceramics
-  - quality-control
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; ceramic history and firing behavior claims need
-      human source review.
-confidence:
-  practicality: 0.62
-  historical_plausibility: 0.78
-  completeness: 0.5
 images:
   header:
     src: /images/tech/kiln-firing-test-header.webp
@@ -79,8 +101,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 29cad94a16a032705b2b408dc6f374af3c9762a2c6255ee9e0ba9b00c9ed2eab
     generated_at: 2026-05-04T23:15:04.434Z
+tags:
+  - test
+  - ceramics
+  - quality-control
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; ceramic history and firing behavior claims need
+      human source review.
+confidence:
+  practicality: 0.62
+  historical_plausibility: 0.78
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Kiln firing tests make ceramic work observable. Instead of treating each load as a mystery, the workshop compares small labeled pieces before trusting vessels, bricks, or kiln parts.

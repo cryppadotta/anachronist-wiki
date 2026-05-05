@@ -30,15 +30,20 @@ prerequisites:
     kind: measurement
     role: Helps compare shrinkage, fuel use, and test piece batches.
 unlocks:
+  - slug: ink
+    title: Ink
+    kind: optional
+    role: Controlled soot collection can feed some black pigment supply chains.
+  - slug: kiln-firing-test
+    title: Kiln firing test
+    kind: tooling
+    role: "Enables Kiln firing test: A kiln or controlled firing structure is the
+      test environment."
   - slug: paper
     title: Paper
     kind: optional
     role: Kiln-dried ash or lime processing may support later workshop chemistry,
       though paper does not require a kiln.
-  - slug: ink
-    title: Ink
-    kind: optional
-    role: Controlled soot collection can feed some black pigment supply chains.
 missing_prerequisites: []
 material_dependencies:
   - slug: clay
@@ -51,25 +56,6 @@ material_dependencies:
     importance: hard
     availability_note: Wood, brush, dung, peat, or charcoal availability determines
       achievable firing and repeatability.
-tags:
-  - ceramics
-  - heat
-  - workshop
-generation:
-  created_by: llm
-  provider: OpenAI
-  model: GPT-5 Codex
-  prompt_version: ANA-13 seed-content manual draft
-  generated_at: 2026-05-03
-  request_issue: ANA-13
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; firing ranges and kiln history need human source
-      review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.82
-  completeness: 0.58
 images:
   header:
     src: /images/tech/kiln-header.webp
@@ -88,8 +74,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: ea1f16675055583737cd2eb883e5703da60c910915b4cf729380fbbbdbbc4975
     generated_at: 2026-05-04T23:15:07.047Z
+tags:
+  - ceramics
+  - heat
+  - workshop
+generation:
+  created_by: llm
+  model: GPT-5 Codex
+  provider: OpenAI
+  prompt_version: ANA-13 seed-content manual draft
+  generated_at: 2026-05-03
+  request_issue: ANA-13
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; firing ranges and kiln history need human source
+      review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.82
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 A kiln is controlled heat in a wall. It turns scattered fuel and open flame into a repeatable workshop environment for [[clay|clay]] and other materials.

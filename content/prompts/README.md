@@ -67,3 +67,15 @@ Page images are generated after the text page passes validation:
 Image generation remains maintainer-only local tooling. It must not be exposed through public routes, visitor traffic, issue comments, or scheduled web crawlers. Image assets are static files committed under `public/images/tech/`, and each page records image provenance in frontmatter under `images.header` and `images.schematic`.
 
 Image prompts must preserve the same safety rules as text prompts. For restricted or blocked topics, images may provide high-level historical or graph context, but must not include operational reproduction details, exact recipes, ratios, actionable quantities, temperatures, pressures, timings, precursor acquisition, purification, equipment configuration, optimization, deployment, or troubleshooting.
+
+## Graph Repair Contract
+
+Run `graph-repair.v1.md` after adding or changing prerequisite clusters. The repair pass makes `unlocks` mirror existing prerequisite edges so pages expose both backward prerequisites and forward "moving forward" relationships.
+
+The reusable command is:
+
+```bash
+npm run repair:unlocks -- --write
+```
+
+This command only adds forward unlocks for existing pages. It does not create pages for missing upstream or outbound nodes.

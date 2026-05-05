@@ -9,10 +9,10 @@ node_type: process
 secondary_node_types:
   - tool
 status: draft
+page_treatment: practical_with_cautions
 summary: The practical craft of selecting, shaping, joining, boring, smoothing,
   and repairing wood for tools, frames, wheels, fixtures, and buildings.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric
 difficulty: basic
 precision_required: medium
@@ -28,18 +28,148 @@ prerequisites:
     kind: optional
     role: Pull tests help compare lashings, pegs, and joints.
 unlocks:
-  - slug: wheel-and-axle
-    title: Wheel and axle
-    kind: tooling
-    role: Shapes wheels, hubs, axles, and frames.
-  - slug: cart
-    title: Cart
-    kind: tooling
-    role: Supplies the frame, bed, axle supports, and repairs.
+  - slug: adze
+    title: Adze
+    kind: soft
+    role: "Enables Adze: Woodworking provides a necessary starting point for this
+      page."
+  - slug: animal-harness
+    title: Animal Harness
+    kind: hard
+    role: "Enables Animal Harness: Woodworking provides a necessary starting point
+      for first trials."
+  - slug: barrel
+    title: Barrel
+    kind: hard
+    role: "Enables Barrel: Woodworking provides a necessary starting point for first
+      trials."
   - slug: bicycle
     title: Bicycle
     kind: tooling
     role: Supports early frames, rims, jigs, and handles.
+  - slug: brickmaking
+    title: Brickmaking
+    kind: soft
+    role: "Enables Brickmaking: Woodworking provides a necessary starting point for
+      repeatable work."
+  - slug: bucket
+    title: Bucket
+    kind: hard
+    role: "Enables Bucket: Woodworking provides a necessary starting point for first
+      trials."
+  - slug: cart
+    title: Cart
+    kind: tooling
+    role: Supplies the frame, bed, axle supports, and repairs.
+  - slug: clamp
+    title: Clamp
+    kind: soft
+    role: "Enables Clamp: Woodworking provides a necessary starting point for this
+      page."
+  - slug: coopering
+    title: Coopering
+    kind: hard
+    role: "Enables Coopering: Woodworking provides a necessary starting point for
+      first trials."
+  - slug: drying-rack
+    title: Drying rack
+    kind: hard
+    role: "Enables Drying rack: Woodworking provides a necessary starting point for
+      this page."
+  - slug: hoe
+    title: Hoe
+    kind: hard
+    role: "Enables Hoe: Woodworking provides a necessary starting point for first
+      trials."
+  - slug: hurdle
+    title: Hurdle
+    kind: soft
+    role: "Enables Hurdle: Woodworking provides a necessary starting point for
+      repeatable work."
+  - slug: level-trough
+    title: Level trough
+    kind: soft
+    role: "Enables Level trough: Woodworking provides a necessary starting point for
+      this page."
+  - slug: peg-joint
+    title: Peg joint
+    kind: soft
+    role: "Enables Peg joint: Woodworking provides a necessary starting point for
+      this page."
+  - slug: plain-bearing
+    title: Plain bearing
+    kind: tooling
+    role: "Enables Plain bearing: Makes early wooden housings, shafts, and
+      replaceable sleeves."
+  - slug: plastering
+    title: Plastering
+    kind: soft
+    role: "Enables Plastering: Woodworking provides a necessary starting point for
+      repeatable work."
+  - slug: plow
+    title: Plow
+    kind: hard
+    role: "Enables Plow: Woodworking provides a necessary starting point for first
+      trials."
+  - slug: potters-wheel
+    title: Potter's wheel
+    kind: tooling
+    role: "Enables Potter's wheel: Builds the turntable, support frame, and shaft
+      parts."
+  - slug: shovel
+    title: Shovel
+    kind: hard
+    role: "Enables Shovel: Woodworking provides a necessary starting point for first
+      trials."
+  - slug: shuttle
+    title: Shuttle
+    kind: soft
+    role: "Enables Shuttle: Woodworking provides a necessary starting point for this
+      page."
+  - slug: sickle
+    title: Sickle
+    kind: hard
+    role: "Enables Sickle: Woodworking provides a necessary starting point for first
+      trials."
+  - slug: sled
+    title: Sled
+    kind: hard
+    role: "Enables Sled: Woodworking provides a necessary starting point for first
+      trials."
+  - slug: spoked-wheel
+    title: Spoked wheel
+    kind: tooling
+    role: "Enables Spoked wheel: Shapes hub, spokes, rim segments, joints, and
+      repair wedges."
+  - slug: thatching
+    title: Thatching
+    kind: soft
+    role: "Enables Thatching: Woodworking provides a necessary starting point for
+      repeatable work."
+  - slug: tile-making
+    title: Tile Making
+    kind: soft
+    role: "Enables Tile Making: Woodworking provides a necessary starting point for
+      repeatable work."
+  - slug: wattle-and-daub
+    title: Wattle and Daub
+    kind: soft
+    role: "Enables Wattle and Daub: Woodworking provides a necessary starting point
+      for repeatable work."
+  - slug: wheel-and-axle
+    title: Wheel and axle
+    kind: tooling
+    role: Shapes wheels, hubs, axles, and frames.
+  - slug: workbench
+    title: Workbench
+    kind: hard
+    role: "Enables Workbench: Woodworking provides a necessary starting point for
+      this page."
+  - slug: yoke
+    title: Yoke
+    kind: hard
+    role: "Enables Yoke: Woodworking provides a necessary starting point for first
+      trials."
 missing_prerequisites: []
 material_dependencies:
   - slug: timber
@@ -51,25 +181,6 @@ material_dependencies:
     title: Abrasive grit
     importance: optional
     availability_note: Sand, stone, or other grit improves smoothing when edged tools are crude.
-tags:
-  - workshop
-  - material-processing
-  - tools
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-34 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-34
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; regional timber and tool-history claims need
-      human source review.
-confidence:
-  practicality: 0.78
-  historical_plausibility: 0.82
-  completeness: 0.58
 images:
   header:
     src: /images/tech/woodworking-header.webp
@@ -89,8 +200,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 605f1e529b7b805bc23fd67445478ed83c1f619ca4123735ad7d35fa20707ad4
     generated_at: 2026-05-04T23:34:38.797Z
+tags:
+  - workshop
+  - material-processing
+  - tools
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-34 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-34
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; regional timber and tool-history claims need
+      human source review.
+confidence:
+  practicality: 0.78
+  historical_plausibility: 0.82
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 Woodworking turns trees into repeatable parts. It is a prerequisite for many machines because wood is available, repairable, and strong enough for early frames, wheels, levers, handles, benches, and jigs.

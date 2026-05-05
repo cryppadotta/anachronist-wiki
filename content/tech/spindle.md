@@ -5,6 +5,7 @@ title: Spindle
 aliases:
   - drop spindle
 node_type: tool
+secondary_node_types: []
 status: draft
 summary: A rotating shaft and optional whorl used to twist fiber into thread or
   yarn for cordage, weaving, stitching, and bindings.
@@ -24,14 +25,39 @@ prerequisites:
     kind: tooling
     role: Drilling helps make balanced whorls and sockets.
 unlocks:
-  - slug: weaving
-    title: Weaving
-    kind: tooling
-    role: Spindles produce longer thread for woven textiles.
+  - slug: hemp-fiber
+    title: Hemp Fiber
+    kind: soft
+    role: "Enables Hemp Fiber: Spindle provides a necessary starting point for
+      repeatable work."
+  - slug: linen-thread
+    title: Linen Thread
+    kind: soft
+    role: "Enables Linen Thread: Spindle provides a necessary starting point for
+      repeatable work."
+  - slug: nettle-fiber
+    title: Nettle Fiber
+    kind: soft
+    role: "Enables Nettle Fiber: Spindle provides a necessary starting point for
+      repeatable work."
   - slug: rope-making
     title: Rope making
     kind: tooling
     role: Spinning habits improve twist control for small cordage.
+  - slug: spinning
+    title: Spinning
+    kind: hard
+    role: "Enables Spinning: Spindle provides a necessary starting point for this
+      page."
+  - slug: weaving
+    title: Weaving
+    kind: tooling
+    role: Spindles produce longer thread for woven textiles.
+  - slug: wool-yarn
+    title: Wool Yarn
+    kind: soft
+    role: "Enables Wool Yarn: Spindle provides a necessary starting point for
+      repeatable work."
 missing_prerequisites: []
 material_dependencies:
   - slug: straight-shaft-and-whorl
@@ -39,25 +65,6 @@ material_dependencies:
     importance: hard
     availability_note: Wood, bone, reed, clay, stone, or reused parts can make the
       shaft and weight.
-tags:
-  - textile
-  - tool
-  - fiber
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; textile-tool chronology and material claims need
-      human source review.
-confidence:
-  practicality: 0.74
-  historical_plausibility: 0.84
-  completeness: 0.55
 images:
   header:
     src: /images/tech/spindle-header.webp
@@ -77,8 +84,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 1a91fcf7efd86e2f8c589e102043bad9876241669a311b06b04625e8cceaad6f
     generated_at: 2026-05-04T23:28:08.845Z
+tags:
+  - textile
+  - tool
+  - fiber
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; textile-tool chronology and material claims need
+      human source review.
+confidence:
+  practicality: 0.74
+  historical_plausibility: 0.84
+  completeness: 0.55
 ---
-
 ## Field briefing
 
 A spindle stores twist. It turns prepared [[cordage-fiber|cordage fiber]] into longer thread for [[weaving|weaving]], stitching, binding, and fine cordage.

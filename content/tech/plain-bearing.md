@@ -6,6 +6,7 @@ aliases:
   - bearing surface
   - bushing
 node_type: artifact
+secondary_node_types: []
 status: draft
 summary: A low-friction rubbing surface or sleeve that lets a shaft turn or
   pivot with controlled wear.
@@ -33,10 +34,38 @@ unlocks:
     title: Bicycle
     kind: enables
     role: Hubs, steering pivots, and early cranks need controlled friction.
+  - slug: cart
+    title: Cart
+    kind: soft
+    role: "Enables Cart: Reduces axle wear for repeated use."
+  - slug: clutch
+    title: Clutch
+    kind: soft
+    role: "Enables Clutch: Supports rotating elements."
+  - slug: drive-shaft
+    title: Drive shaft
+    kind: hard
+    role: "Enables Drive shaft: Supports rotation."
+  - slug: lathe
+    title: Lathe
+    kind: hard
+    role: "Enables Lathe: Supports spindle rotation."
   - slug: potters-wheel
     title: Potter's wheel
     kind: enables
     role: Smooth rotation improves wheel control and durability.
+  - slug: rolling-mill
+    title: Rolling mill
+    kind: hard
+    role: "Enables Rolling mill: Supports heavy rotating rolls."
+  - slug: steering-gear
+    title: Steering gear
+    kind: hard
+    role: "Enables Steering gear: Supports pivots and shafts."
+  - slug: water-pump
+    title: Water pump
+    kind: soft
+    role: "Enables Water pump: Supports rotating or sliding pump parts."
 missing_prerequisites: []
 material_dependencies:
   - slug: hardwood
@@ -51,25 +80,6 @@ material_dependencies:
     title: Bronze
     importance: optional
     availability_note: Metal bushings improve wear resistance where metal supply exists.
-tags:
-  - mechanics
-  - friction
-  - workshop
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-34 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-34
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; historical bearing materials and chronology need
-      human source review.
-confidence:
-  practicality: 0.7
-  historical_plausibility: 0.74
-  completeness: 0.56
 images:
   header:
     src: /images/tech/plain-bearing-header.webp
@@ -89,8 +99,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 01e380a769c649580ba8232ebeaf31fb5fec4dc98b7e0c2bd50b395430e9a109
     generated_at: 2026-05-04T23:21:27.268Z
+tags:
+  - mechanics
+  - friction
+  - workshop
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-34 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-34
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; historical bearing materials and chronology need
+      human source review.
+confidence:
+  practicality: 0.7
+  historical_plausibility: 0.74
+  completeness: 0.56
 ---
-
 ## Field briefing
 
 A plain bearing is the simplest answer to controlled rotation: let a shaft rub against a prepared surface that can be smoothed, lubricated, inspected, and replaced.

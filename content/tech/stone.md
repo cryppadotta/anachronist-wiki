@@ -4,6 +4,7 @@ slug: stone
 title: Stone
 aliases: []
 node_type: material
+secondary_node_types: []
 status: draft
 summary: Hard natural rock selected by fracture, grain, shape, and durability
   for tools, weights, hearths, grinding, building, and test pieces.
@@ -22,7 +23,88 @@ prerequisites:
     title: Stone hammer
     kind: soft
     role: Stone hammer provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: bog-iron
+    title: Bog Iron
+    kind: hard
+    role: "Enables Bog Iron: Stone provides a necessary starting point for first
+      trials."
+  - slug: chalk
+    title: Chalk
+    kind: hard
+    role: "Enables Chalk: Stone provides a necessary starting point for this page."
+  - slug: copper-ore
+    title: Copper Ore
+    kind: hard
+    role: "Enables Copper Ore: Stone provides a necessary starting point for first
+      trials."
+  - slug: flint
+    title: Flint
+    kind: hard
+    role: "Enables Flint: Stone provides a necessary starting point for this page."
+  - slug: glass-sand
+    title: Glass Sand
+    kind: hard
+    role: "Enables Glass Sand: Stone provides a necessary starting point for first
+      trials."
+  - slug: gravel
+    title: Gravel
+    kind: hard
+    role: "Enables Gravel: Stone provides a necessary starting point for first
+      trials."
+  - slug: iron-ore
+    title: Iron Ore
+    kind: hard
+    role: "Enables Iron Ore: Stone provides a necessary starting point for first
+      trials."
+  - slug: lead-ore
+    title: Lead Ore
+    kind: hard
+    role: "Enables Lead Ore: Stone provides a necessary starting point for first
+      trials."
+  - slug: limestone
+    title: Limestone
+    kind: hard
+    role: "Enables Limestone: Stone provides a necessary starting point for first
+      trials."
+  - slug: mortar-and-pestle
+    title: Mortar and pestle
+    kind: hard
+    role: "Enables Mortar and pestle: Stone provides a necessary starting point for
+      this page."
+  - slug: potash
+    title: Potash
+    kind: hard
+    role: "Enables Potash: Stone provides a necessary starting point for first
+      trials."
+  - slug: quern
+    title: Quern
+    kind: hard
+    role: "Enables Quern: Stone provides a necessary starting point for this page."
+  - slug: sand
+    title: Sand
+    kind: hard
+    role: "Enables Sand: Stone provides a necessary starting point for first trials."
+  - slug: sandstone
+    title: Sandstone
+    kind: hard
+    role: "Enables Sandstone: Stone provides a necessary starting point for first
+      trials."
+  - slug: scratch-hardness-test
+    title: Scratch hardness test
+    kind: hard
+    role: "Enables Scratch hardness test: Stone provides a necessary starting point
+      for this page."
+  - slug: shell-lime
+    title: Shell Lime
+    kind: hard
+    role: "Enables Shell Lime: Stone provides a necessary starting point for first
+      trials."
+  - slug: tin-ore
+    title: Tin Ore
+    kind: hard
+    role: "Enables Tin Ore: Stone provides a necessary starting point for first
+      trials."
 missing_prerequisites: []
 material_dependencies:
   - slug: hard-stone
@@ -30,24 +112,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - stone
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/stone-header.webp
@@ -67,8 +131,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 7bd8010009ad8120aef4f67c79e64daadb111b717ee364da6a27bfd27ed186ed
     generated_at: 2026-05-04T23:29:57.263Z
+tags:
+  - stone
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Stone belongs in the technology tree because it turns local materials and habits into a more repeatable supply. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

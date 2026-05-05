@@ -26,14 +26,23 @@ prerequisites:
     kind: tooling
     role: Spindles help make longer, more even thread.
 unlocks:
-  - slug: leather
-    title: Leather
-    kind: alternative
-    role: Woven straps and cloth can replace leather in some low-wear uses.
   - slug: bicycle
     title: Bicycle
     kind: material_source
     role: Woven straps, pads, and tension members can support early prototypes.
+  - slug: leather
+    title: Leather
+    kind: alternative
+    role: Woven straps and cloth can replace leather in some low-wear uses.
+  - slug: loom
+    title: Loom
+    kind: hard
+    role: "Enables Loom: Weaving provides a necessary starting point for this page."
+  - slug: shuttle
+    title: Shuttle
+    kind: hard
+    role: "Enables Shuttle: Weaving provides a necessary starting point for this
+      page."
 missing_prerequisites: []
 material_dependencies:
   - slug: thread-or-yarn
@@ -41,25 +50,6 @@ material_dependencies:
     importance: hard
     availability_note: Fiber quality, spinning, and storage determine whether
       weaving is practical.
-tags:
-  - textile
-  - fiber
-  - process
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; textile history and regional claims need human
-      source review.
-confidence:
-  practicality: 0.66
-  historical_plausibility: 0.82
-  completeness: 0.52
 images:
   header:
     src: /images/tech/weaving-header.webp
@@ -79,8 +69,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 4b011d0a0627ca5648679d72a5a5ca8ffae1a5bcb1833a08d25fe353d9997778
     generated_at: 2026-05-04T23:33:24.923Z
+tags:
+  - textile
+  - fiber
+  - process
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; textile history and regional claims need human
+      source review.
+confidence:
+  practicality: 0.66
+  historical_plausibility: 0.82
+  completeness: 0.52
 ---
-
 ## Field briefing
 
 Weaving turns many weak strands into sheet, strap, screen, or belt. It is a material multiplier for fiber economies.

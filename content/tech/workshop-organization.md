@@ -4,6 +4,7 @@ slug: workshop-organization
 title: Workshop organization
 aliases: []
 node_type: institution
+secondary_node_types: []
 status: draft
 summary: A social technology that assigns roles, space, storage, tool care,
   safety rules, and quality checks inside a productive workshop.
@@ -22,7 +23,31 @@ prerequisites:
     title: Workshop records
     kind: soft
     role: Workshop records provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: bridge-trestle
+    title: Bridge Trestle
+    kind: soft
+    role: "Enables Bridge Trestle: Workshop Organization provides a necessary
+      starting point for repeatable work."
+  - slug: drainage-ditch
+    title: Drainage Ditch
+    kind: soft
+    role: "Enables Drainage Ditch: Workshop Organization provides a necessary
+      starting point for repeatable work."
+  - slug: factory-assembly-line
+    title: Factory assembly line
+    kind: institutional
+    role: "Enables Factory assembly line: Provides task assignment and shared tools."
+  - slug: road-building
+    title: Road Building
+    kind: soft
+    role: "Enables Road Building: Workshop Organization provides a necessary
+      starting point for repeatable work."
+  - slug: saw-pit
+    title: Saw pit
+    kind: soft
+    role: "Enables Saw pit: Workshop organization provides a necessary starting
+      point for this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: people-space-and-rules
@@ -30,24 +55,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - institution
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/workshop-organization-header.webp
@@ -68,8 +75,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 3239fb518d08613945d2de2f121c784b4279b57cfebd3a306f5419a392707379
     generated_at: 2026-05-04T23:35:31.810Z
+tags:
+  - institution
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Workshop organization belongs in the technology tree because it turns local materials and habits into a more repeatable practice. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

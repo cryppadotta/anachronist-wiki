@@ -4,11 +4,12 @@ slug: scratch-hardness-test
 title: Scratch hardness test
 aliases: []
 node_type: test
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A comparative test that ranks minerals, edges, and surfaces by which
   material can scratch another.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: medium
@@ -23,7 +24,79 @@ prerequisites:
     title: Abrasive grit
     kind: soft
     role: Abrasive grit provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: ball-bearing
+    title: Ball bearing
+    kind: test
+    role: "Enables Ball bearing: Screens hardness and wear."
+  - slug: bog-iron
+    title: Bog Iron
+    kind: soft
+    role: "Enables Bog Iron: Scratch hardness test provides a necessary starting
+      point for repeatable work."
+  - slug: copper-ore
+    title: Copper Ore
+    kind: soft
+    role: "Enables Copper Ore: Scratch hardness test provides a necessary starting
+      point for repeatable work."
+  - slug: glass-sand
+    title: Glass Sand
+    kind: soft
+    role: "Enables Glass Sand: Scratch hardness test provides a necessary starting
+      point for repeatable work."
+  - slug: go-no-go-gauge
+    title: Go/no-go gauge
+    kind: test
+    role: "Enables Go/no-go gauge: Screens gauge material durability."
+  - slug: gravel
+    title: Gravel
+    kind: soft
+    role: "Enables Gravel: Scratch hardness test provides a necessary starting point
+      for repeatable work."
+  - slug: iron-ore
+    title: Iron Ore
+    kind: soft
+    role: "Enables Iron Ore: Scratch hardness test provides a necessary starting
+      point for repeatable work."
+  - slug: lead-ore
+    title: Lead Ore
+    kind: soft
+    role: "Enables Lead Ore: Scratch hardness test provides a necessary starting
+      point for repeatable work."
+  - slug: limestone
+    title: Limestone
+    kind: soft
+    role: "Enables Limestone: Scratch hardness test provides a necessary starting
+      point for repeatable work."
+  - slug: piston-cylinder
+    title: Piston and cylinder
+    kind: test
+    role: "Enables Piston and cylinder: Screens materials for wear resistance."
+  - slug: potash
+    title: Potash
+    kind: soft
+    role: "Enables Potash: Scratch hardness test provides a necessary starting point
+      for repeatable work."
+  - slug: sand
+    title: Sand
+    kind: soft
+    role: "Enables Sand: Scratch hardness test provides a necessary starting point
+      for repeatable work."
+  - slug: sandstone
+    title: Sandstone
+    kind: soft
+    role: "Enables Sandstone: Scratch hardness test provides a necessary starting
+      point for repeatable work."
+  - slug: shell-lime
+    title: Shell Lime
+    kind: soft
+    role: "Enables Shell Lime: Scratch hardness test provides a necessary starting
+      point for repeatable work."
+  - slug: tin-ore
+    title: Tin Ore
+    kind: soft
+    role: "Enables Tin Ore: Scratch hardness test provides a necessary starting
+      point for repeatable work."
 missing_prerequisites: []
 material_dependencies:
   - slug: reference-scraps
@@ -31,24 +104,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - test
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/scratch-hardness-test-header.webp
@@ -68,8 +123,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 3d650021750953e4449d6324ba3be66a9933e0c1247c019e91adf00902fc1e41
     generated_at: 2026-05-04T23:25:35.382Z
+tags:
+  - test
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Scratch hardness test belongs in the technology tree because it turns local materials and habits into a more repeatable working version. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

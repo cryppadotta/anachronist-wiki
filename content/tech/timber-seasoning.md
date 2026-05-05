@@ -5,6 +5,7 @@ title: Timber seasoning
 aliases:
   - wood seasoning
 node_type: process
+secondary_node_types: []
 status: draft
 summary: The controlled drying and sorting of timber so wooden parts shrink
   less, warp less, and hold joints more predictably.
@@ -24,39 +25,30 @@ prerequisites:
     kind: knowledge
     role: Batches and waiting periods must be tracked.
 unlocks:
-  - slug: woodworking
-    title: Woodworking
-    kind: material_source
-    role: Seasoned stock improves joinery, wheels, handles, and frames.
   - slug: cart
     title: Cart
     kind: material_source
     role: Stable timber reduces twisting in vehicle frames and axle supports.
+  - slug: straightedge
+    title: Straightedge
+    kind: soft
+    role: "Enables Straightedge: Timber seasoning provides a necessary starting
+      point for this page."
+  - slug: woodworking
+    title: Woodworking
+    kind: material_source
+    role: Seasoned stock improves joinery, wheels, handles, and frames.
+  - slug: workbench
+    title: Workbench
+    kind: soft
+    role: "Enables Workbench: Timber seasoning provides a necessary starting point
+      for this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: dry-storage
     title: Dry storage
     importance: hard
     availability_note: Covered, ventilated space is often the scarce part of the supply chain.
-tags:
-  - woodworking
-  - material-processing
-  - quality-control
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; timber behavior and regional species claims need
-      human source review.
-confidence:
-  practicality: 0.78
-  historical_plausibility: 0.82
-  completeness: 0.57
 images:
   header:
     src: /images/tech/timber-seasoning-header.webp
@@ -76,8 +68,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 3d113001472971077afb76b855e80620c4e384d1c35a0983b87ed71600a348ef
     generated_at: 2026-05-04T23:31:40.218Z
+tags:
+  - woodworking
+  - material-processing
+  - quality-control
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; timber behavior and regional species claims need
+      human source review.
+confidence:
+  practicality: 0.78
+  historical_plausibility: 0.82
+  completeness: 0.57
 ---
-
 ## Field briefing
 
 Timber seasoning turns fresh [[timber|timber]] into more predictable stock. It is a storage and patience technology as much as a wood technology.

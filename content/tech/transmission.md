@@ -4,11 +4,12 @@ slug: transmission
 title: Transmission
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A gear and clutch system that adapts engine speed and torque to the
   driven wheels.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: expert
 precision_required: high
@@ -31,7 +32,11 @@ prerequisites:
     title: Alignment checking
     kind: test
     role: Keeps shafts and gears from binding.
-unlocks: []
+unlocks:
+  - slug: planetary-transmission
+    title: Planetary transmission
+    kind: hard
+    role: "Enables Planetary transmission: Provides the power-transfer role."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -42,25 +47,6 @@ material_dependencies:
     title: Band brake
     importance: soft
     availability_note: Some early transmissions use bands as control elements.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.44
-  historical_plausibility: 0.78
-  completeness: 0.52
 images:
   header:
     src: /images/tech/transmission-header.webp
@@ -80,8 +66,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: d7e6b94025b87654ccdeb4d3f8cf8bd32fc2548c3fceff6b1fd35b7f92ebbbaf
     generated_at: 2026-05-05T20:03:34.899Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.44
+  historical_plausibility: 0.78
+  completeness: 0.52
 ---
-
 ## Field briefing
 
 A gear and clutch system that adapts engine speed and torque to the driven wheels.

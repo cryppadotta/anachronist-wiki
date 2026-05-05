@@ -4,11 +4,12 @@ slug: drill-press
 title: Drill press
 aliases: []
 node_type: tool
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A guided drilling tool that holds a rotating bit square to the work for
   repeatable holes and fastener patterns.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: intermediate
 precision_required: medium
@@ -27,7 +28,11 @@ prerequisites:
     title: Straightedge
     kind: test
     role: Checks table and guide alignment.
-unlocks: []
+unlocks:
+  - slug: machining
+    title: Machining
+    kind: tooling
+    role: "Enables Machining: Makes repeatable holes."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -38,25 +43,6 @@ material_dependencies:
     title: Hardwood
     importance: substitute
     availability_note: Simple frames and jigs can use wood.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.62
-  historical_plausibility: 0.82
-  completeness: 0.54
 images:
   header:
     src: /images/tech/drill-press-header.webp
@@ -76,8 +62,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: fbc5606fd079e5680fe8251b72f84a36d7be4cb3bbd8405658e12c36406f6c2f
     generated_at: 2026-05-05T20:07:17.933Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.62
+  historical_plausibility: 0.82
+  completeness: 0.54
 ---
-
 ## Field briefing
 
 A guided drilling tool that holds a rotating bit square to the work for repeatable holes and fastener patterns.

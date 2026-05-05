@@ -4,6 +4,7 @@ slug: lubricating-oil
 title: Lubricating oil
 aliases: []
 node_type: material
+secondary_node_types: []
 status: draft
 summary: A friction-control material for bearings, gears, engines, and sliding
   tools, sourced from animal, plant, mineral, or petroleum routes.
@@ -30,7 +31,37 @@ prerequisites:
     title: Viscosity comparison
     kind: test
     role: Screens flow and film behavior without modern instruments.
-unlocks: []
+unlocks:
+  - slug: ball-bearing
+    title: Ball bearing
+    kind: hard
+    role: "Enables Ball bearing: Protects rolling contact surfaces."
+  - slug: crankshaft
+    title: Crankshaft
+    kind: hard
+    role: "Enables Crankshaft: Protects loaded journals in use."
+  - slug: cylinder-boring
+    title: Cylinder boring
+    kind: soft
+    role: "Enables Cylinder boring: Helps cutting and inspection by controlling heat
+      and friction."
+  - slug: differential-gear
+    title: Differential gear
+    kind: hard
+    role: "Enables Differential gear: Protects loaded gear teeth and bearings."
+  - slug: internal-combustion-engine
+    title: Internal combustion engine
+    kind: hard
+    role: "Enables Internal combustion engine: Reduces destructive friction and
+      wear."
+  - slug: piston-cylinder
+    title: Piston and cylinder
+    kind: hard
+    role: "Enables Piston and cylinder: Prevents immediate scoring and seizure."
+  - slug: transmission
+    title: Transmission
+    kind: hard
+    role: "Enables Transmission: Prevents rapid gear and bearing failure."
 missing_prerequisites:
   - slug: viscosity-comparison
     title: Viscosity comparison
@@ -48,25 +79,6 @@ material_dependencies:
     title: Petroleum
     importance: optional
     availability_note: Industrial vehicles rely heavily on mineral oils.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.52
-  historical_plausibility: 0.82
-  completeness: 0.5
 images:
   header:
     src: /images/tech/lubricating-oil-header.webp
@@ -86,8 +98,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: c34b871ade1c021ad67dbe5d69363a6d7b1f1b5cb2f61c911bf2eb84881bf4ed
     generated_at: 2026-05-05T20:02:56.845Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.52
+  historical_plausibility: 0.82
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 A friction-control material for bearings, gears, engines, and sliding tools, sourced from animal, plant, mineral, or petroleum routes.

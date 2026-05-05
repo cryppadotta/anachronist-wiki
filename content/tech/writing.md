@@ -22,18 +22,45 @@ prerequisites:
     kind: knowledge
     role: Numbers and tallies are the easiest bridge into records.
 unlocks:
+  - slug: batch-labeling
+    title: Batch labeling
+    kind: soft
+    role: "Enables Batch labeling: Writing provides a necessary starting point for
+      this page."
+  - slug: clay-tablet-records
+    title: Clay tablet records
+    kind: soft
+    role: "Enables Clay tablet records: Writing provides a necessary starting point
+      for this page."
+  - slug: ink
+    title: Ink
+    kind: institutional
+    role: "Enables Ink: Ink is useful when marks need to be repeated and taught."
   - slug: paper
     title: Paper
     kind: institutional
     role: Writing creates demand for cheap record media.
-  - slug: technical-drawing
-    title: Technical drawing
-    kind: institutional
-    role: Drawings need labels, dimensions, and revision notes.
+  - slug: quality-control-records
+    title: Quality-control records
+    kind: knowledge
+    role: "Enables Quality-control records: Allows shared labels and instructions."
   - slug: sanitation-norms
     title: Sanitation norms
     kind: institutional
     role: Written rules and logs help public-health practices persist.
+  - slug: service-manual
+    title: Service manual
+    kind: knowledge
+    role: "Enables Service manual: Enables repeatable instructions."
+  - slug: technical-drawing
+    title: Technical drawing
+    kind: institutional
+    role: Drawings need labels, dimensions, and revision notes.
+  - slug: workshop-records
+    title: Workshop records
+    kind: knowledge
+    role: "Enables Workshop records: Durable records require a writing system or
+      equivalent marks."
 missing_prerequisites: []
 material_dependencies:
   - slug: writing-surface
@@ -41,25 +68,6 @@ material_dependencies:
     importance: hard
     availability_note: Clay, wax, wood, parchment, bark, or paper can work; each has
       different labor costs.
-tags:
-  - records
-  - knowledge
-  - institutions
-generation:
-  created_by: llm
-  provider: OpenAI
-  model: GPT-5 Codex
-  prompt_version: ANA-13 seed-content manual draft
-  generated_at: 2026-05-03
-  request_issue: ANA-13
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; literacy and historical claims need human source
-      review.
-confidence:
-  practicality: 0.7
-  historical_plausibility: 0.76
-  completeness: 0.56
 images:
   header:
     src: /images/tech/writing-header.webp
@@ -78,8 +86,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 01cc503290faee28ac2cb48c43a669134c198c178fca098ecfc75682cd4048eb
     generated_at: 2026-05-04T23:36:49.544Z
+tags:
+  - records
+  - knowledge
+  - institutions
+generation:
+  created_by: llm
+  model: GPT-5 Codex
+  provider: OpenAI
+  prompt_version: ANA-13 seed-content manual draft
+  generated_at: 2026-05-03
+  request_issue: ANA-13
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; literacy and historical claims need human source
+      review.
+confidence:
+  practicality: 0.7
+  historical_plausibility: 0.76
+  completeness: 0.56
 ---
-
 ## Field briefing
 
 Writing is not just marks. It is a repeatable agreement that marks stand for speech, counts, names, places, batches, or instructions.

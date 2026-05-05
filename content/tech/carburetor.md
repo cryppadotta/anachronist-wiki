@@ -4,11 +4,12 @@ slug: carburetor
 title: Carburetor
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A mechanical fuel-and-air metering device that lets a gasoline engine
   draw a combustible mixture under changing load.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: expert
 precision_required: high
@@ -31,7 +32,11 @@ prerequisites:
     title: Go/no-go gauge
     kind: test
     role: Checks fittings and orifices within accepted limits.
-unlocks: []
+unlocks:
+  - slug: gasoline-engine
+    title: Gasoline engine
+    kind: hard
+    role: "Enables Gasoline engine: Meters and mixes fuel with incoming air."
 missing_prerequisites:
   - slug: fluid-metering
     title: Fluid metering
@@ -48,25 +53,6 @@ material_dependencies:
     title: Mild steel
     importance: soft
     availability_note: Linkages and fasteners need steel stock.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.36
-  historical_plausibility: 0.78
-  completeness: 0.52
 images:
   header:
     src: /images/tech/carburetor-header.webp
@@ -86,8 +72,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: b019d6ddae9761eb0da32272ea81da7fd2bb1ded8dd96612e40bdbc1e751a0b5
     generated_at: 2026-05-05T20:01:40.837Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.36
+  historical_plausibility: 0.78
+  completeness: 0.52
 ---
-
 ## Field briefing
 
 A mechanical fuel-and-air metering device that lets a gasoline engine draw a combustible mixture under changing load.

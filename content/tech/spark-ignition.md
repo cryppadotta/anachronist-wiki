@@ -4,11 +4,12 @@ slug: spark-ignition
 title: Spark ignition
 aliases: []
 node_type: process
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: An ignition system that creates a timed electric spark to start
   combustion in a controlled engine chamber.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: high
@@ -31,7 +32,12 @@ prerequisites:
     title: Quality-control records
     kind: test
     role: Tracks intermittent faults and replacements.
-unlocks: []
+unlocks:
+  - slug: internal-combustion-engine
+    title: Internal combustion engine
+    kind: hard
+    role: "Enables Internal combustion engine: Provides timed ignition for
+      light-fuel engines."
 missing_prerequisites:
   - slug: copper-wire
     title: Copper wire
@@ -49,25 +55,6 @@ material_dependencies:
     title: Ceramic insulator
     importance: hard
     availability_note: Spark parts need heat-resistant insulation.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.46
-  historical_plausibility: 0.78
-  completeness: 0.54
 images:
   header:
     src: /images/tech/spark-ignition-header.webp
@@ -87,8 +74,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 0ce7134a4d6b2d9783381b6f9eed2087aced7285cd554fd04363e653d294b0b7
     generated_at: 2026-05-05T20:01:02.898Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.46
+  historical_plausibility: 0.78
+  completeness: 0.54
 ---
-
 ## Field briefing
 
 An ignition system that creates a timed electric spark to start combustion in a controlled engine chamber.

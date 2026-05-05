@@ -4,6 +4,7 @@ slug: batch-labeling
 title: Batch labeling
 aliases: []
 node_type: institution
+secondary_node_types: []
 status: draft
 summary: A simple recordkeeping practice that attaches names, marks, or symbols
   to material lots, tests, failures, and trusted samples.
@@ -22,7 +23,11 @@ prerequisites:
     title: Writing
     kind: soft
     role: Writing provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: quality-control-records
+    title: Quality-control records
+    kind: test
+    role: "Enables Quality-control records: Connects parts and materials to records."
 missing_prerequisites: []
 material_dependencies:
   - slug: labels-and-records
@@ -30,24 +35,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - records
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/batch-labeling-header.webp
@@ -67,8 +54,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: e0b1c01a349d4543210f5069ec43adf7bab10637e506efe7850efadb74ea6a14
     generated_at: 2026-05-04T23:02:25.270Z
+tags:
+  - records
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Batch labeling belongs in the technology tree because it turns local materials and habits into a more repeatable practice. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

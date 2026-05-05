@@ -4,11 +4,12 @@ slug: rolling-mill
 title: Rolling mill
 aliases: []
 node_type: tool
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A powered mill that passes metal between rolls to make bars, strip,
   rail, plate, or sheet of repeatable section.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: expert
 precision_required: high
@@ -31,7 +32,11 @@ prerequisites:
     title: Go/no-go gauge
     kind: test
     role: Checks output thickness and section.
-unlocks: []
+unlocks:
+  - slug: sheet-steel
+    title: Sheet steel
+    kind: refining
+    role: "Enables Sheet steel: Reduces metal to controlled thickness."
 missing_prerequisites:
   - slug: waterwheel
     title: Waterwheel
@@ -45,25 +50,6 @@ material_dependencies:
     title: Lubricating oil
     importance: hard
     availability_note: Bearings and screw adjustments need lubrication.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.34
-  historical_plausibility: 0.78
-  completeness: 0.48
 images:
   header:
     src: /images/tech/rolling-mill-header.webp
@@ -83,8 +69,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: faa6b2361e154d9bb78831bad94ec9f5a80ee995150753d36c3f6217bb8fff1d
     generated_at: 2026-05-05T20:06:38.616Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.34
+  historical_plausibility: 0.78
+  completeness: 0.48
 ---
-
 ## Field briefing
 
 A powered mill that passes metal between rolls to make bars, strip, rail, plate, or sheet of repeatable section.

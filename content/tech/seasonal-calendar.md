@@ -4,6 +4,7 @@ slug: seasonal-calendar
 title: Seasonal Calendar
 aliases: []
 node_type: measurement
+secondary_node_types: []
 status: draft
 summary: Seasonal Calendar is a practical measurement practice for expanding the
   static technology tree with local sourcing, repeatable preparation, and
@@ -23,7 +24,17 @@ prerequisites:
     title: Measuring rod
     kind: soft
     role: Measuring rod provides a necessary starting point for repeatable work.
-unlocks: []
+unlocks:
+  - slug: crop-rotation
+    title: Crop Rotation
+    kind: soft
+    role: "Enables Crop Rotation: Seasonal Calendar provides a necessary starting
+      point for repeatable work."
+  - slug: seed-selection
+    title: Seed Selection
+    kind: soft
+    role: "Enables Seed Selection: Seasonal Calendar provides a necessary starting
+      point for repeatable work."
 missing_prerequisites: []
 material_dependencies:
   - slug: seasonal-calendar-reference-materials
@@ -31,24 +42,6 @@ material_dependencies:
     importance: hard
     availability_note: The supply depends on source recognition, access rights,
       preparation, substitutes, storage, and local geography.
-tags:
-  - measurement
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion 100-page follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.62
-  historical_plausibility: 0.7
-  completeness: 0.46
 images:
   header:
     src: /images/tech/seasonal-calendar-header.webp
@@ -69,8 +62,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 963873b0dd3351f9ef415382eaf5b5024a5d1e6a37bc7ef9d2f42b7fd074a5d3
     generated_at: 2026-05-05T13:28:00.277Z
+tags:
+  - measurement
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion 100-page follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.62
+  historical_plausibility: 0.7
+  completeness: 0.46
 ---
-
 ## Field briefing
 
 Seasonal Calendar adds another practical node to the static technology tree. The page treats it as an early, inspectable capability that can be sourced, tested, taught, and improved without modern infrastructure.

@@ -4,11 +4,12 @@ slug: gasoline
 title: Gasoline
 aliases: []
 node_type: material
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A volatile petroleum fuel fraction used in spark-ignition engines,
   treated here as a supply-chain and safety node rather than a recipe.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: medium
@@ -31,7 +32,15 @@ prerequisites:
     title: Quality-control records
     kind: test
     role: Tracks source, contamination, and engine behavior.
-unlocks: []
+unlocks:
+  - slug: carburetor
+    title: Carburetor
+    kind: hard
+    role: "Enables Carburetor: Defines the fuel behavior being handled."
+  - slug: gasoline-engine
+    title: Gasoline engine
+    kind: hard
+    role: "Enables Gasoline engine: Supplies the fuel family."
 missing_prerequisites:
   - slug: fuel-storage
     title: Fuel storage
@@ -46,25 +55,6 @@ material_dependencies:
     title: Storage jar
     importance: soft
     availability_note: Containers must be chosen for compatibility and sealing.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.24
-  historical_plausibility: 0.78
-  completeness: 0.42
 images:
   header:
     src: /images/tech/gasoline-header.webp
@@ -84,8 +74,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 6140508067cef5f7481aa6b6ddb1dccf151126a9df468e0d930293a90d90da5e
     generated_at: 2026-05-05T20:02:36.492Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.24
+  historical_plausibility: 0.78
+  completeness: 0.42
 ---
-
 ## Field briefing
 
 A volatile petroleum fuel fraction used in spark-ignition engines, treated here as a supply-chain and safety node rather than a recipe.

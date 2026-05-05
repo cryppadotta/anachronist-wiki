@@ -4,11 +4,12 @@ slug: workbench
 title: Workbench
 aliases: []
 node_type: tool
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A stable raised work surface with stops, holes, pegs, or tiedowns for
   safer repeatable craft work.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: low
@@ -23,7 +24,15 @@ prerequisites:
     title: Timber seasoning
     kind: soft
     role: Timber seasoning provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: drill-press
+    title: Drill press
+    kind: tooling
+    role: "Enables Drill press: Supports clamping and layout."
+  - slug: lathe
+    title: Lathe
+    kind: tooling
+    role: "Enables Lathe: Provides stable support and layout culture."
 missing_prerequisites: []
 material_dependencies:
   - slug: stable-timber-and-fasteners
@@ -31,24 +40,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - workshop
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/workbench-header.webp
@@ -68,8 +59,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 65a203b86853f630c73f5130b0c16869f0bb2677f07c23588f83ba5dc0f2eea6
     generated_at: 2026-05-04T23:34:56.834Z
+tags:
+  - workshop
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Workbench belongs in the technology tree because it turns local materials and habits into a more repeatable working version. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

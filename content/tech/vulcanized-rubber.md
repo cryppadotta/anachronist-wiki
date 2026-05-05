@@ -4,11 +4,12 @@ slug: vulcanized-rubber
 title: Vulcanized rubber
 aliases: []
 node_type: material
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Chemically treated natural rubber that resists heat, cold, tearing, and
   deformation better than raw rubber.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: medium
@@ -31,7 +32,11 @@ prerequisites:
     title: Trade network
     kind: institutional
     role: Connects tropical rubber sources to industrial factories.
-unlocks: []
+unlocks:
+  - slug: pneumatic-tire
+    title: Pneumatic tire
+    kind: hard
+    role: "Enables Pneumatic tire: Provides durable elastic tire material."
 missing_prerequisites:
   - slug: natural-rubber
     title: Natural rubber
@@ -51,25 +56,6 @@ material_dependencies:
     title: Textile cord
     importance: soft
     availability_note: Reinforced goods use fabric or cord.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.24
-  historical_plausibility: 0.78
-  completeness: 0.44
 images:
   header:
     src: /images/tech/vulcanized-rubber-header.webp
@@ -89,8 +75,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 89eafe03e55b7844dc859732531092fea15af01b8adb404749867c3902153c02
     generated_at: 2026-05-05T20:05:25.320Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.24
+  historical_plausibility: 0.78
+  completeness: 0.44
 ---
-
 ## Field briefing
 
 Chemically treated natural rubber that resists heat, cold, tearing, and deformation better than raw rubber.

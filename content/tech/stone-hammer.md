@@ -5,11 +5,12 @@ title: Stone hammer
 aliases:
   - hammerstone
 node_type: tool
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A selected stone used to strike, break, peen, wedge, crush,
   rough-shape, and test materials before specialized metal hammers exist.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric
 difficulty: trivial
 precision_required: low
@@ -17,18 +18,38 @@ minimum_social_scale: individual
 time_to_first_working_version: minutes
 prerequisites: []
 unlocks:
-  - slug: cutting-edge
-    title: Cutting edge
-    kind: tooling
-    role: Hammerstones help shape and refresh simple stone or bone edges.
-  - slug: hand-drill
-    title: Hand drill
-    kind: tooling
-    role: Hammerstones help make rough drill parts and sockets.
+  - slug: chisel
+    title: Chisel
+    kind: soft
+    role: "Enables Chisel: Stone hammer provides a necessary starting point for this
+      page."
   - slug: clay
     title: Clay
     kind: tooling
     role: Crushing and mixing temper or dried clay benefits from striking tools.
+  - slug: cutting-edge
+    title: Cutting edge
+    kind: tooling
+    role: Hammerstones help shape and refresh simple stone or bone edges.
+  - slug: flint
+    title: Flint
+    kind: soft
+    role: "Enables Flint: Stone hammer provides a necessary starting point for this
+      page."
+  - slug: hand-drill
+    title: Hand drill
+    kind: tooling
+    role: Hammerstones help make rough drill parts and sockets.
+  - slug: mortar-and-pestle
+    title: Mortar and pestle
+    kind: soft
+    role: "Enables Mortar and pestle: Stone hammer provides a necessary starting
+      point for this page."
+  - slug: stone
+    title: Stone
+    kind: soft
+    role: "Enables Stone: Stone hammer provides a necessary starting point for this
+      page."
 missing_prerequisites: []
 material_dependencies:
   - slug: hard-stone
@@ -36,25 +57,6 @@ material_dependencies:
     importance: hard
     availability_note: Dense rounded cobbles, quartzite, basalt, and similar hard
       stones are useful where available.
-tags:
-  - tool
-  - stone
-  - workshop
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; lithic and regional claims need human source
-      review.
-confidence:
-  practicality: 0.88
-  historical_plausibility: 0.9
-  completeness: 0.55
 images:
   header:
     src: /images/tech/stone-hammer-header.webp
@@ -73,8 +75,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: c1401b60a756a3098dee3fc040e0cdf6267a276d506bda75fdb29cd81bb5312e
     generated_at: 2026-05-04T23:29:41.874Z
+tags:
+  - tool
+  - stone
+  - workshop
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; lithic and regional claims need human source
+      review.
+confidence:
+  practicality: 0.88
+  historical_plausibility: 0.9
+  completeness: 0.55
 ---
-
 ## Field briefing
 
 A stone hammer is the simplest general-purpose striking tool. It can crush [[clay|clay]] temper, shape [[bone-and-antler|bone and antler]], drive wedges, and begin toolmaking.

@@ -4,11 +4,12 @@ slug: radiator
 title: Radiator
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A heat exchanger that moves engine heat from circulating water to air
   through many thin passages or surfaces.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: medium
@@ -31,7 +32,11 @@ prerequisites:
     title: Soldering
     kind: soft
     role: Joins thin metal cooling parts.
-unlocks: []
+unlocks:
+  - slug: gasoline-engine
+    title: Gasoline engine
+    kind: safety
+    role: "Enables Gasoline engine: Rejects engine heat to air."
 missing_prerequisites:
   - slug: sheet-metal-working
     title: Sheet metal working
@@ -54,25 +59,6 @@ material_dependencies:
     title: Copper sheet
     importance: soft
     availability_note: Many radiators benefit from conductive copper or brass sheet.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.48
-  historical_plausibility: 0.78
-  completeness: 0.5
 images:
   header:
     src: /images/tech/radiator-header.webp
@@ -92,8 +78,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: de5b23c8310a073d64b75234c04da130625339d0567078e96c087141b366ea64
     generated_at: 2026-05-05T20:03:00.208Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.48
+  historical_plausibility: 0.78
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 A heat exchanger that moves engine heat from circulating water to air through many thin passages or surfaces.

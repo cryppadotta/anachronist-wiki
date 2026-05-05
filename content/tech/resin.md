@@ -4,11 +4,12 @@ slug: resin
 title: Resin
 aliases: []
 node_type: material
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Sticky tree exudate gathered, cleaned, and used for sealants,
   adhesives, waterproofing, torch fuel, and compound repairs.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: low
@@ -23,7 +24,11 @@ prerequisites:
     title: Firekeeping
     kind: soft
     role: Firekeeping provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: pitch
+    title: Pitch
+    kind: hard
+    role: "Enables Pitch: Resin provides a necessary starting point for this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: tree-resin
@@ -31,24 +36,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - forest
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/resin-header.webp
@@ -68,8 +55,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 9de24d3881cc280f5637941fd9b15b0fe7fc59257c6a3b458cfc6ed6f46fa474
     generated_at: 2026-05-04T23:23:29.299Z
+tags:
+  - forest
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Resin belongs in the technology tree because it turns local materials and habits into a more repeatable supply. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

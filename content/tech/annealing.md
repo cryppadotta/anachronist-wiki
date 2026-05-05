@@ -4,12 +4,13 @@ slug: annealing
 title: Annealing
 aliases: []
 node_type: process
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Annealing is a practical workshop process for expanding the static
   technology tree with local sourcing, repeatable preparation, and visible
   quality checks.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: low
@@ -24,7 +25,11 @@ prerequisites:
     title: Charcoal
     kind: soft
     role: Charcoal provides a necessary starting point for repeatable work.
-unlocks: []
+unlocks:
+  - slug: leaf-spring
+    title: Leaf spring
+    kind: soft
+    role: "Enables Leaf spring: Supports heat-treatment practice."
 missing_prerequisites: []
 material_dependencies:
   - slug: annealing-supply
@@ -32,24 +37,6 @@ material_dependencies:
     importance: hard
     availability_note: The supply depends on source recognition, access rights,
       preparation, substitutes, storage, and local geography.
-tags:
-  - process
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion 100-page follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.62
-  historical_plausibility: 0.7
-  completeness: 0.46
 images:
   header:
     src: /images/tech/annealing-header.webp
@@ -69,8 +56,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 748eb285c203ecfdff3abe9e005367fa834a4640b50ccfbb450f06cbf1dbf749
     generated_at: 2026-05-05T13:09:21.663Z
+tags:
+  - process
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion 100-page follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.62
+  historical_plausibility: 0.7
+  completeness: 0.46
 ---
-
 ## Field briefing
 
 Annealing adds another practical node to the static technology tree. The page treats it as an early, inspectable capability that can be sourced, tested, taught, and improved without modern infrastructure.

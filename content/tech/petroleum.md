@@ -4,11 +4,12 @@ slug: petroleum
 title: Petroleum
 aliases: []
 node_type: material
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Naturally occurring crude oil that becomes a family of fuels,
   lubricants, waxes, and industrial feedstocks after controlled processing.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: low
@@ -31,7 +32,20 @@ prerequisites:
     title: Quality-control records
     kind: test
     role: Tracks source and contamination differences.
-unlocks: []
+unlocks:
+  - slug: gasoline
+    title: Gasoline
+    kind: material_source
+    role: "Enables Gasoline: Provides the crude source."
+  - slug: lubricating-oil
+    title: Lubricating oil
+    kind: soft
+    role: "Enables Lubricating oil: Provides mineral oil feedstock for industrial
+      lubrication."
+  - slug: oil-refining
+    title: Oil refining
+    kind: material_source
+    role: "Enables Oil refining: Supplies crude feedstock."
 missing_prerequisites:
   - slug: geological-survey
     title: Geological survey
@@ -48,25 +62,6 @@ material_dependencies:
     title: Clay
     importance: soft
     availability_note: Clay-lined pits and seals appear in some early storage contexts.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.26
-  historical_plausibility: 0.84
-  completeness: 0.4
 images:
   header:
     src: /images/tech/petroleum-header.webp
@@ -86,8 +81,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 40d58a420a91d0a702131722b3e1aca60aa5dbc26cda433403546a54d17a7210
     generated_at: 2026-05-05T20:02:48.525Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.26
+  historical_plausibility: 0.84
+  completeness: 0.4
 ---
-
 ## Field briefing
 
 Naturally occurring crude oil that becomes a family of fuels, lubricants, waxes, and industrial feedstocks after controlled processing.

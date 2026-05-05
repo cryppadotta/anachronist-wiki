@@ -4,11 +4,12 @@ slug: machining
 title: Machining
 aliases: []
 node_type: process
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Controlled cutting of metal, wood, or hard materials to produce
   repeatable fits, smooth surfaces, and interchangeable machine parts.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: high
@@ -31,7 +32,52 @@ prerequisites:
     title: Go/no-go gauge
     kind: test
     role: Separates acceptable from unacceptable fits.
-unlocks: []
+unlocks:
+  - slug: ball-bearing
+    title: Ball bearing
+    kind: hard
+    role: "Enables Ball bearing: Creates races and retainers."
+  - slug: camshaft
+    title: Camshaft
+    kind: hard
+    role: "Enables Camshaft: Shapes lobes and journals."
+  - slug: carburetor
+    title: Carburetor
+    kind: tooling
+    role: "Enables Carburetor: Makes small passages, needles, and seats."
+  - slug: crankshaft
+    title: Crankshaft
+    kind: hard
+    role: "Enables Crankshaft: Forms journals, throws, and shoulders."
+  - slug: cylinder-boring
+    title: Cylinder boring
+    kind: hard
+    role: "Enables Cylinder boring: Supplies tool grinding, feeds, and workholding
+      practice."
+  - slug: gear-cutting
+    title: Gear cutting
+    kind: hard
+    role: "Enables Gear cutting: Provides cutting, feeds, and fixture practice."
+  - slug: interchangeable-parts
+    title: Interchangeable parts
+    kind: tooling
+    role: "Enables Interchangeable parts: Makes controlled surfaces and holes."
+  - slug: magneto
+    title: Magneto
+    kind: tooling
+    role: "Enables Magneto: Keeps rotating parts aligned."
+  - slug: piston-cylinder
+    title: Piston and cylinder
+    kind: tooling
+    role: "Enables Piston and cylinder: Shapes piston, rings, and bearing surfaces."
+  - slug: poppet-valve
+    title: Poppet valve
+    kind: hard
+    role: "Enables Poppet valve: Makes stems, heads, and seats fit."
+  - slug: water-pump
+    title: Water pump
+    kind: soft
+    role: "Enables Water pump: Improves impellers, shafts, and housings."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -42,25 +88,6 @@ material_dependencies:
     title: Lubricating oil
     importance: soft
     availability_note: Cutting and sliding ways benefit from oil.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.58
-  historical_plausibility: 0.84
-  completeness: 0.62
 images:
   header:
     src: /images/tech/machining-header.webp
@@ -80,8 +107,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: df63711afe44d6ad6be72f9102881d8f191219463043b0953fa341cb17e8e306
     generated_at: 2026-05-05T20:06:46.626Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.58
+  historical_plausibility: 0.84
+  completeness: 0.62
 ---
-
 ## Field briefing
 
 Controlled cutting of metal, wood, or hard materials to produce repeatable fits, smooth surfaces, and interchangeable machine parts.

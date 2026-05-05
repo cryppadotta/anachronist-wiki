@@ -4,12 +4,13 @@ slug: proof-load-test
 title: Proof Load Test
 aliases: []
 node_type: test
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Proof Load Test is a practical quality test for expanding the static
   technology tree with local sourcing, repeatable preparation, and visible
   quality checks.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: medium
@@ -24,7 +25,19 @@ prerequisites:
     title: Workshop records
     kind: soft
     role: Workshop records provides a necessary starting point for repeatable work.
-unlocks: []
+unlocks:
+  - slug: band-brake
+    title: Band brake
+    kind: test
+    role: "Enables Band brake: Checks linkages and anchors before road use."
+  - slug: leaf-spring
+    title: Leaf spring
+    kind: test
+    role: "Enables Leaf spring: Checks resilience and permanent set."
+  - slug: stamping-press
+    title: Stamping press
+    kind: safety
+    role: "Enables Stamping press: Checks press and die integrity."
 missing_prerequisites: []
 material_dependencies:
   - slug: proof-load-test-samples
@@ -32,24 +45,6 @@ material_dependencies:
     importance: hard
     availability_note: The supply depends on source recognition, access rights,
       preparation, substitutes, storage, and local geography.
-tags:
-  - test
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion 100-page follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.62
-  historical_plausibility: 0.7
-  completeness: 0.46
 images:
   header:
     src: /images/tech/proof-load-test-header.webp
@@ -69,8 +64,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 6cbfe8beaf3ad66315a466474b7484ba4ac0b052d2589a36a41b1e69fed3f01c
     generated_at: 2026-05-05T13:25:39.167Z
+tags:
+  - test
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion 100-page follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.62
+  historical_plausibility: 0.7
+  completeness: 0.46
 ---
-
 ## Field briefing
 
 Proof Load Test adds another practical node to the static technology tree. The page treats it as an early, inspectable capability that can be sourced, tested, taught, and improved without modern infrastructure.

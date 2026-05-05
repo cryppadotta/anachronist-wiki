@@ -4,6 +4,7 @@ slug: threaded-fastener
 title: Threaded fastener
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
 summary: A standardized screw, bolt, nut, or stud that joins parts while
   allowing disassembly and replacement.
@@ -30,7 +31,19 @@ prerequisites:
     title: Go/no-go gauge
     kind: test
     role: Checks whether threads fit accepted limits.
-unlocks: []
+unlocks:
+  - slug: drive-shaft
+    title: Drive shaft
+    kind: soft
+    role: "Enables Drive shaft: Secures couplings and joints."
+  - slug: fuel-tank
+    title: Fuel tank
+    kind: soft
+    role: "Enables Fuel tank: Secures fittings and mounts."
+  - slug: spark-plug
+    title: Spark plug
+    kind: hard
+    role: "Enables Spark plug: Lets the plug seal and be replaced."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -41,25 +54,6 @@ material_dependencies:
     title: Lubricating oil
     importance: soft
     availability_note: Thread cutting and assembly benefit from lubrication.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.56
-  historical_plausibility: 0.84
-  completeness: 0.54
 images:
   header:
     src: /images/tech/threaded-fastener-header.webp
@@ -79,8 +73,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: da46eedc666b53d52f461b916859b39a7dd030035bbeb4da64450946e634af5d
     generated_at: 2026-05-05T20:07:57.242Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.56
+  historical_plausibility: 0.84
+  completeness: 0.54
 ---
-
 ## Field briefing
 
 A standardized screw, bolt, nut, or stud that joins parts while allowing disassembly and replacement.

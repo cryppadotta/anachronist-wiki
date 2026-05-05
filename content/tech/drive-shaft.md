@@ -4,11 +4,12 @@ slug: drive-shaft
 title: Drive shaft
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A rotating shaft that carries torque between engine, transmission,
   axle, pump, or other separated mechanisms.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: high
@@ -31,7 +32,11 @@ prerequisites:
     title: Threaded fastener
     kind: soft
     role: Secures couplings and joints.
-unlocks: []
+unlocks:
+  - slug: differential-gear
+    title: Differential gear
+    kind: soft
+    role: "Enables Differential gear: Feeds power into the axle assembly."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -42,25 +47,6 @@ material_dependencies:
     title: Lubricating oil
     importance: soft
     availability_note: Bearings and joints need lubrication.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.5
-  historical_plausibility: 0.78
-  completeness: 0.5
 images:
   header:
     src: /images/tech/drive-shaft-header.webp
@@ -80,8 +66,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 46aa885fb1b384918a57217ab40f4e8b29d5f59d5c715a1ce2d4615bf91b5093
     generated_at: 2026-05-05T20:04:52.741Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.5
+  historical_plausibility: 0.78
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 A rotating shaft that carries torque between engine, transmission, axle, pump, or other separated mechanisms.

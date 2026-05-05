@@ -5,11 +5,12 @@ title: Cart
 aliases:
   - handcart
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A wheeled load carrier that combines wheels, axle support, frame, load
   bed, pulling method, and maintenance habits.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: ancient
 difficulty: intermediate
 precision_required: medium
@@ -33,6 +34,11 @@ prerequisites:
     kind: test
     role: Keeps wheels parallel enough to roll without dragging.
 unlocks:
+  - slug: automobile
+    title: Automobile
+    kind: hard
+    role: "Enables Automobile: Provides load paths, wheels, axles, and road-use
+      habits."
   - slug: bicycle
     title: Bicycle
     kind: soft
@@ -48,25 +54,6 @@ material_dependencies:
     title: Rope
     importance: soft
     availability_note: Useful for lashing loads, pulling, and field repair.
-tags:
-  - transport
-  - logistics
-  - workshop
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-34 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-34
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; vehicle history and regional road assumptions
-      need human source review.
-confidence:
-  practicality: 0.76
-  historical_plausibility: 0.82
-  completeness: 0.56
 images:
   header:
     src: /images/tech/cart-header.webp
@@ -86,8 +73,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 26aacb7c04cbe355ba945108c2534b447dc41b5c1c0bddc974b3dddc44f0ea92
     generated_at: 2026-05-04T23:03:46.158Z
+tags:
+  - transport
+  - logistics
+  - workshop
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-34 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-34
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; vehicle history and regional road assumptions
+      need human source review.
+confidence:
+  practicality: 0.76
+  historical_plausibility: 0.82
+  completeness: 0.56
 ---
-
 ## Field briefing
 
 A cart turns the [[wheel-and-axle|wheel and axle]] into a useful transport system. It needs a frame that holds load, wheels that stay aligned, a pulling method, and ground that rewards rolling instead of dragging.

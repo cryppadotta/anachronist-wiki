@@ -4,6 +4,7 @@ slug: public-safety
 title: Public safety
 aliases: []
 node_type: institution
+secondary_node_types: []
 status: draft
 summary: Shared norms for keeping dangerous, dirty, or confusing work away from
   bystanders, food, water, children, and public paths.
@@ -22,7 +23,26 @@ prerequisites:
     title: Workshop records
     kind: soft
     role: Workshop records provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: dyeing
+    title: Dyeing
+    kind: soft
+    role: "Enables Dyeing: Public safety provides a necessary starting point for
+      repeatable work."
+  - slug: oil-refining
+    title: Oil refining
+    kind: safety
+    role: "Enables Oil refining: Keeps fire, vapor, and waste risks governed."
+  - slug: soap
+    title: Soap
+    kind: soft
+    role: "Enables Soap: Public safety provides a necessary starting point for
+      repeatable work."
+  - slug: tanning
+    title: Tanning
+    kind: soft
+    role: "Enables Tanning: Public safety provides a necessary starting point for
+      repeatable work."
 missing_prerequisites: []
 material_dependencies:
   - slug: shared-rules-and-enforcement
@@ -30,24 +50,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - institution
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/public-safety-header.webp
@@ -68,8 +70,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: fa3dbb62b4dbc1f0f131de1050497d47c3a71c47dadd4559a4966b9aa42e44a9
     generated_at: 2026-05-04T23:22:02.215Z
+tags:
+  - institution
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Public safety belongs in the technology tree because it turns local materials and habits into a more repeatable practice. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

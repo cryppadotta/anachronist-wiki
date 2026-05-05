@@ -4,12 +4,13 @@ slug: wire-drawing
 title: Wire Drawing
 aliases: []
 node_type: process
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Wire Drawing is a practical workshop process for expanding the static
   technology tree with local sourcing, repeatable preparation, and visible
   quality checks.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: low
@@ -24,7 +25,32 @@ prerequisites:
     title: Charcoal
     kind: soft
     role: Charcoal provides a necessary starting point for repeatable work.
-unlocks: []
+unlocks:
+  - slug: chain
+    title: Chain
+    kind: hard
+    role: "Enables Chain: Wire Drawing provides a necessary starting point for first
+      trials."
+  - slug: hinge
+    title: Hinge
+    kind: hard
+    role: "Enables Hinge: Wire Drawing provides a necessary starting point for first
+      trials."
+  - slug: latch
+    title: Latch
+    kind: hard
+    role: "Enables Latch: Wire Drawing provides a necessary starting point for first
+      trials."
+  - slug: nail
+    title: Nail
+    kind: hard
+    role: "Enables Nail: Wire Drawing provides a necessary starting point for first
+      trials."
+  - slug: rivet
+    title: Rivet
+    kind: hard
+    role: "Enables Rivet: Wire Drawing provides a necessary starting point for first
+      trials."
 missing_prerequisites: []
 material_dependencies:
   - slug: wire-drawing-supply
@@ -32,24 +58,6 @@ material_dependencies:
     importance: hard
     availability_note: The supply depends on source recognition, access rights,
       preparation, substitutes, storage, and local geography.
-tags:
-  - process
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion 100-page follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.62
-  historical_plausibility: 0.7
-  completeness: 0.46
 images:
   header:
     src: /images/tech/wire-drawing-header.webp
@@ -69,8 +77,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: f9cad94030cdd1544d1e1fd79731e9c93274bbf671b9dd9f03711efc4c221ae3
     generated_at: 2026-05-05T13:34:45.977Z
+tags:
+  - process
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion 100-page follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.62
+  historical_plausibility: 0.7
+  completeness: 0.46
 ---
-
 ## Field briefing
 
 Wire Drawing adds another practical node to the static technology tree. The page treats it as an early, inspectable capability that can be sourced, tested, taught, and improved without modern infrastructure.

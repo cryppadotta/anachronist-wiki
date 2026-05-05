@@ -4,11 +4,12 @@ slug: axe
 title: Axe
 aliases: []
 node_type: tool
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A hafted chopping edge used for felling, rough timber conversion,
   splitting, shaping, and emergency demolition.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: low
@@ -23,7 +24,11 @@ prerequisites:
     title: Timber
     kind: soft
     role: Timber provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: adze
+    title: Adze
+    kind: hard
+    role: "Enables Adze: Axe provides a necessary starting point for this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: edge-head-and-haft
@@ -31,24 +36,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - tool
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/axe-header.webp
@@ -68,8 +55,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: ac4e1e8407dae63fa4ab0853fd8031409ae997d1320f706fefc9bca7452458fe
     generated_at: 2026-05-04T23:00:38.110Z
+tags:
+  - tool
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Axe belongs in the technology tree because it turns local materials and habits into a more repeatable working version. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

@@ -4,6 +4,7 @@ slug: interchangeable-parts
 title: Interchangeable parts
 aliases: []
 node_type: knowledge
+secondary_node_types: []
 status: draft
 summary: A manufacturing discipline where parts made at different times or
   stations fit without individual hand matching.
@@ -30,7 +31,24 @@ prerequisites:
     title: Machining
     kind: tooling
     role: Makes controlled surfaces and holes.
-unlocks: []
+unlocks:
+  - slug: factory-assembly-line
+    title: Factory assembly line
+    kind: hard
+    role: "Enables Factory assembly line: Allows parts to move between stations
+      without custom fitting."
+  - slug: ford-model-t
+    title: Ford Model T
+    kind: test
+    role: "Enables Ford Model T: Makes service and mass production practical."
+  - slug: service-manual
+    title: Service manual
+    kind: hard
+    role: "Enables Service manual: Makes replacement instructions meaningful."
+  - slug: threaded-fastener
+    title: Threaded fastener
+    kind: test
+    role: "Enables Threaded fastener: Requires standard thread forms and tolerances."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -41,25 +59,6 @@ material_dependencies:
     title: Paper
     importance: soft
     availability_note: Drawings, travelers, and inspection records benefit from durable records.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.58
-  historical_plausibility: 0.86
-  completeness: 0.6
 images:
   header:
     src: /images/tech/interchangeable-parts-header.webp
@@ -79,8 +78,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: dc2f05b7629440961adddd02bee32b2d41e389e28baa2aa77e9546109a649e4e
     generated_at: 2026-05-05T20:08:18.961Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.58
+  historical_plausibility: 0.86
+  completeness: 0.6
 ---
-
 ## Field briefing
 
 A manufacturing discipline where parts made at different times or stations fit without individual hand matching.

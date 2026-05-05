@@ -5,11 +5,12 @@ title: Spoked wheel
 aliases:
   - light wheel
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A wheel built from hub, spokes, and rim so it can stay large while
   using less material than a solid disk.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: ancient
 difficulty: intermediate
 precision_required: high
@@ -41,6 +42,10 @@ unlocks:
     title: Cart
     kind: enables
     role: Lighter wheels reduce draft effort and improve speed.
+  - slug: pneumatic-tire
+    title: Pneumatic tire
+    kind: soft
+    role: "Enables Pneumatic tire: Provides a light wheel foundation."
 missing_prerequisites: []
 material_dependencies:
   - slug: timber
@@ -52,25 +57,6 @@ material_dependencies:
     importance: optional
     availability_note: Adhesives help some rim and spoke assemblies but wedges and
       compression joints can substitute.
-tags:
-  - transport
-  - mechanics
-  - woodworking
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-34 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-34
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; wheel-building chronology and joinery details
-      need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.55
 images:
   header:
     src: /images/tech/spoked-wheel-header.webp
@@ -90,8 +76,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 627593f850aa4b13330f2c5e3bbfeaf366a3e1f13485b21189041e15df4a044f
     generated_at: 2026-05-04T23:28:57.831Z
+tags:
+  - transport
+  - mechanics
+  - woodworking
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-34 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-34
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; wheel-building chronology and joinery details
+      need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.55
 ---
-
 ## Field briefing
 
 A spoked wheel solves the weight problem created by solid wheels. It keeps the rim large while putting material mainly where it carries load: hub, spokes, and rim.

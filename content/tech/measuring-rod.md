@@ -23,18 +23,107 @@ prerequisites:
     kind: knowledge
     role: Marks become more useful when counts and named divisions are shared.
 unlocks:
-  - slug: technical-drawing
-    title: Technical drawing
+  - slug: abacus
+    title: Abacus
+    kind: soft
+    role: "Enables Abacus: Measuring rod provides a necessary starting point for
+      repeatable work."
+  - slug: angle-gauge
+    title: Angle Gauge
+    kind: soft
+    role: "Enables Angle Gauge: Measuring rod provides a necessary starting point
+      for repeatable work."
+  - slug: balance-scale
+    title: Balance Scale
+    kind: soft
+    role: "Enables Balance Scale: Measuring rod provides a necessary starting point
+      for repeatable work."
+  - slug: bridge-trestle
+    title: Bridge Trestle
+    kind: hard
+    role: "Enables Bridge Trestle: Measuring rod provides a necessary starting point
+      for first trials."
+  - slug: drainage-ditch
+    title: Drainage Ditch
+    kind: hard
+    role: "Enables Drainage Ditch: Measuring rod provides a necessary starting point
+      for first trials."
+  - slug: field-survey
+    title: Field Survey
+    kind: soft
+    role: "Enables Field Survey: Measuring rod provides a necessary starting point
+      for repeatable work."
+  - slug: go-no-go-gauge
+    title: Go/no-go gauge
     kind: measurement
-    role: Drawings need transferred dimensions.
+    role: "Enables Go/no-go gauge: Provides length comparison practice."
+  - slug: land-boundary-marker
+    title: Land Boundary Marker
+    kind: soft
+    role: "Enables Land Boundary Marker: Measuring rod provides a necessary starting
+      point for repeatable work."
+  - slug: loom
+    title: Loom
+    kind: soft
+    role: "Enables Loom: Measuring rod provides a necessary starting point for this
+      page."
+  - slug: moisture-test
+    title: Moisture Test
+    kind: hard
+    role: "Enables Moisture Test: Measuring rod provides a necessary starting point
+      for first trials."
+  - slug: proof-load-test
+    title: Proof Load Test
+    kind: hard
+    role: "Enables Proof Load Test: Measuring rod provides a necessary starting
+      point for first trials."
+  - slug: road-building
+    title: Road Building
+    kind: hard
+    role: "Enables Road Building: Measuring rod provides a necessary starting point
+      for first trials."
+  - slug: seasonal-calendar
+    title: Seasonal Calendar
+    kind: soft
+    role: "Enables Seasonal Calendar: Measuring rod provides a necessary starting
+      point for repeatable work."
+  - slug: shrinkage-test
+    title: Shrinkage test
+    kind: soft
+    role: "Enables Shrinkage test: Measuring rod provides a necessary starting point
+      for this page."
+  - slug: sighting-frame
+    title: Sighting Frame
+    kind: soft
+    role: "Enables Sighting Frame: Measuring rod provides a necessary starting point
+      for repeatable work."
   - slug: standard-weights
     title: Standard weights
     kind: measurement
     role: Shared measures support wider standardization habits.
+  - slug: straightedge
+    title: Straightedge
+    kind: hard
+    role: "Enables Straightedge: Measuring rod provides a necessary starting point
+      for this page."
+  - slug: tally-stick
+    title: Tally Stick
+    kind: soft
+    role: "Enables Tally Stick: Measuring rod provides a necessary starting point
+      for repeatable work."
+  - slug: technical-drawing
+    title: Technical drawing
+    kind: measurement
+    role: Drawings need transferred dimensions.
   - slug: try-square
     title: Try-square
     kind: measurement
     role: A square needs stable reference lengths and layout marks.
+  - slug: volume-measure
+    title: Volume Measure
+    kind: soft
+    role: "Enables Volume Measure: Measuring rod provides a necessary starting point
+      for repeatable work."
 missing_prerequisites: []
 material_dependencies:
   - slug: stable-stock
@@ -42,25 +131,6 @@ material_dependencies:
     importance: hard
     availability_note: Straight seasoned wood, bone, metal, or stone determines how
       well the rod keeps its length.
-tags:
-  - measurement
-  - standards
-  - workshop
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; metrology history and unit claims need human
-      source review.
-confidence:
-  practicality: 0.82
-  historical_plausibility: 0.84
-  completeness: 0.58
 images:
   header:
     src: /images/tech/measuring-rod-header.webp
@@ -80,8 +150,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: eb97f00a8f2fcbce75f2bf4eab1893683b57394fb8ccfee2fc6ecb8863c732ef
     generated_at: 2026-05-04T23:18:16.690Z
+tags:
+  - measurement
+  - standards
+  - workshop
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; metrology history and unit claims need human
+      source review.
+confidence:
+  practicality: 0.82
+  historical_plausibility: 0.84
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 A measuring rod turns one person's estimate into a shared workshop dimension. It supports [[technical-drawing|technical drawing]], jigs, wheels, carts, and repeated parts.

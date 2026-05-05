@@ -4,11 +4,12 @@ slug: planetary-transmission
 title: Planetary transmission
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A compact gear train with sun, planet, and ring gears that can provide
   multiple speed relationships through clutches or bands.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: expert
 precision_required: high
@@ -31,7 +32,12 @@ prerequisites:
     title: Go/no-go gauge
     kind: test
     role: Checks gear and shaft fits.
-unlocks: []
+unlocks:
+  - slug: ford-model-t
+    title: Ford Model T
+    kind: hard
+    role: "Enables Ford Model T: Gives the early driver controllable speed ranges
+      without a sliding-gear gearbox."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -42,25 +48,6 @@ material_dependencies:
     title: Lubricating oil
     importance: hard
     availability_note: Gear trains must be lubricated.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.36
-  historical_plausibility: 0.8
-  completeness: 0.48
 images:
   header:
     src: /images/tech/planetary-transmission-header.webp
@@ -81,8 +68,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: ee3c214c54825f7695f5ac55272bc4bc3a50e5dfc423b9aac4fa676bf469d976
     generated_at: 2026-05-05T20:04:19.716Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.36
+  historical_plausibility: 0.8
+  completeness: 0.48
 ---
-
 ## Field briefing
 
 A compact gear train with sun, planet, and ring gears that can provide multiple speed relationships through clutches or bands.

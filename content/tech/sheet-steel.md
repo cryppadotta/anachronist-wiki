@@ -4,6 +4,7 @@ slug: sheet-steel
 title: Sheet steel
 aliases: []
 node_type: material
+secondary_node_types: []
 status: draft
 summary: Thin, repeatable steel stock used for panels, tanks, brackets,
   stampings, guards, and early automobile bodywork.
@@ -30,7 +31,15 @@ prerequisites:
     title: Go/no-go gauge
     kind: test
     role: Checks thickness and fit.
-unlocks: []
+unlocks:
+  - slug: fuel-tank
+    title: Fuel tank
+    kind: hard
+    role: "Enables Fuel tank: Provides tank and bracket stock."
+  - slug: stamping-press
+    title: Stamping press
+    kind: hard
+    role: "Enables Stamping press: Provides workable sheet stock."
 missing_prerequisites:
   - slug: sheet-metal-working
     title: Sheet metal working
@@ -44,25 +53,6 @@ material_dependencies:
     title: Lubricating oil
     importance: soft
     availability_note: Rolling and forming tools need lubrication.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.52
-  historical_plausibility: 0.82
-  completeness: 0.54
 images:
   header:
     src: /images/tech/sheet-steel-header.webp
@@ -82,8 +72,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 526a5e322a57a944b7052273969d2882a65fe3bee9a36776f60efb501941baf4
     generated_at: 2026-05-05T20:06:10.354Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.52
+  historical_plausibility: 0.82
+  completeness: 0.54
 ---
-
 ## Field briefing
 
 Thin, repeatable steel stock used for panels, tanks, brackets, stampings, guards, and early automobile bodywork.

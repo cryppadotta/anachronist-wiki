@@ -4,6 +4,7 @@ slug: sieve
 title: Sieve
 aliases: []
 node_type: tool
+secondary_node_types: []
 status: draft
 summary: A perforated or woven separator used to grade grain, sand, grit, grog,
   fiber, clay inclusions, and other particles.
@@ -22,7 +23,12 @@ prerequisites:
     title: Cordage fiber
     kind: soft
     role: Cordage fiber provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: sieve-grading
+    title: Sieve grading
+    kind: hard
+    role: "Enables Sieve grading: Sieve provides a necessary starting point for this
+      page."
 missing_prerequisites: []
 material_dependencies:
   - slug: woven-screen-or-perforated-sheet
@@ -30,24 +36,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - tool
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/sieve-header.webp
@@ -67,8 +55,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 2551d3b92ec237d6cc5a985b40a65a97c03fb2267478752a6e82c47cc85f68ed
     generated_at: 2026-05-04T23:27:17.336Z
+tags:
+  - tool
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Sieve belongs in the technology tree because it turns local materials and habits into a more repeatable working version. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

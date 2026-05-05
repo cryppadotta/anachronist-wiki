@@ -27,6 +27,28 @@ prerequisites:
     kind: test
     role: Even crude pull tests separate useful cordage from decorative string.
 unlocks:
+  - slug: clamp
+    title: Clamp
+    kind: hard
+    role: "Enables Clamp: Rope provides a necessary starting point for this page."
+  - slug: knot-tying
+    title: Knot tying
+    kind: hard
+    role: "Enables Knot tying: Rope provides a necessary starting point for this
+      page."
+  - slug: lashing
+    title: Lashing
+    kind: hard
+    role: "Enables Lashing: Rope provides a necessary starting point for this page."
+  - slug: paper
+    title: Paper
+    kind: material_source
+    role: "Enables Paper: Cordage and rag fibers teach fiber preparation and can
+      become feedstock."
+  - slug: plumb-line
+    title: Plumb line
+    kind: material_source
+    role: "Enables Plumb line: A flexible line is the main component."
   - slug: pulley
     title: Pulley
     kind: hard
@@ -42,14 +64,33 @@ material_dependencies:
     importance: hard
     availability_note: Flax, hemp, nettle, lime bast, grasses, and bark fibers are
       possible depending on region and season.
+images:
+  header:
+    src: /images/tech/rope-header.webp
+    alt: Field sketch of rope, highlighting cordage fiber, knot tying, and process
+      handling details.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: header-image.v1.md
+    prompt_hash: ff408c2c2a2d8f68a922fa90eab605d85b5793f4805a4398b3c598128456b095
+    generated_at: 2026-05-04T20:27:28.737Z
+  schematic:
+    src: /images/tech/rope-schematic.webp
+    alt: Schematic diagram of rope, highlighting cordage fiber, knot tying, and
+      strand relationships.
+    provider: openai
+    model: gpt-image-2
+    prompt_version: schematic-image.v1.md
+    prompt_hash: 106e794ab321de40ec2d27344f2ab6c0dd5160b2e5f6f61a20c44807863050a2
+    generated_at: 2026-05-04T20:28:18.933Z
 tags:
   - cordage
   - materials
   - lifting
 generation:
   created_by: llm
-  provider: OpenAI
   model: GPT-5 Codex
+  provider: OpenAI
   prompt_version: ANA-13 seed-content manual draft
   generated_at: 2026-05-03
   request_issue: ANA-13
@@ -61,25 +102,7 @@ confidence:
   practicality: 0.78
   historical_plausibility: 0.86
   completeness: 0.64
-images:
-  header:
-    src: /images/tech/rope-header.webp
-    alt: Field sketch of rope, highlighting cordage fiber, knot tying, and process handling details.
-    provider: openai
-    model: gpt-image-2
-    prompt_version: header-image.v1.md
-    prompt_hash: ff408c2c2a2d8f68a922fa90eab605d85b5793f4805a4398b3c598128456b095
-    generated_at: 2026-05-04T20:27:28.737Z
-  schematic:
-    src: /images/tech/rope-schematic.webp
-    alt: Schematic diagram of rope, highlighting cordage fiber, knot tying, and strand relationships.
-    provider: openai
-    model: gpt-image-2
-    prompt_version: schematic-image.v1.md
-    prompt_hash: 106e794ab321de40ec2d27344f2ab6c0dd5160b2e5f6f61a20c44807863050a2
-    generated_at: 2026-05-04T20:28:18.933Z
 ---
-
 ## Field briefing
 
 Rope is a force path. It lets people pull from a safer place, bind parts together, hang weights, and use [[pulley|pulleys]] or [[wheel-and-axle|windlasses]].

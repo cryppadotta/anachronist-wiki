@@ -4,6 +4,7 @@ slug: camshaft
 title: Camshaft
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
 summary: A timed shaft with lobes that open valves or actuate mechanisms in
   repeatable sequence.
@@ -30,7 +31,11 @@ prerequisites:
     title: Go/no-go gauge
     kind: test
     role: Checks journals and follower fits.
-unlocks: []
+unlocks:
+  - slug: poppet-valve
+    title: Poppet valve
+    kind: soft
+    role: "Enables Poppet valve: Provides timed opening in engines."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -41,25 +46,6 @@ material_dependencies:
     title: Lubricating oil
     importance: hard
     availability_note: Cam and follower contact requires lubrication.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.44
-  historical_plausibility: 0.74
-  completeness: 0.52
 images:
   header:
     src: /images/tech/camshaft-header.webp
@@ -79,8 +65,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 29fa1cfb77e94e1e260037ab9cde5dcb824270ac21a47c58f848b9e3921511bf
     generated_at: 2026-05-05T20:00:53.178Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.44
+  historical_plausibility: 0.74
+  completeness: 0.52
 ---
-
 ## Field briefing
 
 A timed shaft with lobes that open valves or actuate mechanisms in repeatable sequence.

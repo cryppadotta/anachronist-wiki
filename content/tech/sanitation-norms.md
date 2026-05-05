@@ -31,31 +31,17 @@ unlocks:
     kind: institutional
     role: Administrative records and notices increase demand for cheap writing
       surfaces.
+  - slug: public-safety
+    title: Public safety
+    kind: hard
+    role: "Enables Public safety: Sanitation norms provides a necessary starting
+      point for this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: clean-water
     title: Clean water
     importance: hard
     availability_note: The norms depend on identifying and protecting local water sources.
-tags:
-  - institution
-  - public-health
-  - records
-generation:
-  created_by: llm
-  provider: OpenAI
-  model: GPT-5 Codex
-  prompt_version: ANA-13 seed-content manual draft
-  generated_at: 2026-05-03
-  request_issue: ANA-13
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; historical public-health claims need human source
-      review.
-confidence:
-  practicality: 0.74
-  historical_plausibility: 0.7
-  completeness: 0.52
 images:
   header:
     src: /images/tech/sanitation-norms-header.webp
@@ -75,8 +61,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 7cf1f8ebfc405ec1913f3d1ac33721b8d5f3430daa4bc88c833cb210d9bf3b8a
     generated_at: 2026-05-04T23:24:53.828Z
+tags:
+  - institution
+  - public-health
+  - records
+generation:
+  created_by: llm
+  model: GPT-5 Codex
+  provider: OpenAI
+  prompt_version: ANA-13 seed-content manual draft
+  generated_at: 2026-05-03
+  request_issue: ANA-13
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; historical public-health claims need human source
+      review.
+confidence:
+  practicality: 0.74
+  historical_plausibility: 0.7
+  completeness: 0.52
 ---
-
 ## Field briefing
 
 Sanitation norms are rules that make invisible risks visible enough for a group to act. They are a technology of habits, boundaries, and enforcement.

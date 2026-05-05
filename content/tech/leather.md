@@ -5,11 +5,12 @@ title: Leather
 aliases:
   - hide leather
 node_type: material
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Preserved animal hide prepared as flexible sheet, strap, hinge, gasket,
   bearing cover, bucket, bellows part, and protective material.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric
 difficulty: intermediate
 precision_required: medium
@@ -21,6 +22,31 @@ prerequisites:
     kind: tooling
     role: Scraping and trimming hides require effective edges.
 unlocks:
+  - slug: animal-fat
+    title: Animal Fat
+    kind: hard
+    role: "Enables Animal Fat: Leather provides a necessary starting point for first
+      trials."
+  - slug: bicycle
+    title: Bicycle
+    kind: material_source
+    role: Leather can supply seats, straps, pads, and flexible joints in early
+      builds.
+  - slug: hoof
+    title: Hoof
+    kind: hard
+    role: "Enables Hoof: Leather provides a necessary starting point for first
+      trials."
+  - slug: horn-glue
+    title: Horn Glue
+    kind: hard
+    role: "Enables Horn Glue: Leather provides a necessary starting point for first
+      trials."
+  - slug: horn
+    title: Horn
+    kind: hard
+    role: "Enables Horn: Leather provides a necessary starting point for first
+      trials."
   - slug: plain-bearing
     title: Plain bearing
     kind: material_source
@@ -29,11 +55,16 @@ unlocks:
     title: Pulley
     kind: material_source
     role: Leather straps and pads help with belts, slings, and wear surfaces.
-  - slug: bicycle
-    title: Bicycle
-    kind: material_source
-    role: Leather can supply seats, straps, pads, and flexible joints in early
-      builds.
+  - slug: rawhide
+    title: Rawhide
+    kind: hard
+    role: "Enables Rawhide: Leather provides a necessary starting point for first
+      trials."
+  - slug: tallow
+    title: Tallow
+    kind: hard
+    role: "Enables Tallow: Leather provides a necessary starting point for first
+      trials."
 missing_prerequisites: []
 material_dependencies:
   - slug: animal-hide
@@ -41,25 +72,6 @@ material_dependencies:
     importance: hard
     availability_note: The supply depends on livestock, hunting, butchery,
       preservation, and seasonal spoilage control.
-tags:
-  - material
-  - animal-products
-  - workshop
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; tanning history and regional claims need human
-      source review.
-confidence:
-  practicality: 0.64
-  historical_plausibility: 0.8
-  completeness: 0.5
 images:
   header:
     src: /images/tech/leather-header.webp
@@ -78,8 +90,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: f4c3bbb789535c4117a95abe4d1f819a41137ca59e57f7be5476c6d693511a87
     generated_at: 2026-05-04T23:16:44.190Z
+tags:
+  - material
+  - animal-products
+  - workshop
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; tanning history and regional claims need human
+      source review.
+confidence:
+  practicality: 0.64
+  historical_plausibility: 0.8
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Leather is a durable flexible material for straps, hinges, seals, pads, containers, and wear surfaces. It often solves problems that rigid [[timber|timber]] and [[clay|clay]] cannot.

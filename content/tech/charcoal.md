@@ -25,39 +25,100 @@ prerequisites:
     kind: optional
     role: Clay-rich earth can help seal a mound or pit.
 unlocks:
-  - slug: kiln
-    title: Kiln
-    kind: optional
-    role: Charcoal can improve repeatability in some kiln and furnace work.
+  - slug: annealing
+    title: Annealing
+    kind: soft
+    role: "Enables Annealing: Charcoal provides a necessary starting point for
+      repeatable work."
+  - slug: anvil-stone
+    title: Anvil Stone
+    kind: soft
+    role: "Enables Anvil Stone: Charcoal provides a necessary starting point for
+      repeatable work."
+  - slug: bellows
+    title: Bellows
+    kind: soft
+    role: "Enables Bellows: Charcoal provides a necessary starting point for
+      repeatable work."
+  - slug: bloomery-furnace
+    title: Bloomery Furnace
+    kind: soft
+    role: "Enables Bloomery Furnace: Charcoal provides a necessary starting point
+      for repeatable work."
+  - slug: carbon-black
+    title: Carbon Black
+    kind: soft
+    role: "Enables Carbon Black: Charcoal provides a necessary starting point for
+      repeatable work."
+  - slug: casting-mold
+    title: Casting Mold
+    kind: soft
+    role: "Enables Casting Mold: Charcoal provides a necessary starting point for
+      repeatable work."
+  - slug: charcoal-hearth
+    title: Charcoal Hearth
+    kind: soft
+    role: "Enables Charcoal Hearth: Charcoal provides a necessary starting point for
+      repeatable work."
+  - slug: crucible
+    title: Crucible
+    kind: soft
+    role: "Enables Crucible: Charcoal provides a necessary starting point for
+      repeatable work."
+  - slug: forge-hearth
+    title: Forge Hearth
+    kind: soft
+    role: "Enables Forge Hearth: Charcoal provides a necessary starting point for
+      repeatable work."
   - slug: ink
     title: Ink
     kind: material_source
     role: Soot and carbon black can supply black pigment.
+  - slug: kiln
+    title: Kiln
+    kind: optional
+    role: Charcoal can improve repeatability in some kiln and furnace work.
+  - slug: lost-wax-casting
+    title: Lost Wax Casting
+    kind: soft
+    role: "Enables Lost Wax Casting: Charcoal provides a necessary starting point
+      for repeatable work."
+  - slug: peat
+    title: Peat
+    kind: soft
+    role: "Enables Peat: Charcoal provides a necessary starting point for repeatable
+      work."
+  - slug: smoke-observation
+    title: Smoke observation
+    kind: soft
+    role: "Enables Smoke observation: Charcoal provides a necessary starting point
+      for this page."
+  - slug: soot
+    title: Soot
+    kind: soft
+    role: "Enables Soot: Charcoal provides a necessary starting point for repeatable
+      work."
+  - slug: tongs
+    title: Tongs
+    kind: soft
+    role: "Enables Tongs: Charcoal provides a necessary starting point for
+      repeatable work."
+  - slug: tuyere
+    title: Tuyere
+    kind: soft
+    role: "Enables Tuyere: Charcoal provides a necessary starting point for
+      repeatable work."
+  - slug: wire-drawing
+    title: Wire Drawing
+    kind: soft
+    role: "Enables Wire Drawing: Charcoal provides a necessary starting point for
+      repeatable work."
 missing_prerequisites: []
 material_dependencies:
   - slug: wood
     title: Wood
     importance: hard
     availability_note: Dense dry wood gives better fuel; local species affect yield and quality.
-tags:
-  - fuel
-  - carbon
-  - workshop
-generation:
-  created_by: llm
-  provider: OpenAI
-  model: GPT-5 Codex
-  prompt_version: ANA-13 seed-content manual draft
-  generated_at: 2026-05-03
-  request_issue: ANA-13
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; species and historical production claims need
-      human source review.
-confidence:
-  practicality: 0.66
-  historical_plausibility: 0.82
-  completeness: 0.54
 images:
   header:
     src: /images/tech/charcoal-header.webp
@@ -76,8 +137,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 52abc4c39fb9a59bf71d6acfa31574f5a7a1edb94fa564f721b42351867c0df1
     generated_at: 2026-05-04T23:04:04.984Z
+tags:
+  - fuel
+  - carbon
+  - workshop
+generation:
+  created_by: llm
+  model: GPT-5 Codex
+  provider: OpenAI
+  prompt_version: ANA-13 seed-content manual draft
+  generated_at: 2026-05-03
+  request_issue: ANA-13
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; species and historical production claims need
+      human source review.
+confidence:
+  practicality: 0.66
+  historical_plausibility: 0.82
+  completeness: 0.54
 ---
-
 ## Field briefing
 
 Charcoal is a fuel upgrade and a material supply chain. It is lighter than wood for the heat it carries, burns with less smoke when made well, and supports cleaner workshop heat.

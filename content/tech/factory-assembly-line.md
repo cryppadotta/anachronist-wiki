@@ -4,6 +4,7 @@ slug: factory-assembly-line
 title: Factory assembly line
 aliases: []
 node_type: institution
+secondary_node_types: []
 status: draft
 summary: A workshop organization pattern that arranges people, fixtures, parts,
   records, and movement into a repeatable production flow.
@@ -30,7 +31,16 @@ prerequisites:
     title: Standard weights
     kind: measurement
     role: Supports material and batch consistency.
-unlocks: []
+unlocks:
+  - slug: ford-model-t
+    title: Ford Model T
+    kind: institutional
+    role: "Enables Ford Model T: Turns the design into repeatable, low-cost
+      production."
+  - slug: stamping-press
+    title: Stamping press
+    kind: soft
+    role: "Enables Stamping press: Creates demand for repeated stamped parts."
 missing_prerequisites: []
 material_dependencies:
   - slug: workbench
@@ -41,25 +51,6 @@ material_dependencies:
     title: Tally stick
     importance: substitute
     availability_note: Simple counting systems can precede paper records.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.62
-  historical_plausibility: 0.86
-  completeness: 0.58
 images:
   header:
     src: /images/tech/factory-assembly-line-header.webp
@@ -80,8 +71,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 100b5645b9a6d8b0af19a7f08c4bd258f5d0e224392ecc24f581e6d6b4b1549a
     generated_at: 2026-05-05T20:08:41.958Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.62
+  historical_plausibility: 0.86
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 A workshop organization pattern that arranges people, fixtures, parts, records, and movement into a repeatable production flow.

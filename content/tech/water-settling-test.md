@@ -5,6 +5,7 @@ title: Water settling test
 aliases:
   - settling jar test
 node_type: test
+secondary_node_types: []
 status: draft
 summary: A simple separation and recognition test that uses water and time to
   compare clay, silt, sand, grit, fiber, and other suspended solids.
@@ -20,10 +21,6 @@ prerequisites:
     kind: material_source
     role: Water is the separating medium.
 unlocks:
-  - slug: clay
-    title: Clay
-    kind: test
-    role: Settling helps identify and refine clay-rich sediment.
   - slug: abrasive-grit
     title: Abrasive grit
     kind: test
@@ -32,6 +29,39 @@ unlocks:
     title: Ceramic temper
     kind: test
     role: Settling helps compare sand, grog, and other additions.
+  - slug: chalk
+    title: Chalk
+    kind: soft
+    role: "Enables Chalk: Water settling test provides a necessary starting point
+      for this page."
+  - slug: clay
+    title: Clay
+    kind: test
+    role: Settling helps identify and refine clay-rich sediment.
+  - slug: ochre
+    title: Ochre
+    kind: hard
+    role: "Enables Ochre: Water settling test provides a necessary starting point
+      for this page."
+  - slug: paper
+    title: Paper
+    kind: test
+    role: "Enables Paper: Helps separate pulp quality and grit."
+  - slug: sieve-grading
+    title: Sieve grading
+    kind: soft
+    role: "Enables Sieve grading: Water settling test provides a necessary starting
+      point for this page."
+  - slug: stone
+    title: Stone
+    kind: hard
+    role: "Enables Stone: Water settling test provides a necessary starting point
+      for this page."
+  - slug: wood-ash
+    title: Wood ash
+    kind: soft
+    role: "Enables Wood ash: Water settling test provides a necessary starting point
+      for this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: clear-container
@@ -39,25 +69,6 @@ material_dependencies:
     importance: hard
     availability_note: Glass is convenient but not required; an open vessel can
       still reveal layers after decanting.
-tags:
-  - test
-  - materials
-  - quality-control
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; sediment classification claims need human source
-      review.
-confidence:
-  practicality: 0.84
-  historical_plausibility: 0.84
-  completeness: 0.6
 images:
   header:
     src: /images/tech/water-settling-test-header.webp
@@ -77,8 +88,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 727e6bc533d30253e82cc976ec9aedceb4a17dd4934d01d74764ac86e7604630
     generated_at: 2026-05-04T23:32:52.115Z
+tags:
+  - test
+  - materials
+  - quality-control
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; sediment classification claims need human source
+      review.
+confidence:
+  practicality: 0.84
+  historical_plausibility: 0.84
+  completeness: 0.6
 ---
-
 ## Field briefing
 
 The water settling test is a low-tech way to see what a material is made of. It is especially useful for [[clay|clay]], [[abrasive-grit|abrasive grit]], and ceramic additions.

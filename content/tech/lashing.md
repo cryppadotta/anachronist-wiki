@@ -4,11 +4,12 @@ slug: lashing
 title: Lashing
 aliases: []
 node_type: process
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: The binding of parts with cord, fiber, leather, or sinew so frames and
   tools can be assembled without rigid fasteners.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: low
@@ -23,7 +24,42 @@ prerequisites:
     title: Knot tying
     kind: soft
     role: Knot tying provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: animal-harness
+    title: Animal Harness
+    kind: soft
+    role: "Enables Animal Harness: Lashing provides a necessary starting point for
+      repeatable work."
+  - slug: hoe
+    title: Hoe
+    kind: soft
+    role: "Enables Hoe: Lashing provides a necessary starting point for repeatable
+      work."
+  - slug: plow
+    title: Plow
+    kind: soft
+    role: "Enables Plow: Lashing provides a necessary starting point for repeatable
+      work."
+  - slug: shovel
+    title: Shovel
+    kind: soft
+    role: "Enables Shovel: Lashing provides a necessary starting point for
+      repeatable work."
+  - slug: sickle
+    title: Sickle
+    kind: soft
+    role: "Enables Sickle: Lashing provides a necessary starting point for
+      repeatable work."
+  - slug: sled
+    title: Sled
+    kind: soft
+    role: "Enables Sled: Lashing provides a necessary starting point for repeatable
+      work."
+  - slug: yoke
+    title: Yoke
+    kind: soft
+    role: "Enables Yoke: Lashing provides a necessary starting point for repeatable
+      work."
 missing_prerequisites: []
 material_dependencies:
   - slug: cordage-and-bearing-pads
@@ -31,24 +67,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - joinery
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/lashing-header.webp
@@ -68,8 +86,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 5ef7b7fa653c6905a7e5a03092837481f8279c0f444c95159438833792c944ee
     generated_at: 2026-05-04T23:15:04.279Z
+tags:
+  - joinery
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Lashing belongs in the technology tree because it turns local materials and habits into a more repeatable working version. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

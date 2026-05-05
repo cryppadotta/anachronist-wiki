@@ -4,11 +4,12 @@ slug: gear-cutting
 title: Gear cutting
 aliases: []
 node_type: process
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A repeatable cutting and indexing process for making gear teeth that
   mesh smoothly under load.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: expert
 precision_required: high
@@ -31,7 +32,28 @@ prerequisites:
     title: Go/no-go gauge
     kind: test
     role: Checks tooth form and fit against a mate.
-unlocks: []
+unlocks:
+  - slug: camshaft
+    title: Camshaft
+    kind: soft
+    role: "Enables Camshaft: Synchronizes cam timing with a crankshaft."
+  - slug: differential-gear
+    title: Differential gear
+    kind: hard
+    role: "Enables Differential gear: Creates matched bevel or spur gears."
+  - slug: planetary-transmission
+    title: Planetary transmission
+    kind: hard
+    role: "Enables Planetary transmission: Planetary gears demand repeatable tooth
+      geometry."
+  - slug: steering-gear
+    title: Steering gear
+    kind: soft
+    role: "Enables Steering gear: Supports worm, sector, or reduction gears."
+  - slug: transmission
+    title: Transmission
+    kind: hard
+    role: "Enables Transmission: Creates repeatable gear teeth."
 missing_prerequisites:
   - slug: indexing
     title: Indexing
@@ -45,25 +67,6 @@ material_dependencies:
     title: Lubricating oil
     importance: soft
     availability_note: Cutting and testing need lubrication.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.42
-  historical_plausibility: 0.78
-  completeness: 0.5
 images:
   header:
     src: /images/tech/gear-cutting-header.webp
@@ -83,8 +86,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: b2acf1650c65652336af323e16f75be8dd02870c249d1b17cecff6527a70f012
     generated_at: 2026-05-05T20:07:23.205Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.42
+  historical_plausibility: 0.78
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 A repeatable cutting and indexing process for making gear teeth that mesh smoothly under load.

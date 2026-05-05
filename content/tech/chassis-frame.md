@@ -4,6 +4,7 @@ slug: chassis-frame
 title: Chassis frame
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
 summary: A rigid vehicle foundation that keeps axles, engine, body, and controls
   aligned under road loads.
@@ -30,7 +31,16 @@ prerequisites:
     title: Technical drawing
     kind: soft
     role: Preserves hole patterns and dimensions between builds.
-unlocks: []
+unlocks:
+  - slug: ford-model-t
+    title: Ford Model T
+    kind: hard
+    role: "Enables Ford Model T: Holds engine, axles, body, and passengers in
+      alignment."
+  - slug: leaf-spring
+    title: Leaf spring
+    kind: soft
+    role: "Enables Leaf spring: Provides mounting points and load paths."
 missing_prerequisites:
   - slug: riveting
     title: Riveting
@@ -45,25 +55,6 @@ material_dependencies:
     title: Threaded fastener
     importance: soft
     availability_note: Bolts simplify repairs and component mounting.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.62
-  historical_plausibility: 0.8
-  completeness: 0.6
 images:
   header:
     src: /images/tech/chassis-frame-header.webp
@@ -83,8 +74,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 49755ee75aca47c626763c6384e488fd9a5717b6addf73409a98191e5fae1171
     generated_at: 2026-05-05T19:59:15.619Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.62
+  historical_plausibility: 0.8
+  completeness: 0.6
 ---
-
 ## Field briefing
 
 A rigid vehicle foundation that keeps axles, engine, body, and controls aligned under road loads.

@@ -4,11 +4,12 @@ slug: chisel
 title: Chisel
 aliases: []
 node_type: tool
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A driven or pushed edge tool for cutting recesses, trimming joints,
   cleaning holes, and shaping hard materials.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: low
@@ -23,7 +24,12 @@ prerequisites:
     title: Stone hammer
     kind: soft
     role: Stone hammer provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: mortise-and-tenon
+    title: Mortise and tenon
+    kind: hard
+    role: "Enables Mortise and tenon: Chisel provides a necessary starting point for
+      this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: edge-blank-and-striking-handle
@@ -31,24 +37,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - tool
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/chisel-header.webp
@@ -68,8 +56,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: f594c9aa64115794759bfe70bddd1cd33b3a125838831d065115edbee10b0f18
     generated_at: 2026-05-04T23:04:03.807Z
+tags:
+  - tool
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Chisel belongs in the technology tree because it turns local materials and habits into a more repeatable working version. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

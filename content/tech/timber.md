@@ -6,11 +6,12 @@ aliases:
   - wood
   - lumber
 node_type: material
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Felled and selected wood prepared as a structural material for frames,
   handles, axles, wheels, benches, jigs, and buildings.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric
 difficulty: basic
 precision_required: medium
@@ -22,14 +23,51 @@ prerequisites:
     kind: tooling
     role: Edged tools make timber conversion faster, cleaner, and safer.
 unlocks:
-  - slug: woodworking
-    title: Woodworking
-    kind: material_source
-    role: Woodworking depends on selected, sound, workable wood.
+  - slug: axe
+    title: Axe
+    kind: soft
+    role: "Enables Axe: Timber provides a necessary starting point for this page."
+  - slug: bark-fiber
+    title: Bark Fiber
+    kind: hard
+    role: "Enables Bark Fiber: Timber provides a necessary starting point for first
+      trials."
+  - slug: bark
+    title: Bark
+    kind: hard
+    role: "Enables Bark: Timber provides a necessary starting point for first
+      trials."
+  - slug: birch-bark
+    title: Birch Bark
+    kind: hard
+    role: "Enables Birch Bark: Timber provides a necessary starting point for first
+      trials."
+  - slug: hardwood
+    title: Hardwood
+    kind: hard
+    role: "Enables Hardwood: Timber provides a necessary starting point for first
+      trials."
+  - slug: loom
+    title: Loom
+    kind: soft
+    role: "Enables Loom: Timber provides a necessary starting point for this page."
+  - slug: saw
+    title: Saw
+    kind: soft
+    role: "Enables Saw: Timber provides a necessary starting point for this page."
+  - slug: softwood
+    title: Softwood
+    kind: hard
+    role: "Enables Softwood: Timber provides a necessary starting point for first
+      trials."
   - slug: timber-seasoning
     title: Timber seasoning
     kind: material_source
     role: Seasoning starts with timber selected for grain, size, and defects.
+  - slug: woodworking
+    title: Woodworking
+    kind: material_source
+    role: Woodworking depends on selected, sound, workable wood.
 missing_prerequisites: []
 material_dependencies:
   - slug: trees
@@ -37,25 +75,6 @@ material_dependencies:
     importance: hard
     availability_note: Species, growth form, knots, and local access decide the
       strength and durability of the stock.
-tags:
-  - material
-  - woodworking
-  - supply-chain
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; local species and historical forestry claims need
-      human source review.
-confidence:
-  practicality: 0.8
-  historical_plausibility: 0.86
-  completeness: 0.58
 images:
   header:
     src: /images/tech/timber-header.webp
@@ -74,8 +93,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: b04ad8d523145488618d1a2669dd8ba9874658ec58dc764c8978ce0e416a7111
     generated_at: 2026-05-04T23:31:53.414Z
+tags:
+  - material
+  - woodworking
+  - supply-chain
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; local species and historical forestry claims need
+      human source review.
+confidence:
+  practicality: 0.8
+  historical_plausibility: 0.86
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 Timber is not generic wood. It is selected tree material whose grain, defects, moisture, and dimensions determine whether [[woodworking|woodworking]] parts hold shape.

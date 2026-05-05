@@ -6,11 +6,12 @@ aliases:
   - blade edge
   - scraper edge
 node_type: tool
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A sharpened stone, bone, shell, wood, or metal edge used for cutting,
   scraping, trimming, marking, and shaping workshop materials.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric
 difficulty: basic
 precision_required: medium
@@ -26,18 +27,159 @@ prerequisites:
     kind: material_source
     role: Abrasives grind, smooth, and refresh edges.
 unlocks:
-  - slug: woodworking
-    title: Woodworking
+  - slug: animal-fat
+    title: Animal Fat
+    kind: soft
+    role: "Enables Animal Fat: Cutting edge provides a necessary starting point for
+      repeatable work."
+  - slug: awl
+    title: Awl
+    kind: hard
+    role: "Enables Awl: Cutting edge provides a necessary starting point for this
+      page."
+  - slug: axe
+    title: Axe
+    kind: hard
+    role: "Enables Axe: Cutting edge provides a necessary starting point for this
+      page."
+  - slug: bark-fiber
+    title: Bark Fiber
+    kind: soft
+    role: "Enables Bark Fiber: Cutting edge provides a necessary starting point for
+      repeatable work."
+  - slug: bark
+    title: Bark
+    kind: soft
+    role: "Enables Bark: Cutting edge provides a necessary starting point for
+      repeatable work."
+  - slug: birch-bark
+    title: Birch Bark
+    kind: soft
+    role: "Enables Birch Bark: Cutting edge provides a necessary starting point for
+      repeatable work."
+  - slug: chisel
+    title: Chisel
+    kind: hard
+    role: "Enables Chisel: Cutting edge provides a necessary starting point for this
+      page."
+  - slug: cordage-fiber
+    title: Cordage fiber
     kind: tooling
-    role: Woodworking requires cutting, scraping, boring, or marking edges.
-  - slug: rope-making
-    title: Rope making
+    role: "Enables Cordage fiber: Cutting tools help harvest and clean fibrous
+      plants or hides."
+  - slug: hand-drill
+    title: Hand drill
     kind: tooling
-    role: Fiber harvest and preparation often require cutting and scraping.
+    role: "Enables Hand drill: Drill points and scrapers require controlled edges."
+  - slug: hardwood
+    title: Hardwood
+    kind: soft
+    role: "Enables Hardwood: Cutting edge provides a necessary starting point for
+      repeatable work."
+  - slug: hoof
+    title: Hoof
+    kind: soft
+    role: "Enables Hoof: Cutting edge provides a necessary starting point for
+      repeatable work."
+  - slug: horn-glue
+    title: Horn Glue
+    kind: soft
+    role: "Enables Horn Glue: Cutting edge provides a necessary starting point for
+      repeatable work."
+  - slug: horn
+    title: Horn
+    kind: soft
+    role: "Enables Horn: Cutting edge provides a necessary starting point for
+      repeatable work."
+  - slug: lathe
+    title: Lathe
+    kind: hard
+    role: "Enables Lathe: Sharp tools are required."
   - slug: leather
     title: Leather
     kind: tooling
     role: Hide work needs scraping, trimming, and piercing.
+  - slug: machining
+    title: Machining
+    kind: hard
+    role: "Enables Machining: Tools need sharpened edges."
+  - slug: rawhide
+    title: Rawhide
+    kind: soft
+    role: "Enables Rawhide: Cutting edge provides a necessary starting point for
+      repeatable work."
+  - slug: reed
+    title: Reed
+    kind: soft
+    role: "Enables Reed: Cutting edge provides a necessary starting point for this
+      page."
+  - slug: resin
+    title: Resin
+    kind: hard
+    role: "Enables Resin: Cutting edge provides a necessary starting point for this
+      page."
+  - slug: rope-making
+    title: Rope making
+    kind: tooling
+    role: Fiber harvest and preparation often require cutting and scraping.
+  - slug: rush
+    title: Rush
+    kind: soft
+    role: "Enables Rush: Cutting edge provides a necessary starting point for this
+      page."
+  - slug: saw
+    title: Saw
+    kind: hard
+    role: "Enables Saw: Cutting edge provides a necessary starting point for this
+      page."
+  - slug: scraper
+    title: Scraper
+    kind: hard
+    role: "Enables Scraper: Cutting edge provides a necessary starting point for
+      this page."
+  - slug: shell
+    title: Shell
+    kind: soft
+    role: "Enables Shell: Cutting edge provides a necessary starting point for this
+      page."
+  - slug: sinew
+    title: Sinew
+    kind: hard
+    role: "Enables Sinew: Cutting edge provides a necessary starting point for this
+      page."
+  - slug: softwood
+    title: Softwood
+    kind: soft
+    role: "Enables Softwood: Cutting edge provides a necessary starting point for
+      repeatable work."
+  - slug: tallow
+    title: Tallow
+    kind: soft
+    role: "Enables Tallow: Cutting edge provides a necessary starting point for
+      repeatable work."
+  - slug: timber
+    title: Timber
+    kind: tooling
+    role: "Enables Timber: Edged tools make timber conversion faster, cleaner, and
+      safer."
+  - slug: try-square
+    title: Try-square
+    kind: tooling
+    role: "Enables Try-square: Cutting and scraping tools shape the reference arms."
+  - slug: willow
+    title: Willow
+    kind: soft
+    role: "Enables Willow: Cutting edge provides a necessary starting point for this
+      page."
+  - slug: woodworking
+    title: Woodworking
+    kind: tooling
+    role: Woodworking requires cutting, scraping, boring, or marking edges.
+  - slug: wool
+    title: Wool
+    kind: soft
+    role: "Enables Wool: Cutting edge provides a necessary starting point for this
+      page."
 missing_prerequisites: []
 material_dependencies:
   - slug: edge-material
@@ -45,25 +187,6 @@ material_dependencies:
     importance: hard
     availability_note: Flint, chert, obsidian, shell, bone, antler, hardwood, and
       metal all imply different availability and maintenance.
-tags:
-  - tool
-  - workshop
-  - shaping
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; material-specific edge claims need human source
-      review.
-confidence:
-  practicality: 0.78
-  historical_plausibility: 0.88
-  completeness: 0.58
 images:
   header:
     src: /images/tech/cutting-edge-header.webp
@@ -83,8 +206,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: eb67b8a7f27a61110bf2f9404e27326aaa13222515aa6a546dc4d93a688e9948
     generated_at: 2026-05-04T23:11:13.412Z
+tags:
+  - tool
+  - workshop
+  - shaping
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; material-specific edge claims need human source
+      review.
+confidence:
+  practicality: 0.78
+  historical_plausibility: 0.88
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 A cutting edge is any controlled sharp working boundary. It may be a flake, scraper, shell, bone edge, metal blade, or sharpened hardwood used to separate material.

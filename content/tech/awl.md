@@ -4,11 +4,12 @@ slug: awl
 title: Awl
 aliases: []
 node_type: tool
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A pointed hand tool for piercing leather, fiber, bark, thin wood, and
   layout marks before stitching or pegging.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric_to_ancient
 difficulty: basic
 precision_required: low
@@ -23,7 +24,11 @@ prerequisites:
     title: Bone and antler
     kind: soft
     role: Bone and antler provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: needle
+    title: Needle
+    kind: hard
+    role: "Enables Needle: Awl provides a necessary starting point for this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: point-material-and-handle
@@ -31,24 +36,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - tool
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/awl-header.webp
@@ -68,8 +55,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: bae8ff4e731480d2ee377b0b7c5fa39a5e7b38201e7c67237f5298171282958a
     generated_at: 2026-05-04T23:00:24.177Z
+tags:
+  - tool
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Awl belongs in the technology tree because it turns local materials and habits into a more repeatable working version. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

@@ -6,6 +6,7 @@ aliases:
   - bast fiber
   - plant fiber
 node_type: material
+secondary_node_types: []
 status: draft
 summary: Plant or animal fiber selected, extracted, cleaned, and bundled for
   rope, thread, lashings, nets, basketry, and weaving.
@@ -21,18 +22,72 @@ prerequisites:
     kind: tooling
     role: Cutting tools help harvest and clean fibrous plants or hides.
 unlocks:
-  - slug: rope
-    title: Rope
-    kind: material_source
-    role: Rope requires twistable fibers.
-  - slug: rope-making
-    title: Rope making
-    kind: material_source
-    role: Rope making begins with sorted fiber.
   - slug: basketry
     title: Basketry
     kind: material_source
     role: Basketry can use long fibers, splints, and flexible stems.
+  - slug: flax-fiber
+    title: Flax fiber
+    kind: knowledge
+    role: "Enables Flax fiber: General fiber recognition and testing come before
+      specializing in flax."
+  - slug: heddle
+    title: Heddle
+    kind: soft
+    role: "Enables Heddle: Cordage fiber provides a necessary starting point for
+      this page."
+  - slug: hemp-fiber
+    title: Hemp Fiber
+    kind: hard
+    role: "Enables Hemp Fiber: Cordage fiber provides a necessary starting point for
+      first trials."
+  - slug: linen-thread
+    title: Linen Thread
+    kind: hard
+    role: "Enables Linen Thread: Cordage fiber provides a necessary starting point
+      for first trials."
+  - slug: net-making
+    title: Net making
+    kind: soft
+    role: "Enables Net making: Cordage fiber provides a necessary starting point for
+      this page."
+  - slug: nettle-fiber
+    title: Nettle Fiber
+    kind: hard
+    role: "Enables Nettle Fiber: Cordage fiber provides a necessary starting point
+      for first trials."
+  - slug: rope-making
+    title: Rope making
+    kind: material_source
+    role: Rope making begins with sorted fiber.
+  - slug: rope
+    title: Rope
+    kind: material_source
+    role: Rope requires twistable fibers.
+  - slug: sieve
+    title: Sieve
+    kind: soft
+    role: "Enables Sieve: Cordage fiber provides a necessary starting point for this
+      page."
+  - slug: spindle
+    title: Spindle
+    kind: material_source
+    role: "Enables Spindle: Spindles need prepared fiber to be useful."
+  - slug: spinning
+    title: Spinning
+    kind: soft
+    role: "Enables Spinning: Cordage fiber provides a necessary starting point for
+      this page."
+  - slug: wool-yarn
+    title: Wool Yarn
+    kind: hard
+    role: "Enables Wool Yarn: Cordage fiber provides a necessary starting point for
+      first trials."
+  - slug: wool
+    title: Wool
+    kind: hard
+    role: "Enables Wool: Cordage fiber provides a necessary starting point for this
+      page."
 missing_prerequisites: []
 material_dependencies:
   - slug: fibrous-plants
@@ -40,25 +95,6 @@ material_dependencies:
     importance: hard
     availability_note: Nettles, flax, hemp, bark, rushes, grasses, and roots vary by
       region and season.
-tags:
-  - material
-  - fiber
-  - supply-chain
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; species and processing claims need human source
-      review.
-confidence:
-  practicality: 0.78
-  historical_plausibility: 0.84
-  completeness: 0.57
 images:
   header:
     src: /images/tech/cordage-fiber-header.webp
@@ -78,8 +114,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 3072e02e3126e4ca44d95ae8b46d960045b184f5984a16979106d69acf7bb0d1
     generated_at: 2026-05-04T23:05:39.261Z
+tags:
+  - material
+  - fiber
+  - supply-chain
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; species and processing claims need human source
+      review.
+confidence:
+  practicality: 0.78
+  historical_plausibility: 0.84
+  completeness: 0.57
 ---
-
 ## Field briefing
 
 Cordage fiber is the supply chain behind [[rope|rope]], lashings, thread, nets, baskets, and early textiles. The useful technology is knowing which fibers survive twisting and load.

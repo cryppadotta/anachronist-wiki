@@ -4,6 +4,7 @@ slug: cylinder-boring
 title: Cylinder boring
 aliases: []
 node_type: process
+secondary_node_types: []
 status: draft
 summary: A precision machining process for making round, straight internal bores
   in engine cylinders, pumps, and sliding parts.
@@ -30,7 +31,11 @@ prerequisites:
     title: Lubricating oil
     kind: soft
     role: Helps cutting and inspection by controlling heat and friction.
-unlocks: []
+unlocks:
+  - slug: piston-cylinder
+    title: Piston and cylinder
+    kind: hard
+    role: "Enables Piston and cylinder: Creates round, smooth bores."
 missing_prerequisites:
   - slug: boring-bar
     title: Boring bar
@@ -44,25 +49,6 @@ material_dependencies:
     title: Cast iron
     importance: hard
     availability_note: Engine blocks and sleeves are common workpieces.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.52
-  historical_plausibility: 0.72
-  completeness: 0.52
 images:
   header:
     src: /images/tech/cylinder-boring-header.webp
@@ -82,8 +68,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: fabdd19347cab16b548f2b6d8b5e2fd30f7dbf6c3a8149e5d86764ac7fa2927e
     generated_at: 2026-05-05T19:59:07.311Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.52
+  historical_plausibility: 0.72
+  completeness: 0.52
 ---
-
 ## Field briefing
 
 A precision machining process for making round, straight internal bores in engine cylinders, pumps, and sliding parts.

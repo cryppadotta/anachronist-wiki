@@ -4,11 +4,12 @@ slug: crankshaft
 title: Crankshaft
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A shaped rotating shaft that turns piston motion into rotary power
   while surviving repeated bending and torsion.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: expert
 precision_required: high
@@ -31,7 +32,12 @@ prerequisites:
     title: Lubricating oil
     kind: hard
     role: Protects loaded journals in use.
-unlocks: []
+unlocks:
+  - slug: internal-combustion-engine
+    title: Internal combustion engine
+    kind: hard
+    role: "Enables Internal combustion engine: Turns reciprocating motion into
+      rotary output."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -42,25 +48,6 @@ material_dependencies:
     title: Plain bearing
     importance: hard
     availability_note: Crankshaft journals need bearing surfaces.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.4
-  historical_plausibility: 0.76
-  completeness: 0.54
 images:
   header:
     src: /images/tech/crankshaft-header.webp
@@ -80,8 +67,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: e63ea5b22f6d4d93a73a689b5b5625191cbdf8fb59105cc13b9eb0349cd13083
     generated_at: 2026-05-05T19:58:54.057Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.4
+  historical_plausibility: 0.76
+  completeness: 0.54
 ---
-
 ## Field briefing
 
 A shaped rotating shaft that turns piston motion into rotary power while surviving repeated bending and torsion.

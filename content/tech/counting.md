@@ -5,6 +5,7 @@ title: Counting
 aliases:
   - arithmetic basics
 node_type: knowledge
+secondary_node_types: []
 status: draft
 summary: A shared method for keeping track of number, order, quantity, and
   repeated work.
@@ -16,39 +17,94 @@ minimum_social_scale: individual
 time_to_first_working_version: minutes_to_days
 prerequisites: []
 unlocks:
+  - slug: abacus
+    title: Abacus
+    kind: hard
+    role: "Enables Abacus: Counting provides a necessary starting point for first
+      trials."
+  - slug: alignment-checking
+    title: Alignment checking
+    kind: knowledge
+    role: "Enables Alignment checking: Repeated marks, comparisons, and records
+      benefit from number."
+  - slug: angle-gauge
+    title: Angle Gauge
+    kind: hard
+    role: "Enables Angle Gauge: Counting provides a necessary starting point for
+      first trials."
+  - slug: balance-scale
+    title: Balance Scale
+    kind: hard
+    role: "Enables Balance Scale: Counting provides a necessary starting point for
+      first trials."
+  - slug: field-survey
+    title: Field Survey
+    kind: hard
+    role: "Enables Field Survey: Counting provides a necessary starting point for
+      first trials."
+  - slug: land-boundary-marker
+    title: Land Boundary Marker
+    kind: hard
+    role: "Enables Land Boundary Marker: Counting provides a necessary starting
+      point for first trials."
+  - slug: measuring-rod
+    title: Measuring rod
+    kind: knowledge
+    role: "Enables Measuring rod: Marks become more useful when counts and named
+      divisions are shared."
+  - slug: rope-making
+    title: Rope making
+    kind: knowledge
+    role: "Enables Rope making: Strand count, sample labels, and batch comparisons
+      need number."
+  - slug: sanitation-norms
+    title: Sanitation norms
+    kind: optional
+    role: "Enables Sanitation norms: Counting illness events and inspections helps
+      identify patterns."
+  - slug: seasonal-calendar
+    title: Seasonal Calendar
+    kind: hard
+    role: "Enables Seasonal Calendar: Counting provides a necessary starting point
+      for first trials."
+  - slug: sighting-frame
+    title: Sighting Frame
+    kind: hard
+    role: "Enables Sighting Frame: Counting provides a necessary starting point for
+      first trials."
   - slug: standard-weights
     title: Standard weights
     kind: measurement
     role: Repeated units and comparisons require stable counting.
-  - slug: writing
-    title: Writing
-    kind: knowledge
-    role: Tallies and numerals bridge spoken counting to records.
+  - slug: tally-stick
+    title: Tally Stick
+    kind: hard
+    role: "Enables Tally Stick: Counting provides a necessary starting point for
+      first trials."
   - slug: technical-drawing
     title: Technical drawing
     kind: knowledge
     role: Dimensions, repetitions, and parts lists need number.
+  - slug: timber-seasoning
+    title: Timber seasoning
+    kind: knowledge
+    role: "Enables Timber seasoning: Batches and waiting periods must be tracked."
+  - slug: volume-measure
+    title: Volume Measure
+    kind: hard
+    role: "Enables Volume Measure: Counting provides a necessary starting point for
+      first trials."
+  - slug: workshop-records
+    title: Workshop records
+    kind: knowledge
+    role: "Enables Workshop records: Batches, measures, and comparisons need
+      counting."
+  - slug: writing
+    title: Writing
+    kind: knowledge
+    role: Tallies and numerals bridge spoken counting to records.
 missing_prerequisites: []
 material_dependencies: []
-tags:
-  - knowledge
-  - measurement
-  - records
-generation:
-  created_by: llm
-  provider: OpenAI
-  model: GPT-5 Codex
-  prompt_version: ANA-13 seed-content manual draft
-  generated_at: 2026-05-03
-  request_issue: ANA-13
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; anthropology and history claims need human source
-      review.
-confidence:
-  practicality: 0.86
-  historical_plausibility: 0.84
-  completeness: 0.6
 images:
   header:
     src: /images/tech/counting-header.webp
@@ -67,8 +123,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 2dfeee6cecd66ba2f1d6af11623dd6b294319d89589bb9909aa1ba0ccae4e9a2
     generated_at: 2026-05-04T23:05:43.075Z
+tags:
+  - knowledge
+  - measurement
+  - records
+generation:
+  created_by: llm
+  model: GPT-5 Codex
+  provider: OpenAI
+  prompt_version: ANA-13 seed-content manual draft
+  generated_at: 2026-05-03
+  request_issue: ANA-13
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; anthropology and history claims need human source
+      review.
+confidence:
+  practicality: 0.86
+  historical_plausibility: 0.84
+  completeness: 0.6
 ---
-
 ## Field briefing
 
 Counting lets a group repeat work without relying on vague memory. It is a prerequisite for standards, inventories, batch tests, and teaching.

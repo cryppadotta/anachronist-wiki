@@ -4,6 +4,7 @@ slug: quality-control-records
 title: Quality-control records
 aliases: []
 node_type: institution
+secondary_node_types: []
 status: draft
 summary: A recordkeeping practice that connects batches, inspections, defects,
   repairs, and design changes across a workshop or factory.
@@ -30,7 +31,52 @@ prerequisites:
     title: Tally stick
     kind: alternative
     role: Provides a low-literacy counting fallback.
-unlocks: []
+unlocks:
+  - slug: band-brake
+    title: Band brake
+    kind: soft
+    role: "Enables Band brake: Tracks adjustment and wear."
+  - slug: factory-assembly-line
+    title: Factory assembly line
+    kind: test
+    role: "Enables Factory assembly line: Tracks defects and rework."
+  - slug: ford-model-t
+    title: Ford Model T
+    kind: institutional
+    role: "Enables Ford Model T: Keeps defects traceable across a large factory."
+  - slug: gasoline
+    title: Gasoline
+    kind: test
+    role: "Enables Gasoline: Tracks source, contamination, and engine behavior."
+  - slug: interchangeable-parts
+    title: Interchangeable parts
+    kind: institutional
+    role: "Enables Interchangeable parts: Tracks batches, defects, and changes."
+  - slug: lead-acid-battery
+    title: Lead-acid battery
+    kind: test
+    role: "Enables Lead-acid battery: Tracks charging behavior and failures."
+  - slug: mild-steel
+    title: Mild steel
+    kind: test
+    role: "Enables Mild steel: Tracks heats, suppliers, and defects."
+  - slug: petroleum
+    title: Petroleum
+    kind: test
+    role: "Enables Petroleum: Tracks source and contamination differences."
+  - slug: service-manual
+    title: Service manual
+    kind: institutional
+    role: "Enables Service manual: Feeds known faults and revisions back into
+      service practice."
+  - slug: spark-ignition
+    title: Spark ignition
+    kind: test
+    role: "Enables Spark ignition: Tracks intermittent faults and replacements."
+  - slug: vulcanized-rubber
+    title: Vulcanized rubber
+    kind: test
+    role: "Enables Vulcanized rubber: Tracks batches, aging, and failures."
 missing_prerequisites: []
 material_dependencies:
   - slug: paper
@@ -41,25 +87,6 @@ material_dependencies:
     title: Ink
     importance: soft
     availability_note: Durable marks help long-running production.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.76
-  historical_plausibility: 0.84
-  completeness: 0.62
 images:
   header:
     src: /images/tech/quality-control-records-header.webp
@@ -79,8 +106,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 0693bf45dab10beef83b16e30ce64a3f83d82622545b679ce2229c3797850600
     generated_at: 2026-05-05T20:09:04.952Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.76
+  historical_plausibility: 0.84
+  completeness: 0.62
 ---
-
 ## Field briefing
 
 A recordkeeping practice that connects batches, inspections, defects, repairs, and design changes across a workshop or factory.

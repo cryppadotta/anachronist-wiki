@@ -6,11 +6,12 @@ aliases:
   - bone
   - antler
 node_type: material
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: Hard animal materials shaped into points, wedges, handles, needles,
   bearings, toggles, scrapers, and small tool parts.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: prehistoric
 difficulty: basic
 precision_required: medium
@@ -22,6 +23,11 @@ prerequisites:
     kind: tooling
     role: Abrasion shapes and smooths hard animal materials.
 unlocks:
+  - slug: awl
+    title: Awl
+    kind: soft
+    role: "Enables Awl: Bone and antler provides a necessary starting point for this
+      page."
   - slug: cutting-edge
     title: Cutting edge
     kind: material_source
@@ -30,31 +36,22 @@ unlocks:
     title: Hand drill
     kind: material_source
     role: Bone and antler can make small bits, sockets, or bearing pieces.
+  - slug: needle
+    title: Needle
+    kind: soft
+    role: "Enables Needle: Bone and antler provides a necessary starting point for
+      this page."
+  - slug: scraper
+    title: Scraper
+    kind: soft
+    role: "Enables Scraper: Bone and antler provides a necessary starting point for
+      this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: animal-remains
     title: Animal remains
     importance: hard
     availability_note: Butchery, hunting, seasonal shedding, and trade determine supply.
-tags:
-  - material
-  - animal-products
-  - tools
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; archaeological and material claims need human
-      source review.
-confidence:
-  practicality: 0.76
-  historical_plausibility: 0.86
-  completeness: 0.55
 images:
   header:
     src: /images/tech/bone-and-antler-header.webp
@@ -74,8 +71,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 39ac0a061d09f70843c658a90f056272f489d77ba8eda366ab230042a6f32381
     generated_at: 2026-05-04T23:02:16.826Z
+tags:
+  - material
+  - animal-products
+  - tools
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; archaeological and material claims need human
+      source review.
+confidence:
+  practicality: 0.76
+  historical_plausibility: 0.86
+  completeness: 0.55
 ---
-
 ## Field briefing
 
 Bone and antler are hard, workable animal materials. They fill the gap between wood, stone, and later metal for small tools, sockets, wedges, toggles, and wear parts.

@@ -27,18 +27,97 @@ prerequisites:
     kind: knowledge
     role: Batches, measures, and comparisons need counting.
 unlocks:
-  - slug: technical-drawing
-    title: Technical drawing
-    kind: institutional
-    role: Drawing archives depend on storage and retrieval habits.
-  - slug: standard-weights
-    title: Standard weights
-    kind: institutional
-    role: Standards need records of masters, copies, and checks.
   - slug: apprenticeship
     title: Apprenticeship
     kind: knowledge
     role: Records help turn teaching into repeatable curriculum.
+  - slug: batch-labeling
+    title: Batch labeling
+    kind: hard
+    role: "Enables Batch labeling: Workshop records provides a necessary starting
+      point for this page."
+  - slug: beeswax
+    title: Beeswax
+    kind: soft
+    role: "Enables Beeswax: Workshop records provides a necessary starting point for
+      this page."
+  - slug: crop-rotation
+    title: Crop Rotation
+    kind: hard
+    role: "Enables Crop Rotation: Workshop records provides a necessary starting
+      point for first trials."
+  - slug: flaxseed-oil
+    title: Flaxseed Oil
+    kind: soft
+    role: "Enables Flaxseed Oil: Workshop records provides a necessary starting
+      point for repeatable work."
+  - slug: milk-casein
+    title: Milk Casein
+    kind: soft
+    role: "Enables Milk Casein: Workshop records provides a necessary starting point
+      for repeatable work."
+  - slug: moisture-test
+    title: Moisture Test
+    kind: soft
+    role: "Enables Moisture Test: Workshop records provides a necessary starting
+      point for repeatable work."
+  - slug: oak-gall
+    title: Oak Gall
+    kind: soft
+    role: "Enables Oak Gall: Workshop records provides a necessary starting point
+      for repeatable work."
+  - slug: plant-dye
+    title: Plant Dye
+    kind: soft
+    role: "Enables Plant Dye: Workshop records provides a necessary starting point
+      for repeatable work."
+  - slug: proof-load-test
+    title: Proof Load Test
+    kind: soft
+    role: "Enables Proof Load Test: Workshop records provides a necessary starting
+      point for repeatable work."
+  - slug: public-safety
+    title: Public safety
+    kind: soft
+    role: "Enables Public safety: Workshop records provides a necessary starting
+      point for this page."
+  - slug: quality-control-records
+    title: Quality-control records
+    kind: institutional
+    role: "Enables Quality-control records: Provides durable production notes."
+  - slug: seed-selection
+    title: Seed Selection
+    kind: hard
+    role: "Enables Seed Selection: Workshop records provides a necessary starting
+      point for first trials."
+  - slug: standard-weights
+    title: Standard weights
+    kind: institutional
+    role: Standards need records of masters, copies, and checks.
+  - slug: starch-paste
+    title: Starch Paste
+    kind: soft
+    role: "Enables Starch Paste: Workshop records provides a necessary starting
+      point for repeatable work."
+  - slug: tannin-bark
+    title: Tannin Bark
+    kind: soft
+    role: "Enables Tannin Bark: Workshop records provides a necessary starting point
+      for repeatable work."
+  - slug: technical-drawing
+    title: Technical drawing
+    kind: institutional
+    role: Drawing archives depend on storage and retrieval habits.
+  - slug: vinegar
+    title: Vinegar
+    kind: soft
+    role: "Enables Vinegar: Workshop records provides a necessary starting point for
+      repeatable work."
+  - slug: workshop-organization
+    title: Workshop organization
+    kind: soft
+    role: "Enables Workshop organization: Workshop records provides a necessary
+      starting point for this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: record-medium
@@ -46,25 +125,6 @@ material_dependencies:
     importance: hard
     availability_note: Clay tablets, wax boards, paper, parchment, wood tallies, or
       marked samples define how records survive.
-tags:
-  - records
-  - social-technology
-  - quality-control
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; administrative and historical claims need human
-      source review.
-confidence:
-  practicality: 0.74
-  historical_plausibility: 0.8
-  completeness: 0.56
 images:
   header:
     src: /images/tech/workshop-records-header.webp
@@ -84,8 +144,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 94e352f7518dc93d8fd1d4b6499d6968b200422da77868edd52082da30d9ebad
     generated_at: 2026-05-04T23:35:35.750Z
+tags:
+  - records
+  - social-technology
+  - quality-control
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; administrative and historical claims need human
+      source review.
+confidence:
+  practicality: 0.74
+  historical_plausibility: 0.8
+  completeness: 0.56
 ---
-
 ## Field briefing
 
 Workshop records let a craft remember. They tie sources, dimensions, failures, and tests to named batches so useful accidents can be repeated and bad ones avoided.

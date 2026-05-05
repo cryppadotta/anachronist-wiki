@@ -4,11 +4,12 @@ slug: lathe
 title: Lathe
 aliases: []
 node_type: tool
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A machine tool that rotates work against a cutting tool to make round
   parts, true shafts, threads, bushings, and patterns.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: high
@@ -31,7 +32,27 @@ prerequisites:
     title: Cutting edge
     kind: hard
     role: Sharp tools are required.
-unlocks: []
+unlocks:
+  - slug: crankshaft
+    title: Crankshaft
+    kind: tooling
+    role: "Enables Crankshaft: Keeps journals concentric."
+  - slug: cylinder-boring
+    title: Cylinder boring
+    kind: tooling
+    role: "Enables Cylinder boring: Provides rotary alignment and cutting feed."
+  - slug: drive-shaft
+    title: Drive shaft
+    kind: tooling
+    role: "Enables Drive shaft: Turns and trues shaft journals."
+  - slug: machining
+    title: Machining
+    kind: tooling
+    role: "Enables Machining: Provides one foundational machine-tool operation."
+  - slug: threaded-fastener
+    title: Threaded fastener
+    kind: tooling
+    role: "Enables Threaded fastener: Cuts accurate threads in early versions."
 missing_prerequisites: []
 material_dependencies:
   - slug: mild-steel
@@ -42,25 +63,6 @@ material_dependencies:
     title: Hardwood
     importance: substitute
     availability_note: Early pole or bow lathes can use wooden structures.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.54
-  historical_plausibility: 0.86
-  completeness: 0.58
 images:
   header:
     src: /images/tech/lathe-header.webp
@@ -80,8 +82,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: 75a6bd93bfabad11d9d9b210a7f23251f3d527897466e6133da20ebbd75d71fd
     generated_at: 2026-05-05T20:07:00.148Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.54
+  historical_plausibility: 0.86
+  completeness: 0.58
 ---
-
 ## Field briefing
 
 A machine tool that rotates work against a cutting tool to make round parts, true shafts, threads, bushings, and patterns.

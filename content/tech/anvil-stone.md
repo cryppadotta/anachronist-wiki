@@ -4,6 +4,7 @@ slug: anvil-stone
 title: Anvil Stone
 aliases: []
 node_type: tool
+secondary_node_types: []
 status: draft
 summary: Anvil Stone is a practical tool for expanding the static technology
   tree with local sourcing, repeatable preparation, and visible quality checks.
@@ -22,7 +23,32 @@ prerequisites:
     title: Charcoal
     kind: soft
     role: Charcoal provides a necessary starting point for repeatable work.
-unlocks: []
+unlocks:
+  - slug: chain
+    title: Chain
+    kind: soft
+    role: "Enables Chain: Anvil Stone provides a necessary starting point for
+      repeatable work."
+  - slug: hinge
+    title: Hinge
+    kind: soft
+    role: "Enables Hinge: Anvil Stone provides a necessary starting point for
+      repeatable work."
+  - slug: latch
+    title: Latch
+    kind: soft
+    role: "Enables Latch: Anvil Stone provides a necessary starting point for
+      repeatable work."
+  - slug: nail
+    title: Nail
+    kind: soft
+    role: "Enables Nail: Anvil Stone provides a necessary starting point for
+      repeatable work."
+  - slug: rivet
+    title: Rivet
+    kind: soft
+    role: "Enables Rivet: Anvil Stone provides a necessary starting point for
+      repeatable work."
 missing_prerequisites: []
 material_dependencies:
   - slug: anvil-stone-supply
@@ -30,24 +56,6 @@ material_dependencies:
     importance: hard
     availability_note: The supply depends on source recognition, access rights,
       preparation, substitutes, storage, and local geography.
-tags:
-  - tool
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion 100-page follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.62
-  historical_plausibility: 0.7
-  completeness: 0.46
 images:
   header:
     src: /images/tech/anvil-stone-header.webp
@@ -67,8 +75,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: edf7831a758fcc692f0f331478e18ce17842ef45ed880ac59fed7248d7d68fd1
     generated_at: 2026-05-05T13:09:10.069Z
+tags:
+  - tool
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion 100-page follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.62
+  historical_plausibility: 0.7
+  completeness: 0.46
 ---
-
 ## Field briefing
 
 Anvil Stone adds another practical node to the static technology tree. The page treats it as an early, inspectable capability that can be sourced, tested, taught, and improved without modern infrastructure.

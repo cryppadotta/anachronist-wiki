@@ -4,6 +4,7 @@ slug: knot-tying
 title: Knot tying
 aliases: []
 node_type: knowledge
+secondary_node_types: []
 status: draft
 summary: A practical body of tying patterns for fastening, joining, adjusting,
   lifting, nets, lashings, and temporary fixtures.
@@ -22,7 +23,17 @@ prerequisites:
     title: Tensile test
     kind: soft
     role: Tensile test provides a necessary starting point for this page.
-unlocks: []
+unlocks:
+  - slug: lashing
+    title: Lashing
+    kind: soft
+    role: "Enables Lashing: Knot tying provides a necessary starting point for this
+      page."
+  - slug: net-making
+    title: Net making
+    kind: hard
+    role: "Enables Net making: Knot tying provides a necessary starting point for
+      this page."
 missing_prerequisites: []
 material_dependencies:
   - slug: rope-or-cord
@@ -30,24 +41,6 @@ material_dependencies:
     importance: hard
     availability_note: The practical supply depends on local access, recognition,
       preparation, substitutes, storage, and transport.
-tags:
-  - knowledge
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 manual content expansion follow-up
-  generated_at: 2026-05-04
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.68
-  historical_plausibility: 0.76
-  completeness: 0.5
 images:
   header:
     src: /images/tech/knot-tying-header.webp
@@ -67,8 +60,25 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: a335095add308dd421e64c99fc6cd7c1d4ab28bd96e81d8c4002ab4c5b6bd070
     generated_at: 2026-05-04T23:15:03.628Z
+tags:
+  - knowledge
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 manual content expansion follow-up
+  generated_at: 2026-05-04
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.68
+  historical_plausibility: 0.76
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 Knot tying belongs in the technology tree because it turns local materials and habits into a more repeatable skill. It is intentionally scoped to early, inspectable workshop practice rather than modern industrial production.

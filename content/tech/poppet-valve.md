@@ -4,11 +4,12 @@ slug: poppet-valve
 title: Poppet valve
 aliases: []
 node_type: artifact
+secondary_node_types: []
 status: draft
+page_treatment: practical_with_cautions
 summary: A stemmed valve that opens against a seat and closes to control intake,
   exhaust, steam, air, or liquid flow.
 safety_class: caution
-page_treatment: practical_with_cautions
 era_floor: industrial
 difficulty: advanced
 precision_required: high
@@ -31,7 +32,11 @@ prerequisites:
     title: Leak test
     kind: test
     role: Checks whether the valve seals.
-unlocks: []
+unlocks:
+  - slug: internal-combustion-engine
+    title: Internal combustion engine
+    kind: hard
+    role: "Enables Internal combustion engine: Controls gas exchange."
 missing_prerequisites:
   - slug: spring-making
     title: Spring making
@@ -48,25 +53,6 @@ material_dependencies:
     title: Lubricating oil
     importance: soft
     availability_note: Guides and stems wear less when lubricated.
-tags:
-  - transport
-  - industrial
-  - ANA-37
-generation:
-  created_by: llm
-  provider: OpenAI Codex
-  model: GPT-5
-  prompt_version: ANA-37 Ford Model T prerequisite expansion
-  generated_at: 2026-05-05
-  request_issue: ANA-37
-  reviewed_by: []
-  source_review_notes:
-    - No source pack was used; specific historical, regional, and technical
-      claims need human source review.
-confidence:
-  practicality: 0.5
-  historical_plausibility: 0.7
-  completeness: 0.5
 images:
   header:
     src: /images/tech/poppet-valve-header.webp
@@ -86,8 +72,26 @@ images:
     prompt_version: schematic-image.v1.md
     prompt_hash: db4d2e0036fa1c371ef3898b601a5cd33ae721663630e3c7ea90a3d95a09509a
     generated_at: 2026-05-05T20:01:00.597Z
+tags:
+  - transport
+  - industrial
+  - ANA-37
+generation:
+  created_by: llm
+  model: GPT-5
+  provider: OpenAI Codex
+  prompt_version: ANA-37 Ford Model T prerequisite expansion
+  generated_at: 2026-05-05
+  request_issue: ANA-37
+  reviewed_by: []
+  source_review_notes:
+    - No source pack was used; specific historical, regional, and technical
+      claims need human source review.
+confidence:
+  practicality: 0.5
+  historical_plausibility: 0.7
+  completeness: 0.5
 ---
-
 ## Field briefing
 
 A stemmed valve that opens against a seat and closes to control intake, exhaust, steam, air, or liquid flow.
