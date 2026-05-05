@@ -394,6 +394,43 @@
       }
     },
     {
+      "slug": "automobile",
+      "title": "Automobile",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A self-propelled road vehicle that combines power, steering, braking, load-bearing wheels, fuel handling, and road testing.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "months_to_years",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/automobile/",
+      "source_file": "content/tech/automobile.md",
+      "confidence": {
+        "practicality": 0.48,
+        "historical_plausibility": 0.78,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "awl",
       "title": "Awl",
       "aliases": [],
@@ -494,6 +531,80 @@
         "provider": "OpenAI Codex",
         "prompt_version": "ANA-37 manual content expansion 100-page follow-up",
         "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "ball-bearing",
+      "title": "Ball bearing",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A rolling bearing using hardened balls between races to reduce friction in wheels, shafts, tools, and instruments.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/ball-bearing/",
+      "source_file": "content/tech/ball-bearing.md",
+      "confidence": {
+        "practicality": 0.34,
+        "historical_plausibility": 0.78,
+        "completeness": 0.46
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "band-brake",
+      "title": "Band brake",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A flexible friction band that tightens around a drum to slow a shaft, wheel, or transmission member.",
+      "era_floor": "industrial",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/band-brake/",
+      "source_file": "content/tech/band-brake.md",
+      "confidence": {
+        "practicality": 0.58,
+        "historical_plausibility": 0.82,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
         "request_issue": "ANA-37",
         "reviewed_by": [],
         "source_review_notes": [
@@ -1124,6 +1235,43 @@
       }
     },
     {
+      "slug": "camshaft",
+      "title": "Camshaft",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A timed shaft with lobes that open valves or actuate mechanisms in repeatable sequence.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/camshaft/",
+      "source_file": "content/tech/camshaft.md",
+      "confidence": {
+        "practicality": 0.44,
+        "historical_plausibility": 0.74,
+        "completeness": 0.52
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "carbon-black",
       "title": "Carbon Black",
       "aliases": [],
@@ -1152,6 +1300,43 @@
         "provider": "OpenAI Codex",
         "prompt_version": "ANA-37 manual content expansion 100-page follow-up",
         "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "carburetor",
+      "title": "Carburetor",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A mechanical fuel-and-air metering device that lets a gasoline engine draw a combustible mixture under changing load.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/carburetor/",
+      "source_file": "content/tech/carburetor.md",
+      "confidence": {
+        "practicality": 0.36,
+        "historical_plausibility": 0.78,
+        "completeness": 0.52
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
         "request_issue": "ANA-37",
         "reviewed_by": [],
         "source_review_notes": [
@@ -1419,6 +1604,43 @@
       }
     },
     {
+      "slug": "chassis-frame",
+      "title": "Chassis frame",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A rigid vehicle foundation that keeps axles, engine, body, and controls aligned under road loads.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/chassis-frame/",
+      "source_file": "content/tech/chassis-frame.md",
+      "confidence": {
+        "practicality": 0.62,
+        "historical_plausibility": 0.8,
+        "completeness": 0.6
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "chisel",
       "title": "Chisel",
       "aliases": [],
@@ -1600,6 +1822,43 @@
       }
     },
     {
+      "slug": "clutch",
+      "title": "Clutch",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A controllable coupling that lets a rotating power source connect to or disconnect from a driven load.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/clutch/",
+      "source_file": "content/tech/clutch.md",
+      "confidence": {
+        "practicality": 0.52,
+        "historical_plausibility": 0.78,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "coopering",
       "title": "Coopering",
       "aliases": [],
@@ -1751,6 +2010,43 @@
       }
     },
     {
+      "slug": "crankshaft",
+      "title": "Crankshaft",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A shaped rotating shaft that turns piston motion into rotary power while surviving repeated bending and torsion.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/crankshaft/",
+      "source_file": "content/tech/crankshaft.md",
+      "confidence": {
+        "practicality": 0.4,
+        "historical_plausibility": 0.76,
+        "completeness": 0.54
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "crop-rotation",
       "title": "Crop Rotation",
       "aliases": [],
@@ -1863,6 +2159,80 @@
       }
     },
     {
+      "slug": "cylinder-boring",
+      "title": "Cylinder boring",
+      "aliases": [],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A precision machining process for making round, straight internal bores in engine cylinders, pumps, and sliding parts.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/cylinder-boring/",
+      "source_file": "content/tech/cylinder-boring.md",
+      "confidence": {
+        "practicality": 0.52,
+        "historical_plausibility": 0.72,
+        "completeness": 0.52
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "differential-gear",
+      "title": "Differential gear",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A gear assembly that splits drive torque while letting left and right wheels rotate at different speeds.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/differential-gear/",
+      "source_file": "content/tech/differential-gear.md",
+      "confidence": {
+        "practicality": 0.4,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "drainage-ditch",
       "title": "Drainage Ditch",
       "aliases": [],
@@ -1891,6 +2261,80 @@
         "provider": "OpenAI Codex",
         "prompt_version": "ANA-37 manual content expansion 100-page follow-up",
         "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "drill-press",
+      "title": "Drill press",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A guided drilling tool that holds a rotating bit square to the work for repeatable holes and fastener patterns.",
+      "era_floor": "industrial",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/drill-press/",
+      "source_file": "content/tech/drill-press.md",
+      "confidence": {
+        "practicality": 0.62,
+        "historical_plausibility": 0.82,
+        "completeness": 0.54
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "drive-shaft",
+      "title": "Drive shaft",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A rotating shaft that carries torque between engine, transmission, axle, pump, or other separated mechanisms.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "high",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/drive-shaft/",
+      "source_file": "content/tech/drive-shaft.md",
+      "confidence": {
+        "practicality": 0.5,
+        "historical_plausibility": 0.78,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
         "request_issue": "ANA-37",
         "reviewed_by": [],
         "source_review_notes": [
@@ -1963,6 +2407,43 @@
         "provider": "OpenAI Codex",
         "prompt_version": "ANA-37 manual content expansion 100-page follow-up",
         "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "factory-assembly-line",
+      "title": "Factory assembly line",
+      "aliases": [],
+      "node_type": "institution",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A workshop organization pattern that arranges people, fixtures, parts, records, and movement into a repeatable production flow.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "medium",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/factory-assembly-line/",
+      "source_file": "content/tech/factory-assembly-line.md",
+      "confidence": {
+        "practicality": 0.62,
+        "historical_plausibility": 0.86,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
         "request_issue": "ANA-37",
         "reviewed_by": [],
         "source_review_notes": [
@@ -2193,6 +2674,43 @@
       }
     },
     {
+      "slug": "ford-model-t",
+      "title": "Ford Model T",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A mass-produced early automobile that combines a gasoline engine, planetary transmission, steel chassis, rubber tires, factory inspection, and service culture.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "months_to_years",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/ford-model-t/",
+      "source_file": "content/tech/ford-model-t.md",
+      "confidence": {
+        "practicality": 0.42,
+        "historical_plausibility": 0.82,
+        "completeness": 0.62
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "forge-hearth",
       "title": "Forge Hearth",
       "aliases": [],
@@ -2229,6 +2747,154 @@
       }
     },
     {
+      "slug": "fuel-tank",
+      "title": "Fuel tank",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A sealed and mounted container for carrying vehicle fuel while resisting leaks, vibration, contamination, and unsafe handling.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/fuel-tank/",
+      "source_file": "content/tech/fuel-tank.md",
+      "confidence": {
+        "practicality": 0.42,
+        "historical_plausibility": 0.78,
+        "completeness": 0.46
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "gasoline",
+      "title": "Gasoline",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A volatile petroleum fuel fraction used in spark-ignition engines, treated here as a supply-chain and safety node rather than a recipe.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "medium",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/gasoline/",
+      "source_file": "content/tech/gasoline.md",
+      "confidence": {
+        "practicality": 0.24,
+        "historical_plausibility": 0.78,
+        "completeness": 0.42
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "gasoline-engine",
+      "title": "Gasoline engine",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A spark-ignition internal combustion engine optimized around volatile petroleum fuel, carburetion, cooling, and regular maintenance.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "months_to_years",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/gasoline-engine/",
+      "source_file": "content/tech/gasoline-engine.md",
+      "confidence": {
+        "practicality": 0.34,
+        "historical_plausibility": 0.82,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "gear-cutting",
+      "title": "Gear cutting",
+      "aliases": [],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A repeatable cutting and indexing process for making gear teeth that mesh smoothly under load.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/gear-cutting/",
+      "source_file": "content/tech/gear-cutting.md",
+      "confidence": {
+        "practicality": 0.42,
+        "historical_plausibility": 0.78,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "glass-sand",
       "title": "Glass Sand",
       "aliases": [],
@@ -2257,6 +2923,43 @@
         "provider": "OpenAI Codex",
         "prompt_version": "ANA-37 manual content expansion 100-page follow-up",
         "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "go-no-go-gauge",
+      "title": "Go/no-go gauge",
+      "aliases": [],
+      "node_type": "test",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A fixed inspection tool with accepting and rejecting sides that quickly sorts parts by whether they fall within useful limits.",
+      "era_floor": "industrial",
+      "difficulty": "intermediate",
+      "precision_required": "high",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/go-no-go-gauge/",
+      "source_file": "content/tech/go-no-go-gauge.md",
+      "confidence": {
+        "practicality": 0.72,
+        "historical_plausibility": 0.82,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
         "request_issue": "ANA-37",
         "reviewed_by": [],
         "source_review_notes": [
@@ -2778,6 +3481,43 @@
       }
     },
     {
+      "slug": "ignition-coil",
+      "title": "Ignition coil",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "An electromagnetic winding assembly that turns low-voltage pulses into higher-voltage ignition pulses.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "high",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/ignition-coil/",
+      "source_file": "content/tech/ignition-coil.md",
+      "confidence": {
+        "practicality": 0.4,
+        "historical_plausibility": 0.78,
+        "completeness": 0.48
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "ink",
       "title": "Ink",
       "aliases": [],
@@ -2811,6 +3551,80 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; pigment and binder claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "interchangeable-parts",
+      "title": "Interchangeable parts",
+      "aliases": [],
+      "node_type": "knowledge",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A manufacturing discipline where parts made at different times or stations fit without individual hand matching.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_years",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/interchangeable-parts/",
+      "source_file": "content/tech/interchangeable-parts.md",
+      "confidence": {
+        "practicality": 0.58,
+        "historical_plausibility": 0.86,
+        "completeness": 0.6
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "internal-combustion-engine",
+      "title": "Internal combustion engine",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A heat engine that burns fuel inside a cylinder to push a piston, requiring precise containment, ignition, cooling, and lubrication.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "months_to_years",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/internal-combustion-engine/",
+      "source_file": "content/tech/internal-combustion-engine.md",
+      "confidence": {
+        "practicality": 0.36,
+        "historical_plausibility": 0.78,
+        "completeness": 0.56
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -3073,6 +3887,80 @@
       }
     },
     {
+      "slug": "lathe",
+      "title": "Lathe",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A machine tool that rotates work against a cutting tool to make round parts, true shafts, threads, bushings, and patterns.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/lathe/",
+      "source_file": "content/tech/lathe.md",
+      "confidence": {
+        "practicality": 0.54,
+        "historical_plausibility": 0.86,
+        "completeness": 0.58
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "lead-acid-battery",
+      "title": "Lead-acid battery",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A rechargeable storage battery using lead plates and acid electrolyte, included here as a high-level prerequisite for vehicle electrical systems.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/lead-acid-battery/",
+      "source_file": "content/tech/lead-acid-battery.md",
+      "confidence": {
+        "practicality": 0.3,
+        "historical_plausibility": 0.76,
+        "completeness": 0.42
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "lead-ore",
       "title": "Lead Ore",
       "aliases": [],
@@ -3101,6 +3989,43 @@
         "provider": "OpenAI Codex",
         "prompt_version": "ANA-37 manual content expansion 100-page follow-up",
         "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "leaf-spring",
+      "title": "Leaf spring",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A stack or strip of spring metal that flexes under load to soften vehicle shock and keep wheels in contact with the road.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/leaf-spring/",
+      "source_file": "content/tech/leaf-spring.md",
+      "confidence": {
+        "practicality": 0.48,
+        "historical_plausibility": 0.8,
+        "completeness": 0.48
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
         "request_issue": "ANA-37",
         "reviewed_by": [],
         "source_review_notes": [
@@ -3439,6 +4364,117 @@
       }
     },
     {
+      "slug": "lubricating-oil",
+      "title": "Lubricating oil",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A friction-control material for bearings, gears, engines, and sliding tools, sourced from animal, plant, mineral, or petroleum routes.",
+      "era_floor": "industrial",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/lubricating-oil/",
+      "source_file": "content/tech/lubricating-oil.md",
+      "confidence": {
+        "practicality": 0.52,
+        "historical_plausibility": 0.82,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "machining",
+      "title": "Machining",
+      "aliases": [],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Controlled cutting of metal, wood, or hard materials to produce repeatable fits, smooth surfaces, and interchangeable machine parts.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/machining/",
+      "source_file": "content/tech/machining.md",
+      "confidence": {
+        "practicality": 0.58,
+        "historical_plausibility": 0.84,
+        "completeness": 0.62
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "magneto",
+      "title": "Magneto",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A rotating magnet and coil generator that can supply ignition pulses without depending on a charged storage battery.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/magneto/",
+      "source_file": "content/tech/magneto.md",
+      "confidence": {
+        "practicality": 0.34,
+        "historical_plausibility": 0.74,
+        "completeness": 0.48
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "measuring-rod",
       "title": "Measuring rod",
       "aliases": [
@@ -3475,6 +4511,43 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; metrology history and unit claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "mild-steel",
+      "title": "Mild steel",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Low-carbon steel that is tough, workable, weldable or rivetable, and central to industrial machine and vehicle production.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "medium",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/mild-steel/",
+      "source_file": "content/tech/mild-steel.md",
+      "confidence": {
+        "practicality": 0.46,
+        "historical_plausibility": 0.8,
+        "completeness": 0.52
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -3875,6 +4948,43 @@
       }
     },
     {
+      "slug": "oil-refining",
+      "title": "Oil refining",
+      "aliases": [],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A controlled petroleum separation and purification practice, included as a high-level graph node for fuel and lubricant supply chains.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/oil-refining/",
+      "source_file": "content/tech/oil-refining.md",
+      "confidence": {
+        "practicality": 0.2,
+        "historical_plausibility": 0.78,
+        "completeness": 0.38
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "paper",
       "title": "Paper",
       "aliases": [],
@@ -3984,6 +5094,80 @@
       }
     },
     {
+      "slug": "petroleum",
+      "title": "Petroleum",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Naturally occurring crude oil that becomes a family of fuels, lubricants, waxes, and industrial feedstocks after controlled processing.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "low",
+      "time_to_first_working_version": "weeks_to_years",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/petroleum/",
+      "source_file": "content/tech/petroleum.md",
+      "confidence": {
+        "practicality": 0.26,
+        "historical_plausibility": 0.84,
+        "completeness": 0.4
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "piston-cylinder",
+      "title": "Piston and cylinder",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A close-fitting sliding chamber that converts expanding gas or fluid pressure into controlled reciprocating motion.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/piston-cylinder/",
+      "source_file": "content/tech/piston-cylinder.md",
+      "confidence": {
+        "practicality": 0.38,
+        "historical_plausibility": 0.75,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "pitch",
       "title": "Pitch",
       "aliases": [],
@@ -4056,6 +5240,43 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; historical bearing materials and chronology need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "planetary-transmission",
+      "title": "Planetary transmission",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A compact gear train with sun, planet, and ring gears that can provide multiple speed relationships through clutches or bands.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/planetary-transmission/",
+      "source_file": "content/tech/planetary-transmission.md",
+      "confidence": {
+        "practicality": 0.36,
+        "historical_plausibility": 0.8,
+        "completeness": 0.48
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -4239,6 +5460,80 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; historical use claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "pneumatic-tire",
+      "title": "Pneumatic tire",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "An air-filled tire that cushions a wheel, improves traction, and protects a vehicle from road shock.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "medium",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/pneumatic-tire/",
+      "source_file": "content/tech/pneumatic-tire.md",
+      "confidence": {
+        "practicality": 0.36,
+        "historical_plausibility": 0.78,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "poppet-valve",
+      "title": "Poppet valve",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A stemmed valve that opens against a seat and closes to control intake, exhaust, steam, air, or liquid flow.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "high",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/poppet-valve/",
+      "source_file": "content/tech/poppet-valve.md",
+      "confidence": {
+        "practicality": 0.5,
+        "historical_plausibility": 0.7,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -4429,6 +5724,43 @@
       }
     },
     {
+      "slug": "quality-control-records",
+      "title": "Quality-control records",
+      "aliases": [],
+      "node_type": "institution",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A recordkeeping practice that connects batches, inspections, defects, repairs, and design changes across a workshop or factory.",
+      "era_floor": "industrial",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/quality-control-records/",
+      "source_file": "content/tech/quality-control-records.md",
+      "confidence": {
+        "practicality": 0.76,
+        "historical_plausibility": 0.84,
+        "completeness": 0.62
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "quern",
       "title": "Quern",
       "aliases": [],
@@ -4457,6 +5789,43 @@
         "provider": "OpenAI Codex",
         "prompt_version": "ANA-37 manual content expansion follow-up",
         "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "radiator",
+      "title": "Radiator",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A heat exchanger that moves engine heat from circulating water to air through many thin passages or surfaces.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/radiator/",
+      "source_file": "content/tech/radiator.md",
+      "confidence": {
+        "practicality": 0.48,
+        "historical_plausibility": 0.78,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
         "request_issue": "ANA-37",
         "reviewed_by": [],
         "source_review_notes": [
@@ -4637,6 +6006,43 @@
         "provider": "OpenAI Codex",
         "prompt_version": "ANA-37 manual content expansion 100-page follow-up",
         "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "rolling-mill",
+      "title": "Rolling mill",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A powered mill that passes metal between rolls to make bars, strip, rail, plate, or sheet of repeatable section.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "months_to_years",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/rolling-mill/",
+      "source_file": "content/tech/rolling-mill.md",
+      "confidence": {
+        "practicality": 0.34,
+        "historical_plausibility": 0.78,
+        "completeness": 0.48
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
         "request_issue": "ANA-37",
         "reviewed_by": [],
         "source_review_notes": [
@@ -5151,6 +6557,80 @@
         "provider": "OpenAI Codex",
         "prompt_version": "ANA-37 manual content expansion 100-page follow-up",
         "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "service-manual",
+      "title": "Service manual",
+      "aliases": [],
+      "node_type": "knowledge",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A standardized maintenance document that turns a complex vehicle into a repairable public technology rather than a one-off artifact.",
+      "era_floor": "industrial",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/service-manual/",
+      "source_file": "content/tech/service-manual.md",
+      "confidence": {
+        "practicality": 0.72,
+        "historical_plausibility": 0.84,
+        "completeness": 0.56
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "sheet-steel",
+      "title": "Sheet steel",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "Thin, repeatable steel stock used for panels, tanks, brackets, stampings, guards, and early automobile bodywork.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "medium",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/sheet-steel/",
+      "source_file": "content/tech/sheet-steel.md",
+      "confidence": {
+        "practicality": 0.52,
+        "historical_plausibility": 0.82,
+        "completeness": 0.54
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
         "request_issue": "ANA-37",
         "reviewed_by": [],
         "source_review_notes": [
@@ -5699,6 +7179,80 @@
       }
     },
     {
+      "slug": "spark-ignition",
+      "title": "Spark ignition",
+      "aliases": [],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "An ignition system that creates a timed electric spark to start combustion in a controlled engine chamber.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "high",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/spark-ignition/",
+      "source_file": "content/tech/spark-ignition.md",
+      "confidence": {
+        "practicality": 0.46,
+        "historical_plausibility": 0.78,
+        "completeness": 0.54
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "spark-plug",
+      "title": "Spark plug",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A heat-resistant insulated electrode assembly that delivers a spark inside a gasoline engine cylinder.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "high",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/spark-plug/",
+      "source_file": "content/tech/spark-plug.md",
+      "confidence": {
+        "practicality": 0.42,
+        "historical_plausibility": 0.76,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "spindle",
       "title": "Spindle",
       "aliases": [
@@ -5813,6 +7367,43 @@
       }
     },
     {
+      "slug": "stamping-press",
+      "title": "Stamping press",
+      "aliases": [],
+      "node_type": "tool",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A press and die system that shears or forms sheet metal into repeated shapes for brackets, panels, and covers.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/stamping-press/",
+      "source_file": "content/tech/stamping-press.md",
+      "confidence": {
+        "practicality": 0.34,
+        "historical_plausibility": 0.78,
+        "completeness": 0.48
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "standard-weights",
       "title": "Standard weights",
       "aliases": [
@@ -5881,6 +7472,43 @@
         "provider": "OpenAI Codex",
         "prompt_version": "ANA-37 manual content expansion 100-page follow-up",
         "generated_at": "2026-05-04",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "steering-gear",
+      "title": "Steering gear",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A control linkage and gear set that turns driver input into predictable wheel angle without binding or dangerous looseness.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "high",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/steering-gear/",
+      "source_file": "content/tech/steering-gear.md",
+      "confidence": {
+        "practicality": 0.52,
+        "historical_plausibility": 0.78,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
         "request_issue": "ANA-37",
         "reviewed_by": [],
         "source_review_notes": [
@@ -6294,6 +7922,43 @@
       }
     },
     {
+      "slug": "threaded-fastener",
+      "title": "Threaded fastener",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A standardized screw, bolt, nut, or stud that joins parts while allowing disassembly and replacement.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "high",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/threaded-fastener/",
+      "source_file": "content/tech/threaded-fastener.md",
+      "confidence": {
+        "practicality": 0.56,
+        "historical_plausibility": 0.84,
+        "completeness": 0.54
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "threshing",
       "title": "Threshing",
       "aliases": [],
@@ -6517,6 +8182,43 @@
       }
     },
     {
+      "slug": "transmission",
+      "title": "Transmission",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A gear and clutch system that adapts engine speed and torque to the driven wheels.",
+      "era_floor": "industrial",
+      "difficulty": "expert",
+      "precision_required": "high",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/transmission/",
+      "source_file": "content/tech/transmission.md",
+      "confidence": {
+        "practicality": 0.44,
+        "historical_plausibility": 0.78,
+        "completeness": 0.52
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "try-square",
       "title": "Try-square",
       "aliases": [
@@ -6665,6 +8367,43 @@
       }
     },
     {
+      "slug": "vulcanized-rubber",
+      "title": "Vulcanized rubber",
+      "aliases": [],
+      "node_type": "material",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "Chemically treated natural rubber that resists heat, cold, tearing, and deformation better than raw rubber.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "medium",
+      "time_to_first_working_version": "weeks_to_months",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/vulcanized-rubber/",
+      "source_file": "content/tech/vulcanized-rubber.md",
+      "confidence": {
+        "practicality": 0.24,
+        "historical_plausibility": 0.78,
+        "completeness": 0.44
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
       "slug": "water",
       "title": "Water",
       "aliases": [],
@@ -6698,6 +8437,80 @@
         "reviewed_by": [],
         "source_review_notes": [
           "No source pack was used; hydrology, health, and regional availability claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "water-jacket-cooling",
+      "title": "Water-jacket cooling",
+      "aliases": [],
+      "node_type": "process",
+      "status": "draft",
+      "safety_class": "caution",
+      "summary": "A circulating water system that carries heat away from engine walls and into a radiator or tank.",
+      "era_floor": "industrial",
+      "difficulty": "advanced",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/water-jacket-cooling/",
+      "source_file": "content/tech/water-jacket-cooling.md",
+      "confidence": {
+        "practicality": 0.48,
+        "historical_plausibility": 0.78,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
+        ]
+      }
+    },
+    {
+      "slug": "water-pump",
+      "title": "Water pump",
+      "aliases": [],
+      "node_type": "artifact",
+      "status": "draft",
+      "safety_class": "allowed",
+      "summary": "A mechanical device that moves water through a cooling loop, well, trough, or workshop process.",
+      "era_floor": "industrial",
+      "difficulty": "intermediate",
+      "precision_required": "medium",
+      "time_to_first_working_version": "days_to_weeks",
+      "tags": [
+        "ANA-37",
+        "industrial",
+        "transport"
+      ],
+      "path": "/tech/water-pump/",
+      "source_file": "content/tech/water-pump.md",
+      "confidence": {
+        "practicality": 0.58,
+        "historical_plausibility": 0.74,
+        "completeness": 0.5
+      },
+      "generation": {
+        "created_by": "llm",
+        "model": "GPT-5",
+        "provider": "OpenAI Codex",
+        "prompt_version": "ANA-37 Ford Model T prerequisite expansion",
+        "generated_at": "2026-05-05",
+        "request_issue": "ANA-37",
+        "reviewed_by": [],
+        "source_review_notes": [
+          "No source pack was used; specific historical, regional, and technical claims need human source review."
         ]
       }
     },
@@ -7357,6 +9170,15 @@
       "title": "Woodworking"
     },
     {
+      "from": "acid-handling",
+      "to": "lead-acid-battery",
+      "kind": "safety",
+      "role": "Requires protective habits, labeling, and storage.",
+      "source": "prerequisite",
+      "declared_in": "lead-acid-battery",
+      "title": "Acid handling"
+    },
+    {
       "from": "alignment-checking",
       "to": "bicycle",
       "kind": "test",
@@ -7385,6 +9207,51 @@
     },
     {
       "from": "alignment-checking",
+      "to": "chassis-frame",
+      "kind": "test",
+      "role": "Confirms straightness, squareness, and axle location.",
+      "source": "prerequisite",
+      "declared_in": "chassis-frame",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "alignment-checking",
+      "to": "clutch",
+      "kind": "test",
+      "role": "Keeps discs, drums, or cones from grabbing unevenly.",
+      "source": "prerequisite",
+      "declared_in": "clutch",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "alignment-checking",
+      "to": "crankshaft",
+      "kind": "test",
+      "role": "Finds runout and straightness faults.",
+      "source": "prerequisite",
+      "declared_in": "crankshaft",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "alignment-checking",
+      "to": "differential-gear",
+      "kind": "test",
+      "role": "Controls gear mesh and bearing alignment.",
+      "source": "prerequisite",
+      "declared_in": "differential-gear",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "alignment-checking",
+      "to": "drive-shaft",
+      "kind": "test",
+      "role": "Finds runout and coupling errors.",
+      "source": "prerequisite",
+      "declared_in": "drive-shaft",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "alignment-checking",
       "to": "plain-bearing",
       "kind": "test",
       "role": "Misalignment turns a bearing into a brake.",
@@ -7409,6 +9276,42 @@
       "source": "prerequisite",
       "declared_in": "spoked-wheel",
       "title": "Alignment checking"
+    },
+    {
+      "from": "alignment-checking",
+      "to": "steering-gear",
+      "kind": "test",
+      "role": "Confirms steering geometry and free movement.",
+      "source": "prerequisite",
+      "declared_in": "steering-gear",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "alignment-checking",
+      "to": "transmission",
+      "kind": "test",
+      "role": "Keeps shafts and gears from binding.",
+      "source": "prerequisite",
+      "declared_in": "transmission",
+      "title": "Alignment checking"
+    },
+    {
+      "from": "animal-fat",
+      "to": "lubricating-oil",
+      "kind": "alternative",
+      "role": "Provides one early lubricant family.",
+      "source": "prerequisite",
+      "declared_in": "lubricating-oil",
+      "title": "Animal fat"
+    },
+    {
+      "from": "annealing",
+      "to": "leaf-spring",
+      "kind": "soft",
+      "role": "Supports heat-treatment practice.",
+      "source": "prerequisite",
+      "declared_in": "leaf-spring",
+      "title": "Annealing"
     },
     {
       "from": "anvil-stone",
@@ -7492,6 +9395,15 @@
       "title": "Apprenticeship"
     },
     {
+      "from": "automobile",
+      "to": "ford-model-t",
+      "kind": "hard",
+      "role": "Provides the general self-propelled road vehicle pattern.",
+      "source": "prerequisite",
+      "declared_in": "ford-model-t",
+      "title": "Automobile"
+    },
+    {
       "from": "awl",
       "to": "needle",
       "kind": "hard",
@@ -7508,6 +9420,33 @@
       "source": "prerequisite",
       "declared_in": "adze",
       "title": "Axe"
+    },
+    {
+      "from": "band-brake",
+      "to": "automobile",
+      "kind": "safety",
+      "role": "Supplies controlled stopping.",
+      "source": "prerequisite",
+      "declared_in": "automobile",
+      "title": "Band brake"
+    },
+    {
+      "from": "band-brake",
+      "to": "planetary-transmission",
+      "kind": "hard",
+      "role": "Controls gear members in early vehicle designs.",
+      "source": "prerequisite",
+      "declared_in": "planetary-transmission",
+      "title": "Band brake"
+    },
+    {
+      "from": "barrel",
+      "to": "petroleum",
+      "kind": "hard",
+      "role": "Provides transport and storage culture.",
+      "source": "prerequisite",
+      "declared_in": "petroleum",
+      "title": "Barrel"
     },
     {
       "from": "basketry",
@@ -7573,6 +9512,24 @@
       "title": "Basketry"
     },
     {
+      "from": "batch-labeling",
+      "to": "quality-control-records",
+      "kind": "test",
+      "role": "Connects parts and materials to records.",
+      "source": "prerequisite",
+      "declared_in": "quality-control-records",
+      "title": "Batch labeling"
+    },
+    {
+      "from": "battery",
+      "to": "ignition-coil",
+      "kind": "soft",
+      "role": "A source of electrical pulses is needed for battery ignition.",
+      "source": "prerequisite",
+      "declared_in": "ignition-coil",
+      "title": "Battery"
+    },
+    {
       "from": "bone-and-antler",
       "to": "awl",
       "kind": "soft",
@@ -7618,6 +9575,33 @@
       "title": "Bone and antler"
     },
     {
+      "from": "camshaft",
+      "to": "poppet-valve",
+      "kind": "soft",
+      "role": "Provides timed opening in engines.",
+      "source": "prerequisite",
+      "declared_in": "poppet-valve",
+      "title": "Camshaft"
+    },
+    {
+      "from": "carburetor",
+      "to": "gasoline-engine",
+      "kind": "hard",
+      "role": "Meters and mixes fuel with incoming air.",
+      "source": "prerequisite",
+      "declared_in": "gasoline-engine",
+      "title": "Carburetor"
+    },
+    {
+      "from": "cart",
+      "to": "automobile",
+      "kind": "hard",
+      "role": "Provides load paths, wheels, axles, and road-use habits.",
+      "source": "prerequisite",
+      "declared_in": "automobile",
+      "title": "Cart"
+    },
+    {
       "from": "cart",
       "to": "bicycle",
       "kind": "soft",
@@ -7625,6 +9609,15 @@
       "source": "unlock",
       "declared_in": "cart",
       "title": "Bicycle"
+    },
+    {
+      "from": "ceramic-insulator",
+      "to": "spark-plug",
+      "kind": "material_source",
+      "role": "Separates the live conductor from the shell.",
+      "source": "prerequisite",
+      "declared_in": "spark-plug",
+      "title": "Ceramic insulator"
     },
     {
       "from": "ceramic-temper",
@@ -7823,6 +9816,24 @@
       "source": "prerequisite",
       "declared_in": "wire-drawing",
       "title": "Charcoal"
+    },
+    {
+      "from": "chassis-frame",
+      "to": "ford-model-t",
+      "kind": "hard",
+      "role": "Holds engine, axles, body, and passengers in alignment.",
+      "source": "prerequisite",
+      "declared_in": "ford-model-t",
+      "title": "Chassis frame"
+    },
+    {
+      "from": "chassis-frame",
+      "to": "leaf-spring",
+      "kind": "soft",
+      "role": "Provides mounting points and load paths.",
+      "source": "prerequisite",
+      "declared_in": "leaf-spring",
+      "title": "Chassis frame"
     },
     {
       "from": "chisel",
@@ -8048,6 +10059,33 @@
       "source": "unlock",
       "declared_in": "clay",
       "title": "Writing"
+    },
+    {
+      "from": "clutch",
+      "to": "transmission",
+      "kind": "hard",
+      "role": "Lets power be engaged and disengaged.",
+      "source": "prerequisite",
+      "declared_in": "transmission",
+      "title": "Clutch"
+    },
+    {
+      "from": "container-sealing",
+      "to": "lead-acid-battery",
+      "kind": "hard",
+      "role": "Prevents leaks and contamination.",
+      "source": "prerequisite",
+      "declared_in": "lead-acid-battery",
+      "title": "Container sealing"
+    },
+    {
+      "from": "copper-wire",
+      "to": "ignition-coil",
+      "kind": "material_source",
+      "role": "Windings require insulated conductive wire.",
+      "source": "prerequisite",
+      "declared_in": "ignition-coil",
+      "title": "Copper wire"
     },
     {
       "from": "cordage-fiber",
@@ -8374,6 +10412,15 @@
       "title": "Writing"
     },
     {
+      "from": "crankshaft",
+      "to": "internal-combustion-engine",
+      "kind": "hard",
+      "role": "Turns reciprocating motion into rotary output.",
+      "source": "prerequisite",
+      "declared_in": "internal-combustion-engine",
+      "title": "Crankshaft"
+    },
+    {
       "from": "cutting-edge",
       "to": "animal-fat",
       "kind": "soft",
@@ -8492,6 +10539,15 @@
     },
     {
       "from": "cutting-edge",
+      "to": "lathe",
+      "kind": "hard",
+      "role": "Sharp tools are required.",
+      "source": "prerequisite",
+      "declared_in": "lathe",
+      "title": "Cutting edge"
+    },
+    {
+      "from": "cutting-edge",
       "to": "leather",
       "kind": "tooling",
       "role": "Scraping and trimming hides require effective edges.",
@@ -8507,6 +10563,15 @@
       "source": "unlock",
       "declared_in": "cutting-edge",
       "title": "Leather"
+    },
+    {
+      "from": "cutting-edge",
+      "to": "machining",
+      "kind": "hard",
+      "role": "Tools need sharpened edges.",
+      "source": "prerequisite",
+      "declared_in": "machining",
+      "title": "Cutting edge"
     },
     {
       "from": "cutting-edge",
@@ -8651,6 +10716,78 @@
       "source": "prerequisite",
       "declared_in": "wool",
       "title": "Cutting edge"
+    },
+    {
+      "from": "cylinder-boring",
+      "to": "piston-cylinder",
+      "kind": "hard",
+      "role": "Creates round, smooth bores.",
+      "source": "prerequisite",
+      "declared_in": "piston-cylinder",
+      "title": "Cylinder boring"
+    },
+    {
+      "from": "die-making",
+      "to": "stamping-press",
+      "kind": "tooling",
+      "role": "Creates shaped tools for repeated parts.",
+      "source": "prerequisite",
+      "declared_in": "stamping-press",
+      "title": "Die making"
+    },
+    {
+      "from": "differential-gear",
+      "to": "ford-model-t",
+      "kind": "hard",
+      "role": "Lets driven wheels turn at different speeds through corners.",
+      "source": "prerequisite",
+      "declared_in": "ford-model-t",
+      "title": "Differential gear"
+    },
+    {
+      "from": "distillation",
+      "to": "oil-refining",
+      "kind": "refining",
+      "role": "Provides the general separation principle.",
+      "source": "prerequisite",
+      "declared_in": "oil-refining",
+      "title": "Distillation"
+    },
+    {
+      "from": "drill-press",
+      "to": "machining",
+      "kind": "tooling",
+      "role": "Makes repeatable holes.",
+      "source": "prerequisite",
+      "declared_in": "machining",
+      "title": "Drill press"
+    },
+    {
+      "from": "drive-shaft",
+      "to": "differential-gear",
+      "kind": "soft",
+      "role": "Feeds power into the axle assembly.",
+      "source": "prerequisite",
+      "declared_in": "differential-gear",
+      "title": "Drive shaft"
+    },
+    {
+      "from": "factory-assembly-line",
+      "to": "ford-model-t",
+      "kind": "institutional",
+      "role": "Turns the design into repeatable, low-cost production.",
+      "source": "prerequisite",
+      "declared_in": "ford-model-t",
+      "title": "Factory assembly line"
+    },
+    {
+      "from": "factory-assembly-line",
+      "to": "stamping-press",
+      "kind": "soft",
+      "role": "Creates demand for repeated stamped parts.",
+      "source": "prerequisite",
+      "declared_in": "stamping-press",
+      "title": "Factory assembly line"
     },
     {
       "from": "firekeeping",
@@ -8914,6 +11051,258 @@
       "title": "Weaving"
     },
     {
+      "from": "flaxseed-oil",
+      "to": "lubricating-oil",
+      "kind": "alternative",
+      "role": "Provides a plant oil path for light uses.",
+      "source": "prerequisite",
+      "declared_in": "lubricating-oil",
+      "title": "Flaxseed oil"
+    },
+    {
+      "from": "fluid-metering",
+      "to": "carburetor",
+      "kind": "hard",
+      "role": "Controls small flows repeatably.",
+      "source": "prerequisite",
+      "declared_in": "carburetor",
+      "title": "Fluid metering"
+    },
+    {
+      "from": "friction-material",
+      "to": "band-brake",
+      "kind": "material_source",
+      "role": "Provides controlled drag and wear.",
+      "source": "prerequisite",
+      "declared_in": "band-brake",
+      "title": "Friction material"
+    },
+    {
+      "from": "friction-material",
+      "to": "clutch",
+      "kind": "material_source",
+      "role": "Provides controlled grip and wear.",
+      "source": "prerequisite",
+      "declared_in": "clutch",
+      "title": "Friction material"
+    },
+    {
+      "from": "fuel-storage",
+      "to": "fuel-tank",
+      "kind": "safety",
+      "role": "Defines cautious handling and labeling.",
+      "source": "prerequisite",
+      "declared_in": "fuel-tank",
+      "title": "Fuel storage"
+    },
+    {
+      "from": "fuel-storage",
+      "to": "gasoline",
+      "kind": "safety",
+      "role": "Requires labeled, ventilated, fire-aware handling.",
+      "source": "prerequisite",
+      "declared_in": "gasoline",
+      "title": "Fuel storage"
+    },
+    {
+      "from": "gasoline-engine",
+      "to": "ford-model-t",
+      "kind": "hard",
+      "role": "Supplies compact mobile power.",
+      "source": "prerequisite",
+      "declared_in": "ford-model-t",
+      "title": "Gasoline engine"
+    },
+    {
+      "from": "gasoline",
+      "to": "carburetor",
+      "kind": "hard",
+      "role": "Defines the fuel behavior being handled.",
+      "source": "prerequisite",
+      "declared_in": "carburetor",
+      "title": "Gasoline"
+    },
+    {
+      "from": "gasoline",
+      "to": "gasoline-engine",
+      "kind": "hard",
+      "role": "Supplies the fuel family.",
+      "source": "prerequisite",
+      "declared_in": "gasoline-engine",
+      "title": "Gasoline"
+    },
+    {
+      "from": "gear-cutting",
+      "to": "camshaft",
+      "kind": "soft",
+      "role": "Synchronizes cam timing with a crankshaft.",
+      "source": "prerequisite",
+      "declared_in": "camshaft",
+      "title": "Gear cutting"
+    },
+    {
+      "from": "gear-cutting",
+      "to": "differential-gear",
+      "kind": "hard",
+      "role": "Creates matched bevel or spur gears.",
+      "source": "prerequisite",
+      "declared_in": "differential-gear",
+      "title": "Gear cutting"
+    },
+    {
+      "from": "gear-cutting",
+      "to": "planetary-transmission",
+      "kind": "hard",
+      "role": "Planetary gears demand repeatable tooth geometry.",
+      "source": "prerequisite",
+      "declared_in": "planetary-transmission",
+      "title": "Gear cutting"
+    },
+    {
+      "from": "gear-cutting",
+      "to": "steering-gear",
+      "kind": "soft",
+      "role": "Supports worm, sector, or reduction gears.",
+      "source": "prerequisite",
+      "declared_in": "steering-gear",
+      "title": "Gear cutting"
+    },
+    {
+      "from": "gear-cutting",
+      "to": "transmission",
+      "kind": "hard",
+      "role": "Creates repeatable gear teeth.",
+      "source": "prerequisite",
+      "declared_in": "transmission",
+      "title": "Gear cutting"
+    },
+    {
+      "from": "geological-survey",
+      "to": "petroleum",
+      "kind": "knowledge",
+      "role": "Finds seep and well prospects.",
+      "source": "prerequisite",
+      "declared_in": "petroleum",
+      "title": "Geological survey"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "ball-bearing",
+      "kind": "test",
+      "role": "Sorts balls and races by fit.",
+      "source": "prerequisite",
+      "declared_in": "ball-bearing",
+      "title": "Go/no-go gauge"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "camshaft",
+      "kind": "test",
+      "role": "Checks journals and follower fits.",
+      "source": "prerequisite",
+      "declared_in": "camshaft",
+      "title": "Go/no-go gauge"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "carburetor",
+      "kind": "test",
+      "role": "Checks fittings and orifices within accepted limits.",
+      "source": "prerequisite",
+      "declared_in": "carburetor",
+      "title": "Go/no-go gauge"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "cylinder-boring",
+      "kind": "test",
+      "role": "Checks whether a bore falls inside accepted limits.",
+      "source": "prerequisite",
+      "declared_in": "cylinder-boring",
+      "title": "Go/no-go gauge"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "gear-cutting",
+      "kind": "test",
+      "role": "Checks tooth form and fit against a mate.",
+      "source": "prerequisite",
+      "declared_in": "gear-cutting",
+      "title": "Go/no-go gauge"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "interchangeable-parts",
+      "kind": "test",
+      "role": "Enforces accepted fit limits.",
+      "source": "prerequisite",
+      "declared_in": "interchangeable-parts",
+      "title": "Go/no-go gauge"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "machining",
+      "kind": "test",
+      "role": "Separates acceptable from unacceptable fits.",
+      "source": "prerequisite",
+      "declared_in": "machining",
+      "title": "Go/no-go gauge"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "magneto",
+      "kind": "test",
+      "role": "Checks shaft, bearing, and contact fits.",
+      "source": "prerequisite",
+      "declared_in": "magneto",
+      "title": "Go/no-go gauge"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "planetary-transmission",
+      "kind": "test",
+      "role": "Checks gear and shaft fits.",
+      "source": "prerequisite",
+      "declared_in": "planetary-transmission",
+      "title": "Go/no-go gauge"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "rolling-mill",
+      "kind": "test",
+      "role": "Checks output thickness and section.",
+      "source": "prerequisite",
+      "declared_in": "rolling-mill",
+      "title": "Go/no-go gauge"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "sheet-steel",
+      "kind": "test",
+      "role": "Checks thickness and fit.",
+      "source": "prerequisite",
+      "declared_in": "sheet-steel",
+      "title": "Go/no-go gauge"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "spark-plug",
+      "kind": "test",
+      "role": "Checks thread and gap acceptability.",
+      "source": "prerequisite",
+      "declared_in": "spark-plug",
+      "title": "Go/no-go gauge"
+    },
+    {
+      "from": "go-no-go-gauge",
+      "to": "threaded-fastener",
+      "kind": "test",
+      "role": "Checks whether threads fit accepted limits.",
+      "source": "prerequisite",
+      "declared_in": "threaded-fastener",
+      "title": "Go/no-go gauge"
+    },
+    {
       "from": "grog",
       "to": "ceramic-temper",
       "kind": "material_source",
@@ -8921,6 +11310,15 @@
       "source": "unlock",
       "declared_in": "grog",
       "title": "Ceramic temper"
+    },
+    {
+      "from": "hand-drill",
+      "to": "drill-press",
+      "kind": "hard",
+      "role": "Provides basic rotary drilling practice.",
+      "source": "prerequisite",
+      "declared_in": "drill-press",
+      "title": "Hand drill"
     },
     {
       "from": "hand-drill",
@@ -8986,6 +11384,33 @@
       "title": "Woodworking"
     },
     {
+      "from": "ignition-coil",
+      "to": "magneto",
+      "kind": "hard",
+      "role": "Provides winding and insulation practice.",
+      "source": "prerequisite",
+      "declared_in": "magneto",
+      "title": "Ignition coil"
+    },
+    {
+      "from": "ignition-coil",
+      "to": "spark-ignition",
+      "kind": "hard",
+      "role": "Raises voltage for spark production.",
+      "source": "prerequisite",
+      "declared_in": "spark-ignition",
+      "title": "Ignition coil"
+    },
+    {
+      "from": "indexing",
+      "to": "gear-cutting",
+      "kind": "measurement",
+      "role": "Divides a circle into repeatable tooth positions.",
+      "source": "prerequisite",
+      "declared_in": "gear-cutting",
+      "title": "Indexing"
+    },
+    {
       "from": "ink",
       "to": "paper",
       "kind": "optional",
@@ -9002,6 +11427,87 @@
       "source": "unlock",
       "declared_in": "ink",
       "title": "Technical drawing"
+    },
+    {
+      "from": "insulating-varnish",
+      "to": "ignition-coil",
+      "kind": "material_source",
+      "role": "Coils require insulation between turns.",
+      "source": "prerequisite",
+      "declared_in": "ignition-coil",
+      "title": "Insulating varnish"
+    },
+    {
+      "from": "interchangeable-parts",
+      "to": "factory-assembly-line",
+      "kind": "hard",
+      "role": "Allows parts to move between stations without custom fitting.",
+      "source": "prerequisite",
+      "declared_in": "factory-assembly-line",
+      "title": "Interchangeable parts"
+    },
+    {
+      "from": "interchangeable-parts",
+      "to": "ford-model-t",
+      "kind": "test",
+      "role": "Makes service and mass production practical.",
+      "source": "prerequisite",
+      "declared_in": "ford-model-t",
+      "title": "Interchangeable parts"
+    },
+    {
+      "from": "interchangeable-parts",
+      "to": "service-manual",
+      "kind": "hard",
+      "role": "Makes replacement instructions meaningful.",
+      "source": "prerequisite",
+      "declared_in": "service-manual",
+      "title": "Interchangeable parts"
+    },
+    {
+      "from": "interchangeable-parts",
+      "to": "threaded-fastener",
+      "kind": "test",
+      "role": "Requires standard thread forms and tolerances.",
+      "source": "prerequisite",
+      "declared_in": "threaded-fastener",
+      "title": "Interchangeable parts"
+    },
+    {
+      "from": "internal-combustion-engine",
+      "to": "automobile",
+      "kind": "hard",
+      "role": "Provides compact motive power.",
+      "source": "prerequisite",
+      "declared_in": "automobile",
+      "title": "Internal combustion engine"
+    },
+    {
+      "from": "internal-combustion-engine",
+      "to": "gasoline-engine",
+      "kind": "hard",
+      "role": "Provides the engine architecture.",
+      "source": "prerequisite",
+      "declared_in": "gasoline-engine",
+      "title": "Internal combustion engine"
+    },
+    {
+      "from": "iron-core",
+      "to": "ignition-coil",
+      "kind": "material_source",
+      "role": "Magnetic cores improve coil action.",
+      "source": "prerequisite",
+      "declared_in": "ignition-coil",
+      "title": "Iron core"
+    },
+    {
+      "from": "iron-ore",
+      "to": "mild-steel",
+      "kind": "material_source",
+      "role": "Provides iron feedstock.",
+      "source": "prerequisite",
+      "declared_in": "mild-steel",
+      "title": "Iron ore"
     },
     {
       "from": "kiln-firing-test",
@@ -9211,6 +11717,114 @@
       "title": "Lashing"
     },
     {
+      "from": "lathe",
+      "to": "crankshaft",
+      "kind": "tooling",
+      "role": "Keeps journals concentric.",
+      "source": "prerequisite",
+      "declared_in": "crankshaft",
+      "title": "Lathe"
+    },
+    {
+      "from": "lathe",
+      "to": "cylinder-boring",
+      "kind": "tooling",
+      "role": "Provides rotary alignment and cutting feed.",
+      "source": "prerequisite",
+      "declared_in": "cylinder-boring",
+      "title": "Lathe"
+    },
+    {
+      "from": "lathe",
+      "to": "drive-shaft",
+      "kind": "tooling",
+      "role": "Turns and trues shaft journals.",
+      "source": "prerequisite",
+      "declared_in": "drive-shaft",
+      "title": "Lathe"
+    },
+    {
+      "from": "lathe",
+      "to": "machining",
+      "kind": "tooling",
+      "role": "Provides one foundational machine-tool operation.",
+      "source": "prerequisite",
+      "declared_in": "machining",
+      "title": "Lathe"
+    },
+    {
+      "from": "lathe",
+      "to": "threaded-fastener",
+      "kind": "tooling",
+      "role": "Cuts accurate threads in early versions.",
+      "source": "prerequisite",
+      "declared_in": "threaded-fastener",
+      "title": "Lathe"
+    },
+    {
+      "from": "lead-ore",
+      "to": "lead-acid-battery",
+      "kind": "material_source",
+      "role": "Provides the lead supply chain.",
+      "source": "prerequisite",
+      "declared_in": "lead-acid-battery",
+      "title": "Lead ore"
+    },
+    {
+      "from": "leak-test",
+      "to": "fuel-tank",
+      "kind": "test",
+      "role": "Finds unsafe seams and fittings.",
+      "source": "prerequisite",
+      "declared_in": "fuel-tank",
+      "title": "Leak test"
+    },
+    {
+      "from": "leak-test",
+      "to": "pneumatic-tire",
+      "kind": "test",
+      "role": "Finds punctures and bad seams.",
+      "source": "prerequisite",
+      "declared_in": "pneumatic-tire",
+      "title": "Leak test"
+    },
+    {
+      "from": "leak-test",
+      "to": "poppet-valve",
+      "kind": "test",
+      "role": "Checks whether the valve seals.",
+      "source": "prerequisite",
+      "declared_in": "poppet-valve",
+      "title": "Leak test"
+    },
+    {
+      "from": "leak-test",
+      "to": "radiator",
+      "kind": "test",
+      "role": "Finds coolant leaks before use.",
+      "source": "prerequisite",
+      "declared_in": "radiator",
+      "title": "Leak test"
+    },
+    {
+      "from": "leak-test",
+      "to": "water-jacket-cooling",
+      "kind": "test",
+      "role": "Checks jackets, hoses, and fittings.",
+      "source": "prerequisite",
+      "declared_in": "water-jacket-cooling",
+      "title": "Leak test"
+    },
+    {
+      "from": "leak-test",
+      "to": "water-pump",
+      "kind": "test",
+      "role": "Confirms seals and joints.",
+      "source": "prerequisite",
+      "declared_in": "water-pump",
+      "title": "Leak test"
+    },
+    {
       "from": "leather",
       "to": "animal-fat",
       "kind": "hard",
@@ -9293,6 +11907,24 @@
     },
     {
       "from": "lever",
+      "to": "band-brake",
+      "kind": "hard",
+      "role": "Lets a person apply force.",
+      "source": "prerequisite",
+      "declared_in": "band-brake",
+      "title": "Lever"
+    },
+    {
+      "from": "lever",
+      "to": "clutch",
+      "kind": "hard",
+      "role": "Provides controllable human actuation.",
+      "source": "prerequisite",
+      "declared_in": "clutch",
+      "title": "Lever"
+    },
+    {
+      "from": "lever",
       "to": "pulley",
       "kind": "knowledge",
       "role": "Helps reason about load and support forces.",
@@ -9364,6 +11996,177 @@
       "title": "Loom"
     },
     {
+      "from": "lubricating-oil",
+      "to": "ball-bearing",
+      "kind": "hard",
+      "role": "Protects rolling contact surfaces.",
+      "source": "prerequisite",
+      "declared_in": "ball-bearing",
+      "title": "Lubricating oil"
+    },
+    {
+      "from": "lubricating-oil",
+      "to": "crankshaft",
+      "kind": "hard",
+      "role": "Protects loaded journals in use.",
+      "source": "prerequisite",
+      "declared_in": "crankshaft",
+      "title": "Lubricating oil"
+    },
+    {
+      "from": "lubricating-oil",
+      "to": "cylinder-boring",
+      "kind": "soft",
+      "role": "Helps cutting and inspection by controlling heat and friction.",
+      "source": "prerequisite",
+      "declared_in": "cylinder-boring",
+      "title": "Lubricating oil"
+    },
+    {
+      "from": "lubricating-oil",
+      "to": "differential-gear",
+      "kind": "hard",
+      "role": "Protects loaded gear teeth and bearings.",
+      "source": "prerequisite",
+      "declared_in": "differential-gear",
+      "title": "Lubricating oil"
+    },
+    {
+      "from": "lubricating-oil",
+      "to": "internal-combustion-engine",
+      "kind": "hard",
+      "role": "Reduces destructive friction and wear.",
+      "source": "prerequisite",
+      "declared_in": "internal-combustion-engine",
+      "title": "Lubricating oil"
+    },
+    {
+      "from": "lubricating-oil",
+      "to": "piston-cylinder",
+      "kind": "hard",
+      "role": "Prevents immediate scoring and seizure.",
+      "source": "prerequisite",
+      "declared_in": "piston-cylinder",
+      "title": "Lubricating oil"
+    },
+    {
+      "from": "lubricating-oil",
+      "to": "transmission",
+      "kind": "hard",
+      "role": "Prevents rapid gear and bearing failure.",
+      "source": "prerequisite",
+      "declared_in": "transmission",
+      "title": "Lubricating oil"
+    },
+    {
+      "from": "machining",
+      "to": "ball-bearing",
+      "kind": "hard",
+      "role": "Creates races and retainers.",
+      "source": "prerequisite",
+      "declared_in": "ball-bearing",
+      "title": "Machining"
+    },
+    {
+      "from": "machining",
+      "to": "camshaft",
+      "kind": "hard",
+      "role": "Shapes lobes and journals.",
+      "source": "prerequisite",
+      "declared_in": "camshaft",
+      "title": "Machining"
+    },
+    {
+      "from": "machining",
+      "to": "carburetor",
+      "kind": "tooling",
+      "role": "Makes small passages, needles, and seats.",
+      "source": "prerequisite",
+      "declared_in": "carburetor",
+      "title": "Machining"
+    },
+    {
+      "from": "machining",
+      "to": "crankshaft",
+      "kind": "hard",
+      "role": "Forms journals, throws, and shoulders.",
+      "source": "prerequisite",
+      "declared_in": "crankshaft",
+      "title": "Machining"
+    },
+    {
+      "from": "machining",
+      "to": "cylinder-boring",
+      "kind": "hard",
+      "role": "Supplies tool grinding, feeds, and workholding practice.",
+      "source": "prerequisite",
+      "declared_in": "cylinder-boring",
+      "title": "Machining"
+    },
+    {
+      "from": "machining",
+      "to": "gear-cutting",
+      "kind": "hard",
+      "role": "Provides cutting, feeds, and fixture practice.",
+      "source": "prerequisite",
+      "declared_in": "gear-cutting",
+      "title": "Machining"
+    },
+    {
+      "from": "machining",
+      "to": "interchangeable-parts",
+      "kind": "tooling",
+      "role": "Makes controlled surfaces and holes.",
+      "source": "prerequisite",
+      "declared_in": "interchangeable-parts",
+      "title": "Machining"
+    },
+    {
+      "from": "machining",
+      "to": "magneto",
+      "kind": "tooling",
+      "role": "Keeps rotating parts aligned.",
+      "source": "prerequisite",
+      "declared_in": "magneto",
+      "title": "Machining"
+    },
+    {
+      "from": "machining",
+      "to": "piston-cylinder",
+      "kind": "tooling",
+      "role": "Shapes piston, rings, and bearing surfaces.",
+      "source": "prerequisite",
+      "declared_in": "piston-cylinder",
+      "title": "Machining"
+    },
+    {
+      "from": "machining",
+      "to": "poppet-valve",
+      "kind": "hard",
+      "role": "Makes stems, heads, and seats fit.",
+      "source": "prerequisite",
+      "declared_in": "poppet-valve",
+      "title": "Machining"
+    },
+    {
+      "from": "machining",
+      "to": "water-pump",
+      "kind": "soft",
+      "role": "Improves impellers, shafts, and housings.",
+      "source": "prerequisite",
+      "declared_in": "water-pump",
+      "title": "Machining"
+    },
+    {
+      "from": "magneto",
+      "to": "gasoline-engine",
+      "kind": "soft",
+      "role": "Can produce ignition current without a large battery.",
+      "source": "prerequisite",
+      "declared_in": "gasoline-engine",
+      "title": "Magneto"
+    },
+    {
       "from": "measuring-rod",
       "to": "abacus",
       "kind": "soft",
@@ -9415,6 +12218,15 @@
       "role": "Measuring rod provides a necessary starting point for repeatable work.",
       "source": "prerequisite",
       "declared_in": "field-survey",
+      "title": "Measuring rod"
+    },
+    {
+      "from": "measuring-rod",
+      "to": "go-no-go-gauge",
+      "kind": "measurement",
+      "role": "Provides length comparison practice.",
+      "source": "prerequisite",
+      "declared_in": "go-no-go-gauge",
       "title": "Measuring rod"
     },
     {
@@ -9553,6 +12365,33 @@
       "title": "Measuring rod"
     },
     {
+      "from": "mild-steel",
+      "to": "chassis-frame",
+      "kind": "hard",
+      "role": "Provides a tough frame material.",
+      "source": "prerequisite",
+      "declared_in": "chassis-frame",
+      "title": "Mild steel"
+    },
+    {
+      "from": "mild-steel",
+      "to": "rolling-mill",
+      "kind": "hard",
+      "role": "Provides roll and frame material.",
+      "source": "prerequisite",
+      "declared_in": "rolling-mill",
+      "title": "Mild steel"
+    },
+    {
+      "from": "mild-steel",
+      "to": "sheet-steel",
+      "kind": "hard",
+      "role": "Provides workable steel stock.",
+      "source": "prerequisite",
+      "declared_in": "sheet-steel",
+      "title": "Mild steel"
+    },
+    {
       "from": "mortar-and-pestle",
       "to": "quern",
       "kind": "soft",
@@ -9560,6 +12399,24 @@
       "source": "prerequisite",
       "declared_in": "quern",
       "title": "Mortar and pestle"
+    },
+    {
+      "from": "natural-rubber",
+      "to": "vulcanized-rubber",
+      "kind": "material_source",
+      "role": "Provides latex or raw rubber feedstock.",
+      "source": "prerequisite",
+      "declared_in": "vulcanized-rubber",
+      "title": "Natural rubber"
+    },
+    {
+      "from": "oil-refining",
+      "to": "gasoline",
+      "kind": "refining",
+      "role": "Separates useful petroleum fractions.",
+      "source": "prerequisite",
+      "declared_in": "gasoline",
+      "title": "Oil refining"
     },
     {
       "from": "paper",
@@ -9578,6 +12435,51 @@
       "source": "unlock",
       "declared_in": "paper",
       "title": "Technical drawing"
+    },
+    {
+      "from": "permanent-magnet",
+      "to": "magneto",
+      "kind": "hard",
+      "role": "Supplies the magnetic field.",
+      "source": "prerequisite",
+      "declared_in": "magneto",
+      "title": "Permanent magnet"
+    },
+    {
+      "from": "petroleum",
+      "to": "gasoline",
+      "kind": "material_source",
+      "role": "Provides the crude source.",
+      "source": "prerequisite",
+      "declared_in": "gasoline",
+      "title": "Petroleum"
+    },
+    {
+      "from": "petroleum",
+      "to": "lubricating-oil",
+      "kind": "soft",
+      "role": "Provides mineral oil feedstock for industrial lubrication.",
+      "source": "prerequisite",
+      "declared_in": "lubricating-oil",
+      "title": "Petroleum"
+    },
+    {
+      "from": "petroleum",
+      "to": "oil-refining",
+      "kind": "material_source",
+      "role": "Supplies crude feedstock.",
+      "source": "prerequisite",
+      "declared_in": "oil-refining",
+      "title": "Petroleum"
+    },
+    {
+      "from": "piston-cylinder",
+      "to": "internal-combustion-engine",
+      "kind": "hard",
+      "role": "Converts pressure pulses into reciprocating motion.",
+      "source": "prerequisite",
+      "declared_in": "internal-combustion-engine",
+      "title": "Piston and cylinder"
     },
     {
       "from": "plain-bearing",
@@ -9608,6 +12510,33 @@
     },
     {
       "from": "plain-bearing",
+      "to": "clutch",
+      "kind": "soft",
+      "role": "Supports rotating elements.",
+      "source": "prerequisite",
+      "declared_in": "clutch",
+      "title": "Plain bearing"
+    },
+    {
+      "from": "plain-bearing",
+      "to": "drive-shaft",
+      "kind": "hard",
+      "role": "Supports rotation.",
+      "source": "prerequisite",
+      "declared_in": "drive-shaft",
+      "title": "Plain bearing"
+    },
+    {
+      "from": "plain-bearing",
+      "to": "lathe",
+      "kind": "hard",
+      "role": "Supports spindle rotation.",
+      "source": "prerequisite",
+      "declared_in": "lathe",
+      "title": "Plain bearing"
+    },
+    {
+      "from": "plain-bearing",
       "to": "potters-wheel",
       "kind": "enables",
       "role": "Smooth rotation improves wheel control and durability.",
@@ -9623,6 +12552,42 @@
       "source": "prerequisite",
       "declared_in": "potters-wheel",
       "title": "Plain bearing"
+    },
+    {
+      "from": "plain-bearing",
+      "to": "rolling-mill",
+      "kind": "hard",
+      "role": "Supports heavy rotating rolls.",
+      "source": "prerequisite",
+      "declared_in": "rolling-mill",
+      "title": "Plain bearing"
+    },
+    {
+      "from": "plain-bearing",
+      "to": "steering-gear",
+      "kind": "hard",
+      "role": "Supports pivots and shafts.",
+      "source": "prerequisite",
+      "declared_in": "steering-gear",
+      "title": "Plain bearing"
+    },
+    {
+      "from": "plain-bearing",
+      "to": "water-pump",
+      "kind": "soft",
+      "role": "Supports rotating or sliding pump parts.",
+      "source": "prerequisite",
+      "declared_in": "water-pump",
+      "title": "Plain bearing"
+    },
+    {
+      "from": "planetary-transmission",
+      "to": "ford-model-t",
+      "kind": "hard",
+      "role": "Gives the early driver controllable speed ranges without a sliding-gear gearbox.",
+      "source": "prerequisite",
+      "declared_in": "ford-model-t",
+      "title": "Planetary transmission"
     },
     {
       "from": "plumb-line",
@@ -9643,12 +12608,75 @@
       "title": "Technical drawing"
     },
     {
+      "from": "pneumatic-tire",
+      "to": "ford-model-t",
+      "kind": "hard",
+      "role": "Carries road shock and gives usable traction.",
+      "source": "prerequisite",
+      "declared_in": "ford-model-t",
+      "title": "Pneumatic tire"
+    },
+    {
+      "from": "poppet-valve",
+      "to": "internal-combustion-engine",
+      "kind": "hard",
+      "role": "Controls gas exchange.",
+      "source": "prerequisite",
+      "declared_in": "internal-combustion-engine",
+      "title": "Poppet valve"
+    },
+    {
+      "from": "pressure-measurement",
+      "to": "pneumatic-tire",
+      "kind": "test",
+      "role": "Checks inflation and leakage.",
+      "source": "prerequisite",
+      "declared_in": "pneumatic-tire",
+      "title": "Pressure measurement"
+    },
+    {
+      "from": "proof-load-test",
+      "to": "band-brake",
+      "kind": "test",
+      "role": "Checks linkages and anchors before road use.",
+      "source": "prerequisite",
+      "declared_in": "band-brake",
+      "title": "Proof load test"
+    },
+    {
+      "from": "proof-load-test",
+      "to": "leaf-spring",
+      "kind": "test",
+      "role": "Checks resilience and permanent set.",
+      "source": "prerequisite",
+      "declared_in": "leaf-spring",
+      "title": "Proof load test"
+    },
+    {
+      "from": "proof-load-test",
+      "to": "stamping-press",
+      "kind": "safety",
+      "role": "Checks press and die integrity.",
+      "source": "prerequisite",
+      "declared_in": "stamping-press",
+      "title": "Proof load test"
+    },
+    {
       "from": "public-safety",
       "to": "dyeing",
       "kind": "soft",
       "role": "Public safety provides a necessary starting point for repeatable work.",
       "source": "prerequisite",
       "declared_in": "dyeing",
+      "title": "Public safety"
+    },
+    {
+      "from": "public-safety",
+      "to": "oil-refining",
+      "kind": "safety",
+      "role": "Keeps fire, vapor, and waste risks governed.",
+      "source": "prerequisite",
+      "declared_in": "oil-refining",
       "title": "Public safety"
     },
     {
@@ -9679,6 +12707,114 @@
       "title": "Simple pump"
     },
     {
+      "from": "quality-control-records",
+      "to": "band-brake",
+      "kind": "soft",
+      "role": "Tracks adjustment and wear.",
+      "source": "prerequisite",
+      "declared_in": "band-brake",
+      "title": "Quality-control records"
+    },
+    {
+      "from": "quality-control-records",
+      "to": "factory-assembly-line",
+      "kind": "test",
+      "role": "Tracks defects and rework.",
+      "source": "prerequisite",
+      "declared_in": "factory-assembly-line",
+      "title": "Quality-control records"
+    },
+    {
+      "from": "quality-control-records",
+      "to": "ford-model-t",
+      "kind": "institutional",
+      "role": "Keeps defects traceable across a large factory.",
+      "source": "prerequisite",
+      "declared_in": "ford-model-t",
+      "title": "Quality-control records"
+    },
+    {
+      "from": "quality-control-records",
+      "to": "gasoline",
+      "kind": "test",
+      "role": "Tracks source, contamination, and engine behavior.",
+      "source": "prerequisite",
+      "declared_in": "gasoline",
+      "title": "Quality-control records"
+    },
+    {
+      "from": "quality-control-records",
+      "to": "interchangeable-parts",
+      "kind": "institutional",
+      "role": "Tracks batches, defects, and changes.",
+      "source": "prerequisite",
+      "declared_in": "interchangeable-parts",
+      "title": "Quality-control records"
+    },
+    {
+      "from": "quality-control-records",
+      "to": "lead-acid-battery",
+      "kind": "test",
+      "role": "Tracks charging behavior and failures.",
+      "source": "prerequisite",
+      "declared_in": "lead-acid-battery",
+      "title": "Quality-control records"
+    },
+    {
+      "from": "quality-control-records",
+      "to": "mild-steel",
+      "kind": "test",
+      "role": "Tracks heats, suppliers, and defects.",
+      "source": "prerequisite",
+      "declared_in": "mild-steel",
+      "title": "Quality-control records"
+    },
+    {
+      "from": "quality-control-records",
+      "to": "petroleum",
+      "kind": "test",
+      "role": "Tracks source and contamination differences.",
+      "source": "prerequisite",
+      "declared_in": "petroleum",
+      "title": "Quality-control records"
+    },
+    {
+      "from": "quality-control-records",
+      "to": "service-manual",
+      "kind": "institutional",
+      "role": "Feeds known faults and revisions back into service practice.",
+      "source": "prerequisite",
+      "declared_in": "service-manual",
+      "title": "Quality-control records"
+    },
+    {
+      "from": "quality-control-records",
+      "to": "spark-ignition",
+      "kind": "test",
+      "role": "Tracks intermittent faults and replacements.",
+      "source": "prerequisite",
+      "declared_in": "spark-ignition",
+      "title": "Quality-control records"
+    },
+    {
+      "from": "quality-control-records",
+      "to": "vulcanized-rubber",
+      "kind": "test",
+      "role": "Tracks batches, aging, and failures.",
+      "source": "prerequisite",
+      "declared_in": "vulcanized-rubber",
+      "title": "Quality-control records"
+    },
+    {
+      "from": "radiator",
+      "to": "gasoline-engine",
+      "kind": "safety",
+      "role": "Rejects engine heat to air.",
+      "source": "prerequisite",
+      "declared_in": "gasoline-engine",
+      "title": "Radiator"
+    },
+    {
       "from": "resin",
       "to": "pitch",
       "kind": "hard",
@@ -9686,6 +12822,33 @@
       "source": "prerequisite",
       "declared_in": "pitch",
       "title": "Resin"
+    },
+    {
+      "from": "riveting",
+      "to": "chassis-frame",
+      "kind": "soft",
+      "role": "Joins plates and brackets where welding is not available.",
+      "source": "prerequisite",
+      "declared_in": "chassis-frame",
+      "title": "Riveting"
+    },
+    {
+      "from": "road-building",
+      "to": "ford-model-t",
+      "kind": "soft",
+      "role": "Provides surfaces suitable for repeated driving and delivery.",
+      "source": "prerequisite",
+      "declared_in": "ford-model-t",
+      "title": "Road building"
+    },
+    {
+      "from": "rolling-mill",
+      "to": "sheet-steel",
+      "kind": "refining",
+      "role": "Reduces metal to controlled thickness.",
+      "source": "prerequisite",
+      "declared_in": "sheet-steel",
+      "title": "Rolling mill"
     },
     {
       "from": "rope-making",
@@ -9796,6 +12959,15 @@
       "title": "Wheel and axle"
     },
     {
+      "from": "rubber-curing",
+      "to": "vulcanized-rubber",
+      "kind": "refining",
+      "role": "Changes rubber properties under controlled processing.",
+      "source": "prerequisite",
+      "declared_in": "vulcanized-rubber",
+      "title": "Rubber curing"
+    },
+    {
       "from": "sanitation-norms",
       "to": "paper",
       "kind": "institutional",
@@ -9824,6 +12996,15 @@
     },
     {
       "from": "scratch-hardness-test",
+      "to": "ball-bearing",
+      "kind": "test",
+      "role": "Screens hardness and wear.",
+      "source": "prerequisite",
+      "declared_in": "ball-bearing",
+      "title": "Scratch hardness test"
+    },
+    {
+      "from": "scratch-hardness-test",
       "to": "bog-iron",
       "kind": "soft",
       "role": "Scratch hardness test provides a necessary starting point for repeatable work.",
@@ -9847,6 +13028,15 @@
       "role": "Scratch hardness test provides a necessary starting point for repeatable work.",
       "source": "prerequisite",
       "declared_in": "glass-sand",
+      "title": "Scratch hardness test"
+    },
+    {
+      "from": "scratch-hardness-test",
+      "to": "go-no-go-gauge",
+      "kind": "test",
+      "role": "Screens gauge material durability.",
+      "source": "prerequisite",
+      "declared_in": "go-no-go-gauge",
       "title": "Scratch hardness test"
     },
     {
@@ -9883,6 +13073,15 @@
       "role": "Scratch hardness test provides a necessary starting point for repeatable work.",
       "source": "prerequisite",
       "declared_in": "limestone",
+      "title": "Scratch hardness test"
+    },
+    {
+      "from": "scratch-hardness-test",
+      "to": "piston-cylinder",
+      "kind": "test",
+      "role": "Screens materials for wear resistance.",
+      "source": "prerequisite",
+      "declared_in": "piston-cylinder",
       "title": "Scratch hardness test"
     },
     {
@@ -9949,6 +13148,42 @@
       "title": "Seasonal Calendar"
     },
     {
+      "from": "sheet-metal-working",
+      "to": "radiator",
+      "kind": "tooling",
+      "role": "Forms tanks, fins, and ducts.",
+      "source": "prerequisite",
+      "declared_in": "radiator",
+      "title": "Sheet metal working"
+    },
+    {
+      "from": "sheet-metal-working",
+      "to": "sheet-steel",
+      "kind": "tooling",
+      "role": "Cuts, bends, and joins sheet into parts.",
+      "source": "prerequisite",
+      "declared_in": "sheet-steel",
+      "title": "Sheet metal working"
+    },
+    {
+      "from": "sheet-steel",
+      "to": "fuel-tank",
+      "kind": "hard",
+      "role": "Provides tank and bracket stock.",
+      "source": "prerequisite",
+      "declared_in": "fuel-tank",
+      "title": "Sheet steel"
+    },
+    {
+      "from": "sheet-steel",
+      "to": "stamping-press",
+      "kind": "hard",
+      "role": "Provides workable sheet stock.",
+      "source": "prerequisite",
+      "declared_in": "stamping-press",
+      "title": "Sheet steel"
+    },
+    {
       "from": "sieve",
       "to": "sieve-grading",
       "kind": "hard",
@@ -9956,6 +13191,51 @@
       "source": "prerequisite",
       "declared_in": "sieve-grading",
       "title": "Sieve"
+    },
+    {
+      "from": "simple-pump",
+      "to": "water-pump",
+      "kind": "hard",
+      "role": "Provides the basic fluid-moving pattern.",
+      "source": "prerequisite",
+      "declared_in": "water-pump",
+      "title": "Simple pump"
+    },
+    {
+      "from": "soldering",
+      "to": "radiator",
+      "kind": "soft",
+      "role": "Joins thin metal cooling parts.",
+      "source": "prerequisite",
+      "declared_in": "radiator",
+      "title": "Soldering"
+    },
+    {
+      "from": "spark-ignition",
+      "to": "internal-combustion-engine",
+      "kind": "hard",
+      "role": "Provides timed ignition for light-fuel engines.",
+      "source": "prerequisite",
+      "declared_in": "internal-combustion-engine",
+      "title": "Spark ignition"
+    },
+    {
+      "from": "spark-plug",
+      "to": "gasoline-engine",
+      "kind": "hard",
+      "role": "Delivers ignition inside the cylinder.",
+      "source": "prerequisite",
+      "declared_in": "gasoline-engine",
+      "title": "Spark plug"
+    },
+    {
+      "from": "spark-plug",
+      "to": "spark-ignition",
+      "kind": "hard",
+      "role": "Delivers the spark across an insulated gap.",
+      "source": "prerequisite",
+      "declared_in": "spark-ignition",
+      "title": "Spark plug"
     },
     {
       "from": "spindle",
@@ -10057,12 +13337,66 @@
       "title": "Cart"
     },
     {
+      "from": "spoked-wheel",
+      "to": "pneumatic-tire",
+      "kind": "soft",
+      "role": "Provides a light wheel foundation.",
+      "source": "prerequisite",
+      "declared_in": "pneumatic-tire",
+      "title": "Spoked wheel"
+    },
+    {
+      "from": "spring-making",
+      "to": "poppet-valve",
+      "kind": "hard",
+      "role": "Returns the valve closed after actuation.",
+      "source": "prerequisite",
+      "declared_in": "poppet-valve",
+      "title": "Spring making"
+    },
+    {
+      "from": "spring-steel",
+      "to": "leaf-spring",
+      "kind": "material_source",
+      "role": "Provides resilient metal stock.",
+      "source": "prerequisite",
+      "declared_in": "leaf-spring",
+      "title": "Spring steel"
+    },
+    {
+      "from": "standard-weights",
+      "to": "factory-assembly-line",
+      "kind": "measurement",
+      "role": "Supports material and batch consistency.",
+      "source": "prerequisite",
+      "declared_in": "factory-assembly-line",
+      "title": "Standard weights"
+    },
+    {
+      "from": "standard-weights",
+      "to": "go-no-go-gauge",
+      "kind": "measurement",
+      "role": "Supports standardization culture.",
+      "source": "prerequisite",
+      "declared_in": "go-no-go-gauge",
+      "title": "Standard weights"
+    },
+    {
       "from": "standard-weights",
       "to": "kiln",
       "kind": "measurement",
       "role": "Helps compare shrinkage, fuel use, and test piece batches.",
       "source": "prerequisite",
       "declared_in": "kiln",
+      "title": "Standard weights"
+    },
+    {
+      "from": "standard-weights",
+      "to": "mild-steel",
+      "kind": "measurement",
+      "role": "Supports batch and charge consistency.",
+      "source": "prerequisite",
+      "declared_in": "mild-steel",
       "title": "Standard weights"
     },
     {
@@ -10109,6 +13443,33 @@
       "source": "unlock",
       "declared_in": "standard-weights",
       "title": "Tensile test"
+    },
+    {
+      "from": "standard-weights",
+      "to": "threaded-fastener",
+      "kind": "measurement",
+      "role": "Supports metal batch consistency.",
+      "source": "prerequisite",
+      "declared_in": "threaded-fastener",
+      "title": "Standard weights"
+    },
+    {
+      "from": "steelmaking",
+      "to": "mild-steel",
+      "kind": "refining",
+      "role": "Controls carbon and impurities.",
+      "source": "prerequisite",
+      "declared_in": "mild-steel",
+      "title": "Steelmaking"
+    },
+    {
+      "from": "steering-gear",
+      "to": "automobile",
+      "kind": "hard",
+      "role": "Turns front wheels predictably.",
+      "source": "prerequisite",
+      "declared_in": "automobile",
+      "title": "Steering gear"
     },
     {
       "from": "stone-hammer",
@@ -10390,12 +13751,48 @@
       "title": "Storage Jar"
     },
     {
+      "from": "straightedge",
+      "to": "drill-press",
+      "kind": "test",
+      "role": "Checks table and guide alignment.",
+      "source": "prerequisite",
+      "declared_in": "drill-press",
+      "title": "Straightedge"
+    },
+    {
+      "from": "straightedge",
+      "to": "lathe",
+      "kind": "test",
+      "role": "Checks ways and alignment.",
+      "source": "prerequisite",
+      "declared_in": "lathe",
+      "title": "Straightedge"
+    },
+    {
+      "from": "tally-stick",
+      "to": "quality-control-records",
+      "kind": "alternative",
+      "role": "Provides a low-literacy counting fallback.",
+      "source": "prerequisite",
+      "declared_in": "quality-control-records",
+      "title": "Tally stick"
+    },
+    {
       "from": "technical-drawing",
       "to": "alignment-checking",
       "kind": "optional",
       "role": "Drawings define the intended line before the test checks it.",
       "source": "prerequisite",
       "declared_in": "alignment-checking",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "technical-drawing",
+      "to": "automobile",
+      "kind": "soft",
+      "role": "Keeps geometry and revisions reproducible.",
+      "source": "prerequisite",
+      "declared_in": "automobile",
       "title": "Technical drawing"
     },
     {
@@ -10409,12 +13806,75 @@
     },
     {
       "from": "technical-drawing",
+      "to": "camshaft",
+      "kind": "soft",
+      "role": "Records lobe order and timing relationships.",
+      "source": "prerequisite",
+      "declared_in": "camshaft",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "technical-drawing",
+      "to": "chassis-frame",
+      "kind": "soft",
+      "role": "Preserves hole patterns and dimensions between builds.",
+      "source": "prerequisite",
+      "declared_in": "chassis-frame",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "technical-drawing",
+      "to": "gear-cutting",
+      "kind": "soft",
+      "role": "Records tooth counts and centers.",
+      "source": "prerequisite",
+      "declared_in": "gear-cutting",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "technical-drawing",
+      "to": "go-no-go-gauge",
+      "kind": "knowledge",
+      "role": "Defines the accepted limits.",
+      "source": "prerequisite",
+      "declared_in": "go-no-go-gauge",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "technical-drawing",
+      "to": "interchangeable-parts",
+      "kind": "knowledge",
+      "role": "Defines shapes and tolerances.",
+      "source": "prerequisite",
+      "declared_in": "interchangeable-parts",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "technical-drawing",
       "to": "pulley",
       "kind": "optional",
       "role": "Drawings help groove shape and frame alignment.",
       "source": "unlock",
       "declared_in": "technical-drawing",
       "title": "Pulley"
+    },
+    {
+      "from": "technical-drawing",
+      "to": "service-manual",
+      "kind": "knowledge",
+      "role": "Explains assemblies and part locations.",
+      "source": "prerequisite",
+      "declared_in": "service-manual",
+      "title": "Technical drawing"
+    },
+    {
+      "from": "technical-drawing",
+      "to": "spark-ignition",
+      "kind": "soft",
+      "role": "Records wiring and timing relationships.",
+      "source": "prerequisite",
+      "declared_in": "spark-ignition",
+      "title": "Technical drawing"
     },
     {
       "from": "technical-drawing",
@@ -10433,6 +13893,15 @@
       "source": "prerequisite",
       "declared_in": "woodworking",
       "title": "Technical drawing"
+    },
+    {
+      "from": "temperature-measurement",
+      "to": "oil-refining",
+      "kind": "measurement",
+      "role": "Monitors process zones and product consistency.",
+      "source": "prerequisite",
+      "declared_in": "oil-refining",
+      "title": "Temperature measurement"
     },
     {
       "from": "tensile-test",
@@ -10505,6 +13974,33 @@
       "source": "prerequisite",
       "declared_in": "woodworking",
       "title": "Tensile test"
+    },
+    {
+      "from": "threaded-fastener",
+      "to": "drive-shaft",
+      "kind": "soft",
+      "role": "Secures couplings and joints.",
+      "source": "prerequisite",
+      "declared_in": "drive-shaft",
+      "title": "Threaded fastener"
+    },
+    {
+      "from": "threaded-fastener",
+      "to": "fuel-tank",
+      "kind": "soft",
+      "role": "Secures fittings and mounts.",
+      "source": "prerequisite",
+      "declared_in": "fuel-tank",
+      "title": "Threaded fastener"
+    },
+    {
+      "from": "threaded-fastener",
+      "to": "spark-plug",
+      "kind": "hard",
+      "role": "Lets the plug seal and be replaced.",
+      "source": "prerequisite",
+      "declared_in": "spark-plug",
+      "title": "Threaded fastener"
     },
     {
       "from": "timber-seasoning",
@@ -10642,6 +14138,33 @@
       "title": "Woodworking"
     },
     {
+      "from": "trade-network",
+      "to": "petroleum",
+      "kind": "institutional",
+      "role": "Moves petroleum from source regions to workshops.",
+      "source": "prerequisite",
+      "declared_in": "petroleum",
+      "title": "Trade network"
+    },
+    {
+      "from": "trade-network",
+      "to": "vulcanized-rubber",
+      "kind": "institutional",
+      "role": "Connects tropical rubber sources to industrial factories.",
+      "source": "prerequisite",
+      "declared_in": "vulcanized-rubber",
+      "title": "Trade network"
+    },
+    {
+      "from": "transmission",
+      "to": "planetary-transmission",
+      "kind": "hard",
+      "role": "Provides the power-transfer role.",
+      "source": "prerequisite",
+      "declared_in": "planetary-transmission",
+      "title": "Transmission"
+    },
+    {
       "from": "try-square",
       "to": "alignment-checking",
       "kind": "measurement",
@@ -10667,6 +14190,51 @@
       "source": "unlock",
       "declared_in": "try-square",
       "title": "Technical drawing"
+    },
+    {
+      "from": "viscosity-comparison",
+      "to": "lubricating-oil",
+      "kind": "test",
+      "role": "Screens flow and film behavior without modern instruments.",
+      "source": "prerequisite",
+      "declared_in": "lubricating-oil",
+      "title": "Viscosity comparison"
+    },
+    {
+      "from": "vulcanized-rubber",
+      "to": "pneumatic-tire",
+      "kind": "hard",
+      "role": "Provides durable elastic tire material.",
+      "source": "prerequisite",
+      "declared_in": "pneumatic-tire",
+      "title": "Vulcanized rubber"
+    },
+    {
+      "from": "water-jacket-cooling",
+      "to": "internal-combustion-engine",
+      "kind": "safety",
+      "role": "Removes heat to protect moving parts.",
+      "source": "prerequisite",
+      "declared_in": "internal-combustion-engine",
+      "title": "Water-jacket cooling"
+    },
+    {
+      "from": "water-jacket-cooling",
+      "to": "radiator",
+      "kind": "hard",
+      "role": "Defines the engine cooling loop.",
+      "source": "prerequisite",
+      "declared_in": "radiator",
+      "title": "Water-jacket cooling"
+    },
+    {
+      "from": "water-pump",
+      "to": "water-jacket-cooling",
+      "kind": "soft",
+      "role": "Can force circulation where thermosiphon is insufficient.",
+      "source": "prerequisite",
+      "declared_in": "water-jacket-cooling",
+      "title": "Water pump"
     },
     {
       "from": "water-settling-test",
@@ -10985,6 +14553,15 @@
     },
     {
       "from": "water",
+      "to": "water-jacket-cooling",
+      "kind": "material_source",
+      "role": "Provides coolant.",
+      "source": "prerequisite",
+      "declared_in": "water-jacket-cooling",
+      "title": "Water"
+    },
+    {
+      "from": "water",
       "to": "water-settling-test",
       "kind": "material_source",
       "role": "Water is the separating medium.",
@@ -11009,6 +14586,15 @@
       "source": "prerequisite",
       "declared_in": "willow",
       "title": "Water"
+    },
+    {
+      "from": "waterwheel",
+      "to": "rolling-mill",
+      "kind": "alternative",
+      "role": "Can provide early mill power.",
+      "source": "prerequisite",
+      "declared_in": "rolling-mill",
+      "title": "Waterwheel"
     },
     {
       "from": "weaving",
@@ -11125,6 +14711,15 @@
       "role": "Supplies the hub, rim, and rolling-load problem.",
       "source": "prerequisite",
       "declared_in": "spoked-wheel",
+      "title": "Wheel and axle"
+    },
+    {
+      "from": "wheel-and-axle",
+      "to": "steering-gear",
+      "kind": "hard",
+      "role": "Provides vehicle wheel geometry.",
+      "source": "prerequisite",
+      "declared_in": "steering-gear",
       "title": "Wheel and axle"
     },
     {
@@ -11461,6 +15056,24 @@
       "title": "Woodworking"
     },
     {
+      "from": "workbench",
+      "to": "drill-press",
+      "kind": "tooling",
+      "role": "Supports clamping and layout.",
+      "source": "prerequisite",
+      "declared_in": "drill-press",
+      "title": "Workbench"
+    },
+    {
+      "from": "workbench",
+      "to": "lathe",
+      "kind": "tooling",
+      "role": "Provides stable support and layout culture.",
+      "source": "prerequisite",
+      "declared_in": "lathe",
+      "title": "Workbench"
+    },
+    {
       "from": "workshop-organization",
       "to": "bridge-trestle",
       "kind": "soft",
@@ -11477,6 +15090,15 @@
       "source": "prerequisite",
       "declared_in": "drainage-ditch",
       "title": "Workshop Organization"
+    },
+    {
+      "from": "workshop-organization",
+      "to": "factory-assembly-line",
+      "kind": "institutional",
+      "role": "Provides task assignment and shared tools.",
+      "source": "prerequisite",
+      "declared_in": "factory-assembly-line",
+      "title": "Workshop organization"
     },
     {
       "from": "workshop-organization",
@@ -11606,6 +15228,15 @@
     },
     {
       "from": "workshop-records",
+      "to": "quality-control-records",
+      "kind": "institutional",
+      "role": "Provides durable production notes.",
+      "source": "prerequisite",
+      "declared_in": "quality-control-records",
+      "title": "Workshop records"
+    },
+    {
+      "from": "workshop-records",
       "to": "seed-selection",
       "kind": "hard",
       "role": "Workshop records provides a necessary starting point for first trials.",
@@ -11714,6 +15345,15 @@
     },
     {
       "from": "writing",
+      "to": "quality-control-records",
+      "kind": "knowledge",
+      "role": "Allows shared labels and instructions.",
+      "source": "prerequisite",
+      "declared_in": "quality-control-records",
+      "title": "Writing"
+    },
+    {
+      "from": "writing",
       "to": "sanitation-norms",
       "kind": "institutional",
       "role": "Written rules and logs help public-health practices persist.",
@@ -11728,6 +15368,15 @@
       "role": "Written rules and logs help norms persist across households.",
       "source": "prerequisite",
       "declared_in": "sanitation-norms",
+      "title": "Writing"
+    },
+    {
+      "from": "writing",
+      "to": "service-manual",
+      "kind": "knowledge",
+      "role": "Enables repeatable instructions.",
+      "source": "prerequisite",
+      "declared_in": "service-manual",
       "title": "Writing"
     },
     {
@@ -11760,14 +15409,491 @@
   ],
   "missing_nodes": [
     {
+      "slug": "acid-handling",
+      "title": "Acid handling",
+      "referenced_by": [
+        "lead-acid-battery"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:safety"
+      ]
+    },
+    {
+      "slug": "battery",
+      "title": "Battery",
+      "referenced_by": [
+        "ignition-coil"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:soft"
+      ]
+    },
+    {
+      "slug": "boring-bar",
+      "title": "Boring bar",
+      "referenced_by": [
+        "cylinder-boring"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite"
+      ]
+    },
+    {
+      "slug": "brass",
+      "title": "Brass",
+      "referenced_by": [
+        "carburetor"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite"
+      ]
+    },
+    {
+      "slug": "cast-iron",
+      "title": "Cast iron",
+      "referenced_by": [
+        "cylinder-boring",
+        "internal-combustion-engine",
+        "piston-cylinder"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite"
+      ]
+    },
+    {
+      "slug": "ceramic-insulator",
+      "title": "Ceramic insulator",
+      "referenced_by": [
+        "spark-ignition",
+        "spark-plug"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:material_source"
+      ]
+    },
+    {
+      "slug": "coachbuilding",
+      "title": "Coachbuilding",
+      "referenced_by": [
+        "ford-model-t"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite"
+      ]
+    },
+    {
+      "slug": "container-sealing",
+      "title": "Container sealing",
+      "referenced_by": [
+        "lead-acid-battery"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:hard"
+      ]
+    },
+    {
+      "slug": "copper-sheet",
+      "title": "Copper sheet",
+      "referenced_by": [
+        "radiator"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite"
+      ]
+    },
+    {
+      "slug": "copper-wire",
+      "title": "Copper wire",
+      "referenced_by": [
+        "ignition-coil",
+        "magneto",
+        "spark-ignition",
+        "spark-plug"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:material_source"
+      ]
+    },
+    {
+      "slug": "die-making",
+      "title": "Die making",
+      "referenced_by": [
+        "stamping-press"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:tooling"
+      ]
+    },
+    {
+      "slug": "distillation",
+      "title": "Distillation",
+      "referenced_by": [
+        "oil-refining"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:refining"
+      ]
+    },
+    {
+      "slug": "electrode-alloy",
+      "title": "Electrode alloy",
+      "referenced_by": [
+        "spark-plug"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite"
+      ]
+    },
+    {
+      "slug": "fluid-metering",
+      "title": "Fluid metering",
+      "referenced_by": [
+        "carburetor"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:hard"
+      ]
+    },
+    {
+      "slug": "friction-material",
+      "title": "Friction material",
+      "referenced_by": [
+        "band-brake",
+        "clutch"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:material_source"
+      ]
+    },
+    {
+      "slug": "fuel-storage",
+      "title": "Fuel storage",
+      "referenced_by": [
+        "fuel-tank",
+        "gasoline"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:safety"
+      ]
+    },
+    {
+      "slug": "geological-survey",
+      "title": "Geological survey",
+      "referenced_by": [
+        "petroleum"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:knowledge"
+      ]
+    },
+    {
+      "slug": "glass",
+      "title": "Glass",
+      "referenced_by": [
+        "lead-acid-battery"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite"
+      ]
+    },
+    {
+      "slug": "indexing",
+      "title": "Indexing",
+      "referenced_by": [
+        "gear-cutting"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:measurement"
+      ]
+    },
+    {
+      "slug": "insulating-varnish",
+      "title": "Insulating varnish",
+      "referenced_by": [
+        "ignition-coil"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:material_source"
+      ]
+    },
+    {
+      "slug": "iron-core",
+      "title": "Iron core",
+      "referenced_by": [
+        "ignition-coil"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:material_source"
+      ]
+    },
+    {
+      "slug": "leak-test",
+      "title": "Leak test",
+      "referenced_by": [
+        "fuel-tank",
+        "pneumatic-tire",
+        "poppet-valve",
+        "radiator",
+        "water-jacket-cooling",
+        "water-pump"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:test"
+      ]
+    },
+    {
+      "slug": "natural-rubber",
+      "title": "Natural rubber",
+      "referenced_by": [
+        "vulcanized-rubber"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:material_source"
+      ]
+    },
+    {
+      "slug": "permanent-magnet",
+      "title": "Permanent magnet",
+      "referenced_by": [
+        "magneto"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:hard"
+      ]
+    },
+    {
+      "slug": "piston-ring",
+      "title": "Piston ring",
+      "referenced_by": [
+        "piston-cylinder"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite"
+      ]
+    },
+    {
+      "slug": "pressure-measurement",
+      "title": "Pressure measurement",
+      "referenced_by": [
+        "pneumatic-tire"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:test"
+      ]
+    },
+    {
+      "slug": "riveting",
+      "title": "Riveting",
+      "referenced_by": [
+        "chassis-frame"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:soft"
+      ]
+    },
+    {
+      "slug": "rubber-curing",
+      "title": "Rubber curing",
+      "referenced_by": [
+        "vulcanized-rubber"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:refining"
+      ]
+    },
+    {
+      "slug": "rubber-hose",
+      "title": "Rubber hose",
+      "referenced_by": [
+        "water-jacket-cooling"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite"
+      ]
+    },
+    {
+      "slug": "sheet-metal-working",
+      "title": "Sheet metal working",
+      "referenced_by": [
+        "radiator",
+        "sheet-steel"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:tooling"
+      ]
+    },
+    {
       "slug": "simple-pump",
       "title": "Simple pump",
       "referenced_by": [
-        "pulley"
+        "pulley",
+        "water-pump"
       ],
       "reference_types": [
+        "body_wikilink",
         "declared_missing_prerequisite",
+        "edge:prerequisite:hard",
         "edge:unlock:optional"
+      ]
+    },
+    {
+      "slug": "soldering",
+      "title": "Soldering",
+      "referenced_by": [
+        "radiator"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:soft"
+      ]
+    },
+    {
+      "slug": "spring-making",
+      "title": "Spring making",
+      "referenced_by": [
+        "poppet-valve"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:hard"
+      ]
+    },
+    {
+      "slug": "spring-steel",
+      "title": "Spring steel",
+      "referenced_by": [
+        "leaf-spring"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:material_source"
+      ]
+    },
+    {
+      "slug": "steelmaking",
+      "title": "Steelmaking",
+      "referenced_by": [
+        "mild-steel"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:refining"
+      ]
+    },
+    {
+      "slug": "temperature-measurement",
+      "title": "Temperature measurement",
+      "referenced_by": [
+        "oil-refining"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:measurement"
+      ]
+    },
+    {
+      "slug": "textile-cord",
+      "title": "Textile cord",
+      "referenced_by": [
+        "pneumatic-tire",
+        "vulcanized-rubber"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite"
+      ]
+    },
+    {
+      "slug": "trade-network",
+      "title": "Trade network",
+      "referenced_by": [
+        "petroleum",
+        "vulcanized-rubber"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:institutional"
+      ]
+    },
+    {
+      "slug": "viscosity-comparison",
+      "title": "Viscosity comparison",
+      "referenced_by": [
+        "lubricating-oil"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:test"
+      ]
+    },
+    {
+      "slug": "waterwheel",
+      "title": "Waterwheel",
+      "referenced_by": [
+        "rolling-mill"
+      ],
+      "reference_types": [
+        "body_wikilink",
+        "declared_missing_prerequisite",
+        "edge:prerequisite:alternative"
       ]
     }
   ],
@@ -11778,9 +15904,579 @@
     },
     {
       "severity": "warning",
+      "file": "content/tech/band-brake.md",
+      "slug": "band-brake",
+      "message": "Graph reference \"friction-material\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/band-brake.md",
+      "slug": "band-brake",
+      "message": "Wikilink \"friction-material\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/carburetor.md",
+      "slug": "carburetor",
+      "message": "Graph reference \"fluid-metering\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/carburetor.md",
+      "slug": "carburetor",
+      "message": "Wikilink \"brass\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/carburetor.md",
+      "slug": "carburetor",
+      "message": "Wikilink \"fluid-metering\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/chassis-frame.md",
+      "slug": "chassis-frame",
+      "message": "Graph reference \"riveting\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/chassis-frame.md",
+      "slug": "chassis-frame",
+      "message": "Wikilink \"riveting\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/clutch.md",
+      "slug": "clutch",
+      "message": "Graph reference \"friction-material\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/clutch.md",
+      "slug": "clutch",
+      "message": "Wikilink \"friction-material\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/cylinder-boring.md",
+      "slug": "cylinder-boring",
+      "message": "Wikilink \"boring-bar\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/cylinder-boring.md",
+      "slug": "cylinder-boring",
+      "message": "Wikilink \"cast-iron\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/ford-model-t.md",
+      "slug": "ford-model-t",
+      "message": "Wikilink \"coachbuilding\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/fuel-tank.md",
+      "slug": "fuel-tank",
+      "message": "Graph reference \"fuel-storage\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/fuel-tank.md",
+      "slug": "fuel-tank",
+      "message": "Graph reference \"leak-test\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/fuel-tank.md",
+      "slug": "fuel-tank",
+      "message": "Wikilink \"fuel-storage\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/fuel-tank.md",
+      "slug": "fuel-tank",
+      "message": "Wikilink \"leak-test\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/gasoline.md",
+      "slug": "gasoline",
+      "message": "Graph reference \"fuel-storage\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/gasoline.md",
+      "slug": "gasoline",
+      "message": "Wikilink \"fuel-storage\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/gear-cutting.md",
+      "slug": "gear-cutting",
+      "message": "Graph reference \"indexing\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/gear-cutting.md",
+      "slug": "gear-cutting",
+      "message": "Wikilink \"indexing\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/ignition-coil.md",
+      "slug": "ignition-coil",
+      "message": "Graph reference \"battery\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/ignition-coil.md",
+      "slug": "ignition-coil",
+      "message": "Graph reference \"copper-wire\" has no page and is not listed in missing_prerequisites."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/ignition-coil.md",
+      "slug": "ignition-coil",
+      "message": "Graph reference \"insulating-varnish\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/ignition-coil.md",
+      "slug": "ignition-coil",
+      "message": "Graph reference \"iron-core\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/ignition-coil.md",
+      "slug": "ignition-coil",
+      "message": "Wikilink \"battery\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/ignition-coil.md",
+      "slug": "ignition-coil",
+      "message": "Wikilink \"copper-wire\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/ignition-coil.md",
+      "slug": "ignition-coil",
+      "message": "Wikilink \"insulating-varnish\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/ignition-coil.md",
+      "slug": "ignition-coil",
+      "message": "Wikilink \"iron-core\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/internal-combustion-engine.md",
+      "slug": "internal-combustion-engine",
+      "message": "Wikilink \"cast-iron\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/lead-acid-battery.md",
+      "slug": "lead-acid-battery",
+      "message": "Graph reference \"acid-handling\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/lead-acid-battery.md",
+      "slug": "lead-acid-battery",
+      "message": "Graph reference \"container-sealing\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/lead-acid-battery.md",
+      "slug": "lead-acid-battery",
+      "message": "Wikilink \"acid-handling\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/lead-acid-battery.md",
+      "slug": "lead-acid-battery",
+      "message": "Wikilink \"container-sealing\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/lead-acid-battery.md",
+      "slug": "lead-acid-battery",
+      "message": "Wikilink \"glass\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/leaf-spring.md",
+      "slug": "leaf-spring",
+      "message": "Graph reference \"spring-steel\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/leaf-spring.md",
+      "slug": "leaf-spring",
+      "message": "Wikilink \"spring-steel\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/lubricating-oil.md",
+      "slug": "lubricating-oil",
+      "message": "Graph reference \"viscosity-comparison\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/lubricating-oil.md",
+      "slug": "lubricating-oil",
+      "message": "Wikilink \"viscosity-comparison\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/magneto.md",
+      "slug": "magneto",
+      "message": "Graph reference \"permanent-magnet\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/magneto.md",
+      "slug": "magneto",
+      "message": "Wikilink \"copper-wire\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/magneto.md",
+      "slug": "magneto",
+      "message": "Wikilink \"permanent-magnet\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/mild-steel.md",
+      "slug": "mild-steel",
+      "message": "Graph reference \"steelmaking\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/mild-steel.md",
+      "slug": "mild-steel",
+      "message": "Wikilink \"steelmaking\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/oil-refining.md",
+      "slug": "oil-refining",
+      "message": "Graph reference \"distillation\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/oil-refining.md",
+      "slug": "oil-refining",
+      "message": "Graph reference \"temperature-measurement\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/oil-refining.md",
+      "slug": "oil-refining",
+      "message": "Wikilink \"distillation\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/oil-refining.md",
+      "slug": "oil-refining",
+      "message": "Wikilink \"temperature-measurement\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/petroleum.md",
+      "slug": "petroleum",
+      "message": "Graph reference \"geological-survey\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/petroleum.md",
+      "slug": "petroleum",
+      "message": "Graph reference \"trade-network\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/petroleum.md",
+      "slug": "petroleum",
+      "message": "Wikilink \"geological-survey\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/petroleum.md",
+      "slug": "petroleum",
+      "message": "Wikilink \"trade-network\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/piston-cylinder.md",
+      "slug": "piston-cylinder",
+      "message": "Wikilink \"cast-iron\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/piston-cylinder.md",
+      "slug": "piston-cylinder",
+      "message": "Wikilink \"piston-ring\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/pneumatic-tire.md",
+      "slug": "pneumatic-tire",
+      "message": "Graph reference \"leak-test\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/pneumatic-tire.md",
+      "slug": "pneumatic-tire",
+      "message": "Graph reference \"pressure-measurement\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/pneumatic-tire.md",
+      "slug": "pneumatic-tire",
+      "message": "Wikilink \"leak-test\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/pneumatic-tire.md",
+      "slug": "pneumatic-tire",
+      "message": "Wikilink \"pressure-measurement\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/pneumatic-tire.md",
+      "slug": "pneumatic-tire",
+      "message": "Wikilink \"textile-cord\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/poppet-valve.md",
+      "slug": "poppet-valve",
+      "message": "Graph reference \"leak-test\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/poppet-valve.md",
+      "slug": "poppet-valve",
+      "message": "Graph reference \"spring-making\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/poppet-valve.md",
+      "slug": "poppet-valve",
+      "message": "Wikilink \"leak-test\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/poppet-valve.md",
+      "slug": "poppet-valve",
+      "message": "Wikilink \"spring-making\" has no matching page."
+    },
+    {
+      "severity": "warning",
       "file": "content/tech/pulley.md",
       "slug": "pulley",
       "message": "Graph reference \"simple-pump\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/radiator.md",
+      "slug": "radiator",
+      "message": "Graph reference \"leak-test\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/radiator.md",
+      "slug": "radiator",
+      "message": "Graph reference \"sheet-metal-working\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/radiator.md",
+      "slug": "radiator",
+      "message": "Graph reference \"soldering\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/radiator.md",
+      "slug": "radiator",
+      "message": "Wikilink \"copper-sheet\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/radiator.md",
+      "slug": "radiator",
+      "message": "Wikilink \"leak-test\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/radiator.md",
+      "slug": "radiator",
+      "message": "Wikilink \"sheet-metal-working\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/radiator.md",
+      "slug": "radiator",
+      "message": "Wikilink \"soldering\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/rolling-mill.md",
+      "slug": "rolling-mill",
+      "message": "Graph reference \"waterwheel\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/rolling-mill.md",
+      "slug": "rolling-mill",
+      "message": "Wikilink \"waterwheel\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/sheet-steel.md",
+      "slug": "sheet-steel",
+      "message": "Graph reference \"sheet-metal-working\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/sheet-steel.md",
+      "slug": "sheet-steel",
+      "message": "Wikilink \"sheet-metal-working\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/spark-ignition.md",
+      "slug": "spark-ignition",
+      "message": "Wikilink \"ceramic-insulator\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/spark-ignition.md",
+      "slug": "spark-ignition",
+      "message": "Wikilink \"copper-wire\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/spark-plug.md",
+      "slug": "spark-plug",
+      "message": "Graph reference \"ceramic-insulator\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/spark-plug.md",
+      "slug": "spark-plug",
+      "message": "Wikilink \"ceramic-insulator\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/spark-plug.md",
+      "slug": "spark-plug",
+      "message": "Wikilink \"copper-wire\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/spark-plug.md",
+      "slug": "spark-plug",
+      "message": "Wikilink \"electrode-alloy\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/stamping-press.md",
+      "slug": "stamping-press",
+      "message": "Graph reference \"die-making\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/stamping-press.md",
+      "slug": "stamping-press",
+      "message": "Wikilink \"die-making\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/vulcanized-rubber.md",
+      "slug": "vulcanized-rubber",
+      "message": "Graph reference \"natural-rubber\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/vulcanized-rubber.md",
+      "slug": "vulcanized-rubber",
+      "message": "Graph reference \"rubber-curing\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/vulcanized-rubber.md",
+      "slug": "vulcanized-rubber",
+      "message": "Graph reference \"trade-network\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/vulcanized-rubber.md",
+      "slug": "vulcanized-rubber",
+      "message": "Wikilink \"natural-rubber\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/vulcanized-rubber.md",
+      "slug": "vulcanized-rubber",
+      "message": "Wikilink \"rubber-curing\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/vulcanized-rubber.md",
+      "slug": "vulcanized-rubber",
+      "message": "Wikilink \"textile-cord\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/vulcanized-rubber.md",
+      "slug": "vulcanized-rubber",
+      "message": "Wikilink \"trade-network\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/water-jacket-cooling.md",
+      "slug": "water-jacket-cooling",
+      "message": "Graph reference \"leak-test\" has no page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/water-jacket-cooling.md",
+      "slug": "water-jacket-cooling",
+      "message": "Wikilink \"leak-test\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/water-jacket-cooling.md",
+      "slug": "water-jacket-cooling",
+      "message": "Wikilink \"rubber-hose\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/water-pump.md",
+      "slug": "water-pump",
+      "message": "Graph reference \"leak-test\" has no page and is not listed in missing_prerequisites."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/water-pump.md",
+      "slug": "water-pump",
+      "message": "Graph reference \"simple-pump\" has no page and is not listed in missing_prerequisites."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/water-pump.md",
+      "slug": "water-pump",
+      "message": "Wikilink \"leak-test\" has no matching page."
+    },
+    {
+      "severity": "warning",
+      "file": "content/tech/water-pump.md",
+      "slug": "water-pump",
+      "message": "Wikilink \"simple-pump\" has no matching page."
     }
   ]
 }
