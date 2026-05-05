@@ -1181,6 +1181,7 @@ a.missing-link::after {
   cursor: grab;
   overscroll-behavior: contain;
   scrollbar-color: var(--ink) var(--paper-deep);
+  touch-action: none;
 }
 
 .tech-tree-viewport:focus {

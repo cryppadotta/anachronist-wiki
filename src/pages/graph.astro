@@ -562,15 +562,33 @@ function edgePath(edge: GraphEdge) {
   if (viewport instanceof HTMLElement && canvas instanceof HTMLElement) {
     const treeViewport = viewport;
     const treeCanvas = canvas;
+    const MIN_SCALE = 0.25;
+    const MAX_SCALE = 1.35;
+    const WHEEL_ZOOM_SPEED = 0.0012;
     let scale = 1;
     let activeFilter = "all";
     let focusedSlug = "";
     let isPanning = false;
+    let isPinching = false;
     let hasDragged = false;
     let startX = 0;
     let startY = 0;
     let startScrollLeft = 0;
     let startScrollTop = 0;
+    let pinchStartDistance = 0;
+    let pinchStartScale = 1;
+    let minimapFrame = 0;
+    const activePointers = new Map<number, { x: number; y: number }>();
+
+    const clampScale = (nextScale: number) => Math.min(MAX_SCALE, Math.max(MIN_SCALE, nextScale));
+
+    function scheduleMinimapWindow() {
+      if (minimapFrame !== 0) return;
+      minimapFrame = requestAnimationFrame(() => {
+        minimapFrame = 0;
+        updateMinimapWindow();
+      });
+    }
 
     function updateMinimapWindow() {
       if (!(minimapWindow instanceof HTMLElement)) return;
@@ -584,16 +602,17 @@ function edgePath(edge: GraphEdge) {
       minimapWindow.style.top = `${Math.max(0, top)}%`;
     }
 
-    const applyScale = (nextScale: number) => {
+    const applyScale = (nextScale: number, focalX = viewport.clientWidth / 2, focalY = viewport.clientHeight / 2) => {
       const previousScale = scale;
-      scale = Math.min(1.35, Math.max(0.25, nextScale));
-      const scrollRatioX = (viewport.scrollLeft + viewport.clientWidth / 2) / previousScale;
-      const scrollRatioY = (viewport.scrollTop + viewport.clientHeight / 2) / previousScale;
+      scale = clampScale(nextScale);
+      if (scale === previousScale) return;
+      const contentX = (viewport.scrollLeft + focalX) / previousScale;
+      const contentY = (viewport.scrollTop + focalY) / previousScale;
       canvas.style.transform = `scale(${scale})`;
       if (zoomReadout instanceof HTMLOutputElement) zoomReadout.value = `${Math.round(scale * 100)}%`;
-      viewport.scrollLeft = scrollRatioX * scale - viewport.clientWidth / 2;
-      viewport.scrollTop = scrollRatioY * scale - viewport.clientHeight / 2;
-      updateMinimapWindow();
+      viewport.scrollLeft = contentX * scale - focalX;
+      viewport.scrollTop = contentY * scale - focalY;
+      scheduleMinimapWindow();
     };
 
     const fitTree = () => {
@@ -609,6 +628,54 @@ function edgePath(edge: GraphEdge) {
       viewport.scrollTop = 0;
       updateMinimapWindow();
     };
+
+    function pointerDistance() {
+      const points = [...activePointers.values()];
+      if (points.length < 2) return 0;
+      const [a, b] = points;
+      return Math.hypot(a.x - b.x, a.y - b.y);
+    }
+
+    function pointerMidpoint() {
+      const points = [...activePointers.values()];
+      const [a, b] = points;
+      return {
+        x: (a.x + b.x) / 2,
+        y: (a.y + b.y) / 2
+      };
+    }
+
+    function startPinch() {
+      const rect = treeViewport.getBoundingClientRect();
+      const midpoint = pointerMidpoint();
+      isPinching = true;
+      isPanning = false;
+      hasDragged = true;
+      pinchStartDistance = Math.max(1, pointerDistance());
+      pinchStartScale = scale;
+      startX = midpoint.x - rect.left;
+      startY = midpoint.y - rect.top;
+      treeViewport.classList.add("is-panning");
+    }
+
+    function resetPointerState(event: PointerEvent) {
+      activePointers.delete(event.pointerId);
+      if (treeViewport.hasPointerCapture(event.pointerId)) treeViewport.releasePointerCapture(event.pointerId);
+
+      if (isPinching && activePointers.size < 2) {
+        isPinching = false;
+        isPanning = false;
+        treeViewport.classList.remove("is-panning");
+      }
+
+      if (!isPinching && activePointers.size === 0) {
+        isPanning = false;
+        treeViewport.classList.remove("is-panning");
+        window.setTimeout(() => {
+          hasDragged = false;
+        }, 0);
+      }
+    }
 
     const nodeSlug = (node: Element) => node.getAttribute("data-tree-slug") ?? "";
     const nodeType = (node: Element) => node.getAttribute("data-tree-type") ?? "";
@@ -720,34 +787,70 @@ function edgePath(edge: GraphEdge) {
 
     viewport.addEventListener("pointerdown", (event) => {
       if (!(event.target instanceof Element) || event.target.closest("a, button, input")) return;
+      activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+      viewport.setPointerCapture(event.pointerId);
+
+      if (event.pointerType === "touch" && activePointers.size >= 2) {
+        startPinch();
+        event.preventDefault();
+        return;
+      }
+
       isPanning = true;
       hasDragged = false;
       startX = event.clientX;
       startY = event.clientY;
       startScrollLeft = viewport.scrollLeft;
       startScrollTop = viewport.scrollTop;
-      viewport.setPointerCapture(event.pointerId);
       viewport.classList.add("is-panning");
     });
 
     viewport.addEventListener("pointermove", (event) => {
+      if (activePointers.has(event.pointerId)) {
+        activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+      }
+
+      if (isPinching && activePointers.size >= 2) {
+        const rect = viewport.getBoundingClientRect();
+        const midpoint = pointerMidpoint();
+        const pinchScale = pinchStartScale * (pointerDistance() / pinchStartDistance);
+        applyScale(pinchScale, midpoint.x - rect.left, midpoint.y - rect.top);
+        event.preventDefault();
+        return;
+      }
+
       if (!isPanning) return;
       const dx = event.clientX - startX;
       const dy = event.clientY - startY;
       if (Math.abs(dx) + Math.abs(dy) > 6) hasDragged = true;
       viewport.scrollLeft = startScrollLeft - dx;
       viewport.scrollTop = startScrollTop - dy;
-      updateMinimapWindow();
+      scheduleMinimapWindow();
     });
 
-    viewport.addEventListener("pointerup", (event) => {
-      isPanning = false;
-      viewport.classList.remove("is-panning");
-      if (viewport.hasPointerCapture(event.pointerId)) viewport.releasePointerCapture(event.pointerId);
-      window.setTimeout(() => {
-        hasDragged = false;
-      }, 0);
-    });
+    viewport.addEventListener("pointerup", resetPointerState);
+    viewport.addEventListener("pointercancel", resetPointerState);
+
+    viewport.addEventListener(
+      "wheel",
+      (event) => {
+        if (event.target instanceof Element && event.target.closest("input")) return;
+
+        if (event.shiftKey) {
+          viewport.scrollLeft += event.deltaY || event.deltaX;
+          scheduleMinimapWindow();
+          event.preventDefault();
+          return;
+        }
+
+        const rect = viewport.getBoundingClientRect();
+        const focalX = event.clientX - rect.left;
+        const focalY = event.clientY - rect.top;
+        applyScale(scale * Math.exp(-event.deltaY * WHEEL_ZOOM_SPEED), focalX, focalY);
+        event.preventDefault();
+      },
+      { passive: false }
+    );
 
     viewport.addEventListener(
       "click",
@@ -804,29 +907,29 @@ function edgePath(edge: GraphEdge) {
       const y = (event.clientY - rect.top) / rect.height;
       treeViewport.scrollLeft = Math.max(0, x * treeCanvas.offsetWidth * scale - treeViewport.clientWidth / 2);
       treeViewport.scrollTop = Math.max(0, y * treeCanvas.offsetHeight * scale - treeViewport.clientHeight / 2);
-      updateMinimapWindow();
+      scheduleMinimapWindow();
     });
 
-    viewport.addEventListener("scroll", updateMinimapWindow, { passive: true });
-    window.addEventListener("resize", updateMinimapWindow);
+    viewport.addEventListener("scroll", scheduleMinimapWindow, { passive: true });
+    window.addEventListener("resize", scheduleMinimapWindow);
 
     viewport.addEventListener("keydown", (event) => {
       const panAmount = event.shiftKey ? 180 : 80;
       if (event.key === "ArrowLeft") {
         viewport.scrollLeft -= panAmount;
-        updateMinimapWindow();
+        scheduleMinimapWindow();
         event.preventDefault();
       } else if (event.key === "ArrowRight") {
         viewport.scrollLeft += panAmount;
-        updateMinimapWindow();
+        scheduleMinimapWindow();
         event.preventDefault();
       } else if (event.key === "ArrowUp") {
         viewport.scrollTop -= panAmount;
-        updateMinimapWindow();
+        scheduleMinimapWindow();
         event.preventDefault();
       } else if (event.key === "ArrowDown") {
         viewport.scrollTop += panAmount;
-        updateMinimapWindow();
+        scheduleMinimapWindow();
         event.preventDefault();
       } else if (event.key === "+" || event.key === "=") {
         applyScale(scale + 0.12);
