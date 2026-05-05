@@ -103,6 +103,7 @@ type TreeNode = {
   status: string;
   summary: string;
   path: string;
+  thumbnailPath: string | null;
   era_floor: string;
   isMissing: boolean;
   incomingCount: number;
@@ -120,6 +121,7 @@ const treeNodesBySlug = new Map<string, TreeNode>();
 for (const node of graph.nodes) {
   treeNodesBySlug.set(node.slug, {
     ...node,
+    thumbnailPath: `/images/tech/${node.slug}-header.webp`,
     isMissing: false,
     incomingCount: 0,
     outgoingCount: 0,
@@ -141,6 +143,7 @@ for (const node of graph.missing_nodes) {
     status: "missing",
     summary: `Referenced by ${node.referenced_by.join(", ")}`,
     path: missingPath(node.slug),
+    thumbnailPath: null,
     era_floor: "unknown",
     isMissing: true,
     incomingCount: 0,
@@ -433,6 +436,11 @@ function edgePath(edge: GraphEdge) {
                   data-tree-summary={node.summary}
                   data-tree-search-text={`${node.title} ${node.slug} ${node.node_type} ${node.safety_class} ${node.eraLabel} ${node.summary}`.toLowerCase()}
                 >
+                  {node.thumbnailPath && (
+                    <span class="tree-node-thumb" aria-hidden="true">
+                      <img src={node.thumbnailPath} alt="" loading="lazy" decoding="async" />
+                    </span>
+                  )}
                   <span class="tree-node-type">{node.node_type}</span>
                   <strong>{node.title}</strong>
                   <span class="tree-node-meta">{node.safety_class}</span>
