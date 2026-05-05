@@ -53,24 +53,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/road-building-header.svg
+    src: /images/tech/road-building-header.webp
     alt: Field sketch of Road Building, highlighting road building supply, measuring
       rod, workshop organization, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: d99ac666fa8e778e8c5d9fc931d8280ed34c3fbb23d390fc1ad06483d25fe492
-    generated_at: 2026-05-05T01:28:32.274Z
+    generated_at: 2026-05-05T13:25:24.898Z
   schematic:
-    src: /images/tech/road-building-schematic.svg
+    src: /images/tech/road-building-schematic.webp
     alt: Schematic diagram of Road Building, highlighting road building supply,
       measuring rod, workshop organization, process and major working
       relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 5c8ca761a97a32274545b145c7b50f04f0526519ba8da4630154e512c28b9837
-    generated_at: 2026-05-05T01:28:32.274Z
+    generated_at: 2026-05-05T13:26:15.952Z
 ---
 
 ## Field briefing

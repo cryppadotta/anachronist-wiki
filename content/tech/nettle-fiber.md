@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/nettle-fiber-header.svg
+    src: /images/tech/nettle-fiber-header.webp
     alt: Field sketch of Nettle Fiber, highlighting nettle fiber supply, cordage
       fiber, spindle, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 8ab6ee98c1f2801856fbedeb02ce9ed416d936f1381e32791909f6a8c15bc9fd
-    generated_at: 2026-05-05T01:28:32.255Z
+    generated_at: 2026-05-05T13:22:12.817Z
   schematic:
-    src: /images/tech/nettle-fiber-schematic.svg
+    src: /images/tech/nettle-fiber-schematic.webp
     alt: Schematic diagram of Nettle Fiber, highlighting nettle fiber supply,
       cordage fiber, spindle, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 93d72b594a94200dfa5bec2f89b739d81675dee6da7a4e12ec2847435c07de04
-    generated_at: 2026-05-05T01:28:32.255Z
+    generated_at: 2026-05-05T13:23:20.504Z
 ---
 
 ## Field briefing

@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/glass-sand-header.svg
+    src: /images/tech/glass-sand-header.webp
     alt: Field sketch of Glass Sand, highlighting glass sand supply, stone, scratch
       hardness test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: b6f1dd542f3ac5ccb1378113fa94461c99c520f1eba9559516675a6dfe5b84dd
-    generated_at: 2026-05-05T01:28:32.216Z
+    generated_at: 2026-05-05T13:16:07.519Z
   schematic:
-    src: /images/tech/glass-sand-schematic.svg
+    src: /images/tech/glass-sand-schematic.webp
     alt: Schematic diagram of Glass Sand, highlighting glass sand supply, stone,
       scratch hardness test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: a05649c8a40a3ede7481a519fc913b6a9aa0a289ff923fb501ae244eadee7ea9
-    generated_at: 2026-05-05T01:28:32.217Z
+    generated_at: 2026-05-05T13:17:07.540Z
 ---
 
 ## Field briefing

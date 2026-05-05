@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/tannin-bark-header.svg
+    src: /images/tech/tannin-bark-header.webp
     alt: Field sketch of Tannin Bark, highlighting tannin bark supply, water,
       workshop records, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 76949d5e94624976fd8438de2b179fcce586d9fca0db4ea3fa967d45974dc81f
-    generated_at: 2026-05-05T01:28:32.303Z
+    generated_at: 2026-05-05T13:29:18.534Z
   schematic:
-    src: /images/tech/tannin-bark-schematic.svg
+    src: /images/tech/tannin-bark-schematic.webp
     alt: Schematic diagram of Tannin Bark, highlighting tannin bark supply, water,
       workshop records, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 9423601e96471274aa5d7aa108a86c9dcdd1a9f15632328714361bb419ae48a8
-    generated_at: 2026-05-05T01:28:32.304Z
+    generated_at: 2026-05-05T13:30:30.855Z
 ---
 
 ## Field briefing

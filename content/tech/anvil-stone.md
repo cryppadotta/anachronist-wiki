@@ -50,23 +50,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/anvil-stone-header.svg
+    src: /images/tech/anvil-stone-header.webp
     alt: Field sketch of Anvil Stone, highlighting anvil stone supply, firekeeping,
       charcoal, tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 2debfcdf3ca5b26e64ec5172d9ae5f752029335e156ea9a168615523037d0eb9
-    generated_at: 2026-05-05T01:28:32.140Z
+    generated_at: 2026-05-05T13:08:02.925Z
   schematic:
-    src: /images/tech/anvil-stone-schematic.svg
+    src: /images/tech/anvil-stone-schematic.webp
     alt: Schematic diagram of Anvil Stone, highlighting anvil stone supply,
       firekeeping, charcoal, tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: edf7831a758fcc692f0f331478e18ce17842ef45ed880ac59fed7248d7d68fd1
-    generated_at: 2026-05-05T01:28:32.141Z
+    generated_at: 2026-05-05T13:09:10.069Z
 ---
 
 ## Field briefing

@@ -53,23 +53,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/limestone-header.svg
+    src: /images/tech/limestone-header.webp
     alt: Field sketch of Limestone, highlighting limestone supply, stone, scratch
       hardness test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: c7c2da5f2a41716acc09c4fed873d7f04c38ed6efb858e6f90878e7a426ca935
-    generated_at: 2026-05-05T01:28:32.242Z
+    generated_at: 2026-05-05T13:20:16.382Z
   schematic:
-    src: /images/tech/limestone-schematic.svg
+    src: /images/tech/limestone-schematic.webp
     alt: Schematic diagram of Limestone, highlighting limestone supply, stone,
       scratch hardness test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: ba26825a47f0321431752f2ca47e3f8fdb8eab3902d11004a81ab7b5bb4d4d54
-    generated_at: 2026-05-05T01:28:32.242Z
+    generated_at: 2026-05-05T13:21:25.541Z
 ---
 
 ## Field briefing

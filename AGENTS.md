@@ -44,6 +44,17 @@ Use prompts in this order when drafting with an LLM:
 
 Generated pages must include provenance frontmatter and confidence fields. If no source pack was used, say that specific historical and technical claims need human source review.
 
+## Image Generation Rules
+
+Technology pages should use the reusable image pipeline, not hand-written placeholder art. The approved prompts are:
+
+1. `content/prompts/header-image.v1.md`
+2. `content/prompts/schematic-image.v1.md`
+
+Generate static assets with `npm run generate:images -- --slug <slug> --provider openai --model gpt-image-2` for a single page, or `npm run backfill:images:openai` for a full backfill. This writes assets under `public/images/tech/` and records image provenance in frontmatter under `images.header` and `images.schematic`.
+
+Use the fixture image provider only for local script tests. Do not publish fixture SVGs or `provider: fixture` image metadata.
+
 ## Validation
 
 Run the smallest checks that cover your change:

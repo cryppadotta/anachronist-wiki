@@ -51,24 +51,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/land-boundary-marker-header.svg
+    src: /images/tech/land-boundary-marker-header.webp
     alt: Field sketch of Land Boundary Marker, highlighting land boundary marker
       reference materials, counting, measuring rod, measurement.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 932c26d3c4c4f1de47be1b6c12170ee383dcc6f7867bf5bb6b3a81166bc2e884
-    generated_at: 2026-05-05T01:28:32.237Z
+    generated_at: 2026-05-05T13:18:49.268Z
   schematic:
-    src: /images/tech/land-boundary-marker-schematic.svg
+    src: /images/tech/land-boundary-marker-schematic.webp
     alt: Schematic diagram of Land Boundary Marker, highlighting land boundary
       marker reference materials, counting, measuring rod, measurement and major
       working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 27da99000a95e941e898fa195d7d778f70be150e8fe311943cf4ef8cac8d0cc1
-    generated_at: 2026-05-05T01:28:32.238Z
+    generated_at: 2026-05-05T13:19:56.922Z
 ---
 
 ## Field briefing

@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/thatching-header.svg
+    src: /images/tech/thatching-header.webp
     alt: Field sketch of Thatching, highlighting thatching supply, clay,
       woodworking, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 72f8e695a22974af8efb7724576119b3a22c7feffd5817c13774304d2cb2dd54
-    generated_at: 2026-05-05T01:28:32.306Z
+    generated_at: 2026-05-05T13:30:29.000Z
   schematic:
-    src: /images/tech/thatching-schematic.svg
+    src: /images/tech/thatching-schematic.webp
     alt: Schematic diagram of Thatching, highlighting thatching supply, clay,
       woodworking, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 9c0dea47e7d79bafee6e36088debb4898dc940f28872f7d81e48d5cb69d3a4b8
-    generated_at: 2026-05-05T01:28:32.307Z
+    generated_at: 2026-05-05T13:31:32.097Z
 ---
 
 ## Field briefing

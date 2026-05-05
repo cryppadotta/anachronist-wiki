@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/linen-thread-header.svg
+    src: /images/tech/linen-thread-header.webp
     alt: Field sketch of Linen Thread, highlighting linen thread supply, cordage
       fiber, spindle, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 977518be046a24cea4512c5364a69f8d3d91fab16d8e9e49aae3d64893d8880f
-    generated_at: 2026-05-05T01:28:32.244Z
+    generated_at: 2026-05-05T13:20:10.541Z
   schematic:
-    src: /images/tech/linen-thread-schematic.svg
+    src: /images/tech/linen-thread-schematic.webp
     alt: Schematic diagram of Linen Thread, highlighting linen thread supply,
       cordage fiber, spindle, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: f65132b38f168c62cd289360401538a412a7331833ea09fd0da04f706ca57843
-    generated_at: 2026-05-05T01:28:32.245Z
+    generated_at: 2026-05-05T13:21:14.724Z
 ---
 
 ## Field briefing

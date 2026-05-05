@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/clay-slip-header.svg
+    src: /images/tech/clay-slip-header.webp
     alt: Field sketch of Clay Slip, highlighting clay slip supply, clay, kiln firing
       test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 5585f10fa4934ab005df326c8f2b3bd3dacdff07621731a10110d494b2cf4ae8
-    generated_at: 2026-05-05T01:28:32.186Z
+    generated_at: 2026-05-05T13:12:32.060Z
   schematic:
-    src: /images/tech/clay-slip-schematic.svg
+    src: /images/tech/clay-slip-schematic.webp
     alt: Schematic diagram of Clay Slip, highlighting clay slip supply, clay, kiln
       firing test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 371350c5795a506dc6e1fd0927196fd2a11f3927fe6af46d8eb7183f2ce5e956
-    generated_at: 2026-05-05T01:28:32.187Z
+    generated_at: 2026-05-05T13:13:28.239Z
 ---
 
 ## Field briefing

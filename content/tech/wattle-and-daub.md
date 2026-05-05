@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/wattle-and-daub-header.svg
+    src: /images/tech/wattle-and-daub-header.webp
     alt: Field sketch of Wattle and Daub, highlighting wattle and daub supply, clay,
       woodworking, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: fedae4371c5b32f638a3ec36e7d2bfd9f375ba33de8967f1b6ad3074d0b3865a
-    generated_at: 2026-05-05T01:28:32.322Z
+    generated_at: 2026-05-05T13:32:34.731Z
   schematic:
-    src: /images/tech/wattle-and-daub-schematic.svg
+    src: /images/tech/wattle-and-daub-schematic.webp
     alt: Schematic diagram of Wattle and Daub, highlighting wattle and daub supply,
       clay, woodworking, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: fa95032708664f0ed86322d05b800c07dee2eeb35c16eeb8d1fa9ff49815b90a
-    generated_at: 2026-05-05T01:28:32.322Z
+    generated_at: 2026-05-05T13:33:50.828Z
 ---
 
 ## Field briefing

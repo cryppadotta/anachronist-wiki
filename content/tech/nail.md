@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/nail-header.svg
+    src: /images/tech/nail-header.webp
     alt: Field sketch of Nail, highlighting nail supply, wire drawing, anvil stone,
       artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 48a13e4867e799e3fb72fe096a8b0efa3180da7e310b20419007769fcff59fac
-    generated_at: 2026-05-05T01:28:32.253Z
+    generated_at: 2026-05-05T13:21:43.466Z
   schematic:
-    src: /images/tech/nail-schematic.svg
+    src: /images/tech/nail-schematic.webp
     alt: Schematic diagram of Nail, highlighting nail supply, wire drawing, anvil
       stone, artifact and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 06bbf59efdc2ec6e7550d9d59d88d65d33fbabc19f479e7a25049fb518fd56af
-    generated_at: 2026-05-05T01:28:32.254Z
+    generated_at: 2026-05-05T13:22:50.163Z
 ---
 
 ## Field briefing

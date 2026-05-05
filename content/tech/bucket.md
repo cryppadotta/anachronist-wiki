@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/bucket-header.svg
+    src: /images/tech/bucket-header.webp
     alt: Field sketch of Bucket, highlighting bucket supply, woodworking, water,
       artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 46db2b7a7b05fe0267124d9cc9dcb6aa72b39579cfe6141c3fbf825d063cd38d
-    generated_at: 2026-05-05T01:28:32.174Z
+    generated_at: 2026-05-05T13:12:16.868Z
   schematic:
-    src: /images/tech/bucket-schematic.svg
+    src: /images/tech/bucket-schematic.webp
     alt: Schematic diagram of Bucket, highlighting bucket supply, woodworking,
       water, artifact and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 41da5fb6715ef653eada0b47ced4520d92793bedc4036e4d5dd337975443bfd0
-    generated_at: 2026-05-05T01:28:32.174Z
+    generated_at: 2026-05-05T13:13:25.875Z
 ---
 
 ## Field briefing

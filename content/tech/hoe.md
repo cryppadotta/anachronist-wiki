@@ -51,22 +51,22 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/hoe-header.svg
+    src: /images/tech/hoe-header.webp
     alt: Field sketch of Hoe, highlighting hoe supply, woodworking, lashing, tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 1e5ed7b25d2a9b623c71efe5903c85774d445c6fe3c1fcc3c872965239c3f001
-    generated_at: 2026-05-05T01:28:32.227Z
+    generated_at: 2026-05-05T13:17:40.717Z
   schematic:
-    src: /images/tech/hoe-schematic.svg
+    src: /images/tech/hoe-schematic.webp
     alt: Schematic diagram of Hoe, highlighting hoe supply, woodworking, lashing,
       tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 483aaa9d5efeee32d83a04a3e03a6b0415bb4cbd6bdc724207d9aa0e3d9cb4bb
-    generated_at: 2026-05-05T01:28:32.228Z
+    generated_at: 2026-05-05T13:18:47.920Z
 ---
 
 ## Field briefing

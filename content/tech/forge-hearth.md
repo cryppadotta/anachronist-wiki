@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/forge-hearth-header.svg
+    src: /images/tech/forge-hearth-header.webp
     alt: Field sketch of Forge Hearth, highlighting forge hearth supply,
       firekeeping, charcoal, tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 6d267e502274023bda6225cd0306002cd94870ae35feef35356032edea57d733
-    generated_at: 2026-05-05T01:28:32.214Z
+    generated_at: 2026-05-05T13:16:20.690Z
   schematic:
-    src: /images/tech/forge-hearth-schematic.svg
+    src: /images/tech/forge-hearth-schematic.webp
     alt: Schematic diagram of Forge Hearth, highlighting forge hearth supply,
       firekeeping, charcoal, tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 3fb46fcde2854c998fa418240d6bae2acaeb3c0ab6425f047667b7e2fc28284f
-    generated_at: 2026-05-05T01:28:32.215Z
+    generated_at: 2026-05-05T13:17:26.455Z
 ---
 
 ## Field briefing

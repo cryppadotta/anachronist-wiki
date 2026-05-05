@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/moisture-test-header.svg
+    src: /images/tech/moisture-test-header.webp
     alt: Field sketch of Moisture Test, highlighting moisture test samples,
       measuring rod, workshop records, test.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: cf4bbe6043056386e1840c73d1c6ff41b015cf392aff88675c4d3dd33d91d2e9
-    generated_at: 2026-05-05T01:28:32.249Z
+    generated_at: 2026-05-05T13:20:55.449Z
   schematic:
-    src: /images/tech/moisture-test-schematic.svg
+    src: /images/tech/moisture-test-schematic.webp
     alt: Schematic diagram of Moisture Test, highlighting moisture test samples,
       measuring rod, workshop records, test and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 542d047f02219369cae2b9500cbe7c5323ce1b33a7c94d742e2723d58aa28a30
-    generated_at: 2026-05-05T01:28:32.250Z
+    generated_at: 2026-05-05T13:22:09.469Z
 ---
 
 ## Field briefing

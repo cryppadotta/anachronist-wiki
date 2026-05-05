@@ -50,23 +50,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/sled-header.svg
+    src: /images/tech/sled-header.webp
     alt: Field sketch of Sled, highlighting sled supply, woodworking, lashing,
       artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: c3f4bff64f84bebcb6dfddd94473fca7c06e3a45273da66b1cd9f45e39f7fd85
-    generated_at: 2026-05-05T01:28:32.292Z
+    generated_at: 2026-05-05T13:28:01.316Z
   schematic:
-    src: /images/tech/sled-schematic.svg
+    src: /images/tech/sled-schematic.webp
     alt: Schematic diagram of Sled, highlighting sled supply, woodworking, lashing,
       artifact and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 160edf136e60d0382db13b9a20fe53b0b72f3db9007a3103ab984d73802b35f6
-    generated_at: 2026-05-05T01:28:32.292Z
+    generated_at: 2026-05-05T13:29:01.876Z
 ---
 
 ## Field briefing

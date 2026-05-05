@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/bellows-header.svg
+    src: /images/tech/bellows-header.webp
     alt: Field sketch of Bellows, highlighting bellows supply, firekeeping,
       charcoal, tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 3fa010accc0c778ef43392534d3a8c4c7e3eb1016a805de5be8aa2a59c6965fc
-    generated_at: 2026-05-05T01:28:32.155Z
+    generated_at: 2026-05-05T13:10:08.409Z
   schematic:
-    src: /images/tech/bellows-schematic.svg
+    src: /images/tech/bellows-schematic.webp
     alt: Schematic diagram of Bellows, highlighting bellows supply, firekeeping,
       charcoal, tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: db1dbe2985a457a5c13b423b01ea5283322ed4eaaeb332dc5f5b6a0c59c9b94e
-    generated_at: 2026-05-05T01:28:32.155Z
+    generated_at: 2026-05-05T13:11:25.024Z
 ---
 
 ## Field briefing

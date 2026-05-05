@@ -51,22 +51,22 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/plow-header.svg
+    src: /images/tech/plow-header.webp
     alt: Field sketch of Plow, highlighting plow supply, woodworking, lashing, tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: b4571bf834100cd670080068dfad2abe27d81d66aa5907a61e8d19d0b7cd257b
-    generated_at: 2026-05-05T01:28:32.265Z
+    generated_at: 2026-05-05T13:23:10.631Z
   schematic:
-    src: /images/tech/plow-schematic.svg
+    src: /images/tech/plow-schematic.webp
     alt: Schematic diagram of Plow, highlighting plow supply, woodworking, lashing,
       tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: aaa25a9397e99641f16097c74fc9cf673916d78a16eac01db9fe5752cebdbd16
-    generated_at: 2026-05-05T01:28:32.266Z
+    generated_at: 2026-05-05T13:24:17.913Z
 ---
 
 ## Field briefing

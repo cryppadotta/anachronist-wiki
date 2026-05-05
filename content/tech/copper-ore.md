@@ -53,23 +53,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/copper-ore-header.svg
+    src: /images/tech/copper-ore-header.webp
     alt: Field sketch of Copper Ore, highlighting copper ore supply, stone, scratch
       hardness test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 859286c17bbfd013a0366eec33df768111cf1431a8f2cf31424067f6dbe61ce3
-    generated_at: 2026-05-05T01:28:32.196Z
+    generated_at: 2026-05-05T13:14:08.242Z
   schematic:
-    src: /images/tech/copper-ore-schematic.svg
+    src: /images/tech/copper-ore-schematic.webp
     alt: Schematic diagram of Copper Ore, highlighting copper ore supply, stone,
       scratch hardness test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 596e5f6c990d209e2495b263f1a366b282d3d1465b1a205423a2bb224fa83154
-    generated_at: 2026-05-05T01:28:32.196Z
+    generated_at: 2026-05-05T13:15:15.025Z
 ---
 
 ## Field briefing

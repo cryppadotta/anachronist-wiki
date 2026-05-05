@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/fired-brick-header.svg
+    src: /images/tech/fired-brick-header.webp
     alt: Field sketch of Fired Brick, highlighting fired brick supply, clay, kiln
       firing test, artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: d33087e86c7525f3d247fa6ab9e0e2bf5c08d818e9de671f4ffeadaa138f9e0d
-    generated_at: 2026-05-05T01:28:32.211Z
+    generated_at: 2026-05-05T13:14:35.189Z
   schematic:
-    src: /images/tech/fired-brick-schematic.svg
+    src: /images/tech/fired-brick-schematic.webp
     alt: Schematic diagram of Fired Brick, highlighting fired brick supply, clay,
       kiln firing test, artifact and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 58d0741acf139e493699b89bcb05b7b7ed48a7f2ea18428332fed5508c31aa84
-    generated_at: 2026-05-05T01:28:32.211Z
+    generated_at: 2026-05-05T13:15:36.811Z
 ---
 
 ## Field briefing

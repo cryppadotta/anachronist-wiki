@@ -51,24 +51,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/seasonal-calendar-header.svg
+    src: /images/tech/seasonal-calendar-header.webp
     alt: Field sketch of Seasonal Calendar, highlighting seasonal calendar reference
       materials, counting, measuring rod, measurement.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 8069e2a03ee5ffbf64aaa0b3509f03e8325b0d896c069e6ef8f8c307f8a2b26c
-    generated_at: 2026-05-05T01:28:32.282Z
+    generated_at: 2026-05-05T13:26:54.894Z
   schematic:
-    src: /images/tech/seasonal-calendar-schematic.svg
+    src: /images/tech/seasonal-calendar-schematic.webp
     alt: Schematic diagram of Seasonal Calendar, highlighting seasonal calendar
       reference materials, counting, measuring rod, measurement and major
       working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 963873b0dd3351f9ef415382eaf5b5024a5d1e6a37bc7ef9d2f42b7fd074a5d3
-    generated_at: 2026-05-05T01:28:32.282Z
+    generated_at: 2026-05-05T13:28:00.277Z
 ---
 
 ## Field briefing

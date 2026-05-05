@@ -53,23 +53,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/iron-ore-header.svg
+    src: /images/tech/iron-ore-header.webp
     alt: Field sketch of Iron Ore, highlighting iron ore supply, stone, scratch
       hardness test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: fe6677b950905a535511c044d31955fe5e7955a48f3ae83b14f274806d23d5fb
-    generated_at: 2026-05-05T01:28:32.236Z
+    generated_at: 2026-05-05T13:19:31.321Z
   schematic:
-    src: /images/tech/iron-ore-schematic.svg
+    src: /images/tech/iron-ore-schematic.webp
     alt: Schematic diagram of Iron Ore, highlighting iron ore supply, stone, scratch
       hardness test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: e594ca0fcfca05f46f300957b70d5731effa657fce1f3fa755d4ae571bde3fe2
-    generated_at: 2026-05-05T01:28:32.236Z
+    generated_at: 2026-05-05T13:21:09.347Z
 ---
 
 ## Field briefing

@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/lost-wax-casting-header.svg
+    src: /images/tech/lost-wax-casting-header.webp
     alt: Field sketch of Lost Wax Casting, highlighting lost wax casting supply,
       firekeeping, charcoal, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: e0e53149ac8814574642117e4dbce4437a609c71eceb951117a6c9c33c561465
-    generated_at: 2026-05-05T01:28:32.246Z
+    generated_at: 2026-05-05T13:20:36.736Z
   schematic:
-    src: /images/tech/lost-wax-casting-schematic.svg
+    src: /images/tech/lost-wax-casting-schematic.webp
     alt: Schematic diagram of Lost Wax Casting, highlighting lost wax casting
       supply, firekeeping, charcoal, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: b69f7ab29a943048daa5172a2728dc053e970b5c7e2d0b9e0f49be9a1cfc7576
-    generated_at: 2026-05-05T01:28:32.246Z
+    generated_at: 2026-05-05T13:21:43.608Z
 ---
 
 ## Field briefing

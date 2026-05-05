@@ -51,24 +51,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/volume-measure-header.svg
+    src: /images/tech/volume-measure-header.webp
     alt: Field sketch of Volume Measure, highlighting volume measure reference
       materials, counting, measuring rod, measurement.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: e99848d6f9a9e142f1d8b15d804c780cb7636d10e770803900bc556b2c37b1d9
-    generated_at: 2026-05-05T01:28:32.320Z
+    generated_at: 2026-05-05T13:32:02.024Z
   schematic:
-    src: /images/tech/volume-measure-schematic.svg
+    src: /images/tech/volume-measure-schematic.webp
     alt: Schematic diagram of Volume Measure, highlighting volume measure reference
       materials, counting, measuring rod, measurement and major working
       relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 990fb076fd1a4c2f5bb6b42e4697b5b8b619d350e3f1117ab938b3d15f711073
-    generated_at: 2026-05-05T01:28:32.320Z
+    generated_at: 2026-05-05T13:33:04.449Z
 ---
 
 ## Field briefing

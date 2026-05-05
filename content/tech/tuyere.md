@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/tuyere-header.svg
+    src: /images/tech/tuyere-header.webp
     alt: Field sketch of Tuyere, highlighting tuyere supply, firekeeping, charcoal,
       tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: f413135af54c140a43bbf157d8ce669461e9307815d9ea2ebc4c3532ad84cd00
-    generated_at: 2026-05-05T01:28:32.316Z
+    generated_at: 2026-05-05T13:31:27.576Z
   schematic:
-    src: /images/tech/tuyere-schematic.svg
+    src: /images/tech/tuyere-schematic.webp
     alt: Schematic diagram of Tuyere, highlighting tuyere supply, firekeeping,
       charcoal, tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 12a15211ebc524a86599ae4d8b8e910317d6ddf080160f4e07158f2f8a1c9bef
-    generated_at: 2026-05-05T01:28:32.316Z
+    generated_at: 2026-05-05T13:32:32.516Z
 ---
 
 ## Field briefing

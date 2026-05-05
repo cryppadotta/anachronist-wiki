@@ -53,23 +53,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/bog-iron-header.svg
+    src: /images/tech/bog-iron-header.webp
     alt: Field sketch of Bog Iron, highlighting bog iron supply, stone, scratch
       hardness test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 52ad6162297687e6d984aa1f94d9e63fcf2f18d51bb65b20a7a24413802a4871
-    generated_at: 2026-05-05T01:28:32.162Z
+    generated_at: 2026-05-05T13:10:10.557Z
   schematic:
-    src: /images/tech/bog-iron-schematic.svg
+    src: /images/tech/bog-iron-schematic.webp
     alt: Schematic diagram of Bog Iron, highlighting bog iron supply, stone, scratch
       hardness test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 083d0373ac0ab7e87dc241653127162407f0f16939fe3fe617e2ffc364befcec
-    generated_at: 2026-05-05T01:28:32.163Z
+    generated_at: 2026-05-05T13:11:07.322Z
 ---
 
 ## Field briefing

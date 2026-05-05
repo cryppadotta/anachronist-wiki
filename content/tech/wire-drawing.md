@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/wire-drawing-header.svg
+    src: /images/tech/wire-drawing-header.webp
     alt: Field sketch of Wire Drawing, highlighting wire drawing supply,
       firekeeping, charcoal, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 4ca0fde3c969076568a9862db4b64207309d8924bbadcdd6dccb8d6b6c820896
-    generated_at: 2026-05-05T01:28:32.326Z
+    generated_at: 2026-05-05T13:33:21.831Z
   schematic:
-    src: /images/tech/wire-drawing-schematic.svg
+    src: /images/tech/wire-drawing-schematic.webp
     alt: Schematic diagram of Wire Drawing, highlighting wire drawing supply,
       firekeeping, charcoal, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: f9cad94030cdd1544d1e1fd79731e9c93274bbf671b9dd9f03711efc4c221ae3
-    generated_at: 2026-05-05T01:28:32.327Z
+    generated_at: 2026-05-05T13:34:45.977Z
 ---
 
 ## Field briefing

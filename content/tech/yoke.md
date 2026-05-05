@@ -50,22 +50,22 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/yoke-header.svg
+    src: /images/tech/yoke-header.webp
     alt: Field sketch of Yoke, highlighting yoke supply, woodworking, lashing, tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 81f9c2c44b66ddff7796fbe14b17ede414717cd0155c5ac81b87e87235d0edf8
-    generated_at: 2026-05-05T01:28:32.331Z
+    generated_at: 2026-05-05T13:33:28.751Z
   schematic:
-    src: /images/tech/yoke-schematic.svg
+    src: /images/tech/yoke-schematic.webp
     alt: Schematic diagram of Yoke, highlighting yoke supply, woodworking, lashing,
       tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 988e50273f63a140c1fa1db1d44866920103865dfcf30452ffac9479cf10275d
-    generated_at: 2026-05-05T01:28:32.331Z
+    generated_at: 2026-05-05T13:34:39.492Z
 ---
 
 ## Field briefing

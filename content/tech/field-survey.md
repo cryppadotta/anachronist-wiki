@@ -51,24 +51,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/field-survey-header.svg
+    src: /images/tech/field-survey-header.webp
     alt: Field sketch of Field Survey, highlighting field survey reference
       materials, counting, measuring rod, measurement.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: a5bdc5cdc6a711160eb991fbd66294e58773c6ee00a56a889b0c94c56f1a5ce2
-    generated_at: 2026-05-05T01:28:32.209Z
+    generated_at: 2026-05-05T13:14:38.244Z
   schematic:
-    src: /images/tech/field-survey-schematic.svg
+    src: /images/tech/field-survey-schematic.webp
     alt: Schematic diagram of Field Survey, highlighting field survey reference
       materials, counting, measuring rod, measurement and major working
       relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 18f73e0f8a9fd8792b84442fe044b0ca3f3f4012d7af57c84517d20b0b54d759
-    generated_at: 2026-05-05T01:28:32.210Z
+    generated_at: 2026-05-05T13:16:33.153Z
 ---
 
 ## Field briefing

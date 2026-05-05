@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/tallow-header.svg
+    src: /images/tech/tallow-header.webp
     alt: Field sketch of Tallow, highlighting tallow supply, leather, cutting edge,
       material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 590b8306574f07d983e999e5a8e9c94ce81c342e472e356efd5561a044792574
-    generated_at: 2026-05-05T01:28:32.300Z
+    generated_at: 2026-05-05T13:29:16.686Z
   schematic:
-    src: /images/tech/tallow-schematic.svg
+    src: /images/tech/tallow-schematic.webp
     alt: Schematic diagram of Tallow, highlighting tallow supply, leather, cutting
       edge, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 4159b43f4b88f705f9217392fe530d8e8287192c5193266d71aeeecf2d461824
-    generated_at: 2026-05-05T01:28:32.301Z
+    generated_at: 2026-05-05T13:30:31.317Z
 ---
 
 ## Field briefing

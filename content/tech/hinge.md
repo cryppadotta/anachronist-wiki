@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/hinge-header.svg
+    src: /images/tech/hinge-header.webp
     alt: Field sketch of Hinge, highlighting hinge supply, wire drawing, anvil
       stone, artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: b083b6e3e0e4f9518ff6258351326f4c02a202401de73e346a0ad5a4f0864e00
-    generated_at: 2026-05-05T01:28:32.225Z
+    generated_at: 2026-05-05T13:17:29.845Z
   schematic:
-    src: /images/tech/hinge-schematic.svg
+    src: /images/tech/hinge-schematic.webp
     alt: Schematic diagram of Hinge, highlighting hinge supply, wire drawing, anvil
       stone, artifact and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 4e8b3dcca1f5a672698be8a73042db8ec9e8b67e4de31961c763d7f573295e61
-    generated_at: 2026-05-05T01:28:32.226Z
+    generated_at: 2026-05-05T13:18:36.671Z
 ---
 
 ## Field briefing

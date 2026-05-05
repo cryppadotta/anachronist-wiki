@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/wool-yarn-header.svg
+    src: /images/tech/wool-yarn-header.webp
     alt: Field sketch of Wool Yarn, highlighting wool yarn supply, cordage fiber,
       spindle, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 7800b6e2c5887bd5ae65f559bbb7557d0167ac69a17b823fa0a434a4b2f0f557
-    generated_at: 2026-05-05T01:28:32.329Z
+    generated_at: 2026-05-05T13:33:15.047Z
   schematic:
-    src: /images/tech/wool-yarn-schematic.svg
+    src: /images/tech/wool-yarn-schematic.webp
     alt: Schematic diagram of Wool Yarn, highlighting wool yarn supply, cordage
       fiber, spindle, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: bee916feee47a96471549dafbcf4ddeab3d53580767d66095ae87f2bfd119d73
-    generated_at: 2026-05-05T01:28:32.330Z
+    generated_at: 2026-05-05T13:34:22.011Z
 ---
 
 ## Field briefing

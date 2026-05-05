@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/brickmaking-header.svg
+    src: /images/tech/brickmaking-header.webp
     alt: Field sketch of Brickmaking, highlighting brickmaking supply, clay,
       woodworking, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 0870a7401fbe690da5c57feac2c8d07ed43d5517bd3ca9ab9dd4e0cd995c9829
-    generated_at: 2026-05-05T01:28:32.168Z
+    generated_at: 2026-05-05T13:10:17.926Z
   schematic:
-    src: /images/tech/brickmaking-schematic.svg
+    src: /images/tech/brickmaking-schematic.webp
     alt: Schematic diagram of Brickmaking, highlighting brickmaking supply, clay,
       woodworking, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: e1c2e1853641f5deb2583f554e3c5a106154fed7be1b9bbbd8aab6ec7e8c62c6
-    generated_at: 2026-05-05T01:28:32.169Z
+    generated_at: 2026-05-05T13:11:24.957Z
 ---
 
 ## Field briefing

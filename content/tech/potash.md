@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/potash-header.svg
+    src: /images/tech/potash-header.webp
     alt: Field sketch of Potash, highlighting potash supply, stone, scratch hardness
       test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 3d5d4453cd428f0fa5e6956108ee443c085c4276c8ac9fe56036a93bf1f35421
-    generated_at: 2026-05-05T01:28:32.267Z
+    generated_at: 2026-05-05T13:24:00.244Z
   schematic:
-    src: /images/tech/potash-schematic.svg
+    src: /images/tech/potash-schematic.webp
     alt: Schematic diagram of Potash, highlighting potash supply, stone, scratch
       hardness test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: a1c64bb88adb7441adc2b2ca6867107de8c519a773232fa33301c4e3d24f7403
-    generated_at: 2026-05-05T01:28:32.268Z
+    generated_at: 2026-05-05T13:25:11.426Z
 ---
 
 ## Field briefing

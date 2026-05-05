@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/charcoal-hearth-header.svg
+    src: /images/tech/charcoal-hearth-header.webp
     alt: Field sketch of Charcoal Hearth, highlighting charcoal hearth supply,
       firekeeping, charcoal, tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 0881582f0c055195f5626afe70bc9bd77e393b96ab53dc06fabda4ac1e17672c
-    generated_at: 2026-05-05T01:28:32.182Z
+    generated_at: 2026-05-05T13:12:23.194Z
   schematic:
-    src: /images/tech/charcoal-hearth-schematic.svg
+    src: /images/tech/charcoal-hearth-schematic.webp
     alt: Schematic diagram of Charcoal Hearth, highlighting charcoal hearth supply,
       firekeeping, charcoal, tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 950b0864b35165d9920d92bba2b3025693b6170b7d3e3c78f4ebae2a33f825d5
-    generated_at: 2026-05-05T01:28:32.182Z
+    generated_at: 2026-05-05T13:13:34.391Z
 ---
 
 ## Field briefing

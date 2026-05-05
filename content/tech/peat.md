@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/peat-header.svg
+    src: /images/tech/peat-header.webp
     alt: Field sketch of Peat, highlighting peat supply, firekeeping, charcoal,
       material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 858cd9c838a4b5856c22d364695c8a636af12991dcab4959adb946c05d7afd59
-    generated_at: 2026-05-05T01:28:32.259Z
+    generated_at: 2026-05-05T13:22:29.734Z
   schematic:
-    src: /images/tech/peat-schematic.svg
+    src: /images/tech/peat-schematic.webp
     alt: Schematic diagram of Peat, highlighting peat supply, firekeeping, charcoal,
       material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 8149d55566a81af7d978ad9c4986da9fcd9da247c98ee095938a431fa10bc396
-    generated_at: 2026-05-05T01:28:32.260Z
+    generated_at: 2026-05-05T13:23:43.663Z
 ---
 
 ## Field briefing

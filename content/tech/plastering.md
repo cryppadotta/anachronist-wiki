@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/plastering-header.svg
+    src: /images/tech/plastering-header.webp
     alt: Field sketch of Plastering, highlighting plastering supply, clay,
       woodworking, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 81fbecd882d34dcb57872c543dcec94f29711ab361c9e03810463c1512e1239c
-    generated_at: 2026-05-05T01:28:32.264Z
+    generated_at: 2026-05-05T13:23:07.927Z
   schematic:
-    src: /images/tech/plastering-schematic.svg
+    src: /images/tech/plastering-schematic.webp
     alt: Schematic diagram of Plastering, highlighting plastering supply, clay,
       woodworking, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: b4d33721efbfd077918dd0d220c83b64ee73454f775372c84e558bf561a016c6
-    generated_at: 2026-05-05T01:28:32.264Z
+    generated_at: 2026-05-05T13:24:13.460Z
 ---
 
 ## Field briefing

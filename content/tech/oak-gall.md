@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/oak-gall-header.svg
+    src: /images/tech/oak-gall-header.webp
     alt: Field sketch of Oak Gall, highlighting oak gall supply, water, workshop
       records, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: c5f583f876966a1c8a4277dd50eb171d09ad01bf6859995f808c87b3b6e8db9a
-    generated_at: 2026-05-05T01:28:32.257Z
+    generated_at: 2026-05-05T13:22:06.607Z
   schematic:
-    src: /images/tech/oak-gall-schematic.svg
+    src: /images/tech/oak-gall-schematic.webp
     alt: Schematic diagram of Oak Gall, highlighting oak gall supply, water,
       workshop records, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 95a3d6424ae57853f78cc977cc45583281b871c61eacd07aef8f9bd83cea74c9
-    generated_at: 2026-05-05T01:28:32.258Z
+    generated_at: 2026-05-05T13:23:11.172Z
 ---
 
 ## Field briefing

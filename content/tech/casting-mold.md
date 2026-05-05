@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/casting-mold-header.svg
+    src: /images/tech/casting-mold-header.webp
     alt: Field sketch of Casting Mold, highlighting casting mold supply,
       firekeeping, charcoal, tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 57c69409b0fa764565bd0d3a9e2bedecbf0df1ff2c021c84754d7cca314a4345
-    generated_at: 2026-05-05T01:28:32.178Z
+    generated_at: 2026-05-05T13:12:19.892Z
   schematic:
-    src: /images/tech/casting-mold-schematic.svg
+    src: /images/tech/casting-mold-schematic.webp
     alt: Schematic diagram of Casting Mold, highlighting casting mold supply,
       firekeeping, charcoal, tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 366ef08a21570274749cc7ce4dae83c71d9880028caf98cacd98b5d14bf80d48
-    generated_at: 2026-05-05T01:28:32.179Z
+    generated_at: 2026-05-05T13:13:19.745Z
 ---
 
 ## Field briefing

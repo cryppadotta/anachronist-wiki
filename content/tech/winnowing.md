@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/winnowing-header.svg
+    src: /images/tech/winnowing-header.webp
     alt: Field sketch of Winnowing, highlighting winnowing supply, basketry, storage
       jar, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: a85642b3775d3419b8505b843442be42fd764f42157f415dd8ce279d58b428fd
-    generated_at: 2026-05-05T01:28:32.324Z
+    generated_at: 2026-05-05T13:33:12.337Z
   schematic:
-    src: /images/tech/winnowing-schematic.svg
+    src: /images/tech/winnowing-schematic.webp
     alt: Schematic diagram of Winnowing, highlighting winnowing supply, basketry,
       storage jar, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 0f3574ae325955dc8f4d4e6a1bccd1c92836b6cacdabd8ef2fe94f7a6caedc07
-    generated_at: 2026-05-05T01:28:32.325Z
+    generated_at: 2026-05-05T13:34:29.031Z
 ---
 
 ## Field briefing

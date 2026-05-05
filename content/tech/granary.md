@@ -50,23 +50,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/granary-header.svg
+    src: /images/tech/granary-header.webp
     alt: Field sketch of Granary, highlighting granary supply, basketry, storage
       jar, artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: c167b25bac017f1531b20b285f9872db33aca042658b958a944414236b28dfd7
-    generated_at: 2026-05-05T01:28:32.218Z
+    generated_at: 2026-05-05T13:16:25.284Z
   schematic:
-    src: /images/tech/granary-schematic.svg
+    src: /images/tech/granary-schematic.webp
     alt: Schematic diagram of Granary, highlighting granary supply, basketry,
       storage jar, artifact and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: d082f911a077221776bfd26fcf27e77ae6ca9e6ee3468a0c193093f497a31ce3
-    generated_at: 2026-05-05T01:28:32.218Z
+    generated_at: 2026-05-05T13:17:29.087Z
 ---
 
 ## Field briefing

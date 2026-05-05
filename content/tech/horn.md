@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/horn-header.svg
+    src: /images/tech/horn-header.webp
     alt: Field sketch of Horn, highlighting horn supply, leather, cutting edge,
       material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 8f9d1d51be46d71463397338fd1081841cbffafeafe9ab50b736dc25cbecc5a4
-    generated_at: 2026-05-05T01:28:32.233Z
+    generated_at: 2026-05-05T13:18:28.484Z
   schematic:
-    src: /images/tech/horn-schematic.svg
+    src: /images/tech/horn-schematic.webp
     alt: Schematic diagram of Horn, highlighting horn supply, leather, cutting edge,
       material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: b397ccc7f93453d6225d156ab0af5969505475d41447a8e7d77a884f29e2c38e
-    generated_at: 2026-05-05T01:28:32.233Z
+    generated_at: 2026-05-05T13:19:31.650Z
 ---
 
 ## Field briefing

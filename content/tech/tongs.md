@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/tongs-header.svg
+    src: /images/tech/tongs-header.webp
     alt: Field sketch of Tongs, highlighting tongs supply, firekeeping, charcoal,
       tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: eac1f96fce4006d303b3948f17f00272cb5f9f27811c11a03496b3b6114612db
-    generated_at: 2026-05-05T01:28:32.314Z
+    generated_at: 2026-05-05T13:31:31.030Z
   schematic:
-    src: /images/tech/tongs-schematic.svg
+    src: /images/tech/tongs-schematic.webp
     alt: Schematic diagram of Tongs, highlighting tongs supply, firekeeping,
       charcoal, tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 20a03b3d3047aae5c762422d8767c35c4a4cc1f39a81000b124dd1ead035d877
-    generated_at: 2026-05-05T01:28:32.314Z
+    generated_at: 2026-05-05T13:32:31.372Z
 ---
 
 ## Field briefing

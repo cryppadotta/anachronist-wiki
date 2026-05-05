@@ -50,23 +50,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/salt-header.svg
+    src: /images/tech/salt-header.webp
     alt: Field sketch of Salt, highlighting salt supply, water, storage jar,
       material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 006a7360bcc614f57c0526719feadaa65922a70a0199d0bb4c77f94aa96c271b
-    generated_at: 2026-05-05T01:28:32.277Z
+    generated_at: 2026-05-05T13:25:04.161Z
   schematic:
-    src: /images/tech/salt-schematic.svg
+    src: /images/tech/salt-schematic.webp
     alt: Schematic diagram of Salt, highlighting salt supply, water, storage jar,
       material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 58caaa61bf372449f35d95b50eb22fe8feeae9d6419958b3c726bfd0f27c22c3
-    generated_at: 2026-05-05T01:28:32.278Z
+    generated_at: 2026-05-05T13:26:14.969Z
 ---
 
 ## Field briefing

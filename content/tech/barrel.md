@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/barrel-header.svg
+    src: /images/tech/barrel-header.webp
     alt: Field sketch of Barrel, highlighting barrel supply, woodworking, water,
       artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 973bceee1c810b7a424cf85f96688163668b2737c3bc2127db78e8acbdf7464c
-    generated_at: 2026-05-05T01:28:32.150Z
+    generated_at: 2026-05-05T13:09:55.745Z
   schematic:
-    src: /images/tech/barrel-schematic.svg
+    src: /images/tech/barrel-schematic.webp
     alt: Schematic diagram of Barrel, highlighting barrel supply, woodworking,
       water, artifact and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 71b7bb2c69ba4124ded92d725c991cee64b930aa4083f5145f0a5229eca4d7f8
-    generated_at: 2026-05-05T01:28:32.151Z
+    generated_at: 2026-05-05T13:11:36.381Z
 ---
 
 ## Field briefing

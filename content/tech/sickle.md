@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/sickle-header.svg
+    src: /images/tech/sickle-header.webp
     alt: Field sketch of Sickle, highlighting sickle supply, woodworking, lashing,
       tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: c3b42c3900656d38949066a881472462f3f339e7b38c9f2540bf1ef20fb7f202
-    generated_at: 2026-05-05T01:28:32.288Z
+    generated_at: 2026-05-05T13:27:17.642Z
   schematic:
-    src: /images/tech/sickle-schematic.svg
+    src: /images/tech/sickle-schematic.webp
     alt: Schematic diagram of Sickle, highlighting sickle supply, woodworking,
       lashing, tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 332a9dd227108a19410278ae554fb807fa78ba7777e0b4c0044b132f87c4ea36
-    generated_at: 2026-05-05T01:28:32.289Z
+    generated_at: 2026-05-05T13:28:22.824Z
 ---
 
 ## Field briefing

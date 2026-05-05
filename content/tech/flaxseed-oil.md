@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/flaxseed-oil-header.svg
+    src: /images/tech/flaxseed-oil-header.webp
     alt: Field sketch of Flaxseed Oil, highlighting flaxseed oil supply, water,
       workshop records, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: aafb7a1fd468f09cef632303fddf954da6be5eb0583e3ae537dfbeecc89ee0f4
-    generated_at: 2026-05-05T01:28:32.212Z
+    generated_at: 2026-05-05T13:15:06.950Z
   schematic:
-    src: /images/tech/flaxseed-oil-schematic.svg
+    src: /images/tech/flaxseed-oil-schematic.webp
     alt: Schematic diagram of Flaxseed Oil, highlighting flaxseed oil supply, water,
       workshop records, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: fa76343515b9d18c87b9e7357dd8e07810749957e1cabe4759f9c92a96bea004
-    generated_at: 2026-05-05T01:28:32.213Z
+    generated_at: 2026-05-05T13:16:47.881Z
 ---
 
 ## Field briefing

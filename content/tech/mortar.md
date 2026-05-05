@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/mortar-header.svg
+    src: /images/tech/mortar-header.webp
     alt: Field sketch of Mortar, highlighting mortar supply, clay, kiln firing test,
       material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 9e3c00eff2e2c697c8dc16e4963ff57ce3a9485ed3d0f9de0170ea938cdff0e7
-    generated_at: 2026-05-05T01:28:32.252Z
+    generated_at: 2026-05-05T13:21:05.338Z
   schematic:
-    src: /images/tech/mortar-schematic.svg
+    src: /images/tech/mortar-schematic.webp
     alt: Schematic diagram of Mortar, highlighting mortar supply, clay, kiln firing
       test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 2645a81f1164a22651a2ab8288ac7df9e7732d57d801c6854ce497ca37915187
-    generated_at: 2026-05-05T01:28:32.252Z
+    generated_at: 2026-05-05T13:22:10.622Z
 ---
 
 ## Field briefing

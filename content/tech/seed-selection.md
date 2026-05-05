@@ -51,24 +51,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/seed-selection-header.svg
+    src: /images/tech/seed-selection-header.webp
     alt: Field sketch of Seed Selection, highlighting seed selection records and
       teaching stock, workshop records, seasonal calendar, institution.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 3c7075e3a452d801edd847c4c1fba4bf3510f95e7abca395e388b90407514554
-    generated_at: 2026-05-05T01:28:32.284Z
+    generated_at: 2026-05-05T13:26:46.562Z
   schematic:
-    src: /images/tech/seed-selection-schematic.svg
+    src: /images/tech/seed-selection-schematic.webp
     alt: Schematic diagram of Seed Selection, highlighting seed selection records
       and teaching stock, workshop records, seasonal calendar, institution and
       major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 7f96ef59bfa058aabb22dd4bd7838e81c91c0b14d2a5ef034e2be4f44190d51e
-    generated_at: 2026-05-05T01:28:32.284Z
+    generated_at: 2026-05-05T13:27:57.637Z
 ---
 
 ## Field briefing

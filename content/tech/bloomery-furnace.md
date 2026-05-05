@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/bloomery-furnace-header.svg
+    src: /images/tech/bloomery-furnace-header.webp
     alt: Field sketch of Bloomery Furnace, highlighting bloomery furnace supply,
       firekeeping, charcoal, tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 688a4b16c7d85c3164a097527740ece4ccc0f0b9c961b4d8e58fd7d2ebc92efb
-    generated_at: 2026-05-05T01:28:32.160Z
+    generated_at: 2026-05-05T13:10:14.727Z
   schematic:
-    src: /images/tech/bloomery-furnace-schematic.svg
+    src: /images/tech/bloomery-furnace-schematic.webp
     alt: Schematic diagram of Bloomery Furnace, highlighting bloomery furnace
       supply, firekeeping, charcoal, tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 955653ce9efae72012d62f6cf9b21a94039a75546df66290756de44c7259cef1
-    generated_at: 2026-05-05T01:28:32.161Z
+    generated_at: 2026-05-05T13:11:26.491Z
 ---
 
 ## Field briefing

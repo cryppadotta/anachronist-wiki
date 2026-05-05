@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/chain-header.svg
+    src: /images/tech/chain-header.webp
     alt: Field sketch of Chain, highlighting chain supply, wire drawing, anvil
       stone, artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: b70413cbfe0ed8dcb00da70e628ad266e6903122f6517a3c0c5002570f4cf5cc
-    generated_at: 2026-05-05T01:28:32.180Z
+    generated_at: 2026-05-05T13:12:30.260Z
   schematic:
-    src: /images/tech/chain-schematic.svg
+    src: /images/tech/chain-schematic.webp
     alt: Schematic diagram of Chain, highlighting chain supply, wire drawing, anvil
       stone, artifact and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 714a8f51ea7118e044f816ce8a8f82b680558f0ba39c4a504d6c469c7a5babe5
-    generated_at: 2026-05-05T01:28:32.180Z
+    generated_at: 2026-05-05T13:13:38.811Z
 ---
 
 ## Field briefing

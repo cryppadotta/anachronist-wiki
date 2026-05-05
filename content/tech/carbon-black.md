@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/carbon-black-header.svg
+    src: /images/tech/carbon-black-header.webp
     alt: Field sketch of Carbon Black, highlighting carbon black supply,
       firekeeping, charcoal, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: aa831e015270ecb4d9b99782d7f91cfb6b0234caa1acec8859fca4fba4c6ef99
-    generated_at: 2026-05-05T01:28:32.176Z
+    generated_at: 2026-05-05T13:12:12.816Z
   schematic:
-    src: /images/tech/carbon-black-schematic.svg
+    src: /images/tech/carbon-black-schematic.webp
     alt: Schematic diagram of Carbon Black, highlighting carbon black supply,
       firekeeping, charcoal, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 901952ca9f742408c0120bc0cff31a5928a7d29d95148fc91e87ae048091975c
-    generated_at: 2026-05-05T01:28:32.177Z
+    generated_at: 2026-05-05T13:13:19.732Z
 ---
 
 ## Field briefing

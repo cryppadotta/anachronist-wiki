@@ -50,23 +50,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/latch-header.svg
+    src: /images/tech/latch-header.webp
     alt: Field sketch of Latch, highlighting latch supply, wire drawing, anvil
       stone, artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 52029fda312d17e5c3415c6d42b24f5c25c92ff207c2f4e90dedec5f05c50d31
-    generated_at: 2026-05-05T01:28:32.238Z
+    generated_at: 2026-05-05T13:19:31.039Z
   schematic:
-    src: /images/tech/latch-schematic.svg
+    src: /images/tech/latch-schematic.webp
     alt: Schematic diagram of Latch, highlighting latch supply, wire drawing, anvil
       stone, artifact and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: a8b5f0f43c9d61a6d71ac9af1cf565a8a2ce2ee7c30983cc0b54a3d9271c443f
-    generated_at: 2026-05-05T01:28:32.239Z
+    generated_at: 2026-05-05T13:20:10.807Z
 ---
 
 ## Field briefing

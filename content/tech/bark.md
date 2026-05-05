@@ -50,23 +50,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/bark-header.svg
+    src: /images/tech/bark-header.webp
     alt: Field sketch of Bark, highlighting bark supply, timber, cutting edge,
       material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 992ba9fb389cd026febee8f4dd99e4632af6710c59a0d9b729eda1c668a9c4f3
-    generated_at: 2026-05-05T01:28:32.147Z
+    generated_at: 2026-05-05T13:07:56.158Z
   schematic:
-    src: /images/tech/bark-schematic.svg
+    src: /images/tech/bark-schematic.webp
     alt: Schematic diagram of Bark, highlighting bark supply, timber, cutting edge,
       material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: d1b2219317860bb9f3597f400cedadead8c074775ffbdb2da4f574df3a531690
-    generated_at: 2026-05-05T01:28:32.148Z
+    generated_at: 2026-05-05T13:08:58.509Z
 ---
 
 ## Field briefing

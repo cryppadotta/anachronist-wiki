@@ -51,24 +51,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/balance-scale-header.svg
+    src: /images/tech/balance-scale-header.webp
     alt: Field sketch of Balance Scale, highlighting balance scale reference
       materials, counting, measuring rod, measurement.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 5a68ef3bea1b79cf2515068128802282e308510faf79a3ceb17d6c1fcdb8f428
-    generated_at: 2026-05-05T01:28:32.143Z
+    generated_at: 2026-05-05T13:08:04.973Z
   schematic:
-    src: /images/tech/balance-scale-schematic.svg
+    src: /images/tech/balance-scale-schematic.webp
     alt: Schematic diagram of Balance Scale, highlighting balance scale reference
       materials, counting, measuring rod, measurement and major working
       relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 86fa8ce4bbf0d0d854c8aca2c528e3db15a32b067d54d689455c3ab32b4dfe9b
-    generated_at: 2026-05-05T01:28:32.144Z
+    generated_at: 2026-05-05T13:09:34.467Z
 ---
 
 ## Field briefing

@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/hardwood-header.svg
+    src: /images/tech/hardwood-header.webp
     alt: Field sketch of Hardwood, highlighting hardwood supply, timber, cutting
       edge, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 1ebc1702f83485cea2e89741727f713a231ed81571c760539d18185af10939d5
-    generated_at: 2026-05-05T01:28:32.222Z
+    generated_at: 2026-05-05T13:16:30.502Z
   schematic:
-    src: /images/tech/hardwood-schematic.svg
+    src: /images/tech/hardwood-schematic.webp
     alt: Schematic diagram of Hardwood, highlighting hardwood supply, timber,
       cutting edge, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: f281f29dac870e7ed4b07138e3db66f52fa8cf31515ce29f5373277a5cba0848
-    generated_at: 2026-05-05T01:28:32.222Z
+    generated_at: 2026-05-05T13:17:43.588Z
 ---
 
 ## Field briefing

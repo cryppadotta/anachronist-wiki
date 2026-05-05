@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/crucible-header.svg
+    src: /images/tech/crucible-header.webp
     alt: Field sketch of Crucible, highlighting crucible supply, firekeeping,
       charcoal, tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 3f3c6b7188cf2f9fe53ea1d65f71343b63dc1dba1c2af36fb855a2736a265d2d
-    generated_at: 2026-05-05T01:28:32.201Z
+    generated_at: 2026-05-05T13:14:16.698Z
   schematic:
-    src: /images/tech/crucible-schematic.svg
+    src: /images/tech/crucible-schematic.webp
     alt: Schematic diagram of Crucible, highlighting crucible supply, firekeeping,
       charcoal, tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: b3bfa7c43d14d18746652219f98d435e7e3ce520a6255449714dddf09afa9f1a
-    generated_at: 2026-05-05T01:28:32.201Z
+    generated_at: 2026-05-05T13:15:26.067Z
 ---
 
 ## Field briefing

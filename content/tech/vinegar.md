@@ -50,23 +50,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/vinegar-header.svg
+    src: /images/tech/vinegar-header.webp
     alt: Field sketch of Vinegar, highlighting vinegar supply, water, workshop
       records, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 734f9296d2ea1e24686ed1e2d5dc38d7e2027f32ac00c5e9d74d5cce3efe9f0a
-    generated_at: 2026-05-05T01:28:32.317Z
+    generated_at: 2026-05-05T13:31:32.116Z
   schematic:
-    src: /images/tech/vinegar-schematic.svg
+    src: /images/tech/vinegar-schematic.webp
     alt: Schematic diagram of Vinegar, highlighting vinegar supply, water, workshop
       records, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 16a57cb820ba65f8185f2ad977749444d9e8a0f8a5565dfea1332684a4deb57f
-    generated_at: 2026-05-05T01:28:32.318Z
+    generated_at: 2026-05-05T13:32:52.572Z
 ---
 
 ## Field briefing

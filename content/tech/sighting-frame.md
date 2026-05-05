@@ -52,24 +52,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/sighting-frame-header.svg
+    src: /images/tech/sighting-frame-header.webp
     alt: Field sketch of Sighting Frame, highlighting sighting frame reference
       materials, counting, measuring rod, measurement.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 71189d5be6431b6dcc70b95612198fe9fa9e0c50706739a424c58c10a252cf55
-    generated_at: 2026-05-05T01:28:32.290Z
+    generated_at: 2026-05-05T13:27:13.570Z
   schematic:
-    src: /images/tech/sighting-frame-schematic.svg
+    src: /images/tech/sighting-frame-schematic.webp
     alt: Schematic diagram of Sighting Frame, highlighting sighting frame reference
       materials, counting, measuring rod, measurement and major working
       relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 727aaa21a3f4a3dce06b8ea3c96487ae338d4eff71543735a4d30439e9472dff
-    generated_at: 2026-05-05T01:28:32.291Z
+    generated_at: 2026-05-05T13:28:16.399Z
 ---
 
 ## Field briefing

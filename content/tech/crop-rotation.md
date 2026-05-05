@@ -51,24 +51,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/crop-rotation-header.svg
+    src: /images/tech/crop-rotation-header.webp
     alt: Field sketch of Crop Rotation, highlighting crop rotation records and
       teaching stock, workshop records, seasonal calendar, institution.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 813102f2edc2ac53e2d9ac290a94705e161798d31967d2bb03fb2e72a10bd100
-    generated_at: 2026-05-05T01:28:32.198Z
+    generated_at: 2026-05-05T13:14:25.133Z
   schematic:
-    src: /images/tech/crop-rotation-schematic.svg
+    src: /images/tech/crop-rotation-schematic.webp
     alt: Schematic diagram of Crop Rotation, highlighting crop rotation records and
       teaching stock, workshop records, seasonal calendar, institution and major
       working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: aad64ff4af62794bdbf1d3f21de6f4642f4e657006e544186be2b93de136e184
-    generated_at: 2026-05-05T01:28:32.199Z
+    generated_at: 2026-05-05T13:15:34.409Z
 ---
 
 ## Field briefing

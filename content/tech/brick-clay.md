@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/brick-clay-header.svg
+    src: /images/tech/brick-clay-header.webp
     alt: Field sketch of Brick Clay, highlighting brick clay supply, clay, kiln
       firing test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 0af40ec8a957419e6a1eba6f5ed892bb7bbc4460a2bef4734076e214daa57146
-    generated_at: 2026-05-05T01:28:32.165Z
+    generated_at: 2026-05-05T13:10:11.925Z
   schematic:
-    src: /images/tech/brick-clay-schematic.svg
+    src: /images/tech/brick-clay-schematic.webp
     alt: Schematic diagram of Brick Clay, highlighting brick clay supply, clay, kiln
       firing test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 59259beab0dac92cbbb2d9c6187162218b1767d670f87058ebfaaf137ebb49f5
-    generated_at: 2026-05-05T01:28:32.165Z
+    generated_at: 2026-05-05T13:11:17.786Z
 ---
 
 ## Field briefing

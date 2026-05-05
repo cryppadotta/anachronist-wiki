@@ -53,23 +53,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/lead-ore-header.svg
+    src: /images/tech/lead-ore-header.webp
     alt: Field sketch of Lead Ore, highlighting lead ore supply, stone, scratch
       hardness test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: f10c2254e42f5bf6d3be9e0db6a4aadb7c023f00848718afbd2dda893e64506b
-    generated_at: 2026-05-05T01:28:32.240Z
+    generated_at: 2026-05-05T13:19:48.116Z
   schematic:
-    src: /images/tech/lead-ore-schematic.svg
+    src: /images/tech/lead-ore-schematic.webp
     alt: Schematic diagram of Lead Ore, highlighting lead ore supply, stone, scratch
       hardness test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 5b192f4e3c7fb63f446982db89b2b25298c15a9fe194e1bc3ed236e3d14bfdad
-    generated_at: 2026-05-05T01:28:32.240Z
+    generated_at: 2026-05-05T13:20:46.458Z
 ---
 
 ## Field briefing

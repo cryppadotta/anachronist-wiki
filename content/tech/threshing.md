@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/threshing-header.svg
+    src: /images/tech/threshing-header.webp
     alt: Field sketch of Threshing, highlighting threshing supply, basketry, storage
       jar, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: e5c1b5d176bbd3dce898f71f8bef5b061fecf3ff07fcd75716f876b1a7da571c
-    generated_at: 2026-05-05T01:28:32.308Z
+    generated_at: 2026-05-05T13:31:04.423Z
   schematic:
-    src: /images/tech/threshing-schematic.svg
+    src: /images/tech/threshing-schematic.webp
     alt: Schematic diagram of Threshing, highlighting threshing supply, basketry,
       storage jar, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: a493494d9a30aaa63d13d6ba57e7739fdaeb5e4705496967a2a6bb229b6c405d
-    generated_at: 2026-05-05T01:28:32.309Z
+    generated_at: 2026-05-05T13:32:16.583Z
 ---
 
 ## Field briefing

@@ -50,23 +50,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/soot-header.svg
+    src: /images/tech/soot-header.webp
     alt: Field sketch of Soot, highlighting soot supply, firekeeping, charcoal,
       material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 9919dd8040ff846937c4e4deeef20f2f1ba84d79b8f92bd08521c9c0caed0866
-    generated_at: 2026-05-05T01:28:32.296Z
+    generated_at: 2026-05-05T13:28:53.314Z
   schematic:
-    src: /images/tech/soot-schematic.svg
+    src: /images/tech/soot-schematic.webp
     alt: Schematic diagram of Soot, highlighting soot supply, firekeeping, charcoal,
       material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 42994d143d81cfef89433de2956f8832f5ea1527e69177ac906409ce8160dbe7
-    generated_at: 2026-05-05T01:28:32.297Z
+    generated_at: 2026-05-05T13:29:58.935Z
 ---
 
 ## Field briefing

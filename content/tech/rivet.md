@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/rivet-header.svg
+    src: /images/tech/rivet-header.webp
     alt: Field sketch of Rivet, highlighting rivet supply, wire drawing, anvil
       stone, artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 7db4c85569233a93192ca6004d3af72e640e974363d9cda398c66d94d91f3205
-    generated_at: 2026-05-05T01:28:32.272Z
+    generated_at: 2026-05-05T13:24:40.898Z
   schematic:
-    src: /images/tech/rivet-schematic.svg
+    src: /images/tech/rivet-schematic.webp
     alt: Schematic diagram of Rivet, highlighting rivet supply, wire drawing, anvil
       stone, artifact and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 9fd954be5b760907df3c7569ea6ddeb1ecb1ed8561b614c46690264bad46cdc8
-    generated_at: 2026-05-05T01:28:32.273Z
+    generated_at: 2026-05-05T13:26:19.722Z
 ---
 
 ## Field briefing

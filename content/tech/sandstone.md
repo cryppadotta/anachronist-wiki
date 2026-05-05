@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/sandstone-header.svg
+    src: /images/tech/sandstone-header.webp
     alt: Field sketch of Sandstone, highlighting sandstone supply, stone, scratch
       hardness test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 06c21b127890681f7a003237ea918a70dba8969129e38e10c3d70379c3e86dc6
-    generated_at: 2026-05-05T01:28:32.280Z
+    generated_at: 2026-05-05T13:26:15.109Z
   schematic:
-    src: /images/tech/sandstone-schematic.svg
+    src: /images/tech/sandstone-schematic.webp
     alt: Schematic diagram of Sandstone, highlighting sandstone supply, stone,
       scratch hardness test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 084882a861536a59b0152fe5eeee66f750fcf4a6aef86b3512fcb8003f529614
-    generated_at: 2026-05-05T01:28:32.281Z
+    generated_at: 2026-05-05T13:27:21.616Z
 ---
 
 ## Field briefing

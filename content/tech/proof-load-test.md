@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/proof-load-test-header.svg
+    src: /images/tech/proof-load-test-header.webp
     alt: Field sketch of Proof Load Test, highlighting proof load test samples,
       measuring rod, workshop records, test.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 4cc1cde6454acda2d217ecfd714f7b64879175897e5231dcbbd026e1e09e3769
-    generated_at: 2026-05-05T01:28:32.269Z
+    generated_at: 2026-05-05T13:24:38.367Z
   schematic:
-    src: /images/tech/proof-load-test-schematic.svg
+    src: /images/tech/proof-load-test-schematic.webp
     alt: Schematic diagram of Proof Load Test, highlighting proof load test samples,
       measuring rod, workshop records, test and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 6cbfe8beaf3ad66315a466474b7484ba4ac0b052d2589a36a41b1e69fed3f01c
-    generated_at: 2026-05-05T01:28:32.269Z
+    generated_at: 2026-05-05T13:25:39.167Z
 ---
 
 ## Field briefing

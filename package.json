@@ -19,6 +19,7 @@
     "test:restricted-content": "node --experimental-strip-types scripts/restricted-content-regression.ts",
     "build:graph": "node --experimental-strip-types scripts/build-graph.ts",
     "backfill:images": "node --experimental-strip-types scripts/generate-images.ts --all",
+    "backfill:images:openai": "node --experimental-strip-types scripts/generate-images.ts --all --provider openai --model gpt-image-2",
     "preview": "astro preview",
     "pages:build": "npm run build"
   },

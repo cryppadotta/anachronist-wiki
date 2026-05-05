@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/dyeing-header.svg
+    src: /images/tech/dyeing-header.webp
     alt: Field sketch of Dyeing, highlighting dyeing supply, water, public safety,
       process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 643ad0fd2db0f915b4bcacb632e2eca14b5d4585dac099fae676cdbb92f8912f
-    generated_at: 2026-05-05T01:28:32.206Z
+    generated_at: 2026-05-05T13:14:25.563Z
   schematic:
-    src: /images/tech/dyeing-schematic.svg
+    src: /images/tech/dyeing-schematic.webp
     alt: Schematic diagram of Dyeing, highlighting dyeing supply, water, public
       safety, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 29f72ac10b14e76902e3894b96628dcff83b12fd6fe3d13bb7b984aeadf05d27
-    generated_at: 2026-05-05T01:28:32.207Z
+    generated_at: 2026-05-05T13:15:40.088Z
 ---
 
 ## Field briefing

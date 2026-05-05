@@ -52,24 +52,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/drainage-ditch-header.svg
+    src: /images/tech/drainage-ditch-header.webp
     alt: Field sketch of Drainage Ditch, highlighting drainage ditch supply,
       measuring rod, workshop organization, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 970029fb86a7166c0c4fd8dfc9c6b05d2fbfd6d5a29b4e3dd870c4438fae6fe8
-    generated_at: 2026-05-05T01:28:32.203Z
+    generated_at: 2026-05-05T13:14:06.369Z
   schematic:
-    src: /images/tech/drainage-ditch-schematic.svg
+    src: /images/tech/drainage-ditch-schematic.webp
     alt: Schematic diagram of Drainage Ditch, highlighting drainage ditch supply,
       measuring rod, workshop organization, process and major working
       relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 32d02d67bb4803b4d9c1cb25c7daf5de9e6f0693d39ff8b282ef19bb0567afc5
-    generated_at: 2026-05-05T01:28:32.204Z
+    generated_at: 2026-05-05T13:15:11.094Z
 ---
 
 ## Field briefing

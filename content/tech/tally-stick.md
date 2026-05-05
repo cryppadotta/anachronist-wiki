@@ -51,24 +51,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/tally-stick-header.svg
+    src: /images/tech/tally-stick-header.webp
     alt: Field sketch of Tally Stick, highlighting tally stick reference materials,
       counting, measuring rod, measurement.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 1cd82ce10e8cc5e025e882a0f94ebbf2ab810b20a808d6a56c1b9c425ee845db
-    generated_at: 2026-05-05T01:28:32.302Z
+    generated_at: 2026-05-05T13:29:19.936Z
   schematic:
-    src: /images/tech/tally-stick-schematic.svg
+    src: /images/tech/tally-stick-schematic.webp
     alt: Schematic diagram of Tally Stick, highlighting tally stick reference
       materials, counting, measuring rod, measurement and major working
       relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: e1ef1b2009501b3525efdec0f6d1b040155f2b7cfd3aee9af177e1cc276bfe5e
-    generated_at: 2026-05-05T01:28:32.302Z
+    generated_at: 2026-05-05T13:30:31.701Z
 ---
 
 ## Field briefing

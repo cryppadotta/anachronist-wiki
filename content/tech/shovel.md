@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/shovel-header.svg
+    src: /images/tech/shovel-header.webp
     alt: Field sketch of Shovel, highlighting shovel supply, woodworking, lashing,
       tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 1a1871fb41fe213cd608b028cfe1eb731ed00edc4f376c2c91c275287ab6a4e0
-    generated_at: 2026-05-05T01:28:32.287Z
+    generated_at: 2026-05-05T13:27:08.137Z
   schematic:
-    src: /images/tech/shovel-schematic.svg
+    src: /images/tech/shovel-schematic.webp
     alt: Schematic diagram of Shovel, highlighting shovel supply, woodworking,
       lashing, tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 2a41f0f9a67f6628e247737cef96b5db60fc9753e3a8e9db9e5872953bdb3d69
-    generated_at: 2026-05-05T01:28:32.287Z
+    generated_at: 2026-05-05T13:28:11.213Z
 ---
 
 ## Field briefing

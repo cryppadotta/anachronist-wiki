@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/sand-header.svg
+    src: /images/tech/sand-header.webp
     alt: Field sketch of Sand, highlighting sand supply, stone, scratch hardness
       test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: bd3a7de8316af200e841cba96771b3eff959c0f40afe3e129c7a1969d314a69f
-    generated_at: 2026-05-05T01:28:32.279Z
+    generated_at: 2026-05-05T13:25:56.693Z
   schematic:
-    src: /images/tech/sand-schematic.svg
+    src: /images/tech/sand-schematic.webp
     alt: Schematic diagram of Sand, highlighting sand supply, stone, scratch
       hardness test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 8e1584c27934bf3e6016db9592fccb858a68940779675c9a7c660ebb51cc7065
-    generated_at: 2026-05-05T01:28:32.279Z
+    generated_at: 2026-05-05T13:26:59.921Z
 ---
 
 ## Field briefing

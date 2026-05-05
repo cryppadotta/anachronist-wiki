@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/animal-fat-header.svg
+    src: /images/tech/animal-fat-header.webp
     alt: Field sketch of Animal Fat, highlighting animal fat supply, leather,
       cutting edge, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 14149b9d3f7aeb89f5aa563da6d0efb684d383abff9436dfa94de2720372f6c0
-    generated_at: 2026-05-05T01:28:32.131Z
+    generated_at: 2026-05-05T13:07:51.016Z
   schematic:
-    src: /images/tech/animal-fat-schematic.svg
+    src: /images/tech/animal-fat-schematic.webp
     alt: Schematic diagram of Animal Fat, highlighting animal fat supply, leather,
       cutting edge, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 3773814442faa942c1647966f3f2380289f5a252a0833eb768dd26e3c6fcb6c9
-    generated_at: 2026-05-05T01:28:32.132Z
+    generated_at: 2026-05-05T13:09:07.660Z
 ---
 
 ## Field briefing

@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/rawhide-header.svg
+    src: /images/tech/rawhide-header.webp
     alt: Field sketch of Rawhide, highlighting rawhide supply, leather, cutting
       edge, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 0fabf57e478f0e88703a8122619051f9d189c7184359b4b96e17dc64122583b2
-    generated_at: 2026-05-05T01:28:32.270Z
+    generated_at: 2026-05-05T13:24:20.835Z
   schematic:
-    src: /images/tech/rawhide-schematic.svg
+    src: /images/tech/rawhide-schematic.webp
     alt: Schematic diagram of Rawhide, highlighting rawhide supply, leather, cutting
       edge, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: ca1aaa8a4ceaa4e71cebfa64dc36657f96b5747058eb6f3b8ed49fb03f220729
-    generated_at: 2026-05-05T01:28:32.271Z
+    generated_at: 2026-05-05T13:25:35.229Z
 ---
 
 ## Field briefing

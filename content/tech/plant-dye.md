@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/plant-dye-header.svg
+    src: /images/tech/plant-dye-header.webp
     alt: Field sketch of Plant Dye, highlighting plant dye supply, water, workshop
       records, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: af5f239a140a30a96ec7ee2b6eca3d526a067836a68fd17ee65f9626b0fae28a
-    generated_at: 2026-05-05T01:28:32.261Z
+    generated_at: 2026-05-05T13:22:39.489Z
   schematic:
-    src: /images/tech/plant-dye-schematic.svg
+    src: /images/tech/plant-dye-schematic.webp
     alt: Schematic diagram of Plant Dye, highlighting plant dye supply, water,
       workshop records, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: e15e2548d197fe826da111593bd8048ff1b87e99f614de2830504deaf247b4ac
-    generated_at: 2026-05-05T01:28:32.261Z
+    generated_at: 2026-05-05T13:24:43.289Z
 ---
 
 ## Field briefing

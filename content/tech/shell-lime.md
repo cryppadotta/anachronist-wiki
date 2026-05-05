@@ -53,23 +53,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/shell-lime-header.svg
+    src: /images/tech/shell-lime-header.webp
     alt: Field sketch of Shell Lime, highlighting shell lime supply, stone, scratch
       hardness test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: c075244bc61d04fb4bab0dbd3deedb96553f62c4285bdd2447cd50878c659fa8
-    generated_at: 2026-05-05T01:28:32.285Z
+    generated_at: 2026-05-05T13:27:08.223Z
   schematic:
-    src: /images/tech/shell-lime-schematic.svg
+    src: /images/tech/shell-lime-schematic.webp
     alt: Schematic diagram of Shell Lime, highlighting shell lime supply, stone,
       scratch hardness test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 12e9ab57ccf534abe012e7cccedc50d7cb463fc4a50608364f4d26a430b9a3d7
-    generated_at: 2026-05-05T01:28:32.286Z
+    generated_at: 2026-05-05T13:28:23.374Z
 ---
 
 ## Field briefing

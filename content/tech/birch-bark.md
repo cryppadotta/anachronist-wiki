@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/birch-bark-header.svg
+    src: /images/tech/birch-bark-header.webp
     alt: Field sketch of Birch Bark, highlighting birch bark supply, timber, cutting
       edge, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: ac54fef1bfc8e9d12b6e50ffea88bc023ca5d252772909df9d343bef61f5f3fa
-    generated_at: 2026-05-05T01:28:32.157Z
+    generated_at: 2026-05-05T13:09:59.133Z
   schematic:
-    src: /images/tech/birch-bark-schematic.svg
+    src: /images/tech/birch-bark-schematic.webp
     alt: Schematic diagram of Birch Bark, highlighting birch bark supply, timber,
       cutting edge, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: adecdd2669a1cb28978e664e06c9bd1bf6b99d679565c70e679ca6f07ab87dc9
-    generated_at: 2026-05-05T01:28:32.158Z
+    generated_at: 2026-05-05T13:11:07.914Z
 ---
 
 ## Field briefing

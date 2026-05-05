@@ -50,23 +50,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/animal-harness-header.svg
+    src: /images/tech/animal-harness-header.webp
     alt: Field sketch of Animal Harness, highlighting animal harness supply,
       woodworking, lashing, tool.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: eb78440fe3d90cdd34c07e2e6df3384c7be6bc5ba835173f8f88531fd7a68b2e
-    generated_at: 2026-05-05T01:28:32.135Z
+    generated_at: 2026-05-05T13:08:03.012Z
   schematic:
-    src: /images/tech/animal-harness-schematic.svg
+    src: /images/tech/animal-harness-schematic.webp
     alt: Schematic diagram of Animal Harness, highlighting animal harness supply,
       woodworking, lashing, tool and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 589d6d2a2a5c9adab32174e760bc68703db40bcc54caa1fc2cf3f7b64bf68e13
-    generated_at: 2026-05-05T01:28:32.136Z
+    generated_at: 2026-05-05T13:09:19.487Z
 ---
 
 ## Field briefing

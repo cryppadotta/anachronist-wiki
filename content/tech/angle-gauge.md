@@ -51,24 +51,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/angle-gauge-header.svg
+    src: /images/tech/angle-gauge-header.webp
     alt: Field sketch of Angle Gauge, highlighting angle gauge reference materials,
       counting, measuring rod, measurement.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 938b9564a2c93fdaea08bfeab976271ab78005fc7162c9de46dd5a6e08279ef6
-    generated_at: 2026-05-05T01:28:32.126Z
+    generated_at: 2026-05-05T13:07:59.885Z
   schematic:
-    src: /images/tech/angle-gauge-schematic.svg
+    src: /images/tech/angle-gauge-schematic.webp
     alt: Schematic diagram of Angle Gauge, highlighting angle gauge reference
       materials, counting, measuring rod, measurement and major working
       relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 1b609f3f4f0ee7885748fdac21ea0478811664a781b69bc98135b23667c99d86
-    generated_at: 2026-05-05T01:28:32.128Z
+    generated_at: 2026-05-05T13:09:06.158Z
 ---
 
 ## Field briefing

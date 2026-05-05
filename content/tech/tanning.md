@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/tanning-header.svg
+    src: /images/tech/tanning-header.webp
     alt: Field sketch of Tanning, highlighting tanning supply, water, public safety,
       process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: cbea8f0aef7c922249bf3e8eacbb73b78dccf4e5b702e5f062b0e63b32f061bf
-    generated_at: 2026-05-05T01:28:32.305Z
+    generated_at: 2026-05-05T13:29:59.649Z
   schematic:
-    src: /images/tech/tanning-schematic.svg
+    src: /images/tech/tanning-schematic.webp
     alt: Schematic diagram of Tanning, highlighting tanning supply, water, public
       safety, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 8e07519d2e639f0d8b93fadd753d6310789c8d208face53cbd866111612b8cbd
-    generated_at: 2026-05-05T01:28:32.305Z
+    generated_at: 2026-05-05T13:31:03.703Z
 ---
 
 ## Field briefing

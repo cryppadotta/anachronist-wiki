@@ -53,24 +53,24 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/bridge-trestle-header.svg
+    src: /images/tech/bridge-trestle-header.webp
     alt: Field sketch of Bridge Trestle, highlighting bridge trestle supply,
       measuring rod, workshop organization, artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 99e38bb448d480dda457fa56d540ab9c5f030f21e707e11e59f4badd0ca7d655
-    generated_at: 2026-05-05T01:28:32.170Z
+    generated_at: 2026-05-05T13:10:39.342Z
   schematic:
-    src: /images/tech/bridge-trestle-schematic.svg
+    src: /images/tech/bridge-trestle-schematic.webp
     alt: Schematic diagram of Bridge Trestle, highlighting bridge trestle supply,
       measuring rod, workshop organization, artifact and major working
       relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 348e32383f481d180f0ef36234408bd4df418c92fb19752fa6c347810a8fb2c8
-    generated_at: 2026-05-05T01:28:32.171Z
+    generated_at: 2026-05-05T13:11:47.935Z
 ---
 
 ## Field briefing

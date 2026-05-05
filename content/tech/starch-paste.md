@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/starch-paste-header.svg
+    src: /images/tech/starch-paste-header.webp
     alt: Field sketch of Starch Paste, highlighting starch paste supply, water,
       workshop records, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 107724136a241c2ac3afe379be27bc4b497d83a821b1f9f2ff8ab0523c810269
-    generated_at: 2026-05-05T01:28:32.299Z
+    generated_at: 2026-05-05T13:29:06.351Z
   schematic:
-    src: /images/tech/starch-paste-schematic.svg
+    src: /images/tech/starch-paste-schematic.webp
     alt: Schematic diagram of Starch Paste, highlighting starch paste supply, water,
       workshop records, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 4ee1783bd0473ff428a008866abf7827c6e3d7e4c1d8364da47bbb228be6dd5e
-    generated_at: 2026-05-05T01:28:32.299Z
+    generated_at: 2026-05-05T13:30:17.756Z
 ---
 
 ## Field briefing

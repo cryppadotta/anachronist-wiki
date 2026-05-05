@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/tile-making-header.svg
+    src: /images/tech/tile-making-header.webp
     alt: Field sketch of Tile Making, highlighting tile making supply, clay,
       woodworking, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: bcc71c07cf43f88421c200acb25900ce8e4e4cfb9fee5e45e2459a5312bc46aa
-    generated_at: 2026-05-05T01:28:32.310Z
+    generated_at: 2026-05-05T13:31:02.862Z
   schematic:
-    src: /images/tech/tile-making-schematic.svg
+    src: /images/tech/tile-making-schematic.webp
     alt: Schematic diagram of Tile Making, highlighting tile making supply, clay,
       woodworking, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: b483cb9b159584ce539062d17a0db9decf66cec04ded7d979780f0bd8e9c6697
-    generated_at: 2026-05-05T01:28:32.311Z
+    generated_at: 2026-05-05T13:32:11.927Z
 ---
 
 ## Field briefing

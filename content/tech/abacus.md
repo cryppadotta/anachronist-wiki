@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/abacus-header.svg
+    src: /images/tech/abacus-header.webp
     alt: Field sketch of Abacus, highlighting abacus reference materials, counting,
       measuring rod, measurement.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: f4ded6af0986163735274c22c7bdca462fa46043d623fe20c5d623a8ae88f8d7
-    generated_at: 2026-05-05T01:28:32.110Z
+    generated_at: 2026-05-05T13:05:24.079Z
   schematic:
-    src: /images/tech/abacus-schematic.svg
+    src: /images/tech/abacus-schematic.webp
     alt: Schematic diagram of Abacus, highlighting abacus reference materials,
       counting, measuring rod, measurement and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 7634525f73bc9d40b263b7cd64352845e4275723c3db4e81c79c0c98ff751450
-    generated_at: 2026-05-05T01:28:32.112Z
+    generated_at: 2026-05-05T13:06:41.270Z
 ---
 
 ## Field briefing

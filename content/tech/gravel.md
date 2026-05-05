@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/gravel-header.svg
+    src: /images/tech/gravel-header.webp
     alt: Field sketch of Gravel, highlighting gravel supply, stone, scratch hardness
       test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 69cbdf8cc62955ce467c172a1d2fb788bfbb848d0a6d7a87321060b6ae24431f
-    generated_at: 2026-05-05T01:28:32.219Z
+    generated_at: 2026-05-05T13:16:43.660Z
   schematic:
-    src: /images/tech/gravel-schematic.svg
+    src: /images/tech/gravel-schematic.webp
     alt: Schematic diagram of Gravel, highlighting gravel supply, stone, scratch
       hardness test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 3521d55b84fb36c560acb3f6cdac764d84fd68714c3da2133be255ab0f6b8e0c
-    generated_at: 2026-05-05T01:28:32.220Z
+    generated_at: 2026-05-05T13:17:50.288Z
 ---
 
 ## Field briefing

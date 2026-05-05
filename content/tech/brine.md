@@ -50,23 +50,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/brine-header.svg
+    src: /images/tech/brine-header.webp
     alt: Field sketch of Brine, highlighting brine supply, water, storage jar,
       material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 245626bcc9519c6bf2723e03a1cb6a6f8515e6fabb40641321ffa9592945fea7
-    generated_at: 2026-05-05T01:28:32.172Z
+    generated_at: 2026-05-05T13:12:07.283Z
   schematic:
-    src: /images/tech/brine-schematic.svg
+    src: /images/tech/brine-schematic.webp
     alt: Schematic diagram of Brine, highlighting brine supply, water, storage jar,
       material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 4f7248cb89d106cf84723e43c4382fbcf6cb16de57ddd727f305b7f48c033be4
-    generated_at: 2026-05-05T01:28:32.172Z
+    generated_at: 2026-05-05T13:13:11.687Z
 ---
 
 ## Field briefing

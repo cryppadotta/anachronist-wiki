@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/plaster-header.svg
+    src: /images/tech/plaster-header.webp
     alt: Field sketch of Plaster, highlighting plaster supply, clay, kiln firing
       test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: c831b4c6ebe0a2a1be69c57fc4efa660085ecc9d94ab5e16968a972445cdea45
-    generated_at: 2026-05-05T01:28:32.262Z
+    generated_at: 2026-05-05T13:23:08.118Z
   schematic:
-    src: /images/tech/plaster-schematic.svg
+    src: /images/tech/plaster-schematic.webp
     alt: Schematic diagram of Plaster, highlighting plaster supply, clay, kiln
       firing test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 10f40d32c4369078200207523f7ebbd0318d41365bf01c1371fa57b2c04b1f84
-    generated_at: 2026-05-05T01:28:32.263Z
+    generated_at: 2026-05-05T13:24:11.677Z
 ---
 
 ## Field briefing

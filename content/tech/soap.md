@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/soap-header.svg
+    src: /images/tech/soap-header.webp
     alt: Field sketch of Soap, highlighting soap supply, water, public safety,
       process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: eeda87799f9606e36012bc0d23b6a19dd6d842d2d1bebac0105849b60d030a1e
-    generated_at: 2026-05-05T01:28:32.293Z
+    generated_at: 2026-05-05T13:28:26.680Z
   schematic:
-    src: /images/tech/soap-schematic.svg
+    src: /images/tech/soap-schematic.webp
     alt: Schematic diagram of Soap, highlighting soap supply, water, public safety,
       process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 4abb32404010b8f2049abc536b42d7371c3e4bfde4437192145199ebe6e30917
-    generated_at: 2026-05-05T01:28:32.294Z
+    generated_at: 2026-05-05T13:29:25.796Z
 ---
 
 ## Field briefing

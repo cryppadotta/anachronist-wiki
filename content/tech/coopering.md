@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/coopering-header.svg
+    src: /images/tech/coopering-header.webp
     alt: Field sketch of Coopering, highlighting coopering supply, woodworking,
       water, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 3d60fb4a078345db7d9f919c0d0a719be48967958513c5ea51c8d0081d1fca54
-    generated_at: 2026-05-05T01:28:32.191Z
+    generated_at: 2026-05-05T13:12:42.396Z
   schematic:
-    src: /images/tech/coopering-schematic.svg
+    src: /images/tech/coopering-schematic.webp
     alt: Schematic diagram of Coopering, highlighting coopering supply, woodworking,
       water, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: e0aa56dfbf686758136c4d3cc0555bb92b9f5041e3a6970944e38d820116194b
-    generated_at: 2026-05-05T01:28:32.193Z
+    generated_at: 2026-05-05T13:13:47.840Z
 ---
 
 ## Field briefing

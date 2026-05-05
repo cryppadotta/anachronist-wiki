@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/softwood-header.svg
+    src: /images/tech/softwood-header.webp
     alt: Field sketch of Softwood, highlighting softwood supply, timber, cutting
       edge, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: ed1cd09ead1fa24628d9e27ee9136bc844ebe52983ebb020ae15c238420f488d
-    generated_at: 2026-05-05T01:28:32.295Z
+    generated_at: 2026-05-05T13:28:59.391Z
   schematic:
-    src: /images/tech/softwood-schematic.svg
+    src: /images/tech/softwood-schematic.webp
     alt: Schematic diagram of Softwood, highlighting softwood supply, timber,
       cutting edge, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 8869bd223379a26324df585a7c98922a84a40c8b6294a311e188f18d6ebf67f6
-    generated_at: 2026-05-05T01:28:32.295Z
+    generated_at: 2026-05-05T13:30:07.987Z
 ---
 
 ## Field briefing

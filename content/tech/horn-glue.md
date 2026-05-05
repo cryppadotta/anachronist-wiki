@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/horn-glue-header.svg
+    src: /images/tech/horn-glue-header.webp
     alt: Field sketch of Horn Glue, highlighting horn glue supply, leather, cutting
       edge, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: caf3b5f4dade4ca85f4dfa86caa6d78299cc0f32566fb217aa6925f378351f1a
-    generated_at: 2026-05-05T01:28:32.231Z
+    generated_at: 2026-05-05T13:18:09.200Z
   schematic:
-    src: /images/tech/horn-glue-schematic.svg
+    src: /images/tech/horn-glue-schematic.webp
     alt: Schematic diagram of Horn Glue, highlighting horn glue supply, leather,
       cutting edge, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 952de260b063eb1b1ee75e524af5532f93f6d89d05e0497e1972fed874892fac
-    generated_at: 2026-05-05T01:28:32.231Z
+    generated_at: 2026-05-05T13:19:14.176Z
 ---
 
 ## Field briefing

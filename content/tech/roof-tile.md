@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/roof-tile-header.svg
+    src: /images/tech/roof-tile-header.webp
     alt: Field sketch of Roof Tile, highlighting roof tile supply, clay, kiln firing
       test, artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 8eaaffc4b0665898ba0bb40d95ead254ce9b65b3982bb2ec26cca9b87029f3dd
-    generated_at: 2026-05-05T01:28:32.276Z
+    generated_at: 2026-05-05T13:25:06.575Z
   schematic:
-    src: /images/tech/roof-tile-schematic.svg
+    src: /images/tech/roof-tile-schematic.webp
     alt: Schematic diagram of Roof Tile, highlighting roof tile supply, clay, kiln
       firing test, artifact and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 3e7d9212940c6483bab4659d12218d50f321a4fbcd95514da3700739f608048a
-    generated_at: 2026-05-05T01:28:32.276Z
+    generated_at: 2026-05-05T13:26:07.944Z
 ---
 
 ## Field briefing

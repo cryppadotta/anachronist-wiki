@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/tin-ore-header.svg
+    src: /images/tech/tin-ore-header.webp
     alt: Field sketch of Tin Ore, highlighting tin ore supply, stone, scratch
       hardness test, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: cb1ccf39dd645dcf92a22c5a597894b83ba868392ec307aa16c6fdf658a3d780
-    generated_at: 2026-05-05T01:28:32.312Z
+    generated_at: 2026-05-05T13:31:17.258Z
   schematic:
-    src: /images/tech/tin-ore-schematic.svg
+    src: /images/tech/tin-ore-schematic.webp
     alt: Schematic diagram of Tin Ore, highlighting tin ore supply, stone, scratch
       hardness test, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 996f1bd532f6ef01ecf3e4b648b3c52b58e2135d35181ab88dbcb208f947e10b
-    generated_at: 2026-05-05T01:28:32.313Z
+    generated_at: 2026-05-05T13:32:17.497Z
 ---
 
 ## Field briefing

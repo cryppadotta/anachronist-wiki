@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/hoof-header.svg
+    src: /images/tech/hoof-header.webp
     alt: Field sketch of Hoof, highlighting hoof supply, leather, cutting edge,
       material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 240339a0ac285268e009cf6d4cb8cdddaced2eeb96d0443a7cf9c1bf7485cb20
-    generated_at: 2026-05-05T01:28:32.229Z
+    generated_at: 2026-05-05T13:18:06.619Z
   schematic:
-    src: /images/tech/hoof-schematic.svg
+    src: /images/tech/hoof-schematic.webp
     alt: Schematic diagram of Hoof, highlighting hoof supply, leather, cutting edge,
       material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: b37f0a99da9c49f66a3cdddd0c78ffd6a340a5daa4087be0b1ec2e70d8399483
-    generated_at: 2026-05-05T01:28:32.229Z
+    generated_at: 2026-05-05T13:19:14.029Z
 ---
 
 ## Field briefing

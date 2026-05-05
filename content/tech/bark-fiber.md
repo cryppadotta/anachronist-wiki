@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/bark-fiber-header.svg
+    src: /images/tech/bark-fiber-header.webp
     alt: Field sketch of Bark Fiber, highlighting bark fiber supply, timber, cutting
       edge, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 8cb4f982cddb53236b5694fa1b2e49f413c5fa66fda55f0929a7ac233c7b906a
-    generated_at: 2026-05-05T01:28:32.145Z
+    generated_at: 2026-05-05T13:07:58.735Z
   schematic:
-    src: /images/tech/bark-fiber-schematic.svg
+    src: /images/tech/bark-fiber-schematic.webp
     alt: Schematic diagram of Bark Fiber, highlighting bark fiber supply, timber,
       cutting edge, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 78bd25fafc80ecb9e629c6c52920ae6b5536ee19c2d0c195490b6cc95576e273
-    generated_at: 2026-05-05T01:28:32.146Z
+    generated_at: 2026-05-05T13:09:13.314Z
 ---
 
 ## Field briefing

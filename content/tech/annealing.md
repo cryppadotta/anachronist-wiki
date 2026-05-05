@@ -52,23 +52,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/annealing-header.svg
+    src: /images/tech/annealing-header.webp
     alt: Field sketch of Annealing, highlighting annealing supply, firekeeping,
       charcoal, process.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: d1ccdcafe825b8ff0a891de66e2a8179b76a2fc5720c834164ab091846feb87a
-    generated_at: 2026-05-05T01:28:32.138Z
+    generated_at: 2026-05-05T13:08:02.991Z
   schematic:
-    src: /images/tech/annealing-schematic.svg
+    src: /images/tech/annealing-schematic.webp
     alt: Schematic diagram of Annealing, highlighting annealing supply, firekeeping,
       charcoal, process and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 748eb285c203ecfdff3abe9e005367fa834a4640b50ccfbb450f06cbf1dbf749
-    generated_at: 2026-05-05T01:28:32.139Z
+    generated_at: 2026-05-05T13:09:21.663Z
 ---
 
 ## Field briefing

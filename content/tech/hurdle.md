@@ -50,23 +50,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/hurdle-header.svg
+    src: /images/tech/hurdle-header.webp
     alt: Field sketch of Hurdle, highlighting hurdle supply, clay, woodworking,
       artifact.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 8be2533a8977046650545622b92f4cdde74eb198d7706eed8ddd547e25e0c685
-    generated_at: 2026-05-05T01:28:32.234Z
+    generated_at: 2026-05-05T13:18:39.626Z
   schematic:
-    src: /images/tech/hurdle-schematic.svg
+    src: /images/tech/hurdle-schematic.webp
     alt: Schematic diagram of Hurdle, highlighting hurdle supply, clay, woodworking,
       artifact and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 5f1e066b6cf20d0863909c5d954c45119efa4a50687729e01bda6f7cb120c645
-    generated_at: 2026-05-05T01:28:32.235Z
+    generated_at: 2026-05-05T13:19:43.412Z
 ---
 
 ## Field briefing

@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/milk-casein-header.svg
+    src: /images/tech/milk-casein-header.webp
     alt: Field sketch of Milk Casein, highlighting milk casein supply, water,
       workshop records, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: bc15fd6c1eb32ee81815d7800ab960dd3b4797749d8287a7b9a814804e19a0bb
-    generated_at: 2026-05-05T01:28:32.247Z
+    generated_at: 2026-05-05T13:20:58.380Z
   schematic:
-    src: /images/tech/milk-casein-schematic.svg
+    src: /images/tech/milk-casein-schematic.webp
     alt: Schematic diagram of Milk Casein, highlighting milk casein supply, water,
       workshop records, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 9057b67691e214dc1b6f4573c84bae3b4626f5ad5bf082f82572ba81c06bd99c
-    generated_at: 2026-05-05T01:28:32.248Z
+    generated_at: 2026-05-05T13:22:12.909Z
 ---
 
 ## Field briefing

@@ -51,23 +51,23 @@ confidence:
   completeness: 0.46
 images:
   header:
-    src: /images/tech/hemp-fiber-header.svg
+    src: /images/tech/hemp-fiber-header.webp
     alt: Field sketch of Hemp Fiber, highlighting hemp fiber supply, cordage fiber,
       spindle, material.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: header-image.v1.md
     prompt_hash: 362b4b2f6819963693ff52a6061b4da9810dbed5f5e6fccf14bba1fc8ab04000
-    generated_at: 2026-05-05T01:28:32.223Z
+    generated_at: 2026-05-05T13:16:48.183Z
   schematic:
-    src: /images/tech/hemp-fiber-schematic.svg
+    src: /images/tech/hemp-fiber-schematic.webp
     alt: Schematic diagram of Hemp Fiber, highlighting hemp fiber supply, cordage
       fiber, spindle, material and major working relationships.
-    provider: fixture
+    provider: openai
     model: gpt-image-2
     prompt_version: schematic-image.v1.md
     prompt_hash: 4a1e31eec89a379acdd8dd406f98c572dfb6dda7c2e535bf2870dd03f98d69db
-    generated_at: 2026-05-05T01:28:32.224Z
+    generated_at: 2026-05-05T13:17:57.389Z
 ---
 
 ## Field briefing
