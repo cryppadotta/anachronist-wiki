@@ -69,13 +69,29 @@ for (const t of nodesByType.keys()) if (!sortedTypes.includes(t)) sortedTypes.pu
 
 const TREE_NODE_WIDTH = 250;
 const TREE_NODE_HEIGHT = 112;
-const TREE_COLUMN_GAP = 116;
+const TREE_COLUMN_GAP = 96;
 const TREE_ROW_GAP = 28;
 const TREE_PADDING = 96;
 const TREE_COLUMN_WIDTH = TREE_NODE_WIDTH + TREE_COLUMN_GAP;
 const TREE_ROW_HEIGHT = TREE_NODE_HEIGHT + TREE_ROW_GAP;
 const TYPE_SORT = new Map(NODE_TYPE_ORDER.map((type, index) => [type, index]));
 const SAFETY_SORT = new Map(["allowed", "caution", "restricted", "blocked", "missing"].map((type, index) => [type, index]));
+const ERA_ORDER = [
+  { key: "prehistoric", label: "Stone Age", eras: ["prehistoric"] },
+  { key: "neolithic_to_ancient", label: "Neolithic / Bronze", eras: ["neolithic_to_ancient"] },
+  { key: "prehistoric_to_ancient", label: "Ancient foundations", eras: ["prehistoric_to_ancient"] },
+  { key: "ancient", label: "Classical", eras: ["ancient"] },
+  { key: "ancient_to_medieval", label: "Medieval", eras: ["ancient_to_medieval"] },
+  { key: "early_modern_to_industrial", label: "Industrial", eras: ["early_modern_to_industrial"] },
+  { key: "unknown", label: "Missing / unknown", eras: ["unknown"] }
+] as const;
+const ERA_INDEX: Map<string, number> = new Map(ERA_ORDER.flatMap((era, index) => era.eras.map((key) => [key, index] as const)));
+const ERA_LABELS: Map<string, string> = new Map(ERA_ORDER.flatMap((era) => era.eras.map((key) => [key, era.label] as const)));
+const EDGE_STYLE_LEGEND = [
+  { className: "edge-style-hard", label: "hard / material" },
+  { className: "edge-style-context", label: "knowledge / test" },
+  { className: "edge-style-soft", label: "soft / optional" }
+];
 
 type TreeNode = {
   slug: string;
@@ -88,6 +104,9 @@ type TreeNode = {
   era_floor: string;
   isMissing: boolean;
   layer: number;
+  eraIndex: number;
+  eraLabel: string;
+  column: number;
   x: number;
   y: number;
 };
@@ -99,6 +118,9 @@ for (const node of graph.nodes) {
     ...node,
     isMissing: false,
     layer: 0,
+    eraIndex: ERA_INDEX.get(node.era_floor) ?? ERA_INDEX.get("unknown") ?? 0,
+    eraLabel: ERA_LABELS.get(node.era_floor) ?? "Missing / unknown",
+    column: 0,
     x: 0,
     y: 0
   });
@@ -116,6 +138,9 @@ for (const node of graph.missing_nodes) {
     era_floor: "unknown",
     isMissing: true,
     layer: 0,
+    eraIndex: ERA_INDEX.get("unknown") ?? 0,
+    eraLabel: ERA_LABELS.get("unknown") ?? "Missing / unknown",
+    column: 0,
     x: 0,
     y: 0
   });
@@ -152,17 +177,50 @@ for (const node of treeNodesBySlug.values()) {
   node.layer = layerFor(node.slug);
 }
 
-const treeColumns = new Map<number, TreeNode[]>();
+const eraGroups = new Map<number, TreeNode[]>();
 for (const node of treeNodesBySlug.values()) {
-  const column = treeColumns.get(node.layer) ?? [];
-  column.push(node);
-  treeColumns.set(node.layer, column);
+  const era = eraGroups.get(node.eraIndex) ?? [];
+  era.push(node);
+  eraGroups.set(node.eraIndex, era);
 }
 
-const sortedLayers = [...treeColumns.keys()].sort((a, b) => a - b);
-for (const layer of sortedLayers) {
-  const column = treeColumns.get(layer) ?? [];
+const treeColumns = new Map<number, TreeNode[]>();
+const eraBands: Array<{ label: string; x: number; width: number; count: number }> = [];
+let nextColumn = 0;
+
+for (const [eraIndex, era] of ERA_ORDER.entries()) {
+  const nodesInEra = eraGroups.get(eraIndex) ?? [];
+  if (nodesInEra.length === 0) continue;
+
+  const layerRanks = [...new Set(nodesInEra.map((node) => node.layer))].sort((a, b) => a - b);
+  const layerRankIndex = new Map(layerRanks.map((layer, index) => [layer, index]));
+  const eraStartColumn = nextColumn;
+
+  for (const node of nodesInEra) {
+    node.column = eraStartColumn + (layerRankIndex.get(node.layer) ?? 0);
+    const column = treeColumns.get(node.column) ?? [];
+    column.push(node);
+    treeColumns.set(node.column, column);
+  }
+
+  eraBands.push({
+    label: era.label,
+    x: TREE_PADDING + eraStartColumn * TREE_COLUMN_WIDTH,
+    width: Math.max(TREE_NODE_WIDTH, layerRanks.length * TREE_COLUMN_WIDTH - TREE_COLUMN_GAP),
+    count: nodesInEra.length
+  });
+
+  nextColumn += Math.max(1, layerRanks.length) + 1;
+}
+
+const sortedColumns = [...treeColumns.keys()].sort((a, b) => a - b);
+for (const columnIndex of sortedColumns) {
+  const column = treeColumns.get(columnIndex) ?? [];
   column.sort((a, b) => {
+    const eraDiff = a.eraIndex - b.eraIndex;
+    if (eraDiff !== 0) return eraDiff;
+    const layerDiff = a.layer - b.layer;
+    if (layerDiff !== 0) return layerDiff;
     const typeDiff = (TYPE_SORT.get(a.node_type) ?? 99) - (TYPE_SORT.get(b.node_type) ?? 99);
     if (typeDiff !== 0) return typeDiff;
     const safetyDiff = (SAFETY_SORT.get(a.safety_class) ?? 99) - (SAFETY_SORT.get(b.safety_class) ?? 99);
@@ -171,16 +229,16 @@ for (const layer of sortedLayers) {
   });
 
   column.forEach((node, row) => {
-    node.x = TREE_PADDING + layer * TREE_COLUMN_WIDTH;
+    node.x = TREE_PADDING + columnIndex * TREE_COLUMN_WIDTH;
     node.y = TREE_PADDING + row * TREE_ROW_HEIGHT;
   });
 }
 
-const maxLayer = Math.max(0, ...sortedLayers);
+const maxColumn = Math.max(0, ...sortedColumns);
 const maxRows = Math.max(1, ...[...treeColumns.values()].map((column) => column.length));
-const treeWidth = TREE_PADDING * 2 + (maxLayer + 1) * TREE_COLUMN_WIDTH;
+const treeWidth = TREE_PADDING * 2 + (maxColumn + 1) * TREE_COLUMN_WIDTH;
 const treeHeight = TREE_PADDING * 2 + maxRows * TREE_ROW_HEIGHT;
-const treeNodes = [...treeNodesBySlug.values()].sort((a, b) => a.layer - b.layer || a.y - b.y || a.title.localeCompare(b.title));
+const treeNodes = [...treeNodesBySlug.values()].sort((a, b) => a.column - b.column || a.y - b.y || a.title.localeCompare(b.title));
 
 function edgePath(edge: GraphEdge) {
   const fromNode = treeNodesBySlug.get(edge.from);
@@ -191,7 +249,7 @@ function edgePath(edge: GraphEdge) {
   const startY = fromNode.y + TREE_NODE_HEIGHT / 2;
   const endX = toNode.x;
   const endY = toNode.y + TREE_NODE_HEIGHT / 2;
-  const controlOffset = Math.max(64, Math.abs(endX - startX) * 0.46);
+  const controlOffset = Math.max(72, Math.abs(endX - startX) * 0.42);
 
   return `M ${startX} ${startY} C ${startX + controlOffset} ${startY}, ${endX - controlOffset} ${endY}, ${endX} ${endY}`;
 }
@@ -231,15 +289,36 @@ function edgePath(edge: GraphEdge) {
               </label>
               <button type="button" class="tree-icon-button" data-tree-zoom="out" aria-label="Zoom out" title="Zoom out">−</button>
               <button type="button" class="tree-icon-button" data-tree-zoom="in" aria-label="Zoom in" title="Zoom in">+</button>
-              <button type="button" class="tree-icon-button" data-tree-reset aria-label="Center tree" title="Center tree">⌖</button>
+              <button type="button" class="tree-fit-button" data-tree-fit aria-label="Fit tree to viewport" title="Fit tree to viewport">Fit</button>
             </div>
           </div>
-          <div class="tech-tree-legend" aria-label="Graph legend">
-            {NODE_TYPE_ORDER.map((type) => <span class={`tree-type-key tree-type-${type}`}>{type}</span>)}
-            <span class="tree-type-key tree-type-missing">missing</span>
-          </div>
-          <div class="tech-tree-viewport" data-tree-viewport tabindex="0" aria-label="Pannable technology tree. Drag to pan, scroll to move, and use the toolbar to zoom.">
+          <details class="tech-tree-legend" data-tree-legend open>
+            <summary>Legend</summary>
+            <div class="tech-tree-legend-grid" aria-label="Graph legend">
+              <div class="tech-tree-legend-group" aria-label="Node types">
+                {NODE_TYPE_ORDER.map((type) => <span class={`tree-type-key tree-type-${type}`}>{type}</span>)}
+                <span class="tree-type-key tree-type-missing">missing</span>
+              </div>
+              <div class="tech-tree-legend-group" aria-label="Edge styles">
+                {EDGE_STYLE_LEGEND.map((edge) => <span class={`tree-edge-key ${edge.className}`}>{edge.label}</span>)}
+              </div>
+            </div>
+          </details>
+          <div class="tech-tree-viewport" data-tree-viewport tabindex="0" aria-label="Pannable technology tree. Drag or use arrow keys to pan, slash to search, plus and minus to zoom, and zero to fit.">
+            <div class="tech-tree-era-ruler" style={`width: ${treeWidth}px;`}>
+              {eraBands.map((era) => (
+                <span class="tree-era-label" style={`left: ${era.x}px; width: ${era.width}px;`}>
+                  <strong>{era.label}</strong>
+                  <em>{era.count} nodes</em>
+                </span>
+              ))}
+            </div>
             <div class="tech-tree-canvas" data-tree-canvas style={`width: ${treeWidth}px; height: ${treeHeight}px;`}>
+              <div class="tech-tree-era-bands" aria-hidden="true">
+                {eraBands.map((era) => (
+                  <span class="tree-era-band" style={`left: ${era.x}px; width: ${era.width}px;`}></span>
+                ))}
+              </div>
               <svg class="tech-tree-edges" width={treeWidth} height={treeHeight} viewBox={`0 0 ${treeWidth} ${treeHeight}`} aria-hidden="true">
                 <defs>
                   <marker id="tree-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -247,10 +326,15 @@ function edgePath(edge: GraphEdge) {
                   </marker>
                 </defs>
                 {treeEdges.map((edge) => (
-                  <path class={`tree-edge tree-edge-${edge.kind}`} d={edgePath(edge)}></path>
+                  <path
+                    class={`tree-edge tree-edge-${edge.kind}`}
+                    d={edgePath(edge)}
+                    data-tree-edge
+                    data-edge-from={edge.from}
+                    data-edge-to={edge.to}
+                  ></path>
                 ))}
               </svg>
-              <div class="tech-tree-grid" aria-hidden="true"></div>
               {treeNodes.map((node) => (
                 <a
                   class={`tree-node tree-node-${node.node_type} safety-${node.safety_class}${node.isMissing ? " tree-node-missing" : ""}`}
@@ -259,10 +343,11 @@ function edgePath(edge: GraphEdge) {
                   data-tree-node
                   data-tree-title={node.title.toLowerCase()}
                   data-tree-slug={node.slug}
+                  data-tree-era={node.eraLabel}
                 >
                   <span class="tree-node-type">{node.node_type}</span>
                   <strong>{node.title}</strong>
-                  <span class="tree-node-meta">{node.era_floor} · {node.status}</span>
+                  <span class="tree-node-meta">{node.safety_class}</span>
                   <span class="tree-node-summary">{node.summary}</span>
                 </a>
               ))}
@@ -356,9 +441,11 @@ function edgePath(edge: GraphEdge) {
   const viewport = document.querySelector("[data-tree-viewport]");
   const canvas = document.querySelector("[data-tree-canvas]");
   const searchInput = document.querySelector("[data-tree-search]");
-  const resetButton = document.querySelector("[data-tree-reset]");
+  const fitButton = document.querySelector("[data-tree-fit]");
   const zoomButtons = document.querySelectorAll("[data-tree-zoom]");
   const treeNodes = [...document.querySelectorAll("[data-tree-node]")];
+  const treeEdges = [...document.querySelectorAll("[data-tree-edge]")];
+  const legend = document.querySelector("[data-tree-legend]");
 
   if (viewport instanceof HTMLElement && canvas instanceof HTMLElement) {
     let scale = 1;
@@ -371,7 +458,7 @@ function edgePath(edge: GraphEdge) {
 
     const applyScale = (nextScale: number) => {
       const previousScale = scale;
-      scale = Math.min(1.35, Math.max(0.55, nextScale));
+      scale = Math.min(1.35, Math.max(0.25, nextScale));
       const scrollRatioX = (viewport.scrollLeft + viewport.clientWidth / 2) / previousScale;
       const scrollRatioY = (viewport.scrollTop + viewport.clientHeight / 2) / previousScale;
       canvas.style.transform = `scale(${scale})`;
@@ -379,12 +466,23 @@ function edgePath(edge: GraphEdge) {
       viewport.scrollTop = scrollRatioY * scale - viewport.clientHeight / 2;
     };
 
-    const centerTree = () => {
+    const fitTree = () => {
+      const fitScale = Math.min(1, Math.max(0.25, Math.min(viewport.clientWidth / canvas.offsetWidth, viewport.clientHeight / canvas.offsetHeight) * 0.92));
+      applyScale(fitScale);
       viewport.scrollLeft = Math.max(0, (canvas.offsetWidth * scale - viewport.clientWidth) / 2);
       viewport.scrollTop = 0;
     };
 
-    requestAnimationFrame(centerTree);
+    const startTree = () => {
+      viewport.scrollLeft = 0;
+      viewport.scrollTop = 0;
+    };
+
+    if (legend instanceof HTMLDetailsElement && window.matchMedia("(max-width: 640px)").matches) {
+      legend.removeAttribute("open");
+    }
+
+    requestAnimationFrame(startTree);
 
     viewport.addEventListener("pointerdown", (event) => {
       if (!(event.target instanceof Element) || event.target.closest("a, button, input")) return;
@@ -434,15 +532,83 @@ function edgePath(edge: GraphEdge) {
       });
     });
 
-    resetButton?.addEventListener("click", () => {
-      applyScale(1);
-      requestAnimationFrame(centerTree);
+    fitButton?.addEventListener("click", () => {
+      requestAnimationFrame(fitTree);
+    });
+
+    const clearEdgeFocus = () => {
+      canvas.classList.remove("has-edge-focus");
+      treeEdges.forEach((edge) => {
+        edge.classList.remove("tree-edge-active", "tree-edge-dim");
+      });
+      treeNodes.forEach((node) => {
+        node.classList.remove("tree-node-connected");
+      });
+    };
+
+    const focusNodeEdges = (slug: string) => {
+      const connectedSlugs = new Set([slug]);
+      canvas.classList.add("has-edge-focus");
+      treeEdges.forEach((edge) => {
+        const from = edge.getAttribute("data-edge-from");
+        const to = edge.getAttribute("data-edge-to");
+        const isActive = from === slug || to === slug;
+        edge.classList.toggle("tree-edge-active", isActive);
+        edge.classList.toggle("tree-edge-dim", !isActive);
+        if (isActive) {
+          if (from) connectedSlugs.add(from);
+          if (to) connectedSlugs.add(to);
+        }
+      });
+      treeNodes.forEach((node) => {
+        node.classList.toggle("tree-node-connected", connectedSlugs.has(node.getAttribute("data-tree-slug") ?? ""));
+      });
+    };
+
+    treeNodes.forEach((node) => {
+      node.addEventListener("mouseenter", () => {
+        focusNodeEdges(node.getAttribute("data-tree-slug") ?? "");
+      });
+      node.addEventListener("focus", () => {
+        focusNodeEdges(node.getAttribute("data-tree-slug") ?? "");
+      });
+      node.addEventListener("mouseleave", clearEdgeFocus);
+      node.addEventListener("blur", clearEdgeFocus);
+    });
+
+    viewport.addEventListener("keydown", (event) => {
+      const panAmount = event.shiftKey ? 180 : 80;
+      if (event.key === "ArrowLeft") {
+        viewport.scrollLeft -= panAmount;
+        event.preventDefault();
+      } else if (event.key === "ArrowRight") {
+        viewport.scrollLeft += panAmount;
+        event.preventDefault();
+      } else if (event.key === "ArrowUp") {
+        viewport.scrollTop -= panAmount;
+        event.preventDefault();
+      } else if (event.key === "ArrowDown") {
+        viewport.scrollTop += panAmount;
+        event.preventDefault();
+      } else if (event.key === "+" || event.key === "=") {
+        applyScale(scale + 0.12);
+        event.preventDefault();
+      } else if (event.key === "-" || event.key === "_") {
+        applyScale(scale - 0.12);
+        event.preventDefault();
+      } else if (event.key === "0") {
+        fitTree();
+        event.preventDefault();
+      } else if (event.key === "/") {
+        if (searchInput instanceof HTMLInputElement) searchInput.focus();
+        event.preventDefault();
+      }
     });
 
     searchInput?.addEventListener("input", () => {
       if (!(searchInput instanceof HTMLInputElement)) return;
       const query = searchInput.value.trim().toLowerCase();
-      let firstMatch = null;
+      let firstMatch: Element | null = null;
       for (const node of treeNodes) {
         const match = query.length > 0 && `${node.getAttribute("data-tree-title")} ${node.getAttribute("data-tree-slug")}`.includes(query);
         node.classList.toggle("tree-node-match", match);
