@@ -68,12 +68,14 @@ const sortedTypes = NODE_TYPE_ORDER.filter((t) => nodesByType.has(t));
 for (const t of nodesByType.keys()) if (!sortedTypes.includes(t)) sortedTypes.push(t);
 
 const TREE_NODE_WIDTH = 250;
-const TREE_NODE_HEIGHT = 112;
+const TREE_NODE_HEIGHT = 128;
 const TREE_COLUMN_GAP = 96;
 const TREE_ROW_GAP = 28;
 const TREE_PADDING = 96;
 const TREE_COLUMN_WIDTH = TREE_NODE_WIDTH + TREE_COLUMN_GAP;
 const TREE_ROW_HEIGHT = TREE_NODE_HEIGHT + TREE_ROW_GAP;
+const TREE_MINIMAP_WIDTH = 188;
+const TREE_MINIMAP_HEIGHT = 132;
 const TYPE_SORT = new Map(NODE_TYPE_ORDER.map((type, index) => [type, index]));
 const SAFETY_SORT = new Map(["allowed", "caution", "restricted", "blocked", "missing"].map((type, index) => [type, index]));
 const ERA_ORDER = [
@@ -103,6 +105,8 @@ type TreeNode = {
   path: string;
   era_floor: string;
   isMissing: boolean;
+  incomingCount: number;
+  outgoingCount: number;
   layer: number;
   eraIndex: number;
   eraLabel: string;
@@ -117,6 +121,8 @@ for (const node of graph.nodes) {
   treeNodesBySlug.set(node.slug, {
     ...node,
     isMissing: false,
+    incomingCount: 0,
+    outgoingCount: 0,
     layer: 0,
     eraIndex: ERA_INDEX.get(node.era_floor) ?? ERA_INDEX.get("unknown") ?? 0,
     eraLabel: ERA_LABELS.get(node.era_floor) ?? "Missing / unknown",
@@ -137,6 +143,8 @@ for (const node of graph.missing_nodes) {
     path: missingPath(node.slug),
     era_floor: "unknown",
     isMissing: true,
+    incomingCount: 0,
+    outgoingCount: 0,
     layer: 0,
     eraIndex: ERA_INDEX.get("unknown") ?? 0,
     eraLabel: ERA_LABELS.get("unknown") ?? "Missing / unknown",
@@ -148,10 +156,20 @@ for (const node of graph.missing_nodes) {
 
 const treeEdges = graph.edges.filter((edge) => treeNodesBySlug.has(edge.from) && treeNodesBySlug.has(edge.to));
 const incomingTreeEdges = new Map<string, GraphEdge[]>();
+const outgoingTreeEdges = new Map<string, GraphEdge[]>();
 for (const edge of treeEdges) {
   const incoming = incomingTreeEdges.get(edge.to) ?? [];
   incoming.push(edge);
   incomingTreeEdges.set(edge.to, incoming);
+
+  const outgoing = outgoingTreeEdges.get(edge.from) ?? [];
+  outgoing.push(edge);
+  outgoingTreeEdges.set(edge.from, outgoing);
+}
+
+for (const node of treeNodesBySlug.values()) {
+  node.incomingCount = incomingTreeEdges.get(node.slug)?.length ?? 0;
+  node.outgoingCount = outgoingTreeEdges.get(node.slug)?.length ?? 0;
 }
 
 const layerMemo = new Map<string, number>();
@@ -239,6 +257,11 @@ const maxRows = Math.max(1, ...[...treeColumns.values()].map((column) => column.
 const treeWidth = TREE_PADDING * 2 + (maxColumn + 1) * TREE_COLUMN_WIDTH;
 const treeHeight = TREE_PADDING * 2 + maxRows * TREE_ROW_HEIGHT;
 const treeNodes = [...treeNodesBySlug.values()].sort((a, b) => a.column - b.column || a.y - b.y || a.title.localeCompare(b.title));
+const treeNodeTypeCounts = new Map<string, number>();
+for (const node of treeNodes) {
+  treeNodeTypeCounts.set(node.node_type, (treeNodeTypeCounts.get(node.node_type) ?? 0) + 1);
+}
+const treeFilterTypes = [...NODE_TYPE_ORDER, "missing"].filter((type) => treeNodeTypeCounts.has(type));
 
 function edgePath(edge: GraphEdge) {
   const fromNode = treeNodesBySlug.get(edge.from);
@@ -288,6 +311,7 @@ function edgePath(edge: GraphEdge) {
                 <input type="search" placeholder="rope, kiln, writing..." data-tree-search />
               </label>
               <button type="button" class="tree-icon-button" data-tree-zoom="out" aria-label="Zoom out" title="Zoom out">−</button>
+              <output class="tree-zoom-readout" data-tree-zoom-readout aria-label="Current zoom">100%</output>
               <button type="button" class="tree-icon-button" data-tree-zoom="in" aria-label="Zoom in" title="Zoom in">+</button>
               <button type="button" class="tree-fit-button" data-tree-fit aria-label="Fit tree to viewport" title="Fit tree to viewport">Fit</button>
             </div>
@@ -295,15 +319,72 @@ function edgePath(edge: GraphEdge) {
           <details class="tech-tree-legend" data-tree-legend open>
             <summary>Legend</summary>
             <div class="tech-tree-legend-grid" aria-label="Graph legend">
-              <div class="tech-tree-legend-group" aria-label="Node types">
-                {NODE_TYPE_ORDER.map((type) => <span class={`tree-type-key tree-type-${type}`}>{type}</span>)}
-                <span class="tree-type-key tree-type-missing">missing</span>
+              <div class="tech-tree-legend-group tree-filter-group" aria-label="Node type filters">
+                <button type="button" class="tree-filter-button is-active" data-tree-filter="all" aria-pressed="true">
+                  <span class="tree-type-key tree-type-all">all</span>
+                  <strong>{treeNodes.length}</strong>
+                </button>
+                {treeFilterTypes.map((type) => (
+                  <button type="button" class="tree-filter-button" data-tree-filter={type} aria-pressed="false">
+                    <span class={`tree-type-key tree-type-${type}`}>{type}</span>
+                    <strong>{treeNodeTypeCounts.get(type)}</strong>
+                  </button>
+                ))}
               </div>
               <div class="tech-tree-legend-group" aria-label="Edge styles">
                 {EDGE_STYLE_LEGEND.map((edge) => <span class={`tree-edge-key ${edge.className}`}>{edge.label}</span>)}
               </div>
             </div>
           </details>
+          <div class="tree-instrument-row">
+            <aside class="tree-detail-panel" data-tree-detail aria-live="polite">
+              <p class="eyebrow">Selected node</p>
+              <h3 data-tree-detail-title>Graph overview</h3>
+              <dl>
+                <div>
+                  <dt>Era</dt>
+                  <dd data-tree-detail-era>all eras</dd>
+                </div>
+                <div>
+                  <dt>Type</dt>
+                  <dd data-tree-detail-type>all nodes</dd>
+                </div>
+                <div>
+                  <dt>Safety</dt>
+                  <dd data-tree-detail-safety>mixed</dd>
+                </div>
+                <div>
+                  <dt>Edges</dt>
+                  <dd data-tree-detail-edges>{treeEdges.length} total</dd>
+                </div>
+              </dl>
+              <p data-tree-detail-summary>{treeNodes.length} nodes across {eraBands.length} era bands.</p>
+            </aside>
+            <button
+              type="button"
+              class="tree-minimap"
+              data-tree-minimap
+              aria-label="Jump around the technology tree minimap"
+              title="Jump around the tree"
+            >
+              <span class="tree-minimap-map" style={`width: ${TREE_MINIMAP_WIDTH}px; height: ${TREE_MINIMAP_HEIGHT}px;`}>
+                {eraBands.map((era) => (
+                  <span
+                    class="tree-minimap-era"
+                    style={`left: ${(era.x / treeWidth) * 100}%; width: ${(era.width / treeWidth) * 100}%;`}
+                  ></span>
+                ))}
+                {treeNodes.map((node) => (
+                  <span
+                    class={`tree-minimap-node tree-minimap-${node.node_type}`}
+                    data-minimap-node={node.slug}
+                    style={`left: ${((node.x + TREE_NODE_WIDTH / 2) / treeWidth) * 100}%; top: ${((node.y + TREE_NODE_HEIGHT / 2) / treeHeight) * 100}%;`}
+                  ></span>
+                ))}
+                <span class="tree-minimap-window" data-tree-minimap-window></span>
+              </span>
+            </button>
+          </div>
           <div class="tech-tree-viewport" data-tree-viewport tabindex="0" aria-label="Pannable technology tree. Drag or use arrow keys to pan, slash to search, plus and minus to zoom, and zero to fit.">
             <div class="tech-tree-era-ruler" style={`width: ${treeWidth}px;`}>
               {eraBands.map((era) => (
@@ -332,6 +413,7 @@ function edgePath(edge: GraphEdge) {
                     data-tree-edge
                     data-edge-from={edge.from}
                     data-edge-to={edge.to}
+                    data-edge-kind={edge.kind}
                   ></path>
                 ))}
               </svg>
@@ -339,16 +421,26 @@ function edgePath(edge: GraphEdge) {
                 <a
                   class={`tree-node tree-node-${node.node_type} safety-${node.safety_class}${node.isMissing ? " tree-node-missing" : ""}`}
                   href={node.path}
-                  style={`left: ${node.x}px; top: ${node.y}px; width: ${TREE_NODE_WIDTH}px; min-height: ${TREE_NODE_HEIGHT}px;`}
+                  style={`left: ${node.x}px; top: ${node.y}px; width: ${TREE_NODE_WIDTH}px; height: ${TREE_NODE_HEIGHT}px;`}
                   data-tree-node
                   data-tree-title={node.title.toLowerCase()}
                   data-tree-slug={node.slug}
+                  data-tree-type={node.node_type}
+                  data-tree-safety={node.safety_class}
                   data-tree-era={node.eraLabel}
+                  data-tree-prereqs={node.incomingCount}
+                  data-tree-unlocks={node.outgoingCount}
+                  data-tree-summary={node.summary}
+                  data-tree-search-text={`${node.title} ${node.slug} ${node.node_type} ${node.safety_class} ${node.eraLabel} ${node.summary}`.toLowerCase()}
                 >
                   <span class="tree-node-type">{node.node_type}</span>
                   <strong>{node.title}</strong>
                   <span class="tree-node-meta">{node.safety_class}</span>
                   <span class="tree-node-summary">{node.summary}</span>
+                  <span class="tree-node-degree" aria-label={`${node.incomingCount} prerequisites and ${node.outgoingCount} unlocks`}>
+                    <span>{node.incomingCount} in</span>
+                    <span>{node.outgoingCount} out</span>
+                  </span>
                 </a>
               ))}
             </div>
@@ -443,12 +535,28 @@ function edgePath(edge: GraphEdge) {
   const searchInput = document.querySelector("[data-tree-search]");
   const fitButton = document.querySelector("[data-tree-fit]");
   const zoomButtons = document.querySelectorAll("[data-tree-zoom]");
+  const zoomReadout = document.querySelector("[data-tree-zoom-readout]");
   const treeNodes = [...document.querySelectorAll("[data-tree-node]")];
   const treeEdges = [...document.querySelectorAll("[data-tree-edge]")];
   const legend = document.querySelector("[data-tree-legend]");
+  const filterButtons = [...document.querySelectorAll("[data-tree-filter]")];
+  const detailPanel = document.querySelector("[data-tree-detail]");
+  const detailTitle = document.querySelector("[data-tree-detail-title]");
+  const detailEra = document.querySelector("[data-tree-detail-era]");
+  const detailType = document.querySelector("[data-tree-detail-type]");
+  const detailSafety = document.querySelector("[data-tree-detail-safety]");
+  const detailEdges = document.querySelector("[data-tree-detail-edges]");
+  const detailSummary = document.querySelector("[data-tree-detail-summary]");
+  const minimap = document.querySelector("[data-tree-minimap]");
+  const minimapWindow = document.querySelector("[data-tree-minimap-window]");
+  const minimapNodes = [...document.querySelectorAll("[data-minimap-node]")];
 
   if (viewport instanceof HTMLElement && canvas instanceof HTMLElement) {
+    const treeViewport = viewport;
+    const treeCanvas = canvas;
     let scale = 1;
+    let activeFilter = "all";
+    let focusedSlug = "";
     let isPanning = false;
     let hasDragged = false;
     let startX = 0;
@@ -456,14 +564,28 @@ function edgePath(edge: GraphEdge) {
     let startScrollLeft = 0;
     let startScrollTop = 0;
 
+    function updateMinimapWindow() {
+      if (!(minimapWindow instanceof HTMLElement)) return;
+      const width = Math.min(100, (treeViewport.clientWidth / Math.max(1, treeCanvas.offsetWidth * scale)) * 100);
+      const height = Math.min(100, (treeViewport.clientHeight / Math.max(1, treeCanvas.offsetHeight * scale)) * 100);
+      const left = Math.min(100 - width, (treeViewport.scrollLeft / Math.max(1, treeCanvas.offsetWidth * scale)) * 100);
+      const top = Math.min(100 - height, (treeViewport.scrollTop / Math.max(1, treeCanvas.offsetHeight * scale)) * 100);
+      minimapWindow.style.width = `${width}%`;
+      minimapWindow.style.height = `${height}%`;
+      minimapWindow.style.left = `${Math.max(0, left)}%`;
+      minimapWindow.style.top = `${Math.max(0, top)}%`;
+    }
+
     const applyScale = (nextScale: number) => {
       const previousScale = scale;
       scale = Math.min(1.35, Math.max(0.25, nextScale));
       const scrollRatioX = (viewport.scrollLeft + viewport.clientWidth / 2) / previousScale;
       const scrollRatioY = (viewport.scrollTop + viewport.clientHeight / 2) / previousScale;
       canvas.style.transform = `scale(${scale})`;
+      if (zoomReadout instanceof HTMLOutputElement) zoomReadout.value = `${Math.round(scale * 100)}%`;
       viewport.scrollLeft = scrollRatioX * scale - viewport.clientWidth / 2;
       viewport.scrollTop = scrollRatioY * scale - viewport.clientHeight / 2;
+      updateMinimapWindow();
     };
 
     const fitTree = () => {
@@ -471,12 +593,116 @@ function edgePath(edge: GraphEdge) {
       applyScale(fitScale);
       viewport.scrollLeft = Math.max(0, (canvas.offsetWidth * scale - viewport.clientWidth) / 2);
       viewport.scrollTop = 0;
+      updateMinimapWindow();
     };
 
     const startTree = () => {
       viewport.scrollLeft = 0;
       viewport.scrollTop = 0;
+      updateMinimapWindow();
     };
+
+    const nodeSlug = (node: Element) => node.getAttribute("data-tree-slug") ?? "";
+    const nodeType = (node: Element) => node.getAttribute("data-tree-type") ?? "";
+    const nodeMatchesSearch = (node: Element, query: string) =>
+      query.length === 0 || (node.getAttribute("data-tree-search-text") ?? "").includes(query);
+    const nodeMatchesFilter = (node: Element) => activeFilter === "all" || nodeType(node) === activeFilter;
+    const isNodeVisible = (node: Element, query: string) => nodeMatchesSearch(node, query) && nodeMatchesFilter(node);
+
+    function connectedSlugsFor(slug: string) {
+      const connected = new Set([slug]);
+      treeEdges.forEach((edge) => {
+        const from = edge.getAttribute("data-edge-from");
+        const to = edge.getAttribute("data-edge-to");
+        if (from === slug || to === slug) {
+          if (from) connected.add(from);
+          if (to) connected.add(to);
+        }
+      });
+      return connected;
+    }
+
+    function updateDetails(node?: Element) {
+      if (!(detailPanel instanceof HTMLElement)) return;
+
+      if (!node) {
+        detailPanel.classList.remove("has-selection");
+        if (detailTitle) detailTitle.textContent = "Graph overview";
+        if (detailEra) detailEra.textContent = "all eras";
+        if (detailType) detailType.textContent = activeFilter === "all" ? "all nodes" : activeFilter;
+        if (detailSafety) detailSafety.textContent = "mixed";
+        if (detailEdges) detailEdges.textContent = `${treeEdges.length} total`;
+        if (detailSummary) detailSummary.textContent = `${treeNodes.length} nodes across ${document.querySelectorAll(".tree-era-label").length} era bands.`;
+        return;
+      }
+
+      detailPanel.classList.add("has-selection");
+      const title = node.querySelector("strong")?.textContent ?? node.getAttribute("data-tree-title") ?? "Selected node";
+      const prereqs = node.getAttribute("data-tree-prereqs") ?? "0";
+      const unlocks = node.getAttribute("data-tree-unlocks") ?? "0";
+      if (detailTitle) detailTitle.textContent = title;
+      if (detailEra) detailEra.textContent = node.getAttribute("data-tree-era") ?? "Unknown";
+      if (detailType) detailType.textContent = node.getAttribute("data-tree-type") ?? "Unknown";
+      if (detailSafety) detailSafety.textContent = node.getAttribute("data-tree-safety") ?? "Unknown";
+      if (detailEdges) detailEdges.textContent = `${prereqs} prerequisites / ${unlocks} unlocks`;
+      if (detailSummary) detailSummary.textContent = node.getAttribute("data-tree-summary") ?? "";
+    }
+
+    function updateGraphState() {
+      const query = searchInput instanceof HTMLInputElement ? searchInput.value.trim().toLowerCase() : "";
+      const connectedSlugs = focusedSlug ? connectedSlugsFor(focusedSlug) : new Set<string>();
+      const hasQuery = query.length > 0;
+      const hasFocus = focusedSlug.length > 0;
+
+      treeCanvas.classList.toggle("has-edge-focus", hasFocus);
+      treeCanvas.classList.toggle("has-tree-query", hasQuery || activeFilter !== "all");
+
+      treeNodes.forEach((node) => {
+        const slug = nodeSlug(node);
+        const visible = isNodeVisible(node, query);
+        const connected = hasFocus && connectedSlugs.has(slug);
+        const selected = hasFocus && slug === focusedSlug;
+        node.classList.toggle("tree-node-hidden", !visible);
+        node.classList.toggle("tree-node-match", visible && hasQuery && nodeMatchesSearch(node, query));
+        node.classList.toggle("tree-node-dim", visible && hasFocus && !connected);
+        node.classList.toggle("tree-node-connected", connected && !selected);
+        node.classList.toggle("tree-node-selected", selected);
+      });
+
+      const nodeLookup = new Map(treeNodes.map((node) => [nodeSlug(node), node]));
+      treeEdges.forEach((edge) => {
+        const from = edge.getAttribute("data-edge-from") ?? "";
+        const to = edge.getAttribute("data-edge-to") ?? "";
+        const fromNode = nodeLookup.get(from);
+        const toNode = nodeLookup.get(to);
+        const endpointsVisible = !!fromNode && !!toNode && isNodeVisible(fromNode, query) && isNodeVisible(toNode, query);
+        const active = hasFocus && (from === focusedSlug || to === focusedSlug);
+        edge.classList.toggle("tree-edge-hidden", !endpointsVisible);
+        edge.classList.toggle("tree-edge-active", active);
+        edge.classList.toggle("tree-edge-dim", endpointsVisible && hasFocus && !active);
+      });
+
+      minimapNodes.forEach((dot) => {
+        const slug = dot.getAttribute("data-minimap-node") ?? "";
+        const node = nodeLookup.get(slug);
+        const visible = !!node && isNodeVisible(node, query);
+        dot.classList.toggle("tree-minimap-node-hidden", !visible);
+        dot.classList.toggle("tree-minimap-node-selected", slug === focusedSlug);
+      });
+    }
+
+    function focusNode(slug: string) {
+      focusedSlug = slug;
+      const node = treeNodes.find((candidate) => nodeSlug(candidate) === slug);
+      updateDetails(node);
+      updateGraphState();
+    }
+
+    function clearFocus() {
+      focusedSlug = "";
+      updateDetails();
+      updateGraphState();
+    }
 
     if (legend instanceof HTMLDetailsElement && window.matchMedia("(max-width: 640px)").matches) {
       legend.removeAttribute("open");
@@ -503,6 +729,7 @@ function edgePath(edge: GraphEdge) {
       if (Math.abs(dx) + Math.abs(dy) > 6) hasDragged = true;
       viewport.scrollLeft = startScrollLeft - dx;
       viewport.scrollTop = startScrollTop - dy;
+      updateMinimapWindow();
     });
 
     viewport.addEventListener("pointerup", (event) => {
@@ -536,59 +763,62 @@ function edgePath(edge: GraphEdge) {
       requestAnimationFrame(fitTree);
     });
 
-    const clearEdgeFocus = () => {
-      canvas.classList.remove("has-edge-focus");
-      treeEdges.forEach((edge) => {
-        edge.classList.remove("tree-edge-active", "tree-edge-dim");
-      });
-      treeNodes.forEach((node) => {
-        node.classList.remove("tree-node-connected");
-      });
-    };
-
-    const focusNodeEdges = (slug: string) => {
-      const connectedSlugs = new Set([slug]);
-      canvas.classList.add("has-edge-focus");
-      treeEdges.forEach((edge) => {
-        const from = edge.getAttribute("data-edge-from");
-        const to = edge.getAttribute("data-edge-to");
-        const isActive = from === slug || to === slug;
-        edge.classList.toggle("tree-edge-active", isActive);
-        edge.classList.toggle("tree-edge-dim", !isActive);
-        if (isActive) {
-          if (from) connectedSlugs.add(from);
-          if (to) connectedSlugs.add(to);
-        }
-      });
-      treeNodes.forEach((node) => {
-        node.classList.toggle("tree-node-connected", connectedSlugs.has(node.getAttribute("data-tree-slug") ?? ""));
-      });
-    };
-
     treeNodes.forEach((node) => {
       node.addEventListener("mouseenter", () => {
-        focusNodeEdges(node.getAttribute("data-tree-slug") ?? "");
+        focusNode(nodeSlug(node));
       });
       node.addEventListener("focus", () => {
-        focusNodeEdges(node.getAttribute("data-tree-slug") ?? "");
+        focusNode(nodeSlug(node));
       });
-      node.addEventListener("mouseleave", clearEdgeFocus);
-      node.addEventListener("blur", clearEdgeFocus);
+      node.addEventListener("mouseleave", clearFocus);
+      node.addEventListener("blur", clearFocus);
     });
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        activeFilter = button.getAttribute("data-tree-filter") ?? "all";
+        filterButtons.forEach((candidate) => {
+          const isActive = candidate === button;
+          candidate.classList.toggle("is-active", isActive);
+          candidate.setAttribute("aria-pressed", String(isActive));
+        });
+        clearFocus();
+      });
+    });
+
+    minimap?.addEventListener("click", (event) => {
+      if (!(event instanceof MouseEvent)) return;
+      if (!(minimap instanceof HTMLElement)) return;
+      const map = minimap.querySelector(".tree-minimap-map");
+      if (!(map instanceof HTMLElement)) return;
+      const rect = map.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width;
+      const y = (event.clientY - rect.top) / rect.height;
+      treeViewport.scrollLeft = Math.max(0, x * treeCanvas.offsetWidth * scale - treeViewport.clientWidth / 2);
+      treeViewport.scrollTop = Math.max(0, y * treeCanvas.offsetHeight * scale - treeViewport.clientHeight / 2);
+      updateMinimapWindow();
+    });
+
+    viewport.addEventListener("scroll", updateMinimapWindow, { passive: true });
+    window.addEventListener("resize", updateMinimapWindow);
 
     viewport.addEventListener("keydown", (event) => {
       const panAmount = event.shiftKey ? 180 : 80;
       if (event.key === "ArrowLeft") {
         viewport.scrollLeft -= panAmount;
+        updateMinimapWindow();
         event.preventDefault();
       } else if (event.key === "ArrowRight") {
         viewport.scrollLeft += panAmount;
+        updateMinimapWindow();
         event.preventDefault();
       } else if (event.key === "ArrowUp") {
         viewport.scrollTop -= panAmount;
+        updateMinimapWindow();
         event.preventDefault();
       } else if (event.key === "ArrowDown") {
         viewport.scrollTop += panAmount;
+        updateMinimapWindow();
         event.preventDefault();
       } else if (event.key === "+" || event.key === "=") {
         applyScale(scale + 0.12);
@@ -610,11 +840,10 @@ function edgePath(edge: GraphEdge) {
       const query = searchInput.value.trim().toLowerCase();
       let firstMatch: Element | null = null;
       for (const node of treeNodes) {
-        const match = query.length > 0 && `${node.getAttribute("data-tree-title")} ${node.getAttribute("data-tree-slug")}`.includes(query);
-        node.classList.toggle("tree-node-match", match);
-        node.classList.toggle("tree-node-dim", query.length > 0 && !match);
+        const match = query.length > 0 && isNodeVisible(node, query);
         if (match && firstMatch === null) firstMatch = node;
       }
+      updateGraphState();
 
       if (firstMatch instanceof HTMLElement) {
         viewport.scrollTo({
@@ -624,5 +853,8 @@ function edgePath(edge: GraphEdge) {
         });
       }
     });
+
+    updateDetails();
+    updateGraphState();
   }
 </script>
